@@ -7,6 +7,12 @@ defineProps({
 
 const emit = defineEmits(['close'])
 
+// 使用 Vite BASE_URL，部署到 GitHub Pages 子路径时链接才正确
+const base = import.meta.env.BASE_URL
+function pageUrl(file) {
+  return `${base}pages/${file}`
+}
+
 function handleKeydown(e) {
   if (e.key === 'Escape') emit('close')
 }
@@ -34,7 +40,7 @@ onUnmounted(() => {
         </h3>
         <div class="flex items-center gap-2 shrink-0">
           <a
-            :href="`/pages/${template.file}`"
+            :href="pageUrl(template.file)"
             target="_blank"
             rel="noopener noreferrer"
             title="新窗口打开"
@@ -59,7 +65,7 @@ onUnmounted(() => {
       </div>
       <div class="flex-1 min-h-0 overflow-hidden">
         <iframe
-          :src="`/pages/${template.file}`"
+          :src="pageUrl(template.file)"
           :title="template.title"
           class="w-full h-full min-h-[70vh] border-0"
         />

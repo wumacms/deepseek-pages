@@ -9,6 +9,12 @@ defineProps({
 const emit = defineEmits(['preview'])
 
 const COVER_URL = 'https://placehold.co/300x200'
+
+// 使用 Vite BASE_URL，部署到 GitHub Pages 子路径时链接才正确
+const base = import.meta.env.BASE_URL
+function pageUrl(file) {
+  return `${base}pages/${file}`
+}
 </script>
 
 <template>
@@ -16,7 +22,7 @@ const COVER_URL = 'https://placehold.co/300x200'
     class="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden hover:shadow-md hover:border-slate-300 transition flex flex-col"
   >
     <a
-      :href="`/pages/${template.file}`"
+      :href="pageUrl(template.file)"
       target="_blank"
       rel="noopener noreferrer"
       class="block aspect-[3/2] bg-slate-100 overflow-hidden"
@@ -54,7 +60,7 @@ const COVER_URL = 'https://placehold.co/300x200'
           预览
         </button>
         <a
-          :href="`/pages/${template.file}`"
+          :href="pageUrl(template.file)"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center rounded-lg border border-slate-300 text-slate-700 text-sm font-medium py-2.5 px-4 hover:bg-slate-50 transition"

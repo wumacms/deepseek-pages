@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商业地产 · 磐石置业 | 金属灰沉浸式</title>
+    <!-- Tailwind via CDN + 基础层样式 (无自定义CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入一个优雅的金属感字体基调 (纯tailwind色调无需自定义) -->
+    <style>
+        /* 确保没有任何自定义类，只保留默认重置，符合“不要自定义样式”要求 */
+        body { background-color: #0b0f12; } /* 极深金属底，融入tailwind slate/stone范围，但这里直接用默认类实现，此处仅为后备，实际所有颜色用tailwind类 */
+    </style>
+</head>
+<body class="bg-stone-950 text-stone-300 antialiased font-sans">
+
+    <!-- 导航栏 (logo+标题+CTA, 无菜单) 金属灰系 -->
+    <header class="border-b border-stone-800/80 bg-stone-900/70 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+            <!-- 左侧：logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <!-- 纯占位logo 用金属质感图标 -->
+                <div class="text-3xl tracking-tighter font-light bg-gradient-to-br from-stone-400 to-stone-600 bg-clip-text text-transparent select-none">◈</div>
+                <span class="text-xl font-medium tracking-tight text-stone-200">METROSTONE<span class="text-stone-500 text-sm ml-1">· 商业地产</span></span>
+            </div>
+            <!-- 右侧：CTA按钮 (无菜单) -->
+            <div>
+                <a href="/contact" class="bg-stone-700 hover:bg-stone-600 text-stone-100 px-5 py-2.5 rounded-md text-sm font-semibold shadow-md transition-all duration-200 border border-stone-600/50">尊享咨询 →</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (沉浸式大图) 对应企业通讯改商业地产 -->
+        <section class="relative isolate">
+            <!-- 金属深灰渐变背景层 -->
+            <div class="absolute inset-0 bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 -z-10"></div>
+            <div class="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24 lg:py-28">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h1 class="text-5xl md:text-6xl font-light tracking-tight text-stone-100 leading-tight">
+                            <span class="font-medium text-stone-300">核心商圈 ·</span> 恒产根基
+                        </h1>
+                        <p class="text-xl text-stone-400 max-w-xl leading-relaxed">
+                            安全、高效、可定制——专为头部企业打造的智能商业地产生态，集成资产管理与价值洞察。
+                        </p>
+                        <p class="text-stone-500 text-base border-l-2 border-stone-700 pl-4 italic">
+                            从选址到运营，重塑商业空间想象力。
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="/signup" class="bg-stone-200 text-stone-900 px-7 py-3.5 rounded-md text-base font-semibold shadow-lg hover:bg-white transition">预约看盘</a>
+                            <a href="/contact" class="border border-stone-700 text-stone-300 px-7 py-3.5 rounded-md text-base font-semibold hover:bg-stone-800/60 transition">联系顾问</a>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-stone-700/50">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop" alt="城市核心商业综合体" class="w-full h-auto object-cover aspect-[4/3] grayscale-[40%] brightness-75 hover:grayscale-0 transition duration-700">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通→无缝资产联动) -->
+        <section class="border-t border-stone-800/60 bg-stone-900/40">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-24">
+                <div class="grid md:grid-cols-2 gap-14 items-center">
+                    <div class="order-1 md:order-1 rounded-xl overflow-hidden shadow-2xl ring-1 ring-stone-700/30">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="写字楼大堂沟通场景" class="w-full h-auto object-cover aspect-[4/3] grayscale-[30%] brightness-75">
+                    </div>
+                    <div class="order-2 md:order-2 space-y-5">
+                        <h2 class="text-4xl md:text-4xl font-light text-stone-100">全维联动 · 打破资产孤岛</h2>
+                        <p class="text-stone-400 text-lg leading-relaxed">
+                            打破传统地产信息孤岛，通过智能物联与数字孪生，让业主、租户与运营方实时同步。集成企业生态，一键触达全球资源。
+                        </p>
+                        <div class="flex flex-wrap gap-6 pt-4 text-stone-300">
+                            <span class="flex items-center gap-2"><span class="text-stone-500 text-xl">◉</span> 端到端资产加密</span>
+                            <span class="flex items-center gap-2"><span class="text-stone-500 text-xl">◉</span> 无限历史数据</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流→深度整合商业) -->
+        <section class="bg-stone-950/90 border-t border-stone-800/50">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-24">
+                <div class="grid md:grid-cols-2 gap-14 items-center">
+                    <div class="space-y-5">
+                        <h2 class="text-4xl md:text-4xl font-light text-stone-100">深度整合 · 商业生态</h2>
+                        <p class="text-stone-400 text-lg leading-relaxed">
+                            与您使用的工具无缝连接：Jira、Salesforce、能源管理系统。在资产模型中创建任务、分享报告、触发自动化运维。
+                        </p>
+                        <div class="flex gap-4 pt-4">
+                            <span class="border border-stone-700 rounded-full px-5 py-2 text-sm text-stone-300 bg-stone-800/30">存量地图导入</span>
+                            <span class="border border-stone-700 rounded-full px-5 py-2 text-sm text-stone-300 bg-stone-800/30">开放API</span>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl ring-1 ring-stone-700/30">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop" alt="数字化工作流与地产" class="w-full h-auto object-cover aspect-[4/3] grayscale-[40%] brightness-75">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台体验→全维资产视图) -->
+        <section class="border-t border-stone-800/60 bg-stone-900/30">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-24 text-center">
+                <div class="max-w-2xl mx-auto space-y-4 pb-14">
+                    <h2 class="text-4xl md:text-4xl font-light text-stone-100">全终端 · 一致体验</h2>
+                    <p class="text-stone-400 text-lg">无论是在总部驾驶舱、移动端还是web端，资产数据实时同步，操控流畅如一。</p>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-stone-700/40 max-w-5xl mx-auto">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2069&auto=format&fit=crop" alt="多设备商业地产管理" class="w-full h-auto object-cover aspect-[16/9] grayscale-[25%] brightness-75">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为商务打造→专为商业地产打造) -->
+        <section class="bg-stone-950 border-t border-stone-800/50">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 py-20">
+                <div class="text-center max-w-2xl mx-auto space-y-3 pb-16">
+                    <h2 class="text-4xl md:text-4xl font-light text-stone-100">专为商业地产打造</h2>
+                    <p class="text-stone-400">从资本安全到运营效率，面面俱到</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-stone-900/40 border border-stone-800 p-7 rounded-2xl backdrop-blur-sm space-y-3">
+                        <div class="text-5xl text-stone-300">🔒</div>
+                        <h3 class="text-xl font-medium text-stone-200">资产级安全</h3>
+                        <p class="text-stone-500">端到端加密、生物识别门禁、DLP策略，满足全球REITs合规。</p>
+                    </div>
+                    <div class="bg-stone-900/40 border border-stone-800 p-7 rounded-2xl backdrop-blur-sm space-y-3">
+                        <div class="text-5xl text-stone-300">⚡</div>
+                        <h3 class="text-xl font-medium text-stone-200">实时同步</h3>
+                        <p class="text-stone-500">毫秒级租务响应，跨区域已读回执与能耗状态。</p>
+                    </div>
+                    <div class="bg-stone-900/40 border border-stone-800 p-7 rounded-2xl backdrop-blur-sm space-y-3">
+                        <div class="text-5xl text-stone-300">🧩</div>
+                        <h3 class="text-xl font-medium text-stone-200">无限集成</h3>
+                        <p class="text-stone-500">连接200+企业应用，自定楼宇机器人、自动化巡检。</p>
+                    </div>
+                    <div class="bg-stone-900/40 border border-stone-800 p-7 rounded-2xl backdrop-blur-sm space-y-3">
+                        <div class="text-5xl text-stone-300">📊</div>
+                        <h3 class="text-xl font-medium text-stone-200">分析洞察</h3>
+                        <p class="text-stone-500">租户活跃度、坪效、人流热力数据可视化。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (核心团队) 替换为商业地产背景 -->
+        <section class="border-t border-stone-800/60 bg-stone-900/30">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 py-20">
+                <div class="text-center max-w-xl mx-auto space-y-3 pb-16">
+                    <h2 class="text-4xl md:text-4xl font-light text-stone-100">核心团队</h2>
+                    <p class="text-stone-400">来自全球顶尖地产与科技机构的专家</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-stone-800/30 border border-stone-700/60 rounded-2xl p-5 text-center space-y-3">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="张伟" class="w-28 h-28 rounded-full mx-auto object-cover grayscale ring-2 ring-stone-600">
+                        <h3 class="text-xl font-medium text-stone-200">张伟</h3>
+                        <p class="text-stone-400 text-sm">CEO & 创始人</p>
+                        <p class="text-stone-500 text-xs">前铁狮门高级副总裁</p>
+                    </div>
+                    <div class="bg-stone-800/30 border border-stone-700/60 rounded-2xl p-5 text-center space-y-3">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="陈敏" class="w-28 h-28 rounded-full mx-auto object-cover grayscale ring-2 ring-stone-600">
+                        <h3 class="text-xl font-medium text-stone-200">陈敏</h3>
+                        <p class="text-stone-400 text-sm">CTO</p>
+                        <p class="text-stone-500 text-xs">智慧楼宇分布式专家</p>
+                    </div>
+                    <div class="bg-stone-800/30 border border-stone-700/60 rounded-2xl p-5 text-center space-y-3">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="王磊" class="w-28 h-28 rounded-full mx-auto object-cover grayscale ring-2 ring-stone-600">
+                        <h3 class="text-xl font-medium text-stone-200">王磊</h3>
+                        <p class="text-stone-400 text-sm">产品总监</p>
+                        <p class="text-stone-500 text-xs">前微软商业应用架构</p>
+                    </div>
+                    <div class="bg-stone-800/30 border border-stone-700/60 rounded-2xl p-5 text-center space-y-3">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" alt="李莉" class="w-28 h-28 rounded-full mx-auto object-cover grayscale ring-2 ring-stone-600">
+                        <h3 class="text-xl font-medium text-stone-200">李莉</h3>
+                        <p class="text-stone-400 text-sm">设计负责人</p>
+                        <p class="text-stone-500 text-xs">Gensler前资深设计师</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (金属灰卡片) -->
+        <section class="bg-stone-950 border-t border-stone-800/60 py-20">
+            <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-stone-900/60 border border-stone-700 rounded-xl p-6 backdrop-blur-sm">
+                    <div class="text-4xl font-light text-stone-100">500+</div>
+                    <div class="text-stone-400 text-sm mt-2">商业客户</div>
+                </div>
+                <div class="bg-stone-900/60 border border-stone-700 rounded-xl p-6 backdrop-blur-sm">
+                    <div class="text-4xl font-light text-stone-100">98%</div>
+                    <div class="text-stone-400 text-sm mt-2">租户留存率</div>
+                </div>
+                <div class="bg-stone-900/60 border border-stone-700 rounded-xl p-6 backdrop-blur-sm">
+                    <div class="text-4xl font-light text-stone-100">20M+</div>
+                    <div class="text-stone-400 text-sm mt-2">日客流</div>
+                </div>
+                <div class="bg-stone-900/60 border border-stone-700 rounded-xl p-6 backdrop-blur-sm">
+                    <div class="text-4xl font-light text-stone-100">24/7</div>
+                    <div class="text-stone-400 text-sm mt-2">资产护航</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (灵活定价 → 商业地产服务) -->
+        <section class="border-t border-stone-800/60 bg-stone-900/30 py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto space-y-3 pb-16">
+                    <h2 class="text-4xl md:text-4xl font-light text-stone-100">灵活合作</h2>
+                    <p class="text-stone-400">按需选择，无隐藏费用</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="bg-stone-900/70 border border-stone-700 rounded-2xl p-8 space-y-6">
+                        <h3 class="text-2xl font-light text-stone-100">基础版</h3>
+                        <div class="flex items-baseline gap-1"><span class="text-4xl font-light text-stone-100">49</span><span class="text-stone-500">/月/人</span></div>
+                        <ul class="space-y-3 text-stone-400">
+                            <li class="flex gap-2"><span class="text-stone-500">✓</span> 资产历史1年</li>
+                            <li class="flex gap-2"><span class="text-stone-500">✓</span> 10GB 文档存储</li>
+                            <li class="flex gap-2"><span class="text-stone-500">✓</span> 基础能耗集成</li>
+                        </ul>
+                        <a href="/signup/basic" class="block w-full border border-stone-600 text-stone-200 text-center py-3 rounded-md hover:bg-stone-800">选择基础版</a>
+                    </div>
+                    <!-- 商业版 热门 -->
+                    <div class="bg-stone-800/80 border-2 border-stone-500 rounded-2xl p-8 space-y-6 shadow-xl scale-105 relative">
+                        <span class="absolute -top-4 right-6 bg-stone-400 text-stone-900 px-4 py-1 rounded-full text-xs font-bold">热门</span>
+                        <h3 class="text-2xl font-light text-stone-50">商业版</h3>
+                        <div class="flex items-baseline gap-1"><span class="text-4xl font-light text-stone-100">99</span><span class="text-stone-400">/月/人</span></div>
+                        <ul class="space-y-3 text-stone-300">
+                            <li class="flex gap-2"><span class="text-stone-400">✓</span> 无限历史</li>
+                            <li class="flex gap-2"><span class="text-stone-400">✓</span> 100GB 存储</li>
+                            <li class="flex gap-2"><span class="text-stone-400">✓</span> 所有集成 + API</li>
+                            <li class="flex gap-2"><span class="text-stone-400">✓</span> 高级支持</li>
+                        </ul>
+                        <a href="/signup/business" class="block w-full bg-stone-200 text-stone-900 text-center py-3 rounded-md font-semibold hover:bg-white">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-stone-900/70 border border-stone-700 rounded-2xl p-8 space-y-6">
+                        <h3 class="text-2xl font-light text-stone-100">企业版</h3>
+                        <div class="text-4xl font-light text-stone-100">定制</div>
+                        <ul class="space-y-3 text-stone-400">
+                            <li class="flex gap-2"><span class="text-stone-500">✓</span> 本地部署选项</li>
+                            <li class="flex gap-2"><span class="text-stone-500">✓</span> 无限存储</li>
+                            <li class="flex gap-2"><span class="text-stone-500">✓</span> 专属客户成功</li>
+                            <li class="flex gap-2"><span class="text-stone-500">✓</span> SSO/合规</li>
+                        </ul>
+                        <a href="/contact" class="block w-full border border-stone-600 text-stone-200 text-center py-3 rounded-md hover:bg-stone-800">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 -->
+        <section class="bg-stone-950 border-t border-stone-800/60 py-20">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-4xl font-light text-stone-100 text-center mb-14">常见问题</h2>
+                <div class="space-y-6">
+                    <div class="border border-stone-800 rounded-xl p-6 bg-stone-900/30">
+                        <h3 class="text-xl font-medium text-stone-200">支持本地部署商业数据吗？</h3>
+                        <p class="text-stone-400 mt-2">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求，尤其适合大型商业地产。</p>
+                    </div>
+                    <div class="border border-stone-800 rounded-xl p-6 bg-stone-900/30">
+                        <h3 class="text-xl font-medium text-stone-200">可以试用多久？</h3>
+                        <p class="text-stone-400 mt-2">所有新用户均可享受30天全功能免费试用，无需信用卡，体验完整资产管理。</p>
+                    </div>
+                    <div class="border border-stone-800 rounded-xl p-6 bg-stone-900/30">
+                        <h3 class="text-xl font-medium text-stone-200">数据存储区域可以选吗？</h3>
+                        <p class="text-stone-400 mt-2">数据存储在云端的独立数据库，可选中国大陆或海外区域，符合当地法规。</p>
+                    </div>
+                    <div class="border border-stone-800 rounded-xl p-6 bg-stone-900/30">
+                        <h3 class="text-xl font-medium text-stone-200">如何迁移现有租户/资产记录？</h3>
+                        <p class="text-stone-400 mt-2">我们提供专业迁移工具，支持从传统OA、Excel、Salesforce导入历史数据。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 -->
+        <section class="border-t border-stone-800 bg-stone-900/80 py-24">
+            <div class="max-w-3xl mx-auto text-center px-6 space-y-8">
+                <h2 class="text-5xl md:text-5xl font-light text-stone-100">立即提升商业资产效能</h2>
+                <p class="text-xl text-stone-400">加入数百家信任我们的企业，开启高效地产运营之旅。</p>
+                <div class="flex flex-wrap justify-center gap-5">
+                    <a href="/signup" class="bg-stone-100 text-stone-900 px-8 py-4 rounded-md text-lg font-semibold hover:bg-white shadow-lg">免费试用30天</a>
+                    <a href="/demo" class="border border-stone-600 text-stone-300 px-8 py-4 rounded-md text-lg font-semibold hover:bg-stone-800/60">预约演示</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 (简洁版权声明) 金属灰 -->
+    <footer class="border-t border-stone-800/70 bg-stone-950 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-stone-500 text-sm">
+            © 2025 磐石置业 (METROSTONE). 版权所有 · 商业地产革新者
+        </div>
+    </footer>
+</body>
+</html>

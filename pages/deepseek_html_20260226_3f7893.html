@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>声浪科技 · 专业音响解决方案</title>
+    <!-- Tailwind via CDN + 基础层样式 (无自定义) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入remixicon用作简洁图标点缀，完全不影响tailwind设计，仅作视觉辅助（非必需但可提升潮酷感） -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-black text-white font-sans antialiased">
+
+    <!-- 导航栏 (黑红基调，科技感) -->
+    <header class="border-b border-red-600/20 bg-black/95 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center shadow-lg shadow-red-600/30">
+                    <i class="ri-speaker-3-line text-white text-xl"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-white to-red-400 bg-clip-text text-transparent">SONIC<span class="text-red-600">WAVE</span></span>
+            </div>
+            <!-- 导航菜单 (科技感字体) -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#" class="text-gray-300 hover:text-red-500 transition">产品</a>
+                <a href="#" class="text-gray-300 hover:text-red-500 transition">案例</a>
+                <a href="#" class="text-gray-300 hover:text-red-500 transition">生态</a>
+                <a href="#" class="text-gray-300 hover:text-red-500 transition">支持</a>
+            </nav>
+            <!-- CTA 按钮 -->
+            <div class="flex items-center gap-3">
+                <button class="hidden sm:inline-block text-sm text-red-400 hover:text-red-300 font-medium">登录</button>
+                <button class="bg-red-600 hover:bg-red-700 text-white text-sm font-semibold px-5 py-2 rounded-full shadow-lg shadow-red-600/30 transition flex items-center gap-1">
+                    <i class="ri-headphone-line"></i> 预约试听
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (专业音响数据) -->
+        <section class="relative bg-gradient-to-b from-black via-zinc-950 to-black py-20 md:py-28">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-black leading-tight">
+                        <span class="text-red-600">声浪·</span>定义现场<br>沉浸式音响系统
+                    </h1>
+                    <p class="text-gray-400 text-lg mt-6 max-w-lg">专为大型场馆、巡演及顶级俱乐部设计的线阵列系统，180dB峰值声压，零失真 DSP 引擎。</p>
+                    <p class="text-sm text-gray-500 mt-2">德国工艺 · 军工级材料 · 无限连接</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-full shadow-xl shadow-red-600/30 transition flex items-center gap-2"><i class="ri-customer-service-2-line"></i> 获取方案</a>
+                        <a href="#" class="border border-red-600/50 text-red-500 hover:bg-red-600/10 font-semibold px-8 py-4 rounded-full transition">产品目录</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img class="rounded-2xl border border-red-600/30 shadow-2xl shadow-red-900/30" src="https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1935&auto=format&fit=crop" alt="专业线阵音响系统">
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-red-600/20 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 (音响行业生态) -->
+        <section class="py-16 border-y border-red-600/10 bg-zinc-950">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center">全球顶级<span class="text-red-600">·</span>声学伙伴</h2>
+                <p class="text-gray-500 text-center mt-2">单元、功放、DSP 深度战略合作</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+                    <!-- 模拟6个伙伴 -->
+                    <div class="bg-black/60 p-4 rounded-xl border border-red-600/20 flex flex-col items-center text-center"><img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?q=80&w=2070&auto=format&fit=crop" class="h-12 w-12 object-contain rounded-full mb-2 bg-white/5"><span class="font-semibold">B&C</span><span class="text-xs text-gray-500">意大利</span></div>
+                    <div class="bg-black/60 p-4 rounded-xl border border-red-600/20 flex flex-col items-center text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&auto=format" class="h-12 w-12 object-contain rounded-full mb-2 bg-white/5"><span class="font-semibold">Powersoft</span><span class="text-xs text-gray-500">意大利</span></div>
+                    <div class="bg-black/60 p-4 rounded-xl border border-red-600/20 flex flex-col items-center text-center"><img src="https://images.unsplash.com/photo-1614680376593-902f74cf0d41?q=80&w=1974&auto=format&fit=crop" class="h-12 w-12 object-contain rounded-full mb-2 bg-white/5"><span class="font-semibold">RCF</span><span class="text-xs text-gray-500">意大利</span></div>
+                    <div class="bg-black/60 p-4 rounded-xl border border-red-600/20 flex flex-col items-center text-center"><img src="https://images.unsplash.com/photo-1549923746-c502d488b3ea?q=80&w=2071&auto=format&fit=crop" class="h-12 w-12 object-contain rounded-full mb-2 bg-white/5"><span class="font-semibold">DAS Audio</span><span class="text-xs text-gray-500">西班牙</span></div>
+                    <div class="bg-black/60 p-4 rounded-xl border border-red-600/20 flex flex-col items-center text-center"><img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?q=80&w=1974&auto=format&fit=crop" class="h-12 w-12 object-contain rounded-full mb-2 bg-white/5"><span class="font-semibold">QSC</span><span class="text-xs text-gray-500">美国</span></div>
+                    <div class="bg-black/60 p-4 rounded-xl border border-red-600/20 flex flex-col items-center text-center"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=200&auto=format" class="h-12 w-12 object-contain rounded-full mb-2 bg-white/5"><span class="font-semibold">Neutrik</span><span class="text-xs text-gray-500">列支敦士登</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (4个音响核心特性) -->
+        <section class="py-20 bg-black">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center">硬核<span class="text-red-600">·</span>技术栈</h2>
+                <p class="text-gray-500 text-center mt-2">从单元到算法，每个细节都是专利</p>
+                <div class="grid md:grid-cols-4 gap-6 mt-16">
+                    <div class="bg-zinc-950/80 p-6 rounded-2xl border border-red-600/20 hover:border-red-600/50 transition"><span class="text-4xl">⚡</span><h3 class="text-xl font-bold mt-4">钕磁单元</h3><p class="text-gray-400 text-sm mt-2">双钕磁高音，3寸音圈，连续声压级146dB。</p></div>
+                    <div class="bg-zinc-950/80 p-6 rounded-2xl border border-red-600/20 hover:border-red-600/50 transition"><span class="text-4xl">🧩</span><h3 class="text-xl font-bold mt-4">DSP 引擎</h3><p class="text-gray-400 text-sm mt-2">96kHz 浮点处理，FIR/IIR 滤波，毫秒级相位校准。</p></div>
+                    <div class="bg-zinc-950/80 p-6 rounded-2xl border border-red-600/20 hover:border-red-600/50 transition"><span class="text-4xl">🔒</span><h3 class="text-xl font-bold mt-4">航空铝箱体</h3><p class="text-gray-400 text-sm mt-2">IP54 防护，全天候演出，轻量化承重结构。</p></div>
+                    <div class="bg-zinc-950/80 p-6 rounded-2xl border border-red-600/20 hover:border-red-600/50 transition"><span class="text-4xl">📊</span><h3 class="text-xl font-bold mt-4">实时监测</h3><p class="text-gray-400 text-sm mt-2">每只音箱功率、温度、阻抗云端可视化。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (线阵优势) -->
+        <section class="py-16 bg-zinc-950">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=2070&auto=format&fit=crop" class="rounded-2xl border border-red-600/30 shadow-2xl" alt="线阵现场">
+                <div>
+                    <h2 class="text-4xl font-bold">垂直阵列<span class="text-red-600">.</span> 覆盖无死角</h2>
+                    <p class="text-gray-400 text-lg mt-4">专为体育场、音乐节设计的恒定曲率线阵列，远场投射依然保持平坦频响。搭配专用吊装件，12人3小时可完成主扩系统搭建。</p>
+                    <div class="flex gap-6 mt-8 text-sm font-medium">
+                        <span class="bg-red-600/20 text-red-500 px-4 py-2 rounded-full">12° 垂直可调</span>
+                        <span class="bg-red-600/20 text-red-500 px-4 py-2 rounded-full">碳纤维波导</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (功放) -->
+        <section class="py-16 bg-black">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold">DSP + 功放<span class="text-red-600">.</span> 一体化模块</h2>
+                    <p class="text-gray-400 text-lg mt-4">每只音箱内置四通道 D 类功放，总功率 5000W。板载 Dante / AES67 网络音频，通过单一网线传输控制与信号。</p>
+                    <div class="flex gap-6 mt-8 text-sm font-medium">
+                        <span class="bg-red-600/20 text-red-500 px-4 py-2 rounded-full">90-260V 自适应</span>
+                        <span class="bg-red-600/20 text-red-500 px-4 py-2 rounded-full">N+1 冗余</span>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1589003077984-894e133dabab?q=80&w=1964&auto=format&fit=crop" class="rounded-2xl border border-red-600/30 shadow-2xl" alt="DSP功放模块">
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (3个案例) -->
+        <section class="py-20 bg-zinc-950">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center">头部场馆<span class="text-red-600">·</span>信赖之选</h2>
+                <p class="text-gray-500 text-center mt-2">从梅赛德斯到鸟巢，我们的声音无处不在</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <div class="bg-black p-6 rounded-2xl border border-red-600/20"><img src="https://images.unsplash.com/photo-1568480289356-5a75d0fd47fc?q=80&w=1974&auto=format&fit=crop" class="h-40 w-full object-cover rounded-lg"><div class="mt-4"><span class="text-xs text-red-500">体育馆</span><h3 class="font-bold text-xl">上海东方体育中心</h3><p class="text-gray-400 text-sm mt-2">“替换原有系统后，混响时间降低30%，语言清晰度大幅提升。”</p><div class="flex items-center gap-2 mt-4"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200" class="w-8 h-8 rounded-full"><span class="text-sm">王磊 · 音响总监</span></div></div></div>
+                    <div class="bg-black p-6 rounded-2xl border border-red-600/20"><img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?q=80&w=2069&auto=format&fit=crop" class="h-40 w-full object-cover rounded-lg"><div class="mt-4"><span class="text-xs text-red-500">livehouse</span><h3 class="font-bold text-xl">成都 · 麓湖水上剧场</h3><p class="text-gray-400 text-sm mt-2">“超低音下潜有力且干净，调音师几乎不用EQ。”</p><div class="flex items-center gap-2 mt-4"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200" class="w-8 h-8 rounded-full"><span class="text-sm">张茜 · 主理人</span></div></div></div>
+                    <div class="bg-black p-6 rounded-2xl border border-red-600/20"><img src="https://images.unsplash.com/photo-1461783470466-185038239ee8?q=80&w=2070&auto=format&fit=crop" class="h-40 w-full object-cover rounded-lg"><div class="mt-4"><span class="text-xs text-red-500">音乐节</span><h3 class="font-bold text-xl">MTA 天漠音乐节</h3><p class="text-gray-400 text-sm mt-2">“主舞台覆盖全场，前后场声压差仅3dB。”</p><div class="flex items-center gap-2 mt-4"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200" class="w-8 h-8 rounded-full"><span class="text-sm">李锐 · 制作总监</span></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (音响租赁/购买套餐) -->
+        <section class="py-20 bg-black">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center">灵活<span class="text-red-600">·</span>声装方案</h2>
+                <p class="text-gray-500 text-center">租赁 / 采购 / 按项目定制</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 基础版 -->
+                    <div class="bg-zinc-950 p-8 rounded-3xl border border-red-600/20"><h3 class="text-2xl font-bold">单场租赁</h3><p class="text-5xl font-black mt-6 text-red-500">¥8<span class="text-base text-gray-500">k起</span></p><p class="text-sm text-gray-400">/场次</p><ul class="mt-6 space-y-3 text-gray-300"><li>✓ 线阵 8+4 系统</li><li>✓ 功放/处理器</li><li>✓ 基础技术支持</li></ul><button class="w-full mt-8 border border-red-600 text-red-500 py-3 rounded-full hover:bg-red-600 hover:text-black transition">询价</button></div>
+                    <!-- 商业版 热门 -->
+                    <div class="bg-zinc-950 p-8 rounded-3xl border-2 border-red-600 relative"><span class="absolute top-0 right-8 bg-red-600 text-black px-3 py-1 text-xs -translate-y-1/2 rounded-full">热门</span><h3 class="text-2xl font-bold">年度合作</h3><p class="text-5xl font-black mt-6 text-red-500">¥68<span class="text-base text-gray-500">k</span></p><p class="text-sm text-gray-400">/年 (12场次)</p><ul class="mt-6 space-y-3 text-gray-300"><li>✓ 双12寸线阵 16+8</li><li>✓ 备用功放/音箱</li><li>✓ 专属工程师跟场</li><li>✓ 保险/运输</li></ul><button class="w-full mt-8 bg-red-600 text-black py-3 rounded-full font-semibold hover:bg-red-700 transition">立即预约</button></div>
+                    <!-- 企业版 -->
+                    <div class="bg-zinc-950 p-8 rounded-3xl border border-red-600/20"><h3 class="text-2xl font-bold">固定安装</h3><p class="text-5xl font-black mt-6 text-red-500">定制</p><ul class="mt-6 space-y-3 text-gray-300"><li>✓ 场馆声学设计</li><li>✓ 固定吊挂/暗装</li><li>✓ 长期运维</li><li>✓ 系统培训</li></ul><button class="w-full mt-8 border border-red-600 text-red-500 py-3 rounded-full hover:bg-red-600 hover:text-black transition">联系专家</button></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (音响FAQ) -->
+        <section class="py-20 bg-zinc-950">
+            <div class="max-w-3xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center">常见问题</h2>
+                <div class="mt-12 space-y-4">
+                    <div class="bg-black p-5 rounded-xl border border-red-600/20"><button class="w-full text-left flex justify-between"><span class="font-semibold">你们的线阵和进口品牌比怎么样？</span><span class="text-red-600">+</span></button><p class="text-gray-400 text-sm mt-2">全部单元自主研发，且通过欧盟CE认证，在多项盲听测试中不输顶级品牌。提供5年质保。</p></div>
+                    <div class="bg-black p-5 rounded-xl border border-red-600/20"><button class="w-full text-left flex justify-between"><span class="font-semibold">可以到现场试听吗？</span><span class="text-red-600">+</span></button><p class="text-gray-400 text-sm mt-2">我们在北京、上海、广州、成都设有演示厅，可预约体验。也提供户外试听车。</p></div>
+                    <div class="bg-black p-5 rounded-xl border border-red-600/20"><button class="w-full text-left flex justify-between"><span class="font-semibold">是否支持 Dante 网络？</span><span class="text-red-600">+</span></button><p class="text-gray-400 text-sm mt-2">全系功放内置 Dante 卡槽，可选配，支持主流调音台直连。</p></div>
+                    <div class="bg-black p-5 rounded-xl border border-red-600/20"><button class="w-full text-left flex justify-between"><span class="font-semibold">租赁需要押金吗？</span><span class="text-red-600">+</span></button><p class="text-gray-400 text-sm mt-2">根据信用评估可免押金，具体咨询区域经理。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 (底部行动号召) -->
+        <section class="py-20 bg-gradient-to-r from-red-900/30 to-black border-y border-red-600/30">
+            <div class="max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-5xl font-black">开启<span class="text-red-600">震撼之声</span></h2>
+                <p class="text-gray-300 text-xl mt-4">为你的下一个项目选择专业音响系统</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-10">
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-black font-bold px-10 py-4 rounded-full text-lg shadow-2xl shadow-red-600/50 flex items-center gap-2"><i class="ri-calendar-check-line"></i> 预约免费测试</a>
+                    <a href="#" class="border border-red-600 text-red-500 hover:bg-red-600/10 font-bold px-10 py-4 rounded-full text-lg">下载产品手册</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 (黑红风格，含Logo、版权、地址、联系方式、微信二维码) -->
+    <footer class="bg-black border-t border-red-600/20 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+            <!-- 品牌 + 版权 -->
+            <div class="lg:col-span-1">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center"><i class="ri-speaker-3-line text-white"></i></div>
+                    <span class="text-xl font-bold text-white">SONICWAVE</span>
+                </div>
+                <p class="text-xs text-gray-600 mt-4 leading-relaxed">高功率专业音响系统<br>德国研发 · 中国制造</p>
+                <p class="text-gray-600 text-xs mt-6">© 2025 声浪科技 版权所有<br>粤A1-20248888号</p>
+            </div>
+            <!-- 地址 -->
+            <div>
+                <h4 class="text-red-500 font-semibold text-sm tracking-wider">总部地址</h4>
+                <address class="not-italic text-gray-400 text-sm mt-3">上海市浦东新区<br>声浪产业园A1座<br>邮编：201206</address>
+                <p class="text-gray-500 text-xs mt-2"><i class="ri-map-pin-line text-red-600"></i> 全球12个服务中心</p>
+            </div>
+            <!-- 联系方式 -->
+            <div>
+                <h4 class="text-red-500 font-semibold text-sm tracking-wider">联系</h4>
+                <ul class="mt-3 space-y-2 text-sm text-gray-400">
+                    <li><i class="ri-phone-line text-red-600 mr-2"></i>400-8820-音响</li>
+                    <li><i class="ri-mail-line text-red-600 mr-2"></i>pro@sonicwave.tech</li>
+                    <li><i class="ri-customer-service-2-line text-red-600 mr-2"></i>24h 技术支持</li>
+                </ul>
+            </div>
+            <!-- 微信公众号二维码 (模拟) -->
+            <div>
+                <h4 class="text-red-500 font-semibold text-sm tracking-wider">官方微信</h4>
+                <div class="mt-3 bg-white p-2 rounded-lg w-24 h-24 flex items-center justify-center border border-red-600">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://sonicwave.example" class="w-full h-full object-contain" alt="wechat qr">
+                </div>
+                <p class="text-gray-500 text-xs mt-2">扫一扫 关注声浪</p>
+            </div>
+            <!-- 二维码备用 / 社交占位 -->
+            <div class="flex flex-col">
+                <h4 class="text-red-500 font-semibold text-sm tracking-wider">即刻咨询</h4>
+                <div class="flex gap-3 mt-4 text-2xl text-gray-500">
+                    <i class="ri-instagram-line hover:text-red-600"></i>
+                    <i class="ri-youtube-line hover:text-red-600"></i>
+                    <i class="ri-tiktok-line hover:text-red-600"></i>
+                </div>
+                <p class="text-gray-600 text-xs mt-6">官方演示预约<br>线上展厅 360° 体验</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-red-600/10 text-center text-gray-600 text-xs">
+            *所有数据基于实验室测试，产品不断革新，最终解释权归声浪科技所有。
+        </div>
+    </footer>
+
+</body>
+</html>

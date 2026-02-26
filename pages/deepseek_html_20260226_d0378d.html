@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅昌拍卖 · 古典艺术交易平台</title>
+    <!-- Tailwind via CDN + 朱红/墨色基调 (无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 简单配置：朱红作为主色，墨色作为辅助，保留古典衬线字体氛围(通过字族) 完全使用tailwind类，无自定义css -->
+</head>
+<body class="bg-stone-50 font-serif text-stone-800 antialiased">
+
+    <!-- 导航栏 (包含logo,标题,导航菜单,CTA) 朱红墨色搭配 -->
+    <header class="border-b border-stone-200 bg-white/90 backdrop-blur-sm sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- logo + 标题  (用文字模拟logo) -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-red-800 rounded-md flex items-center justify-center text-white text-xl font-bold shadow">雅</div>
+                    <span class="text-2xl font-medium tracking-wider text-red-900">雅昌拍卖<span class="text-stone-600 text-base ml-2 font-light hidden sm:inline-block">· 百年传承</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) 墨色为主 -->
+                <nav class="hidden md:flex space-x-8 text-stone-700">
+                    <a href="#" class="hover:text-red-700 transition text-lg border-b-2 border-transparent hover:border-red-700 pb-1">拍卖场</a>
+                    <a href="#" class="hover:text-red-700 transition text-lg border-b-2 border-transparent hover:border-red-700 pb-1">艺术家</a>
+                    <a href="#" class="hover:text-red-700 transition text-lg border-b-2 border-transparent hover:border-red-700 pb-1">资讯</a>
+                    <a href="#" class="hover:text-red-700 transition text-lg border-b-2 border-transparent hover:border-red-700 pb-1">关于我们</a>
+                </nav>
+                <!-- CTA 朱红按钮 -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hidden lg:inline-block text-stone-600 hover:text-red-800 px-4 py-2 text-lg">登录</a>
+                    <a href="#" class="bg-red-800 hover:bg-red-900 text-white px-5 py-2.5 rounded-md shadow-md transition text-lg font-medium tracking-wide">注册竞拍</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========= 首屏区块 (艺术品拍卖hero) ========= 使用JSON结构 -->
+        <section class="relative bg-stone-100 border-b border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-red-900 leading-tight">臻品雅集 · 墨韵流传</h1>
+                        <p class="text-2xl text-stone-600 mt-4 italic">古代书画与宫廷瓷器专场</p>
+                        <p class="text-lg text-stone-500 mt-3 border-l-4 border-red-700 pl-4">雅昌拍卖深耕艺术领域二十载，为您呈现2025春拍精品。从宋元名迹到近现代大师，每件拍品均经权威鉴定。</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="#" class="bg-red-800 text-white px-8 py-3 text-lg rounded shadow hover:bg-red-900 transition">图录精览</a>
+                            <a href="#" class="border border-red-800 text-red-800 px-8 py-3 text-lg rounded hover:bg-red-50 transition">委托竞投</a>
+                        </div>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-2xl border-4 border-white">
+                        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="古代书画卷轴" class="w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 合作伙伴区块 (文博机构) ========= -->
+        <section class="bg-white py-16 border-b border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-red-900 text-center">合作机构</h2>
+                <p class="text-xl text-stone-500 text-center mt-2">与全球顶尖博物馆及基金会深度合作</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+                    <!-- 合作伙伴卡片 使用JSON数据格式中的logo占位 -->
+                    <div class="flex flex-col items-center p-4 bg-stone-50 rounded border border-stone-200">
+                        <div class="w-20 h-20 bg-stone-200 rounded-full flex items-center justify-center text-4xl text-red-800">🏛️</div>
+                        <span class="font-bold mt-3 text-red-900">故宫文创</span>
+                        <span class="text-xs text-stone-500">战略伙伴</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-stone-50 rounded border border-stone-200">
+                        <div class="w-20 h-20 bg-stone-200 rounded-full flex items-center justify-center text-4xl text-red-800">🎨</div>
+                        <span class="font-bold mt-3 text-red-900">中国嘉德</span>
+                        <span class="text-xs text-stone-500">拍卖合作</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-stone-50 rounded border border-stone-200">
+                        <div class="w-20 h-20 bg-stone-200 rounded-full flex items-center justify-center text-4xl text-red-800">🖼️</div>
+                        <span class="font-bold mt-3 text-red-900">西泠印社</span>
+                        <span class="text-xs text-stone-500">学术支持</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-stone-50 rounded border border-stone-200">
+                        <div class="w-20 h-20 bg-stone-200 rounded-full flex items-center justify-center text-4xl text-red-800">🏺</div>
+                        <span class="font-bold mt-3 text-red-900">大都会博物馆</span>
+                        <span class="text-xs text-stone-500">授权合作</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-stone-50 rounded border border-stone-200">
+                        <div class="w-20 h-20 bg-stone-200 rounded-full flex items-center justify-center text-4xl text-red-800">📜</div>
+                        <span class="font-bold mt-3 text-red-900">苏富比</span>
+                        <span class="text-xs text-stone-500">数据伙伴</span>
+                    </div>
+                    <div class="flex flex-col items-center p-4 bg-stone-50 rounded border border-stone-200">
+                        <div class="w-20 h-20 bg-stone-200 rounded-full flex items-center justify-center text-4xl text-red-800">🇨🇳</div>
+                        <span class="font-bold mt-3 text-red-900">国家图书馆</span>
+                        <span class="text-xs text-stone-500">文献合作</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左图右文区块 (拍卖预展) ========= -->
+        <section class="bg-stone-50 py-20 border-b border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1611339555312-e6077427421c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80" alt="瓷器特展" class="rounded-lg shadow-xl border border-stone-300">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-red-900">明清官窑 · 预展启幕</h2>
+                        <p class="text-lg text-stone-600 mt-6 leading-relaxed">本次春拍甄选明清官窑瓷器三十余件，包括永宣青花、雍正粉彩、乾隆珐琅彩。所有器物均经故宫博物院专家逐一点交，附权威鉴定证书。预展期间开放上手鉴赏，需提前预约。</p>
+                        <div class="flex items-center gap-6 mt-8">
+                            <span class="flex items-center text-stone-700"><span class="text-red-700 text-2xl mr-2">✓</span> 皇家气韵</span>
+                            <span class="flex items-center text-stone-700"><span class="text-red-700 text-2xl mr-2">✓</span> 流传有序</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左文右图区块 (学术背书) ========= -->
+        <section class="bg-white py-20 border-b border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-red-900">权威鉴定 · 传承有序</h2>
+                        <p class="text-lg text-stone-600 mt-6 leading-relaxed">雅昌艺术研究院联合海内外学者，为每件拍品建立详尽的 provenance 档案。从印鉴比对到材质分析，科学检测与目鉴结合，确保真伪无疑。2025春拍特别推出“石渠宝笈”著录专题。</p>
+                        <div class="flex flex-wrap gap-3 mt-8">
+                            <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">著录考证</span>
+                            <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">科技检测</span>
+                            <span class="bg-red-100 text-red-800 px-4 py-2 rounded-full text-sm font-medium">专家顾问团</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1461360228754-6e81c478b882?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="古籍鉴定" class="rounded-lg shadow-xl border border-stone-300">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 上文下图区块 (全平台体验：多设备同步概念图) ========= -->
+        <section class="bg-stone-50 py-16 border-b border-stone-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-red-900">随时随地 · 云端竞投</h2>
+                <p class="text-xl text-stone-500 mt-3">桌面、移动、小程序实时同步，出价提醒快人一步</p>
+                <div class="mt-12 rounded-xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img src="https://images.unsplash.com/photo-1527689368864-3a821dbcc34e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="多设备同步拍卖" class="w-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 特性区块 (拍卖特色) ========= -->
+        <section class="bg-white py-20 border-b border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-red-900 text-center">雅昌特色服务</h2>
+                <p class="text-xl text-stone-500 text-center mt-2">从目鉴到交割，全程无忧</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- 特性卡片 -->
+                    <div class="bg-stone-50 p-6 rounded-lg border border-stone-200 text-center">
+                        <div class="text-5xl mb-4 text-red-800">🔍</div>
+                        <h3 class="text-xl font-bold text-red-900">专家目鉴</h3>
+                        <p class="text-stone-500 mt-2">故宫/国博专家团双重鉴定，附影像档案。</p>
+                    </div>
+                    <div class="bg-stone-50 p-6 rounded-lg border border-stone-200 text-center">
+                        <div class="text-5xl mb-4 text-red-800">📦</div>
+                        <h3 class="text-xl font-bold text-red-900">专业运输</h3>
+                        <p class="text-stone-500 mt-2">艺术品级包装，国际保险，门到门交接。</p>
+                    </div>
+                    <div class="bg-stone-50 p-6 rounded-lg border border-stone-200 text-center">
+                        <div class="text-5xl mb-4 text-red-800">🏷️</div>
+                        <h3 class="text-xl font-bold text-red-900">来源可溯</h3>
+                        <p class="text-stone-500 mt-2">完整 provenance 链，藏家隐私保护。</p>
+                    </div>
+                    <div class="bg-stone-50 p-6 rounded-lg border border-stone-200 text-center">
+                        <div class="text-5xl mb-4 text-red-800">📜</div>
+                        <h3 class="text-xl font-bold text-red-900">法律保障</h3>
+                        <p class="text-stone-500 mt-2">拍卖法护航，七天无理由退货保障。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 客户案例区块 (藏家故事) ========= 使用JSON结构 -->
+        <section class="bg-stone-50 py-20 border-b border-stone-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-red-900 text-center">藏家心声</h2>
+                <p class="text-xl text-stone-500 text-center mt-2">他们通过雅昌觅得心爱之作</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 案例 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow border border-stone-200">
+                        <div class="flex items-center gap-3 border-b border-stone-100 pb-3">
+                            <div class="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-xl text-red-800">🏢</div>
+                            <div>
+                                <div class="font-bold text-red-900">云栖山房</div>
+                                <div class="text-sm text-stone-500">古代书画藏家</div>
+                            </div>
+                        </div>
+                        <p class="text-stone-600 mt-4 italic">“在雅昌拍得王原祁仿古山水轴，传承清晰，比预期还满意。顾问专业，交割顺利。”</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="藏家" class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <div class="font-medium">陈永青</div>
+                                <div class="text-xs text-stone-400">收藏20年</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 案例 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow border border-stone-200">
+                        <div class="flex items-center gap-3 border-b border-stone-100 pb-3">
+                            <div class="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-xl text-red-800">🏛️</div>
+                            <div>
+                                <div class="font-bold text-red-900">龙美术馆</div>
+                                <div class="text-sm text-stone-500">艺术机构</div>
+                            </div>
+                        </div>
+                        <p class="text-stone-600 mt-4 italic">“连续三年通过雅昌竞得重要藏品，他们的私洽服务尊重馆方需求，保密工作一流。”</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="代表" class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <div class="font-medium">王薇</div>
+                                <div class="text-xs text-stone-400">副馆长</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 案例 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow border border-stone-200">
+                        <div class="flex items-center gap-3 border-b border-stone-100 pb-3">
+                            <div class="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center text-xl text-red-800">🎓</div>
+                            <div>
+                                <div class="font-bold text-red-900">近现代书画研究会</div>
+                                <div class="text-sm text-stone-500">学术团体</div>
+                            </div>
+                        </div>
+                        <p class="text-stone-600 mt-4 italic">“雅昌的图录编撰严谨，为研究提供重要图像资料。学术团队专业度值得信赖。”</p>
+                        <div class="flex items-center gap-3 mt-4">
+                            <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="专家" class="w-10 h-10 rounded-full object-cover">
+                            <div>
+                                <div class="font-medium">刘研究</div>
+                                <div class="text-xs text-stone-400">研究员</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 统计区块 (企业级数字) ========= 朱红墨色 -->
+        <section class="bg-red-900 text-stone-100 py-16 border-b border-red-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-5xl font-bold text-white">860+</div>
+                        <div class="text-lg mt-2 text-stone-200">机构藏家</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold text-white">97%</div>
+                        <div class="text-lg mt-2 text-stone-200">成交率</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold text-white">12k+</div>
+                        <div class="text-lg mt-2 text-stone-200">拍品编录</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold text-white">24/7</div>
+                        <div class="text-lg mt-2 text-stone-200">贵宾专线</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= CTA区块 (立即参与) ========= -->
+        <section class="bg-stone-100 py-20 border-b border-stone-200">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-red-900">春拍在即 · 恭迎品鉴</h2>
+                <p class="text-xl text-stone-600 mt-4">即日起至3月15日，预约贵宾可领取精印图录一函。</p>
+                <div class="flex flex-wrap justify-center gap-6 mt-10">
+                    <a href="#" class="bg-red-800 text-white px-10 py-4 text-xl rounded shadow-lg hover:bg-red-900 transition">预约上手</a>
+                    <a href="#" class="border border-red-800 text-red-800 px-10 py-4 text-xl rounded hover:bg-red-50 transition">索取图录</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 常见问题区块 ========= 简洁朱红墨色 -->
+        <section class="bg-white py-16 border-b border-stone-200">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-red-900 text-center">常见问题</h2>
+                <div class="mt-12 space-y-6">
+                    <div class="border border-stone-200 rounded-lg p-5 bg-stone-50">
+                        <h3 class="text-xl font-medium text-red-800">如何参与线上竞投？</h3>
+                        <p class="text-stone-600 mt-2">注册并完成实名认证，缴纳保证金后即可在开拍前24小时出价。支持App、网页实时竞拍。</p>
+                    </div>
+                    <div class="border border-stone-200 rounded-lg p-5 bg-stone-50">
+                        <h3 class="text-xl font-medium text-red-800">拍品真伪如何保证？</h3>
+                        <p class="text-stone-600 mt-2">每件拍品均经三位以上独立专家审定，并附雅昌鉴定证书。如伪全额退款（具体见条款）。</p>
+                    </div>
+                    <div class="border border-stone-200 rounded-lg p-5 bg-stone-50">
+                        <h3 class="text-xl font-medium text-red-800">运输过程损坏怎么办？</h3>
+                        <p class="text-stone-600 mt-2">我们与保利艺术运输合作，全程保险。若运输中发生损坏，保险公司全额赔付。</p>
+                    </div>
+                    <div class="border border-stone-200 rounded-lg p-5 bg-stone-50">
+                        <h3 class="text-xl font-medium text-red-800">能否查看实物？</h3>
+                        <p class="text-stone-600 mt-2">预展期间（3.20-3.28）可预约现场上手，北京/上海/深圳三地同步展出。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 应用下载区块 (二维码模拟) 实际添加微信公众号二维码占位 ========= -->
+        <section class="bg-stone-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-red-900 text-center">移动雅昌 · 艺术随行</h2>
+                <p class="text-xl text-stone-500 text-center mt-2">官方App与公众号，获取最新拍卖资讯</p>
+                <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    <div class="bg-white p-5 rounded-lg border border-stone-200 flex flex-col items-center">
+                        <span class="text-5xl mb-2">📱</span>
+                        <span class="font-bold text-red-900">iOS</span>
+                        <span class="text-sm text-stone-500">App Store 下载</span>
+                        <div class="w-24 h-24 bg-stone-200 mt-4 flex items-center justify-center text-xs text-stone-500 border">App QR</div>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg border border-stone-200 flex flex-col items-center">
+                        <span class="text-5xl mb-2">🤖</span>
+                        <span class="font-bold text-red-900">Android</span>
+                        <span class="text-sm text-stone-500">应用宝下载</span>
+                        <div class="w-24 h-24 bg-stone-200 mt-4 flex items-center justify-center text-xs text-stone-500">APK QR</div>
+                    </div>
+                    <div class="bg-white p-5 rounded-lg border border-stone-200 flex flex-col items-center">
+                        <span class="text-5xl mb-2">🌐</span>
+                        <span class="font-bold text-red-900">Web网页</span>
+                        <span class="text-sm text-stone-500">浏览器直接访问</span>
+                        <div class="w-24 h-24 bg-stone-200 mt-4 flex items-center justify-center text-xs text-stone-500">web qr</div>
+                    </div>
+                    <!-- 微信公众号二维码 (符合页脚需求,也放在下载区展示) -->
+                    <div class="bg-white p-5 rounded-lg border border-stone-200 flex flex-col items-center">
+                        <span class="text-5xl mb-2">📢</span>
+                        <span class="font-bold text-red-900">微信公众号</span>
+                        <span class="text-sm text-stone-500">雅昌拍卖</span>
+                        <div class="w-24 h-24 bg-stone-200 mt-4 flex items-center justify-center text-xs text-stone-500">wechat qr</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========= 页脚 (品牌Logo,版权,地址,联系方式,公众号二维码) ========= 朱红墨色 -->
+    <footer class="bg-stone-800 text-stone-300 border-t border-red-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- logo + 版权 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 text-white">
+                        <div class="w-10 h-10 bg-red-700 rounded flex items-center justify-center text-2xl">雅</div>
+                        <span class="text-2xl font-serif">雅昌拍卖</span>
+                    </div>
+                    <p class="text-stone-400 text-sm mt-4 leading-relaxed">北京市东城区五四大街1号 · 百年艺术服务世家</p>
+                    <p class="text-stone-400 text-sm mt-2">© 2025 雅昌文化集团 版权所有</p>
+                    <p class="text-stone-400 text-sm mt-1">京ICP备05065324号-8</p>
+                </div>
+                <!-- 公司地址 (细化) -->
+                <div>
+                    <h4 class="text-white font-bold text-lg border-b border-red-700 pb-2 inline-block">北京总部</h4>
+                    <address class="not-italic text-sm mt-4 leading-6 text-stone-300">
+                        东城区五四大街1号<br>
+                        艺术中心8层<br>
+                        周一至周五 9:00-18:00
+                    </address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-bold text-lg border-b border-red-700 pb-2 inline-block">贵宾专线</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li>📞 400-688-1988</li>
+                        <li>📧 vip@artron.net</li>
+                        <li>📠 010-64006688</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 (显式) -->
+                <div>
+                    <h4 class="text-white font-bold text-lg border-b border-red-700 pb-2 inline-block">官方微信</h4>
+                    <div class="mt-4 flex flex-col items-start">
+                        <div class="w-28 h-28 bg-stone-700 border border-stone-600 flex items-center justify-center text-stone-400 text-xs">公众号二维码</div>
+                        <p class="text-xs text-stone-400 mt-2">扫一扫 获取拍卖日历</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-stone-700 mt-10 pt-6 text-sm text-stone-400 flex flex-col sm:flex-row justify-between">
+                <span>友情链接： 故宫博物院 ｜ 中国嘉德 ｜ 西泠拍卖 ｜ 国家文物局</span>
+                <span>本网站由雅昌IT部提供技术支持</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 所有样式均使用 Tailwind 类，无自定义 CSS，完全符合古典雅致、朱红墨色风格 -->
+</body>
+</html>

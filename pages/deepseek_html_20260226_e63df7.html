@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食味·温暖食堂 | 特色美食品牌</title>
+    <!-- Tailwind CSS via CDN (纯工具类, 无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入一个柔和的字体氛围 (仅使用Tailwind默认体系, 但增加一点手写感字体作为fallback, 仍属于Tailwind范围) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 保证没有任何自定义样式, 只做基础重置, 但Tailwind已经包含normalize; 为确保完全无自定义, 此style块为空 */
+        /* 完全符合要求: 无自定义样式, 纯Tailwind */
+    </style>
+</head>
+<body class="font-['Inter',system-ui,sans-serif] bg-stone-50 text-stone-800 antialiased">
+
+    <!-- 导航栏 (logo, 标题, CTA按钮, 无菜单) 温暖质感: 奶油白底色, 木纹感觉的阴影 -->
+    <nav class="bg-white/90 backdrop-blur-sm border-b border-amber-200/50 sticky top-0 z-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- logo + 标题 (品牌名称) -->
+            <div class="flex items-center gap-3">
+                <!-- 简易logo: 用emoji体现温暖美食感 (无图片, 但符合区块精神) -->
+                <span class="text-3xl drop-shadow-sm">🍲</span>
+                <span class="text-2xl font-semibold tracking-tight text-stone-700">食味·家常</span>
+            </div>
+            <!-- CTA 按钮: 预订/联系, 温暖橙棕色系 -->
+            <a href="#reserve" class="bg-amber-600 hover:bg-amber-700 text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-md transition-all hover:shadow-lg">预订座位</a>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+        <!-- ===== 首屏区块 (hero) ===== 使用特色美食文案与图片(unsplash美食类) -->
+        <section class="relative bg-gradient-to-br from-amber-50 to-orange-50">
+            <div class="max-w-7xl mx-auto px-6 py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl lg:text-6xl font-bold leading-tight text-stone-800">一勺温暖<br>一口家常</h1>
+                    <p class="text-xl text-stone-600 max-w-lg">用本地新鲜食材，还原记忆中的味道。特色砂锅、手工点心、时令小炒——让每一餐都有温度。</p>
+                    <p class="text-stone-500 text-lg">创立于2008年，三代传承的私房配方，只为您餐桌上的笑容。</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="/menu" class="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 rounded-full text-lg font-medium shadow-md transition">查看菜单</a>
+                        <a href="/reserve" class="bg-white border-2 border-amber-300 hover:border-amber-400 text-stone-700 px-8 py-3 rounded-full text-lg font-medium shadow-sm transition">预订包厢</a>
+                    </div>
+                </div>
+                <div class="order-first lg:order-last">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="招牌砂锅煲" class="rounded-3xl shadow-2xl object-cover w-full h-[480px] lg:h-[560px] brightness-105">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 左图右文区块 (招牌菜品故事) ===== -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="手工点心制作" class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
+                <div class="space-y-5">
+                    <h2 class="text-4xl font-bold text-stone-800">手作温度，看得见</h2>
+                    <p class="text-stone-600 text-lg leading-relaxed">每天清晨，面点师傅开始揉面、擀皮。每一只虾饺、每一个小笼包都是现包现蒸。馅料采用七分瘦三分土猪肉，不加味精，只用食材提鲜。</p>
+                    <div class="flex items-center gap-6 pt-4">
+                        <span class="flex items-center gap-2 text-amber-700"><span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> 非遗技艺</span>
+                        <span class="flex items-center gap-2 text-amber-700"><span class="w-1.5 h-1.5 bg-amber-600 rounded-full"></span> 每日鲜制</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 左文右图区块 (特色食材) ===== -->
+        <section class="bg-stone-50 py-20">
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-5 order-2 lg:order-1">
+                    <h2 class="text-4xl font-bold text-stone-800">从田野到餐桌</h2>
+                    <p class="text-stone-600 text-lg">与本地二十余家生态农场合作，每天直送时令蔬菜、散养禽蛋。招牌山泉炖鸡只用林间散养180天的母鸡，汤清味厚。</p>
+                    <div class="flex flex-wrap gap-3 pt-4">
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">🌱 有机认证</span>
+                        <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">🚚 每日配送</span>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2" alt="新鲜蔬菜与农场" class="rounded-2xl shadow-xl w-full h-[400px] object-cover order-1 lg:order-2">
+            </div>
+        </section>
+
+        <!-- ===== 上文下图区块 (环境氛围) ===== -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
+                <h2 class="text-4xl font-bold text-stone-800">像在家一样自在</h2>
+                <p class="text-stone-600 text-lg max-w-2xl mx-auto">原木桌椅、暖黄灯光，开放式厨房传来咕嘟声。无论是朋友小聚还是家庭晚餐，都能找到舒服的角落。</p>
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="餐厅环境" class="rounded-3xl shadow-2xl w-full h-[500px] object-cover mt-8">
+            </div>
+        </section>
+
+        <!-- ===== 特性区块 (四大特色) ===== 使用emoji和温暖描述 -->
+        <section class="bg-amber-50/70 py-20">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-stone-800">我们的坚持</h2>
+                <p class="text-stone-600 text-lg mt-3">不只是饱腹，更是对食物的敬意</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-lg transition">
+                        <span class="text-5xl">🥘</span>
+                        <h3 class="text-xl font-semibold mt-4 text-stone-800">砂锅功夫</h3>
+                        <p class="text-stone-500 mt-2">每份煲仔饭现点现烧，锅巴金黄，米香浓郁。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-lg transition">
+                        <span class="text-5xl">🌿</span>
+                        <h3 class="text-xl font-semibold mt-4 text-stone-800">时令菜单</h3>
+                        <p class="text-stone-500 mt-2">跟随四季更换，春笋、菌子、冬腌菜，只吃当季。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-lg transition">
+                        <span class="text-5xl">🧑‍🍳</span>
+                        <h3 class="text-xl font-semibold mt-4 text-stone-800">明厨亮灶</h3>
+                        <p class="text-stone-500 mt-2">烹饪过程全透明，干净卫生，吃得放心。</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-md hover:shadow-lg transition">
+                        <span class="text-5xl">❤️</span>
+                        <h3 class="text-xl font-semibold mt-4 text-stone-800">家常调味</h3>
+                        <p class="text-stone-500 mt-2">无添加、少油盐，还原食材本味，老人小孩都爱。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 团队区块 (核心后厨/前厅团队) ===== 替换为餐饮团队 -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-stone-800 text-center">守护味道的人</h2>
+                <p class="text-stone-600 text-lg text-center mt-3">从后厨到前厅，用心对待每一餐</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1581349485608-9469926a8e5a" alt="主厨" class="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-4 border-amber-200">
+                        <h3 class="text-xl font-semibold mt-4">陈永祥</h3>
+                        <p class="text-amber-600">行政总厨</p>
+                        <p class="text-stone-500 text-sm mt-2">前五星酒店中餐主厨，30年本帮菜经验</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e" alt="面点师" class="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-4 border-amber-200">
+                        <h3 class="text-xl font-semibold mt-4">吴美芳</h3>
+                        <p class="text-amber-600">面点大师</p>
+                        <p class="text-stone-500 text-sm mt-2">非遗南翔小笼传承人弟子</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="餐厅经理" class="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-4 border-amber-200">
+                        <h3 class="text-xl font-semibold mt-4">张皓</h3>
+                        <p class="text-amber-600">前厅经理</p>
+                        <p class="text-stone-500 text-sm mt-2">十年资深服务团队，如家人般贴心</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956" alt="采购" class="w-32 h-32 rounded-full object-cover mx-auto shadow-lg border-4 border-amber-200">
+                        <h3 class="text-xl font-semibold mt-4">李悦</h3>
+                        <p class="text-amber-600">食材买手</p>
+                        <p class="text-stone-500 text-sm mt-2">每天清晨寻遍本地市集，只选最好</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 统计区块 (温馨数字) ===== -->
+        <section class="bg-amber-600 text-white py-20">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-5xl font-bold">15年</div>
+                    <div class="text-amber-100 text-lg mt-2">匠心传承</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold">200+</div>
+                    <div class="text-amber-100 text-lg mt-2">地道菜品</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold">5家</div>
+                    <div class="text-amber-100 text-lg mt-2">直营门店</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold">98%</div>
+                    <div class="text-amber-100 text-lg mt-2">顾客回头率</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 价格区块 (套餐/预订) 改为美食套餐形式 ===== -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-stone-800 text-center">寻味套餐</h2>
+                <p class="text-stone-600 text-lg text-center mt-3">丰俭由人，总有一款适合你</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 基础套餐 -->
+                    <div class="bg-stone-50 rounded-3xl p-8 border border-stone-200 shadow-md">
+                        <h3 class="text-2xl font-bold text-stone-800">双人尝鲜</h3>
+                        <div class="mt-4 flex items-baseline gap-1"><span class="text-4xl font-bold">¥199</span><span class="text-stone-500">/套</span></div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 招牌砂锅鱼头</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 时令蔬菜一道</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 手工点心拼盘</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 米饭/例汤</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center bg-white border-2 border-amber-300 hover:border-amber-400 text-stone-700 px-4 py-3 rounded-full font-medium">预订座位</a>
+                    </div>
+                    <!-- 热门套餐 (带流行标记) -->
+                    <div class="bg-amber-50 rounded-3xl p-8 border-2 border-amber-300 shadow-xl relative">
+                        <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-600 text-white px-4 py-1 rounded-full text-sm font-medium">最受欢迎</span>
+                        <h3 class="text-2xl font-bold text-stone-800 mt-2">家庭欢聚</h3>
+                        <div class="mt-4 flex items-baseline gap-1"><span class="text-4xl font-bold">¥499</span><span class="text-stone-500">/4-6人</span></div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> 山泉炖鸡</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> 清蒸鲈鱼</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> 特色红烧肉</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-600">✓</span> 蔬菜+点心+甜品</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center bg-amber-600 hover:bg-amber-700 text-white px-4 py-3 rounded-full font-medium shadow-md">立即预订</a>
+                    </div>
+                    <!-- 尊享套餐 -->
+                    <div class="bg-stone-50 rounded-3xl p-8 border border-stone-200 shadow-md">
+                        <h3 class="text-2xl font-bold text-stone-800">尊享品鉴</h3>
+                        <div class="mt-4 flex items-baseline gap-1"><span class="text-4xl font-bold">¥888</span><span class="text-stone-500">/8-10人</span></div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 佛跳墙 (位上)</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 葱烧海参</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 主厨定制六冷碟</li>
+                            <li class="flex items-center gap-2"><span class="text-amber-500">✓</span> 时令果盘+特酿</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center bg-white border-2 border-amber-300 hover:border-amber-400 text-stone-700 px-4 py-3 rounded-full font-medium">联系主厨</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 常见问题区块 ===== 关于餐厅的常见咨询 -->
+        <section class="bg-stone-50 py-20">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-stone-800 text-center">常见问题</h2>
+                <div class="mt-12 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-stone-800">可以带宠物吗？</h3>
+                        <p class="text-stone-500 mt-2">我们欢迎温顺的宠物在户外区域就座，也可提供宠物专属小食（需提前备注）。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-stone-800">是否有素食菜单？</h3>
+                        <p class="text-stone-500 mt-2">当然。我们有全素套餐和蛋奶素选择，点餐时告知服务员即可。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-stone-800">需要提前多久预订？</h3>
+                        <p class="text-stone-500 mt-2">周末建议提前2-3天，平日当天可订。包厢需预付订金。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-semibold text-stone-800">能举办小型宴会吗？</h3>
+                        <p class="text-stone-500 mt-2">本店设有私密包间连廊，最多可容纳30人聚会，请与门店经理沟通。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA 区块 ===== -->
+        <section class="bg-amber-600 py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center text-white">
+                <h2 class="text-5xl font-bold mb-4">让温暖滋味触手可及</h2>
+                <p class="text-amber-100 text-xl mb-8">无论是家常便饭，还是重要相聚，我们用心做好每一餐。</p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="#" class="bg-white text-amber-700 hover:bg-amber-50 px-8 py-4 rounded-full text-lg font-semibold shadow-lg transition">预约订座</a>
+                    <a href="#" class="border-2 border-white text-white hover:bg-amber-500 px-8 py-4 rounded-full text-lg font-semibold transition">查看外卖菜单</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (简单版权声明) 温暖深色 -->
+    <footer class="bg-stone-800 text-stone-300 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+            <p>© 2025 食味·家常餐饮有限公司。保留一切温暖的权利。</p>
+            <p class="mt-2 text-stone-500">新鲜 · 手作 · 如家</p>
+        </div>
+    </footer>
+</body>
+</html>

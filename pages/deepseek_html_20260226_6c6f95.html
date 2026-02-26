@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跃动健身 · 专业健身器材</title>
+    <!-- Tailwind via CDN + 活力橙蓝基调 (无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入Inter字体系列，保持现代感 (属于tailwind预设外挂但无自定义CSS) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 保证字体继承——仍使用tailwind工具类，无自定义样式 */
+        body { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- 导航栏 (橙蓝活力) -->
+    <header class="border-b border-orange-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-orange-500 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">💪</div>
+                    <span class="font-bold text-xl tracking-tight text-gray-800">跃动<span class="text-orange-600">|健身</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#" class="text-gray-700 hover:text-orange-600 transition">器材</a>
+                    <a href="#" class="text-gray-700 hover:text-orange-600 transition">解决方案</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">客户案例</a>
+                    <a href="#" class="text-gray-700 hover:text-blue-600 transition">关于</a>
+                </nav>
+                <!-- CTA 按钮组 -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hidden sm:inline-block text-sm font-semibold text-gray-700 hover:text-orange-600 px-4 py-2">登录</a>
+                    <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md shadow-orange-200 transition flex items-center gap-1">
+                        开始使用 <span class="text-lg">🏋️</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏区块 (HERO) 基于JSON数据结构，适配健身器材 -->
+        <section class="relative bg-gradient-to-br from-orange-50 via-white to-blue-50 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                            <span class="text-orange-600">专业健身器材</span><br>让训练更科学
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600 max-w-2xl lg:mx-0 mx-auto">安全、耐用、智能化——专为高端健身房与家庭健身打造的力量与有氧设备，集成数据分析与云端课程。</p>
+                        <p class="mt-2 text-gray-500">商用级品质 · 智能阻力调节 · 终身维护</p>
+                        <div class="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
+                            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-xl shadow-orange-200 transition">选购器材</a>
+                            <a href="#" class="bg-white border-2 border-blue-500 text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-full text-lg transition">联系顾问</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img class="rounded-3xl shadow-2xl border-8 border-white/50" src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="专业健身器材训练区" loading="lazy">
+                        <div class="absolute -bottom-5 -left-5 bg-blue-500 text-white px-6 py-3 rounded-full font-bold shadow-lg flex gap-2">🏆 奥运供应商</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 (生态伙伴) 展示健身行业合作品牌 -->
+        <section class="bg-white py-16 border-y border-orange-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800">我们的<span class="text-blue-600">生态伙伴</span></h2>
+                <p class="text-center text-gray-500 mt-3 max-w-2xl mx-auto">与全球顶尖运动科学及智能硬件公司深度合作</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+                    <!-- 使用伙伴数据格式，但更换为器材相关名称，图片采用健身相关占位 (unsplash健身器械类) 注意保持链接有效 -->
+                    <div class="bg-orange-50/50 p-4 rounded-2xl flex flex-col items-center text-center border border-orange-100">
+                        <img class="h-12 w-12 object-contain rounded-full bg-white p-1" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150" alt="Precor">
+                        <span class="font-semibold mt-2">Precor</span>
+                        <span class="text-xs text-gray-500">金牌伙伴</span>
+                    </div>
+                    <div class="bg-blue-50/50 p-4 rounded-2xl flex flex-col items-center border border-blue-100">
+                        <img class="h-12 w-12 object-contain rounded-full bg-white p-1" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150" alt="Technogym">
+                        <span class="font-semibold mt-2">Technogym</span>
+                        <span class="text-xs text-gray-500">战略合作</span>
+                    </div>
+                    <div class="bg-orange-50/50 p-4 rounded-2xl flex flex-col items-center border border-orange-100">
+                        <img class="h-12 w-12 object-contain rounded-full bg-white p-1" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150" alt="Life Fitness">
+                        <span class="font-semibold mt-2">Life Fitness</span>
+                        <span class="text-xs text-gray-500">联合研发</span>
+                    </div>
+                    <div class="bg-blue-50/50 p-4 rounded-2xl flex flex-col items-center border border-blue-100">
+                        <img class="h-12 w-12 object-contain rounded-full bg-white p-1" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150" alt="Peloton">
+                        <span class="font-semibold mt-2">Peloton</span>
+                        <span class="text-xs text-gray-500">内容合作</span>
+                    </div>
+                    <div class="bg-orange-50/50 p-4 rounded-2xl flex flex-col items-center border border-orange-100">
+                        <img class="h-12 w-12 object-contain rounded-full bg-white p-1" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150" alt="Keiser">
+                        <span class="font-semibold mt-2">Keiser</span>
+                        <span class="text-xs text-gray-500">气阻技术</span>
+                    </div>
+                    <div class="bg-blue-50/50 p-4 rounded-2xl flex flex-col items-center border border-blue-100">
+                        <img class="h-12 w-12 object-contain rounded-full bg-white p-1" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150" alt="Matrix">
+                        <span class="font-semibold mt-2">Matrix</span>
+                        <span class="text-xs text-gray-500">商用方案</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (智能力量设备) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <img class="rounded-3xl shadow-xl border-4 border-orange-200" src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="智能力量设备训练">
+                    <div>
+                        <h2 class="text-4xl font-bold text-gray-800">智能力量<span class="text-orange-600">· 精准训练</span></h2>
+                        <p class="mt-4 text-gray-600 text-lg">通过AI阻力调节与生物力学反馈，让每一次推举都高效安全。集成云端课程，实时监测肌肉激活程度。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="bg-orange-100 text-orange-800 px-5 py-2 rounded-full font-medium flex items-center gap-1">⚡ 数字配重</span>
+                            <span class="bg-blue-100 text-blue-800 px-5 py-2 rounded-full font-medium flex items-center gap-1">📊 发力曲线</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (有氧智慧屏) -->
+        <section class="py-20 bg-gradient-to-l from-blue-50 to-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-4xl font-bold text-gray-800">有氧<span class="text-blue-600">沉浸式互动</span></h2>
+                        <p class="mt-4 text-gray-600 text-lg">跑步机、划船机搭载22英寸4K智慧屏，支持实景路线、在线竞赛、流媒体娱乐。自动同步心率与虚拟教练。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="bg-blue-100 text-blue-800 px-5 py-2 rounded-full font-medium">🏔️ 实景探索</span>
+                            <span class="bg-orange-100 text-orange-800 px-5 py-2 rounded-full font-medium">🎮 群体课程</span>
+                        </div>
+                    </div>
+                    <img class="rounded-3xl shadow-xl border-4 border-blue-200 order-1 md:order-2" src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="智能有氧设备">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (4大核心优势) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800">专为<span class="text-orange-600">专业健身</span>打造</h2>
+                <p class="text-center text-gray-500 mt-2">从生物力学到数据洞察，面面俱到</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- 特性卡片 -->
+                    <div class="bg-orange-50 p-6 rounded-3xl border border-orange-200 text-center">
+                        <div class="text-5xl mb-3">🛡️</div>
+                        <h3 class="text-xl font-bold">军工级钢材</h3>
+                        <p class="text-gray-600 mt-2">单框架承重500kg，通过20万次疲劳测试，商用无忧。</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-3xl border border-blue-200 text-center">
+                        <div class="text-5xl mb-3">⚙️</div>
+                        <h3 class="text-xl font-bold">电磁阻力系统</h3>
+                        <p class="text-gray-600 mt-2">毫秒级响应，32档调节，静音顺滑如丝。</p>
+                    </div>
+                    <div class="bg-orange-50 p-6 rounded-3xl border border-orange-200 text-center">
+                        <div class="text-5xl mb-3">📲</div>
+                        <h3 class="text-xl font-bold">全设备互联</h3>
+                        <p class="text-gray-600 mt-2">通过跃动APP统一管理训练数据，支持Apple Watch。</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-3xl border border-blue-200 text-center">
+                        <div class="text-5xl mb-3">🌱</div>
+                        <h3 class="text-xl font-bold">自发电技术</h3>
+                        <p class="text-gray-600 mt-2">无需外接电源，动能转化，环保且节能。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 产品功能矩阵区块 (根据功能矩阵结构展示健身器材品类) -->
+        <section class="py-20 bg-orange-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800">全系<span class="text-blue-600">功能矩阵</span></h2>
+                <p class="text-center text-gray-500 mt-2">满足从轻量化家庭训练到商业健身房的全面需求</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 力量器械类 -->
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-orange-200">
+                        <h3 class="text-2xl font-bold text-orange-600 border-b border-orange-200 pb-3">🏋️ 力量器械</h3>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex justify-between items-center"><span>大飞鸟训练站</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>深蹲架/史密斯机</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>独立悍马机</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>多功能力量塔</span><span class="text-green-600 font-bold">✅</span></li>
+                        </ul>
+                    </div>
+                    <!-- 有氧器械 -->
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-blue-200">
+                        <h3 class="text-2xl font-bold text-blue-600 border-b border-blue-200 pb-3">🚴 有氧系列</h3>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex justify-between items-center"><span>智能跑步机</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>风阻划船机</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>磁控动感单车</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>登山/椭圆机</span><span class="text-green-600 font-bold">✅</span></li>
+                        </ul>
+                    </div>
+                    <!-- 智能附件 -->
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-orange-200">
+                        <h3 class="text-2xl font-bold text-orange-600 border-b border-orange-200 pb-3">📡 智能生态</h3>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex justify-between items-center"><span>心率臂带</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>体成分分析</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>虚拟教练屏</span><span class="text-green-600 font-bold">✅</span></li>
+                            <li class="flex justify-between items-center"><span>健身房SaaS</span><span class="text-green-600 font-bold">✅</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (3个案例) 体现健身房使用场景 -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800">他们正在<span class="text-orange-600">使用我们的器材</span></h2>
+                <p class="text-center text-gray-500 mt-2">来自全国高端健身房的信赖</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <div class="bg-orange-50/50 rounded-3xl p-6 border border-orange-100">
+                        <div class="flex items-center gap-2"><span class="text-2xl">💪</span><span class="font-bold text-lg">超能星球健身</span><span class="text-sm text-gray-500 ml-auto">连锁</span></div>
+                        <p class="mt-4 text-gray-700">“引入跃动全套力量设备后，会员力量区续费率提升27%，故障率为零。” </p>
+                        <div class="flex items-center mt-6">
+                            <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150" alt="avatar">
+                            <div class="ml-3"><p class="font-semibold">张晨阳</p><p class="text-sm text-gray-500">创始人</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50/50 rounded-3xl p-6 border border-blue-100">
+                        <div class="flex items-center gap-2"><span class="text-2xl">🏊</span><span class="font-bold text-lg">静安香格里拉健身</span><span class="text-sm text-gray-500 ml-auto">五星酒店</span></div>
+                        <p class="mt-4 text-gray-700">“智慧有氧设备与酒店系统无缝对接，客人体验极佳，成为客房卖点。”</p>
+                        <div class="flex items-center mt-6">
+                            <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150" alt="avatar">
+                            <div class="ml-3"><p class="font-semibold">陈丽</p><p class="text-sm text-gray-500">健身中心经理</p></div>
+                        </div>
+                    </div>
+                    <div class="bg-orange-50/50 rounded-3xl p-6 border border-orange-100">
+                        <div class="flex items-center gap-2"><span class="text-2xl">🏋️</span><span class="font-bold text-lg">CrossFit 天坛</span><span class="text-sm text-gray-500 ml-auto">综合体能馆</span></div>
+                        <p class="mt-4 text-gray-700">“风阻划船机和滑雪训练器耐造、数据精准，是我们WOD首选。”</p>
+                        <div class="flex items-center mt-6">
+                            <img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150" alt="avatar">
+                            <div class="ml-3"><p class="font-semibold">马克</p><p class="text-sm text-gray-500">主教练</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (灵活定价方案) -->
+        <section class="py-20 bg-gradient-to-br from-blue-50 to-orange-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-gray-800">灵活<span class="text-blue-600">采购方案</span></h2>
+                <p class="text-center text-gray-500 mt-2">器材采购/租赁 · 无隐藏费用</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg border border-orange-200">
+                        <h3 class="text-2xl font-bold text-gray-800">工作室包</h3>
+                        <p class="text-4xl font-bold mt-4">¥49,<span class="text-xl">900</span></p>
+                        <p class="text-gray-500">起/套</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center gap-2"><span class="text-orange-500">✅</span> 多功能深蹲架+杠铃片</li>
+                            <li class="flex items-center gap-2"><span class="text-orange-500">✅</span> 智能跑步机1台</li>
+                            <li class="flex items-center gap-2"><span class="text-orange-500">✅</span> 基础课程账号</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 rounded-full">选购基础</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="bg-white rounded-3xl p-8 shadow-2xl border-2 border-blue-500 scale-105 relative">
+                        <span class="absolute top-0 right-8 bg-blue-500 text-white px-4 py-1 rounded-b-lg text-sm font-bold">热门🔥</span>
+                        <h3 class="text-2xl font-bold text-gray-800">商业精英包</h3>
+                        <p class="text-4xl font-bold mt-4">¥129,<span class="text-xl">800</span></p>
+                        <p class="text-gray-500">起/套</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✅</span> 全套力量设备(8台)</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✅</span> 4台智能有氧设备</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✅</span> 智能大屏+SAAS管理</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✅</span> 优先售后</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-full">配置方案</a>
+                    </div>
+                    <!-- 企业版 (定制) -->
+                    <div class="bg-white rounded-3xl p-8 shadow-lg border border-orange-200">
+                        <h3 class="text-2xl font-bold text-gray-800">旗舰定制</h3>
+                        <p class="text-4xl font-bold mt-4">定制</p>
+                        <p class="text-gray-500">按项目报价</p>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center gap-2"><span class="text-orange-500">✅</span> 全套商用进口线</li>
+                            <li class="flex items-center gap-2"><span class="text-orange-500">✅</span> 专属外观/企业IP联名</li>
+                            <li class="flex items-center gap-2"><span class="text-orange-500">✅</span> 驻场培训/数据中台</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center bg-gray-800 hover:bg-black text-white font-semibold py-3 rounded-full">联系顾问</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 立即提升 -->
+        <section class="bg-orange-600 py-16 text-white">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-4xl md:text-5xl font-extrabold">即刻升级您的健身房</h2>
+                <p class="mt-4 text-xl text-orange-100">免费获取3D布局方案 + 器材报价</p>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                    <a href="#" class="bg-white text-orange-600 hover:bg-orange-50 font-bold px-8 py-4 rounded-full text-lg shadow-xl">免费设计</a>
+                    <a href="#" class="border-2 border-white text-white hover:bg-orange-700 font-bold px-8 py-4 rounded-full text-lg">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (包含品牌Logo、版权、地址、联系方式、微信公众号二维码) -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Logo + 公司简介 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 text-white">
+                        <span class="text-3xl">💪</span>
+                        <span class="font-bold text-2xl">跃动健身器材</span>
+                    </div>
+                    <p class="mt-4 text-sm leading-relaxed">专业健身器械制造商，为全球5000+场馆提供智能训练解决方案。商用家用全覆盖，安全耐用。</p>
+                </div>
+                <!-- 地址 -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg">上海总部</h3>
+                    <address class="not-italic mt-3 text-sm">上海市浦东新区<br>智能智造园 跃动大厦A座<br>邮编：201200</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg">联系</h3>
+                    <ul class="mt-3 space-y-2 text-sm">
+                        <li>📞 400-8820-999</li>
+                        <li>📧 hello@yuedongfit.com</li>
+                        <li>🕒 周一至周日 9:00-20:00</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 -->
+                <div>
+                    <h3 class="text-white font-semibold text-lg mb-2">官方微信</h3>
+                    <div class="bg-white p-2 rounded-lg inline-block">
+                        <!-- 使用健身风格的二维码占位，但为了演示仍用unsplash 灰色图表示二维码，实际可用纯色方块模拟 -->
+                        <img class="w-24 h-24 object-cover rounded" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150" alt="公众号二维码">
+                    </div>
+                    <p class="text-xs mt-2">扫码获取电子目录</p>
+                </div>
+            </div>
+            <!-- 版权区域 -->
+            <div class="border-t border-gray-800 mt-12 pt-8 text-sm text-center md:flex md:justify-between">
+                <p>© 2025 跃动健身器材 (Yuedong Fitness) 版权所有 保留一切权利。</p>
+                <p class="mt-2 md:mt-0">｜ 隐私条款 ｜ 售后政策 ｜ 站点地图</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

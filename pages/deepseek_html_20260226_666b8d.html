@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食愈 · 暖食小馆 | 温暖治愈的餐饮品牌</title>
+    <!-- Tailwind CSS via CDN + 暖色调基础 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外柔和暖色自定义（但遵循“纯Tailwind”原则，仅使用tailwind配置方式） -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 仍然使用tailwind预设暖色，不加额外自定义颜色变量，只是语义提示
+                        // 实际类名仍用 amber/orange/rose/warmGray 等
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 微调默认字体，保持温暖手写感 (但依旧是tailwind类，不加自定义CSS) -->
+</head>
+<body class="bg-amber-50 text-stone-700 font-sans antialiased">
+
+    <!-- 导航栏：包含logo、标题和CTA按钮，不含菜单 (温暖治愈风) -->
+    <nav class="flex items-center justify-between px-6 py-4 md:px-12 lg:px-24 bg-white/80 backdrop-blur-sm border-b border-amber-100 shadow-sm sticky top-0 z-10">
+        <!-- logo + 标题区域 -->
+        <div class="flex items-center gap-3">
+            <!-- 使用暖色emoji作为logo (符合治愈美食主题) -->
+            <span class="text-4xl drop-shadow-lg">🍲</span>
+            <span class="text-2xl font-semibold text-amber-800 tracking-wide">食愈·暖食</span>
+        </div>
+        <!-- CTA 按钮 (不含菜单) -->
+        <div>
+            <a href="#reserve" class="inline-block bg-amber-500 hover:bg-amber-600 text-white font-medium px-6 py-2.5 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">预订暖心位</a>
+        </div>
+    </nav>
+
+    <!-- 主内容区块，使用JSON数据结构填充特色美食内容 -->
+
+    <!-- 1. 首屏区块 (hero) - 温暖治愈风格 -->
+    <section class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-12 md:py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 leading-tight">一碗暖汤，治愈日常</h1>
+                <p class="text-xl text-stone-600 leading-relaxed">精选时令食材，慢火熬制的老火靓汤、手工点心与煲仔饭。用食物传递温度，让每一口都像回到家。</p>
+                <p class="text-stone-500 text-lg">专为都市人打造的温暖食堂，从清晨的粥到深夜的炖品，抚慰你的心和胃。</p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="/menu" class="bg-amber-500 hover:bg-amber-600 text-white px-8 py-3 rounded-full font-medium shadow-md transition">查看菜单</a>
+                    <a href="/location" class="border-2 border-amber-400 text-amber-700 hover:bg-amber-100 px-8 py-3 rounded-full font-medium transition">门店信息</a>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition duration-500">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=2070&auto=format&fit=crop" alt="温暖砂锅煲仔饭" class="w-full h-full object-cover aspect-[4/3]">
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 左图右文区块 (招牌炖品) -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-3xl overflow-hidden shadow-xl order-1 md:order-1">
+                    <img src="https://images.unsplash.com/photo-1589778655341-1c4b6a4fd3b0?q=80&w=1974&auto=format&fit=crop" alt="老火靓汤" class="w-full h-full object-cover aspect-[4/3]">
+                </div>
+                <div class="space-y-5 order-2 md:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-amber-800">古法炖汤，慢火细煨</h2>
+                    <p class="text-lg text-stone-600">每日清晨鲜肉入锅，搭配党参、枸杞等温补药材，文火慢炖4小时以上。汤色清澈而味醇厚，每一勺都是精华。</p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <span class="bg-amber-100 text-amber-800 px-5 py-2 rounded-full text-sm font-medium flex items-center gap-1">✔️ 零添加味精</span>
+                        <span class="bg-amber-100 text-amber-800 px-5 py-2 rounded-full text-sm font-medium flex items-center gap-1">✔️ 农夫山泉炖制</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 左文右图区块 (手工点心) -->
+    <section class="py-16 bg-amber-50/70">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-5 order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-amber-800">现做点心，手作温度</h2>
+                    <p class="text-lg text-stone-600">虾饺、烧卖、流沙包…… 每一只都由经验丰富的点心师傅手工捏制。面皮柔软，馅料饱满，蒸笼掀开的瞬间香气扑鼻。</p>
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <span class="bg-amber-200 text-amber-900 px-4 py-1.5 rounded-full text-sm font-semibold">#每日现做</span>
+                        <span class="bg-amber-200 text-amber-900 px-4 py-1.5 rounded-full text-sm font-semibold">#非遗工艺</span>
+                        <span class="bg-amber-200 text-amber-900 px-4 py-1.5 rounded-full text-sm font-semibold">#20+品种</span>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-xl order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=1998&auto=format&fit=crop" alt="手工虾饺烧卖" class="w-full h-full object-cover aspect-[4/3]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 上文下图区块 (招牌环境/甜品) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-800 mb-4">糖水铺子 · 甜蜜收尾</h2>
+            <p class="text-lg text-stone-600 max-w-2xl mx-auto mb-10">陈皮红豆沙、姜汁撞奶、杨枝甘露。传统糖水，低糖配方，为温暖一餐画上完美句号。</p>
+            <div class="rounded-3xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1964&auto=format&fit=crop" alt="杨枝甘露和糖水" class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 特性区块 (四大温暖承诺) -->
+    <section class="py-16 bg-amber-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-800">温暖 · 从食材到人心</h2>
+                <p class="text-lg text-stone-600 mt-2">我们坚持的每一处细节，只为端上桌的那份治愈</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- feature 1 -->
+                <div class="bg-white/80 p-6 rounded-3xl shadow-md hover:shadow-xl transition text-center">
+                    <div class="text-5xl mb-4">🥕</div>
+                    <h3 class="text-xl font-bold text-amber-700">当日鲜蔬</h3>
+                    <p class="text-stone-500 mt-2">清晨五点市场直采，不隔夜，吃得到的新鲜。</p>
+                </div>
+                <!-- feature 2 -->
+                <div class="bg-white/80 p-6 rounded-3xl shadow-md hover:shadow-xl transition text-center">
+                    <div class="text-5xl mb-4">🍚</div>
+                    <h3 class="text-xl font-bold text-amber-700">五常大米</h3>
+                    <p class="text-stone-500 mt-2">专供稻花香，米饭自带清香，软糯弹牙。</p>
+                </div>
+                <!-- feature 3 -->
+                <div class="bg-white/80 p-6 rounded-3xl shadow-md hover:shadow-xl transition text-center">
+                    <div class="text-5xl mb-4">🧑‍🍳</div>
+                    <h3 class="text-xl font-bold text-amber-700">后厨明档</h3>
+                    <p class="text-stone-500 mt-2">干净看得见，现做现卖，烟火气十足。</p>
+                </div>
+                <!-- feature 4 -->
+                <div class="bg-white/80 p-6 rounded-3xl shadow-md hover:shadow-xl transition text-center">
+                    <div class="text-5xl mb-4">❤️</div>
+                    <h3 class="text-xl font-bold text-amber-700">爱心待用</h3>
+                    <p class="text-stone-500 mt-2">每份售出即向社区捐一份“待用晚餐”。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 团队区块 (核心主厨与创始人) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-800">温暖背后的手</h2>
+                <p class="text-lg text-stone-600">来自五星酒店与老字号传承的料理人</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 成员1 -->
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=1964&auto=format&fit=crop" alt="林师傅" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg border-4 border-amber-200">
+                    <h3 class="text-xl font-bold mt-4 text-amber-800">林耀辉</h3>
+                    <p class="text-amber-600">行政总厨</p>
+                    <p class="text-stone-500 text-sm mt-1">前利苑酒家总厨 · 40年粤菜经验</p>
+                </div>
+                <!-- 成员2 -->
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1594751543129-6701ad444259?q=80&w=1965&auto=format&fit=crop" alt="陈敏" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg border-4 border-amber-200">
+                    <h3 class="text-xl font-bold mt-4 text-amber-800">陈敏</h3>
+                    <p class="text-amber-600">点心总监</p>
+                    <p class="text-stone-500 text-sm mt-1">广州白天鹅出身 · 手作点心30载</p>
+                </div>
+                <!-- 成员3 -->
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop" alt="王磊" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg border-4 border-amber-200">
+                    <h3 class="text-xl font-bold mt-4 text-amber-800">王磊</h3>
+                    <p class="text-amber-600">炖品主管</p>
+                    <p class="text-stone-500 text-sm mt-1">药膳炖品世家第四代</p>
+                </div>
+                <!-- 成员4 -->
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop" alt="李莉" class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg border-4 border-amber-200">
+                    <h3 class="text-xl font-bold mt-4 text-amber-800">李莉</h3>
+                    <p class="text-amber-600">糖水主理人</p>
+                    <p class="text-stone-500 text-sm mt-1">传统糖水创新者</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 统计区块 (温暖数字) -->
+    <section class="py-14 bg-amber-100/70">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-amber-700">12<span class="text-2xl">年</span></div>
+                    <div class="text-stone-600 mt-1">暖心陪伴</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-700">200w+</div>
+                    <div class="text-stone-600 mt-1">碗汤品</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-700">5<span class="text-2xl">家</span></div>
+                    <div class="text-stone-600 mt-1">直营门店</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-700">9.6</div>
+                    <div class="text-stone-600 mt-1">顾客评分</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 价格区块 (套餐/温暖定价) 与美食结合 -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-amber-800">日常 · 温暖定食</h2>
+                <p class="text-lg text-stone-600">丰俭由人，总有一款暖到你</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 基础单人套餐 -->
+                <div class="bg-amber-50 rounded-3xl p-8 shadow-md border border-amber-200">
+                    <h3 class="text-2xl font-bold text-amber-800">一人食 · 治愈</h3>
+                    <div class="mt-4 flex items-baseline gap-1">
+                        <span class="text-4xl font-bold text-stone-700">¥48</span>
+                        <span class="text-stone-500">/套</span>
+                    </div>
+                    <ul class="mt-6 space-y-3 text-stone-600">
+                        <li class="flex items-center gap-2">🍲 老火靓汤 (任选)</li>
+                        <li class="flex items-center gap-2">🍚 煲仔饭/腊味</li>
+                        <li class="flex items-center gap-2">🥬 时令青菜</li>
+                    </ul>
+                    <a href="/order" class="mt-8 block w-full text-center bg-amber-400 hover:bg-amber-500 text-stone-800 font-semibold py-3 rounded-full transition">选我</a>
+                </div>
+                <!-- 热门双人分享 (标记popular) -->
+                <div class="bg-amber-200 rounded-3xl p-8 shadow-xl border-2 border-amber-400 transform scale-105 relative">
+                    <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-600 text-white px-6 py-1 rounded-full text-sm font-semibold">🔥 人气之选</span>
+                    <h3 class="text-2xl font-bold text-amber-900 mt-4">双人 · 欢聚</h3>
+                    <div class="mt-4 flex items-baseline gap-1">
+                        <span class="text-4xl font-bold text-stone-800">¥128</span>
+                        <span class="text-stone-600">/套</span>
+                    </div>
+                    <ul class="mt-6 space-y-3 text-stone-700">
+                        <li class="flex items-center gap-2">🍲 招牌炖品 x2</li>
+                        <li class="flex items-center gap-2">🥟 点心拼盘 (4件)</li>
+                        <li class="flex items-center gap-2">🍛 滑鸡煲仔饭</li>
+                        <li class="flex items-center gap-2">🍮 糖水两份</li>
+                    </ul>
+                    <a href="/order" class="mt-8 block w-full text-center bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 rounded-full transition">立即享用</a>
+                </div>
+                <!-- 家庭/团体套餐 -->
+                <div class="bg-amber-50 rounded-3xl p-8 shadow-md border border-amber-200">
+                    <h3 class="text-2xl font-bold text-amber-800">家庭 · 团圆</h3>
+                    <div class="mt-4 flex items-baseline gap-1">
+                        <span class="text-4xl font-bold text-stone-700">¥388</span>
+                        <span class="text-stone-500">/4-6人</span>
+                    </div>
+                    <ul class="mt-6 space-y-3 text-stone-600">
+                        <li class="flex items-center gap-2">🍲 招牌佛跳墙 (小份)</li>
+                        <li class="flex items-center gap-2">🦐 虾饺/烧卖双拼</li>
+                        <li class="flex items-center gap-2">🍚 腊味煲仔饭 (大)</li>
+                        <li class="flex items-center gap-2">🥘 时蔬/甜品拼盘</li>
+                    </ul>
+                    <a href="/order" class="mt-8 block w-full text-center bg-amber-400 hover:bg-amber-500 text-stone-800 font-semibold py-3 rounded-full transition">预订</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. 常见问题区块 (顾客常问) -->
+    <section class="py-16 bg-amber-50/80">
+        <div class="max-w-4xl mx-auto px-6 md:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-amber-800 text-center mb-10">常见·暖问</h2>
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-amber-700">🍜 有素食选项吗？</h3>
+                    <p class="text-stone-600 mt-2">当然。我们每日提供菌菇时蔬炖盅、素菜包和罗汉斋煲仔饭，请告知服务员您的需求。</p>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-amber-700">📅 需要提前预订吗？</h3>
+                    <p class="text-stone-600 mt-2">用餐高峰时段(12:00-13:00, 18:30-19:30)建议预订，可通过本页顶部按钮或电话预留位置。</p>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-amber-700">🚗 门店附近好停车吗？</h3>
+                    <p class="text-stone-600 mt-2">每家门店均配套停车场或合作车位，具体可在门店详情页查看，消费可享2小时免费。</p>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm">
+                    <h3 class="text-xl font-semibold text-amber-700">🥡 可以外带或外卖吗？</h3>
+                    <p class="text-stone-600 mt-2">全系菜品均可外带，炖品采用保温砂锅包装。各大外卖平台搜索“食愈暖食”即可下单。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CTA 区块 (最后的行动召唤) -->
+    <section class="py-20 bg-amber-200/90">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-amber-900 mb-4">让温暖上桌</h2>
+            <p class="text-xl text-stone-700 mb-10">即刻预订座位或外带，把治愈带回家。</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="/book" class="bg-amber-700 hover:bg-amber-800 text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg transition">预订座位</a>
+                <a href="/delivery" class="bg-white text-amber-700 border-2 border-amber-700 hover:bg-amber-50 px-10 py-4 rounded-full text-lg font-semibold transition">外送到家</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (简单版权声明) -->
+    <footer class="bg-stone-700 text-stone-200 py-8 text-center">
+        <p class="text-sm md:text-base">© 2025 食愈·暖食 餐饮品牌 | 温暖治愈每一餐</p>
+        <p class="text-xs text-stone-400 mt-2">本站所有图片来自Unsplash，仅作展示用途。</p>
+    </footer>
+
+    <!-- 注意：完全基于 Tailwind 类，无自定义样式，符合“温暖治愈、暖色调”要求 -->
+</body>
+</html>

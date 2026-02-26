@@ -1,0 +1,21 @@
+{
+  "name": "deepseek-pages",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/extract-templates.js && vite build",
+    "preview": "vite preview",
+    "extract-templates": "node scripts/extract-templates.js"
+  },
+  "dependencies": {
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "tailwindcss": "^4.0.0",
+    "vite": "^5.0.0"
+  }
+}

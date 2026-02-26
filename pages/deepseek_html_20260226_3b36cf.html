@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联创空间 · 企业级联合办公</title>
+    <!-- Tailwind via CDN (纯工具类, 无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 灰橙风格微调：完全使用tailwind类实现，无额外css -->
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- ************ 导航栏 (包含logo,标题,菜单,CTA) ************ -->
+    <header class="border-b border-gray-200 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">U</div>
+                    <span class="font-bold text-xl text-gray-800 tracking-tight">联创<span class="text-orange-600">空间</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                    <a href="#" class="hover:text-orange-600 transition">空间</a>
+                    <a href="#" class="hover:text-orange-600 transition">企业方案</a>
+                    <a href="#" class="hover:text-orange-600 transition">社区</a>
+                    <a href="#" class="hover:text-orange-600 transition">资源</a>
+                    <a href="#" class="hover:text-orange-600 transition">定价</a>
+                </nav>
+                <!-- CTA 按钮 -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-sm font-medium text-gray-700 hover:text-orange-600 transition">登录</a>
+                    <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg shadow-sm transition">预约参观</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- ************ 首屏区块 (联合办公改编) ************ -->
+        <section class="bg-white border-b border-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 leading-tight">企业级联合办公<br>让协作更快一步</h1>
+                        <p class="mt-4 text-lg text-gray-600 max-w-lg">安全、高效、可定制——专为现代企业打造的灵活办公空间，集成社区与专业服务，激发团队创造力。</p>
+                        <p class="mt-2 text-gray-500">从独立办公室到专属楼层，随需扩展。</p>
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-sm transition">预约参观</a>
+                            <a href="#" class="border border-gray-300 bg-white hover:bg-gray-50 text-gray-800 font-semibold px-6 py-3 rounded-lg transition">企业咨询</a>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-xl border border-gray-200">
+                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="联合办公空间">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 合作伙伴区块 (生态伙伴) ************ -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">我们的生态伙伴</h2>
+                <p class="mt-2 text-center text-gray-500">与全球领先的创新企业深度合作</p>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+                    <!-- 仅展示部分伙伴logo (图文来自unsplash占位) -->
+                    <div class="flex flex-col items-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="微软"><span class="text-xs text-gray-500 mt-1">微软</span></div>
+                    <div class="flex flex-col items-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="AWS"><span class="text-xs text-gray-500 mt-1">AWS</span></div>
+                    <div class="flex flex-col items-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="谷歌"><span class="text-xs text-gray-500 mt-1">Google</span></div>
+                    <div class="flex flex-col items-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="腾讯"><span class="text-xs text-gray-500 mt-1">腾讯云</span></div>
+                    <div class="flex flex-col items-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="阿里"><span class="text-xs text-gray-500 mt-1">阿里云</span></div>
+                    <div class="flex flex-col items-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="Salesforce"><span class="text-xs text-gray-500 mt-1">Salesforce</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 左图右文区块 (空间特色) ************ -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-3xl font-bold text-gray-900">无缝连接，跨越部门</h2>
+                        <p class="mt-4 text-gray-600">打破团队孤岛，通过开放办公区、私密电话亭和共享会议室，让每个人都能快速找到所需资源。集成企业会员目录，一键联系同行。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="inline-flex items-center bg-orange-50 text-orange-700 text-sm font-medium px-4 py-1.5 rounded-full border border-orange-200">高速WiFi</span>
+                            <span class="inline-flex items-center bg-orange-50 text-orange-700 text-sm font-medium px-4 py-1.5 rounded-full border border-orange-200">智能预约</span>
+                            <span class="inline-flex items-center bg-gray-100 text-gray-700 text-sm font-medium px-4 py-1.5 rounded-full border border-gray-200">7x24 通行</span>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2 rounded-xl overflow-hidden shadow-md border border-gray-200">
+                        <img class="w-full h-64 md:h-80 object-cover" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="团队沟通">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 左文右图区块 (集成工作流) ************ -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">深度集成企业工作流</h2>
+                        <p class="mt-4 text-gray-600">与您使用的工具无缝连接：Slack、飞书、钉钉、企业微信。在空间中自动同步门禁、会议室、活动日程。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="inline-flex items-center bg-white shadow-sm border border-gray-300 text-gray-800 text-sm font-medium px-4 py-1.5 rounded-full">API开放平台</span>
+                            <span class="inline-flex items-center bg-white shadow-sm border border-gray-300 text-gray-800 text-sm font-medium px-4 py-1.5 rounded-full">智能硬件集成</span>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-md border border-gray-200">
+                        <img class="w-full h-64 md:h-80 object-cover" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="集成工作流">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 特性区块 (专为商务打造) ************ -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">专为商务打造的空间</h2>
+                <p class="mt-2 text-center text-gray-500">从安全到效率，面面俱到</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200"><span class="text-4xl">🔒</span><h3 class="font-semibold text-lg mt-3">企业级安防</h3><p class="text-gray-500 text-sm mt-1">人脸门禁、独立保险柜、24h监控。</p></div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200"><span class="text-4xl">⚡</span><h3 class="font-semibold text-lg mt-3">千兆网络</h3><p class="text-gray-500 text-sm mt-1">专线光纤，独立IP，零掉线。</p></div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200"><span class="text-4xl">🧩</span><h3 class="font-semibold text-lg mt-3">模块化租期</h3><p class="text-gray-500 text-sm mt-1">日租/月租/年租，自由扩展。</p></div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200"><span class="text-4xl">📊</span><h3 class="font-semibold text-lg mt-3">使用洞察</h3><p class="text-gray-500 text-sm mt-1">空间利用率、能耗报告周报。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 客户案例区块 ************ -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">他们正在使用我们的空间</h2>
+                <p class="mt-2 text-center text-gray-500">来自不同规模企业的信赖与认可</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200"><p class="text-gray-600 italic">“团队效率提升40%，跨部门沟通顺畅。员工满意度大幅上升。”</p><div class="mt-4 flex items-center"><img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop"><div class="ml-3"><p class="font-semibold">李志强</p><p class="text-xs text-gray-500">CTO · 科技创新</p></div></div></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200"><p class="text-gray-600 italic">“集成教务系统后，教师沟通和学生管理更高效，空间也很灵活。”</p><div class="mt-4 flex items-center"><img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop"><div class="ml-3"><p class="font-semibold">王美玲</p><p class="text-xs text-gray-500">教务主任 · 未来教育</p></div></div></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200"><p class="text-gray-600 italic">“本地化部署的门禁与我们的IT安全完美结合，支持产线团队。”</p><div class="mt-4 flex items-center"><img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop"><div class="ml-3"><p class="font-semibold">张建国</p><p class="text-xs text-gray-500">IT总监 · 智造科技</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 比较表格区块 (简洁版) ************ -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">为什么选择我们</h2>
+                <p class="mt-2 text-center text-gray-500">与传统办公室/竞品对比</p>
+                <div class="mt-10 overflow-x-auto">
+                    <table class="min-w-full border border-gray-200 divide-y divide-gray-200 text-sm">
+                        <thead class="bg-gray-50"><tr><th class="px-4 py-3 text-left font-medium">对比项</th><th class="px-4 py-3 text-left font-medium">联创空间</th><th class="px-4 py-3 text-left font-medium">传统办公室</th><th class="px-4 py-3 text-left font-medium">普通众创空间</th></tr></thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr><td class="px-4 py-3">租期灵活度</td><td class="px-4 py-3 text-orange-600 font-semibold">✅ 月/周/日</td><td class="px-4 py-3">❌ 年起</td><td class="px-4 py-3">✅ 月/季</td></tr>
+                            <tr><td class="px-4 py-3">企业级安防</td><td class="px-4 py-3 text-orange-600 font-semibold">✅ 生物识别</td><td class="px-4 py-3">✅ 基础</td><td class="px-4 py-3">❌ 普通</td></tr>
+                            <tr><td class="px-4 py-3">专属网络/SLA</td><td class="px-4 py-3 text-orange-600 font-semibold">✅ 99.9%</td><td class="px-4 py-3">✅ 自行维护</td><td class="px-4 py-3">❌ 共享</td></tr>
+                            <tr><td class="px-4 py-3">社区活动/对接</td><td class="px-4 py-3 text-orange-600 font-semibold">✅ 每周</td><td class="px-4 py-3">❌ 无</td><td class="px-4 py-3">✅ 偶尔</td></tr>
+                            <tr class="bg-orange-50"><td class="px-4 py-3 font-medium">工位月单价(人均)</td><td class="px-4 py-3 font-bold text-orange-700">$299</td><td class="px-4 py-3">$450+</td><td class="px-4 py-3">$350</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 统计区块 ************ -->
+        <section class="bg-orange-500 py-14">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+                    <div><div class="text-4xl font-bold">500+</div><div class="text-orange-100 text-sm mt-1">企业客户</div></div>
+                    <div><div class="text-4xl font-bold">98%</div><div class="text-orange-100 text-sm mt-1">客户留存率</div></div>
+                    <div><div class="text-4xl font-bold">20k+</div><div class="text-orange-100 text-sm mt-1">日均通行</div></div>
+                    <div><div class="text-4xl font-bold">24/7</div><div class="text-orange-100 text-sm mt-1">管家支持</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 价格区块 (三列) ************ -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">灵活定价</h2>
+                <p class="mt-2 text-center text-gray-500">按需选择，无隐藏费用</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm"><h3 class="text-xl font-bold">流动工位</h3><p class="text-3xl font-bold mt-2">$199<span class="text-base font-normal text-gray-500">/月</span></p><ul class="mt-4 space-y-2 text-sm text-gray-600"><li>✓ 共享大厅</li><li>✓ 基础网络</li><li>✓ 咖啡畅饮</li></ul><a href="#" class="mt-6 block text-center border border-orange-500 text-orange-600 hover:bg-orange-50 font-medium py-2 rounded-lg">选择基础</a></div>
+                    <div class="border-2 border-orange-400 rounded-xl p-6 bg-white shadow-lg relative"><span class="absolute -top-3 right-6 bg-orange-500 text-white text-xs px-3 py-1 rounded-full">热门</span><h3 class="text-xl font-bold">固定工位</h3><p class="text-3xl font-bold mt-2">$349<span class="text-base font-normal text-gray-500">/月</span></p><ul class="mt-4 space-y-2 text-sm text-gray-600"><li>✓ 专属储物柜</li><li>✓ 优先会议室</li><li>✓ 企业级网络</li><li>✓ 会员活动</li></ul><a href="#" class="mt-6 block bg-orange-500 hover:bg-orange-600 text-white font-medium py-2 rounded-lg text-center">选择商业版</a></div>
+                    <div class="border border-gray-200 rounded-xl p-6 bg-white shadow-sm"><h3 class="text-xl font-bold">企业总部</h3><p class="text-3xl font-bold mt-2">定制</p><ul class="mt-4 space-y-2 text-sm text-gray-600"><li>✓ 独立楼层</li><li>✓ 专属前台</li><li>✓ SSO门禁</li><li>✓ 客户成功经理</li></ul><a href="#" class="mt-6 block text-center border border-orange-500 text-orange-600 hover:bg-orange-50 font-medium py-2 rounded-lg">联系销售</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ CTA 区块 (立即提升) ************ -->
+        <section class="bg-gray-900 text-white py-16">
+            <div class="max-w-3xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-bold">立即提升团队协作效率</h2>
+                <p class="mt-3 text-gray-300">加入数百家信任我们的企业，开启高效办公之旅。</p>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                    <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition">免费参观体验</a>
+                    <a href="#" class="bg-transparent border border-gray-500 hover:border-orange-400 text-white font-semibold px-6 py-3 rounded-lg transition">预约企业演示</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ************ 页脚 (品牌Logo、版权、地址、联系方式、公众号二维码) ************ -->
+    <footer class="bg-gray-100 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- logo + 版权 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">U</div>
+                        <span class="font-bold text-xl text-gray-800">联创<span class="text-orange-600">空间</span></span>
+                    </div>
+                    <p class="text-sm text-gray-600 mt-3">企业级联合办公引领者，为企业提供灵活、安全、高效的办公解决方案。</p>
+                    <p class="text-sm text-gray-500 mt-4">© 2025 联创空间科技有限公司<br>保留一切权利。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">总部地址</h4>
+                    <address class="text-sm text-gray-600 not-italic">上海市浦东新区<br>联创大厦A座 23-26F<br>北京市朝阳区<br>望京SOHO T3 12F</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">联系方式</h4>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li>📞 400-6688-联合</li>
+                        <li>✉️ hello@union.space</li>
+                        <li>🕒 周一至周日 9:00-22:00</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码占位 -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-3">官方微信</h4>
+                    <div class="bg-white p-2 rounded-lg border border-gray-300 inline-block">
+                        <img class="w-24 h-24 object-cover" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="公众号二维码">
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">扫一扫，关注我们</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500">
+                <span>隐私条款 · 服务协议 · 供应商行为准则</span>
+                <span class="mt-2 sm:mt-0">🌐 选择语言: 简体中文</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

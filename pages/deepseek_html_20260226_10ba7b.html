@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>心屿空间 · 情绪管理与心理咨询</title>
+  <!-- Tailwind via CDN + 平滑字体 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 附加柔和紫色基调，完全使用Tailwind类，无自定义样式 -->
+  <style>
+    /* 保证所有样式均通过tailwind类实现，此块仅用于基础平滑和占位 */
+    html { scroll-behavior: smooth; }
+    body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-700 antialiased">
+
+  <!-- 导航栏：薰衣草紫+灰，包含logo、标题、菜单、CTA -->
+  <nav class="bg-white/80 backdrop-blur-sm border-b border-purple-100 sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo + 品牌名 -->
+        <div class="flex items-center space-x-2">
+          <div class="w-8 h-8 bg-purple-300 rounded-lg flex items-center justify-center text-white text-xl">🌀</div>
+          <span class="font-semibold text-xl text-purple-800">心屿空间</span>
+        </div>
+
+        <!-- 导航菜单 (中大型屏幕显示) -->
+        <div class="hidden md:flex space-x-8 text-sm font-medium">
+          <a href="#home" class="text-gray-600 hover:text-purple-700 transition">首页</a>
+          <a href="#emotions" class="text-gray-600 hover:text-purple-700 transition">情绪探索</a>
+          <a href="#methods" class="text-gray-600 hover:text-purple-700 transition">舒缓方法</a>
+          <a href="#cases" class="text-gray-600 hover:text-purple-700 transition">真实改变</a>
+          <a href="#insights" class="text-gray-600 hover:text-purple-700 transition">正念工具</a>
+        </div>
+
+        <!-- CTA 按钮 -->
+        <div class="flex items-center space-x-3">
+          <a href="#contact" class="hidden sm:inline-block text-purple-600 bg-purple-50 px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-100 transition">免费测评</a>
+          <a href="#app" class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-purple-700 transition shadow-sm">开始练习</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="overflow-hidden">
+
+    <!-- 首屏区块 · 情绪管理引导 -->
+    <section id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-light leading-tight text-gray-800">温柔关照情绪，<br><span class="text-purple-700 font-normal">重获内心秩序</span></h1>
+          <p class="mt-6 text-lg text-gray-500 leading-relaxed">专业情绪疏导 · 正念冥想 · 心理咨询。为现代人量身打造的心灵庇护所，帮助您识别、接纳、管理情绪，找回平静与力量。</p>
+          <p class="mt-3 text-gray-400">源自心理学CBT与正念疗法，科学缓解焦虑、压力与失眠。</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#contact" class="bg-purple-600 text-white px-6 py-3 rounded-full text-base font-medium hover:bg-purple-700 shadow-sm">开始使用 — 免费7天</a>
+            <a href="#methods" class="border border-purple-200 text-purple-700 px-6 py-3 rounded-full text-base font-medium bg-purple-50/50 hover:bg-purple-50">了解更多方法</a>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl bg-purple-50/70">
+          <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="平静的辅导场景" style="min-height: 320px; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+    <!-- 合作伙伴区块（心理机构/平台伙伴）情绪舒缓风格-->
+    <section class="bg-purple-50/30 py-12 border-y border-purple-100/50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-center text-2xl font-light text-gray-600">信赖我们的专业伙伴</h2>
+        <p class="text-center text-sm text-purple-400 mt-1">与多家心理机构、正念平台深度合作</p>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-6 mt-8 items-center justify-items-center">
+          <!-- 伙伴logo占位（纯视觉，用灰色紫块代替图片） -->
+          <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-400 text-2xl">🌿</div>
+          <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-400 text-2xl">🧘</div>
+          <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-400 text-2xl">💧</div>
+          <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-400 text-2xl">🌼</div>
+          <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-400 text-2xl">✨</div>
+          <div class="w-20 h-20 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-400 text-2xl">🌙</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 · 情绪识别 -->
+    <section id="emotions" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 rounded-2xl overflow-hidden shadow-md bg-purple-50">
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format&fit=crop" alt="安静记录情绪" class="w-full h-80 object-cover">
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="text-3xl font-light text-gray-800">识别情绪，而非对抗</h2>
+          <p class="mt-4 text-gray-500 leading-relaxed">通过专业的情绪日记与引导，帮您标记焦虑、愤怒或悲伤的根源。不再被情绪裹挟，而是学会观察、命名、接纳。</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="bg-purple-50 text-purple-700 px-4 py-1 rounded-full text-sm flex items-center">🧠 认知重构</span>
+            <span class="bg-purple-50 text-purple-700 px-4 py-1 rounded-full text-sm flex items-center">📓 情绪标注</span>
+            <span class="bg-purple-50 text-purple-700 px-4 py-1 rounded-full text-sm flex items-center">💭 接纳承诺</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 · 舒缓方法 (tags展示) -->
+    <section id="methods" class="bg-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-light text-gray-800">科学情绪调节工具</h2>
+            <p class="mt-4 text-gray-500 leading-relaxed">基于正念、DBT和CBT的练习库：身体扫描、呼吸锚定、情绪释放。每次10分钟，逐步重塑情绪反应模式。</p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">正念呼吸</span>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">情绪降温</span>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">自我安抚</span>
+              <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">睡眠引导</span>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-md">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop" alt="正念冥想" class="w-full h-72 object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 · 情绪管理核心能力 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="text-center">
+        <h2 class="text-3xl font-light text-gray-800">为情绪健康设计的功能</h2>
+        <p class="text-purple-400 mt-2">科学 · 温和 · 有效</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div class="bg-white p-6 rounded-2xl border border-purple-50 shadow-sm">
+          <span class="text-4xl">🧘</span>
+          <h3 class="text-lg font-medium text-gray-800 mt-4">正念引导</h3>
+          <p class="text-gray-400 text-sm mt-2">每日更新冥想音频，缓解焦虑与压力。</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-purple-50 shadow-sm">
+          <span class="text-4xl">📊</span>
+          <h3 class="text-lg font-medium text-gray-800 mt-4">情绪分析</h3>
+          <p class="text-gray-400 text-sm mt-2">可视化情绪趋势，发现触发点与模式。</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-purple-50 shadow-sm">
+          <span class="text-4xl">💬</span>
+          <h3 class="text-lg font-medium text-gray-800 mt-4">即时倾诉</h3>
+          <p class="text-gray-400 text-sm mt-2">匿名文字/语音，受过培训的倾听师。</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl border border-purple-50 shadow-sm">
+          <span class="text-4xl">🌙</span>
+          <h3 class="text-lg font-medium text-gray-800 mt-4">睡眠修复</h3>
+          <p class="text-gray-400 text-sm mt-2">放松故事、白噪音，助你深度入眠。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 客户案例区块 · 真实改变 -->
+    <section id="cases" class="bg-purple-50/30 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-light text-gray-800 text-center">他们在这里找回平静</h2>
+        <p class="text-center text-gray-400 mt-1">数千位用户分享的真实改变</p>
+        <div class="grid md:grid-cols-3 gap-6 mt-10">
+          <!-- 案例1 -->
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-purple-100">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center text-purple-600">👩</div>
+              <div>
+                <h4 class="font-medium text-gray-700">陈女士 · 32岁</h4>
+                <p class="text-xs text-purple-300">焦虑缓解</p>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-500 italic text-sm">“坚持正念打卡两个月，惊恐发作明显减少，学会了和焦虑共处。” </p>
+          </div>
+          <!-- 案例2 -->
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-purple-100">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center text-purple-600">👨</div>
+              <div>
+                <h4 class="font-medium text-gray-700">李先生 · 28岁</h4>
+                <p class="text-xs text-purple-300">压力管理</p>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-500 italic text-sm">“情绪日记让我看清压力来源，现在能更理性应对工作挑战。”</p>
+          </div>
+          <!-- 案例3 -->
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-purple-100">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center text-purple-600">👧</div>
+              <div>
+                <h4 class="font-medium text-gray-700">张同学 · 24岁</h4>
+                <p class="text-xs text-purple-300">睡眠改善</p>
+              </div>
+            </div>
+            <p class="mt-4 text-gray-500 italic text-sm">“睡前故事和身体扫描让我不再熬夜，整个人的状态都变好了。”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 + 认证小标 (组合) 柔和紫色 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-4xl text-purple-500 font-light">10w+</div>
+          <div class="text-sm text-gray-400">情绪练习次数</div>
+        </div>
+        <div>
+          <div class="text-4xl text-purple-500 font-light">98%</div>
+          <div class="text-sm text-gray-400">用户推荐率</div>
+        </div>
+        <div>
+          <div class="text-4xl text-purple-500 font-light">200+</div>
+          <div class="text-sm text-gray-400">冥想课程</div>
+        </div>
+        <div>
+          <div class="text-4xl text-purple-500 font-light">24h</div>
+          <div class="text-sm text-gray-400">陪伴支持</div>
+        </div>
+      </div>
+      <!-- 认证徽章（简单资质） -->
+      <div class="flex justify-center gap-4 mt-8 text-xs text-purple-400">
+        <span class="bg-purple-50 px-3 py-1 rounded-full">🍃 国际正念协会认证</span>
+        <span class="bg-purple-50 px-3 py-1 rounded-full">📘 中国心理学会合作</span>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 · 全平台一致体验(多设备冥想) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="text-center">
+        <h2 class="text-3xl font-light text-gray-800">随时随地的情绪药盒</h2>
+        <p class="text-gray-400 mt-2">手机、平板、网页，进度同步，体验一致。</p>
+      </div>
+      <div class="mt-8 rounded-2xl overflow-hidden shadow-md border border-purple-100">
+        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=1200&auto=format&fit=crop" alt="多设备使用场景" class="w-full h-72 object-cover object-top">
+      </div>
+    </section>
+
+    <!-- CTA区块 立即开始情绪管理 -->
+    <section class="bg-gradient-to-b from-purple-50 to-white py-16">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-light text-gray-800">开启你的内在平静之旅</h2>
+        <p class="mt-3 text-gray-400">新用户专享7天全功能体验，无需信用卡</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-4">
+          <a href="#" class="bg-purple-600 text-white px-8 py-3 rounded-full text-base shadow-sm hover:bg-purple-700">免费试用</a>
+          <a href="#" class="border border-purple-300 text-purple-700 px-8 py-3 rounded-full bg-white/60 hover:bg-white">预约顾问</a>
+        </div>
+        <p class="text-xs text-gray-300 mt-4">企业合作或员工帮助计划(EAP) 请联络商务</p>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 精简 -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl font-light text-center text-gray-800">常见问题</h2>
+      <div class="mt-8 space-y-4">
+        <div class="border border-purple-100 rounded-xl p-4 bg-white">
+          <h3 class="font-medium text-gray-700">❓ 情绪练习适合完全没有基础的人吗？</h3>
+          <p class="text-sm text-gray-400 mt-1">当然，所有练习都配有基础引导，从1分钟呼吸开始。</p>
+        </div>
+        <div class="border border-purple-100 rounded-xl p-4 bg-white">
+          <h3 class="font-medium text-gray-700">❓ 可以替代心理咨询吗？</h3>
+          <p class="text-sm text-gray-400 mt-1">平台提供自助工具与倾听支持，若需深度治疗建议对接专业咨询师。</p>
+        </div>
+        <div class="border border-purple-100 rounded-xl p-4 bg-white">
+          <h3 class="font-medium text-gray-700">❓ 数据隐私安全如何？</h3>
+          <p class="text-sm text-gray-400 mt-1">所有情绪日记本地加密，匿名倾诉不记录身份。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 应用下载区块 (二维码示意) -->
+    <section id="app" class="bg-white py-12 border-t border-purple-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-light text-gray-800">下载App，随身携带的正念</h2>
+        <div class="flex flex-wrap justify-center gap-6 mt-8">
+          <div class="w-36 p-4 bg-purple-50 rounded-xl text-center">
+            <span class="text-4xl">📱</span>
+            <p class="text-sm font-medium mt-2">iOS 版</p>
+            <div class="w-20 h-20 mx-auto mt-2 bg-purple-200 rounded flex items-center justify-center text-purple-400 text-xs">二维码</div>
+            <p class="text-xs text-gray-400 mt-1">App Store</p>
+          </div>
+          <div class="w-36 p-4 bg-purple-50 rounded-xl text-center">
+            <span class="text-4xl">🤖</span>
+            <p class="text-sm font-medium mt-2">Android 版</p>
+            <div class="w-20 h-20 mx-auto mt-2 bg-purple-200 rounded flex items-center justify-center text-purple-400 text-xs">二维码</div>
+            <p class="text-xs text-gray-400 mt-1">应用商店</p>
+          </div>
+          <div class="w-36 p-4 bg-purple-50 rounded-xl text-center">
+            <span class="text-4xl">💻</span>
+            <p class="text-sm font-medium mt-2">网页版</p>
+            <p class="text-xs text-gray-400 mt-6">浏览器直接访问</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚：包含品牌Logo、版权、地址、联系方式、公众号二维码 -->
+  <footer class="bg-gray-50 border-t border-purple-100 pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- 品牌与版权 -->
+        <div>
+          <div class="flex items-center space-x-2">
+            <span class="w-6 h-6 bg-purple-300 rounded flex items-center justify-center text-white text-sm">🌀</span>
+            <span class="font-medium text-purple-800">心屿空间</span>
+          </div>
+          <p class="text-xs text-gray-400 mt-3">© 2025 心屿空间<br>保留一切温柔的权利。</p>
+        </div>
+        <!-- 公司地址 -->
+        <div>
+          <h4 class="text-sm font-medium text-gray-600 uppercase tracking-wider">地址</h4>
+          <p class="mt-2 text-sm text-gray-400">上海市静安区 · 心灵港湾<br>余姚路 27号 南楼 301</p>
+        </div>
+        <!-- 联系方式 -->
+        <div>
+          <h4 class="text-sm font-medium text-gray-600 uppercase tracking-wider">联系我们</h4>
+          <p class="mt-2 text-sm text-gray-400">hello@mindspace.cn<br>400-882-5567 (10:00-20:00)</p>
+        </div>
+        <!-- 微信公众号二维码 -->
+        <div>
+          <h4 class="text-sm font-medium text-gray-600 uppercase tracking-wider">公众号</h4>
+          <div class="mt-2 w-24 h-24 bg-purple-100 rounded flex items-center justify-center text-purple-300 text-xs border border-purple-200">二维码</div>
+          <p class="text-xs text-gray-400 mt-1">扫一扫 获取每日正念</p>
+        </div>
+      </div>
+      <div class="border-t border-purple-100 mt-8 pt-6 text-center text-xs text-gray-300">
+        心屿空间 · 用温柔的方式照见情绪
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

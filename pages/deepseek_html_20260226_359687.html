@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金诚银行 · 企业理财</title>
+    <!-- Tailwind via CDN + 基础层样式 (仅CDN, 无自定义) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 简单重置与字体 (保持纯tailwind风格，无额外css) -->
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased">
+
+    <!-- 导航栏 (金色深蓝调) -->
+    <header class="border-b border-blue-900/10 bg-white sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- 左侧 logo + 标题 -->
+                <div class="flex items-center gap-2">
+                    <!-- logo 金色方块示意 -->
+                    <div class="w-8 h-8 bg-amber-400 rounded flex items-center justify-center text-blue-950 font-bold text-xl">金</div>
+                    <span class="text-xl font-semibold tracking-tight text-blue-950">金诚银行<span class="text-amber-600 ml-1 text-sm font-medium">·企业理财</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-blue-900/80">
+                    <a href="#" class="hover:text-amber-700 transition">理财产品</a>
+                    <a href="#" class="hover:text-amber-700 transition">企业服务</a>
+                    <a href="#" class="hover:text-amber-700 transition">安全与资质</a>
+                    <a href="#" class="hover:text-amber-700 transition">客户案例</a>
+                    <a href="#" class="hover:text-amber-700 transition">关于我们</a>
+                </nav>
+                <!-- CTA 按钮 金+深蓝 -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hidden sm:inline-block text-sm font-medium text-blue-900 hover:text-amber-700">登录</a>
+                    <a href="#" class="bg-amber-400 hover:bg-amber-500 text-blue-950 px-5 py-2 rounded-lg text-sm font-semibold shadow-sm transition">企业开户</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========= 首屏区块 (根据银行理财改写) ========= -->
+        <section class="bg-gradient-to-br from-blue-950 to-blue-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">企业级理财管理<span class="text-amber-300 block text-2xl md:text-3xl mt-2">让资金效能更进一步</span></h1>
+                        <p class="text-lg text-blue-100 mt-6 max-w-xl">专为现代企业打造的安全理财平台，集成智能现金流与定制化资产配置，年化收益稳健提升。</p>
+                        <p class="text-blue-200/80 mt-2 text-sm">央企背景 · 银行级风控 · 随存随取</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="#" class="bg-amber-400 hover:bg-amber-300 text-blue-950 font-semibold px-6 py-3 rounded-lg shadow-lg shadow-blue-950/30 transition">查看理财产品</a>
+                            <a href="#" class="border border-amber-400/70 text-amber-100 hover:bg-white/10 px-6 py-3 rounded-lg font-medium transition">专属客户经理</a>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl border border-white/20">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="银行理财团队协作" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 合作伙伴区块 (银行生态伙伴) ========= -->
+        <section class="py-16 bg-slate-50 border-y border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-950">值得信赖的生态伙伴</h2>
+                    <p class="text-slate-600 mt-2">与全球顶尖金融科技机构深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+                    <!-- 借用 partners 数据结构 展示logo & 名称 (简化) -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain mb-2 rounded"><span class="text-xs font-medium text-blue-900">摩根资产管理</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain mb-2 rounded"><span class="text-xs font-medium text-blue-900">贝莱德</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain mb-2 rounded"><span class="text-xs font-medium text-blue-900">中信证券</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain mb-2 rounded"><span class="text-xs font-medium text-blue-900">平安科技</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain mb-2 rounded"><span class="text-xs font-medium text-blue-900">恒生电子</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain mb-2 rounded"><span class="text-xs font-medium text-blue-900">标普全球</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左图右文区块 ========= 企业资金管理 -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="企业资金看板" class="rounded-2xl shadow-xl border border-slate-200">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-blue-950">跨账户资金，全景可视</h2>
+                        <p class="text-slate-600 mt-4 text-lg">打破集团内部资金信息孤岛，通过多级现金池、智能划拨与流动性预警，让CFO实时掌控全局。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="inline-flex items-center bg-blue-50 text-blue-800 px-4 py-2 rounded-full text-sm font-medium border border-blue-200">银行级加密</span>
+                            <span class="inline-flex items-center bg-amber-50 text-amber-800 px-4 py-2 rounded-full text-sm font-medium border border-amber-200">T+0实时赎回</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 特性区块 ========= 银行理财核心优势 -->
+        <section class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-950">专为企业财务打造的特性</h2>
+                    <p class="text-slate-600 mt-2">从安全性到收益性，面面俱到</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- features 区块 图标用emoji -->
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="text-4xl mb-3">🔒</div>
+                        <h3 class="font-semibold text-lg text-blue-950">银行级安全</h3>
+                        <p class="text-slate-500 text-sm mt-1">国密标准SSL传输、资金托管、操作日志审计，满足合规要求。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h3 class="font-semibold text-lg text-blue-950">实时到账</h3>
+                        <p class="text-slate-500 text-sm mt-1">7×24小时快速赎回，资金分钟级回笼，流动性无忧。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="text-4xl mb-3">🧩</div>
+                        <h3 class="font-semibold text-lg text-blue-950">灵活配置</h3>
+                        <p class="text-slate-500 text-sm mt-1">固收+、结构化产品、定制化投资组合，适配不同风险偏好。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition">
+                        <div class="text-4xl mb-3">📊</div>
+                        <h3 class="font-semibold text-lg text-blue-950">分析洞察</h3>
+                        <p class="text-slate-500 text-sm mt-1">资产负债分析、收益归因、压力测试，数据辅助决策。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 客户案例区块 ========= -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-950">他们正在使用金诚理财</h2>
+                    <p class="text-slate-600 mt-2">来自不同行业领先企业的信赖</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- case 1 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64&h=64&fit=crop" class="w-10 h-10 rounded-lg border">
+                            <div><p class="font-semibold text-blue-900">云创科技</p><p class="text-xs text-slate-500">互联网 · CFO</p></div>
+                        </div>
+                        <p class="text-slate-700 italic">“闲置资金年化收益提升2.3%，流动性管理从未如此轻松。”</p>
+                        <div class="flex items-center gap-3 mt-5 border-t border-slate-200 pt-4">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop" class="w-8 h-8 rounded-full object-cover">
+                            <div><p class="text-sm font-medium">李志强</p><p class="text-xs text-slate-500">首席财务官</p></div>
+                        </div>
+                    </div>
+                    <!-- case 2 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64&h=64&fit=crop" class="w-10 h-10 rounded-lg border">
+                            <div><p class="font-semibold text-blue-900">未来教育集团</p><p class="text-xs text-slate-500">教育 · 财务总监</p></div>
+                        </div>
+                        <p class="text-slate-700 italic">“多校区资金归集效率提升70%，审计对账时间缩短一半。”</p>
+                        <div class="flex items-center gap-3 mt-5 border-t border-slate-200 pt-4">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop" class="w-8 h-8 rounded-full object-cover">
+                            <div><p class="text-sm font-medium">王美玲</p><p class="text-xs text-slate-500">财务总监</p></div>
+                        </div>
+                    </div>
+                    <!-- case 3 -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                        <div class="flex items-center gap-3 mb-4">
+                            <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64&h=64&fit=crop" class="w-10 h-10 rounded-lg border">
+                            <div><p class="font-semibold text-blue-900">智造科技</p><p class="text-xs text-slate-500">制造业 · 资金总监</p></div>
+                        </div>
+                        <p class="text-slate-700 italic">“本地化部署+专线网络，完美满足集团资金安全要求。”</p>
+                        <div class="flex items-center gap-3 mt-5 border-t border-slate-200 pt-4">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop" class="w-8 h-8 rounded-full object-cover">
+                            <div><p class="text-sm font-medium">张建国</p><p class="text-xs text-slate-500">资金总监</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 认证与资质区块 (部分) ========= 增强信任 -->
+        <section class="py-16 bg-blue-950 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-amber-400">安全认证与企业资质</h2>
+                    <p class="text-blue-200 mt-2">通过最严格金融标准，保障您的资金安全</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-blue-900/40 p-5 rounded-xl border border-blue-700 text-center">
+                        <div class="text-5xl mb-2">🏆</div>
+                        <h3 class="font-semibold text-amber-300">ISO 27001</h3>
+                        <p class="text-xs text-blue-200 mt-1">信息安全管理认证</p>
+                    </div>
+                    <div class="bg-blue-900/40 p-5 rounded-xl border border-blue-700 text-center">
+                        <div class="text-5xl mb-2">🛡️</div>
+                        <h3 class="font-semibold text-amber-300">SOC 2 Type II</h3>
+                        <p class="text-xs text-blue-200 mt-1">服务审计认证</p>
+                    </div>
+                    <div class="bg-blue-900/40 p-5 rounded-xl border border-blue-700 text-center">
+                        <div class="text-5xl mb-2">🇪🇺</div>
+                        <h3 class="font-semibold text-amber-300">GDPR 合规</h3>
+                        <p class="text-xs text-blue-200 mt-1">欧盟数据保护</p>
+                    </div>
+                    <div class="bg-blue-900/40 p-5 rounded-xl border border-blue-700 text-center">
+                        <div class="text-5xl mb-2">🇨🇳</div>
+                        <h3 class="font-semibold text-amber-300">等保三级</h3>
+                        <p class="text-xs text-blue-200 mt-1">公安部认证</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 比较表格区块 (简洁版) ========= 对比传统理财 -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-blue-950">为什么选择金诚理财</h2>
+                <p class="text-center text-slate-600 mt-2 mb-10">与传统银行理财/货币基金的全面对比</p>
+                <div class="overflow-x-auto border border-slate-200 rounded-xl shadow-sm">
+                    <table class="min-w-full divide-y divide-slate-200 text-sm">
+                        <thead class="bg-slate-50">
+                            <tr><th class="px-5 py-3 text-left font-semibold text-blue-900">对比项</th><th class="px-5 py-3 text-left font-semibold text-amber-700">金诚理财</th><th class="px-5 py-3 text-left font-semibold text-slate-500">普通货基</th><th class="px-5 py-3 text-left font-semibold text-slate-500">传统定存</th></tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-200">
+                            <tr><td class="px-5 py-3">起购金额</td><td class="px-5 py-3 font-medium text-blue-900">0元 (企业)</td><td class="px-5 py-3">1元</td><td class="px-5 py-3">1000元</td></tr>
+                            <tr><td class="px-5 py-3">快速赎回额度</td><td class="px-5 py-3 font-medium text-blue-900">5000万/日</td><td class="px-5 py-3">1万</td><td class="px-5 py-3">不支持</td></tr>
+                            <tr><td class="px-5 py-3">7日年化 (近三月)</td><td class="px-5 py-3 font-medium text-blue-900">3.25%</td><td class="px-5 py-3">2.10%</td><td class="px-5 py-3">1.90%</td></tr>
+                            <tr><td class="px-5 py-3">专属客户经理</td><td class="px-5 py-3 text-blue-900">✅</td><td class="px-5 py-3">❌</td><td class="px-5 py-3">❌</td></tr>
+                            <tr><td class="px-5 py-3">合规报告</td><td class="px-5 py-3 text-blue-900">✅ 每月</td><td class="px-5 py-3">❌</td><td class="px-5 py-3">❌</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 价格区块 (简化) ========= 企业理财计划 -->
+        <section class="py-16 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-950">灵活理财计划</h2>
+                    <p class="text-slate-600">按需选择，无隐藏费用</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- 基础 -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                        <h3 class="text-xl font-bold text-blue-900">流动资金版</h3>
+                        <p class="text-amber-600 text-2xl font-semibold mt-2">1.85<span class="text-sm font-normal text-slate-500 ml-1">% 七日年化</span></p>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                            <li>• T+0 快速赎回</li>
+                            <li>• 50万以内随存随取</li>
+                            <li>• 电子回单</li>
+                        </ul>
+                        <a href="#" class="mt-6 block w-full text-center bg-amber-50 border border-amber-300 text-amber-800 py-2 rounded-lg font-medium hover:bg-amber-100">立即开通</a>
+                    </div>
+                    <!-- 商业版(热门) -->
+                    <div class="bg-white rounded-2xl p-6 border-2 border-amber-400 shadow-lg relative">
+                        <span class="absolute -top-3 left-5 bg-amber-400 text-blue-950 text-xs font-bold px-3 py-1 rounded-full">最受欢迎</span>
+                        <h3 class="text-xl font-bold text-blue-900">固收增强版</h3>
+                        <p class="text-amber-600 text-2xl font-semibold mt-2">3.25<span class="text-sm font-normal text-slate-500 ml-1">% 预期年化</span></p>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                            <li>• 7×24h 实时赎回</li>
+                            <li>• 1000万额度</li>
+                            <li>• 个性化资产报告</li>
+                            <li>• 专属客户经理</li>
+                        </ul>
+                        <a href="#" class="mt-6 block w-full text-center bg-amber-400 hover:bg-amber-500 text-blue-950 py-2 rounded-lg font-semibold">立即预约</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                        <h3 class="text-xl font-bold text-blue-900">定制化专户</h3>
+                        <p class="text-amber-600 text-2xl font-semibold mt-2">定制<span class="text-sm font-normal text-slate-500 ml-1">阶梯费率</span></p>
+                        <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                            <li>• 完全委外/主动管理</li>
+                            <li>• 投资策略定制</li>
+                            <li>• 定期持仓穿透</li>
+                            <li>• 一对一投顾</li>
+                        </ul>
+                        <a href="#" class="mt-6 block w-full text-center bg-blue-50 border border-blue-300 text-blue-800 py-2 rounded-lg font-medium hover:bg-blue-100">联系客户经理</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= CTA区块 ========= -->
+        <section class="bg-amber-400 py-16">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-950">立即提升企业资金效率</h2>
+                <p class="text-blue-900/80 mt-3 text-lg">已有超过500家行业标杆选择金诚理财</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#" class="bg-blue-950 hover:bg-blue-800 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition">免费预约诊断</a>
+                    <a href="#" class="bg-white text-blue-950 hover:bg-slate-100 px-8 py-3 rounded-lg font-semibold shadow transition">下载产品手册</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========= 页脚 ========= 品牌logo/地址/联系方式/二维码 -->
+    <footer class="bg-blue-950 text-slate-300 border-t border-blue-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- 品牌logo+版权 -->
+                <div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-amber-400 rounded flex items-center justify-center text-blue-950 font-bold text-xl">金</div>
+                        <span class="text-white font-semibold tracking-tight">金诚银行</span>
+                    </div>
+                    <p class="text-sm text-slate-400 mt-3">© 2025 金诚银行股份有限公司<br>保留一切权利。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h3 class="text-white font-semibold mb-3 text-sm tracking-wider">总部地址</h3>
+                    <address class="not-italic text-sm text-slate-400">
+                        上海市浦东新区银城中路68号<br>
+                        金诚大厦 45F<br>
+                        邮编：200120
+                    </address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h3 class="text-white font-semibold mb-3 text-sm tracking-wider">企业服务专线</h3>
+                    <p class="text-sm text-slate-400">400 888 2266 (7×24h)<br>corp@jinchengbank.cn<br>客户经理直联：+86 21 6060 1234</p>
+                </div>
+                <!-- 微信公众号二维码 -->
+                <div>
+                    <h3 class="text-white font-semibold mb-3 text-sm tracking-wider">企业理财公众号</h3>
+                    <div class="bg-white p-2 rounded-lg w-24 h-24 flex items-center justify-center border border-amber-400">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="公众号二维码" class="w-full h-full object-contain">
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2">扫一扫 获取每日理财资讯</p>
+                </div>
+            </div>
+            <div class="border-t border-blue-800/50 mt-8 pt-6 text-xs text-center text-slate-500">
+                <span>本网页仅为演示金融企业风格，所有数据均为示例。投资有风险，选择需谨慎。</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

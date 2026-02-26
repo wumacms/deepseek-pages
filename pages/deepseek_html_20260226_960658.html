@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>银翼影业 · 电影工业协作平台</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 配置深红暗黑主题，完全使用 Tailwind 类，无自定义样式 -->
+  <style>
+    /* 不使用任何自定义CSS，仅作为后备确保无额外样式。所有样式均由Tailwind类实现 */
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 antialiased">
+
+  <!-- 导航栏 (深红暗黑风格) -->
+  <header class="border-b border-red-900/30 bg-black/90 backdrop-blur-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- logo + 标题 -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-red-800 rounded-md flex items-center justify-center text-2xl font-bold shadow-lg shadow-red-900/30">🎬</div>
+          <span class="text-xl font-bold tracking-tight text-white">银翼影业<span class="text-red-500 ml-1">|</span><span class="text-sm font-light text-zinc-400 ml-2">FILM STUDIOS</span></span>
+        </div>
+        <!-- 导航菜单 (电影工业术语) -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="#" class="text-zinc-300 hover:text-red-400 transition">制作服务</a>
+          <a href="#" class="text-zinc-300 hover:text-red-400 transition">后期流程</a>
+          <a href="#" class="text-zinc-300 hover:text-red-400 transition">虚拟制片</a>
+          <a href="#" class="text-zinc-300 hover:text-red-400 transition">片场协作</a>
+          <a href="#" class="text-zinc-300 hover:text-red-400 transition">经典案例</a>
+        </nav>
+        <!-- CTA 按钮 -->
+        <div class="flex items-center gap-3">
+          <button class="hidden sm:inline-block text-sm text-zinc-300 border border-zinc-700 hover:border-red-700 px-5 py-2 rounded-md transition">导演入口</button>
+          <button class="bg-red-800 hover:bg-red-700 text-white text-sm font-semibold px-5 py-2 rounded-md shadow-lg shadow-red-900/50 transition flex items-center gap-1">
+            <span>🎥</span> 发起项目
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-hidden">
+    
+    <!-- 首屏区块 (电影工业英雄) -->
+    <section class="relative bg-gradient-to-b from-black via-zinc-950 to-black border-b border-red-900/20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h1 class="text-4xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+              从<span class="text-red-500">剧本</span>到<span class="text-red-500">银幕</span><br>全流程智能协作
+            </h1>
+            <p class="text-lg text-zinc-400 mt-6 max-w-xl">专为影视制作打造的工业化协作平台——实时分镜、云端审片、虚拟预演，让创意团队和制片方无缝同步。</p>
+            <p class="text-sm text-zinc-600 mt-2">支持4K代理剪辑 · 片场日志 · 后期资产管理</p>
+            <div class="flex flex-wrap gap-4 mt-10">
+              <a href="#" class="bg-red-800 hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-md shadow-2xl shadow-red-900/50 transition text-lg">开启拍摄</a>
+              <a href="#" class="border border-zinc-700 hover:border-red-800 hover:bg-red-950/30 text-zinc-200 font-semibold px-8 py-4 rounded-md transition text-lg">联系制片</a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute inset-0 bg-gradient-to-t from-red-900/20 to-transparent rounded-2xl"></div>
+            <img class="rounded-2xl border border-red-900/40 shadow-2xl shadow-red-950/60" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2070&auto=format&fit=crop" alt="导演监视器与片场">
+            <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-3 py-1 rounded-full border border-red-900/40 text-xs text-zinc-300">🎬 片场直击 · 波西米亚剧组</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 合作伙伴区块 (影视设备/后期伙伴) -->
+    <section class="py-20 border-b border-red-900/20 bg-black/40">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-white">深度合作的影视生态</h2>
+          <p class="text-zinc-400 mt-2">与全球顶尖器材、特效、声音公司联合认证</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-16">
+          <!-- 伙伴 1 (ARRI) -->
+          <div class="bg-zinc-900/70 border border-zinc-800 hover:border-red-800 rounded-xl p-5 flex flex-col items-center text-center transition group">
+            <div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-3xl mb-3 group-hover:bg-red-900/30">🎥</div>
+            <span class="font-semibold text-white">ARRI</span>
+            <span class="text-xs text-zinc-500">摄影机系统</span>
+          </div>
+          <!-- 伙伴 2 (RED) -->
+          <div class="bg-zinc-900/70 border border-zinc-800 hover:border-red-800 rounded-xl p-5 flex flex-col items-center text-center transition">
+            <div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-3xl mb-3">🔴</div>
+            <span class="font-semibold text-white">RED</span>
+            <span class="text-xs text-zinc-500">数字电影</span>
+          </div>
+          <!-- 伙伴 3 (Dolby) -->
+          <div class="bg-zinc-900/70 border border-zinc-800 hover:border-red-800 rounded-xl p-5 flex flex-col items-center text-center transition">
+            <div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-3xl mb-3">🎧</div>
+            <span class="font-semibold text-white">Dolby</span>
+            <span class="text-xs text-zinc-500">全景声</span>
+          </div>
+          <!-- 伙伴 4 (Technicolor) -->
+          <div class="bg-zinc-900/70 border border-zinc-800 hover:border-red-800 rounded-xl p-5 flex flex-col items-center text-center transition">
+            <div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-3xl mb-3">🌈</div>
+            <span class="font-semibold text-white">Technicolor</span>
+            <span class="text-xs text-zinc-500">后期调色</span>
+          </div>
+          <!-- 伙伴 5 (Panalog) -->
+          <div class="bg-zinc-900/70 border border-zinc-800 hover:border-red-800 rounded-xl p-5 flex flex-col items-center text-center transition">
+            <div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-3xl mb-3">📡</div>
+            <span class="font-semibold text-white">Panalog</span>
+            <span class="text-xs text-zinc-500">片场数据</span>
+          </div>
+          <!-- 伙伴 6 (Zeiss) -->
+          <div class="bg-zinc-900/70 border border-zinc-800 hover:border-red-800 rounded-xl p-5 flex flex-col items-center text-center transition">
+            <div class="w-16 h-16 bg-zinc-800 rounded-full flex items-center justify-center text-3xl mb-3">🔍</div>
+            <span class="font-semibold text-white">Zeiss</span>
+            <span class="text-xs text-zinc-500">电影镜头</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (片场沟通) -->
+    <section class="py-20 border-b border-red-900/20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <img class="rounded-2xl border border-red-900/40 shadow-2xl shadow-red-950/50" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" alt="导演与摄影师沟通">
+        </div>
+        <div>
+          <h2 class="text-3xl lg:text-4xl font-bold text-white">导演与摄影组的无缝沟通</h2>
+          <p class="text-zinc-400 mt-6 text-lg">打破片场信息孤岛，通过即时对讲、镜头标记和实时取景共享，让导演、摄影、灯光快速达成共识。集成场记板与数字分镜，一键同步给后期。</p>
+          <div class="flex gap-6 mt-8">
+            <span class="flex items-center gap-2 text-sm bg-zinc-900/80 px-4 py-2 rounded-full border border-zinc-700"><span class="text-red-500 text-lg">🎞️</span> 端到端加密</span>
+            <span class="flex items-center gap-2 text-sm bg-zinc-900/80 px-4 py-2 rounded-full border border-zinc-700"><span class="text-red-500 text-lg">📼</span> 无限历史版本</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (后期工作流) -->
+    <section class="py-20 border-b border-red-900/20 bg-zinc-950/60">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+        <div class="order-last lg:order-first">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white">深度集成后期工作流</h2>
+          <p class="text-zinc-400 mt-6 text-lg">与达芬奇、Avid、Pro Tools 无缝连接。在聊天中发起审片、传递时间线、锁定版本。支持 AAF/XML 直接交换。</p>
+          <div class="flex gap-4 mt-8 flex-wrap">
+            <span class="bg-zinc-900 border border-zinc-700 text-zinc-300 text-sm px-5 py-2 rounded-full">🎬 AAF 导入</span>
+            <span class="bg-zinc-900 border border-zinc-700 text-zinc-300 text-sm px-5 py-2 rounded-full">⚙️ OpenTimelineIO</span>
+          </div>
+        </div>
+        <div>
+          <img class="rounded-2xl border border-red-900/40 shadow-2xl shadow-red-950/50" src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop" alt="后期剪辑台">
+        </div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台支持) -->
+    <section class="py-20 border-b border-red-900/20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white">片场、调光棚、混音室 · 全平台一致</h2>
+        <p class="text-zinc-400 mt-4 max-w-2xl mx-auto">无论是在iPhone、iPad 还是工作站，实时同步代理素材与剪辑决定。</p>
+        <div class="mt-12 relative">
+          <img class="rounded-2xl border border-red-900/40 shadow-2xl shadow-red-950/50 w-full" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2071&auto=format&fit=crop" alt="多设备协同工作">
+          <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-black/70 backdrop-blur-sm px-6 py-2 rounded-full border border-red-800 text-white text-sm">iPad · Mac · 监视器 实时同步</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (电影工业特色) -->
+    <section class="py-20 border-b border-red-900/20 bg-gradient-to-b from-zinc-950 to-black">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white">专为电影级制作打造的特性</h2>
+          <p class="text-zinc-400 mt-2">从片场安全到后期效率，面面俱到</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+          <div class="bg-zinc-900/60 border border-zinc-800 hover:border-red-800 p-8 rounded-xl transition">
+            <span class="text-5xl">🔒</span>
+            <h3 class="text-xl font-bold text-white mt-4">片场安全加密</h3>
+            <p class="text-zinc-400 mt-2 text-sm">端到端加密、DIT 数据校验，满足好莱坞合规标准。</p>
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 hover:border-red-800 p-8 rounded-xl transition">
+            <span class="text-5xl">⚡</span>
+            <h3 class="text-xl font-bold text-white mt-4">实时回放</h3>
+            <p class="text-zinc-400 mt-2 text-sm">毫秒级延迟，多机位同步监看，导演远程即时反馈。</p>
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 hover:border-red-800 p-8 rounded-xl transition">
+            <span class="text-5xl">🧩</span>
+            <h3 class="text-xl font-bold text-white mt-4">无限制作工具</h3>
+            <p class="text-zinc-400 mt-2 text-sm">连接 200+ 后期工具，自定义场记板与 LUT 预设。</p>
+          </div>
+          <div class="bg-zinc-900/60 border border-zinc-800 hover:border-red-800 p-8 rounded-xl transition">
+            <span class="text-5xl">📊</span>
+            <h3 class="text-xl font-bold text-white mt-4">制片洞察</h3>
+            <p class="text-zinc-400 mt-2 text-sm">拍摄进度、每日素材量、预算消耗实时可视化。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 客户案例区块 (知名剧组) -->
+    <section class="py-20 border-b border-red-900/20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl lg:text-4xl font-bold text-white">顶尖剧组信赖银翼</h2>
+          <p class="text-zinc-400 mt-2">来自国内外一线制片方的认可</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+          <!-- 案例1 -->
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8">
+            <div class="flex items-center gap-2 border-b border-zinc-800 pb-4 mb-4">
+              <span class="text-3xl">🌌</span>
+              <span class="font-bold text-white">流浪地球 · 剧组</span>
+              <span class="text-xs text-zinc-600 ml-auto">科幻</span>
+            </div>
+            <p class="text-zinc-300 italic">“跨地域虚拟制片效率提升了50%，前置预演和现场监看无缝对接。”</p>
+            <div class="flex items-center gap-4 mt-6">
+              <span class="w-10 h-10 rounded-full bg-zinc-700 flex items-center justify-center text-lg">👤</span>
+              <div><p class="font-semibold text-white">郭凡</p><p class="text-xs text-zinc-500">导演</p></div>
+            </div>
+          </div>
+          <!-- 案例2 -->
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8">
+            <div class="flex items-center gap-2 border-b border-zinc-800 pb-4 mb-4">
+              <span class="text-3xl">🎞️</span>
+              <span class="font-bold text-white">封神 · 剧组</span>
+              <span class="text-xs text-zinc-600 ml-auto">古装</span>
+            </div>
+            <p class="text-zinc-300 italic">“上千人的服化道团队通过协作平台管理，每天收工素材即时同步给后期。”</p>
+            <div class="flex items-center gap-4 mt-6">
+              <span class="w-10 h-10 rounded-full bg-zinc-700 flex items-center justify-center text-lg">👤</span>
+              <div><p class="font-semibold text-white">乌尔善</p><p class="text-xs text-zinc-500">导演</p></div>
+            </div>
+          </div>
+          <!-- 案例3 -->
+          <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl p-8">
+            <div class="flex items-center gap-2 border-b border-zinc-800 pb-4 mb-4">
+              <span class="text-3xl">🎥</span>
+              <span class="font-bold text-white">The Crown 剧组</span>
+              <span class="text-xs text-zinc-600 ml-auto">剧集</span>
+            </div>
+            <p class="text-zinc-300 italic">“伦敦-洛杉矶跨时差审片，代理剪辑与最终调色版本零误差。”</p>
+            <div class="flex items-center gap-4 mt-6">
+              <span class="w-10 h-10 rounded-full bg-zinc-700 flex items-center justify-center text-lg">👤</span>
+              <div><p class="font-semibold text-white">Jessica H.</p><p class="text-xs text-zinc-500">制片人</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 比较表格区块 (vs 传统流程) 简洁风格 -->
+    <section class="py-20 border-b border-red-900/20 bg-black/60">
+      <div class="max-w-5xl mx-auto px-6 lg:px-8">
+        <h2 class="text-3xl lg:text-4xl font-bold text-white text-center">银翼 vs 传统片场流程</h2>
+        <p class="text-zinc-400 text-center mt-2">全面对比 — 效率与安全并重</p>
+        <div class="mt-16 overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b-2 border-red-900/40">
+                <th class="pb-4 font-semibold text-zinc-300">特性</th>
+                <th class="pb-4 font-semibold text-red-500">银翼影业</th>
+                <th class="pb-4 font-semibold text-zinc-400">传统对讲/网盘</th>
+                <th class="pb-4 font-semibold text-zinc-400">邮件+微信</th>
+              </tr>
+            </thead>
+            <tbody class="text-zinc-300">
+              <tr class="border-b border-zinc-800"><td class="py-4">端到端加密</td><td class="py-4 text-red-400 font-medium">✅</td><td class="py-4">❌</td><td class="py-4">❌</td></tr>
+              <tr class="border-b border-zinc-800"><td class="py-4">本地部署 / 私有云</td><td class="py-4 text-red-400 font-medium">✅</td><td class="py-4">❌</td><td class="py-4">❌</td></tr>
+              <tr class="border-b border-zinc-800"><td class="py-4">无限版本历史</td><td class="py-4 text-red-400 font-medium">✅</td><td class="py-4">⚠️ 部分</td><td class="py-4">❌</td></tr>
+              <tr class="border-b border-zinc-800"><td class="py-4">开放API / 后期工具桥接</td><td class="py-4 text-red-400 font-medium">✅</td><td class="py-4">❌</td><td class="py-4">❌</td></tr>
+              <tr class="border-b border-zinc-800"><td class="py-4">单点登录 SSO</td><td class="py-4 text-red-400 font-medium">✅</td><td class="py-4">❌</td><td class="py-4">❌</td></tr>
+              <tr class="border-b border-zinc-800"><td class="py-4">数据主权 (中国/海外)</td><td class="py-4 text-red-400 font-medium">✅</td><td class="py-4">❌</td><td class="py-4">❌</td></tr>
+              <tr class="bg-red-950/30 font-semibold"><td class="py-4">每月团队成本 (20人)</td><td class="py-4 text-red-400">$980</td><td class="py-4">$1500+ (碎片)</td><td class="py-4">$200 (低效)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 区块 (强号召) -->
+    <section class="py-24 bg-gradient-to-r from-black to-red-950/30 border-y border-red-900/30">
+      <div class="max-w-4xl mx-auto text-center px-6">
+        <h2 class="text-4xl lg:text-5xl font-bold text-white">筹备下一部巨制？</h2>
+        <p class="text-zinc-300 text-xl mt-4">加入超过300个专业剧组的协作网络，免费试用30天。</p>
+        <div class="flex flex-wrap gap-4 justify-center mt-10">
+          <a href="#" class="bg-red-800 hover:bg-red-700 text-white font-bold px-10 py-5 rounded-lg text-xl shadow-2xl shadow-red-900/50">免费试用30天</a>
+          <a href="#" class="border border-red-800 hover:bg-red-950/40 text-white font-bold px-10 py-5 rounded-lg text-xl">预约演示</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 (深红暗黑 + 影视版权、地址、联系方式、微信公众号) -->
+  <footer class="bg-black border-t border-red-900/30 pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <!-- 品牌 Logo + 版权 -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-2">
+            <span class="text-3xl">🎬</span>
+            <span class="text-xl font-bold text-white">银翼影业</span>
+          </div>
+          <p class="text-xs text-zinc-600 mt-3 leading-relaxed">电影工业级协作平台 · 从剧本到银幕</p>
+          <p class="text-sm text-zinc-600 mt-6">© 2025 银翼影视科技<br>保留一切权利</p>
+        </div>
+        <!-- 公司地址 -->
+        <div>
+          <h3 class="text-red-500 font-semibold text-lg border-b border-red-900/30 pb-2">北京总部</h3>
+          <address class="not-italic text-zinc-400 text-sm mt-4 leading-6">
+            北京市朝阳区<br>电影创意产业园 B2<br>银翼后期中心
+          </address>
+        </div>
+        <div>
+          <h3 class="text-red-500 font-semibold text-lg border-b border-red-900/30 pb-2">横店/上海</h3>
+          <address class="not-italic text-zinc-400 text-sm mt-4 leading-6">
+            横店影视城 华夏园C座<br>上海车墩 3号棚<br>数字影棚区
+          </address>
+        </div>
+        <!-- 联系方式 -->
+        <div>
+          <h3 class="text-red-500 font-semibold text-lg border-b border-red-900/30 pb-2">制片专线</h3>
+          <ul class="text-zinc-400 text-sm mt-4 space-y-2">
+            <li>📞 +86 10 5692 7888</li>
+            <li>📧 prod@silverwing.film</li>
+            <li>⏱️ 24h 剧组支持</li>
+          </ul>
+        </div>
+        <!-- 微信公众号二维码 (模拟) -->
+        <div>
+          <h3 class="text-red-500 font-semibold text-lg border-b border-red-900/30 pb-2">片场助手 · 公众号</h3>
+          <div class="mt-4 bg-zinc-900 p-3 rounded-xl border border-zinc-800 w-32 h-32 flex items-center justify-center">
+            <div class="w-24 h-24 bg-zinc-800 rounded-lg flex flex-col items-center justify-center text-zinc-500 text-xs border border-zinc-700">
+              <span class="text-4xl mb-1">◼️◼️</span>
+              <span>扫一扫</span>
+            </div>
+          </div>
+          <p class="text-xs text-zinc-600 mt-2">每日拍摄技巧·剧组招募</p>
+        </div>
+      </div>
+      <div class="border-t border-red-900/20 mt-12 pt-6 text-center text-xs text-zinc-700">
+        <p>本网站所有内容仅为影视展示，采用深红暗黑电影工业风格。 数据及图片仅为演示用途。</p>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

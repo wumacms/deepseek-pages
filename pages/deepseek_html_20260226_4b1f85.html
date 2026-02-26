@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>柔美之源 · 玫瑰护肤</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 手动微调裸粉玫瑰金主色，但不添加自定义样式，仅通过tailwind配置实现 -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // 裸粉玫瑰金主色调：用于按钮、边框、强调色等
+            rosegold: {
+              50: '#fdf6f7',
+              100: '#fbe9ed',
+              200: '#f7d4dc',
+              300: '#f3b7c4',
+              400: '#ed8fa3',
+              500: '#e36e89',  // 主玫瑰金
+              600: '#d44f6f',
+              700: '#b73a58',
+              800: '#963245',
+              900: '#7b2d3b',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- 导航栏 (logo,标题,导航菜单,CTA按钮) 符合裸粉玫瑰金风格 -->
+  <nav class="border-b border-rosegold-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- logo + 标题 -->
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-rosegold-300 to-rosegold-500 flex items-center justify-center text-white text-lg">♢</div>
+        <span class="font-serif text-2xl font-light tracking-wide text-rosegold-700">Roséure</span>
+      </div>
+      <!-- 导航菜单 (精致简约) -->
+      <div class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-600">
+        <a href="#" class="hover:text-rosegold-600 transition">护肤系列</a>
+        <a href="#" class="hover:text-rosegold-600 transition">关于我们</a>
+        <a href="#" class="hover:text-rosegold-600 transition">博客</a>
+        <a href="#" class="hover:text-rosegold-600 transition">联系</a>
+      </div>
+      <!-- CTA 按钮 -->
+      <div>
+        <a href="#" class="bg-rosegold-500 hover:bg-rosegold-600 text-white px-5 py-2.5 rounded-full text-sm font-medium shadow-sm transition">成为会员</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="overflow-hidden">
+
+    <!-- 1. 首屏区块 (护肤品文案 + 柔美视觉) -->
+    <section class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-serif font-light leading-tight text-gray-800">予肌肤<br><span class="text-rosegold-500">玫瑰金晨露</span>般的呵护</h1>
+        <p class="text-lg text-gray-500 mt-6 leading-relaxed">双重玫瑰精萃 · 24小时保湿屏障 · 抗皱初老。专为现代女性打造的奢华护肤体验，每一滴都源自纯净玫瑰庄园。</p>
+        <p class="text-gray-400 mt-2">天然成分高达97%，敏感肌亦可安心使用。</p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="#" class="bg-rosegold-500 hover:bg-rosegold-600 text-white px-8 py-3 rounded-full text-sm font-medium shadow-md transition">探索系列</a>
+          <a href="#" class="border border-rosegold-300 text-rosegold-600 hover:bg-rosegold-50 px-8 py-3 rounded-full text-sm font-medium transition">预约体验</a>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <!-- 护肤品主题图片 (使用unsplash护肤品相关图片) 实际为女性护肤/玫瑰主题 -->
+        <img class="rounded-3xl shadow-xl object-cover w-full h-auto max-w-md border-4 border-rosegold-100" src="https://images.unsplash.com/photo-1570194065650-d99fb4b8ccb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="玫瑰护肤精华露">
+      </div>
+    </section>
+
+    <!-- 2. 合作伙伴区块 (美妆生态伙伴) -->
+    <section class="bg-rosegold-50/60 py-16">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-serif font-light text-gray-800">我们的美妍伙伴</h2>
+        <p class="text-gray-500 mt-2">与全球顶级原料实验室及香氛工坊携手</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12 items-center">
+          <!-- 模拟六个合作伙伴 logo 用简约圆形容器展示 -->
+          <div class="bg-white p-4 rounded-2xl shadow-sm border border-rosegold-100"><div class="h-12 w-full bg-rosegold-100 rounded-lg flex items-center justify-center text-rosegold-400 font-semibold">Givaudan</div></div>
+          <div class="bg-white p-4 rounded-2xl shadow-sm border border-rosegold-100"><div class="h-12 w-full bg-rosegold-100 rounded-lg flex items-center justify-center text-rosegold-400 font-semibold">DSM</div></div>
+          <div class="bg-white p-4 rounded-2xl shadow-sm border border-rosegold-100"><div class="h-12 w-full bg-rosegold-100 rounded-lg flex items-center justify-center text-rosegold-400 font-semibold">Symrise</div></div>
+          <div class="bg-white p-4 rounded-2xl shadow-sm border border-rosegold-100"><div class="h-12 w-full bg-rosegold-100 rounded-lg flex items-center justify-center text-rosegold-400 font-semibold">BASF</div></div>
+          <div class="bg-white p-4 rounded-2xl shadow-sm border border-rosegold-100"><div class="h-12 w-full bg-rosegold-100 rounded-lg flex items-center justify-center text-rosegold-400 font-semibold">IFF</div></div>
+          <div class="bg-white p-4 rounded-2xl shadow-sm border border-rosegold-100"><div class="h-12 w-full bg-rosegold-100 rounded-lg flex items-center justify-center text-rosegold-400 font-semibold">Croda</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 左图右文区块 (展示核心成分) -->
+    <section class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img class="rounded-3xl shadow-xl object-cover w-full h-80 md:h-96 border border-rosegold-200" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1169&q=80" alt="玫瑰花瓣与精华">
+      </div>
+      <div>
+        <h2 class="text-3xl font-serif font-light text-gray-800">大马士革玫瑰精粹</h2>
+        <p class="text-gray-500 mt-4 leading-relaxed">每瓶凝聚百万朵新鲜玫瑰，通过超临界CO₂萃取保留活性。深入肌底修护，提升皮肤弹性与光泽，使用7天显著改善暗沉。</p>
+        <div class="flex flex-wrap gap-3 mt-6">
+          <span class="bg-rosegold-100 text-rosegold-700 px-4 py-1.5 rounded-full text-sm">舒缓泛红</span>
+          <span class="bg-rosegold-100 text-rosegold-700 px-4 py-1.5 rounded-full text-sm">强化屏障</span>
+          <span class="bg-rosegold-100 text-rosegold-700 px-4 py-1.5 rounded-full text-sm">持久保湿</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 左文右图区块 (科技护肤) -->
+    <section class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center bg-rosegold-50/30 rounded-3xl my-8">
+      <div>
+        <h2 class="text-3xl font-serif font-light text-gray-800">微脂囊渗透技术</h2>
+        <p class="text-gray-500 mt-4 leading-relaxed">将活性成分包裹在纳米级脂质体中，层层释放直达肌底。与时间赛跑，让护肤事半功倍。日间防护，夜间修护。</p>
+        <div class="flex flex-wrap gap-3 mt-6">
+          <span class="border border-rosegold-300 text-rosegold-600 px-4 py-1.5 rounded-full text-sm">缓释技术专利</span>
+          <span class="border border-rosegold-300 text-rosegold-600 px-4 py-1.5 rounded-full text-sm">亲肤仿生</span>
+        </div>
+      </div>
+      <div>
+        <img class="rounded-3xl shadow-xl object-cover w-full h-80 md:h-96" src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="科技护肤微胶囊">
+      </div>
+    </section>
+
+    <!-- 5. 上文下图区块 (全系列展示) -->
+    <section class="max-w-7xl mx-auto px-6 py-16 text-center">
+      <h2 class="text-3xl font-serif font-light text-gray-800">玫瑰全系列 · 无瑕共舞</h2>
+      <p class="text-gray-500 mt-2">从洁面到面霜，满足每一种肤质的期待</p>
+      <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img class="rounded-2xl shadow-md border border-rosegold-200 h-64 w-full object-cover" src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="洁面慕斯">
+        <img class="rounded-2xl shadow-md border border-rosegold-200 h-64 w-full object-cover" src="https://images.unsplash.com/photo-1617897903246-719242758200?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="精华水">
+        <img class="rounded-2xl shadow-md border border-rosegold-200 h-64 w-full object-cover" src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab12?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="眼霜">
+        <img class="rounded-2xl shadow-md border border-rosegold-200 h-64 w-full object-cover" src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="面霜">
+      </div>
+    </section>
+
+    <!-- 6. 特性区块 (四大核心功效) -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-3xl font-serif font-light text-gray-800">专为精致女性打造</h2>
+        <p class="text-gray-500 mt-2">科学配比 · 感官奢宠</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <!-- 特性卡片 -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-rosegold-100 text-center">
+          <div class="text-5xl mb-4">🌹</div>
+          <h3 class="font-medium text-lg">高浓度玫瑰</h3>
+          <p class="text-gray-400 text-sm mt-2">每滴含200朵玫瑰精萃，焕亮肌肤</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-rosegold-100 text-center">
+          <div class="text-5xl mb-4">💧</div>
+          <h3 class="font-medium text-lg">72h锁水</h3>
+          <p class="text-gray-400 text-sm mt-2">专利保湿复合物，全天候水润</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-rosegold-100 text-center">
+          <div class="text-5xl mb-4">🧪</div>
+          <h3 class="font-medium text-lg">低敏安全</h3>
+          <p class="text-gray-400 text-sm mt-2">通过皮肤科测试，0添加酒精</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-rosegold-100 text-center">
+          <div class="text-5xl mb-4">🌸</div>
+          <h3 class="font-medium text-lg">天然香氛</h3>
+          <p class="text-gray-400 text-sm mt-2">大马士革玫瑰原香，治愈身心</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 客户案例区块 (真实用户反馈) -->
+    <section class="bg-rosegold-50/60 py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+          <h2 class="text-3xl font-serif font-light text-gray-800">她们正在使用我们的产品</h2>
+          <p class="text-gray-500 mt-2">来自不同领域的真实挚爱之选</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+          <!-- 案例1 -->
+          <div class="bg-white p-8 rounded-3xl shadow-sm border border-rosegold-100">
+            <div class="flex items-center gap-2 text-rosegold-400 text-sm mb-4"><span>⭐ 4.9</span><span>·</span><span>互联网 · 28岁</span></div>
+            <p class="text-gray-600 italic">“用了玫瑰精华后，皮肤真的变透亮了，上妆再也不卡粉。气味高级，就像在做SPA。”</p>
+            <div class="flex items-center mt-6 gap-3">
+              <div class="w-10 h-10 rounded-full bg-rosegold-200 overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="用户"></div>
+              <div><p class="font-medium">李心怡</p><p class="text-xs text-gray-400">UI设计师</p></div>
+            </div>
+          </div>
+          <!-- 案例2 -->
+          <div class="bg-white p-8 rounded-3xl shadow-sm border border-rosegold-100">
+            <div class="flex items-center gap-2 text-rosegold-400 text-sm mb-4"><span>⭐ 5.0</span><span>·</span><span>教育 · 35岁</span></div>
+            <p class="text-gray-600 italic">“孕期皮肤敏感，全套换成Roséure，温和又保湿。尤其喜欢晚霜，第二天脸软软的。”</p>
+            <div class="flex items-center mt-6 gap-3">
+              <div class="w-10 h-10 rounded-full bg-rosegold-200 overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="用户"></div>
+              <div><p class="font-medium">陈蓉</p><p class="text-xs text-gray-400">中学教师</p></div>
+            </div>
+          </div>
+          <!-- 案例3 -->
+          <div class="bg-white p-8 rounded-3xl shadow-sm border border-rosegold-100">
+            <div class="flex items-center gap-2 text-rosegold-400 text-sm mb-4"><span>⭐ 4.8</span><span>·</span><span>制造业 · 42岁</span></div>
+            <p class="text-gray-600 italic">“抗老效果肉眼可见，眼周细纹变淡。配上按摩仪吸收很快，已经推荐给同事了。”</p>
+            <div class="flex items-center mt-6 gap-3">
+              <div class="w-10 h-10 rounded-full bg-rosegold-200 overflow-hidden"><img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80" alt="用户"></div>
+              <div><p class="font-medium">赵雅文</p><p class="text-xs text-gray-400">财务总监</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 统计区块 (品牌数字) -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div><div class="text-4xl font-serif text-rosegold-500">500k+</div><div class="text-gray-500 mt-1">全球用户</div></div>
+        <div><div class="text-4xl font-serif text-rosegold-500">98%</div><div class="text-gray-500 mt-1">回购率</div></div>
+        <div><div class="text-4xl font-serif text-rosegold-500">15+</div><div class="text-gray-500 mt-1">国际奖项</div></div>
+        <div><div class="text-4xl font-serif text-rosegold-500">24/7</div><div class="text-gray-500 mt-1">美容顾问</div></div>
+      </div>
+    </section>
+
+    <!-- 9. 认证与资质区块 -->
+    <section class="bg-white py-16 border-y border-rosegold-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-serif font-light text-center text-gray-800">安全认证 · 权威肯定</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+          <div class="text-center"><div class="bg-rosegold-100 w-20 h-20 rounded-2xl mx-auto flex items-center justify-center text-rosegold-500 font-bold">ISO</div><p class="mt-3 font-medium">22716</p><p class="text-xs text-gray-400">化妆品GMP</p></div>
+          <div class="text-center"><div class="bg-rosegold-100 w-20 h-20 rounded-2xl mx-auto flex items-center justify-center text-rosegold-500 font-bold">ECOCERT</div><p class="mt-3 font-medium">有机认证</p><p class="text-xs text-gray-400">天然成分</p></div>
+          <div class="text-center"><div class="bg-rosegold-100 w-20 h-20 rounded-2xl mx-auto flex items-center justify-center text-rosegold-500 font-bold">Vegan</div><p class="mt-3 font-medium">纯素认证</p><p class="text-xs text-gray-400">无动物测试</p></div>
+          <div class="text-center"><div class="bg-rosegold-100 w-20 h-20 rounded-2xl mx-auto flex items-center justify-center text-rosegold-500 font-bold">🌿</div><p class="mt-3 font-medium">碳中和</p><p class="text-xs text-gray-400">绿色工厂</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 常见问题区块 -->
+    <section class="max-w-4xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-serif font-light text-center text-gray-800">常见问题</h2>
+      <div class="mt-12 space-y-5">
+        <div class="border border-rosegold-200 rounded-2xl p-5"><p class="font-medium text-gray-700">💬 适合敏感肌吗？</p><p class="text-gray-500 mt-1 text-sm">全线产品通过敏感肌测试，无酒精、无人工色素，可以先试用体验装。</p></div>
+        <div class="border border-rosegold-200 rounded-2xl p-5"><p class="font-medium text-gray-700">💬 怀孕可以用吗？</p><p class="text-gray-500 mt-1 text-sm">建议咨询医生，我们的成分天然，但部分孕妇对气味敏感可先闻样。</p></div>
+        <div class="border border-rosegold-200 rounded-2xl p-5"><p class="font-medium text-gray-700">💬 产品保质期多久？</p><p class="text-gray-500 mt-1 text-sm">未开封3年，开封后建议6个月内用完，以保持活性最佳。</p></div>
+        <div class="border border-rosegold-200 rounded-2xl p-5"><p class="font-medium text-gray-700">💬 如何退换货？</p><p class="text-gray-500 mt-1 text-sm">支持7天无理由，过敏包退，可联系客服获取售后指引。</p></div>
+      </div>
+    </section>
+
+    <!-- 11. CTA 区块 -->
+    <section class="bg-gradient-to-r from-rosegold-100 to-rosegold-200 py-20">
+      <div class="max-w-3xl mx-auto text-center px-6">
+        <h2 class="text-3xl md:text-4xl font-serif font-light text-gray-700">寻找属于你的玫瑰仪式</h2>
+        <p class="text-gray-600 mt-3">新会员首单享9折，赠明星体验装3件套</p>
+        <div class="flex flex-wrap gap-4 justify-center mt-8">
+          <a href="#" class="bg-rosegold-500 hover:bg-rosegold-600 text-white px-8 py-4 rounded-full text-sm font-medium shadow-md">立即领取礼遇</a>
+          <a href="#" class="border border-white bg-white/80 text-rosegold-600 hover:bg-white px-8 py-4 rounded-full text-sm font-medium shadow-sm">预约线下护理</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 (品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码) -->
+  <footer class="bg-white border-t border-rosegold-100 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- logo + 版权 -->
+      <div>
+        <div class="flex items-center gap-1">
+          <span class="w-6 h-6 rounded-full bg-rosegold-400 inline-block"></span>
+          <span class="font-serif text-xl text-rosegold-600">Roséure</span>
+        </div>
+        <p class="text-xs text-gray-400 mt-4">© 2025 柔美之源<br>保留一切美丽权利</p>
+      </div>
+      <!-- 公司地址 -->
+      <div>
+        <h4 class="font-medium text-gray-700 mb-3">玫瑰工坊</h4>
+        <p class="text-sm text-gray-500">上海市静安区 · 玫瑰里8号<br>护肤体验中心</p>
+      </div>
+      <!-- 联系方式 -->
+      <div>
+        <h4 class="font-medium text-gray-700 mb-3">美丽专线</h4>
+        <p class="text-sm text-gray-500">400-8820-777<br>care@roseure.com</p>
+      </div>
+      <!-- 微信公众号二维码 (模拟) -->
+      <div>
+        <h4 class="font-medium text-gray-700 mb-3">官方微信号</h4>
+        <div class="w-24 h-24 bg-rosegold-100 rounded-lg flex items-center justify-center border border-rosegold-300">
+          <span class="text-rosegold-500 text-4xl">◍</span>
+        </div>
+        <p class="text-xs text-gray-400 mt-2">扫一扫 获取护肤资讯</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-4 text-center text-xs text-gray-300 border-t border-rosegold-100">
+      优雅精致 · 玫瑰人生
+    </div>
+  </footer>
+</body>
+</html>

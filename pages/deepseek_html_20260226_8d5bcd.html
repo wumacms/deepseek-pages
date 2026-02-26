@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炼力场 · 黑红力量健身房</title>
+    <!-- Tailwind via CDN + 动感黑红基调（完全使用 Tailwind 类，无自定义样式） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入remixicon作为菜单图标备用，纯美化无侵入，不影响Tailwind规范 -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-black text-white font-sans antialiased">
+
+    <!-- 导航栏 (黑底红点缀，包含logo、标题、导航菜单、CTA按钮) 完全动感力量风格 -->
+    <header class="border-b border-red-800/30 bg-black sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center shadow-lg shadow-red-900/50">
+                        <i class="ri-flashlight-fill text-white text-2xl"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tight bg-gradient-to-r from-white to-red-400 bg-clip-text text-transparent">IRON<span class="text-red-600">PULSE</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) 黑红风格 -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+                    <a href="#" class="text-white/90 hover:text-red-500 transition duration-300 tracking-wide">训练</a>
+                    <a href="#" class="text-white/90 hover:text-red-500 transition duration-300 tracking-wide">课程</a>
+                    <a href="#" class="text-white/90 hover:text-red-500 transition duration-300 tracking-wide">教练</a>
+                    <a href="#" class="text-white/90 hover:text-red-500 transition duration-300 tracking-wide">社区</a>
+                    <a href="#" class="text-white/90 hover:text-red-500 transition duration-300 tracking-wide">价格</a>
+                </nav>
+                <!-- CTA按钮 黑红力量感 -->
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hidden sm:inline-block text-sm font-bold text-white/80 hover:text-red-400 transition">登录</a>
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-md text-sm font-bold shadow-lg shadow-red-800/50 flex items-center gap-2 transition-all duration-200 hover:scale-105">
+                        <i class="ri-dumbbell-line"></i> 开始训练
+                    </a>
+                </div>
+                <!-- 移动菜单图标 -->
+                <button class="md:hidden text-white text-2xl"><i class="ri-menu-line"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-x-hidden">
+
+        <!-- 首屏区块 (HERO) 力量感 + 黑红 -->
+        <section class="relative bg-gradient-to-br from-black via-black to-red-950/40">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-24 lg:py-32">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-8">
+                        <h1 class="text-5xl lg:text-7xl font-black leading-[1.1] tracking-tighter">
+                            <span class="text-white">撕裂</span>
+                            <span class="text-red-600 block">重塑极限</span>
+                        </h1>
+                        <p class="text-gray-300 text-lg lg:text-xl max-w-xl leading-relaxed">硬核铁馆 · 怪兽级力量区 · 黑红战衣专属空间。全进口悍马力量架、职业教练1v1，让每一次充血都充满统治力。</p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="#" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-md shadow-2xl shadow-red-700/30 flex items-center gap-2 transition hover:scale-105">
+                                解锁7天体验 <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <a href="#" class="border-2 border-red-700 hover:bg-red-950/50 text-white px-8 py-4 text-lg font-bold rounded-md transition flex items-center gap-2">
+                                <i class="ri-calendar-line"></i> 预约参观
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-6 text-sm text-gray-400 pt-6 border-t border-red-900/40">
+                            <span class="flex items-center gap-1"><i class="ri-flashlight-fill text-red-500"></i> 24h 黑卡营业</span>
+                            <span class="flex items-center gap-1"><i class="ri-heart-pulse-fill text-red-500"></i> 职业力量团队</span>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-red-800/30 to-transparent rounded-3xl"></div>
+                        <img class="rounded-3xl border border-red-800 shadow-2xl shadow-red-900/40 w-full object-cover h-[500px] lg:h-[600px]" 
+                             src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2070&auto=format&fit=crop" 
+                             alt="铁馆深蹲架硬核氛围">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 黑红数据 动感 -->
+        <section class="bg-zinc-950 border-y border-red-900/30">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-2">
+                        <div class="text-5xl font-black text-red-600">500<span class="text-white text-3xl">+</span></div>
+                        <div class="text-gray-300 font-semibold tracking-wide">铁血会员</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-5xl font-black text-red-600">98<span class="text-white text-3xl">%</span></div>
+                        <div class="text-gray-300 font-semibold tracking-wide">留存率</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-5xl font-black text-red-600">20<span class="text-white text-3xl">M+</span></div>
+                        <div class="text-gray-300 font-semibold tracking-wide">总深蹲(kg)</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-5xl font-black text-red-600">24/7</div>
+                        <div class="text-gray-300 font-semibold tracking-wide">硬核陪伴</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通→铁血沟通) 展现社群氛围 -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 py-28">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <img class="rounded-3xl border border-red-800 shadow-2xl shadow-red-900/30 w-full h-[500px] object-cover" 
+                     src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1975&auto=format&fit=crop" 
+                     alt="团队训练互相激励">
+                <div class="space-y-8">
+                    <h2 class="text-4xl lg:text-5xl font-black tracking-tight"><span class="text-red-600">铁伙</span> 硬核羁绊</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">打破独自训练的孤独，通过力量搭档、战斗营社群和实时 PK 榜，让每一个 PR 都有兄弟见证。馆内集成专属「铁码」，一键呼叫保护伙伴。</p>
+                    <div class="flex flex-wrap gap-6 text-red-400 font-bold text-lg">
+                        <span class="flex items-center gap-2"><i class="ri-shield-keyhole-fill text-2xl"></i> 专属铁牌门禁</span>
+                        <span class="flex items-center gap-2"><i class="ri-history-fill text-2xl"></i> 无限组记录</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为商务打造 -> 专为力量打造) 红黑图标 -->
+        <section class="bg-zinc-950 py-28 border-y border-red-900/30">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto space-y-4 pb-16">
+                    <h2 class="text-4xl lg:text-5xl font-black tracking-tight">专为<span class="text-red-600">力量怪兽</span>打造</h2>
+                    <p class="text-gray-400 text-lg">从硬核器械到数据追踪，面面俱到</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-black border border-red-800/50 p-8 rounded-2xl hover:border-red-600 transition group">
+                        <div class="text-5xl mb-5 group-hover:scale-110 transition"><i class="ri-skull-line text-red-600"></i></div>
+                        <h3 class="text-2xl font-black text-white">怪兽级器械</h3>
+                        <p class="text-gray-400 mt-3">悍马力量架、深蹲水阻、进口铁片，每一克重量都真实。</p>
+                    </div>
+                    <div class="bg-black border border-red-800/50 p-8 rounded-2xl hover:border-red-600 transition group">
+                        <div class="text-5xl mb-5 group-hover:scale-110 transition"><i class="ri-flashlight-line text-red-600"></i></div>
+                        <h3 class="text-2xl font-black text-white">实时爆发数据</h3>
+                        <p class="text-gray-400 mt-3">力速反馈屏、会员战力榜单，充血可视化。</p>
+                    </div>
+                    <div class="bg-black border border-red-800/50 p-8 rounded-2xl hover:border-red-600 transition group">
+                        <div class="text-5xl mb-5 group-hover:scale-110 transition"><i class="ri-group-line text-red-600"></i></div>
+                        <h3 class="text-2xl font-black text-white">无限战队</h3>
+                        <p class="text-gray-400 mt-3">自定义约战、力量联盟， 联合驯练。</p>
+                    </div>
+                    <div class="bg-black border border-red-800/50 p-8 rounded-2xl hover:border-red-600 transition group">
+                        <div class="text-5xl mb-5 group-hover:scale-110 transition"><i class="ri-bar-chart-2-line text-red-600"></i></div>
+                        <h3 class="text-2xl font-black text-white">极限分析</h3>
+                        <p class="text-gray-400 mt-3">1RM追踪、弱点评量，教练团队每周复盘。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (红黑卡片 灵活定价) -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 py-28">
+            <div class="text-center space-y-4 pb-16">
+                <h2 class="text-4xl lg:text-5xl font-black tracking-tight"><span class="text-red-600">铁血</span> 契约</h2>
+                <p class="text-gray-400 text-lg">按需选择 无隐藏重力</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 基础卡 -->
+                <div class="bg-zinc-950 border border-red-800/40 rounded-3xl p-8 flex flex-col hover:border-red-600 transition">
+                    <h3 class="text-2xl font-black text-white">基础铁</h3>
+                    <div class="mt-6 flex items-end gap-1">
+                        <span class="text-5xl font-black text-red-600">49</span>
+                        <span class="text-gray-400 mb-1">/月/人</span>
+                    </div>
+                    <ul class="mt-8 space-y-4 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-600 text-xl"></i> 自由力量区</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-600 text-xl"></i> 10GB 训练录像</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-600 text-xl"></i> 基础体测</li>
+                    </ul>
+                    <a href="#" class="mt-10 w-full bg-black border border-red-700 hover:bg-red-950 text-white py-4 rounded-xl font-bold text-center transition">选择基础铁</a>
+                </div>
+                <!-- 商业卡(流行) -->
+                <div class="bg-red-950 border-2 border-red-600 rounded-3xl p-8 flex flex-col scale-105 shadow-2xl shadow-red-900/60 relative">
+                    <span class="absolute top-0 right-8 bg-red-600 text-white px-4 py-1 text-sm font-black rounded-b-lg">🔥 最多选择</span>
+                    <h3 class="text-2xl font-black text-white">狂暴铁</h3>
+                    <div class="mt-6 flex items-end gap-1">
+                        <span class="text-5xl font-black text-red-300">99</span>
+                        <span class="text-gray-300 mb-1">/月/人</span>
+                    </div>
+                    <ul class="mt-8 space-y-4 text-gray-200">
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-300 text-xl"></i> 无限时力量区+私教</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-300 text-xl"></i> 100GB 录像+生物反馈</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-300 text-xl"></i> 所有团课 + 格斗区</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-300 text-xl"></i> 营养分析</li>
+                    </ul>
+                    <a href="#" class="mt-10 w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-xl font-bold text-center shadow-xl transition">选择狂暴铁</a>
+                </div>
+                <!-- 企业卡(定制) -->
+                <div class="bg-zinc-950 border border-red-800/40 rounded-3xl p-8 flex flex-col hover:border-red-600">
+                    <h3 class="text-2xl font-black text-white">战队定制</h3>
+                    <div class="mt-6 text-5xl font-black text-red-600">定制</div>
+                    <ul class="mt-8 space-y-4 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-600 text-xl"></i> 包场/专属团建</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-600 text-xl"></i> 无限存储录像</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-600 text-xl"></i> 客席冠军教练</li>
+                        <li class="flex items-center gap-3"><i class="ri-check-line text-red-600 text-xl"></i> 企业SSO门禁</li>
+                    </ul>
+                    <a href="#" class="mt-10 w-full bg-black border border-red-700 hover:bg-red-950 text-white py-4 rounded-xl font-bold text-center transition">联系铁贩</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 黑红简约 -->
+        <section class="bg-zinc-950 py-24 border-y border-red-900/30">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-4xl font-black text-center mb-16">常见<span class="text-red-600">铁问</span></h2>
+                <div class="space-y-6">
+                    <div class="border border-red-800/30 rounded-2xl p-6 bg-black/50">
+                        <h3 class="text-xl font-black text-white flex items-center gap-2"><i class="ri-question-mark bg-red-600 rounded-full w-6 h-6 text-sm flex items-center justify-center"></i> 支持24小时自由进出吗？</h3>
+                        <p class="text-gray-400 mt-3 ml-8">是的，狂暴铁以上会员配备专属铁牌，刷卡全天解锁怪兽力量区，满足夜间野兽训练。</p>
+                    </div>
+                    <div class="border border-red-800/30 rounded-2xl p-6 bg-black/50">
+                        <h3 class="text-xl font-black text-white flex items-center gap-2"><i class="ri-question-mark bg-red-600 rounded-full w-6 h-6 text-sm flex items-center justify-center"></i> 可以体验多久？</h3>
+                        <p class="text-gray-400 mt-3 ml-8">所有新铁匠均可享受7天满血体验，包含一次体测+格斗公开课，无需预付。</p>
+                    </div>
+                    <div class="border border-red-800/30 rounded-2xl p-6 bg-black/50">
+                        <h3 class="text-xl font-black text-white flex items-center gap-2"><i class="ri-question-mark bg-red-600 rounded-full w-6 h-6 text-sm flex items-center justify-center"></i> 力量数据存在哪里？</h3>
+                        <p class="text-gray-400 mt-3 ml-8">云端黑卡独立加密，可随时导出你的训练日志，也可同步到穿戴设备。</p>
+                    </div>
+                    <div class="border border-red-800/30 rounded-2xl p-6 bg-black/50">
+                        <h3 class="text-xl font-black text-white flex items-center gap-2"><i class="ri-question-mark bg-red-600 rounded-full w-6 h-6 text-sm flex items-center justify-center"></i> 如何从其他铁馆迁移记录？</h3>
+                        <p class="text-gray-400 mt-3 ml-8">我们提供数据导入工具，支持主流健身app历史记录导入，延续你的努力痕迹。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 红底黑字 强劲 -->
+        <section class="bg-gradient-to-r from-red-900 to-red-800 py-20">
+            <div class="max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-4xl lg:text-6xl font-black text-black tracking-tight">立即唤醒野兽</h2>
+                <p class="text-black/80 text-xl mt-6 font-semibold max-w-2xl mx-auto">加入数百个铁血战队，开启统治级力量之旅。</p>
+                <div class="flex flex-wrap gap-6 justify-center mt-12">
+                    <a href="#" class="bg-black hover:bg-zinc-900 text-red-500 px-10 py-5 text-xl font-black rounded-xl shadow-2xl flex items-center gap-3 transition hover:scale-105 border border-red-500">免费体验7天 <i class="ri-flashlight-fill"></i></a>
+                    <a href="#" class="bg-transparent border-4 border-black text-black hover:bg-black hover:text-red-500 px-10 py-5 text-xl font-black rounded-xl transition">预约巡场</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码 黑红力量感 -->
+    <footer class="bg-black border-t border-red-800/40 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- logo + 地址 -->
+                <div>
+                    <div class="flex items-center gap-2 text-3xl font-black">
+                        <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center"><i class="ri-flashlight-fill text-white"></i></div>
+                        <span class="bg-gradient-to-r from-white to-red-400 bg-clip-text text-transparent">IRONPULSE</span>
+                    </div>
+                    <p class="text-gray-400 mt-6 text-sm leading-relaxed">上海市硬核区怪兽路1号 铁工厂B1<br>地铁2号线 力量口出</p>
+                    <p class="text-red-500 mt-4 font-mono text-sm">iron@ironpulse.fit</p>
+                    <p class="text-gray-400 text-sm mt-2">+86 021 6666 6666</p>
+                </div>
+                <!-- 训练项目 -->
+                <div>
+                    <h4 class="text-white text-lg font-black mb-5">铁区<span class="text-red-600 ml-1">·</span></h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-red-500 transition">自由力量区</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">格斗笼</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">举重台</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">心肺斗兽场</a></li>
+                    </ul>
+                </div>
+                <!-- 链接+版权 -->
+                <div>
+                    <h4 class="text-white text-lg font-black mb-5">硬核<span class="text-red-600 ml-1">·</span></h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#" class="hover:text-red-500 transition">教练天团</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">极限挑战赛</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">品牌故事</a></li>
+                        <li><a href="#" class="hover:text-red-500 transition">铁血加盟</a></li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 仿黑红 -->
+                <div>
+                    <h4 class="text-white text-lg font-black mb-5">扫铁码<span class="text-red-600 ml-1">·</span></h4>
+                    <div class="bg-zinc-900 p-4 rounded-2xl inline-block border border-red-800">
+                        <!-- 模拟二维码 纯色块+黑色方块组合 用Tailwind网格模拟QR样式 无自定义样式 -->
+                        <div class="grid grid-cols-5 gap-0.5 w-32 h-32">
+                            <div class="bg-red-600 col-span-5 h-2 rounded-t"></div>
+                            <div class="bg-red-600 row-span-2 w-2"></div>
+                            <div class="bg-white col-span-3 row-span-2 grid grid-cols-3 gap-0.5 p-0.5">
+                                <div class="bg-black aspect-square"></div><div class="bg-black"></div><div class="bg-black"></div>
+                                <div class="bg-black"></div><div class="bg-red-600"></div><div class="bg-black"></div>
+                                <div class="bg-black"></div><div class="bg-black"></div><div class="bg-black"></div>
+                            </div>
+                            <div class="bg-red-600 row-span-2 w-0.5"></div>
+                            <div class="bg-red-600 col-span-5 h-2 rounded-b"></div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">微信公众号 搜 <span class="text-red-500">@铁脉IRONPULSE</span></p>
+                </div>
+            </div>
+            <!-- 版权声明+底部 -->
+            <div class="border-t border-red-900/30 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>© 2026 铁脉健身 (IRONPULSE). 保留所有铁权。</p>
+                <p class="flex gap-6 mt-3 md:mt-0">
+                    <a href="#" class="hover:text-red-500 transition">隐私条款</a>
+                    <a href="#" class="hover:text-red-500 transition">入铁须知</a>
+                    <a href="#" class="hover:text-red-500 transition">教练认证</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 一个小装饰 但未使用自定义css 所有样式均tailwind内建 -->
+</body>
+</html>

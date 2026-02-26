@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闪耀臻钻 · 奢华珠宝企业</title>
+    <!-- Tailwind via CDN + 基础层样式 (无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入Inter字体提升现代感，但完全通过tailwind类控制，无自定义样式 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 保证所有样式均通过tailwind类实现，此块仅用于字体回退及基础预设，无自定义样式 */
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+    <!-- 导航栏 (黑白金: 黑底金logo/CTA) -->
+    <header class="border-b border-gray-200 bg-black text-white sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
+            <!-- Logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-yellow-300 to-amber-500 rounded-full flex items-center justify-center text-black font-bold text-xl shadow-lg">D</div>
+                <span class="text-2xl font-light tracking-widest text-white">DIAMOND<span class="text-amber-300 font-semibold">EDGE</span></span>
+            </div>
+            <!-- 导航菜单 (桌面) 白金色文字 -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wide text-amber-50">
+                <a href="#" class="hover:text-amber-300 transition">臻钻系列</a>
+                <a href="#" class="hover:text-amber-300 transition">高级定制</a>
+                <a href="#" class="hover:text-amber-300 transition">典藏故事</a>
+                <a href="#" class="hover:text-amber-300 transition">全球门店</a>
+            </nav>
+            <!-- CTA 按钮 金色 -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="hidden sm:inline-block text-sm text-white border border-amber-400 px-5 py-2 rounded-full hover:bg-amber-400 hover:text-black transition">预约品鉴</a>
+                <a href="#" class="bg-amber-400 text-black px-6 py-2.5 rounded-full text-sm font-semibold shadow-md hover:bg-amber-300 transition flex items-center gap-1">探索珠宝盒 ✦</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (钻石主题) 黑金风格 -->
+        <section class="bg-black text-white">
+            <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-amber-400 tracking-[0.3em] text-sm font-semibold">✦ 永恒之光 ✦</span>
+                    <h1 class="text-5xl md:text-6xl font-light leading-tight">传世 <span class="text-amber-400 font-serif font-bold">耀目</span><br>钻石臻品</h1>
+                    <p class="text-gray-300 text-lg max-w-md">每颗钻石均由安特卫普资深工匠切割，极致璀璨，定义奢华新境。专为当代收藏家与永恒爱情而生。</p>
+                    <p class="text-sm text-gray-400">GIA 认证 | 极优切工 | 无荧光 | 可持续来源</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#" class="bg-amber-400 text-black px-8 py-4 rounded-full font-semibold shadow-xl shadow-amber-500/20 hover:shadow-amber-400/40 transition">私人预览</a>
+                        <a href="#" class="border border-amber-400/50 text-amber-100 px-8 py-4 rounded-full font-medium hover:bg-amber-400/10 transition">臻钻图鉴</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&auto=format&fit=crop" alt="奢华钻石戒指" class="rounded-3xl shadow-2xl shadow-amber-900/30 border border-amber-500/20 object-cover aspect-[4/5] w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-white text-black p-5 rounded-2xl shadow-2xl max-w-[180px] hidden md:block border border-amber-300">
+                        <div class="flex items-center gap-2 text-sm font-medium"><span class="text-amber-500 text-xl">⬩</span> 12.34 ct 艳彩黄钻</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 (国际权威机构/合作伙伴) 浅金底黑字 -->
+        <section class="bg-amber-50 py-16">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-light text-black">全球信赖的<span class="text-amber-700 font-semibold"> 权威伙伴</span></h2>
+                    <p class="text-gray-600 mt-3">与顶尖宝石学院及奢侈品牌深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+                    <!-- 采用合作伙伴数据结构简化展示logo与名称 -->
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-white rounded-full shadow flex items-center justify-center text-3xl border border-amber-200">GIA</div><span class="text-xs mt-2 text-gray-700">GIA 鉴定</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-white rounded-full shadow flex items-center justify-center text-3xl border border-amber-200">IGI</div><span class="text-xs mt-2 text-gray-700">IGI 认证</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-white rounded-full shadow flex items-center justify-center text-3xl border border-amber-200">HRD</div><span class="text-xs mt-2 text-gray-700">HRD 安特卫普</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-white rounded-full shadow flex items-center justify-center text-3xl border border-amber-200">✧</div><span class="text-xs mt-2 text-gray-700">卡地亚</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-white rounded-full shadow flex items-center justify-center text-3xl border border-amber-200">✦</div><span class="text-xs mt-2 text-gray-700">蒂芙尼</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-white rounded-full shadow flex items-center justify-center text-3xl border border-amber-200">BVL</div><span class="text-xs mt-2 text-gray-700">宝格丽</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (钻石切工作艺) -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <img src="https://images.unsplash.com/photo-1615657737224-6d0f34f62c3f?w=800&auto=format&fit=crop" alt="钻石切工显微" class="rounded-2xl shadow-2xl border border-gray-200 object-cover aspect-[4/3]">
+                <div class="space-y-5">
+                    <span class="text-amber-500 text-sm font-semibold tracking-widest">八心八箭 · 完美对称</span>
+                    <h2 class="text-4xl font-light text-black">理想式切工<span class="font-bold text-black"> 璀璨哲学</span></h2>
+                    <p class="text-gray-600 text-lg">每一道刻面都经过精密计算，反射出最强烈的火光与 brilliance。只有不到1%的钻石能达到我们选用的极优切工标准。</p>
+                    <div class="flex items-center gap-4 pt-2">
+                        <span class="flex items-center gap-2 text-black"><span class="text-amber-500 text-xl">⬩</span> 57个独立刻面</span>
+                        <span class="flex items-center gap-2 text-black"><span class="text-amber-500 text-xl">⬩</span>  Hearts & Arrows</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (黑白金) 采用珠宝特性 -->
+        <section class="bg-black text-white py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-14">
+                    <h2 class="text-4xl md:text-5xl font-light">无与伦比的<span class="text-amber-400 font-semibold"> 钻石基因</span></h2>
+                    <p class="text-gray-400 mt-3">4C 标准之上，我们定义第五维：艺术</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-zinc-900 p-8 rounded-3xl border border-amber-500/20"><div class="text-5xl mb-4">💎</div><h3 class="text-xl font-medium text-amber-300">净度 · IF 级</h3><p class="text-gray-400 mt-2">内部无瑕，10倍放大镜下不见任何杂质，极致纯净</p></div>
+                    <div class="bg-zinc-900 p-8 rounded-3xl border border-amber-500/20"><div class="text-5xl mb-4">✨</div><h3 class="text-xl font-medium text-amber-300">颜色 · D色</h3><p class="text-gray-400 mt-2">完全无色，如同冰川之心，为色彩分级中的最高等级</p></div>
+                    <div class="bg-zinc-900 p-8 rounded-3xl border border-amber-500/20"><div class="text-5xl mb-4">⚖️</div><h3 class="text-xl font-medium text-amber-300">克拉 · 传世重器</h3><p class="text-gray-400 mt-2">3克拉起藏，每颗均附带原石来源证书及区块链溯源</p></div>
+                    <div class="bg-zinc-900 p-8 rounded-3xl border border-amber-500/20"><div class="text-5xl mb-4">📐</div><h3 class="text-xl font-medium text-amber-300">切工 · 极优</h3><p class="text-gray-400 mt-2"> triple excellent (3EX) 仅占比全球钻石的3%</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (名人/品牌收藏) -->
+        <section class="bg-amber-50 py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-light text-black">他们选择<span class="font-bold text-amber-700"> 永恒</span></h2>
+                    <p class="text-gray-600">全球皇室、藏家与奢侈品牌的坚定信任</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 案例1 -->
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-amber-100">
+                        <div class="flex items-center gap-2 mb-4"><span class="text-amber-400 text-2xl">❝</span><span class="font-serif text-xl">卡塔尔皇室</span></div>
+                        <p class="text-gray-700 italic">“DiamondEdge 的黄钻项链在国宴上成为焦点，切工无与伦比。”</p>
+                        <div class="flex items-center mt-6 gap-3"><div class="w-12 h-12 rounded-full bg-gray-300 bg-cover bg-center" style="background-image:url(https://images.unsplash.com/photo-1589254065878-42c9da997008?w=150)"></div><div><p class="font-semibold">谢赫·穆罕默德</p><p class="text-sm text-gray-500">皇室珠宝收藏顾问</p></div></div>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-amber-100">
+                        <div class="flex items-center gap-2 mb-4"><span class="text-amber-400 text-2xl">❝</span><span class="font-serif text-xl">Harry Winston</span></div>
+                        <p class="text-gray-700 italic">“我们合作超过十年，他们的钻石原石始终是红毯首选。”</p>
+                        <div class="flex items-center mt-6 gap-3"><div class="w-12 h-12 rounded-full bg-gray-300 bg-cover bg-center" style="background-image:url(https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150)"></div><div><p class="font-semibold">Nayla Hayek</p><p class="text-sm text-gray-500">品牌主席</p></div></div>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-xl border border-amber-100">
+                        <div class="flex items-center gap-2 mb-4"><span class="text-amber-400 text-2xl">❝</span><span class="font-serif text-xl">苏富比拍卖</span></div>
+                        <p class="text-gray-700 italic">“2023年秋拍，一对DiamondEdge粉钻耳坠以超出估价两倍成交。”</p>
+                        <div class="flex items-center mt-6 gap-3"><div class="w-12 h-12 rounded-full bg-gray-300 bg-cover bg-center" style="background-image:url(https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150)"></div><div><p class="font-semibold">王美玲</p><p class="text-sm text-gray-500">珠宝部资深专家</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 比较表格区块 (与主流珠宝品牌对比) 采用黑白表格 -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-light text-center">为什么是<span class="font-bold text-black"> DiamondEdge</span></h2>
+                <p class="text-gray-600 text-center mt-2 mb-12">与顶级珠宝品牌的工艺与诚信对比</p>
+                <div class="overflow-x-auto shadow-2xl rounded-2xl border border-gray-200">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-black text-amber-400 text-base">
+                            <tr><th class="px-6 py-4 font-medium">对比维度</th><th class="px-6 py-4">DiamondEdge</th><th class="px-6 py-4">Cartier</th><th class="px-6 py-4">Tiffany</th></tr>
+                        </thead>
+                        <tbody class="divide-y">
+                            <tr class="bg-white"><td class="px-6 py-4 font-medium">切工极优比例</td><td class="px-6 py-4 text-black">✅ 100% 3EX</td><td class="px-6 py-4 text-gray-500">✅ 主力系列</td><td class="px-6 py-4 text-gray-500">✅ 仅镶嵌级</td></tr>
+                            <tr class="bg-gray-50"><td class="px-6 py-4 font-medium">每颗钻石溯源</td><td class="px-6 py-4 text-black">✅ 区块链+证书</td><td class="px-6 py-4 text-gray-500">❌ 部分可溯</td><td class="px-6 py-4 text-gray-500">✅ 仅T系列</td></tr>
+                            <tr class="bg-white"><td class="px-6 py-4 font-medium">D色 IF 净度库存</td><td class="px-6 py-4 text-black">✅ 超过200颗</td><td class="px-6 py-4 text-gray-500">❌ 定制为主</td><td class="px-6 py-4 text-gray-500">❌ 少量</td></tr>
+                            <tr class="bg-gray-50"><td class="px-6 py-4 font-medium">终身免费保养</td><td class="px-6 py-4 text-black">✅ 全球任何门店</td><td class="px-6 py-4 text-gray-500">✅ 限购买地</td><td class="px-6 py-4 text-gray-500">✅ 需预约</td></tr>
+                            <tr class="bg-white"><td class="px-6 py-4 font-medium">平均价格(3ct, D/IF)</td><td class="px-6 py-4 text-black font-semibold">$125,000</td><td class="px-6 py-4 text-gray-500">$160,000</td><td class="px-6 py-4 text-gray-500">$148,000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 黑白金 -->
+        <section class="bg-black text-white py-16 border-t border-amber-500/30 border-b">
+            <div class="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div><div class="text-5xl text-amber-400 font-light">500+</div><div class="text-sm uppercase tracking-widest mt-2 text-gray-300">皇室与藏家</div></div>
+                <div><div class="text-5xl text-amber-400 font-light">100%</div><div class="text-sm uppercase tracking-widest mt-2 text-gray-300">GIA/IGI 双证</div></div>
+                <div><div class="text-5xl text-amber-400 font-light">30+</div><div class="text-sm uppercase tracking-widest mt-2 text-gray-300">全球精品店</div></div>
+                <div><div class="text-5xl text-amber-400 font-light">1892</div><div class="text-sm uppercase tracking-widest mt-2 text-gray-300">传承至今</div></div>
+            </div>
+        </section>
+
+        <!-- 产品功能矩阵区块 (按钻石系列) 更名适应珠宝 -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-light text-center">典藏系列<span class="font-bold"> 矩阵</span></h2>
+                <p class="text-center text-gray-600 mb-12">从经典到高定，满足每一种闪耀想象</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="border border-gray-200 rounded-3xl p-8 shadow-lg"><h3 class="text-2xl font-serif mb-4">臻璨 · 单颗美钻</h3><ul class="space-y-3"><li class="flex gap-2"><span class="text-amber-500">💎</span>圆形/枕形/祖母绿切工</li><li class="flex gap-2"><span class="text-amber-500">💎</span>D-H色, IF-VS2净度</li><li class="flex gap-2"><span class="text-amber-500">💎</span>经典六爪/密镶戒托</li><li class="flex gap-2"><span class="text-amber-500">💎</span>可定制刻字与纪念日</li></ul></div>
+                    <div class="border border-gray-200 rounded-3xl p-8 shadow-lg bg-black text-white"><h3 class="text-2xl font-serif text-amber-300 mb-4">传奇 · 彩钻系列</h3><ul class="space-y-3 text-gray-200"><li class="flex gap-2"><span class="text-amber-400">✨</span>粉红/蓝/黄艳彩钻</li><li class="flex gap-2"><span class="text-amber-400">✨</span>Fancy Vivid 级别</li><li class="flex gap-2"><span class="text-amber-400">✨</span>罕见天然色泽</li><li class="flex gap-2"><span class="text-amber-400">✨</span>附带色彩起源报告</li></ul></div>
+                    <div class="border border-gray-200 rounded-3xl p-8 shadow-lg"><h3 class="text-2xl font-serif mb-4">高定 · 项链/耳环</h3><ul class="space-y-3"><li class="flex gap-2"><span class="text-amber-500">⬩</span>全镶钻项链 总重30ct+</li><li class="flex gap-2"><span class="text-amber-500">⬩</span>可转换式珠宝 (多用途)</li><li class="flex gap-2"><span class="text-amber-500">⬩</span>隐秘式镶嵌工艺</li><li class="flex gap-2"><span class="text-amber-500">⬩</span>博物馆级收藏盒</li></ul></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (黑金) -->
+        <section class="bg-black text-white py-20">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-4xl font-light text-center">臻钻 <span class="text-amber-400 font-semibold">FAQ</span></h2>
+                <div class="mt-12 space-y-5">
+                    <div class="border-b border-gray-800 pb-5"><p class="text-amber-400 text-lg font-medium">◈ 如何确保钻石无冲突?</p><p class="text-gray-300 mt-2">我们只采购来自加拿大、博茨瓦纳等金伯利进程认证矿区的钻石，并附加责任珠宝委员会认证。</p></div>
+                    <div class="border-b border-gray-800 pb-5"><p class="text-amber-400 text-lg font-medium">◈ 是否提供终身升级服务？</p><p class="text-gray-300 mt-2">是的，您可以将钻石以原购买价抵扣升级更大克拉，仅需支付差价，确保您的收藏历久弥新。</p></div>
+                    <div class="border-b border-gray-800 pb-5"><p class="text-amber-400 text-lg font-medium">◈ 定制一枚戒指需要多久？</p><p class="text-gray-300 mt-2">标准定制8-12周，若选择现有裸钻则4-6周。全球免费运送并投保。</p></div>
+                    <div><p class="text-amber-400 text-lg font-medium">◈ 可以预约上海或巴黎门店看货吗？</p><p class="text-gray-300 mt-2">我们的精品店实行一对一私享预约，请通过官网或致电专属顾问安排。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 黑白金 -->
+        <section class="bg-gradient-to-r from-amber-100 to-amber-50 py-20">
+            <div class="max-w-3xl mx-auto text-center px-6">
+                <h2 class="text-5xl font-light text-black">预约<span class="font-bold"> 私人珠宝沙龙</span></h2>
+                <p class="text-gray-700 text-xl mt-4">伦敦、纽约、上海、迪拜 — 为您呈献未公开的典藏级钻石</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-10">
+                    <a href="#" class="bg-black text-amber-300 px-10 py-5 rounded-full font-semibold shadow-2xl text-lg hover:bg-zinc-900 transition">尊享一对一鉴赏</a>
+                    <a href="#" class="border-2 border-black text-black px-10 py-5 rounded-full font-semibold text-lg hover:bg-black hover:text-amber-300 transition">索取电子版图录</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) 黑金风格 -->
+    <footer class="bg-black text-white border-t border-amber-500/30">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                <!-- logo & 版权 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 text-3xl font-light"><span class="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center text-black font-bold">DE</span><span class="text-white">DIAMOND<span class="text-amber-400">EDGE</span></span></div>
+                    <p class="text-sm text-gray-400 mt-4 max-w-xs">始于1892，为世界呈现最璀璨的天然钻石。每一颗，皆承载永恒承诺。</p>
+                    <p class="text-xs text-gray-500 mt-8">© 2025 DiamondEdge SA. 保留一切权利。<br>瑞士 · 安特卫普 · 纽约</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h5 class="text-amber-400 font-medium text-sm tracking-widest">全球总部</h5>
+                    <address class="not-italic text-sm text-gray-300 mt-3 leading-relaxed">Rue des Pierres 47, 1000 Bruxelles, 比利时<br>Schifflände 26, 8001 Zürich<br>+41 44 588 66 88</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h5 class="text-amber-400 font-medium text-sm tracking-widest">礼宾服务</h5>
+                    <ul class="text-sm text-gray-300 mt-3 space-y-2">
+                        <li>Email: concierge@diamondedge.com</li>
+                        <li>电话: +44 20 7946 0138</li>
+                        <li>微信: DiamondEdge_Official</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 (模拟) -->
+                <div>
+                    <h5 class="text-amber-400 font-medium text-sm tracking-widest">微信公众号</h5>
+                    <div class="mt-3 w-24 h-24 bg-white p-2 rounded-xl border-2 border-amber-400">
+                        <div class="w-full h-full bg-black flex items-center justify-center text-amber-400 text-3xl">⬛</div>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">扫一扫 探索更多</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-14 pt-8 flex flex-wrap justify-between items-center text-xs text-gray-500">
+                <span>隐私条款 · 数据保护 · 责任珠宝委员会成员</span>
+                <span class="text-amber-400/60">黑白金 · 永恒闪耀</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

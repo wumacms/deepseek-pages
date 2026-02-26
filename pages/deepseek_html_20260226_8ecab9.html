@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新材智造 · 化工新材料研发</title>
+    <!-- Tailwind via CDN + 基础层 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外字体：Inter 强化工业严谨感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        /* 细微的装饰线，保持工业感，仅用于分割（无自定义样式污染）*/
+        .industrial-border { border-color: #2d3c4b; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- 导航栏 (logo,标题,导航,CTA) 深蓝银灰风格 -->
+    <nav class="bg-slate-900 border-b border-slate-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-slate-600 rounded-md flex items-center justify-center text-white text-xl font-bold">🧪</div>
+                    <span class="text-white text-2xl font-semibold tracking-tight">新材智造</span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <div class="hidden md:flex space-x-8 text-slate-300 font-medium">
+                    <a href="#" class="hover:text-white transition">首页</a>
+                    <a href="#" class="hover:text-white transition">研发</a>
+                    <a href="#" class="hover:text-white transition">产品</a>
+                    <a href="#" class="hover:text-white transition">案例</a>
+                    <a href="#" class="hover:text-white transition">资源</a>
+                </div>
+                <!-- CTA 按钮 -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="hidden sm:inline-block text-slate-300 hover:text-white">登录</a>
+                    <a href="#" class="bg-sky-700 hover:bg-sky-800 text-white px-5 py-2.5 rounded-md font-semibold transition shadow-lg">申请样品</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (新材料研发主题) -->
+        <section class="bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">高性能聚合物<br>重塑材料未来</h1>
+                        <p class="text-xl text-slate-300 mt-6 max-w-xl">耐极端环境聚酰亚胺、生物基尼龙——为航天、新能源提供下一代高分子解决方案。</p>
+                        <p class="text-slate-400 mt-2">从实验室到量产，我们加速新材料的商业化进程。</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="#" class="bg-sky-700 hover:bg-sky-800 px-8 py-4 rounded-md font-semibold text-lg shadow-xl transition">研发合作</a>
+                            <a href="#" class="bg-transparent border border-slate-500 hover:border-sky-400 px-8 py-4 rounded-md font-semibold text-lg transition">技术白皮书</a>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl border border-slate-600">
+                        <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="高分子材料实验室">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 (生态伙伴) -->
+        <section class="bg-white py-16 border-y border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-slate-800 text-center">全球研发伙伴</h2>
+                <p class="text-slate-500 text-center mt-3 max-w-2xl mx-auto">与顶尖化工集团、科研院所共建创新生态</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-12">
+                    <!-- 根据 partners 结构展示, 因数据一致，改用新材料相关名称 -->
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 flex flex-col items-center text-center"><img class="h-12 w-auto grayscale opacity-80" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80" alt="巴斯夫"><span class="text-sm font-medium mt-2">巴斯夫</span><span class="text-xs text-slate-500">战略伙伴</span></div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 flex flex-col items-center text-center"><img class="h-12 w-auto grayscale opacity-80" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80" alt="杜邦"><span class="text-sm font-medium mt-2">杜邦</span><span class="text-xs text-slate-500">联合实验室</span></div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 flex flex-col items-center text-center"><img class="h-12 w-auto grayscale opacity-80" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80" alt="SABIC"><span class="text-sm font-medium mt-2">SABIC</span><span class="text-xs text-slate-500">技术合作</span></div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 flex flex-col items-center text-center"><img class="h-12 w-auto grayscale opacity-80" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80" alt="中石化"><span class="text-sm font-medium mt-2">中石化</span><span class="text-xs text-slate-500">催化剂联合</span></div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 flex flex-col items-center text-center"><img class="h-12 w-auto grayscale opacity-80" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80" alt="陶氏"><span class="text-sm font-medium mt-2">陶氏</span><span class="text-xs text-slate-500">工艺包授权</span></div>
+                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-200 flex flex-col items-center text-center"><img class="h-12 w-auto grayscale opacity-80" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80" alt="三菱化学"><span class="text-sm font-medium mt-2">三菱化学</span><span class="text-xs text-slate-500">碳纤维研发</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (研发能力) 使用highlights -->
+        <section class="bg-slate-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div><img class="rounded-xl shadow-lg border border-slate-300 w-full h-auto" src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="高分子合成实验室"></div>
+                <div><h2 class="text-3xl font-bold text-slate-800">原子级分子设计</h2><p class="text-slate-600 mt-4 text-lg leading-relaxed">通过高通量计算与自动化合成平台，将新材料研发周期缩短40%。从聚烯烃弹性体到耐高温液晶聚合物，精准调控链结构。</p>
+                <div class="mt-6 space-y-2"><span class="inline-flex items-center text-slate-700"><span class="w-2 h-2 bg-sky-600 rounded-full mr-2"></span>双螺杆挤出中试线</span><br><span class="inline-flex items-center text-slate-700"><span class="w-2 h-2 bg-sky-600 rounded-full mr-2"></span>3000+配方数据库</span></div></div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (集成工作流风格，改为工艺) tags替代 -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div><h2 class="text-3xl font-bold text-slate-800">连续流微反应工艺</h2><p class="text-slate-600 mt-4 text-lg">自主开发的微通道反应器，实现硝化、氧化高危工艺的本质安全，收率提升25%，三废减少50%。</p><div class="mt-6 flex gap-4"><span class="bg-slate-100 px-4 py-2 rounded-full text-sm font-mono text-slate-700 border border-slate-300">🔧 GMP 中试</span><span class="bg-slate-100 px-4 py-2 rounded-full text-sm font-mono text-slate-700 border border-slate-300">⚙️ 万吨级放大</span></div></div>
+                <div><img class="rounded-xl shadow-lg border border-slate-300 w-full h-auto" src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="连续流反应器"></div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台-> 表征平台) 使用上文下图风格 -->
+        <section class="bg-slate-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 text-center"><h2 class="text-3xl font-bold text-slate-800">国际领先的表征平台</h2><p class="text-slate-600 mt-3 text-lg">400MHz 核磁、高分辨质谱、透射电镜——所有数据实时上链，确保可追溯。</p>
+            <div class="mt-10 rounded-xl overflow-hidden shadow-xl"><img class="w-full h-96 object-cover" src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&auto=format&fit=crop&w=2080&q=80" alt="NMR波谱仪"></div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为新材料打造) -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-slate-800">科学驱动的研发体系</h2>
+                <p class="text-slate-500 text-center mt-3">从模拟到验证，每个环节都融入工业严格标准</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <div class="border border-slate-200 p-6 rounded-xl bg-slate-50/80"><span class="text-5xl">⚛️</span><h3 class="text-xl font-semibold mt-4">量子化学计算</h3><p class="text-slate-600 mt-2">DFT预测反应路径，筛选最佳催化剂结构</p></div>
+                    <div class="border border-slate-200 p-6 rounded-xl bg-slate-50/80"><span class="text-5xl">🧪</span><h3 class="text-xl font-semibold mt-4">自动化合成</h3><p class="text-slate-600 mt-2">24小时无人值守，百种平行反应</p></div>
+                    <div class="border border-slate-200 p-6 rounded-xl bg-slate-50/80"><span class="text-5xl">📊</span><h3 class="text-xl font-semibold mt-4">AI辅助表征</h3><p class="text-slate-600 mt-2">谱图解析、物性预测，精度＞96%</p></div>
+                    <div class="border border-slate-200 p-6 rounded-xl bg-slate-50/80"><span class="text-5xl">🔬</span><h3 class="text-xl font-semibold mt-4">老化与耐久</h3><p class="text-slate-600 mt-2">加速老化舱，模拟20年环境应力</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (化工企业案例) -->
+        <section class="bg-slate-900 text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold">助推产业升级</h2>
+                <p class="text-slate-400 mt-2">头部企业信赖的研发外脑</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700"><div class="flex items-center gap-2"><img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64" alt=""><span class="font-semibold">万华化学</span><span class="text-xs text-slate-400">· 聚氨酯</span></div><p class="mt-4 text-slate-300 italic">“联合开发的生物基TPU，性能提升30%，碳排放降低45%。” </p><div class="flex items-center mt-6"><img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64" alt=""><div class="ml-3"><p class="font-medium">周正</p><p class="text-sm text-slate-400">研发总监</p></div></div></div>
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700"><div class="flex items-center gap-2"><img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64" alt=""><span class="font-semibold">宁德时代</span><span class="text-xs text-slate-400">· 电池隔膜</span></div><p class="mt-4 text-slate-300 italic">“耐高温聚烯烃隔膜突破200℃热收缩极限，循环寿命延长。” </p><div class="flex items-center mt-6"><img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64" alt=""><div class="ml-3"><p class="font-medium">吴敏</p><p class="text-sm text-slate-400">先进材料部</p></div></div></div>
+                    <div class="bg-slate-800 p-6 rounded-xl border border-slate-700"><div class="flex items-center gap-2"><img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64" alt=""><span class="font-semibold">航天科技</span><span class="text-xs text-slate-400">· 复合材料</span></div><p class="mt-4 text-slate-300 italic">“聚酰亚胺树脂耐辐照指标超NASA标准，已用于卫星结构件。” </p><div class="flex items-center mt-6"><img class="h-10 w-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64" alt=""><div class="ml-3"><p class="font-medium">陈向东</p><p class="text-sm text-slate-400">材料总师</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 + 认证与资质合并展示 -->
+        <section class="bg-white py-16 border-y border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div><div class="text-4xl font-bold text-sky-700">500+</div><div class="text-slate-600">全球客户</div></div>
+                    <div><div class="text-4xl font-bold text-sky-700">98%</div><div class="text-slate-600">续约率</div></div>
+                    <div><div class="text-4xl font-bold text-sky-700">37项</div><div class="text-slate-600">授权专利</div></div>
+                    <div><div class="text-4xl font-bold text-sky-700">24/7</div><div class="text-slate-600">技术支持</div></div>
+                </div>
+                <!-- 认证区块精简行 -->
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 items-center">
+                    <div class="flex flex-col items-center p-4"><span class="text-3xl mb-1">🔰</span><span class="font-medium">ISO 9001:2025</span><span class="text-xs text-slate-500">质量管理</span></div>
+                    <div class="flex flex-col items-center p-4"><span class="text-3xl mb-1">⚙️</span><span class="font-medium">AS9100D</span><span class="text-xs text-slate-500">航空航天</span></div>
+                    <div class="flex flex-col items-center p-4"><span class="text-3xl mb-1">🧪</span><span class="font-medium">CMA/CNAS</span><span class="text-xs text-slate-500">国家实验室</span></div>
+                    <div class="flex flex-col items-center p-4"><span class="text-3xl mb-1">🌿</span><span class="font-medium">Reach/ROHS</span><span class="text-xs text-slate-500">合规</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 呼应化工研发合作 -->
+        <section class="bg-slate-800 py-20">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">加速您的下一代材料创新</h2>
+                <p class="text-slate-300 mt-4 text-xl">从概念到量产，我们提供定制研发、分析测试、工艺包设计。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#" class="bg-sky-600 hover:bg-sky-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-xl">预约技术研讨</a>
+                    <a href="#" class="bg-transparent border border-slate-400 hover:border-white text-slate-200 px-8 py-4 rounded-lg font-semibold text-lg">获取样品</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码) -->
+    <footer class="bg-slate-900 text-slate-400 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- 品牌logo + 版权 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-3xl text-white">🧪</span>
+                        <span class="text-white text-2xl font-semibold">新材智造</span>
+                    </div>
+                    <p class="mt-4 text-sm leading-relaxed">专注于高性能聚合物、特种复合材料研发与产业化。为可持续未来提供材料解决方案。</p>
+                    <p class="mt-6 text-sm">© 2026 新材智造科技. 保留一切权利。</p>
+                </div>
+                <!-- 地址 -->
+                <div><h3 class="text-white font-semibold">研发中心</h3><address class="not-italic mt-3 text-sm">上海市浦东新区<br>新材料创新园B3幢<br>邮编: 201210</address></div>
+                <!-- 联系方式 -->
+                <div><h3 class="text-white font-semibold">联系</h3><ul class="mt-3 space-y-2 text-sm"><li>📞 021-6890 1123</li><li>📧 r&d@newmat.cn</li><li>🕒 周一至周五 9:00-18:00</li></ul></div>
+                <!-- 公众号二维码 -->
+                <div><h3 class="text-white font-semibold">官方微信</h3><div class="mt-3 w-24 h-24 bg-slate-700 rounded-lg flex items-center justify-center border border-slate-600"><span class="text-slate-400 text-xs text-center">公众号<br>二维码</span></div><p class="text-xs mt-2">扫码获取技术期刊</p></div>
+            </div>
+            <div class="border-t border-slate-800 mt-10 pt-6 text-xs text-center text-slate-500">本网站所展示数据均为模拟研发成果，仅供参考。</div>
+        </div>
+    </footer>
+
+    <!-- 简单占位脚本无自定义样式，纯tailwind -->
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nordic Haus · 北欧家居</title>
+    <!-- Tailwind via CDN + 暖色基调 (完全使用 Tailwind 类，无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外加载柔和暖色系调色板：通过tailwind配置扩展，但仍为纯tailwind类 (无自定义css) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 在原木暖色系中增加一些方便使用的色值，但依然通过tailwind类实现 (无自定义样式)
+                        // 这里仅扩展命名，实际使用时仍用bg-amber/bg-orange/bg-stone等
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-stone-50 text-stone-700 font-sans antialiased">
+
+    <!-- 导航栏 (logo + 标题 + CTA按钮, 无菜单) 轻盈原木色 -->
+    <header class="border-b border-stone-200 bg-white/70 backdrop-blur-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+            <!-- 左侧: logo + 品牌名 (原木暖色) -->
+            <div class="flex items-center gap-3">
+                <!-- 简单的木质风格logo emoji -->
+                <span class="text-3xl drop-shadow-sm">🪵</span>
+                <span class="font-medium text-xl tracking-tight text-stone-800">Nordic&nbsp;Haus</span>
+            </div>
+            <!-- 右侧: CTA按钮 (暖色) 不含菜单 -->
+            <div>
+                <a href="#contact" class="inline-block bg-amber-800 hover:bg-amber-900 text-stone-50 text-sm font-semibold px-5 py-2.5 rounded-full shadow-sm transition duration-200 ease-in-out">获取灵感</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <!-- 区块按照北欧家居氛围重新填充文案/图片，保留原JSON结构，所有图片来自unsplash 暖调/木质/家居风格 -->
+
+        <!-- 1. 首屏区块 (hero) 原木暖色 + 北欧家居文案 -->
+        <section class="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                <div class="flex-1 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-stone-800 leading-tight">斯堪的纳维亚的呼吸<br>把森林请进家里</h1>
+                    <p class="text-lg md:text-xl text-stone-600 mt-6 max-w-2xl lg:mx-0 mx-auto">纯手工橡木家具，每一条纹理都记录着北纬60°的阳光与风雪。环保涂层，耐用五十年。</p>
+                    <p class="text-stone-500 mt-2">从奥斯陆到哥本哈根，北欧设计事务所共同研发</p>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8">
+                        <a href="#" class="bg-amber-800 hover:bg-amber-900 text-white font-medium px-8 py-3.5 rounded-full shadow-md transition">探索系列</a>
+                        <a href="#" class="border border-stone-300 text-stone-700 hover:bg-stone-100 font-medium px-8 py-3.5 rounded-full transition">预约展厅</a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="https://images.unsplash.com/photo-1560185009-5bf9f2849488?q=80&w=2070&auto=format&fit=crop" alt="北欧客厅橡木家具" class="rounded-3xl shadow-2xl object-cover w-full h-auto border-8 border-white/50">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 左图右文区块 (无缝沟通 -> 原木工艺细节) -->
+        <section class="bg-white/60 py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20c2?q=80&w=2080&auto=format&fit=crop" alt="榫卯工艺细节" class="rounded-2xl shadow-xl object-cover w-full h-auto border-4 border-white">
+                </div>
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">每处榫卯，皆不言而喻</h2>
+                    <p class="text-stone-600 mt-5 text-lg leading-relaxed">传承自北欧细木作工坊，无钉结构经得起数十年热胀冷缩。桌面保留手工凿痕，触感如森林树皮。</p>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="bg-amber-100 text-amber-900 text-sm px-4 py-2 rounded-full flex items-center gap-1"><span class="text-base">🪚</span> 燕尾榫</span>
+                        <span class="bg-amber-100 text-amber-900 text-sm px-4 py-2 rounded-full flex items-center gap-1"><span class="text-base">🧴</span> 有机木蜡油</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 左文右图区块 (深度集成 -> 功能/场景) -->
+        <section class="py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">隐藏收纳，与墙共生</h2>
+                    <p class="text-stone-600 mt-5 text-lg">模块化边柜系统，自由组合高度，预留电线孔位。让北欧极简告别杂乱，每一件器物都有它的归属。</p>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="bg-stone-200 text-stone-800 text-sm px-4 py-2 rounded-full">🪴 植物架兼容</span>
+                        <span class="bg-stone-200 text-stone-800 text-sm px-4 py-2 rounded-full">🔌 隐藏插座仓</span>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop" alt="北欧客厅收纳柜" class="rounded-2xl shadow-xl object-cover w-full h-auto border-4 border-white">
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 上文下图区块 (全平台体验 -> 卧室氛围) -->
+        <section class="bg-stone-100 py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-10 text-center">
+                <h2 class="text-3xl md:text-4xl font-light text-stone-800">静谧睡眠 · 全桦木床架</h2>
+                <p class="text-stone-600 max-w-2xl mx-auto mt-4">芬兰多层桦木胶合板，高承重排骨架，翻身无声。搭配天然椰棕床垫，透气防潮。</p>
+                <div class="mt-10">
+                    <img src="https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=2070&auto=format&fit=crop" alt="北欧极简卧室木床" class="rounded-3xl shadow-2xl object-cover w-full h-auto max-h-[500px] border-8 border-white">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 特性区块 (专为商务 -> 北欧家居材质/工艺特性) -->
+        <section class="py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-10">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">北欧呼吸 · 实木哲学</h2>
+                    <p class="text-stone-600 mt-3">每一块木材都来自FSC认证森林，环保与耐用兼得</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- feature 1 -->
+                    <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">🌲</div>
+                        <h3 class="text-xl font-medium text-stone-800">FSC™ 认证橡木</h3>
+                        <p class="text-stone-600 mt-2">从欧洲原始森林直采，树龄均超80年，无结疤</p>
+                    </div>
+                    <!-- feature 2 -->
+                    <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">🧼</div>
+                        <h3 class="text-xl font-medium text-stone-800">德国OSMO木蜡油</h3>
+                        <p class="text-stone-600 mt-2">食品级表面涂装，可接触婴儿肌肤，只留木香</p>
+                    </div>
+                    <!-- feature 3 -->
+                    <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">🔧</div>
+                        <h3 class="text-xl font-medium text-stone-800">30年结构质保</h3>
+                        <p class="text-stone-600 mt-2">传统燕尾榫加现代五金，终身不松动</p>
+                    </div>
+                    <!-- feature 4 -->
+                    <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">🌍</div>
+                        <h3 class="text-xl font-medium text-stone-800">碳中和工厂</h3>
+                        <p class="text-stone-600 mt-2">生产全程使用绿电，每售出一件植树一棵</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 团队区块 (核心团队) 保留原木色系，使用家居设计师头像 -->
+        <section class="bg-stone-50 py-16 md:py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-10">
+                <h2 class="text-3xl md:text-4xl font-light text-stone-800 text-center">斯堪的纳维亚设计工作室</h2>
+                <p class="text-stone-600 text-center mt-2">赫尔辛基 / 哥本哈根 · 三代家具匠人</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- member 1 -->
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1887&auto=format&fit=crop" alt="Lars Eriksen" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-white shadow-md">
+                        <h3 class="text-xl font-medium mt-4 text-stone-800">Lars Eriksen</h3>
+                        <p class="text-amber-700">首席木作大师</p>
+                        <p class="text-stone-500 text-sm mt-1">前丹麦皇家家具公司30年经验</p>
+                    </div>
+                    <!-- member 2 -->
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1603415526960-fb7c032a4b5f?q=80&w=1887&auto=format&fit=crop" alt="Ingrid Sørensen" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-white shadow-md">
+                        <h3 class="text-xl font-medium mt-4 text-stone-800">Ingrid Sørensen</h3>
+                        <p class="text-amber-700">创意总监</p>
+                        <p class="text-stone-500 text-sm mt-1">宜家北欧系列前设计师</p>
+                    </div>
+                    <!-- member 3 -->
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=1887&auto=format&fit=crop" alt="Olav Koskela" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-white shadow-md">
+                        <h3 class="text-xl font-medium mt-4 text-stone-800">Olav Koskela</h3>
+                        <p class="text-amber-700">结构工程师</p>
+                        <p class="text-stone-500 text-sm mt-1">芬兰木结构协会顾问</p>
+                    </div>
+                    <!-- member 4 -->
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1542596768-5d1d21f1cf98?q=80&w=1887&auto=format&fit=crop" alt="Maja Lindström" class="w-40 h-40 rounded-full mx-auto object-cover border-4 border-white shadow-md">
+                        <h3 class="text-xl font-medium mt-4 text-stone-800">Maja Lindström</h3>
+                        <p class="text-amber-700">色彩与材质专家</p>
+                        <p class="text-stone-500 text-sm mt-1">NCS自然色彩系统认证</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 统计区块 (stats) 家居相关数据 -->
+        <section class="bg-amber-900/5 py-16">
+            <div class="max-w-7xl mx-auto px-6 md:px-10">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl md:text-5xl font-light text-amber-900">60+</div>
+                        <div class="text-stone-600 uppercase tracking-wide text-sm mt-2">北欧设计师</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-light text-amber-900">30年</div>
+                        <div class="text-stone-600 uppercase tracking-wide text-sm mt-2">工艺传承</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-light text-amber-900">8k+</div>
+                        <div class="text-stone-600 uppercase tracking-wide text-sm mt-2">家庭选择</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl md:text-5xl font-light text-amber-900">100%</div>
+                        <div class="text-stone-600 uppercase tracking-wide text-sm mt-2">FSC认证</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. 价格区块 (灵活定价) 改为家居系列/套餐 -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 md:px-10">
+                <h2 class="text-3xl md:text-4xl font-light text-stone-800 text-center">让家拥有北欧灵魂</h2>
+                <p class="text-stone-600 text-center mt-2">套餐灵感 · 可按需定制</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 基础版 plan -->
+                    <div class="bg-stone-50 p-8 rounded-3xl border border-stone-200">
+                        <h3 class="text-2xl font-light text-stone-800">小户型系列</h3>
+                        <p class="text-stone-500 mt-2">灵活组合</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-light text-amber-900">¥1.9w</span>
+                            <span class="text-stone-500">/套</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2">✓ 橡木餐桌(1.4m)</li>
+                            <li class="flex items-center gap-2">✓ 餐椅*4</li>
+                            <li class="flex items-center gap-2">✓ 边柜(1.2m)</li>
+                        </ul>
+                        <a href="#" class="block text-center border border-stone-300 text-stone-700 hover:bg-stone-100 font-medium px-4 py-3 rounded-full mt-8 transition">查看详情</a>
+                    </div>
+                    <!-- 商业版 popular -->
+                    <div class="bg-stone-50 p-8 rounded-3xl border-2 border-amber-700 relative shadow-xl">
+                        <span class="absolute top-0 right-8 bg-amber-800 text-white text-sm px-3 py-1 rounded-b-full">⋆ 最多推荐 ⋆</span>
+                        <h3 class="text-2xl font-light text-stone-800">经典全屋系列</h3>
+                        <p class="text-stone-500 mt-2">客餐卧+书房</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-light text-amber-900">¥4.8w</span>
+                            <span class="text-stone-500">/整套</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2">✓ 沙发/电视柜/茶几</li>
+                            <li class="flex items-center gap-2">✓ 餐桌椅+餐边柜</li>
+                            <li class="flex items-center gap-2">✓ 双人床+床头柜*2</li>
+                            <li class="flex items-center gap-2">✓ 书桌+书架</li>
+                        </ul>
+                        <a href="#" class="block text-center bg-amber-800 hover:bg-amber-900 text-white font-medium px-4 py-3 rounded-full mt-8 transition shadow-md">获取方案</a>
+                    </div>
+                    <!-- 企业版 定制 -->
+                    <div class="bg-stone-50 p-8 rounded-3xl border border-stone-200">
+                        <h3 class="text-2xl font-light text-stone-800">设计师共创</h3>
+                        <p class="text-stone-500 mt-2">一对一量身定制</p>
+                        <div class="mt-4">
+                            <span class="text-4xl font-light text-amber-900">定制</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2">✓ 北欧设计师上门量尺</li>
+                            <li class="flex items-center gap-2">✓ 稀有木材/颜色可选</li>
+                            <li class="flex items-center gap-2">✓ 专属五金刻字</li>
+                            <li class="flex items-center gap-2">✓ 终身保养</li>
+                        </ul>
+                        <a href="#" class="block text-center border border-stone-300 text-stone-700 hover:bg-stone-100 font-medium px-4 py-3 rounded-full mt-8 transition">预约咨询</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. 常见问题区块 (faqs) 原木家居问题 -->
+        <section class="py-16 md:py-20 bg-stone-50/80">
+            <div class="max-w-4xl mx-auto px-6 md:px-10">
+                <h2 class="text-3xl md:text-4xl font-light text-stone-800 text-center">关于原木家具，您可能想问</h2>
+                <div class="mt-12 space-y-6">
+                    <!-- faq 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-medium text-stone-800">🌡️ 地暖环境可以使用吗？</h3>
+                        <p class="text-stone-600 mt-2">可以。我们采用特殊干燥工艺，含水率控制在6-8%，经过耐地暖测试，不开裂变形。</p>
+                    </div>
+                    <!-- faq 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-medium text-stone-800">🧼 如何日常清洁？</h3>
+                        <p class="text-stone-600 mt-2">用微湿棉布顺着木纹擦拭即可，每半年可涂一次木蜡油保养，保持光泽。</p>
+                    </div>
+                    <!-- faq 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-medium text-stone-800">📦 发货时间与安装</h3>
+                        <p class="text-stone-600 mt-2">成品家具48小时发货，定制产品约4-6周。全国上门安装，顺丰送货入户。</p>
+                    </div>
+                    <!-- faq 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm">
+                        <h3 class="text-xl font-medium text-stone-800">🪑 可以退换吗？</h3>
+                        <p class="text-stone-600 mt-2">30天无理由退换（定制除外），我们承担运费。木材天然色差属正常现象。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CTA 区块 立即提升... -->
+        <section class="bg-amber-800 py-20">
+            <div class="max-w-3xl mx-auto text-center px-6">
+                <h2 class="text-3xl md:text-5xl font-light text-stone-50">把北欧美学生活带回家</h2>
+                <p class="text-amber-100 text-lg mt-4">预约线下展厅，触摸真实木纹。或在线咨询设计师，免费出布局图。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#" class="bg-stone-50 text-amber-900 hover:bg-stone-100 font-medium px-8 py-4 rounded-full shadow-lg transition">免费设计咨询</a>
+                    <a href="#" class="border-2 border-stone-50 text-stone-50 hover:bg-amber-700 font-medium px-8 py-4 rounded-full transition">到店体验</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 简单的版权声明 -->
+    <footer class="bg-stone-100 border-t border-stone-200 py-8">
+        <div class="max-w-7xl mx-auto px-6 md:px-10 text-center text-stone-500 text-sm">
+            <p>© 2025 Nordic Haus 北欧家居 · 所有木材均源自可持续森林。 温暖如初，设计永恒。</p>
+        </div>
+    </footer>
+</body>
+</html>

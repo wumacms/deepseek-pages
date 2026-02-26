@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐学未来 · K12 青绿卡通校园</title>
+    <!-- Tailwind via CDN + 额外柔和青绿基座 (无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 手写活泼风格全靠内置类 + 青绿/橙粉点缀 完全符合“活泼卡通风+青绿明亮” -->
+    <style>
+        /* 保证没有任何自定义样式, 只保留一个隐藏的占位——但为了卡通风更浓, 利用内置shadow/rounded/border 即可 */
+    </style>
+</head>
+<body class="bg-[#f0faf0] font-sans text-gray-800 antialiased">
+
+    <!-- 导航栏 (包含logo、标题、导航菜单、CTA) 青绿明亮色 卡通风圆润 -->
+    <header class="bg-white/90 backdrop-blur-sm border-b-4 border-[#a7e0c0] sticky top-0 z-30 shadow-[0_8px_0_#c4e6d4]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between">
+            <!-- logo + 标题 (组合) -->
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-[#b6e2c1] rounded-2xl border-2 border-[#3b8b6e] flex items-center justify-center text-2xl shadow-[3px_3px_0_#2d6a4f] transform -rotate-3">
+                    📘
+                </div>
+                <span class="text-2xl font-black text-[#1f7042] drop-shadow-sm [text-shadow:2px_2px_0_#c0ebd9]">乐学未来</span>
+            </div>
+            <!-- 导航菜单 (桌面) 可爱字体加粗 -->
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-[#236b4a]">
+                <a href="#" class="hover:bg-[#dbf5e6] px-4 py-2 rounded-full border-2 border-transparent hover:border-[#5bb98b] transition-all shadow-[2px_2px_0_#d0f0de] hover:shadow-[4px_4px_0_#7fcc9f]">首页</a>
+                <a href="#" class="hover:bg-[#dbf5e6] px-4 py-2 rounded-full border-2 border-transparent hover:border-[#5bb98b] transition-all shadow-[2px_2px_0_#d0f0de] hover:shadow-[4px_4px_0_#7fcc9f]">课程</a>
+                <a href="#" class="hover:bg-[#dbf5e6] px-4 py-2 rounded-full border-2 border-transparent hover:border-[#5bb98b] transition-all shadow-[2px_2px_0_#d0f0de] hover:shadow-[4px_4px_0_#7fcc9f]">师资</a>
+                <a href="#" class="hover:bg-[#dbf5e6] px-4 py-2 rounded-full border-2 border-transparent hover:border-[#5bb98b] transition-all shadow-[2px_2px_0_#d0f0de] hover:shadow-[4px_4px_0_#7fcc9f]">社区</a>
+            </nav>
+            <!-- CTA 按钮 + 移动菜单图标(简化) -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="hidden md:block bg-[#f9b83c] text-white font-black py-3 px-6 rounded-full border-2 border-[#c56f1e] shadow-[5px_5px_0_#e09d32] hover:shadow-[2px_2px_0_#e09d32] hover:translate-x-1 hover:translate-y-1 transition-all text-lg">免费试听</a>
+                <!-- 手机汉堡 (emoji代替, 同样风格) -->
+                <button class="md:hidden text-3xl bg-[#b2e6cf] w-12 h-12 rounded-2xl border-2 border-[#2d7a55] shadow-[3px_3px_0_#226544]">🍔</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (hero) 根据JSON结构填充K12内容 -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 py-12 md:py-16 relative">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-[#e6f7ef] p-8 rounded-[3rem] border-4 border-[#69b38d] shadow-[16px_16px_0_#37855e] relative z-10">
+                    <h1 class="text-5xl md:text-6xl font-black text-[#145c33] leading-tight [text-shadow:4px_4px_0_#b0e4c8]">小学·初中·高中 全科培优</h1>
+                    <p class="text-xl mt-6 text-[#216a43] font-semibold bg-white/60 rounded-2xl p-3 inline-block border-2 border-[#aad7bb] shadow-[4px_4px_0_#88c9a5]">清北名师在线小班，每个孩子都被看见</p>
+                    <p class="text-lg mt-6 text-[#2b5d3f]">双师辅导 + 趣味互动 + 专属错题本，让学习像游戏一样上瘾。</p>
+                    <!-- buttons -->
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#" class="bg-[#f9b83c] text-white font-black py-4 px-9 rounded-full border-2 border-[#be6f1c] shadow-[7px_7px_0_#e09d32] hover:shadow-[3px_3px_0_#e09d32] hover:translate-x-1 hover:translate-y-1 transition-all text-xl">立即抢报</a>
+                        <a href="#" class="bg-white text-[#1f7042] font-black py-4 px-9 rounded-full border-2 border-[#55a37a] shadow-[7px_7px_0_#b0e0c5] hover:shadow-[3px_3px_0_#b0e0c5] hover:translate-x-1 hover:translate-y-1 transition-all text-xl">课程大纲</a>
+                    </div>
+                </div>
+                <div class="relative mt-8 md:mt-0">
+                    <div class="bg-[#b8e6cf] rounded-[3rem] border-4 border-[#2f875b] shadow-[20px_20px_0_#2d7a55] overflow-hidden transform rotate-2">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&auto=format" alt="孩子们在快乐学习" class="w-full h-auto object-cover">
+                    </div>
+                    <!-- 装饰小元素 卡通风 -->
+                    <div class="absolute -top-8 -right-8 w-24 h-24 bg-[#fcd34d] rounded-full border-4 border-[#b16e23] shadow-[6px_6px_0_#cf9d3a] flex items-center justify-center text-5xl rotate-12">✏️</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 (教育生态伙伴) 青绿卡片 -->
+        <section class="bg-[#daf2e4] border-y-4 border-[#5bb38b] py-16 shadow-inner">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl md:text-5xl font-black text-[#155f34] [text-shadow:3px_3px_0_#b0e4c2]">我们的教育伙伴</h2>
+                    <p class="text-lg text-[#2f6b48] mt-2 font-semibold">与全国顶尖教研机构深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+                    <!-- 从文档的partners区块获取数据, 但换为教育机构名称 -->
+                    <div class="bg-white rounded-3xl border-2 border-[#42946b] p-4 shadow-[8px_8px_0_#317e54] hover:shadow-[4px_4px_0_#317e54] hover:translate-x-1 hover:translate-y-1 transition-all text-center">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" class="w-16 h-16 mx-auto rounded-2xl border-2 border-[#72b78d] p-1 bg-[#f1fff6]">
+                        <p class="font-bold text-[#0c5d32] mt-2">北师大教育</p>
+                        <span class="text-xs bg-[#e0ffef] px-2 py-0.5 rounded-full">课程共建</span>
+                    </div>
+                    <div class="bg-white rounded-3xl border-2 border-[#42946b] p-4 shadow-[8px_8px_0_#317e54] hover:shadow-[4px_4px_0_#317e54] hover:translate-x-1 hover:translate-y-1 transition-all text-center">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" class="w-16 h-16 mx-auto rounded-2xl border-2 border-[#72b78d] p-1 bg-[#f1fff6]">
+                        <p class="font-bold text-[#0c5d32] mt-2">学而思教研</p>
+                        <span class="text-xs bg-[#e0ffef] px-2 py-0.5 rounded-full">内容授权</span>
+                    </div>
+                    <div class="bg-white rounded-3xl border-2 border-[#42946b] p-4 shadow-[8px_8px_0_#317e54] hover:shadow-[4px_4px_0_#317e54] hover:translate-x-1 hover:translate-y-1 transition-all text-center">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" class="w-16 h-16 mx-auto rounded-2xl border-2 border-[#72b78d] p-1 bg-[#f1fff6]">
+                        <p class="font-bold text-[#0c5d32] mt-2">新东方</p>
+                        <span class="text-xs bg-[#e0ffef] px-2 py-0.5 rounded-full">战略合作</span>
+                    </div>
+                    <div class="bg-white rounded-3xl border-2 border-[#42946b] p-4 shadow-[8px_8px_0_#317e54] hover:shadow-[4px_4px_0_#317e54] hover:translate-x-1 hover:translate-y-1 transition-all text-center">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" class="w-16 h-16 mx-auto rounded-2xl border-2 border-[#72b78d] p-1 bg-[#f1fff6]">
+                        <p class="font-bold text-[#0c5d32] mt-2">华东师大</p>
+                        <span class="text-xs bg-[#e0ffef] px-2 py-0.5 rounded-full">教师培训</span>
+                    </div>
+                    <div class="bg-white rounded-3xl border-2 border-[#42946b] p-4 shadow-[8px_8px_0_#317e54] hover:shadow-[4px_4px_0_#317e54] hover:translate-x-1 hover:translate-y-1 transition-all text-center">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" class="w-16 h-16 mx-auto rounded-2xl border-2 border-[#72b78d] p-1 bg-[#f1fff6]">
+                        <p class="font-bold text-[#0c5d32] mt-2">好未来</p>
+                        <span class="text-xs bg-[#e0ffef] px-2 py-0.5 rounded-full">AI 学习</span>
+                    </div>
+                    <div class="bg-white rounded-3xl border-2 border-[#42946b] p-4 shadow-[8px_8px_0_#317e54] hover:shadow-[4px_4px_0_#317e54] hover:translate-x-1 hover:translate-y-1 transition-all text-center">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" class="w-16 h-16 mx-auto rounded-2xl border-2 border-[#72b78d] p-1 bg-[#f1fff6]">
+                        <p class="font-bold text-[#0c5d32] mt-2">剑桥英语</p>
+                        <span class="text-xs bg-[#e0ffef] px-2 py-0.5 rounded-full">官方考点</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通 -> 改为课堂内外) -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 bg-[#ddf0e3] rounded-[4rem] border-4 border-[#52a47a] shadow-[16px_16px_0_#347a56] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format" alt="课堂互动" class="w-full h-full object-cover">
+                </div>
+                <div class="order-1 md:order-2 bg-white p-10 rounded-[3rem] border-4 border-[#7ac09c] shadow-[16px_16px_0_#469b6d]">
+                    <h2 class="text-4xl font-black text-[#155f34] [text-shadow:3px_3px_0_#c0f0d5]">课堂内外 无缝互动</h2>
+                    <p class="text-lg mt-6 text-[#276944]">老师即时答疑，学生随时提问，家长同步查看学情。班级群、小组PK、奖励勋章，沟通从未如此有趣。</p>
+                    <div class="flex gap-4 mt-8">
+                        <span class="bg-[#a2e0bc] text-[#15522e] font-bold px-6 py-3 rounded-full border-2 border-[#32855a] shadow-[4px_4px_0_#6ab386]">⏰ 实时答疑</span>
+                        <span class="bg-[#a2e0bc] text-[#15522e] font-bold px-6 py-3 rounded-full border-2 border-[#32855a] shadow-[4px_4px_0_#6ab386]">🏆 激励体系</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流 -> 个性化学习) -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 py-12 bg-[#ebfff3] rounded-tl-[5rem] rounded-br-[5rem] border-4 border-[#9ed8b6] shadow-[12px_12px_0_#479c6e] mb-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-white p-10 rounded-[3rem] border-4 border-[#5bb48b] shadow-[16px_16px_0_#36855b]">
+                    <h2 class="text-4xl font-black text-[#1d6b3d] [text-shadow:3px_3px_0_#c2f0d4]">AI 个性化学习路径</h2>
+                    <p class="text-lg mt-6 text-[#256f43]">基于知识图谱，精准诊断薄弱点。智能推送微课与习题，就像专属私教。支持家长端报告。</p>
+                    <div class="flex gap-4 mt-8 flex-wrap">
+                        <span class="bg-[#f9d450] text-[#a15512] font-bold px-6 py-3 rounded-full border-2 border-[#b87329] shadow-[4px_4px_0_#e5b73c]"># 智能错题本</span>
+                        <span class="bg-[#f9d450] text-[#a15512] font-bold px-6 py-3 rounded-full border-2 border-[#b87329] shadow-[4px_4px_0_#e5b73c]"># 知识图谱</span>
+                    </div>
+                </div>
+                <div class="bg-[#ddf0e3] rounded-[4rem] border-4 border-[#4d9f74] shadow-[16px_16px_0_#307a52] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&auto=format" alt="学习分析" class="w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为K12打造) 卡片式活泼 -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h2 class="text-5xl font-black text-[#0f5c30] [text-shadow:3px_3px_0_#b0eac5]">比游戏更上头的学习体验</h2>
+                <p class="text-xl text-[#256f45] mt-2">趣味 · 激励 · 成长</p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-8 mt-16">
+                <!-- 特性1 -->
+                <div class="bg-white rounded-[3rem] border-2 border-[#3e9b67] p-8 shadow-[14px_14px_0_#2e7f50] hover:shadow-[6px_6px_0_#2e7f50] hover:translate-x-2 hover:translate-y-2 transition-all">
+                    <span class="text-6xl">🧪</span>
+                    <h3 class="text-2xl font-bold mt-3 text-[#0c592f]">互动实验室</h3>
+                    <p class="text-[#2d6a48] mt-2">虚拟实验，动手操作，知识点直观呈现。</p>
+                </div>
+                <div class="bg-white rounded-[3rem] border-2 border-[#3e9b67] p-8 shadow-[14px_14px_0_#2e7f50] hover:shadow-[6px_6px_0_#2e7f50] hover:translate-x-2 hover:translate-y-2 transition-all">
+                    <span class="text-6xl">🎮</span>
+                    <h3 class="text-2xl font-bold mt-3 text-[#0c592f]">闯关学习</h3>
+                    <p class="text-[#2d6a48] mt-2">每章一个副本，刷题就像打怪升级。</p>
+                </div>
+                <div class="bg-white rounded-[3rem] border-2 border-[#3e9b67] p-8 shadow-[14px_14px_0_#2e7f50] hover:shadow-[6px_6px_0_#2e7f50] hover:translate-x-2 hover:translate-y-2 transition-all">
+                    <span class="text-6xl">📊</span>
+                    <h3 class="text-2xl font-bold mt-3 text-[#0c592f]">学情报告</h3>
+                    <p class="text-[#2d6a48] mt-2">实时同步家长，进步退步一目了然。</p>
+                </div>
+                <div class="bg-white rounded-[3rem] border-2 border-[#3e9b67] p-8 shadow-[14px_14px_0_#2e7f50] hover:shadow-[6px_6px_0_#2e7f50] hover:translate-x-2 hover:translate-y-2 transition-all">
+                    <span class="text-6xl">🏅</span>
+                    <h3 class="text-2xl font-bold mt-3 text-[#0c592f]">勋章体系</h3>
+                    <p class="text-[#2d6a48] mt-2">学习获得勋章，兑换实体礼物。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 使用真实K12案例数据 -->
+        <section class="bg-[#daf0e2] border-y-4 border-[#5bb38b] py-20">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <h2 class="text-5xl font-black text-[#145f33] [text-shadow:3px_3px_0_#b0e8c8] text-center">家长和学员这样说</h2>
+                <p class="text-center text-[#2b744a] text-lg mt-2">来自全国10W+家庭的信赖</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 案例卡片 结构来自json cases,但填充K12 人物-->
+                    <div class="bg-white rounded-[3rem] border-2 border-[#419766] p-8 shadow-[14px_14px_0_#2d7a4f]">
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=96&auto=format" class="w-14 h-14 rounded-full border-3 border-[#59b87b]">
+                            <div><p class="font-bold text-[#0a562d]">李雨桐家长</p><span class="text-sm bg-[#d2f5de] px-3 rounded-full">上海 初二</span></div>
+                        </div>
+                        <p class="mt-4 text-[#2a6743]">“孩子从厌学到主动要求上课，数学提高了30分，老师特别会鼓励！”</p>
+                        <div class="mt-4 flex gap-2 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="bg-white rounded-[3rem] border-2 border-[#419766] p-8 shadow-[14px_14px_0_#2d7a4f]">
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=96&auto=format" class="w-14 h-14 rounded-full border-3 border-[#59b87b]">
+                            <div><p class="font-bold text-[#0a562d]">王思睿</p><span class="text-sm bg-[#d2f5de] px-3 rounded-full">北京 小五</span></div>
+                        </div>
+                        <p class="mt-4 text-[#2a6743]">“最喜欢英语配音和PK赛，现在每天背单词都不用催～”</p>
+                        <div class="mt-4 flex gap-2 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="bg-white rounded-[3rem] border-2 border-[#419766] p-8 shadow-[14px_14px_0_#2d7a4f]">
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=96&auto=format" class="w-14 h-14 rounded-full border-3 border-[#59b87b]">
+                            <div><p class="font-bold text-[#0a562d]">陈思哲爸爸</p><span class="text-sm bg-[#d2f5de] px-3 rounded-full">深圳 初三</span></div>
+                        </div>
+                        <p class="mt-4 text-[#2a6743]">“冲刺中考压力大，老师1对1答疑和心理疏导帮了大忙！”</p>
+                        <div class="mt-4 flex gap-2 text-2xl">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (faq) 活泼折叠感无js纯卡片 -->
+        <section class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+            <h2 class="text-5xl font-black text-[#136131] [text-shadow:3px_3px_0_#b0e8c0] text-center">常见问题</h2>
+            <div class="mt-16 space-y-5 max-w-3xl mx-auto">
+                <!-- 仿照faqs -->
+                <div class="bg-white border-2 border-[#61b888] rounded-[2rem] p-6 shadow-[8px_8px_0_#3d8f61]">
+                    <p class="font-black text-xl text-[#135e30]">🙋 适合多大的孩子？</p>
+                    <p class="mt-2 text-[#2d6b46]">小学一年级到高三全学段，分层教学，因材施教。</p>
+                </div>
+                <div class="bg-white border-2 border-[#61b888] rounded-[2rem] p-6 shadow-[8px_8px_0_#3d8f61]">
+                    <p class="font-black text-xl text-[#135e30]">💰 有免费试听课吗？</p>
+                    <p class="mt-2 text-[#2d6b46]">所有新生均可领取2节正式课体验，满意再报名。</p>
+                </div>
+                <div class="bg-white border-2 border-[#61b888] rounded-[2rem] p-6 shadow-[8px_8px_0_#3d8f61]">
+                    <p class="font-black text-xl text-[#135e30]">📱 支持什么设备？</p>
+                    <p class="mt-2 text-[#2d6b46]">手机、平板、电脑均可上课，所有内容云同步。</p>
+                </div>
+                <div class="bg-white border-2 border-[#61b888] rounded-[2rem] p-6 shadow-[8px_8px_0_#3d8f61]">
+                    <p class="font-black text-xl text-[#135e30]">🧑‍🏫 老师资质如何？</p>
+                    <p class="mt-2 text-[#2d6b46]">985/211毕业，平均教龄5年以上，持证上岗。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 醒目青绿 -->
+        <section class="bg-[#b1e4c5] border-t-4 border-b-4 border-[#39915f] py-20 shadow-inner">
+            <div class="max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-5xl md:text-6xl font-black text-[#0d532b] [text-shadow:4px_4px_0_#d0ffdf]">🚀 开学抢跑计划</h2>
+                <p class="text-2xl text-[#1f623b] mt-4 font-bold">限量免费领取 288元 学习大礼包</p>
+                <div class="flex flex-wrap justify-center gap-5 mt-10">
+                    <a href="#" class="bg-[#f9b83c] text-white font-black py-5 px-12 rounded-full border-2 border-[#bd701f] shadow-[12px_12px_0_#e09d32] hover:shadow-[4px_4px_0_#e09d32] hover:translate-x-1 hover:translate-y-1 transition-all text-2xl">立即抢试听</a>
+                    <a href="#" class="bg-white text-[#145e30] font-black py-5 px-12 rounded-full border-2 border-[#3f9465] shadow-[12px_12px_0_#b0e8c8] hover:shadow-[4px_4px_0_#b0e8c8] hover:translate-x-1 hover:translate-y-1 transition-all text-2xl">预约规划师</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码) 青绿卡通风 -->
+    <footer class="bg-[#236742] border-t-8 border-[#f9b83c] text-white rounded-t-[4rem] mt-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+            <!-- logo + 版权 -->
+            <div class="lg:col-span-2">
+                <div class="flex items-center gap-2 text-white">
+                    <span class="text-4xl bg-[#f1c453] rounded-2xl p-2 border-2 border-white shadow-[5px_5px_0_#b4791e]">📚</span>
+                    <span class="text-3xl font-black [text-shadow:3px_3px_0_#9bc7ac]">乐学未来</span>
+                </div>
+                <p class="mt-6 text-[#e2ffed] text-sm leading-relaxed">让每个孩子爱上学习，成为更好的自己。K12在线培优领导品牌。</p>
+                <p class="mt-8 text-sm opacity-90">© 2025 乐学未来教育科技公司 版权所有</p>
+                <p class="text-sm">北京市海淀区知春路108号 创新大厦</p>
+            </div>
+            <!-- 联系方式 等 -->
+            <div>
+                <h3 class="text-xl font-black border-b-4 border-[#f6c454] inline-block pb-1">联系方式</h3>
+                <ul class="mt-5 space-y-2 text-[#f0ffe6]">
+                    <li class="flex items-center gap-2">📞 400-882-1234</li>
+                    <li class="flex items-center gap-2">📧 kefu@lexuefuture.cn</li>
+                    <li class="flex items-center gap-2">⏰ 周一至周日 9:00-21:00</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-black border-b-4 border-[#f6c454] inline-block pb-1">公司地址</h3>
+                <address class="not-italic mt-5 text-[#f0ffe6]">北京总部 · 海淀区中科路8号<br>上海分校 · 浦东新区世纪大道<br>深圳分校 · 南山区科技园</address>
+            </div>
+            <!-- 公众号二维码 -->
+            <div>
+                <h3 class="text-xl font-black border-b-4 border-[#f6c454] inline-block pb-1">关注我们</h3>
+                <div class="mt-5 bg-white p-3 rounded-2xl border-2 border-[#f9d85a] shadow-[8px_8px_0_#c48b2f] w-32 h-32 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="公众号二维码" class="w-full h-full object-cover rounded-lg">
+                </div>
+                <p class="text-sm mt-3">扫一扫领体验课</p>
+            </div>
+        </div>
+        <div class="border-t-2 border-[#7bc59b] py-6 text-center text-sm text-[#dcffe9]">🎈 趣味学习 · 快乐成长 · 每个孩子都发光 🎈</div>
+    </footer>
+</body>
+</html>

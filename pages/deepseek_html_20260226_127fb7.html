@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技能新程 · 企业职业技能培训平台</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 为了更好的视觉表现，使用默认的inter字体，无自定义样式 -->
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <!-- 导航栏 (包含logo, 标题, 菜单, CTA) 薄荷绿&白 -->
+    <nav class="bg-white border-b border-mint-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo + 标题 -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 bg-[#7CCF9E] rounded-lg flex items-center justify-center text-white font-bold text-xl">E</div>
+                    <span class="font-semibold text-xl text-gray-800">技能新程<span class="text-[#7CCF9E] ml-1 text-sm font-normal">·企业培训</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <div class="hidden md:flex items-center space-x-8 text-gray-600 font-medium">
+                    <a href="#" class="hover:text-[#7CCF9E] transition">首页</a>
+                    <a href="#" class="hover:text-[#7CCF9E] transition">课程</a>
+                    <a href="#" class="hover:text-[#7CCF9E] transition">客户案例</a>
+                    <a href="#" class="hover:text-[#7CCF9E] transition">资源</a>
+                    <a href="#" class="hover:text-[#7CCF9E] transition">价格</a>
+                </div>
+                <!-- CTA 按钮 -->
+                <div class="flex items-center space-x-3">
+                    <a href="/contact" class="hidden sm:inline-block text-gray-600 hover:text-[#7CCF9E] transition">联系销售</a>
+                    <a href="/signup" class="bg-[#7CCF9E] hover:bg-[#5fb17f] text-white px-5 py-2 rounded-lg font-medium transition shadow-sm">开始使用</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 首屏区块 (职业技能培训版) -->
+        <section class="bg-gradient-to-b from-white to-[#F0FAF3] py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">企业技能升级，<br><span class="text-[#7CCF9E]">就选新程</span></h1>
+                    <p class="text-xl text-gray-600 mt-6">专为现代企业打造的职业技能培训平台，涵盖AI、大数据、管理、智能制造，让人才培养快人一步。</p>
+                    <p class="text-gray-500 mt-4">200+ 门实战课程 · 一线导师 · 学习数据分析</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="/signup" class="bg-[#7CCF9E] hover:bg-[#5fb17f] text-white px-8 py-3 rounded-lg font-medium shadow-md transition">开始使用</a>
+                        <a href="/contact" class="border border-[#7CCF9E] text-[#7CCF9E] hover:bg-[#7CCF9E] hover:text-white px-8 py-3 rounded-lg font-medium transition">联系销售</a>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="团队学习协作" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 (职业技能生态) -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">我们的生态伙伴</h2>
+                <p class="text-center text-gray-500 mt-3">与全球领先的职业技能机构深度合作</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+                    <!-- 伙伴卡片 使用同款占位图片，实际替换为职业技能相关logo -->
+                    <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl border border-gray-100"><img class="h-12 w-12 object-contain mb-2 rounded" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="微软"><span class="font-medium text-sm">微软</span><span class="text-xs text-gray-500">金牌伙伴</span></div>
+                    <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl border border-gray-100"><img class="h-12 w-12 object-contain mb-2 rounded" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="AWS"><span class="font-medium text-sm">亚马逊云</span><span class="text-xs text-gray-500">技术伙伴</span></div>
+                    <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl border border-gray-100"><img class="h-12 w-12 object-contain mb-2 rounded" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="Google"><span class="font-medium text-sm">Google</span><span class="text-xs text-gray-500">云服务</span></div>
+                    <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl border border-gray-100"><img class="h-12 w-12 object-contain mb-2 rounded" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="腾讯云"><span class="font-medium text-sm">腾讯云</span><span class="text-xs text-gray-500">战略合作</span></div>
+                    <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl border border-gray-100"><img class="h-12 w-12 object-contain mb-2 rounded" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="华为"><span class="font-medium text-sm">华为</span><span class="text-xs text-gray-500">认证伙伴</span></div>
+                    <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl border border-gray-100"><img class="h-12 w-12 object-contain mb-2 rounded" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="领英"><span class="font-medium text-sm">领英</span><span class="text-xs text-gray-500">内容合作</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (沉浸式学习) -->
+        <section class="py-16 bg-[#F0FAF3]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div><img class="rounded-2xl shadow-lg border border-white/50" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="小组实训"></div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">跨部门项目制学习</h2>
+                    <p class="text-gray-600 mt-4 text-lg">打破培训孤岛，通过话题群组、实战演练和实时反馈，让学员快速掌握技能。集成企业人才档案，一键跟踪成长。</p>
+                    <div class="mt-6 flex flex-wrap gap-3"><span class="bg-white text-[#7CCF9E] px-4 py-2 rounded-full font-medium shadow-sm border border-[#7CCF9E]">AI 智能陪练</span><span class="bg-white text-[#7CCF9E] px-4 py-2 rounded-full font-medium shadow-sm border border-[#7CCF9E]">无限回看</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (工作流集成) -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">深度集成工作与学习</h2>
+                    <p class="text-gray-600 mt-4 text-lg">与您使用的工具无缝连接：Jira、GitLab、Google Drive、钉钉。在培训中创建任务、分享文档、自动同步学习记录。</p>
+                    <div class="mt-6 flex flex-wrap gap-3"><span class="bg-[#E9F7EF] text-[#3b8b5e] px-4 py-2 rounded-full font-medium">LRS (学习记录存储)</span><span class="bg-[#E9F7EF] text-[#3b8b5e] px-4 py-2 rounded-full font-medium">开放API</span></div>
+                </div>
+                <div><img class="rounded-2xl shadow-lg" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="工作流集成"></div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为企业培训打造) -->
+        <section class="py-16 bg-[#F0FAF3]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">专为企业培训打造的特性</h2>
+                <p class="text-center text-gray-500 mt-3">从学习体验到人才管理，面面俱到</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"><div class="text-4xl mb-3">📊</div><h3 class="text-xl font-semibold">学习数据分析</h3><p class="text-gray-500 mt-2">部门参与度、技能掌握度实时可视化。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"><div class="text-4xl mb-3">🔒</div><h3 class="text-xl font-semibold">企业级安全</h3><p class="text-gray-500 mt-2">SSO、数据隔离、合规审计，满足大企业需求。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"><div class="text-4xl mb-3">⚡</div><h3 class="text-xl font-semibold">AI 个性化路径</h3><p class="text-gray-500 mt-2">根据岗位能力模型推荐课程，实时调整。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100"><div class="text-4xl mb-3">🧩</div><h3 class="text-xl font-semibold">无限集成</h3><p class="text-gray-500 mt-2">连接HRIS、CRM及200+企业应用。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (职业技能培训案例) -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">他们正在使用新程提升技能</h2>
+                <p class="text-center text-gray-500 mt-3">来自先进企业的信赖与认可</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="border border-gray-100 rounded-2xl p-6 shadow-sm bg-[#F9FDFB]"><div class="flex items-center gap-3"><img class="w-12 h-12 rounded-full border" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="logo"><div><div class="font-semibold">智造科技</div><div class="text-sm text-gray-500">制造业</div></div></div><p class="mt-4 text-gray-700 italic">“一线技工通过平台提升了自动化技能，产线效率提升25%。”</p><div class="flex items-center mt-6"><img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=128&auto=format" alt="avatar"><div class="ml-3"><div class="font-medium">张建国</div><div class="text-xs text-gray-500">IT总监</div></div></div></div>
+                    <div class="border border-gray-100 rounded-2xl p-6 shadow-sm bg-[#F9FDFB]"><div class="flex items-center gap-3"><img class="w-12 h-12 rounded-full border" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="logo"><div><div class="font-semibold">未来教育集团</div><div class="text-sm text-gray-500">教育</div></div></div><p class="mt-4 text-gray-700 italic">“教师培训数字化，管理成本降低40%，课程完成率翻倍。”</p><div class="flex items-center mt-6"><img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=128&auto=format" alt="avatar"><div class="ml-3"><div class="font-medium">王美玲</div><div class="text-xs text-gray-500">教务主任</div></div></div></div>
+                    <div class="border border-gray-100 rounded-2xl p-6 shadow-sm bg-[#F9FDFB]"><div class="flex items-center gap-3"><img class="w-12 h-12 rounded-full border" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format" alt="logo"><div><div class="font-semibold">云创科技</div><div class="text-sm text-gray-500">互联网</div></div></div><p class="mt-4 text-gray-700 italic">“全员数据思维培训后，项目交付质量显著提升。”</p><div class="flex items-center mt-6"><img class="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=128&auto=format" alt="avatar"><div class="ml-3"><div class="font-medium">李志强</div><div class="text-xs text-gray-500">CTO</div></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (培训版定价) -->
+        <section class="py-16 bg-[#F0FAF3]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">灵活定价 · 企业培训</h2>
+                <p class="text-center text-gray-500 mt-3">按需选择，无隐藏费用</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"><h3 class="text-2xl font-bold">基础版</h3><div class="mt-4"><span class="text-4xl font-bold">¥49</span> <span class="text-gray-500">/月/人</span></div><ul class="mt-6 space-y-3"><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 课程库200+</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 基础学习报表</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 10GB 存储</li></ul><a href="/signup/basic" class="mt-8 block text-center border border-[#7CCF9E] text-[#7CCF9E] hover:bg-[#7CCF9E] hover:text-white px-4 py-3 rounded-lg font-medium transition">选择基础版</a></div>
+                    <!-- 商业版 (热门) -->
+                    <div class="bg-white rounded-2xl p-8 border-2 border-[#7CCF9E] shadow-md relative"><span class="absolute -top-3 right-6 bg-[#7CCF9E] text-white px-4 py-1 rounded-full text-sm font-medium">热门</span><h3 class="text-2xl font-bold">商业版</h3><div class="mt-4"><span class="text-4xl font-bold">¥99</span> <span class="text-gray-500">/月/人</span></div><ul class="mt-6 space-y-3"><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 无限课程访问</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 高级分析+API</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 100GB 存储</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 专属客户成功</li></ul><a href="/signup/business" class="mt-8 block bg-[#7CCF9E] hover:bg-[#5fb17f] text-white px-4 py-3 rounded-lg font-medium text-center transition">选择商业版</a></div>
+                    <!-- 企业版 -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm"><h3 class="text-2xl font-bold">企业版</h3><div class="mt-4"><span class="text-4xl font-bold">定制</span></div><ul class="mt-6 space-y-3"><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 私有化部署</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 无限存储</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> SSO/合规</li><li class="flex items-center gap-2"><span class="text-[#7CCF9E]">✓</span> 学习顾问陪跑</li></ul><a href="/contact" class="mt-8 block text-center border border-[#7CCF9E] text-[#7CCF9E] hover:bg-[#7CCF9E] hover:text-white px-4 py-3 rounded-lg font-medium transition">联系销售</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div><div class="text-4xl font-bold text-[#7CCF9E]">500+</div><div class="text-gray-600">企业客户</div></div>
+                <div><div class="text-4xl font-bold text-[#7CCF9E]">98%</div><div class="text-gray-600">客户留存率</div></div>
+                <div><div class="text-4xl font-bold text-[#7CCF9E]">20M+</div><div class="text-gray-600">学习时长(小时)</div></div>
+                <div><div class="text-4xl font-bold text-[#7CCF9E]">24/7</div><div class="text-gray-600">技术支持</div></div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 -->
+        <section class="py-16 bg-[#F0FAF3]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">常见问题</h2>
+                <div class="grid md:grid-cols-2 gap-6 mt-12 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-sm"><h3 class="font-semibold text-lg">支持本地部署吗？</h3><p class="text-gray-500 mt-2">是的，企业版支持私有云或本地服务器部署，满足高安全要求。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm"><h3 class="font-semibold text-lg">可以试用多久？</h3><p class="text-gray-500 mt-2">所有新用户可享受30天全功能免费试用，无需信用卡。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm"><h3 class="font-semibold text-lg">数据存储在哪里？</h3><p class="text-gray-500 mt-2">数据存储在云端的独立数据库，可选中国大陆或海外区域。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm"><h3 class="font-semibold text-lg">如何迁移现有学习记录？</h3><p class="text-gray-500 mt-2">提供专业迁移工具，支持从主流平台导入历史数据。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最后的CTA区块 -->
+        <section class="py-20 bg-[#7CCF9E] text-white">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-4xl font-bold">即刻提升团队技能</h2>
+                <p class="text-xl mt-4 opacity-90">加入数百家信任我们的企业，开启高效培训之旅。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="/signup" class="bg-white text-[#7CCF9E] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold shadow-md transition">免费试用30天</a>
+                    <a href="/demo" class="border-2 border-white text-white hover:bg-white hover:text-[#7CCF9E] px-8 py-3 rounded-lg font-semibold transition">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (品牌Logo, 版权, 地址, 联系方式, 微信公众号二维码) -->
+    <footer class="bg-white border-t border-gray-200 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- 品牌与版权 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-[#7CCF9E] rounded-lg flex items-center justify-center text-white font-bold text-xl">E</div>
+                        <span class="font-semibold text-xl text-gray-800">技能新程</span>
+                    </div>
+                    <p class="text-gray-500 text-sm mt-4 leading-relaxed">专业的职业技能培训平台，助力企业人才发展与数字化转型。</p>
+                    <p class="text-gray-400 text-sm mt-6">&copy; 2025 技能新程. 保留一切权利。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-4">公司地址</h4>
+                    <address class="text-gray-500 not-italic text-sm">北京市朝阳区数码大厦B座18层<br>上海市浦东新区软件园3号楼<br>深圳市南山区科技园C座</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-4">联系方式</h4>
+                    <ul class="text-gray-500 text-sm space-y-2">
+                        <li>📞 400-8820-668</li>
+                        <li>✉️ enterprise@skillspath.cn</li>
+                        <li>🕒 周一至周五 9:00-18:00</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 -->
+                <div>
+                    <h4 class="font-semibold text-gray-800 mb-4">官方微信</h4>
+                    <img class="w-28 h-28 border border-gray-200 rounded-lg p-1 bg-white" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=256&auto=format" alt="微信公众号二维码" />
+                    <p class="text-xs text-gray-400 mt-2">扫码关注获取最新课程</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 mt-10 pt-6 text-center text-gray-400 text-sm">
+                本页面所用图片仅为示意，源自Unsplash。 
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

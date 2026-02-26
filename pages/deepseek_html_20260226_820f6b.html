@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOW · 高级婚纱摄影</title>
+  <!-- Tailwind via CDN + base layer (no custom CSS) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- extra subtle font from system (no custom css) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    /* tiny reset only for html/body, no custom classes */
+    body {
+      margin: 0;
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- ========== 导航栏 (logo, 标题, CTA按钮, 无菜单) ========== -->
+  <header class="border-b border-gray-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+      <!-- left: logo + 品牌标题 -->
+      <div class="flex items-center gap-3">
+        <!-- simple camera logo emoji as design element (符合婚纱摄影) -->
+        <span class="text-3xl" aria-hidden="true">📸✨</span>
+        <span
+          class="font-semibold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-rose-400 to-amber-600">
+          VOW Photography
+        </span>
+      </div>
+      <!-- right: CTA 按钮 (无菜单) -->
+      <div>
+        <a href="#contact"
+          class="inline-flex items-center justify-center px-6 py-2.5 text-sm font-medium text-white bg-rose-500 rounded-full shadow-md hover:bg-rose-600 transition shadow-rose-200/50">预约试拍</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-hidden">
+
+    <!-- ========== 首屏区块 (hero) — 婚纱大片 + 双按钮 ========== -->
+    <section class="relative bg-gradient-to-br from-amber-50 via-white to-rose-50">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24 grid lg:grid-cols-2 gap-12 items-center">
+        <!-- left text -->
+        <div class="space-y-6">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-tight">
+            定格<span class="text-rose-500">爱与光影</span><br>每一帧都是永恒
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600 max-w-xl">高端婚纱摄影定制，让誓言在镜头下成为传世艺术品。全球旅拍、电影感叙事、私人定制服务。</p>
+          <p class="text-gray-500 text-base">十年行业口碑 · 200+ 海外拍摄地 · 零风险预定</p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#pricing"
+              class="px-8 py-4 bg-rose-500 text-white font-medium rounded-full shadow-lg shadow-rose-200 hover:bg-rose-600 transition">查看作品集</a>
+            <a href="#contact"
+              class="px-8 py-4 border border-rose-200 text-rose-600 font-medium rounded-full hover:bg-rose-50 transition">咨询档期</a>
+          </div>
+        </div>
+        <!-- right image (unsplash 婚纱氛围) -->
+        <div class="relative lg:ml-auto">
+          <div class="absolute -inset-1 bg-gradient-to-r from-amber-200 to-rose-200 rounded-3xl blur-2xl opacity-40">
+          </div>
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format&fit=crop"
+            alt="新娘手持捧花在夕阳下" class="relative rounded-3xl shadow-2xl object-cover w-full h-auto aspect-[4/5]">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 左图右文区块 (关于团队/风格) ========== -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+      <div class="grid md:grid-cols-2 gap-14 items-center">
+        <!-- 左图 -->
+        <div class="order-2 md:order-1">
+          <img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?w=800&auto=format&fit=crop"
+            alt="摄影师与新人对视" class="rounded-3xl shadow-xl w-full h-auto object-cover aspect-[4/5]">
+        </div>
+        <!-- 右文 -->
+        <div class="order-1 md:order-2 space-y-5">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">不止拍照，更是情感存档</h2>
+          <p class="text-gray-600 text-lg">从黎明第一缕光到暮色余晖，我们捕捉每一次心动瞬间。纪实风格混合时尚大片质感，让您的爱情故事独一无二。</p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <span
+              class="inline-flex items-center gap-1 bg-amber-50 text-amber-700 px-4 py-2 rounded-full text-sm font-medium">🎞️
+              电影感叙事</span>
+            <span
+              class="inline-flex items-center gap-1 bg-rose-50 text-rose-700 px-4 py-2 rounded-full text-sm font-medium">📸
+              零压力拍摄</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 左文右图区块 (旅拍/定制) ========== -->
+    <section class="bg-gray-50/60 py-24">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 grid md:grid-cols-2 gap-14 items-center">
+        <!-- 左文 -->
+        <div class="space-y-6">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">全球旅拍 · 为你奔赴</h2>
+          <p class="text-gray-600 text-lg">冰岛极光、托斯卡纳庄园、京都古巷……我们飞往世界任何角落，将绝美风景化为您的婚礼记忆。全程管家式服务。</p>
+          <div class="flex gap-3 pt-2">
+            <span class="bg-white border border-rose-100 text-rose-600 px-5 py-2 rounded-full text-sm shadow-sm">✈️
+              六大洲40+国家</span>
+            <span class="bg-white border border-amber-100 text-amber-600 px-5 py-2 rounded-full text-sm shadow-sm">🌍
+              小众秘境</span>
+          </div>
+        </div>
+        <!-- 右图 -->
+        <div>
+          <img src="https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800&auto=format&fit=crop"
+            alt="情侣在雪山前拥吻" class="rounded-3xl shadow-2xl w-full h-auto object-cover aspect-[4/5]">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 上文下图区块 (全平台体验 -> 相册/设备展示) ========== -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-24 text-center">
+      <div class="max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">随时随地重温感动</h2>
+        <p class="text-gray-500 text-lg mt-3">专属线上画廊 + 精美实物相册，手机、电脑、平板同步珍藏。</p>
+      </div>
+      <!-- 图片展示多设备风格 -->
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1719179542047-a4d84fd35c1f?q=80&w=1548&auto=format&fit=crop"
+          alt="相册和手机展示婚纱照" class="rounded-3xl shadow-2xl w-full h-auto object-cover max-h-[500px] object-center">
+      </div>
+    </section>
+
+    <!-- ========== 特性区块 (婚纱摄影特色服务) ========== -->
+    <section class="bg-white py-24 border-y border-gray-100">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">为什么选择 VOW</h2>
+          <p class="text-gray-500 mt-3">从咨询到交付，每个细节我们都力求完美</p>
+        </div>
+        <!-- 4项特性 (完全按照JSON格式, 使用icon/描述) -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- 特性 1 -->
+          <div class="bg-amber-50/30 rounded-3xl p-6 text-center border border-amber-100/50">
+            <span class="text-5xl">💍</span>
+            <h3 class="text-xl font-semibold mt-4">私人订制</h3>
+            <p class="text-gray-500 mt-2">每套方案根据爱情故事独家策划，拒绝流水线。</p>
+          </div>
+          <!-- 特性 2 -->
+          <div class="bg-rose-50/30 rounded-3xl p-6 text-center border border-rose-100/50">
+            <span class="text-5xl">⚡</span>
+            <h3 class="text-xl font-semibold mt-4">闪电交付</h3>
+            <p class="text-gray-500 mt-2">精修预告7天交付，全款图册30天内寄达。</p>
+          </div>
+          <!-- 特性 3 -->
+          <div class="bg-amber-50/30 rounded-3xl p-6 text-center border border-amber-100/50">
+            <span class="text-5xl">🧩</span>
+            <h3 class="text-xl font-semibold mt-4">全程透明</h3>
+            <p class="text-gray-500 mt-2">无隐形消费，底片全送，选片无压力。</p>
+          </div>
+          <!-- 特性 4 -->
+          <div class="bg-rose-50/30 rounded-3xl p-6 text-center border border-rose-100/50">
+            <span class="text-5xl">📊</span>
+            <h3 class="text-xl font-semibold mt-4">AI预选片</h3>
+            <p class="text-gray-500 mt-2">智能辅助筛选，留住最动人的瞬间。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 团队区块 (核心摄影师团队) ========== -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">核心团队</h2>
+        <p class="text-gray-500 mt-2">来自国内外顶尖影像机构，屡获WPJA/ISPWP奖项</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 成员 1 -->
+        <div class="group">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop" alt="张伟"
+            class="w-full h-72 object-cover rounded-2xl shadow-lg group-hover:scale-[1.02] transition">
+          <div class="mt-4">
+            <h4 class="text-xl font-semibold">张伟</h4>
+            <p class="text-rose-500">创始人 / 首席摄影师</p>
+            <p class="text-gray-500 text-sm mt-1">前《时尚新娘》首席，20年纪实经验</p>
+          </div>
+        </div>
+        <!-- 成员 2 -->
+        <div class="group">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop" alt="陈敏"
+            class="w-full h-72 object-cover rounded-2xl shadow-lg group-hover:scale-[1.02] transition">
+          <div class="mt-4">
+            <h4 class="text-xl font-semibold">陈敏</h4>
+            <p class="text-rose-500">艺术总监</p>
+            <p class="text-gray-500 text-sm mt-1">国际人像摄影金奖得主，旅拍艺术家</p>
+          </div>
+        </div>
+        <!-- 成员 3 -->
+        <div class="group">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop" alt="王磊"
+            class="w-full h-72 object-cover rounded-2xl shadow-lg group-hover:scale-[1.02] transition">
+          <div class="mt-4">
+            <h4 class="text-xl font-semibold">王磊</h4>
+            <p class="text-rose-500">摄影技术总监</p>
+            <p class="text-gray-500 text-sm mt-1">电影感光影布光专家</p>
+          </div>
+        </div>
+        <!-- 成员 4 -->
+        <div class="group">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop" alt="李莉"
+            class="w-full h-72 object-cover rounded-2xl shadow-lg group-hover:scale-[1.02] transition">
+          <div class="mt-4">
+            <h4 class="text-xl font-semibold">李莉</h4>
+            <p class="text-rose-500">造型总监</p>
+            <p class="text-gray-500 text-sm mt-1">合作明星御用，自然妆发</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 统计区块 (用真实数据提升信任) ========== -->
+    <section class="bg-rose-50 py-20">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div>
+          <span class="block text-4xl lg:text-5xl font-bold text-rose-600">500+</span>
+          <span class="text-gray-600 text-lg">全球新人</span>
+        </div>
+        <div>
+          <span class="block text-4xl lg:text-5xl font-bold text-rose-600">98%</span>
+          <span class="text-gray-600 text-lg">推荐意愿</span>
+        </div>
+        <div>
+          <span class="block text-4xl lg:text-5xl font-bold text-rose-600">20+</span>
+          <span class="text-gray-600 text-lg">国际奖项</span>
+        </div>
+        <div>
+          <span class="block text-4xl lg:text-5xl font-bold text-rose-600">24/7</span>
+          <span class="text-gray-600 text-lg">专属顾问</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 价格区块 (透明定价) ========== -->
+    <section id="pricing" class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">灵活套系，丰俭由人</h2>
+        <p class="text-gray-500 mt-2">无隐藏费用，每一分都花在画面上</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- 基础版 -->
+        <div class="border border-gray-200 rounded-3xl p-8 bg-white shadow-sm">
+          <h3 class="text-2xl font-bold">基础纪实</h3>
+          <p class="text-4xl font-bold mt-4">¥8,999<span class="text-base font-normal text-gray-400">/套系</span></p>
+          <ul class="mt-6 space-y-3 text-gray-600">
+            <li class="flex items-center gap-2">✔️ 单日拍摄 (8小时)</li>
+            <li class="flex items-center gap-2">✔️ 精修60张</li>
+            <li class="flex items-center gap-2">✔️ 全部底片赠送</li>
+            <li class="flex items-center gap-2">✔️ 相册一本</li>
+          </ul>
+          <a href="#"
+            class="mt-8 block w-full text-center py-3 border border-rose-300 text-rose-600 rounded-full hover:bg-rose-50 transition">选择基础</a>
+        </div>
+        <!-- 商业版 (热门) -->
+        <div class="border-2 border-rose-400 rounded-3xl p-8 bg-white shadow-xl relative scale-105 md:scale-110 z-10">
+          <span
+            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-rose-500 text-white px-4 py-1 rounded-full text-sm font-semibold">热门推荐</span>
+          <h3 class="text-2xl font-bold mt-4">旅拍珍藏</h3>
+          <p class="text-4xl font-bold mt-4">¥19,999<span class="text-base font-normal text-gray-400">/套系</span></p>
+          <ul class="mt-6 space-y-3 text-gray-600">
+            <li class="flex items-center gap-2">✔️ 双机位全天跟拍</li>
+            <li class="flex items-center gap-2">✔️ 精修120张</li>
+            <li class="flex items-center gap-2">✔️ 微电影一部 (2min)</li>
+            <li class="flex items-center gap-2">✔️ 定制相册 + 旅行画册</li>
+          </ul>
+          <a href="#"
+            class="mt-8 block w-full text-center py-3 bg-rose-500 text-white rounded-full shadow-lg hover:bg-rose-600 transition">立即预约</a>
+        </div>
+        <!-- 企业版 (定制) -->
+        <div class="border border-gray-200 rounded-3xl p-8 bg-white shadow-sm">
+          <h3 class="text-2xl font-bold">全球臻选</h3>
+          <p class="text-4xl font-bold mt-4">定制</p>
+          <ul class="mt-6 space-y-3 text-gray-600">
+            <li class="flex items-center gap-2">✔️ 海外旅拍/目的地婚礼</li>
+            <li class="flex items-center gap-2">✔️ 全程制片+造型团队</li>
+            <li class="flex items-center gap-2">✔️ 奢品相册+艺术微喷</li>
+            <li class="flex items-center gap-2">✔️ 专属贵宾服务</li>
+          </ul>
+          <a href="#"
+            class="mt-8 block w-full text-center py-3 border border-rose-300 text-rose-600 rounded-full hover:bg-rose-50 transition">咨询档期</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 常见问题区块 ========== -->
+    <section class="bg-gray-50 py-24">
+      <div class="max-w-4xl mx-auto px-6 md:px-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900">您可能想了解</h2>
+        <div class="mt-16 space-y-6">
+          <!-- faq 1 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 class="font-semibold text-lg">阴雨天能拍摄吗？</h3>
+            <p class="text-gray-500 mt-2">当然，我们擅长利用各种光线，雨天的城市倒影、柔和光线反而更具电影感，并提供备选室内方案。</p>
+          </div>
+          <!-- faq 2 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 class="font-semibold text-lg">底片全部赠送吗？</h3>
+            <p class="text-gray-500 mt-2">是的，所有套系均赠送全部原始底片 (JPEG+RAW可选)，无任何隐藏费用。</p>
+          </div>
+          <!-- faq 3 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 class="font-semibold text-lg">如何预定档期？</h3>
+            <p class="text-gray-500 mt-2">支付30%定金即可锁定团队档期，余款在拍摄当天支付。支持随时改期一次。</p>
+          </div>
+          <!-- faq 4 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm">
+            <h3 class="font-semibold text-lg">可以带宠物一起拍摄吗？</h3>
+            <p class="text-gray-500 mt-2">非常欢迎！我们有许多与宠物拍摄的经验，提前沟通就好，让毛孩子也加入幸福时刻。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA 区块 (立即咨询) ========== -->
+    <section id="contact" class="bg-gradient-to-r from-rose-400 to-amber-400 py-20 text-white">
+      <div class="max-w-3xl mx-auto text-center px-6">
+        <h2 class="text-3xl md:text-5xl font-bold">让此刻成为永恒</h2>
+        <p class="text-lg md:text-xl mt-4 opacity-90">咨询档期或获取定制画册样本，一对一倾听您的故事</p>
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <a href="#"
+            class="bg-white text-rose-600 px-10 py-4 rounded-full font-medium text-lg shadow-xl hover:bg-gray-100 transition">免费获取报价</a>
+          <a href="#"
+            class="border-2 border-white text-white px-10 py-4 rounded-full font-medium text-lg hover:bg-white/10 transition">预约面谈</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== 页脚 (简单版权) ========== -->
+  <footer class="bg-white border-t border-gray-100 py-8">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 text-center text-gray-400 text-sm">
+      © 2025 VOW Photography. 版权所有 · 让爱光影永存
+    </div>
+  </footer>
+</body>
+
+</html>

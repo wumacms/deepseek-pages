@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明启学苑 · 在线教学</title>
+    <!-- 使用 Tailwind CSS 的 CDN 完全按照要求，无自定义样式 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 添加一点平滑滚动，不影响纯 Tailwind 原则（只是浏览器行为） -->
+    <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <!-- 导航栏：包含logo、标题和CTA按钮，不含菜单，符合扁平明亮设计 -->
+    <header class="bg-white border-b border-gray-100 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 py-4 flex items-center justify-between">
+            <!-- logo 和标题区域 (使用 emoji 作简单logo 贴合教育轻松感) -->
+            <div class="flex items-center space-x-3">
+                <span class="text-4xl leading-none" aria-label="logo">📘</span>
+                <span class="text-2xl font-bold tracking-tight bg-gradient-to-r from-indigo-500 to-sky-500 bg-clip-text text-transparent">明启学苑</span>
+            </div>
+            <!-- CTA 按钮 (只有按钮，无菜单) -->
+            <a href="#contact" class="inline-flex items-center px-5 py-2.5 text-sm font-semibold text-white bg-indigo-500 rounded-xl shadow-sm hover:bg-indigo-600 transition-all duration-200 shadow-indigo-200">
+                免费试听
+                <span class="ml-2" aria-hidden="true">→</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏区块 (基于在线教学数据) 使用明亮彩色系，渐变标题 -->
+        <section class="bg-gradient-to-br from-indigo-50 via-white to-sky-50 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 leading-tight">
+                        在线教学，<span class="bg-gradient-to-r from-indigo-600 to-sky-500 bg-clip-text text-transparent">让知识流动更高效</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 max-w-2xl">互动直播、精品录播、智能作业 —— 专为现代教育机构打造的一站式在线教学平台。</p>
+                    <p class="text-base text-gray-500">集成教务管理、学情分析，让教学更专注，让学习更有效。</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#" class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-xl shadow-md shadow-indigo-200 transition">开始使用</a>
+                        <a href="#" class="px-6 py-3 bg-white border border-indigo-200 text-indigo-600 hover:bg-indigo-50 font-semibold rounded-xl transition">联系顾问</a>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl shadow-indigo-100/50">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="在线教学互动界面" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通变体为师生互动) -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="rounded-2xl overflow-hidden shadow-xl">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="师生互动课堂" class="w-full h-auto object-cover">
+                </div>
+                <div class="space-y-5">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">无缝互动，打破课堂边界</h2>
+                    <p class="text-lg text-gray-600">通过实时问答、小组讨论和屏幕共享，让线上教学如同面对面。班级圈、作业互评，激发同伴学习动力。</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <span class="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium flex items-center">✶ 师生双向互动</span>
+                        <span class="px-4 py-2 bg-sky-100 text-sky-700 rounded-full text-sm font-medium flex items-center">✶ 无限课堂回放</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流 -> 教学工具集成) -->
+        <section class="py-16 md:py-20 bg-indigo-50/30">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-5 order-2 lg:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">深度集成教学工具</h2>
+                    <p class="text-lg text-gray-600">与常用的 LMS、作业系统、云盘无缝衔接：Google Classroom、Canvas、百度网盘。在授课界面直接布置作业、分享课件、自动同步成绩。</p>
+                    <div class="flex flex-wrap gap-3 pt-4">
+                        <span class="px-4 py-2 bg-white border border-indigo-200 text-indigo-600 rounded-full text-sm font-medium">📚 课程导入</span>
+                        <span class="px-4 py-2 bg-white border border-indigo-200 text-indigo-600 rounded-full text-sm font-medium">🔌 开放 API</span>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl order-1 lg:order-2">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="教学工具集成" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台体验) -->
+        <section class="py-16 md:py-20 bg-white text-center">
+            <div class="max-w-4xl mx-auto px-6 sm:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">全平台一致学习体验</h2>
+                <p class="text-xl text-gray-600 mb-12">电脑、平板、手机，课程进度实时同步，操作流畅如一。</p>
+                <div class="rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=1000&auto=format" alt="多设备教学" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为教育打造的特性) 使用彩色图标卡片 -->
+        <section class="py-16 md:py-20 bg-indigo-50/30">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">专为教育机构打造的特性</h2>
+                    <p class="text-xl text-gray-600 mt-3">从教学管理到学习效果，面面俱到</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- 特性 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50 hover:shadow-md transition">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">课堂安全</h3>
+                        <p class="text-gray-600">私有教室、入班验证、行为监控，保障教学纯净。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50 hover:shadow-md transition">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">超低延迟</h3>
+                        <p class="text-gray-600">实时音视频互动，板书同步毫秒级，提问无延迟。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50 hover:shadow-md transition">
+                        <div class="text-4xl mb-4">🧩</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">丰富互动</h3>
+                        <p class="text-gray-600">答题器、抢答、计时器、小组PK，让课堂活跃。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-indigo-50 hover:shadow-md transition">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">学情分析</h3>
+                        <p class="text-gray-600">出勤率、互动频次、作业完成度，数据可视化。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (核心教学团队) 扁平明亮卡片，头像彩色背景 -->
+        <section class="py-16 md:py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">核心教学团队</h2>
+                    <p class="text-xl text-gray-600 mt-3">来自海内外名校的教研专家</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 成员1 使用彩色的头像底部装饰 -->
+                    <div class="bg-indigo-50/40 rounded-3xl p-6 text-center hover:bg-indigo-50 transition">
+                        <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg mb-5">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&auto=format" alt="张伟" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">张伟</h3>
+                        <p class="text-indigo-600 font-medium">CEO & 创始人</p>
+                        <p class="text-gray-500 text-sm mt-3">前新东方教学总监</p>
+                    </div>
+                    <div class="bg-sky-50/40 rounded-3xl p-6 text-center hover:bg-sky-50 transition">
+                        <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg mb-5">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format" alt="陈敏" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">陈敏</h3>
+                        <p class="text-sky-600 font-medium">CTO</p>
+                        <p class="text-gray-500 text-sm mt-3">前好未来技术总监</p>
+                    </div>
+                    <div class="bg-amber-50/40 rounded-3xl p-6 text-center hover:bg-amber-50 transition">
+                        <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg mb-5">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&auto=format" alt="王磊" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">王磊</h3>
+                        <p class="text-amber-600 font-medium">产品总监</p>
+                        <p class="text-gray-500 text-sm mt-3">前腾讯教育产品经理</p>
+                    </div>
+                    <div class="bg-pink-50/40 rounded-3xl p-6 text-center hover:bg-pink-50 transition">
+                        <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-white shadow-lg mb-5">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format" alt="李莉" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">李莉</h3>
+                        <p class="text-pink-600 font-medium">设计负责人</p>
+                        <p class="text-gray-500 text-sm mt-3">前学而思UED主管</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (彩色数字卡片) -->
+        <section class="py-14 bg-gradient-to-r from-indigo-500 to-sky-500 text-white">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div class="backdrop-blur-sm bg-white/10 rounded-2xl py-8 px-2">
+                        <div class="text-4xl font-bold">500+</div>
+                        <div class="text-indigo-100 text-lg mt-1">合作机构</div>
+                    </div>
+                    <div class="backdrop-blur-sm bg-white/10 rounded-2xl py-8 px-2">
+                        <div class="text-4xl font-bold">98%</div>
+                        <div class="text-indigo-100 text-lg mt-1">学员留存</div>
+                    </div>
+                    <div class="backdrop-blur-sm bg-white/10 rounded-2xl py-8 px-2">
+                        <div class="text-4xl font-bold">20K+</div>
+                        <div class="text-indigo-100 text-lg mt-1">每日活跃课堂</div>
+                    </div>
+                    <div class="backdrop-blur-sm bg-white/10 rounded-2xl py-8 px-2">
+                        <div class="text-4xl font-bold">24/7</div>
+                        <div class="text-indigo-100 text-lg mt-1">教务支持</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (灵活定价，适应教育机构) 使用明亮色 -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 sm:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">灵活定价 · 按需选择</h2>
+                    <p class="text-xl text-gray-600 mt-3">无隐藏费用，教育机构专享优惠</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="bg-white border border-indigo-100 rounded-3xl p-8 shadow-sm hover:shadow-lg transition">
+                        <h3 class="text-2xl font-bold text-gray-800">基础版</h3>
+                        <div class="mt-4 mb-4">
+                            <span class="text-5xl font-extrabold text-gray-900">49</span>
+                            <span class="text-xl text-gray-500 ml-1">元/月/人</span>
+                        </div>
+                        <ul class="space-y-3 my-6">
+                            <li class="flex items-center text-gray-600"><span class="w-5 h-5 bg-green-100 rounded-full text-green-600 inline-flex items-center justify-center mr-3 text-sm">✓</span>课程回放90天</li>
+                            <li class="flex items-center text-gray-600"><span class="w-5 h-5 bg-green-100 rounded-full text-green-600 inline-flex items-center justify-center mr-3 text-sm">✓</span>50GB 云存储</li>
+                            <li class="flex items-center text-gray-600"><span class="w-5 h-5 bg-green-100 rounded-full text-green-600 inline-flex items-center justify-center mr-3 text-sm">✓</span>基础教务集成</li>
+                        </ul>
+                        <a href="#" class="block text-center py-3 px-4 border border-indigo-300 text-indigo-600 rounded-xl font-semibold hover:bg-indigo-50 transition">选择基础版</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="bg-indigo-600 text-white rounded-3xl p-8 shadow-xl scale-105 md:scale-100 relative border-4 border-indigo-300">
+                        <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-400 text-indigo-900 px-4 py-1 rounded-full text-sm font-bold">🎓 最受欢迎</span>
+                        <h3 class="text-2xl font-bold">商业版</h3>
+                        <div class="mt-4 mb-4">
+                            <span class="text-5xl font-extrabold">99</span>
+                            <span class="text-indigo-200 text-xl ml-1">元/月/人</span>
+                        </div>
+                        <ul class="space-y-3 my-6">
+                            <li class="flex items-center"><span class="w-5 h-5 bg-indigo-400 rounded-full text-white inline-flex items-center justify-center mr-3 text-sm">✓</span>无限课程回放</li>
+                            <li class="flex items-center"><span class="w-5 h-5 bg-indigo-400 rounded-full text-white inline-flex items-center justify-center mr-3 text-sm">✓</span>200GB + 课堂录制</li>
+                            <li class="flex items-center"><span class="w-5 h-5 bg-indigo-400 rounded-full text-white inline-flex items-center justify-center mr-3 text-sm">✓</span>所有API & 高级集成</li>
+                            <li class="flex items-center"><span class="w-5 h-5 bg-indigo-400 rounded-full text-white inline-flex items-center justify-center mr-3 text-sm">✓</span>专属客户成功</li>
+                        </ul>
+                        <a href="#" class="block text-center py-3 px-4 bg-white text-indigo-600 rounded-xl font-semibold hover:bg-indigo-50 transition">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-white border border-indigo-100 rounded-3xl p-8 shadow-sm hover:shadow-lg transition">
+                        <h3 class="text-2xl font-bold text-gray-800">企业版</h3>
+                        <div class="mt-4 mb-4 flex items-end">
+                            <span class="text-4xl font-extrabold text-gray-900">定制</span>
+                        </div>
+                        <ul class="space-y-3 my-6">
+                            <li class="flex items-center text-gray-600"><span class="w-5 h-5 bg-green-100 rounded-full text-green-600 inline-flex items-center justify-center mr-3 text-sm">✓</span>私有部署/混合云</li>
+                            <li class="flex items-center text-gray-600"><span class="w-5 h-5 bg-green-100 rounded-full text-green-600 inline-flex items-center justify-center mr-3 text-sm">✓</span>无限存储</li>
+                            <li class="flex items-center text-gray-600"><span class="w-5 h-5 bg-green-100 rounded-full text-green-600 inline-flex items-center justify-center mr-3 text-sm">✓</span>专属大客户成功</li>
+                            <li class="flex items-center text-gray-600"><span class="w-5 h-5 bg-green-100 rounded-full text-green-600 inline-flex items-center justify-center mr-3 text-sm">✓</span>SSO/合规支持</li>
+                        </ul>
+                        <a href="#" class="block text-center py-3 px-4 border border-indigo-300 text-indigo-600 rounded-xl font-semibold hover:bg-indigo-50 transition">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (明亮背景+卡片) -->
+        <section class="py-16 bg-indigo-50/40">
+            <div class="max-w-4xl mx-auto px-6 sm:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">常见问题</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-50">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">支持本地化部署吗？</h3>
+                        <p class="text-gray-600">是的，企业版支持私有云或本地服务器部署，满足教育机构数据合规要求。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-50">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">可以试用多久？</h3>
+                        <p class="text-gray-600">所有新机构均可享受30天全功能免费试用，无需信用卡，即开即用。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-50">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">数据存储在哪里？</h3>
+                        <p class="text-gray-600">数据存储在云端独立数据库，可选中国大陆（北京/上海）或海外区域，符合当地法规。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border border-indigo-50">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">如何迁移现有课程数据？</h3>
+                        <p class="text-gray-600">我们提供专业迁移工具，支持从腾讯课堂、微课平台等导入课程与学员数据。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 (结尾号召) -->
+        <section class="py-20 bg-gradient-to-r from-indigo-600 to-sky-500 text-white">
+            <div class="max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">立即提升教学效率</h2>
+                <p class="text-xl text-indigo-100 mb-10">加入上千家信赖我们的教育机构，开启智慧教学之旅。</p>
+                <div class="flex flex-wrap justify-center gap-5">
+                    <a href="#" class="px-8 py-4 bg-white text-indigo-600 rounded-xl font-bold text-lg shadow-xl hover:bg-indigo-50 transition">免费试用30天</a>
+                    <a href="#" class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-xl font-bold text-lg hover:bg-white/10 transition">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (简单版权声明) 符合扁平设计 -->
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 text-center text-gray-500 text-sm">
+            <p>© 2025 明启学苑 · 让教学更简单。保留所有权利。</p>
+        </div>
+    </footer>
+</body>
+</html>

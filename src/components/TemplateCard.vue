@@ -1,5 +1,7 @@
 <script setup>
-defineProps({
+import { ref, watch } from 'vue'
+
+const props = defineProps({
   template: {
     type: Object,
     required: true,
@@ -8,12 +10,26 @@ defineProps({
 
 const emit = defineEmits(['preview'])
 
-const COVER_URL = 'https://placehold.co/300x200'
-
-// 使用 Vite BASE_URL，部署到 GitHub Pages 子路径时链接才正确
+const PLACEHOLDER_COVER = 'https://placehold.co/200x100'
 const base = import.meta.env.BASE_URL
+
 function pageUrl(file) {
   return `${base}pages/${file}`
+}
+
+function coverUrl(template) {
+  return `${base}covers/${template.id}.png`
+}
+
+const imgSrc = ref(coverUrl(props.template))
+watch(
+  () => props.template.id,
+  (id) => {
+    imgSrc.value = coverUrl(props.template)
+  }
+)
+function onCoverError() {
+  imgSrc.value = PLACEHOLDER_COVER
 }
 </script>
 
@@ -25,13 +41,14 @@ function pageUrl(file) {
       :href="pageUrl(template.file)"
       target="_blank"
       rel="noopener noreferrer"
-      class="block aspect-[3/2] bg-slate-100 overflow-hidden"
+      class="block aspect-[2/1] bg-slate-100 overflow-hidden"
     >
       <img
-        :src="COVER_URL"
+        :src="imgSrc"
         :alt="template.title"
         class="w-full h-full object-cover"
         loading="lazy"
+        @error="onCoverError"
       />
     </a>
     <div class="p-4 flex-1 flex flex-col">

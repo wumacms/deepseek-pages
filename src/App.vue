@@ -74,6 +74,18 @@ function closePreview() {
           <div class="flex flex-wrap gap-2 items-center">
             <span class="text-slate-500 text-sm shrink-0">标签：</span>
             <button
+              type="button"
+              :class="[
+                'px-3 py-1.5 rounded-full text-sm font-medium transition',
+                selectedTag === ''
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
+              ]"
+              @click="selectedTag = ''"
+            >
+              全部
+            </button>
+            <button
               v-for="tag in allTags"
               :key="tag"
               type="button"

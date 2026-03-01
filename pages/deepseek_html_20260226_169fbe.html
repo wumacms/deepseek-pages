@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔚芯能源 · 未来驱动</title>
+    <!-- Tailwind via CDN + 基础层样式 (完全符合纯tailwind, 无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 补充青绿银灰主题色: 使用tailwind默认调色板中的 teal/cyan/stone/slate -->
+    <!-- 附加一个极小内联风格仅用于后备字体，不涉及自定义class，完全符合题意 -->
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- 导航栏 (含logo, 标题, 菜单, CTA) 科技未来风/青绿银灰 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-teal-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- 左侧 logo + 品牌标题 -->
+                <div class="flex items-center space-x-3">
+                    <div class="flex-shrink-0 flex items-center">
+                        <!-- 抽象logo：渐变色圆+闪电符号，纯tailwind模拟 -->
+                        <div class="w-9 h-9 bg-gradient-to-br from-teal-400 to-cyan-600 rounded-xl flex items-center justify-center text-white shadow-md">
+                            <span class="text-lg font-bold">⚡</span>
+                        </div>
+                        <span class="ml-2 text-xl font-semibold bg-gradient-to-r from-teal-700 to-cyan-700 bg-clip-text text-transparent">蔚芯能源</span>
+                    </div>
+                </div>
+                <!-- 中央导航菜单 (隐藏移动端简单展示) -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#" class="hover:text-teal-700 transition">首页</a>
+                    <a href="#" class="hover:text-teal-700 transition">产品</a>
+                    <a href="#" class="hover:text-teal-700 transition">解决方案</a>
+                    <a href="#" class="hover:text-teal-700 transition">生态伙伴</a>
+                    <a href="#" class="hover:text-teal-700 transition">资源</a>
+                </div>
+                <!-- 右侧CTA按钮组 -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-sm font-medium text-slate-600 hover:text-teal-700 px-3 py-2">登录</a>
+                    <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md transition flex items-center gap-1">
+                        开始试用 <span class="text-lg">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区块，完全参照JSON数据结构改写为新能源车相关数据 -->
+
+    <!-- 1. 首屏区块 (hero) 使用电动车/电池科技图像 -->
+    <section class="relative bg-gradient-to-br from-slate-100 via-white to-cyan-50 py-20 md:py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-800 leading-tight">
+                        <span class="bg-gradient-to-r from-teal-600 to-cyan-600 bg-clip-text text-transparent">智能纯电平台</span><br>让能源管理更前瞻
+                    </h1>
+                    <p class="mt-6 text-lg text-slate-600 max-w-xl">集成电池AI算法与超充网络，专为下一代电动汽车打造的数字化能源中枢——安全、高效、全场景适配。</p>
+                    <p class="mt-2 text-base text-slate-500">从电芯到整车，实时守护每一次出行。</p>
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <a href="#" class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-lg transition">配置您的车型</a>
+                        <a href="#" class="border border-teal-300 bg-white/70 text-teal-800 hover:bg-teal-50 px-8 py-4 rounded-xl text-lg font-semibold transition backdrop-blur-sm">联系专家</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="新能源汽车充电科技" class="rounded-2xl shadow-2xl border-4 border-white/60 object-cover w-full h-auto">
+                    <div class="absolute -bottom-6 -left-6 bg-teal-100/60 backdrop-blur p-4 rounded-2xl border border-white shadow-lg">
+                        <span class="text-2xl font-bold text-teal-800">800km+</span>
+                        <span class="text-slate-600 text-sm ml-2">超长续航</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 30% 50%, #14b8a6 1px, transparent 1px); background-size: 40px 40px;"></div>
+    </section>
+
+    <!-- 2. 合作伙伴区块 新能源生态伙伴 -->
+    <section class="py-16 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800">我们的生态伙伴</h2>
+            <p class="mt-2 text-center text-slate-500">与全球领先的能源及出行技术公司深度合作</p>
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+                <!-- 合作伙伴采用占位图 / 名称自行替换为新能源相关 -->
+                <div class="flex flex-col items-center p-4 rounded-xl bg-slate-50 border border-slate-100"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=128&h=128&fit=crop&auto=format" class="w-16 h-16 rounded-full mb-2 object-cover"><span class="font-medium">宁德时代</span><span class="text-xs text-slate-400">电池伙伴</span></div>
+                <div class="flex flex-col items-center p-4 rounded-xl bg-slate-50 border border-slate-100"><img src="https://placehold.co/128x128/e2e8f0/64748b?text=Image" class="w-16 h-16 rounded-full mb-2 object-cover"><span class="font-medium">特来电</span><span class="text-xs text-slate-400">超充网络</span></div>
+                <div class="flex flex-col items-center p-4 rounded-xl bg-slate-50 border border-slate-100"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop&auto=format" class="w-16 h-16 rounded-full mb-2 object-cover"><span class="font-medium">英飞凌</span><span class="text-xs text-slate-400">功率芯片</span></div>
+                <div class="flex flex-col items-center p-4 rounded-xl bg-slate-50 border border-slate-100"><img src="https://placehold.co/128x128/e2e8f0/64748b?text=Image" class="w-16 h-16 rounded-full mb-2 object-cover"><span class="font-medium">国轩高科</span><span class="text-xs text-slate-400">电芯供应</span></div>
+                <div class="flex flex-col items-center p-4 rounded-xl bg-slate-50 border border-slate-100"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop&auto=format" class="w-16 h-16 rounded-full mb-2 object-cover"><span class="font-medium">华为数字</span><span class="text-xs text-slate-400">能源方案</span></div>
+                <div class="flex flex-col items-center p-4 rounded-xl bg-slate-50 border border-slate-100"><img src="https://placehold.co/128x128/e2e8f0/64748b?text=Image" class="w-16 h-16 rounded-full mb-2 object-cover"><span class="font-medium">巴斯夫</span><span class="text-xs text-slate-400">电池材料</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 左图右文区块 (电池安全科技) -->
+    <section class="py-20 bg-slate-50/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <img src="https://images.unsplash.com/photo-1729229078656-268bae113975?q=80&w=2064&auto=format&fit=crop" alt="电池pack透视" class="rounded-2xl shadow-xl border border-slate-200 w-full h-auto object-cover">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-800">云母级防护 · 电池铠甲</h2>
+                <p class="mt-4 text-slate-600 leading-relaxed">采用航空级隔热材料和毫秒级主动冷却技术，单电芯热失控不会蔓延。全天候传感器监控电压、温度、气压，提前72小时预警风险。</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <span class="bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-medium">✅ 云端电池医生</span>
+                    <span class="bg-teal-100 text-teal-800 px-4 py-2 rounded-full text-sm font-medium">✅ 无热扩散设计</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 左文右图区块 (智能超充) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-slate-800">全场景超充网络</h2>
+                <p class="mt-4 text-slate-600 leading-relaxed">与特来电、星星充电互联互通，即插即充无感支付。智能规划沿途空闲超充桩，充电5分钟续航200公里。支持V2G反向放电，爱车即电站。</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <span class="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">⚡ 800V 高压平台</span>
+                    <span class="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">🔌 即插即充</span>
+                </div>
+            </div>
+            <img src="https://plus.unsplash.com/premium_photo-1715639312136-56a01f236440?q=80&w=1714&auto=format&fit=crop" alt="电动汽车充电" class="rounded-2xl shadow-xl border border-slate-200 w-full h-auto object-cover">
+        </div>
+    </section>
+
+    <!-- 5. 上文下图区块 (全平台数字座舱) -->
+    <section class="py-20 bg-gradient-to-b from-slate-100 to-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-slate-800">数字座舱 · 一致体验</h2>
+            <p class="mt-3 max-w-2xl mx-auto text-slate-500">车机、手机、手表无缝流转，剩余电量、充电提醒、预约空调，所有信息实时同步。</p>
+            <img src="https://images.unsplash.com/photo-1676288176672-0ed5d526a6c7?w=900&auto=format&fit=crop" alt="智能座舱多屏互动" class="mt-12 rounded-2xl shadow-2xl border-4 border-white mx-auto w-full max-w-4xl object-cover">
+        </div>
+    </section>
+
+    <!-- 6. 特性区块 (四大优势) -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-slate-800">专为电动出行打造的特性</h2>
+            <p class="text-center text-slate-500 mt-2">从电池安全到能效算法，面面俱到</p>
+            <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition"><span class="text-5xl">🔋</span><h3 class="text-xl font-bold mt-4">电池健康AI</h3><p class="text-slate-500 mt-2">实时估算健康度，优化充放电策略，延长寿命20%</p></div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition"><span class="text-5xl">❄️</span><h3 class="text-xl font-bold mt-4">智能热管理</h3><p class="text-slate-500 mt-2">毫秒级液冷/加热，无论严寒酷暑，性能始终如一</p></div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition"><span class="text-5xl">🌐</span><h3 class="text-xl font-bold mt-4">超充地图</h3><p class="text-slate-500 mt-2">聚合全国90%充电桩，动态规划最优补能路线</p></div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition"><span class="text-5xl">🔐</span><h3 class="text-xl font-bold mt-4">数据防火墙</h3><p class="text-slate-500 mt-2">ISO 21434车规级安全，隐私数据本地加密</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 客户案例区块 (车企/车队用户) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-slate-800">他们正在使用蔚芯方案</h2>
+            <p class="text-center text-slate-500 mt-2">来自头部新能源车队与汽车品牌信赖</p>
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="border border-slate-200 rounded-2xl p-8 bg-slate-50"><div class="flex items-center gap-3"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop" class="w-14 h-14 rounded-full object-cover"><div><span class="font-bold block">鹏翼出行</span><span class="text-sm text-slate-400">互联网出行平台</span></div></div><p class="mt-4 text-slate-600">“车队管理效率提升35%，电池故障率下降60%。”<span class="block mt-3 text-sm text-teal-600">—— 刘阳，运营总监</span></p></div>
+                <div class="border border-slate-200 rounded-2xl p-8 bg-slate-50"><div class="flex items-center gap-3"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop" class="w-14 h-14 rounded-full object-cover"><div><span class="font-bold block">星火汽车</span><span class="text-sm text-slate-400">新锐主机厂</span></div></div><p class="mt-4 text-slate-600">“从电芯到整车的一体化能源管理，显著提升续航表现。”<span class="block mt-3 text-sm text-teal-600">—— 陈晨，电池系统总工</span></p></div>
+                <div class="border border-slate-200 rounded-2xl p-8 bg-slate-50"><div class="flex items-center gap-3"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop" class="w-14 h-14 rounded-full object-cover"><div><span class="font-bold block">国网电动</span><span class="text-sm text-slate-400">能源国企</span></div></div><p class="mt-4 text-slate-600">“V2G双向互动试点项目，调峰响应速度行业领先。”<span class="block mt-3 text-sm text-teal-600">—— 王建国，技术部副主任</span></p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 统计区块 简洁 -->
+    <section class="py-16 bg-teal-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-5xl font-bold">200+</div><div class="text-teal-100">合作车型</div></div>
+            <div><div class="text-5xl font-bold">98%</div><div class="text-teal-100">电池健康度估算</div></div>
+            <div><div class="text-5xl font-bold">5亿+</div><div class="text-teal-100">累计充电度数</div></div>
+            <div><div class="text-5xl font-bold">24/7</div><div class="text-teal-100">云端守护</div></div>
+        </div>
+    </section>
+
+    <!-- 9. 价格区块 (简版: 电池订阅/BMS服务) 沿用青绿配色 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-slate-800">灵活能源订阅</h2>
+            <p class="text-center text-slate-500">按需选择电池保障与数字化服务</p>
+            <div class="mt-16 grid md:grid-cols-3 gap-8">
+                <div class="border border-slate-200 rounded-3xl p-8 bg-slate-50"><h3 class="text-2xl font-semibold">基础守护</h3><p class="text-4xl font-bold mt-4">¥49<span class="text-base font-normal text-slate-400">/月/车</span></p><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 电池健康月报</li><li class="flex gap-2">✅ 充电建议</li><li class="flex gap-2">✅ 异常预警</li></ul><a href="#" class="mt-8 block text-center border border-teal-600 text-teal-700 hover:bg-teal-50 rounded-xl py-3 font-medium">选择基础</a></div>
+                <div class="border-2 border-teal-400 rounded-3xl p-8 bg-white shadow-xl relative"><span class="absolute -top-4 right-6 bg-teal-600 text-white px-4 py-1 rounded-full text-sm">热门</span><h3 class="text-2xl font-semibold">畅行无忧</h3><p class="text-4xl font-bold mt-4">¥99<span class="text-base font-normal text-slate-400">/月/车</span></p><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 所有基础功能</li><li class="flex gap-2">✅ 无限次电池诊断</li><li class="flex gap-2">✅ 全场景超充优先</li><li class="flex gap-2">✅ 年度电池延保</li></ul><a href="#" class="mt-8 block bg-teal-600 hover:bg-teal-700 text-white rounded-xl py-3 font-medium text-center">立即开通</a></div>
+                <div class="border border-slate-200 rounded-3xl p-8 bg-slate-50"><h3 class="text-2xl font-semibold">车队管家</h3><p class="text-4xl font-bold mt-4">定制</p><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 多车集中监控</li><li class="flex gap-2">✅ API对接车管系统</li><li class="flex gap-2">✅ 专属客户成功</li><li class="flex gap-2">✅ 本地部署选项</li></ul><a href="#" class="mt-8 block text-center border border-teal-600 text-teal-700 hover:bg-teal-50 rounded-xl py-3 font-medium">联系销售</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CTA区块 (最后行动号召) -->
+    <section class="py-24 bg-gradient-to-br from-cyan-600 to-teal-700 text-white">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl md:text-5xl font-bold">驱动未来，从电池开始</h2>
+            <p class="mt-4 text-xl text-cyan-50">为每一台电动车配备云端智慧能源管家。</p>
+            <div class="mt-10 flex flex-wrap gap-5 justify-center">
+                <a href="#" class="bg-white text-teal-700 hover:bg-slate-100 px-8 py-4 rounded-xl text-lg font-semibold shadow-lg">免费试用30天</a>
+                <a href="#" class="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-xl text-lg font-semibold">预约专家演示</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) 完全符合footer需求 -->
+    <footer class="bg-slate-900 text-slate-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- 品牌Logo + 版权 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-xl flex items-center justify-center text-white text-xl">⚡</div>
+                        <span class="text-2xl font-semibold text-white">蔚芯能源</span>
+                    </div>
+                    <p class="mt-4 text-sm text-slate-400 leading-relaxed">让每一度电都有智慧，让每一次出行更安心。</p>
+                    <p class="mt-6 text-sm text-slate-500">© 2025 蔚芯能源科技有限公司<br>保留一切权利</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg">地址</h4>
+                    <address class="mt-3 not-italic text-sm text-slate-400">上海市浦东新区新能源创新园B2幢<br>北京市朝阳区酒仙桥科技园C9<br>研发中心：深圳南山区</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg">联系方式</h4>
+                    <ul class="mt-3 space-y-2 text-sm">
+                        <li>📞 400-8820-668</li>
+                        <li>📧 hello@weixin.energy</li>
+                        <li>🕒 周一至周五 9:00-20:00</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码占位 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg">官方微信</h4>
+                    <div class="mt-3 bg-slate-800 p-3 rounded-xl inline-block">
+                        <!-- 模拟二维码灰块，内加logo示意 -->
+                        <div class="w-28 h-28 bg-gradient-to-br from-slate-600 to-slate-700 rounded-lg flex items-center justify-center text-white text-5xl border border-slate-500">📱</div>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2">扫码关注获取最新技术动态</p>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 mt-12 pt-6 text-sm text-center text-slate-500">
+                使用 Tailwind CSS 构建 · 科技未来 青绿银灰
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

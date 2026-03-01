@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STREET CODE · 街头潮流单位</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 追加亮色街头氛围的字体基调 (纯视觉辅助，无自定义css) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    /* 为了保证纯tailwind风格，此处仅设置后备字体，无任何自定义class */
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-neutral-50 text-gray-900 antialiased">
+
+  <!-- 导航栏 (logo, 标题, CTA按钮, 无菜单) 亮色街头感: 灰白背景 + 荧光点缀 -->
+  <header class="border-b border-gray-200/70 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+      <!-- logo + 品牌标题 -->
+      <div class="flex items-center gap-3">
+        <div class="text-3xl drop-shadow-sm">🧢</div> <!-- 潮流logo emoji -->
+        <span class="font-black text-xl tracking-tight bg-gradient-to-r from-fuchsia-600 to-amber-500 bg-clip-text text-transparent">STREET CODE</span>
+      </div>
+      <!-- CTA 按钮 (无菜单, 纯右侧按钮) -->
+      <div>
+        <a href="#newsletter" class="bg-black text-white text-sm font-semibold px-6 py-2.5 rounded-full shadow-md hover:shadow-xl transition shadow-fuchsia-200/50 hover:bg-fuchsia-900 border border-fuchsia-300/30">🔥 限时新品</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-hidden">
+    <!-- 1️⃣ 首屏区块 (潮流对应: 宽大标题 + 街头摄影) -->
+    <section class="relative bg-gradient-to-br from-amber-50 via-white to-fuchsia-50">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h1 class="text-5xl md:text-6xl font-black leading-[1.1] tracking-tight">
+            <span class="bg-gradient-to-r from-fuchsia-600 to-amber-500 bg-clip-text text-transparent">街头代码</span><br>由你重写
+          </h1>
+          <p class="text-xl text-gray-700 max-w-xl">Oversize 廓形 · 限位机能 · 荧光基因。每一件都是态度的载体，24春夏「噪点」系列现已登陆。</p>
+          <p class="text-base text-gray-500">独家定制面料 ｜ 城市流动货柜 ｜ 限量编号</p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#" class="bg-black text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-2xl transition flex items-center gap-2 text-sm">👕 探索男装</a>
+            <a href="#" class="bg-white border-2 border-black text-black font-semibold px-8 py-4 rounded-full hover:bg-fuchsia-50 transition flex items-center gap-2 text-sm">📦 门店库存</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute inset-0 bg-gradient-to-tr from-fuchsia-400/20 to-amber-300/20 rounded-3xl blur-2xl -z-10"></div>
+          <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=900&auto=format&fit=crop&q=60" alt="潮流青年街头穿搭" class="rounded-3xl shadow-2xl object-cover w-full h-auto border-8 border-white/70">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2️⃣ 特性区块 (四卡片街头机能) 替换原本“专为商务打造的特性” -->
+    <section class="bg-white border-y border-gray-200">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+        <div class="text-center space-y-3 max-w-2xl mx-auto mb-16">
+          <h2 class="text-4xl font-black tracking-tight bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent">机能 · 美学 · 声量</h2>
+          <p class="text-gray-600 text-lg">为街头而生，每一处细节都是武器</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- 特性卡片 1 (🔒 -> 换成潮流icon) -->
+          <div class="bg-neutral-50 p-8 rounded-2xl border border-gray-200 hover:border-fuchsia-300 transition hover:shadow-xl group">
+            <div class="text-5xl mb-5 group-hover:scale-110 transition">🧵</div>
+            <h3 class="text-2xl font-bold mb-3">立体剪裁</h3>
+            <p class="text-gray-600">3D 制版技术，动态贴合，滑板/跳投无拘束。</p>
+          </div>
+          <!-- 特性卡片 2 -->
+          <div class="bg-neutral-50 p-8 rounded-2xl border border-gray-200 hover:border-fuchsia-300 transition hover:shadow-xl group">
+            <div class="text-5xl mb-5 group-hover:scale-110 transition">🌧️</div>
+            <h3 class="text-2xl font-bold mb-3">Teflon 防护</h3>
+            <p class="text-gray-600">防泼水、防污涂层，全天候城市游走。</p>
+          </div>
+          <!-- 特性卡片 3 -->
+          <div class="bg-neutral-50 p-8 rounded-2xl border border-gray-200 hover:border-fuchsia-300 transition hover:shadow-xl group">
+            <div class="text-5xl mb-5 group-hover:scale-110 transition">⚡</div>
+            <h3 class="text-2xl font-bold mb-3">3M 反光</h3>
+            <p class="text-gray-600">暗光环境下高调可视，夜行者的语言。</p>
+          </div>
+          <!-- 特性卡片 4 -->
+          <div class="bg-neutral-50 p-8 rounded-2xl border border-gray-200 hover:border-fuchsia-300 transition hover:shadow-xl group">
+            <div class="text-5xl mb-5 group-hover:scale-110 transition">🔄</div>
+            <h3 class="text-2xl font-bold mb-3">模块化口袋</h3>
+            <p class="text-gray-600">多系统 molle 织带，自由挂载配件。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3️⃣ 左图右文区块 (团队沟通 -> 换成街头团队/设计师) 但保留“左图右文”结构，图在左，文在右。图片用街头摄影 -->
+    <section class="bg-neutral-50">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1770&auto=format&fit=crop" alt="团队设计讨论" class="w-full h-full object-cover">
+        </div>
+        <div class="space-y-6">
+          <h2 class="text-4xl font-black tracking-tight">不跟随，<br>定义下一个十年</h2>
+          <p class="text-gray-700 text-lg leading-relaxed">主理人来自伦敦圣马丁、安特卫普。我们将工装基因、锐舞文化、档案袋解构，融合成全新的街头语法。每一件单品都有编号和 manifesto。</p>
+          <div class="flex flex-wrap gap-5 pt-4">
+            <span class="bg-fuchsia-100 text-fuchsia-800 px-5 py-2 rounded-full text-sm font-bold">🧬 独立设计单位</span>
+            <span class="bg-amber-100 text-amber-800 px-5 py-2 rounded-full text-sm font-bold">🏷️ 终身保修补丁</span>
+          </div>
+          <!-- 对应highlights用标签展示 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4️⃣ 左文右图区块 (原深度集成 -> 改为潮流限量发售) -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-20 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6 order-2 md:order-1">
+          <h2 class="text-4xl font-black tracking-tight">「噪点」限定<br>Drop 01 倒计时</h2>
+          <p class="text-gray-700 text-lg">5月17日 晚8点，独家登陆上海 DOE / 北京 SKP-S 及线上盲盒。前200名得纪念金属号码牌。</p>
+          <div class="flex flex-wrap gap-3 pt-4">
+            <span class="border-2 border-black rounded-full px-5 py-2 text-sm font-bold">⏳ 倒计时 3天</span>
+            <span class="border-2 border-fuchsia-400 bg-fuchsia-50 rounded-full px-5 py-2 text-sm font-bold">🛒 提前加购</span>
+            <span class="border-2 border-amber-300 rounded-full px-5 py-2 text-sm font-bold">🇯🇵 大阪快闪</span>
+          </div>
+        </div>
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-100 order-1 md:order-2">
+          <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=1770&auto=format&fit=crop" alt="潮流集合店陈列" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- 5️⃣ 团队区块 (核心团队) 替换为街头团队，从unsplash换为合适的商业头像但有街头感 -->
+    <section class="bg-neutral-50 border-t border-b border-gray-200">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+        <div class="text-center space-y-2 mb-16">
+          <h2 class="text-4xl font-black bg-gradient-to-r from-fuchsia-600 to-amber-500 bg-clip-text text-transparent">创造者代码</h2>
+          <p class="text-gray-600">不露脸，但作品会说话</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- 成员1 -->
+          <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-lg hover:shadow-2xl transition">
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1740&auto=format&fit=crop" alt="成员" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-fuchsia-200 mb-5">
+            <h3 class="text-xl font-black text-center">陈山姆</h3>
+            <p class="text-fuchsia-600 font-medium text-center">主理人 / 设计总监</p>
+            <p class="text-gray-500 text-sm text-center mt-2">前RAF Simons 制版师</p>
+          </div>
+          <!-- 成员2 -->
+          <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-lg hover:shadow-2xl transition">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1740&auto=format&fit=crop" alt="成员" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-amber-200 mb-5">
+            <h3 class="text-xl font-black text-center">李瑞</h3>
+            <p class="text-fuchsia-600 font-medium text-center">品牌总监</p>
+            <p class="text-gray-500 text-sm text-center mt-2">Supreme 前市场顾问</p>
+          </div>
+          <!-- 成员3 -->
+          <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-lg hover:shadow-2xl transition">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1740&auto=format&fit=crop" alt="成员" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-fuchsia-200 mb-5">
+            <h3 class="text-xl font-black text-center">大羊</h3>
+            <p class="text-fuchsia-600 font-medium text-center">首席图案师</p>
+            <p class="text-gray-500 text-sm text-center mt-2">插画师 / 涂鸦团队 UFO</p>
+          </div>
+          <!-- 成员4 -->
+          <div class="bg-white p-6 rounded-3xl border border-gray-200 shadow-lg hover:shadow-2xl transition">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1740&auto=format&fit=crop" alt="成员" class="w-32 h-32 rounded-full object-cover mx-auto border-4 border-amber-200 mb-5">
+            <h3 class="text-xl font-black text-center">周一</h3>
+            <p class="text-fuchsia-600 font-medium text-center">视觉总监</p>
+            <p class="text-gray-500 text-sm text-center mt-2">前《032c》设计师</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6️⃣ 统计区块 (替换为街头相关数据) -->
+    <section class="bg-black text-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <div class="text-5xl font-black text-fuchsia-400">16+</div>
+            <div class="text-sm uppercase tracking-wider mt-2 text-gray-300">全球买手店</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black text-amber-400">20k</div>
+            <div class="text-sm uppercase tracking-wider mt-2 text-gray-300">核心社群成员</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black text-fuchsia-400">47</div>
+            <div class="text-sm uppercase tracking-wider mt-2 text-gray-300">联名企划</div>
+          </div>
+          <div>
+            <div class="text-5xl font-black text-amber-400">24/7</div>
+            <div class="text-sm uppercase tracking-wider mt-2 text-gray-300">快闪不停</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7️⃣ 价格区块 (替换为潮流产品订阅/限量箱) 保留plan结构 -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="text-4xl font-black bg-gradient-to-r from-fuchsia-600 to-indigo-600 bg-clip-text text-transparent">会员 · 优先 · 突袭</h2>
+          <p class="text-gray-600 mt-2">解锁提前加购、专属赠品及 drop 预留</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- 基础卡: 基础版 -->
+          <div class="border border-gray-300 rounded-3xl p-8 bg-neutral-50 hover:scale-105 transition">
+            <h3 class="text-2xl font-black mb-4">🔹 早鸟</h3>
+            <div class="flex items-baseline gap-1 mb-6"><span class="text-5xl font-black">¥49</span><span class="text-gray-500">/月</span></div>
+            <ul class="space-y-3 mb-8 text-sm">
+              <li class="flex gap-2">✅ 每月新品9折码</li>
+              <li class="flex gap-2">✅ 优先线上抢购权</li>
+              <li class="flex gap-2">✅ 社群专属频道</li>
+            </ul>
+            <a href="#" class="block w-full border-2 border-black text-black text-center font-bold py-3 rounded-full hover:bg-fuchsia-50">立即加入</a>
+          </div>
+          <!-- 热门: 商业版对应 高阶会员 -->
+          <div class="border-2 border-fuchsia-400 rounded-3xl p-8 bg-white shadow-2xl scale-105 relative">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-fuchsia-500 text-white px-4 py-1 rounded-full text-xs font-bold whitespace-nowrap">🔥 热门 · 86%选择</span>
+            <h3 class="text-2xl font-black mb-4 mt-2">🔸 噪点会员</h3>
+            <div class="flex items-baseline gap-1 mb-6"><span class="text-5xl font-black">¥99</span><span class="text-gray-500">/月</span></div>
+            <ul class="space-y-3 mb-8 text-sm">
+              <li class="flex gap-2">✅ 全年85折不限次</li>
+              <li class="flex gap-2">✅ 限量款预留资格</li>
+              <li class="flex gap-2">✅ 实体店优先入场</li>
+              <li class="flex gap-2">✅ 生日限定礼盒</li>
+            </ul>
+            <a href="#" class="block w-full bg-black text-white text-center font-bold py-3 rounded-full shadow-lg">抢先开通</a>
+          </div>
+          <!-- 企业版: 品牌联名卡 -->
+          <div class="border border-gray-300 rounded-3xl p-8 bg-neutral-50 hover:scale-105 transition">
+            <h3 class="text-2xl font-black mb-4">🔹 联名共创</h3>
+            <div class="flex items-baseline gap-1 mb-6"><span class="text-5xl font-black">定制</span></div>
+            <ul class="space-y-3 mb-8 text-sm">
+              <li class="flex gap-2">✅ 私人图案/标语定制</li>
+              <li class="flex gap-2">✅ 工作室拜访/裁片</li>
+              <li class="flex gap-2">✅ 线下 Pop-up 联名曝光</li>
+            </ul>
+            <a href="#" class="block w-full border-2 border-black text-black text-center font-bold py-3 rounded-full hover:bg-fuchsia-50">联系主理人</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8️⃣ 常见问题区块 (FAQ 用街头用户关心的话题) -->
+    <section class="bg-neutral-50 border-y border-gray-200">
+      <div class="max-w-4xl mx-auto px-6 md:px-10 py-24">
+        <h2 class="text-4xl font-black text-center mb-16">❓ 街头 FAQ</h2>
+        <div class="space-y-6">
+          <div class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-bold mb-2">🛹 退换货政策如何？</h3>
+            <p class="text-gray-600">签收后 7 天内无理由退换，需保留吊牌及原包装。限量尖货除非质量问题，不退不换。</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-bold mb-2">📦 多久补货一次？</h3>
+            <p class="text-gray-600">大部分款式为少量批次，补货时间不定，建议关注 instagram 快闪预告。</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-bold mb-2">🌐 线下店在哪里？</h3>
+            <p class="text-gray-600">上海: 巨鹿路 158 号 / 北京: 三里屯 3.3 大厦 1F  pop-up 区域，大阪店筹备中。</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm">
+            <h3 class="text-xl font-bold mb-2">🎫 会员积分怎么用？</h3>
+            <p class="text-gray-600">积分可兑换限定贴纸、货柜优先入场券及老款复刻资格。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9️⃣ CTA 区块 (立即提升 -> 订阅潮流动态) -->
+    <section id="newsletter" class="bg-gradient-to-r from-fuchsia-600 to-amber-500 text-white">
+      <div class="max-w-3xl mx-auto px-6 md:px-10 py-24 text-center">
+        <h2 class="text-4xl md:text-5xl font-black mb-4">错过就是原价</h2>
+        <p class="text-xl text-white/90 mb-8">抢先获取 drop 情报、门店突袭、联名清单。</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="#" class="bg-white text-black font-bold px-10 py-4 rounded-full shadow-xl hover:shadow-2xl transition text-lg">📱 下载 APP</a>
+          <a href="#" class="border-2 border-white text-white font-bold px-10 py-4 rounded-full hover:bg-white/20 transition text-lg">📧 订阅简报</a>
+        </div>
+        <p class="text-sm mt-8 text-white/70">*首单订阅赠限量布标 + 贴纸套装</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (简单版权声明) 亮色系 -->
+  <footer class="bg-white border-t border-gray-200 py-8">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-2 text-xl font-bold">
+        <span>🧢</span>
+        <span class="bg-gradient-to-r from-fuchsia-600 to-amber-500 bg-clip-text text-transparent">STREET CODE</span>
+      </div>
+      <p class="text-sm text-gray-500">© 2025 STREET CODE 街头代码。 著作权所有，抄袭必究。</p>
+      <div class="text-sm text-gray-400">⚡ 城市流动货柜 · 每日进化</div>
+    </div>
+  </footer>
+</body>
+</html>

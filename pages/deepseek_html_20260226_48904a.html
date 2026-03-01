@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>在线培训 · 教育机构企业页</title>
+  <!-- Tailwind via CDN (纯工具类, 无自定义样式) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 少量降级备用 (完全符合纯tailwind, 仅使用内置类) -->
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+  <!-- 导航栏 (logo + 标题 + CTA按钮, 不含菜单) -->
+  <nav class="border-b border-gray-100 bg-white/90 backdrop-blur-sm sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <!-- 左侧：logo + 标题 (教育风格) -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white text-xl font-bold">E</div>
+        <span class="text-lg font-semibold text-gray-900">在线培训·企业学堂</span>
+      </div>
+      <!-- 右侧：CTA 按钮 -->
+      <div>
+        <a href="/demo" class="inline-flex items-center px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium rounded-lg shadow-sm transition">申请企业演示</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 首屏区块 (在线培训标题) -->
+    <section class="bg-gradient-to-br from-indigo-50 via-white to-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl lg:text-5xl font-bold tracking-tight text-gray-900 leading-tight">一站式企业在线培训，让学习快人一步</h1>
+            <p class="mt-6 text-lg text-gray-600 max-w-xl">安全、高效、可定制——专为现代企业打造的智能培训平台，集成课程管理、学习跟踪与数据洞察。</p>
+            <p class="mt-2 text-gray-500">AI自适应学习 · 岗位能力模型 · 移动端同步</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="/signup" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-xl shadow-md">开始使用</a>
+              <a href="/contact" class="px-6 py-3 bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-medium rounded-xl">联系销售</a>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+            <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format&fit=crop" alt="学员在线学习界面" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (无缝学习沟通) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div class="rounded-xl overflow-hidden shadow-md border border-gray-100">
+          <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="小组协作培训" />
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900">无缝学习，跨越部门</h2>
+          <p class="mt-4 text-lg text-gray-600">打破信息孤岛，通过话题群组、私聊和富媒体分享，让每个学员快速找到所需课程。集成企业目录，一键联系讲师。</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="inline-flex items-center px-4 py-1.5 bg-indigo-50 text-indigo-700 text-sm font-medium rounded-full">⏱️ 学习进度跟踪</span>
+            <span class="inline-flex items-center px-4 py-1.5 bg-indigo-50 text-indigo-700 text-sm font-medium rounded-full">📋 无限历史课程</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (深度集成工作流) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900">深度集成企业工作流</h2>
+          <p class="mt-4 text-lg text-gray-600">与您使用的工具无缝连接：CRM、HRIS、飞书、钉钉。在培训中同步岗位模型、自动触发学习任务。</p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <span class="px-4 py-1.5 bg-white shadow-sm border border-gray-200 text-gray-800 text-sm rounded-full">📎 SCORM 导入</span>
+            <span class="px-4 py-1.5 bg-white shadow-sm border border-gray-200 text-gray-800 text-sm rounded-full">🔌 开放API</span>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-md border border-gray-200 order-first md:order-last">
+          <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop" alt="工作流集成培训" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台一致体验) -->
+    <section class="py-20 bg-white text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-900">全平台一致学习体验</h2>
+        <p class="mt-3 text-lg text-gray-600">无论是在桌面、网页还是移动端，学习进度实时同步，操作流畅如一。</p>
+        <div class="mt-10 rounded-xl overflow-hidden shadow-xl border border-gray-100">
+          <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1588912914074-b93851ff14b8?q=80&w=1740&auto=format&fit=crop" alt="多设备学习" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (专为企业培训打造) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900">专为企业培训打造的特性</h2>
+          <p class="mt-2 text-lg text-gray-600">从安全到效率，面面俱到</p>
+        </div>
+        <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-4xl mb-4">🔒</div>
+            <h3 class="text-lg font-semibold">企业级安全</h3>
+            <p class="mt-2 text-gray-500">端到端加密、SSO、学习数据隔离，满足合规需求。</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-4xl mb-4">⚡</div>
+            <h3 class="text-lg font-semibold">实时同步</h3>
+            <p class="mt-2 text-gray-500">毫秒级延迟，跨设备已学/未学状态与进度。</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-4xl mb-4">🧩</div>
+            <h3 class="text-lg font-semibold">无限集成</h3>
+            <p class="mt-2 text-gray-500">连接HR、CRM及200+应用，自定义学习流。</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div class="text-4xl mb-4">📊</div>
+            <h3 class="text-lg font-semibold">分析洞察</h3>
+            <p class="mt-2 text-gray-500">部门学习活跃度、课程完成率可视化。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 团队区块 (核心教育团队) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900">核心团队</h2>
+          <p class="text-lg text-gray-600 mt-2">来自全球顶尖教育科技企业的培训专家</p>
+        </div>
+        <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <img class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop" alt="张伟" />
+            <h3 class="mt-4 font-semibold text-lg">张伟</h3>
+            <p class="text-indigo-600 text-sm">CEO & 创始人</p>
+            <p class="text-gray-500 text-sm mt-1">前Coursera高级架构师</p>
+          </div>
+          <div class="text-center">
+            <img class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop" alt="陈敏" />
+            <h3 class="mt-4 font-semibold text-lg">陈敏</h3>
+            <p class="text-indigo-600 text-sm">CTO</p>
+            <p class="text-gray-500 text-sm mt-1">学习管理系统专家</p>
+          </div>
+          <div class="text-center">
+            <img class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop" alt="王磊" />
+            <h3 class="mt-4 font-semibold text-lg">王磊</h3>
+            <p class="text-indigo-600 text-sm">产品总监</p>
+            <p class="text-gray-500 text-sm mt-1">前Udemy产品负责人</p>
+          </div>
+          <div class="text-center">
+            <img class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop" alt="李莉" />
+            <h3 class="mt-4 font-semibold text-lg">李莉</h3>
+            <p class="text-indigo-600 text-sm">设计负责人</p>
+            <p class="text-gray-500 text-sm mt-1">前多邻国设计师</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 (培训相关) -->
+    <section class="py-16 bg-indigo-50 border-y border-indigo-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div>
+          <div class="text-3xl lg:text-4xl font-bold text-indigo-800">500+</div>
+          <div class="text-gray-600 mt-1">企业客户</div>
+        </div>
+        <div>
+          <div class="text-3xl lg:text-4xl font-bold text-indigo-800">98%</div>
+          <div class="text-gray-600 mt-1">客户留存率</div>
+        </div>
+        <div>
+          <div class="text-3xl lg:text-4xl font-bold text-indigo-800">20M+</div>
+          <div class="text-gray-600 mt-1">日学习时长(分钟)</div>
+        </div>
+        <div>
+          <div class="text-3xl lg:text-4xl font-bold text-indigo-800">24/7</div>
+          <div class="text-gray-600 mt-1">技术支持</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (培训定价) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900">灵活定价</h2>
+          <p class="text-lg text-gray-600 mt-2">按需选择，无隐藏费用</p>
+        </div>
+        <div class="mt-16 grid md:grid-cols-3 gap-8">
+          <!-- 基础版 -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+            <h3 class="text-xl font-semibold">基础版</h3>
+            <p class="mt-4"><span class="text-3xl font-bold">¥49</span> <span class="text-gray-500">/月/人</span></p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 课程历史1年</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 10GB 文件存储</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 基础集成</li>
+            </ul>
+            <a href="/signup/basic" class="mt-8 w-full inline-block text-center py-3 border border-indigo-600 text-indigo-600 hover:bg-indigo-50 rounded-xl font-medium">选择基础版</a>
+          </div>
+          <!-- 商业版 (热门) -->
+          <div class="bg-white rounded-2xl p-8 border-2 border-indigo-500 shadow-lg relative">
+            <span class="absolute top-0 right-8 -translate-y-1/2 bg-indigo-600 text-white px-3 py-1 text-xs rounded-full">热门</span>
+            <h3 class="text-xl font-semibold">商业版</h3>
+            <p class="mt-4"><span class="text-3xl font-bold">¥99</span> <span class="text-gray-500">/月/人</span></p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 无限历史课程</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 100GB 存储</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 所有集成 + API</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 高级支持</li>
+            </ul>
+            <a href="/signup/business" class="mt-8 w-full inline-block text-center py-3 bg-indigo-600 text-white hover:bg-indigo-700 rounded-xl font-medium">选择商业版</a>
+          </div>
+          <!-- 企业版 -->
+          <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
+            <h3 class="text-xl font-semibold">企业版</h3>
+            <p class="mt-4 text-3xl font-bold">定制</p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 私有化/本地部署</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 无限存储</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> 专属客户成功</li>
+              <li class="flex items-center gap-2 text-gray-700"><span class="text-indigo-500">✓</span> SSO/合规</li>
+            </ul>
+            <a href="/contact" class="mt-8 w-full inline-block text-center py-3 border border-gray-300 text-gray-800 hover:bg-gray-50 rounded-xl font-medium">联系销售</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (培训FAQ) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900">常见问题</h2>
+        <div class="mt-12 space-y-6">
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="font-semibold text-lg">支持本地部署培训平台吗？</h3>
+            <p class="mt-2 text-gray-600">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="font-semibold text-lg">可以试用多久？</h3>
+            <p class="mt-2 text-gray-600">所有新用户均可享受30天全功能免费试用，无需信用卡。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="font-semibold text-lg">学习数据存储在哪里？</h3>
+            <p class="mt-2 text-gray-600">数据存储在云端的独立数据库，可选中国大陆或海外区域，符合当地法规。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <h3 class="font-semibold text-lg">如何迁移现有课程记录？</h3>
+            <p class="mt-2 text-gray-600">我们提供专业迁移工具，支持从其他培训平台导入课程与历史数据。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 区块 -->
+    <section class="py-20 bg-indigo-700">
+      <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white">立即提升团队技能</h2>
+        <p class="mt-4 text-lg text-indigo-100">加入数百家信任我们的企业，开启高效在线培训之旅。</p>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="/signup" class="px-8 py-4 bg-white text-indigo-700 hover:bg-indigo-50 font-semibold rounded-xl shadow-lg">免费试用30天</a>
+          <a href="/demo" class="px-8 py-4 bg-indigo-800 text-white hover:bg-indigo-900 font-semibold rounded-xl shadow-lg">预约演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (简单版权声明) -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+      © 2025 在线培训·企业学堂. 保留一切权利。
+    </div>
+  </footer>
+
+</body>
+</html>

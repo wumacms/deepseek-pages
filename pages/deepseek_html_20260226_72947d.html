@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瀚时 · 传承腕表 | 经典永驻</title>
+    <!-- Tailwind via CDN + 基础层样式（无自定义） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 补充一点额外的安全色（完全使用tailwind色板，深棕古铜主色：amber/brown/stone系列） -->
+</head>
+<body class="bg-[#FCF8F3] text-stone-800 antialiased">
+
+    <!-- 导航栏：包含logo，标题，菜单，CTA按钮 · 深棕古铜风格 -->
+    <nav class="bg-[#5C3E2E] text-amber-50 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap">
+            <!-- logo + 品牌标题 -->
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-[#B88B4A] rounded-full flex items-center justify-center text-2xl shadow-md">⌚</div>
+                <span class="text-2xl font-serif tracking-wide text-[#EDD6B0]">瀚时·传承</span>
+            </div>
+            <!-- 导航菜单 (桌面) -->
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-[#E7D7C0]">
+                <a href="#" class="hover:text-white transition">典藏系列</a>
+                <a href="#" class="hover:text-white transition">工艺哲学</a>
+                <a href="#" class="hover:text-white transition">专卖店</a>
+                <a href="#" class="hover:text-white transition">关于瀚时</a>
+            </div>
+            <!-- CTA 按钮 -->
+            <div>
+                <a href="#" class="bg-[#B88B4A] hover:bg-[#9F7342] text-stone-900 font-semibold px-6 py-2 rounded-full text-sm shadow-md transition duration-200">尊享预约</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容容器 -->
+    <main class="max-w-7xl mx-auto px-4 md:px-6 py-8 space-y-20">
+
+        <!-- 首屏区块 (HERO) · 深棕底 古铜色点缀 -->
+        <section class="grid md:grid-cols-2 gap-12 items-center bg-gradient-to-br from-[#3F2E1E] to-[#5C3E2E] rounded-3xl shadow-2xl overflow-hidden">
+            <div class="p-10 md:p-14 text-[#FDF3E0]">
+                <h1 class="text-4xl md:text-5xl font-serif leading-tight tracking-wide">恒动・鎏金时代</h1>
+                <p class="text-xl mt-4 text-[#E7CFB0]">每一枚瀚时，皆可传世。</p>
+                <p class="mt-6 text-[#DBC6A8] max-w-md">瑞士原厂机芯，手工雕花表盘。将百年的制表工艺凝于方寸之间，献给懂时间的您。</p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="#" class="bg-[#B88B4A] text-stone-900 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-[#A87A3E] transition">探索腕表</a>
+                    <a href="#" class="border border-[#B88B4A] text-[#EDD6B0] px-8 py-3 rounded-full font-semibold hover:bg-[#B88B4A] hover:text-stone-900 transition">预约品鉴</a>
+                </div>
+            </div>
+            <div class="h-80 md:h-auto bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1888&auto=format&fit=crop');"></div>
+            <!-- 注：图片采用钟表相关 unsplash 示意，符合高端手表调性 -->
+        </section>
+
+        <!-- 合作伙伴区块 (钟表生态伙伴) 古铜浅底 -->
+        <section class="bg-[#E9DDCF] p-10 rounded-3xl shadow-inner border border-[#C9A87C]">
+            <h2 class="text-3xl font-serif text-center text-[#4A3624]">卓越伙伴 · 共铸精准</h2>
+            <p class="text-center text-[#6F4F32] mt-2">与世界顶尖制表机构及零售商战略合作</p>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-6 mt-10">
+                <!-- 使用占位图及名称 -->
+                <div class="text-center"><div class="w-20 h-20 mx-auto bg-[#DCC9B2] rounded-full flex items-center justify-center text-4xl shadow">⚙️</div><p class="mt-2 font-medium text-stone-700">宝玑工艺</p></div>
+                <div class="text-center"><div class="w-20 h-20 mx-auto bg-[#DCC9B2] rounded-full flex items-center justify-center text-4xl shadow">⌚</div><p class="mt-2 font-medium text-stone-700">勒曼集团</p></div>
+                <div class="text-center"><div class="w-20 h-20 mx-auto bg-[#DCC9B2] rounded-full flex items-center justify-center text-4xl shadow">🔧</div><p class="mt-2 font-medium text-stone-700">瑞士游丝</p></div>
+                <div class="text-center"><div class="w-20 h-20 mx-auto bg-[#DCC9B2] rounded-full flex items-center justify-center text-4xl shadow">💎</div><p class="mt-2 font-medium text-stone-700">格拉夫钻石</p></div>
+                <div class="text-center"><div class="w-20 h-20 mx-auto bg-[#DCC9B2] rounded-full flex items-center justify-center text-4xl shadow">🏆</div><p class="mt-2 font-medium text-stone-700">日内瓦印记</p></div>
+                <div class="text-center"><div class="w-20 h-20 mx-auto bg-[#DCC9B2] rounded-full flex items-center justify-center text-4xl shadow">📡</div><p class="mt-2 font-medium text-stone-700">Cosmo 零售商</p></div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (传承工艺) -->
+        <section class="grid md:grid-cols-2 gap-8 items-center bg-white/60 rounded-3xl p-6 shadow-xl border border-[#D4B48C]">
+            <img src="https://placehold.co/1887x600/e2e8f0/64748b?text=Image" alt="手工制表" class="rounded-2xl shadow-lg h-80 w-full object-cover">
+            <div>
+                <h2 class="text-3xl font-serif text-[#4A3624]">世代相传的手工润饰</h2>
+                <p class="mt-4 text-stone-700 leading-relaxed">每一枚瀚时腕表均由资深制表师手工倒角、雕花。透过蓝宝石表背，您可以欣赏到日内瓦波纹与珍珠纹的完美交织，这是机器无法复刻的温度。</p>
+                <div class="flex flex-wrap gap-4 mt-6">
+                    <span class="bg-[#B88B4A]/20 text-[#5C3E2E] px-4 py-2 rounded-full font-medium">倒角工艺</span>
+                    <span class="bg-[#B88B4A]/20 text-[#5C3E2E] px-4 py-2 rounded-full font-medium">玑镂雕花</span>
+                    <span class="bg-[#B88B4A]/20 text-[#5C3E2E] px-4 py-2 rounded-full font-medium">鎏金刻度</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (经典设计) 反向 -->
+        <section class="grid md:grid-cols-2 gap-8 items-center bg-[#E8DCCC] rounded-3xl p-6 shadow-xl border border-[#B88B4A]">
+            <div class="order-2 md:order-1">
+                <h2 class="text-3xl font-serif text-[#3F2E1E]">源自20世纪的黄金比例</h2>
+                <p class="mt-4 text-stone-700 leading-relaxed">枕形表壳、太妃针、钱币纹表圈…… 每一个设计元素都致敬钟表黄金年代。搭配全新自产机芯，经典外观下是现代精准。</p>
+                <div class="flex mt-6 space-x-4">
+                    <span class="bg-[#5C3E2E] text-[#EDD6B0] px-4 py-2 rounded-full text-sm">蓝宝石表镜</span>
+                    <span class="bg-[#5C3E2E] text-[#EDD6B0] px-4 py-2 rounded-full text-sm">100米防水</span>
+                </div>
+            </div>
+            <img src="https://placehold.co/1887x600/e2e8f0/64748b?text=Image" alt="经典腕表设计" class="order-1 md:order-2 rounded-2xl shadow-lg h-80 w-full object-cover">
+        </section>
+
+        <!-- 特性区块 (专为钟表藏家打造) -->
+        <section class="bg-[#F3E9DE] p-10 rounded-3xl">
+            <h2 class="text-3xl font-serif text-center text-[#4A3624]">瀚时·特质</h2>
+            <p class="text-center text-[#7B5F42] mt-2">从材质到精度，面面俱到</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <div class="bg-white/80 p-6 rounded-2xl shadow-md border-l-4 border-[#B88B4A]">
+                    <div class="text-4xl">⚜️</div>
+                    <h3 class="text-xl font-semibold mt-3 text-[#5C3E2E]">18K 金套筒</h3>
+                    <p class="text-stone-600 mt-2">宝石轴承搭配黄金套筒，传统高级制表象征。</p>
+                </div>
+                <div class="bg-white/80 p-6 rounded-2xl shadow-md border-l-4 border-[#B88B4A]">
+                    <div class="text-4xl">⌛</div>
+                    <h3 class="text-xl font-semibold mt-3 text-[#5C3E2E]">三日链动力</h3>
+                    <p class="text-stone-600 mt-2">双发条盒，72小时长效储能，周末不停歇。</p>
+                </div>
+                <div class="bg-white/80 p-6 rounded-2xl shadow-md border-l-4 border-[#B88B4A]">
+                    <div class="text-4xl">🔊</div>
+                    <h3 class="text-xl font-semibold mt-3 text-[#5C3E2E]">静音自动陀</h3>
+                    <p class="text-stone-600 mt-2">全新滚珠轴承，上链安静，近乎无声。</p>
+                </div>
+                <div class="bg-white/80 p-6 rounded-2xl shadow-md border-l-4 border-[#B88B4A]">
+                    <div class="text-4xl">🌙</div>
+                    <h3 class="text-xl font-semibold mt-3 text-[#5C3E2E]">月相精准</h3>
+                    <p class="text-stone-600 mt-2">122年仅一天误差，月相显示尽在掌握。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (钟表收藏家故事) -->
+        <section class="bg-[#4F3A28] text-[#F3E7D9] p-10 rounded-3xl shadow-2xl">
+            <h2 class="text-3xl font-serif text-center text-[#EDD6B0]">他们的传世之选</h2>
+            <p class="text-center text-[#C9B396] mt-2">全球钟表藏家与瀚时的故事</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-[#6B4F38] p-6 rounded-xl">
+                    <p class="text-[#F0DEC6]">“从拍卖会初见瀚时万年历，就被手工月相盘吸引。日差仅+2秒，比我某些顶级品牌还准。”</p>
+                    <div class="flex items-center mt-5">
+                        <div class="w-10 h-10 bg-[#B88B4A] rounded-full flex items-center justify-center text-white font-bold text-lg">徐</div>
+                        <div class="ml-3"><p class="font-semibold">徐景明</p><p class="text-sm text-[#D4B48C]">钟表藏家 · 上海</p></div>
+                    </div>
+                </div>
+                <div class="bg-[#6B4F38] p-6 rounded-xl">
+                    <p class="text-[#F0DEC6]">“送给儿子的成年礼。背透机芯的打磨不输百达翡丽，希望他像机械表一样严谨又浪漫。”</p>
+                    <div class="flex items-center mt-5">
+                        <div class="w-10 h-10 bg-[#B88B4A] rounded-full flex items-center justify-center text-white font-bold text-lg">陈</div>
+                        <div class="ml-3"><p class="font-semibold">陈美龄</p><p class="text-sm text-[#D4B48C]">企业家 · 香港</p></div>
+                    </div>
+                </div>
+                <div class="bg-[#6B4F38] p-6 rounded-xl">
+                    <p class="text-[#F0DEC6]">“作为独立制表师，我惊讶于它的鹅颈微调结构。五年的走时依然稳定，值得尊敬。”</p>
+                    <div class="flex items-center mt-5">
+                        <div class="w-10 h-10 bg-[#B88B4A] rounded-full flex items-center justify-center text-white font-bold text-lg">M</div>
+                        <div class="ml-3"><p class="font-semibold">Michael Zhang</p><p class="text-sm text-[#D4B48C]">独立制表师 · 苏黎世</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (品牌数字) 深棕背景 -->
+        <section class="grid grid-cols-2 md:grid-cols-4 gap-6 bg-[#3F2E1E] text-[#EEDBBC] p-8 rounded-2xl text-center">
+            <div><div class="text-4xl font-bold text-[#B88B4A]">152</div><div class="text-sm uppercase tracking-wider">制表匠人</div></div>
+            <div><div class="text-4xl font-bold text-[#B88B4A]">12</div><div class="text-sm uppercase tracking-wider">日内瓦大奖</div></div>
+            <div><div class="text-4xl font-bold text-[#B88B4A]">3000+</div><div class="text-sm uppercase tracking-wider">俱乐部会员</div></div>
+            <div><div class="text-4xl font-bold text-[#B88B4A]">5年</div><div class="text-sm uppercase tracking-wider">全球保修</div></div>
+        </section>
+
+        <!-- 认证与资质区块 (高级钟表认证) -->
+        <section class="bg-[#DBCBB8] p-8 rounded-3xl">
+            <h2 class="text-2xl font-serif text-center text-[#3F2E1E]">权威认证 · 珍稀品质</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+                <div class="bg-[#F5EDE2] p-4 rounded-xl text-center"><span class="text-3xl block">🏅</span> <span class="font-bold">日内瓦印记</span><p class="text-xs text-stone-600">Poinçon de Genève</p></div>
+                <div class="bg-[#F5EDE2] p-4 rounded-xl text-center"><span class="text-3xl block">🔬</span> <span class="font-bold">瑞士天文台</span><p class="text-xs text-stone-600">COSC认证</p></div>
+                <div class="bg-[#F5EDE2] p-4 rounded-xl text-center"><span class="text-3xl block">⚜️</span> <span class="font-bold">QF 印记</span><p class="text-xs text-stone-600">品质认证</p></div>
+                <div class="bg-[#F5EDE2] p-4 rounded-xl text-center"><span class="text-3xl block">🏆</span> <span class="font-bold">GPHG 提名</span><p class="text-xs text-stone-600">2024 陀飞轮</p></div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (腕表系列定价) 经典价格卡 -->
+        <section class="bg-white/50 p-6 rounded-3xl">
+            <h2 class="text-3xl font-serif text-center text-[#4A3624]">典藏系列</h2>
+            <p class="text-center text-[#7B5F42]">传承、运动、珠宝，总有一款适合您</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-10">
+                <div class="bg-[#FFFBF5] border border-[#C9A87C] rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-[#5C3E2E]">传承系列 自动</h3>
+                    <p class="text-3xl font-serif mt-2 text-[#B88B4A]">¥49,800<span class="text-sm text-stone-500 ml-2">起</span></p>
+                    <ul class="mt-4 space-y-2 text-sm text-stone-700">
+                        <li>• 2824-2 级机芯</li>
+                        <li>• 精钢表壳</li>
+                        <li>• 牛皮表带</li>
+                    </ul>
+                    <a href="#" class="block text-center mt-6 border border-[#B88B4A] text-[#5C3E2E] py-2 rounded-full hover:bg-[#B88B4A] hover:text-white">探索</a>
+                </div>
+                <div class="bg-[#FFFBF5] border-2 border-[#B88B4A] rounded-2xl p-6 shadow-xl scale-105 relative">
+                    <span class="absolute -top-3 right-6 bg-[#B88B4A] text-xs text-white px-3 py-1 rounded-full">首席推荐</span>
+                    <h3 class="text-xl font-bold text-[#5C3E2E]">寰宇系列 世界时</h3>
+                    <p class="text-3xl font-serif mt-2 text-[#B88B4A]">¥89,800</p>
+                    <ul class="mt-4 space-y-2 text-sm text-stone-700">
+                        <li>• 自产H08 机芯</li>
+                        <li>• 18K玫瑰金圈口</li>
+                        <li>• 世界时区显示</li>
+                    </ul>
+                    <a href="#" class="block text-center mt-6 bg-[#B88B4A] text-white py-2 rounded-full shadow-md">预约品鉴</a>
+                </div>
+                <div class="bg-[#FFFBF5] border border-[#C9A87C] rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-[#5C3E2E]">传奇陀飞轮</h3>
+                    <p class="text-2xl font-serif mt-2 text-[#B88B4A]">定制价格</p>
+                    <ul class="mt-4 space-y-2 text-sm text-stone-700">
+                        <li>• 飞行陀飞轮</li>
+                        <li>• 手工玑镂盘</li>
+                        <li>• 限量20枚</li>
+                    </ul>
+                    <a href="#" class="block text-center mt-6 border border-[#B88B4A] text-[#5C3E2E] py-2 rounded-full hover:bg-[#B88B4A] hover:text-white">联系收藏</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 FAQ 深铜色 -->
+        <section class="bg-[#5C4A38] text-[#F3E5D3] p-10 rounded-3xl">
+            <h2 class="text-2xl font-serif text-center text-[#EDD6B0]">常见疑问</h2>
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="border-b border-[#B88B4A] pb-4"><p class="font-semibold">机芯保养周期？</p><p class="text-sm text-[#DBC6A8] mt-1">建议每3-5年进行全面保养，防水测试每年一次。</p></div>
+                <div class="border-b border-[#B88B4A] pb-4"><p class="font-semibold">是否全球联保？</p><p class="text-sm text-[#DBC6A8] mt-1">是，我们拥有上海、日内瓦、纽约三家直属服务中心。</p></div>
+                <div class="border-b border-[#B88B4A] pb-4"><p class="font-semibold">可以定制表盘刻字吗？</p><p class="text-sm text-[#DBC6A8] mt-1">传承系列及以上可提供表壳或摆陀刻字服务，需时4周。</p></div>
+                <div class="border-b border-[#B88B4A] pb-4"><p class="font-semibold">如何鉴定真伪？</p><p class="text-sm text-[#DBC6A8] mt-1">每枚腕表均有唯一独立编号，官网可查，且附带瑞士官方证书。</p></div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 -->
+        <section class="bg-[#B88B4A] text-stone-900 rounded-3xl p-12 text-center shadow-2xl">
+            <h2 class="text-3xl font-serif">亲临瀚时精品店</h2>
+            <p class="text-lg mt-2 text-stone-800">预约一对一腕表品鉴，感受传世工艺。</p>
+            <div class="flex gap-4 justify-center mt-6">
+                <a href="#" class="bg-[#3F2E1E] text-[#EDD6B0] px-8 py-3 rounded-full font-semibold hover:bg-[#5C3E2E] transition">预约品鉴</a>
+                <a href="#" class="bg-white/90 text-[#5C3E2E] px-8 py-3 rounded-full font-semibold hover:bg-white transition">精品店地址</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚：品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码 (深棕古铜) -->
+    <footer class="bg-[#2E221A] text-[#DCC9B2] mt-16 border-t border-[#B88B4A]">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- Logo + 版权 -->
+            <div>
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-[#B88B4A] rounded-full flex items-center justify-center text-xl">⌚</div>
+                    <span class="font-serif text-xl text-[#EDD6B0]">瀚时·传承</span>
+                </div>
+                <p class="text-sm mt-4">© 2025 瀚时钟表有限公司<br>传承百年制表技艺</p>
+            </div>
+            <!-- 公司地址 -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#EDD6B0]">日内瓦 · 上海</h3>
+                <p class="text-sm mt-2 leading-relaxed">瑞士总部：Rue du Rhône 32, 1204 Genève<br>中国旗舰：上海市黄浦区南京东路99号</p>
+            </div>
+            <!-- 联系方式 -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#EDD6B0]">尊享专线</h3>
+                <p class="text-sm mt-2">+41 22 123 45 67 (瑞士)<br>400-882-1988 (中国)<br>concierge@han-time.ch</p>
+            </div>
+            <!-- 微信公众号二维码 (模拟) -->
+            <div>
+                <h3 class="text-lg font-semibold text-[#EDD6B0]">官方微信</h3>
+                <div class="mt-2 w-28 h-28 bg-[#B88B4A] flex items-center justify-center text-stone-900 rounded-lg border-2 border-[#EDD6B0]">
+                    <span class="text-4xl opacity-70">◼️◼️</span>
+                </div>
+                <p class="text-xs mt-2">扫一扫关注瀚时表廊</p>
+            </div>
+        </div>
+        <div class="border-t border-[#5C4A38] py-4 text-center text-sm text-[#BDAF9C]">
+            经典传承 · 每一秒皆可珍藏
+        </div>
+    </footer>
+</body>
+</html>

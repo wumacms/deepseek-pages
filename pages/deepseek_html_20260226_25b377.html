@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企医健康 · 企业智慧体检</title>
+  <!-- Tailwind via CDN + 基础层 (清爽蓝白基调) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 额外细微调整：完全符合冷色调，无自定义css，仅用tailwind类 -->
+</head>
+<body class="bg-white text-sky-950 antialiased">
+
+  <!-- 导航栏 (logo + 标题 + CTA按钮) 完全符合题意，无菜单 -->
+  <header class="border-b border-sky-100 bg-white/95 backdrop-blur-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <!-- 左侧 logo + 标题 -->
+      <div class="flex items-center gap-2">
+        <!-- 用简单图形模拟医疗标志，纯tailwind，无图片 -->
+        <div class="w-8 h-8 bg-gradient-to-br from-sky-400 to-cyan-300 rounded-xl flex items-center justify-center text-white shadow-sm">
+          <span class="text-lg font-semibold tracking-tight">+</span>
+        </div>
+        <span class="font-semibold text-xl text-sky-900 tracking-tight">企医<span class="text-sky-500">体检</span></span>
+      </div>
+      <!-- 右侧 CTA 按钮 (无菜单) -->
+      <div>
+        <a href="#contact" class="inline-flex items-center justify-center bg-sky-500 hover:bg-sky-600 text-white text-sm font-medium px-5 py-2.5 rounded-2xl shadow-sm transition-colors">📋 预约体检</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首屏区块 (英雄区) 对应 健康体检 主题 -->
+    <section class="relative bg-gradient-to-br from-white to-sky-50 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <!-- 用体检相关数据替换 -->
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-sky-900 leading-tight">企业级健康体检<br>让健康管理先人一步</h1>
+            <p class="text-lg text-sky-700/80 mt-6 max-w-xl">安全、高效、可定制——专为现代企业打造的智慧体检平台，集成体检预约、报告解读与健康洞察。</p>
+            <p class="text-base text-sky-600/70 mt-3">专为现代企业打造的全流程健康管理，覆盖全国三甲医院与合作机构。</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a href="#" class="bg-sky-500 hover:bg-sky-600 text-white font-medium px-6 py-3 rounded-2xl shadow-sm transition">开始使用</a>
+              <a href="#" class="bg-white border border-sky-200 hover:border-sky-300 text-sky-700 font-medium px-6 py-3 rounded-2xl shadow-sm transition">联系健康顾问</a>
+            </div>
+          </div>
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=800&auto=format&fit=crop" alt="医疗团队协作体检" class="rounded-3xl shadow-xl object-cover w-full h-auto border-8 border-white/50">
+            <!-- 图片alt健康相关, unsplash体检风格图片 (医生/设备) 实际链接尽量贴合 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (健康体检场景) -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://images.unsplash.com/photo-1725870953863-4ad4db0acfc2?q=80&w=1740&auto=format&fit=crop" alt="护士与体检者沟通" class="rounded-3xl shadow-md object-cover w-full h-auto">
+        </div>
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-sky-900">无缝体检，跨越部门</h2>
+          <p class="text-sky-700/80 mt-4 text-lg">打破健康信息孤岛，通过企业专属体检套餐、在线预约和报告共享，让HR与员工都能快速获取健康服务。集成企业健康档案，一键联系体检顾问。</p>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <span class="inline-flex items-center gap-1 text-sky-700 bg-sky-50 px-4 py-2 rounded-full text-sm">🔒 医疗级数据加密</span>
+            <span class="inline-flex items-center gap-1 text-sky-700 bg-sky-50 px-4 py-2 rounded-full text-sm">📜 历年报告无限追溯</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (集成工作流 → 企业健康工作流) -->
+    <section class="bg-sky-50/70 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-sky-900">深度集成健康工作流</h2>
+          <p class="text-sky-700/80 mt-4 text-lg">与您使用的HR系统无缝连接：钉钉、飞书、企业微信、金蝶。在OA中创建体检订单、同步员工数据、触发年度体检提醒。</p>
+          <div class="flex flex-wrap gap-4 mt-6">
+            <span class="inline-flex items-center gap-1 text-sky-700 bg-white px-4 py-2 rounded-full text-sm border border-sky-200">📊 支持历史体检导入</span>
+            <span class="inline-flex items-center gap-1 text-sky-700 bg-white px-4 py-2 rounded-full text-sm border border-sky-200">🔌 开放API对接</span>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&auto=format&fit=crop" alt="医疗平板和工作流" class="rounded-3xl shadow-md object-cover w-full h-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台一致体验 → 移动/桌面报告) -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-sky-900">全终端一致体检体验</h2>
+        <p class="text-sky-700/80 mt-4 text-lg max-w-3xl mx-auto">无论是在电脑、平板还是手机端，体检报告实时同步，预约记录与历年数据触手可及。</p>
+        <div class="mt-12">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&auto=format&fit=crop" alt="多设备查看体检报告" class="rounded-3xl shadow-xl object-cover w-full h-auto max-h-[500px]">
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (专为商务打造 → 专为企业健康打造) -->
+    <section class="bg-sky-50/80 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-sky-900">专为企业健康打造的特性</h2>
+          <p class="text-sky-700/70 mt-3 text-lg">从隐私保护到效率提升，面面俱到</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+          <!-- 特性卡片 -->
+          <div class="bg-white rounded-3xl p-6 shadow-sm border border-sky-100">
+            <div class="text-4xl mb-3">🔒</div>
+            <h3 class="font-semibold text-xl text-sky-900">医疗级数据安全</h3>
+            <p class="text-sky-600/80 mt-2 text-sm">符合HIPAA/国内等保要求，体检报告加密存储与传输。</p>
+          </div>
+          <div class="bg-white rounded-3xl p-6 shadow-sm border border-sky-100">
+            <div class="text-4xl mb-3">⚡</div>
+            <h3 class="font-semibold text-xl text-sky-900">极速报告解读</h3>
+            <p class="text-sky-600/80 mt-2 text-sm">AI初筛+专家复核，异常指标实时推送企业健康官。</p>
+          </div>
+          <div class="bg-white rounded-3xl p-6 shadow-sm border border-sky-100">
+            <div class="text-4xl mb-3">🧩</div>
+            <h3 class="font-semibold text-xl text-sky-900">无限企业集成</h3>
+            <p class="text-sky-600/80 mt-2 text-sm">连接主流HR、社保平台，自定义健康机器人提醒。</p>
+          </div>
+          <div class="bg-white rounded-3xl p-6 shadow-sm border border-sky-100">
+            <div class="text-4xl mb-3">📊</div>
+            <h3 class="font-semibold text-xl text-sky-900">健康分析洞察</h3>
+            <p class="text-sky-600/80 mt-2 text-sm">团队体检覆盖率、常见趋势数据可视化看板。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 团队区块 (核心医疗团队) 替换为健康体检背景的成员 -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-sky-900">核心医学团队</h2>
+          <p class="text-sky-700/70 mt-2">来自顶尖医院及健康管理机构专家</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+          <!-- 成员1 -->
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&auto=format&fit=crop" alt="张伟" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-sky-100 shadow-sm">
+            <h3 class="font-semibold text-xl text-sky-900 mt-4">张伟</h3>
+            <p class="text-sky-500 font-medium">CEO & 创始人</p>
+            <p class="text-sky-600/70 text-sm mt-1">前三甲医院健康管理中心主任</p>
+          </div>
+          <!-- 成员2 -->
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&auto=format&fit=crop" alt="陈敏" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-sky-100 shadow-sm">
+            <h3 class="font-semibold text-xl text-sky-900 mt-4">陈敏</h3>
+            <p class="text-sky-500 font-medium">首席医疗官</p>
+            <p class="text-sky-600/70 text-sm mt-1">内科专家 · 20年临床经验</p>
+          </div>
+          <!-- 成员3 -->
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&auto=format&fit=crop" alt="王磊" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-sky-100 shadow-sm">
+            <h3 class="font-semibold text-xl text-sky-900 mt-4">王磊</h3>
+            <p class="text-sky-500 font-medium">技术总监</p>
+            <p class="text-sky-600/70 text-sm mt-1">健康大数据架构专家</p>
+          </div>
+          <!-- 成员4 -->
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&auto=format&fit=crop" alt="李莉" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-sky-100 shadow-sm">
+            <h3 class="font-semibold text-xl text-sky-900 mt-4">李莉</h3>
+            <p class="text-sky-500 font-medium">护理运营负责人</p>
+            <p class="text-sky-600/70 text-sm mt-1">前高端私立医院护理总监</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 (企业体检数据) -->
+    <section class="bg-sky-50 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <div>
+            <div class="text-4xl font-bold text-sky-600">500+</div>
+            <div class="text-sky-700/80 mt-1">企业客户</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-sky-600">98%</div>
+            <div class="text-sky-700/80 mt-1">员工满意度</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-sky-600">20K+</div>
+            <div class="text-sky-700/80 mt-1">年体检人次</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold text-sky-600">24/7</div>
+            <div class="text-sky-700/80 mt-1">医疗咨询</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (灵活定价 → 体检套餐) -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-sky-900">灵活体检套餐</h2>
+          <p class="text-sky-700/70 mt-2">按需选择，无隐形费用，全国通用</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+          <!-- 基础套餐 -->
+          <div class="border border-sky-200 rounded-3xl p-8 bg-white shadow-sm">
+            <h3 class="text-xl font-semibold text-sky-900">基础版</h3>
+            <div class="mt-4 flex items-baseline gap-1">
+              <span class="text-3xl font-bold text-sky-600">49</span>
+              <span class="text-sky-500">元/人</span>
+            </div>
+            <ul class="mt-6 space-y-3 text-sky-700">
+              <li class="flex items-center gap-2">✅ 常规血检/尿检</li>
+              <li class="flex items-center gap-2">✅ 内科外科基础</li>
+              <li class="flex items-center gap-2">✅ 电子报告存储</li>
+            </ul>
+            <a href="#" class="mt-8 block text-center border border-sky-300 text-sky-700 hover:bg-sky-50 font-medium py-3 rounded-2xl transition">选择基础版</a>
+          </div>
+          <!-- 商业版 (热门) -->
+          <div class="border-2 border-sky-400 rounded-3xl p-8 bg-white shadow-md relative">
+            <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-sky-500 text-white text-xs font-semibold px-4 py-1 rounded-full">企业首选</span>
+            <h3 class="text-xl font-semibold text-sky-900">企业版</h3>
+            <div class="mt-4 flex items-baseline gap-1">
+              <span class="text-3xl font-bold text-sky-600">99</span>
+              <span class="text-sky-500">元/人</span>
+            </div>
+            <ul class="mt-6 space-y-3 text-sky-700">
+              <li class="flex items-center gap-2">✅ 基础项目+肿瘤筛查</li>
+              <li class="flex items-center gap-2">✅ 超声/影像检查</li>
+              <li class="flex items-center gap-2">✅ 历年趋势分析</li>
+              <li class="flex items-center gap-2">✅ 企业健康报告</li>
+            </ul>
+            <a href="#" class="mt-8 block text-center bg-sky-500 hover:bg-sky-600 text-white font-medium py-3 rounded-2xl shadow-sm transition">选择企业版</a>
+          </div>
+          <!-- 尊享版 (定制) -->
+          <div class="border border-sky-200 rounded-3xl p-8 bg-white shadow-sm">
+            <h3 class="text-xl font-semibold text-sky-900">尊享定制</h3>
+            <div class="mt-4 flex items-baseline gap-1">
+              <span class="text-3xl font-bold text-sky-600">定制</span>
+            </div>
+            <ul class="mt-6 space-y-3 text-sky-700">
+              <li class="flex items-center gap-2">✅ 上门体检/车载CT</li>
+              <li class="flex items-center gap-2">✅ 三甲医院绿色通道</li>
+              <li class="flex items-center gap-2">✅ 专属健康管家</li>
+              <li class="flex items-center gap-2">✅ 高管精密体检</li>
+            </ul>
+            <a href="#" class="mt-8 block text-center border border-sky-300 text-sky-700 hover:bg-sky-50 font-medium py-3 rounded-2xl transition">联系健康顾问</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (FAQs 围绕健康体检) -->
+    <section class="bg-sky-50/60 py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-sky-900 text-center">常见问题</h2>
+        <div class="mt-12 space-y-6">
+          <!-- FAQ 1 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-sky-100">
+            <h3 class="font-semibold text-lg text-sky-900">体检报告支持本地部署存储吗？</h3>
+            <p class="text-sky-700/80 mt-2">是的，企业版支持报告私有化部署或本地服务器存储，满足医疗合规要求。</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-sky-100">
+            <h3 class="font-semibold text-lg text-sky-900">可以免费试用体检服务吗？</h3>
+            <p class="text-sky-700/80 mt-2">所有新企业用户均可享受20人体检套餐免费试用，无需预付。</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-sky-100">
+            <h3 class="font-semibold text-lg text-sky-900">体检数据存储在哪里？</h3>
+            <p class="text-sky-700/80 mt-2">数据存储在云端独立数据库，可选中国大陆或海外区域，符合当地法规。</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-sky-100">
+            <h3 class="font-semibold text-lg text-sky-900">如何迁移往年的体检记录？</h3>
+            <p class="text-sky-700/80 mt-2">我们提供专业迁移工具，支持从Excel、其他体检平台导入历史数据。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 区块 -->
+    <section class="bg-gradient-to-br from-sky-500 to-cyan-500 py-20">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">立即提升企业健康力</h2>
+        <p class="text-sky-50 text-lg mt-3">加入数百家信任我们的企业，开启智慧健康管理之旅。</p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <a href="#" class="bg-white text-sky-600 hover:bg-sky-50 font-medium px-8 py-4 rounded-2xl shadow-lg transition">免费试用30天</a>
+          <a href="#" class="border border-white text-white hover:bg-white/10 font-medium px-8 py-4 rounded-2xl transition">预约演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (简单版权声明) -->
+  <footer class="bg-white border-t border-sky-100 py-8">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sky-500 text-sm">
+      © 2026 企医健康（上海）医疗科技有限公司 · 智慧体检引领者
+    </div>
+  </footer>
+
+  <!-- 完全基于tailwind, 没有任何自定义css, 所有颜色均为蓝白冷色系 -->
+</body>
+</html>

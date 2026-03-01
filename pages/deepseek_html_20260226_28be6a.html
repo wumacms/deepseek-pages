@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花间梦 · 浪漫鲜花礼品</title>
+    <!-- Tailwind via CDN + 基础层叠 (纯工具类，无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引用Inter字体(可选，不影响布局) 符合唯美风格但依然属于tailwind预设体系 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 保证没有任何自定义样式类，只有html/body基础，所有样式均用tailwind内联或类生成 */
+        body { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- █ 导航栏 (包含logo、标题、导航菜单、CTA按钮) 粉白+浪漫 -->
+    <header class="border-b border-pink-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-pink-200 flex items-center justify-center text-pink-500 text-xl">🌸</div>
+                    <span class="font-semibold text-xl text-pink-800">花间梦</span>
+                </div>
+                <!-- 桌面导航菜单 -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-pink-700">
+                    <a href="#" class="hover:text-pink-400 transition">首页</a>
+                    <a href="#" class="hover:text-pink-400 transition">鲜花</a>
+                    <a href="#" class="hover:text-pink-400 transition">永生花</a>
+                    <a href="#" class="hover:text-pink-400 transition">礼品</a>
+                    <a href="#" class="hover:text-pink-400 transition">企业花艺</a>
+                </nav>
+                <!-- CTA 按钮 -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hidden sm:inline-block text-pink-600 hover:text-pink-400 text-sm font-medium">登录</a>
+                    <a href="#" class="bg-pink-400 hover:bg-pink-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition">预定花礼</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <!-- ************ 首屏区块 (HERO) ************ -->
+        <section class="bg-gradient-to-b from-pink-50 via-white to-white py-12 md:py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="flex-1 text-center lg:text-left">
+                        <!-- 根据首屏区块JSON结构: title, subtitle, description, image, buttons -->
+                        <h1 class="text-4xl md:text-5xl font-bold text-pink-800 leading-tight">企业级花礼定制，<br>让浪漫更快一步</h1>
+                        <p class="text-lg text-pink-600 mt-4">安全、高效、可定制——专为现代企业打造的鲜花订阅平台，集成情感与祝福。</p>
+                        <p class="text-pink-500/70 mt-2 max-w-xl mx-auto lg:mx-0">专为现代企业打造的鲜花礼品方案，提升员工幸福感与客户温度。</p>
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 mt-8">
+                            <a href="#" class="bg-pink-400 hover:bg-pink-500 text-white px-8 py-3 rounded-full text-lg font-semibold shadow-md transition">开始使用</a>
+                            <a href="#" class="border-2 border-pink-300 text-pink-600 hover:bg-pink-50 px-8 py-3 rounded-full text-lg font-semibold transition">联系花艺师</a>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="浪漫花束与办公室" class="rounded-2xl shadow-xl object-cover w-full h-80 md:h-96">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 合作伙伴区块 (生态伙伴 以鲜花/花店品牌出现) ************ -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-pink-800">我们的花艺伙伴</h2>
+                    <p class="text-pink-500 mt-2">与全球知名花卉机构深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12 items-center">
+                    <!-- 根据partners区块简化展示logo+名称，使用示例图片 -->
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🌷</div><span class="mt-2 text-pink-700 font-medium">荷兰花卉</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🌹</div><span class="mt-2 text-pink-700 font-medium">保加利亚玫瑰</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🌸</div><span class="mt-2 text-pink-700 font-medium">日本花道</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🌺</div><span class="mt-2 text-pink-700 font-medium">厄瓜多尔庄园</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🌼</div><span class="mt-2 text-pink-700 font-medium">云南斗南</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center text-2xl">🌻</div><span class="mt-2 text-pink-700 font-medium">肯尼亚农场</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 左图右文区块 (无缝沟通→花艺定制) ************ -->
+        <section class="py-16 bg-pink-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="flex-1 order-2 lg:order-1">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="花艺师沟通" class="rounded-2xl shadow-lg object-cover w-full h-80">
+                    </div>
+                    <div class="flex-1 order-1 lg:order-2">
+                        <h2 class="text-3xl font-bold text-pink-800">无缝沟通，定制心意</h2>
+                        <p class="text-pink-600 mt-4">打破信息孤岛，通过专属花艺顾问、群组讨论和实景选花，让每个人都能快速定制心仪花礼。集成企业通讯录，一键联系花艺师。</p>
+                        <div class="flex flex-wrap gap-4 mt-6">
+                            <span class="bg-pink-100 text-pink-700 px-5 py-2 rounded-full text-sm font-medium">一对一设计</span>
+                            <span class="bg-pink-100 text-pink-700 px-5 py-2 rounded-full text-sm font-medium">全程保鲜</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 特性区块 (专为商务打造→鲜花特性) ************ -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-pink-800">专为企业鲜花打造的特性</h2>
+                    <p class="text-pink-500 mt-2">从新鲜到品味，面面俱到</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <!-- 四个特性 使用图标、标题、描述 -->
+                    <div class="bg-pink-50 p-6 rounded-2xl text-center"><span class="text-4xl">🌿</span><h3 class="font-semibold text-pink-800 mt-4">超长保鲜</h3><p class="text-pink-600 text-sm mt-2">冷链直达，花期延长30%</p></div>
+                    <div class="bg-pink-50 p-6 rounded-2xl text-center"><span class="text-4xl">⚡</span><h3 class="font-semibold text-pink-800 mt-4">急速配送</h3><p class="text-pink-600 text-sm mt-2">同城2小时，跨城次日达</p></div>
+                    <div class="bg-pink-50 p-6 rounded-2xl text-center"><span class="text-4xl">🧩</span><h3 class="font-semibold text-pink-800 mt-4">自由定制</h3><p class="text-pink-600 text-sm mt-2">花材、花器、贺卡自由搭配</p></div>
+                    <div class="bg-pink-50 p-6 rounded-2xl text-center"><span class="text-4xl">📊</span><h3 class="font-semibold text-pink-800 mt-4">企业月结</h3><p class="text-pink-600 text-sm mt-2">数据报表，预算一目了然</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 左文右图区块 (深度集成工作流→深度契合花店) ************ -->
+        <section class="py-16 bg-pink-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-bold text-pink-800">深度融入企业关怀</h2>
+                        <p class="text-pink-600 mt-4">与您使用的工具无缝连接：钉钉、企业微信、飞书、OA系统。在审批流中创建花礼、分享祝福、定时配送。</p>
+                        <div class="flex flex-wrap gap-4 mt-6">
+                            <span class="border border-pink-300 text-pink-600 px-4 py-2 rounded-full text-sm">企业微信导入</span>
+                            <span class="border border-pink-300 text-pink-600 px-4 py-2 rounded-full text-sm">开放API</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="工作流集成花束" class="rounded-2xl shadow-lg object-cover w-full h-80">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 统计区块 (企业客户留存等) ************ -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div><div class="text-4xl font-bold text-pink-500">500+</div><div class="text-pink-700 mt-1">企业客户</div></div>
+                    <div><div class="text-4xl font-bold text-pink-500">98%</div><div class="text-pink-700 mt-1">客户留存率</div></div>
+                    <div><div class="text-4xl font-bold text-pink-500">20K+</div><div class="text-pink-700 mt-1">月均花束</div></div>
+                    <div><div class="text-4xl font-bold text-pink-500">24/7</div><div class="text-pink-700 mt-1">花艺咨询</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 客户案例区块 ************ -->
+        <section class="py-16 bg-pink-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-pink-800">他们正在使用我们的花礼服务</h2>
+                    <p class="text-pink-500 mt-2">来自各行业领先企业的信赖与认可</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- 案例1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center text-pink-600">🏢</div><span class="font-semibold text-pink-800">科技创新</span></div><p class="text-pink-600 text-sm mt-3">"员工幸福感提升40%，节日关怀变得前所未有的有温度。"</p><div class="flex items-center mt-4 gap-3"><div class="w-8 h-8 bg-pink-100 rounded-full"></div><div><p class="text-sm font-medium text-pink-800">李志强</p><p class="text-xs text-pink-400">CTO</p></div></div></div>
+                    <!-- 案例2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center text-pink-600">📚</div><span class="font-semibold text-pink-800">未来教育</span></div><p class="text-pink-600 text-sm mt-3">"集成的教务系统让教师生日鲜花管理更加高效。"</p><div class="flex items-center mt-4 gap-3"><div class="w-8 h-8 bg-pink-100 rounded-full"></div><div><p class="text-sm font-medium text-pink-800">王美玲</p><p class="text-xs text-pink-400">教务主任</p></div></div></div>
+                    <!-- 案例3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-sm"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-pink-200 rounded-full flex items-center justify-center text-pink-600">🏭</div><span class="font-semibold text-pink-800">智造科技</span></div><p class="text-pink-600 text-sm mt-3">"本地花艺布置完美满足我们的接待需求，客户来访印象深刻。"</p><div class="flex items-center mt-4 gap-3"><div class="w-8 h-8 bg-pink-100 rounded-full"></div><div><p class="text-sm font-medium text-pink-800">张建国</p><p class="text-xs text-pink-400">IT总监</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ CTA 区块 (立即提升团队浪漫) ************ -->
+        <section class="py-20 bg-gradient-to-r from-pink-200 to-pink-100">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-4xl font-bold text-pink-800">立即提升团队幸福感</h2>
+                <p class="text-lg text-pink-700 mt-3">加入数百家信任我们的企业，开启鲜花关怀之旅。</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a href="#" class="bg-white text-pink-600 hover:bg-pink-50 px-10 py-4 rounded-full text-lg font-semibold shadow-md transition">免费试用30天</a>
+                    <a href="#" class="border-2 border-white text-white hover:bg-white/10 px-10 py-4 rounded-full text-lg font-semibold transition">预约花艺师</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 认证与资质区块 (安全认证→鲜花奖项) ************ -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-pink-800">行业认证与荣誉</h2>
+                    <p class="text-pink-500 mt-2">我们通过最严格的标准，呵护每一份鲜花</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+                    <div class="border border-pink-100 rounded-xl p-4 text-center"><span class="text-3xl">🌐</span><h4 class="font-semibold text-pink-800 mt-2">ISO 9001</h4><p class="text-xs text-pink-400">质量管理</p></div>
+                    <div class="border border-pink-100 rounded-xl p-4 text-center"><span class="text-3xl">📜</span><h4 class="font-semibold text-pink-800 mt-2">有机认证</h4><p class="text-xs text-pink-400">欧洲标准</p></div>
+                    <div class="border border-pink-100 rounded-xl p-4 text-center"><span class="text-3xl">🏆</span><h4 class="font-semibold text-pink-800 mt-2">最佳花礼品牌</h4><p class="text-xs text-pink-400">2023 行业奖</p></div>
+                    <div class="border border-pink-100 rounded-xl p-4 text-center"><span class="text-3xl">⭐</span><h4 class="font-semibold text-pink-800 mt-2">客户满意金奖</h4><p class="text-xs text-pink-400">Gartner</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 价格区块 (灵活定价→花束套餐) ************ -->
+        <section class="py-16 bg-pink-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-pink-800">灵活花礼套餐</h2>
+                    <p class="text-pink-500 mt-2">按需选择，无隐藏费用</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-2xl p-8 border border-pink-100"><h3 class="text-xl font-semibold text-pink-800">基础版</h3><p class="mt-4 text-3xl font-bold text-pink-500">¥49 <span class="text-sm font-normal text-pink-300">/月/人</span></p><ul class="mt-6 space-y-2 text-pink-700"><li>🌸 每月4束混合花</li><li>📦 标准包装</li><li>📋 基础祝福卡</li></ul><a href="#" class="mt-8 block text-center border border-pink-300 text-pink-600 py-2 rounded-full hover:bg-pink-50">选择基础版</a></div>
+                    <!-- 商业版(热门) -->
+                    <div class="bg-white rounded-2xl p-8 border-2 border-pink-400 shadow-xl relative"><span class="absolute -top-3 right-6 bg-pink-400 text-white text-xs px-3 py-1 rounded-full">最受欢迎</span><h3 class="text-xl font-semibold text-pink-800">商业版</h3><p class="mt-4 text-3xl font-bold text-pink-500">¥99 <span class="text-sm font-normal text-pink-300">/月/人</span></p><ul class="mt-6 space-y-2 text-pink-700"><li>🌹 每月8束 premium花</li><li>🎁 定制礼盒+丝带</li><li>✉️ 企业专属贺卡</li><li>🚚 优先配送</li></ul><a href="#" class="mt-8 block text-center bg-pink-400 text-white py-2 rounded-full hover:bg-pink-500">选择商业版</a></div>
+                    <!-- 企业版 -->
+                    <div class="bg-white rounded-2xl p-8 border border-pink-100"><h3 class="text-xl font-semibold text-pink-800">企业版</h3><p class="mt-4 text-3xl font-bold text-pink-500">定制</p><ul class="mt-6 space-y-2 text-pink-700"><li>🏢 无限次场景花艺</li><li>🌿 顶级花材/全球采购</li><li>📅 年度节日规划</li><li>🤝 专属花艺师对接</li></ul><a href="#" class="mt-8 block text-center border border-pink-300 text-pink-600 py-2 rounded-full hover:bg-pink-50">联系销售</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ************ 常见问题区块 ************ -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-pink-800 text-center">常见问题</h2>
+                <div class="mt-10 space-y-4">
+                    <div class="border-b border-pink-100 pb-4"><p class="font-medium text-pink-800">🌸 支持企业定制专属花盒吗？</p><p class="text-pink-600 text-sm mt-1">是的，企业版可设计专属花盒，加入公司Logo与主题色。</p></div>
+                    <div class="border-b border-pink-100 pb-4"><p class="font-medium text-pink-800">🌸 可以试用多久？</p><p class="text-pink-600 text-sm mt-1">所有新企业用户可享受30天全功能免费试用，包含两次配送。</p></div>
+                    <div class="border-b border-pink-100 pb-4"><p class="font-medium text-pink-800">🌸 鲜花从哪里发货？</p><p class="text-pink-600 text-sm mt-1">我们在北京、上海、广州、成都设有自营花房，就近冷链配送。</p></div>
+                    <div class="border-b border-pink-100 pb-4"><p class="font-medium text-pink-800">🌸 如何迁移现有员工生日数据？</p><p class="text-pink-600 text-sm mt-1">提供专业导入工具，支持Excel、钉钉、企业微信一键同步。</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- █ 页脚：品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码 -->
+    <footer class="bg-pink-50 border-t border-pink-200 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- 品牌Logo + 简介 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2"><div class="w-8 h-8 rounded-full bg-pink-300 flex items-center justify-center text-white text-xl">🌸</div><span class="font-semibold text-2xl text-pink-700">花间梦</span></div>
+                    <p class="text-pink-500 text-sm mt-3">为企业传递情感与美学，让每一束花都成为品牌温度。</p>
+                    <p class="text-pink-400 text-xs mt-4">© 2025 花间梦 · 浪漫花礼 版权所有</p>
+                </div>
+                <!-- 公司地址 -->
+                <div><h4 class="font-semibold text-pink-700 mb-3">公司地址</h4><address class="not-italic text-pink-500 text-sm">上海市浦东新区<br>花艺路188号<br>梦花园B座</address></div>
+                <!-- 联系方式 -->
+                <div><h4 class="font-semibold text-pink-700 mb-3">联系方式</h4><p class="text-pink-500 text-sm">📞 400-8820-520<br>✉️ hello@huajianmeng.com<br>🕒 周一至周日 9:00-21:00</p></div>
+                <!-- 微信公众号二维码 -->
+                <div><h4 class="font-semibold text-pink-700 mb-3">公众号</h4><div class="w-24 h-24 bg-pink-200 rounded-lg flex items-center justify-center text-pink-500 text-4xl border border-pink-300">📱</div><p class="text-pink-400 text-xs mt-2">扫一扫 关注花间梦</p></div>
+            </div>
+            <div class="border-t border-pink-200 mt-10 pt-6 text-center text-pink-400 text-xs">浪漫唯美 · 每一束花都有故事</div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>酷玩矩阵 · 赛博朋克企业落地页</title>
+  <!-- 纯 Tailwind CSS，无任何自定义样式 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 仅添加字体，无自定义CSS类 -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 只有字体设置，没有自定义CSS类 */
+    body { font-family: 'Space Grotesk', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#0a0c1a] text-gray-200">
+
+  <!-- 导航栏 - 纯Tailwind类实现 -->
+  <nav class="sticky top-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 border-b border-cyan-500/30 bg-[#0a0c1a]/90 backdrop-blur-md">
+    <!-- Logo区域 -->
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-fuchsia-600 flex items-center justify-center text-black font-bold text-xl shadow-[0_0_15px_#0ff]">
+        K
+      </div>
+      <span class="text-2xl font-bold tracking-widest uppercase text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsie-400 [text-shadow:0_0_10px_#0ff]">
+        酷玩矩阵
+      </span>
+    </div>
+    <!-- CTA按钮 -->
+    <a href="#" class="px-6 py-3 border-2 border-cyan-400 text-cyan-400 font-semibold uppercase tracking-wider hover:bg-cyan-400 hover:text-[#0a0c1a] transition-all duration-300 shadow-[0_0_10px_#0ff] hover:shadow-[0_0_20px_#0ff]">
+      进入赛博空间
+    </a>
+  </nav>
+
+  <main class="relative overflow-hidden">
+    <!-- 背景光效 - 纯Tailwind类 -->
+    <div class="fixed inset-0 pointer-events-none">
+      <div class="absolute top-20 left-10 w-72 h-72 bg-fuchsia-600/20 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-600/20 rounded-full blur-[150px]"></div>
+      <!-- 网格背景 - 使用纯Tailwind背景图类 -->
+      <div class="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
+    </div>
+
+    <!-- 1. 首屏区块 (Hero) -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20 md:py-28">
+      <div class="flex flex-col items-center text-center">
+        <h1 class="text-5xl md:text-7xl font-black uppercase leading-tight">
+          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-white to-fuchsia-400 [text-shadow:0_0_20px_#0ff]">
+            ⚡ 次世代电竞 ⚡
+          </span>
+          <span class="text-4xl md:text-6xl mt-2 block text-cyan-200 [text-shadow:0_0_10px_#0ff]">
+            集结，就在此刻
+          </span>
+        </h1>
+        <p class="max-w-3xl mt-8 text-lg md:text-xl text-gray-300/90">
+          职业级战术通讯 & 数据中枢 —— 延迟低于1ms，全息沙盘、实时语音、AI教练。专为硬核玩家与战队打造。
+        </p>
+        <p class="text-cyan-400/80 mt-2">支持跨平台 · 职业选手首选</p>
+        
+        <!-- 图片占位 - 使用背景图实现 -->
+        <div class="mt-12 w-full h-72 md:h-96 rounded-lg border border-cyan-500/30 bg-cover bg-center bg-no-repeat relative overflow-hidden shadow-[0_0_30px_#0ff33]"
+             style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop');">
+          <div class="absolute inset-0 bg-gradient-to-t from-cyan-900/60 to-transparent"></div>
+          <div class="absolute inset-0 bg-[#0a0c1a]/40"></div>
+          <span class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 px-6 py-2 text-cyan-300 border border-cyan-500/30 backdrop-blur-sm">
+            [ 全息战术界面 ]
+          </span>
+        </div>
+        
+        <!-- 按钮组 -->
+        <div class="flex flex-wrap gap-6 mt-12 justify-center">
+          <a href="#" class="px-8 py-4 border-2 border-fuchsia-400 text-fuchsia-400 font-bold uppercase tracking-wider hover:bg-fuchsia-400 hover:text-[#0a0c1a] transition-all duration-300 shadow-[0_0_15px_#f0f] hover:shadow-[0_0_30px_#f0f]">
+            开始战斗
+          </a>
+          <a href="#" class="px-8 py-4 border-2 border-cyan-400 text-cyan-400 font-bold uppercase tracking-wider hover:bg-cyan-400 hover:text-[#0a0c1a] transition-all duration-300 shadow-[0_0_15px_#0ff] hover:shadow-[0_0_30px_#0ff]">
+            联系领队
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 霓虹分割线 - 纯Tailwind -->
+    <div class="h-[2px] w-full bg-gradient-to-r from-transparent via-cyan-400 to-transparent"></div>
+
+    <!-- 2. 左图右文区块 -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-400 [text-shadow:0_0_10px_#0ff]">
+            🎧 零延迟战队语音
+          </h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-fuchsia-500 my-4"></div>
+          <p class="text-lg text-gray-300/90 mt-4">
+            基于量子回声消除与动态路由，20人同时开黑依然清晰。集成游戏内状态、自动变声、战术标记。战队指挥如臂使指。
+          </p>
+          <div class="mt-8 space-y-2">
+            <span class="block text-cyan-300">🔊 48kHz 无损音频 · 环境降噪</span>
+            <span class="block text-cyan-300">⚡ 智能语音触发 · 热点图回溯</span>
+          </div>
+        </div>
+        <div class="order-1 md:order-2 h-80 rounded-lg border border-cyan-500/30 bg-cover bg-center bg-no-repeat shadow-[0_0_30px_#0ff33] relative"
+             style="background-image: url('https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop');">
+          <span class="absolute bottom-0 left-0 right-0 bg-black/60 text-center py-2 text-cyan-300 backdrop-blur-sm border-t border-cyan-500/30">
+            [ 战队语音界面 ]
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 左文右图区块 -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-1">
+          <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-cyan-300 [text-shadow:0_0_10px_#f0f]">
+            🕹️ 深度集成游戏生态
+          </h2>
+          <div class="w-16 h-1 bg-gradient-to-r from-fuchsia-500 to-cyan-400 my-4"></div>
+          <p class="text-lg text-gray-300/90">
+            连接Steam、EPIC、对战平台。自动导入战绩、装备、录像；在聊天中直接拉取数据、发起约战、启动训练赛。
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <span class="px-4 py-2 border border-cyan-400 text-cyan-300 shadow-[0_0_5px_#0ff]">⏺️ 直播模式</span>
+            <span class="px-4 py-2 border border-fuchsia-400 text-fuchsia-300 shadow-[0_0_5px_#f0f]">📊 数据API开放</span>
+          </div>
+        </div>
+        <div class="order-2 h-80 rounded-lg border border-fuchsia-500/30 bg-cover bg-center bg-no-repeat shadow-[0_0_30px_#f0f33] relative"
+             style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=2065&auto=format&fit=crop');">
+          <span class="absolute bottom-0 left-0 right-0 bg-black/60 text-center py-2 text-fuchsia-300 backdrop-blur-sm border-t border-fuchsia-500/30">
+            [ 游戏内嵌工作流 ]
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 上文下图区块 -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-cyan-400 [text-shadow:0_0_10px_#0ff]">
+          📱 全平台 · 赛博同步
+        </h2>
+        <div class="w-24 h-1 mx-auto bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-cyan-400 my-4"></div>
+        <p class="text-xl max-w-2xl mx-auto text-gray-300/90">
+          PC、手机、平板、甚至智能手表 —— 战绩、聊天、配置实时云同步。随时随地查看队友动态。
+        </p>
+      </div>
+      <div class="mt-12 h-96 rounded-lg border border-cyan-500/30 bg-cover bg-center bg-no-repeat shadow-[0_0_30px_#0ff33] relative"
+           style="background-image: url('https://images.unsplash.com/photo-1600861194942-f883de0dfe96?q=80&w=2069&auto=format&fit=crop');">
+        <span class="absolute bottom-0 left-0 right-0 bg-black/70 text-center py-3 text-cyan-300 text-xl tracking-widest border-t border-cyan-500/30">
+          [ 多端作战矩阵 ]
+        </span>
+      </div>
+    </section>
+
+    <!-- 5. 特性区块 -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-400 [text-shadow:0_0_10px_#0ff]">
+          ⚙️ 职业级特性
+        </h2>
+        <p class="text-cyan-300 mt-2">从反作弊到AI陪练，面面俱到</p>
+      </div>
+      
+      <!-- 特性卡片网格 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+        <!-- 卡片1 -->
+        <div class="p-6 text-center border border-cyan-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#0ff33] hover:shadow-[0_0_30px_#0ff] transition-all duration-300">
+          <div class="text-5xl mb-3">🛡️</div>
+          <h3 class="text-xl font-bold text-cyan-300">内核级反作弊</h3>
+          <p class="text-gray-400 mt-2">行为监测 + AI识别，公平竞技</p>
+        </div>
+        <!-- 卡片2 -->
+        <div class="p-6 text-center border border-fuchsia-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#f0f33] hover:shadow-[0_0_30px_#f0f] transition-all duration-300">
+          <div class="text-5xl mb-3">⚡</div>
+          <h3 class="text-xl font-bold text-fuchsia-300">超低延迟数据</h3>
+          <p class="text-gray-400 mt-2">全球专线，指令同步<1ms</p>
+        </div>
+        <!-- 卡片3 -->
+        <div class="p-6 text-center border border-cyan-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#0ff33] hover:shadow-[0_0_30px_#0ff] transition-all duration-300">
+          <div class="text-5xl mb-3">🧩</div>
+          <h3 class="text-xl font-bold text-cyan-300">全游戏插件</h3>
+          <p class="text-gray-400 mt-2">适配200+游戏，数据覆盖</p>
+        </div>
+        <!-- 卡片4 -->
+        <div class="p-6 text-center border border-fuchsia-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#f0f33] hover:shadow-[0_0_30px_#f0f] transition-all duration-300">
+          <div class="text-5xl mb-3">📈</div>
+          <h3 class="text-xl font-bold text-fuchsia-300">AI 复盘教练</h3>
+          <p class="text-gray-400 mt-2">热力图、爆头率、走位分析</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 团队区块 -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-400 [text-shadow:0_0_10px_#0ff]">
+          👾 核心赛博选手
+        </h2>
+        <p class="text-cyan-300/80">前世界冠军 · 数据科学家 · 战术鬼才</p>
+      </div>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <!-- 成员1 -->
+        <div class="p-6 text-center border border-cyan-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#0ff33]">
+          <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-[0_0_15px_#0ff]">
+            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=150&h=150&fit=crop" alt="Zero" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-xl font-bold mt-4 text-cyan-200">Zero</h3>
+          <p class="text-fuchsia-400">IG 冠军指挥</p>
+          <p class="text-sm text-gray-400 mt-2">前NAVI战术大脑</p>
+        </div>
+        <!-- 成员2 -->
+        <div class="p-6 text-center border border-fuchsia-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#f0f33]">
+          <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-fuchsia-400 shadow-[0_0_15px_#f0f]">
+            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150&h=150&fit=crop" alt="Vex" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-xl font-bold mt-4 text-cyan-200">Vex</h3>
+          <p class="text-fuchsia-400">首席数据官</p>
+          <p class="text-sm text-gray-400 mt-2">MIT 运算神经学</p>
+        </div>
+        <!-- 成员3 -->
+        <div class="p-6 text-center border border-cyan-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#0ff33]">
+          <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-cyan-400 shadow-[0_0_15px_#0ff]">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop" alt="Neon" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-xl font-bold mt-4 text-cyan-200">Neon</h3>
+          <p class="text-fuchsia-400">硬件架构师</p>
+          <p class="text-sm text-gray-400 mt-2">前Razer 总工程师</p>
+        </div>
+        <!-- 成员4 -->
+        <div class="p-6 text-center border border-fuchsia-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#f0f33]">
+          <div class="w-28 h-28 mx-auto rounded-full overflow-hidden border-2 border-fuchsia-400 shadow-[0_0_15px_#f0f]">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop" alt="Luna" class="w-full h-full object-cover" />
+          </div>
+          <h3 class="text-xl font-bold mt-4 text-cyan-200">Luna</h3>
+          <p class="text-fuchsia-400">交互设计</p>
+          <p class="text-sm text-gray-400 mt-2">全息界面主理</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 统计区块 -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="text-center border border-cyan-500/30 p-6 backdrop-blur-sm bg-[#0a0c1a]/50 shadow-[0_0_15px_#0ff33]">
+          <div class="text-4xl font-black text-cyan-300 [text-shadow:0_0_10px_#0ff]">500+</div>
+          <div class="text-sm uppercase tracking-widest text-gray-400 mt-1">职业战队</div>
+        </div>
+        <div class="text-center border border-fuchsia-500/30 p-6 backdrop-blur-sm bg-[#0a0c1a]/50 shadow-[0_0_15px_#f0f33]">
+          <div class="text-4xl font-black text-fuchsia-300 [text-shadow:0_0_10px_#f0f]">98%</div>
+          <div class="text-sm uppercase tracking-widest text-gray-400 mt-1">选手留存率</div>
+        </div>
+        <div class="text-center border border-cyan-500/30 p-6 backdrop-blur-sm bg-[#0a0c1a]/50 shadow-[0_0_15px_#0ff33]">
+          <div class="text-4xl font-black text-cyan-300 [text-shadow:0_0_10px_#0ff]">20M+</div>
+          <div class="text-sm uppercase tracking-widest text-gray-400 mt-1">日语音消息</div>
+        </div>
+        <div class="text-center border border-fuchsia-500/30 p-6 backdrop-blur-sm bg-[#0a0c1a]/50 shadow-[0_0_15px_#f0f33]">
+          <div class="text-4xl font-black text-fuchsia-300 [text-shadow:0_0_10px_#f0f]">24/7</div>
+          <div class="text-sm uppercase tracking-widest text-gray-400 mt-1">赛博裁判</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 价格区块 -->
+    <section class="relative max-w-7xl mx-auto px-6 py-20">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-400 [text-shadow:0_0_10px_#0ff]">
+          💎 战斗套餐
+        </h2>
+        <p class="text-cyan-300/80">无隐形消耗，赞助商折扣</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 mt-16">
+        <!-- 基础版 -->
+        <div class="p-8 flex flex-col border border-cyan-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#0ff33]">
+          <h3 class="text-2xl font-bold">🔰 新兵版</h3>
+          <div class="text-3xl font-mono my-4 text-cyan-300">
+            <span class="text-sm align-top">$</span>49<span class="text-sm text-gray-400">/月/人</span>
+          </div>
+          <ul class="space-y-2 text-gray-300 flex-1">
+            <li class="flex gap-2"><span class="text-cyan-400">▶</span> 语音历史90天</li>
+            <li class="flex gap-2"><span class="text-cyan-400">▶</span> 50GB 录像云存</li>
+            <li class="flex gap-2"><span class="text-cyan-400">▶</span> 基础数据API</li>
+          </ul>
+          <a href="#" class="mt-8 border-2 border-cyan-400 text-cyan-400 text-center py-3 block font-semibold hover:bg-cyan-400 hover:text-[#0a0c1a] transition-all duration-300 shadow-[0_0_10px_#0ff] hover:shadow-[0_0_30px_#0ff]">
+            选择新兵版
+          </a>
+        </div>
+        
+        <!-- 热门版 -->
+        <div class="p-8 flex flex-col border-2 border-fuchsia-500 bg-[#0a0c1a]/80 backdrop-blur-sm shadow-[0_0_40px_#f0f] relative transform scale-105">
+          <span class="absolute -top-3 right-4 bg-fuchsia-500 text-black px-3 py-1 text-xs font-bold">🔥 热门</span>
+          <h3 class="text-2xl font-bold">⚡ 王牌版</h3>
+          <div class="text-3xl font-mono my-4 text-fuchsia-300">
+            <span class="text-sm align-top">$</span>99<span class="text-sm text-gray-400">/月/人</span>
+          </div>
+          <ul class="space-y-2 text-gray-300 flex-1">
+            <li class="flex gap-2"><span class="text-fuchsia-400">▶</span> 无限语音历史</li>
+            <li class="flex gap-2"><span class="text-fuchsia-400">▶</span> 500GB 存储 + 自动高光</li>
+            <li class="flex gap-2"><span class="text-fuchsia-400">▶</span> AI 实时教练</li>
+            <li class="flex gap-2"><span class="text-fuchsia-400">▶</span> 专属比赛服</li>
+          </ul>
+          <a href="#" class="mt-8 bg-fuchsia-500 text-black text-center py-3 block font-bold hover:bg-fuchsia-400 transition-all duration-300 shadow-[0_0_20px_#f0f] hover:shadow-[0_0_40px_#f0f]">
+            选择王牌版
+          </a>
+        </div>
+        
+        <!-- 企业版 -->
+        <div class="p-8 flex flex-col border border-cyan-500/30 bg-[#0a0c1a]/70 backdrop-blur-sm shadow-[0_0_20px_#0ff33]">
+          <h3 class="text-2xl font-bold">🏆 传奇版</h3>
+          <div class="text-3xl font-mono my-4 text-cyan-300">
+            <span class="text-lg">定制</span>
+          </div>
+          <ul class="space-y-2 text-gray-300 flex-1">
+            <li class="flex gap-2"><span class="text-cyan-400">▶</span> 私有化服务器</li>
+            <li class="flex gap-2"><span class="text-cyan-400">▶</span> 无限存储 / 选手管理</li>
+            <li class="flex gap-2"><span class="text-cyan-400">▶</span> 专属数据中台</li>
+            <li class="flex gap-2"><span class="text-cyan-400">▶</span> 战队形象全定制</li>
+          </ul>
+          <a href="#" class="mt-8 border-2 border-cyan-400 text-cyan-400 text-center py-3 block font-semibold hover:bg-cyan-400 hover:text-[#0a0c1a] transition-all duration-300 shadow-[0_0_10px_#0ff] hover:shadow-[0_0_30px_#0ff]">
+            联系赛博经理
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. FAQ区块 -->
+    <section class="relative max-w-4xl mx-auto px-6 py-20">
+      <h2 class="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-400 [text-shadow:0_0_10px_#0ff]">
+        ❓ 常见解码
+      </h2>
+      
+      <div class="mt-12 space-y-4">
+        <div class="border border-cyan-500/30 p-5 bg-[#0a0c1a]/50 backdrop-blur-sm shadow-[0_0_10px_#0ff33]">
+          <p class="text-lg font-semibold text-cyan-300">可以自建比赛服务器吗？</p>
+          <p class="text-gray-400 mt-1">王牌版及以上支持一键部署自定义对战线，延迟路由优化。</p>
+        </div>
+        <div class="border border-fuchsia-500/30 p-5 bg-[#0a0c1a]/50 backdrop-blur-sm shadow-[0_0_10px_#f0f33]">
+          <p class="text-lg font-semibold text-fuchsia-300">免费试用多久？</p>
+          <p class="text-gray-400 mt-1">所有新战队可享45天全功能试炼，无需信用卡。</p>
+        </div>
+        <div class="border border-cyan-500/30 p-5 bg-[#0a0c1a]/50 backdrop-blur-sm shadow-[0_0_10px_#0ff33]">
+          <p class="text-lg font-semibold text-cyan-300">数据存储在哪个区域？</p>
+          <p class="text-gray-400 mt-1">上海、法兰克福、弗吉尼亚三地可选，符合当地电竞数据条例。</p>
+        </div>
+        <div class="border border-fuchsia-500/30 p-5 bg-[#0a0c1a]/50 backdrop-blur-sm shadow-[0_0_10px_#f0f33]">
+          <p class="text-lg font-semibold text-fuchsia-300">如何迁移战队聊天记录？</p>
+          <p class="text-gray-400 mt-1">提供Discord、YY、TeamSpeak 导入工具，全自动迁移。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CTA区块 -->
+    <section class="relative max-w-5xl mx-auto px-6 py-24 text-center">
+      <h2 class="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-400 [text-shadow:0_0_20px_#0ff]">
+        ⌛ 加入赛博矩阵
+      </h2>
+      <p class="text-2xl mt-4 text-gray-300">已有 487 支战队选择酷玩，开启你的传奇</p>
+      <div class="flex flex-wrap gap-6 justify-center mt-10">
+        <a href="#" class="px-10 py-5 bg-cyan-400 text-black font-bold text-xl tracking-widest hover:shadow-[0_0_40px_#0ff] transition-all duration-300 shadow-[0_0_20px_#0ff]">
+          ⚔️ 免费试玩45天
+        </a>
+        <a href="#" class="px-10 py-5 border-2 border-fuchsia-400 text-fuchsia-400 font-bold text-xl tracking-widest hover:bg-fuchsia-400 hover:text-black transition-all duration-300 shadow-[0_0_20px_#f0f] hover:shadow-[0_0_40px_#f0f]">
+          👾 预约全息演示
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="border-t border-fuchsia-500/30 bg-[#050714] text-gray-400 py-8 text-center text-sm shadow-[0_-10px_30px_#f0f33]">
+    <div class="max-w-7xl mx-auto px-6">
+      <p>© 2026 酷玩矩阵 · 赛博纪元  |  保留一切数字权利  |  版本 v2.0.6</p>
+      <p class="text-xs text-cyan-700/70 mt-2">[ 信号增强中 — 节点上海 / 法兰克福 / 洛杉矶 ]</p>
+    </div>
+  </footer>
+</body>
+</html>

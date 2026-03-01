@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金策投资 · 机构理财</title>
+    <!-- Tailwind via CDN + 稳重深蓝金基调 (完全使用Tailwind类, 无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入Inter字体优化可读性 (仅字体链接, 非自定义样式) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 为了保证字体一致，简单设置，未使用任何自定义样式class，仅对body设置字体族 (属于合理使用tailwind未覆盖的基础设置) */
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+    <!-- 导航栏 (包含logo、标题、CTA按钮，不含菜单) 稳重深蓝+金色点缀 -->
+    <nav class="border-b border-slate-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center gap-3">
+                    <!-- 金色icon/logo 使用深蓝底色圆形 -->
+                    <div class="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center text-amber-400 text-xl font-semibold shadow-sm">金</div>
+                    <span class="text-2xl font-bold tracking-tight text-blue-950">金策投资<span class="text-amber-600 ml-1 text-lg font-medium">·机构理财</span></span>
+                </div>
+                <!-- CTA 按钮 (金色) -->
+                <div>
+                    <a href="/contact" class="inline-flex items-center px-5 py-2.5 bg-amber-500 hover:bg-amber-400 text-blue-950 font-semibold rounded-lg shadow-md transition-colors duration-200">财富顾问预约</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 首屏区块 (投资理财主视觉) 对应JSON首屏结构 -->
+        <section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-950 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight text-white">全球视野 · 稳健配置<br>投资理财 让财富持续增值</h1>
+                        <p class="text-xl text-blue-100 mt-6 max-w-2xl">专业机构级资产配置，固收+权益+另类投资定制。为金融机构、家族办公室提供全方位投资解决方案。</p>
+                        <p class="text-base text-blue-200/80 mt-3">贯穿宏观研判与底层资产，风控体系历经周期考验。</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="/signup" class="bg-amber-500 hover:bg-amber-400 text-blue-950 font-semibold px-6 py-3 rounded-lg shadow-lg text-lg transition">开启机构合作</a>
+                            <a href="/contact" class="border border-amber-400/70 text-amber-400 hover:bg-amber-400/10 px-6 py-3 rounded-lg text-lg font-medium transition">联系客户总监</a>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border border-blue-800">
+                        <img class="w-full h-auto object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="投资理财团队协作分析" >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (金色数字) 使用深蓝背景 -->
+        <section class="bg-blue-900 py-12 border-t border-b border-blue-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <!-- 按照统计区块JSON数据: 投资理财相关调整数值 -->
+                    <div class="bg-blue-800/40 p-6 rounded-xl backdrop-blur">
+                        <div class="text-4xl md:text-5xl font-bold text-amber-400">320+</div>
+                        <div class="text-blue-100 text-sm uppercase tracking-wider mt-2">金融机构客户</div>
+                    </div>
+                    <div class="bg-blue-800/40 p-6 rounded-xl backdrop-blur">
+                        <div class="text-4xl md:text-5xl font-bold text-amber-400">98.6%</div>
+                        <div class="text-blue-100 text-sm uppercase tracking-wider mt-2">客户留存率</div>
+                    </div>
+                    <div class="bg-blue-800/40 p-6 rounded-xl backdrop-blur">
+                        <div class="text-4xl md:text-5xl font-bold text-amber-400">¥280亿</div>
+                        <div class="text-blue-100 text-sm uppercase tracking-wider mt-2">托管资产规模</div>
+                    </div>
+                    <div class="bg-blue-800/40 p-6 rounded-xl backdrop-blur">
+                        <div class="text-4xl md:text-5xl font-bold text-amber-400">24/7</div>
+                        <div class="text-blue-100 text-sm uppercase tracking-wider mt-2">专属客户支持</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通 -> 专业投研沟通) 对应左图右文 -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <img class="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="投资团队沟通">
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-blue-950">专业投研 · 无缝沟通</h2>
+                        <p class="text-lg text-slate-600 mt-4">打破信息孤岛，通过加密群组、实时路演和投研数据分享，让基金经理、分析师与风控快速同步。集成企业级目录，一键联系同事。</p>
+                        <div class="flex items-center gap-6 mt-6 text-blue-900">
+                            <span class="flex items-center gap-2"><span class="text-amber-500 text-xl">✓</span> 端到端加密</span>
+                            <span class="flex items-center gap-2"><span class="text-amber-500 text-xl">✓</span> 无限历史回溯</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流 -> 深度资产配置) 对应左文右图 -->
+        <section class="bg-slate-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-blue-950">深度资产配置模型</h2>
+                        <p class="text-lg text-slate-600 mt-4">与您使用的系统无缝连接：Bloomberg、Wind、财富管理系统。在投决会中创建组合、分享压力测试、触发再平衡策略。</p>
+                        <div class="flex flex-wrap gap-4 mt-6">
+                            <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full font-medium text-sm">量化接口</span>
+                            <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full font-medium text-sm">数据开放API</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="rounded-2xl shadow-xl w-full object-cover aspect-[4/3]" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="工作流集成投研">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台一致体验 -> 多终端全球配置) 对应上文下图结构 -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-950">多终端全球配置 · 实时同步</h2>
+                <p class="text-lg text-slate-600 mt-3 max-w-2xl mx-auto">无论是在办公室、移动端或海外差旅，组合净值、市场异动实时同步，操作流畅如一。</p>
+                <div class="mt-10 rounded-2xl overflow-hidden shadow-2xl border border-slate-200">
+                    <img class="w-full object-cover aspect-[16/9]" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=1200&auto=format" alt="多设备支持投资理财">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 专为投资理财打造 使用金色与深蓝卡片 -->
+        <section class="bg-slate-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-950">专为金融机构打造的特性</h2>
+                    <p class="text-lg text-slate-600 mt-2">从安全到效率，面面俱到</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- 特性卡片 使用json emoji 但风格专业 -->
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🔒</div>
+                        <h3 class="text-xl font-bold text-blue-900">企业级安全</h3>
+                        <p class="text-slate-600 mt-2 text-sm">端到端加密、多级权限、数据隔离，满足合规审计。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h3 class="text-xl font-bold text-blue-900">实时同步</h3>
+                        <p class="text-slate-600 mt-2 text-sm">毫秒级净值更新，跨终端已读回执与交易确认。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">🧩</div>
+                        <h3 class="text-xl font-bold text-blue-900">无限集成</h3>
+                        <p class="text-slate-600 mt-2 text-sm">对接200+数据源、托管系统及自定义风控模型。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-slate-200 hover:shadow-lg transition">
+                        <div class="text-4xl mb-3">📊</div>
+                        <h3 class="text-xl font-bold text-blue-900">分析洞察</h3>
+                        <p class="text-slate-600 mt-2 text-sm">组合归因、风险价值(VaR)可视化，一键生成报表。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (投资理财核心团队) -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-950">核心投资团队</h2>
+                    <p class="text-lg text-slate-600">来自全球顶尖机构的资产专家</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 团队成员 根据JSON区块结构微调 使用相同头像但姓名职位符合投资理财 -->
+                    <div class="text-center">
+                        <img class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-amber-300 shadow-md" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&auto=format" alt="张伟">
+                        <h3 class="text-xl font-bold mt-4 text-blue-900">张伟</h3>
+                        <p class="text-amber-600 font-medium">CIO 首席投资官</p>
+                        <p class="text-slate-500 text-sm mt-1">前高盛资产配置主管</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-amber-300 shadow-md" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format" alt="陈敏">
+                        <h3 class="text-xl font-bold mt-4 text-blue-900">陈敏</h3>
+                        <p class="text-amber-600 font-medium">固定收益总监</p>
+                        <p class="text-slate-500 text-sm mt-1">前PIMCO副总裁</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-amber-300 shadow-md" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&auto=format" alt="王磊">
+                        <h3 class="text-xl font-bold mt-4 text-blue-900">王磊</h3>
+                        <p class="text-amber-600 font-medium">权益投资总监</p>
+                        <p class="text-slate-500 text-sm mt-1">前富达基金经理</p>
+                    </div>
+                    <div class="text-center">
+                        <img class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-amber-300 shadow-md" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format" alt="李莉">
+                        <h3 class="text-xl font-bold mt-4 text-blue-900">李莉</h3>
+                        <p class="text-amber-600 font-medium">风险管理负责人</p>
+                        <p class="text-slate-500 text-sm mt-1">前摩根大通风控</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (灵活定价 适配理财机构服务) 深蓝卡片金色标 -->
+        <section class="bg-slate-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-950">机构服务方案</h2>
+                    <p class="text-lg text-slate-600">按需定制，无隐藏费用</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-slate-200 p-8">
+                        <h3 class="text-2xl font-bold text-blue-900">核心投顾</h3>
+                        <div class="mt-4 flex items-baseline">
+                            <span class="text-5xl font-extrabold text-blue-900">¥49</span>
+                            <span class="text-slate-500 ml-2">万/年起</span>
+                        </div>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 宏观策略月报</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 基础组合归因</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 邮件推送</li>
+                        </ul>
+                        <a href="/signup/basic" class="mt-8 w-full block text-center bg-blue-100 hover:bg-blue-200 text-blue-900 font-semibold py-3 rounded-xl transition">选择核心投顾</a>
+                    </div>
+                    <!-- 商业版 (热门 金色标) -->
+                    <div class="bg-white rounded-2xl shadow-xl border-2 border-amber-400 p-8 relative transform scale-105">
+                        <span class="absolute top-0 right-8 bg-amber-500 text-blue-950 text-sm font-bold px-3 py-1 rounded-b-lg">最受欢迎</span>
+                        <h3 class="text-2xl font-bold text-blue-900">全面配置</h3>
+                        <div class="mt-4 flex items-baseline">
+                            <span class="text-5xl font-extrabold text-blue-900">¥99</span>
+                            <span class="text-slate-500 ml-2">万/年起</span>
+                        </div>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 宏观+行业深度</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 多资产配置模型</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 实时风控预警</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 专属投顾对接</li>
+                        </ul>
+                        <a href="/signup/business" class="mt-8 w-full block text-center bg-amber-500 hover:bg-amber-400 text-blue-950 font-semibold py-3 rounded-xl transition">选择全面配置</a>
+                    </div>
+                    <!-- 企业版 定制 -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-slate-200 p-8">
+                        <h3 class="text-2xl font-bold text-blue-900">私人定制</h3>
+                        <div class="mt-4 flex items-baseline">
+                            <span class="text-4xl font-extrabold text-blue-900">定制</span>
+                        </div>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 全权委托/投顾</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 家族办公室服务</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 跨境架构设计</li>
+                            <li class="flex items-center gap-2 text-slate-700"><span class="text-amber-500 text-xl">✓</span> 合规/税务优化</li>
+                        </ul>
+                        <a href="/contact" class="mt-8 w-full block text-center bg-blue-100 hover:bg-blue-200 text-blue-900 font-semibold py-3 rounded-xl transition">联系客户总监</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 投资理财FAQ 深蓝色调 -->
+        <section class="bg-white py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-950 mb-10">常见问题</h2>
+                <div class="space-y-5">
+                    <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
+                        <h3 class="text-xl font-semibold text-blue-900">支持本地私有化部署吗？</h3>
+                        <p class="text-slate-600 mt-2">是的，针对银行、保险等机构支持本地服务器或私有云部署，满足最高安全合规要求。</p>
+                    </div>
+                    <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
+                        <h3 class="text-xl font-semibold text-blue-900">投顾服务可以试用多久？</h3>
+                        <p class="text-slate-600 mt-2">所有新机构客户均可享受60天全功能试用，包含宏观模型与组合诊断，无需预付。</p>
+                    </div>
+                    <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
+                        <h3 class="text-xl font-semibold text-blue-900">客户资产托管在何处？</h3>
+                        <p class="text-slate-600 mt-2">资产托管于国有大行及头部券商，备选香港/新加坡托管行，符合各地监管法规。</p>
+                    </div>
+                    <div class="border border-slate-200 rounded-xl p-6 bg-slate-50">
+                        <h3 class="text-xl font-semibold text-blue-900">如何迁移现有投资组合？</h3>
+                        <p class="text-slate-600 mt-2">我们提供专属迁移工具，支持从主流财富系统导入持仓、交易记录及历史绩效。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 立即提升资产配置效率 金色按钮 -->
+        <section class="bg-blue-950 py-20">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">立即提升资产配置效率</h2>
+                <p class="text-xl text-blue-200 mt-3">加入数百家信任我们的金融机构，开启稳健投资之旅。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="/signup" class="bg-amber-500 hover:bg-amber-400 text-blue-950 font-semibold px-8 py-4 rounded-lg text-lg shadow-xl transition">免费试用60天</a>
+                    <a href="/demo" class="border border-amber-400 text-amber-400 hover:bg-amber-400/10 px-8 py-4 rounded-lg text-lg font-medium transition">预约专家演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 简单版权声明 深色金边 -->
+    <footer class="bg-blue-950 border-t border-blue-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-blue-300 text-sm">© 2025 金策投资 · 机构理财事业部。 本页面仅供参考，不构成投资建议。</p>
+            <p class="text-blue-400/60 text-xs mt-2">稳健全配置 · 专业伴未来</p>
+        </div>
+    </footer>
+</body>
+</html>

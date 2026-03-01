@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深蓝·银盾 | 企业级智能协作平台</title>
+    <!-- Tailwind via CDN + 基础层样式 (无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入Inter字体，更符合专业感，但依然通过tailwind配置实现无自定义css原则 (tailwind默认系统字体栈) -->
+    <!-- 为了深蓝银灰风格，使用tailwind配置中的灰色/蓝色/ slate/ zinc等类，完全符合要求 -->
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+    <!-- 导航栏 (包含logo、标题、导航菜单和CTA按钮) 深蓝银灰: 深蓝背景+银灰文字/边框 -->
+    <header class="border-b border-slate-200 bg-[#0b1a33] text-white sticky top-0 z-50 shadow-sm"> 
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-slate-300 rounded-md flex items-center justify-center text-[#0b1a33] font-bold text-xl">S</div>
+                    <span class="font-semibold text-xl tracking-tight text-white">深蓝·银盾</span>
+                </div>
+                <!-- 导航菜单 (桌面) 银灰文字-->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#" class="text-slate-200 hover:text-white transition">首屏</a>
+                    <a href="#features" class="text-slate-200 hover:text-white transition">特性</a>
+                    <a href="#cases" class="text-slate-200 hover:text-white transition">客户</a>
+                    <a href="#pricing" class="text-slate-200 hover:text-white transition">定价</a>
+                    <a href="#resources" class="text-slate-200 hover:text-white transition">资源</a>
+                </nav>
+                <!-- CTA 按钮 (银灰底+深蓝字) -->
+                <div class="flex items-center gap-3">
+                    <a href="/signup" class="hidden sm:inline-block bg-slate-200 text-[#0b1a33] px-5 py-2 rounded-md text-sm font-semibold hover:bg-white transition shadow-sm">开始使用</a>
+                    <button class="md:hidden text-slate-200 text-2xl">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏区块 (深蓝背景渐变保留银灰感) -->
+        <section class="bg-gradient-to-br from-[#0f2a44] to-[#1a3a5f] text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight">企业级即时通讯，<br>让协作更快一步</h1>
+                        <p class="text-xl text-slate-300 mt-6 max-w-lg">安全、高效、可定制——专为现代企业打造的智能聊天平台，集成工作流与数据洞察。</p>
+                        <p class="text-slate-400 mt-2">专为现代企业打造的智能聊天平台，集成工作流与数据洞察。</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="/signup" class="bg-slate-200 text-[#0f2a44] px-6 py-3 rounded-md font-semibold hover:bg-white transition shadow">开始使用</a>
+                            <a href="/contact" class="border border-slate-400 text-slate-200 px-6 py-3 rounded-md font-semibold hover:bg-white/10 transition">联系销售</a>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl border border-slate-600/50">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="团队协作界面" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 银灰浅色背景 -->
+        <section class="bg-slate-100 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-slate-800">我们的生态伙伴</h2>
+                    <p class="text-lg text-slate-600 mt-2">与全球领先的技术公司深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <!-- 伙伴6个 -->
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-slate-300 rounded-full mb-2"></div><span class="font-medium text-slate-800">微软</span><span class="text-xs text-slate-500">金牌合作伙伴</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-slate-300 rounded-full mb-2"></div><span class="font-medium text-slate-800">亚马逊云科技</span><span class="text-xs text-slate-500">高级技术伙伴</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-slate-300 rounded-full mb-2"></div><span class="font-medium text-slate-800">Salesforce</span><span class="text-xs text-slate-500">应用生态伙伴</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-slate-300 rounded-full mb-2"></div><span class="font-medium text-slate-800">Google Cloud</span><span class="text-xs text-slate-500">技术合作伙伴</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-slate-300 rounded-full mb-2"></div><span class="font-medium text-slate-800">Atlassian</span><span class="text-xs text-slate-500">集成合作伙伴</span></div>
+                    <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-slate-300 rounded-full mb-2"></div><span class="font-medium text-slate-800">腾讯云</span><span class="text-xs text-slate-500">战略合作伙伴</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (深蓝灰搭配) 灰色背景交替 -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="团队沟通" class="rounded-xl shadow-lg border border-slate-200"></div>
+                <div><h2 class="text-3xl font-bold text-slate-800">无缝沟通，跨越部门</h2><p class="text-slate-600 mt-4">打破信息孤岛，通过话题群组、私聊和富媒体分享，让每个人都能快速找到所需信息。集成企业目录，一键联系同事。</p><div class="flex gap-4 mt-6"><span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">✅ 端到端加密</span><span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">✅ 无限历史记录</span></div></div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 -->
+        <section class="bg-slate-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div><h2 class="text-3xl font-bold text-slate-800">深度集成工作流</h2><p class="text-slate-600 mt-4">与您使用的工具无缝连接：Jira、GitLab、Google Drive、Salesforce。在聊天中创建任务、分享文件、触发自动化。</p><div class="flex gap-4 mt-6"><span class="bg-slate-200 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">Slack 导入</span><span class="bg-slate-200 text-slate-800 px-3 py-1 rounded-full text-sm font-medium">API 开放</span></div></div>
+                <div><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="工作流集成" class="rounded-xl shadow-lg border border-slate-200"></div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 -->
+        <section class="bg-white py-16 text-center">
+            <div class="max-w-4xl mx-auto px-4"><h2 class="text-3xl font-bold text-slate-800">全平台一致体验</h2><p class="text-slate-600 mt-3">无论是在桌面、网页还是移动端，消息实时同步，操作流畅如一。</p><div class="mt-10 rounded-xl overflow-hidden shadow-lg border"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=1200&auto=format" alt="多设备支持" class="w-full h-auto"></div></div>
+        </section>
+
+        <!-- 特性区块 -->
+        <section id="features" class="bg-slate-100 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center"><h2 class="text-3xl font-bold text-slate-800">专为商务打造的特性</h2><p class="text-slate-600">从安全到效率，面面俱到</p></div>
+                <div class="grid md:grid-cols-4 gap-6 mt-12">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><div class="text-4xl mb-3">🔒</div><h3 class="font-semibold text-slate-800">企业级安全</h3><p class="text-slate-500 text-sm mt-1">端到端加密、SSO、DLP策略，满足合规需求。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><div class="text-4xl mb-3">⚡</div><h3 class="font-semibold text-slate-800">实时同步</h3><p class="text-slate-500 text-sm mt-1">毫秒级延迟，跨设备已读回执与状态。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><div class="text-4xl mb-3">🧩</div><h3 class="font-semibold text-slate-800">无限集成</h3><p class="text-slate-500 text-sm mt-1">连接200+企业应用，自定义机器人。</p></div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200"><div class="text-4xl mb-3">📊</div><h3 class="font-semibold text-slate-800">分析洞察</h3><p class="text-slate-500 text-sm mt-1">团队活跃度、响应时间数据可视化。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 -->
+        <section id="cases" class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center"><h2 class="text-3xl font-bold text-slate-800">他们正在使用我们的产品</h2><p class="text-slate-600">来自全球领先企业的信赖与认可</p><p class="text-sm text-slate-500 mt-1">了解不同规模的企业如何通过我们的平台提升协作效率</p></div>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="border border-slate-200 rounded-xl p-6 shadow-sm bg-slate-50"><div class="flex items-center gap-2"><div class="w-8 h-8 bg-slate-400 rounded"></div><span class="font-semibold">科技创新有限公司</span><span class="text-xs text-slate-500">互联网</span></div><p class="text-slate-700 mt-4 italic">“团队协作效率提升了40%，跨部门沟通变得前所未有的顺畅。”</p><div class="flex items-center mt-4"><div class="w-10 h-10 bg-slate-300 rounded-full"></div><div class="ml-3"><div class="font-medium">李志强</div><div class="text-xs text-slate-500">CTO</div></div></div></div>
+                    <div class="border border-slate-200 rounded-xl p-6 shadow-sm bg-slate-50"><div class="flex items-center gap-2"><div class="w-8 h-8 bg-slate-400 rounded"></div><span class="font-semibold">未来教育集团</span><span class="text-xs text-slate-500">教育</span></div><p class="text-slate-700 mt-4 italic">“集成的教务系统让教师沟通和学生管理变得更加高效。”</p><div class="flex items-center mt-4"><div class="w-10 h-10 bg-slate-300 rounded-full"></div><div class="ml-3"><div class="font-medium">王美玲</div><div class="text-xs text-slate-500">教务主任</div></div></div></div>
+                    <div class="border border-slate-200 rounded-xl p-6 shadow-sm bg-slate-50"><div class="flex items-center gap-2"><div class="w-8 h-8 bg-slate-400 rounded"></div><span class="font-semibold">智造科技</span><span class="text-xs text-slate-500">制造业</span></div><p class="text-slate-700 mt-4 italic">“本地部署方案完美满足我们的安全要求，支持工厂一线的高效沟通。”</p><div class="flex items-center mt-4"><div class="w-10 h-10 bg-slate-300 rounded-full"></div><div class="ml-3"><div class="font-medium">张建国</div><div class="text-xs text-slate-500">IT总监</div></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 深蓝背景银灰文字-->
+        <section class="bg-[#0f2a44] py-12 text-white">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div><div class="text-4xl font-bold text-slate-200">500+</div><div class="text-slate-300 text-sm uppercase tracking-wider mt-1">企业客户</div></div>
+                <div><div class="text-4xl font-bold text-slate-200">98%</div><div class="text-slate-300 text-sm uppercase tracking-wider mt-1">客户留存率</div></div>
+                <div><div class="text-4xl font-bold text-slate-200">20M+</div><div class="text-slate-300 text-sm uppercase tracking-wider mt-1">日消息量</div></div>
+                <div><div class="text-4xl font-bold text-slate-200">24/7</div><div class="text-slate-300 text-sm uppercase tracking-wider mt-1">技术支持</div></div>
+            </div>
+        </section>
+
+        <!-- 比较表格区块 银灰浅色 -->
+        <section class="bg-slate-100 py-16">
+            <div class="max-w-5xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-slate-800">为什么选择我们</h2>
+                <p class="text-center text-slate-600">与主流竞品的全面对比 · 了解我们如何满足您的企业需求</p>
+                <div class="mt-10 overflow-x-auto bg-white rounded-xl shadow border border-slate-200">
+                    <table class="w-full text-sm text-left">
+                        <thead class="bg-slate-200 text-slate-700"><tr><th class="p-4">功能</th><th class="p-4">深蓝·银盾</th><th class="p-4">Slack</th><th class="p-4">Teams</th></tr></thead>
+                        <tbody class="divide-y">
+                            <tr><td class="p-4 font-medium">端到端加密</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-rose-500">❌</td></tr>
+                            <tr><td class="p-4 font-medium">本地部署选项</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-rose-500">❌</td><td class="p-4 text-green-600">✅</td></tr>
+                            <tr><td class="p-4 font-medium">无限历史记录</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-rose-500">❌</td><td class="p-4 text-green-600">✅</td></tr>
+                            <tr><td class="p-4 font-medium">开放API</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-green-600">✅</td></tr>
+                            <tr><td class="p-4 font-medium">单点登录SSO</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-green-600">✅</td></tr>
+                            <tr><td class="p-4 font-medium">数据主权选择</td><td class="p-4 text-green-600">✅</td><td class="p-4 text-rose-500">❌</td><td class="p-4 text-green-600">✅</td></tr>
+                            <tr class="bg-slate-50 font-semibold"><td class="p-4">每月价格（按年）</td><td class="p-4 text-[#0f2a44]">$7.25</td><td class="p-4">$8.25</td><td class="p-4">$10.00</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 深蓝银灰卡片-->
+        <section id="pricing" class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-slate-800">灵活定价</h2>
+                <p class="text-center text-slate-600">按需选择，无隐藏费用</p>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50 shadow-sm"><h3 class="text-xl font-semibold">基础版</h3><div class="mt-4"><span class="text-4xl font-bold">$49</span><span class="text-slate-500">/月/人</span></div><ul class="mt-6 space-y-2 text-slate-600"><li>• 消息历史1年</li><li>• 10GB 文件存储</li><li>• 基础集成</li></ul><a href="/signup/basic" class="mt-6 block text-center border border-slate-300 text-slate-800 py-2 rounded-lg hover:bg-slate-200">选择基础版</a></div>
+                    <div class="border-2 border-[#0f2a44] rounded-2xl p-6 bg-white shadow-lg relative"><span class="absolute top-0 right-6 bg-[#0f2a44] text-white px-3 py-1 text-xs rounded-b-lg">热门</span><h3 class="text-xl font-semibold">商业版</h3><div class="mt-4"><span class="text-4xl font-bold">$99</span><span class="text-slate-500">/月/人</span></div><ul class="mt-6 space-y-2 text-slate-600"><li>• 无限历史</li><li>• 100GB 存储</li><li>• 所有集成 + API</li><li>• 高级支持</li></ul><a href="/signup/business" class="mt-6 block text-center bg-[#0f2a44] text-white py-2 rounded-lg hover:bg-[#1f4172]">选择商业版</a></div>
+                    <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50 shadow-sm"><h3 class="text-xl font-semibold">企业版</h3><div class="mt-4"><span class="text-4xl font-bold">定制</span></div><ul class="mt-6 space-y-2 text-slate-600"><li>• 本地部署选项</li><li>• 无限存储</li><li>• 专属客户成功</li><li>• SSO/合规</li></ul><a href="/contact" class="mt-6 block text-center border border-slate-300 text-slate-800 py-2 rounded-lg hover:bg-slate-200">联系销售</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 认证与资质区块 (简版，用灰色区块展示信誉) -->
+        <section class="bg-slate-100 py-16">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold text-slate-800">安全认证与企业资质</h2>
+                <p class="text-slate-600">我们通过最严格的安全标准，保护您的数据</p>
+                <div class="flex flex-wrap justify-center gap-6 mt-10">
+                    <div class="bg-white p-4 rounded-xl shadow-sm w-36"><div class="w-12 h-12 bg-slate-400 rounded-full mx-auto"></div><p class="font-medium mt-2">ISO 27001</p><p class="text-xs text-slate-500">2026</p></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm w-36"><div class="w-12 h-12 bg-slate-400 rounded-full mx-auto"></div><p class="font-medium mt-2">SOC 2 Type II</p><p class="text-xs text-slate-500">2024</p></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm w-36"><div class="w-12 h-12 bg-slate-400 rounded-full mx-auto"></div><p class="font-medium mt-2">GDPR合规</p><p class="text-xs text-slate-500">欧盟</p></div>
+                    <div class="bg-white p-4 rounded-xl shadow-sm w-36"><div class="w-12 h-12 bg-slate-400 rounded-full mx-auto"></div><p class="font-medium mt-2">等保三级</p><p class="text-xs text-slate-500">公安部</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 深蓝背景 -->
+        <section class="bg-[#0f2a44] py-16 text-white">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold">立即提升团队协作效率</h2>
+                <p class="text-slate-300 mt-2">加入数百家信任我们的企业，开启高效沟通之旅。</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a href="/signup" class="bg-slate-200 text-[#0f2a44] px-6 py-3 rounded-md font-semibold hover:bg-white">免费试用30天</a>
+                    <a href="/demo" class="border border-slate-400 text-slate-200 px-6 py-3 rounded-md font-semibold hover:bg-white/10">预约演示</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 -->
+        <section class="bg-white py-16">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-slate-800">常见问题</h2>
+                <div class="mt-8 space-y-4">
+                    <div class="border border-slate-200 rounded-lg p-5"><details><summary class="font-semibold text-slate-800 cursor-pointer">支持本地部署吗？</summary><p class="mt-2 text-slate-600">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求。</p></details></div>
+                    <div class="border border-slate-200 rounded-lg p-5"><details><summary class="font-semibold text-slate-800 cursor-pointer">可以试用多久？</summary><p class="mt-2 text-slate-600">所有新用户均可享受30天全功能免费试用，无需信用卡。</p></details></div>
+                    <div class="border border-slate-200 rounded-lg p-5"><details><summary class="font-semibold text-slate-800 cursor-pointer">数据存储在哪里？</summary><p class="mt-2 text-slate-600">数据存储在云端的独立数据库，可选中国大陆或海外区域，符合当地法规。</p></details></div>
+                    <div class="border border-slate-200 rounded-lg p-5"><details><summary class="font-semibold text-slate-800 cursor-pointer">如何迁移现有聊天记录？</summary><p class="mt-2 text-slate-600">我们提供专业迁移工具，支持从Slack、Teams等平台导入历史数据。</p></details></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码) 深蓝灰背景 -->
+    <footer class="bg-[#0b1a33] text-slate-300 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- logo区块 -->
+                <div><div class="flex items-center gap-2"><div class="w-8 h-8 bg-slate-400 rounded-md flex items-center justify-center text-[#0b1a33] font-bold">S</div><span class="font-semibold text-white text-lg">深蓝·银盾</span></div><p class="text-sm text-slate-400 mt-3">© 2025 深蓝银盾科技<br>保留一切权利。</p></div>
+                <!-- 地址 -->
+                <div><h4 class="text-white font-medium">公司地址</h4><address class="not-italic text-sm mt-2 text-slate-400">北京市朝阳区深蓝科技园A1座<br>上海市浦东新区银盾大厦20F</address></div>
+                <!-- 联系方式 -->
+                <div><h4 class="text-white font-medium">联系方式</h4><p class="text-sm mt-2 text-slate-400">邮箱：contact@deepblue.com<br>电话：400-8820-110<br>技术支持：24/7 在线</p></div>
+                <!-- 微信公众号二维码 -->
+                <div><h4 class="text-white font-medium">官方微信</h4><div class="mt-2 w-24 h-24 bg-slate-600 rounded-lg flex items-center justify-center text-slate-400 border border-slate-500"><span class="text-xs">二维码</span></div><p class="text-xs text-slate-400 mt-1">扫码关注公众号</p></div>
+            </div>
+            <div class="border-t border-slate-700 mt-8 pt-6 text-sm text-center text-slate-400">
+                专业 · 信赖 · 深蓝银灰 | 企业级协作平台
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星河航天 · 卫星制造引领者</title>
+    <!-- Tailwind CSS via CDN + 基础层（纯工具类，无自定义样式） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入Inter字体，仅用于视觉优化，不破坏tailwind原则 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 确保没有任何自定义样式类，只有font家族继承（属于tailwind范围外但不影响“纯tailwind”结构） */
+        body { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
+</head>
+<body class="bg-[#0B0F1A] text-[#E8EDFF] antialiased">
+
+    <!-- 导航栏：深空背景/银白点缀 包含logo、标题、菜单、CTA按钮 -->
+    <nav class="border-b border-[#1E2A4A] bg-[#0B0F1A]/90 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-br from-[#3B82F6] to-[#A5B9FF] rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/20">
+                        <span class="text-white font-bold text-xl">🚀</span>
+                    </div>
+                    <span class="font-semibold text-xl tracking-tight text-white">星瀚卫星</span>
+                </div>
+                <!-- 导航菜单 (桌面) 银白/灰 -->
+                <div class="hidden md:flex items-center space-x-8 text-[#B0C4FF] font-medium">
+                    <a href="#" class="hover:text-white transition">卫星平台</a>
+                    <a href="#" class="hover:text-white transition">制造能力</a>
+                    <a href="#" class="hover:text-white transition">在轨案例</a>
+                    <a href="#" class="hover:text-white transition">资源中心</a>
+                </div>
+                <!-- CTA 按钮 银蓝风格 -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-[#B0C4FF] hover:text-white px-4 py-2 text-sm font-medium">登录</a>
+                    <a href="#" class="bg-gradient-to-r from-[#2563EB] to-[#3B82F6] text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg shadow-blue-600/30 hover:shadow-blue-500/50 transition">发射咨询 →</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区块，完全基于json数据结构 + 卫星制造数据 -->
+    <main class="overflow-hidden">
+
+        <!-- 1. 首屏区块 (hero) -->
+        <section class="relative pt-16 pb-24 md:pt-24 md:pb-32 bg-[#0B0F1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white">高精卫星制造<br>让太空更近一步</h1>
+                        <p class="mt-6 text-xl text-[#9BB0FF] max-w-2xl">从微小卫星到多星组网，全流程自研平台、敏捷制造、在轨交付。为商业航天和政府客户提供可靠的太空基础设施。</p>
+                        <p class="mt-3 text-[#6E8BCE]">累计交付36颗卫星 · 100%入轨成功率</p>
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="#" class="bg-[#2563EB] text-white px-8 py-3 rounded-full font-semibold shadow-xl shadow-blue-600/30 hover:bg-[#3B82F6] transition">探索卫星平台</a>
+                            <a href="#" class="border border-[#2E3F6E] text-[#B0C4FF] px-8 py-3 rounded-full font-semibold hover:bg-[#1E2A4A] hover:text-white transition">联系工程师</a>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl shadow-blue-900/30 border border-[#23315E]">
+                        <img src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2070&auto=format&fit=crop" alt="卫星制造工厂" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 合作伙伴区块 (生态伙伴) 银白色调 -->
+        <section class="py-16 bg-[#0F1422] border-y border-[#1F2A48]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">全球航天合作伙伴</h2>
+                    <p class="mt-3 text-[#9BB0FF] text-lg">与顶尖机构共同推进太空技术</p>
+                </div>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+                    <!-- 合作伙伴数据 ×6 (用占位logo, 因为原partner区块有logo但不可复用，这里使用一致风格) -->
+                    <div class="bg-[#1A2340] p-4 rounded-xl border border-[#2E3F6E] text-center">
+                        <div class="text-4xl mb-2">🛰️</div>
+                        <div class="font-semibold text-white">NASA</div>
+                        <div class="text-xs text-[#7E99E0]">技术合作</div>
+                    </div>
+                    <div class="bg-[#1A2340] p-4 rounded-xl border border-[#2E3F6E] text-center">
+                        <div class="text-4xl mb-2">🇪🇺</div>
+                        <div class="font-semibold text-white">ESA</div>
+                        <div class="text-xs text-[#7E99E0]">科学任务</div>
+                    </div>
+                    <div class="bg-[#1A2340] p-4 rounded-xl border border-[#2E3F6E] text-center">
+                        <div class="text-4xl mb-2">🇨🇳</div>
+                        <div class="font-semibold text-white">CASC</div>
+                        <div class="text-xs text-[#7E99E0]">发射伙伴</div>
+                    </div>
+                    <div class="bg-[#1A2340] p-4 rounded-xl border border-[#2E3F6E] text-center">
+                        <div class="text-4xl mb-2">🪐</div>
+                        <div class="font-semibold text-white">SpaceX</div>
+                        <div class="text-xs text-[#7E99E0]">拼车发射</div>
+                    </div>
+                    <div class="bg-[#1A2340] p-4 rounded-xl border border-[#2E3F6E] text-center">
+                        <div class="text-4xl mb-2">📡</div>
+                        <div class="font-semibold text-white">OneWeb</div>
+                        <div class="text-xs text-[#7E99E0]">星座合作</div>
+                    </div>
+                    <div class="bg-[#1A2340] p-4 rounded-xl border border-[#2E3F6E] text-center">
+                        <div class="text-4xl mb-2">🇯🇵</div>
+                        <div class="font-semibold text-white">JAXA</div>
+                        <div class="text-xs text-[#7E99E0]">联合研究</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 左图右文区块 (制造优势) -->
+        <section class="py-20 bg-[#0B0F1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070&auto=format&fit=crop" alt="卫星总装" class="rounded-2xl shadow-2xl shadow-blue-900/20 border border-[#2E3F6E]">
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">敏捷总装 · 零缺陷</h2>
+                        <p class="mt-6 text-lg text-[#B0C4FF]">全流程数字化总装线，72小时完成一颗微小卫星集成。每道工序AI辅助质检，在轨故障率低于0.3%。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="bg-[#1E2A4A] text-[#A5B9FF] px-4 py-1.5 rounded-full text-sm font-medium border border-[#3B5BA0]">⏱️ 快速交付</span>
+                            <span class="bg-[#1E2A4A] text-[#A5B9FF] px-4 py-1.5 rounded-full text-sm font-medium border border-[#3B5BA0]">🔧 全自研星务</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 左文右图区块 (集成与创新) -->
+        <section class="py-20 bg-[#0F1422]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">深度集成 · 星地协同</h2>
+                        <p class="mt-6 text-lg text-[#B0C4FF]">从地面站网络到卫星物联网，我们提供星上智能计算、实时数传。与全球12个地面站互联，数据传输延迟<200ms。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="bg-[#1E2A4A] text-[#A5B9FF] px-4 py-1.5 rounded-full text-sm font-medium border border-[#3B5BA0]">🛸 星上AI</span>
+                            <span class="bg-[#1E2A4A] text-[#A5B9FF] px-4 py-1.5 rounded-full text-sm font-medium border border-[#3B5BA0]">📡 全球地面站</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2072&auto=format&fit=crop" alt="地面站通信" class="rounded-2xl shadow-2xl shadow-blue-900/20 border border-[#2E3F6E]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 特性区块 (卫星制造核心能力) -->
+        <section class="py-20 bg-[#0B0F1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">面向未来的卫星能力</h2>
+                    <p class="mt-3 text-[#9BB0FF] text-lg">从设计到在轨，全栈自研</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-[#151E32] p-8 rounded-2xl border border-[#2A3766] hover:border-blue-500/50 transition">
+                        <div class="text-5xl mb-4">🧿</div>
+                        <h3 class="text-xl font-semibold text-white">高精度姿控</h3>
+                        <p class="mt-2 text-[#9AAFD8]">0.01°指向精度，快速机动，适合遥感凝视任务。</p>
+                    </div>
+                    <div class="bg-[#151E32] p-8 rounded-2xl border border-[#2A3766] hover:border-blue-500/50 transition">
+                        <div class="text-5xl mb-4">⚡</div>
+                        <h3 class="text-xl font-semibold text-white">大功率配电</h3>
+                        <p class="mt-2 text-[#9AAFD8]">高效砷化镓太阳翼，整星功率>1500W。</p>
+                    </div>
+                    <div class="bg-[#151E32] p-8 rounded-2xl border border-[#2A3766] hover:border-blue-500/50 transition">
+                        <div class="text-5xl mb-4">📦</div>
+                        <h3 class="text-xl font-semibold text-white">模块化载荷</h3>
+                        <p class="mt-2 text-[#9AAFD8]">即插即用光SAR通信舱，快速换装。</p>
+                    </div>
+                    <div class="bg-[#151E32] p-8 rounded-2xl border border-[#2A3766] hover:border-blue-500/50 transition">
+                        <div class="text-5xl mb-4">🔒</div>
+                        <h3 class="text-xl font-semibold text-white">抗辐射加固</h3>
+                        <p class="mt-2 text-[#9AAFD8]">15年GEO寿命，元器件航天级筛选。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 客户案例区块 (航天用户故事) -->
+        <section class="py-20 bg-[#0F1422]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">他们用我们的卫星改变世界</h2>
+                    <p class="mt-3 text-[#9BB0FF] text-lg">国内外领先机构已验证</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-8">
+                    <!-- 案例1 -->
+                    <div class="bg-[#1A2342] p-6 rounded-2xl border border-[#31487B]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-3xl">🛰️</span>
+                            <div><h3 class="font-bold text-white">长光遥感</h3><p class="text-xs text-[#8199DB]">互联网 · 农业遥感</p></div>
+                        </div>
+                        <p class="text-[#B8C9FF] italic">“16颗卫星组网，重访周期缩短至4小时，作物估产精度提升至95%”</p>
+                        <div class="mt-6 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-[#2B3B68] flex items-center justify-center text-white font-bold">刘</div>
+                            <div><p class="text-white font-medium">刘卫东</p><p class="text-xs text-[#8199DB]">遥感中心主任</p></div>
+                        </div>
+                    </div>
+                    <!-- 案例2 -->
+                    <div class="bg-[#1A2342] p-6 rounded-2xl border border-[#31487B]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-3xl">📡</span>
+                            <div><h3 class="font-bold text-white">时空道宇</h3><p class="text-xs text-[#8199DB]">通信 · 物联网</p></div>
+                        </div>
+                        <p class="text-[#B8C9FF] italic">“我们的低轨物联网卫星采用星瀚平台，数据回传可靠性99.9%”</p>
+                        <div class="mt-6 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-[#2B3B68] flex items-center justify-center text-white font-bold">陈</div>
+                            <div><p class="text-white font-medium">陈芳</p><p class="text-xs text-[#8199DB]">技术副总裁</p></div>
+                        </div>
+                    </div>
+                    <!-- 案例3 -->
+                    <div class="bg-[#1A2342] p-6 rounded-2xl border border-[#31487B]">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="text-3xl">🔭</span>
+                            <div><h3 class="font-bold text-white">中科院空间</h3><p class="text-xs text-[#8199DB]">科学研究</p></div>
+                        </div>
+                        <p class="text-[#B8C9FF] italic">“科学卫星平台极大缩短了研制周期，让我们更聚焦载荷。” </p>
+                        <div class="mt-6 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-[#2B3B68] flex items-center justify-center text-white font-bold">王</div>
+                            <div><p class="text-white font-medium">王建宇</p><p class="text-xs text-[#8199DB]">院士</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 统计区块 (亮眼数据) 银白数字 -->
+        <section class="py-16 bg-[#0B0F1A] border-y border-[#1E2F58]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div><div class="text-4xl font-bold text-white">36+</div><div class="text-[#B0C4FF]">在轨卫星</div></div>
+                    <div><div class="text-4xl font-bold text-white">100%</div><div class="text-[#B0C4FF]">发射成功率</div></div>
+                    <div><div class="text-4xl font-bold text-white">>15年</div><div class="text-[#B0C4FF]">设计寿命</div></div>
+                    <div><div class="text-4xl font-bold text-white">24/7</div><div class="text-[#B0C4FF]">测控支持</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. 认证与资质区块 (安全/荣誉) -->
+        <section class="py-20 bg-[#0F1422]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-white">资质与认证</h2>
+                    <p class="mt-2 text-[#9BB0FF]">国际标准 · 国家级荣誉</p>
+                </div>
+                <div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-[#1C2545] p-5 rounded-xl border border-[#2F4270] text-center"><span class="text-3xl block mb-2">🔖</span><h3 class="font-semibold text-white">ISO 27001</h3><p class="text-xs text-[#97ADF0]">信息安全管理</p></div>
+                    <div class="bg-[#1C2545] p-5 rounded-xl border border-[#2F4270] text-center"><span class="text-3xl block mb-2">🛡️</span><h3 class="font-semibold text-white">AS9100D</h3><p class="text-xs text-[#97ADF0]">航天质量体系</p></div>
+                    <div class="bg-[#1C2545] p-5 rounded-xl border border-[#2F4270] text-center"><span class="text-3xl block mb-2">🇪🇺</span><h3 class="font-semibold text-white">CE/FCC</h3><p class="text-xs text-[#97ADF0]">电磁兼容认证</p></div>
+                    <div class="bg-[#1C2545] p-5 rounded-xl border border-[#2F4270] text-center"><span class="text-3xl block mb-2">🏆</span><h3 class="font-semibold text-white">国家技术发明奖</h3><p class="text-xs text-[#97ADF0]">2023</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. 价格区块 (卫星制造服务套餐) 因为价格理念，改为服务套餐 -->
+        <section class="py-20 bg-[#0B0F1A]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-white">合作模式</h2>
+                    <p class="mt-2 text-[#9BB0FF]">从单星研制到星座整体交付</p>
+                </div>
+                <div class="mt-16 grid md:grid-cols-3 gap-8">
+                    <div class="bg-[#151E32] p-8 rounded-2xl border border-[#2E4277]"><h3 class="text-xl font-bold text-white">标准研制</h3><p class="text-3xl font-bold text-white mt-4">¥800K <span class="text-sm text-[#9AAFD8]">起</span></p><ul class="mt-6 space-y-3 text-[#B0C4FF]"><li>✓ 12U/6U立方星</li><li>✓ 载荷适配</li><li>✓ 在轨测试</li></ul><a href="#" class="mt-8 block text-center border border-[#3B5BA0] text-white py-2 rounded-full hover:bg-[#1E2F58]">了解详情</a></div>
+                    <div class="bg-[#1F2B4A] p-8 rounded-2xl border-2 border-[#3B82F6] relative"><span class="absolute -top-3 right-6 bg-[#2563EB] text-white px-3 py-0.5 rounded-full text-xs">热门</span><h3 class="text-xl font-bold text-white">敏捷星座</h3><p class="text-3xl font-bold text-white mt-4">$1.2M <span class="text-sm text-[#9AAFD8]">/星</span></p><ul class="mt-6 space-y-3 text-[#B0C4FF]"><li>✓ 200kg级平台</li><li>✓  SAR/光学可选</li><li>✓ 星间链路</li></ul><a href="#" class="mt-8 block bg-[#2563EB] text-white py-2 rounded-full shadow-lg">获取报价</a></div>
+                    <div class="bg-[#151E32] p-8 rounded-2xl border border-[#2E4277]"><h3 class="text-xl font-bold text-white">整体星座</h3><p class="text-3xl font-bold text-white mt-4">定制</p><ul class="mt-6 space-y-3 text-[#B0C4FF]"><li>✓ 轨道设计</li><li>✓ 地面段建设</li><li>✓ 发射服务</li></ul><a href="#" class="mt-8 block text-center border border-[#3B5BA0] text-white py-2 rounded-full hover:bg-[#1E2F58]">联系专家</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. 常见问题区块 -->
+        <section class="py-20 bg-[#0F1422]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-white text-center">常见问题</h2>
+                <div class="mt-12 space-y-6">
+                    <div class="bg-[#1A2340] p-6 rounded-xl border border-[#31487B]"><h3 class="font-semibold text-white text-lg">支持搭载发射吗？</h3><p class="mt-2 text-[#B0C4FF]">我们与多家发射服务商合作，可提供整箭或拼车搭载，微星最快6个月入轨。</p></div>
+                    <div class="bg-[#1A2340] p-6 rounded-xl border border-[#31487B]"><h3 class="font-semibold text-white text-lg">卫星数据如何交付？</h3><p class="mt-2 text-[#B0C4FF]">可通过地面站接收或我们的星地云平台实时推送，支持S3/API接口。</p></div>
+                    <div class="bg-[#1A2340] p-6 rounded-xl border border-[#31487B]"><h3 class="font-semibold text-white text-lg">是否可以租赁在轨卫星？</h3><p class="mt-2 text-[#B0C4FF]">是的，我们提供容量租赁、星上托管服务，灵活满足试验需求。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. CTA区块 最后一波 -->
+        <section class="py-24 bg-gradient-to-br from-[#0F1A3A] to-[#0B0F1A]">
+            <div class="max-w-3xl mx-auto text-center px-4">
+                <h2 class="text-4xl font-bold text-white">开启您的太空任务</h2>
+                <p class="mt-4 text-xl text-[#B0C4FF]">从设计到在轨数据，我们全程陪伴。</p>
+                <div class="mt-10 flex flex-wrap justify-center gap-5">
+                    <a href="#" class="bg-[#2563EB] text-white px-8 py-4 rounded-full text-lg font-semibold shadow-2xl shadow-blue-600/40 hover:bg-[#3B82F6]">免费技术咨询</a>
+                    <a href="#" class="border border-[#3B5BA0] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#12203F]">下载产品手册 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码) 深空色 -->
+    <footer class="bg-[#070B14] border-t border-[#1E2F58] pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- logo 和 版权 -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-2xl">🚀</span>
+                        <span class="font-bold text-xl text-white">星瀚卫星</span>
+                    </div>
+                    <p class="mt-4 text-sm text-[#8799CC]">© 2025 星瀚航天技术有限公司<br>保留一切权利</p>
+                </div>
+                <!-- 地址 -->
+                <div>
+                    <h3 class="font-semibold text-white mb-3">北京总部</h3>
+                    <p class="text-sm text-[#9AADDF] leading-relaxed">北京市海淀区航天城<br>创新园B座12层</p>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h3 class="font-semibold text-white mb-3">联系</h3>
+                    <p class="text-sm text-[#9AADDF]">sales@spacesat.com<br>+86 (010) 5678 1234</p>
+                </div>
+                <!-- 公众号二维码区域 -->
+                <div>
+                    <h3 class="font-semibold text-white mb-3">官方公众号</h3>
+                    <div class="w-24 h-24 bg-[#1A2340] rounded-lg flex items-center justify-center border border-[#3B5BA0]">
+                        <span class="text-5xl">📱</span>
+                    </div>
+                    <p class="text-xs text-[#8799CC] mt-2">扫一扫 关注动态</p>
+                </div>
+                <!-- 社交媒体占位 银白 -->
+                <div>
+                    <h3 class="font-semibold text-white mb-3">社交媒体</h3>
+                    <div class="flex space-x-3 text-[#A5B9FF]">
+                        <span class="text-xl">𝕏</span>
+                        <span class="text-xl">in</span>
+                        <span class="text-xl">▶️</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 text-center text-sm text-[#6276A8] border-t border-[#1E2F58] pt-6">
+                航天级品质 · 探索永无止境
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

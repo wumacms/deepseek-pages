@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>明正律师事务所 | 企业法务专家</title>
+  <!-- Tailwind via CDN + 基础层样式 (无自定义CSS) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 添加一点平滑滚动，不破坏纯tailwind原则 (仅html行为) -->
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+  <!-- 导航栏 (深蓝背景) -->
+  <header class="bg-[#0b1f3a] sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- logo + 标题 -->
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 bg-[#1e3a6b] rounded flex items-center justify-center text-white font-bold text-xl">法</div>
+          <span class="text-white font-semibold text-lg tracking-tight">明正<span class="text-gray-300">律师事务所</span></span>
+        </div>
+        <!-- 导航菜单 (桌面) -->
+        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-200">
+          <a href="#" class="hover:text-white transition">首页</a>
+          <a href="#expertise" class="hover:text-white transition">专业领域</a>
+          <a href="#cases" class="hover:text-white transition">案例</a>
+          <a href="#cert" class="hover:text-white transition">资质</a>
+          <a href="#pricing" class="hover:text-white transition">收费标准</a>
+          <a href="#faq" class="hover:text-white transition">常见问题</a>
+        </nav>
+        <!-- CTA 按钮 -->
+        <div>
+          <a href="#contact" class="bg-[#2a4b7a] hover:bg-[#1e3a6b] text-white text-sm font-semibold py-2 px-5 rounded-md transition shadow-sm">免费咨询</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 首屏区块 (企业法务主题) -->
+    <section class="bg-gradient-to-br from-[#0b1f3a] to-[#132b4a] text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">企业级法务支持，<br>让商业更安全</h1>
+            <p class="text-xl text-gray-200 mt-4">合规、风控、争议解决 —— 专为现代企业打造的全方位法律顾问服务，陪伴企业稳健成长。</p>
+            <p class="text-gray-300 mt-2 text-lg">深耕公司法、劳动人事、知识产权、投融资等领域。</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a href="#" class="bg-[#2d6a9f] hover:bg-[#1e4f7a] text-white font-semibold py-3 px-8 rounded-md shadow-lg transition">立即咨询</a>
+              <a href="#" class="bg-transparent border-2 border-gray-300 hover:border-white hover:bg-white/10 text-white font-semibold py-3 px-8 rounded-md transition">预约会谈</a>
+            </div>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-2xl">
+            <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="律师事务所办公室">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 合作伙伴区块 (法律生态伙伴) -->
+    <section class="bg-gray-50 py-12 border-y border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-[#0b1f3a]">我们的合作伙伴</h2>
+        <p class="text-center text-gray-600 mt-2">与权威机构及平台深度协作，为企业保驾护航</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-10 items-center">
+          <!-- 使用unsplash灰色调图片模拟logo -->
+          <div class="flex justify-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" alt="中国律协"></div>
+          <div class="flex justify-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" alt="盈科"></div>
+          <div class="flex justify-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" alt="金杜"></div>
+          <div class="flex justify-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" alt="中伦"></div>
+          <div class="flex justify-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" alt="大成"></div>
+          <div class="flex justify-center"><img class="h-12 w-auto grayscale opacity-70 hover:opacity-100 transition" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" alt="锦天城"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (公司法务专项) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img class="rounded-lg shadow-xl w-full h-auto" src="https://placehold.co/800x600/e2e8f0/64748b?text=Image" alt="合同审阅">
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold text-[#0b1f3a]">合同合规 · 风险防控</h2>
+          <p class="text-gray-600 mt-4 text-lg">从劳动人事到商业合同，我们协助企业建立标准化、数字化的合规体系，避免潜在纠纷。每一份文件都经过资深律师双重审核。</p>
+          <div class="flex flex-wrap gap-3 mt-6">
+            <span class="bg-blue-50 text-[#1e3a6b] px-4 py-2 rounded-full text-sm font-medium">⛑️ 定制合同模板</span>
+            <span class="bg-blue-50 text-[#1e3a6b] px-4 py-2 rounded-full text-sm font-medium">🔏 电子签集成</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (投融资与并购) -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-3xl font-bold text-[#0b1f3a]">投融资与并购</h2>
+          <p class="text-gray-600 mt-4 text-lg">为初创至Pre-IPO企业提供全流程法律服务：尽职调查、交易架构设计、谈判支持、文件准备。助力企业顺利融资、并购扩张。</p>
+          <div class="flex flex-wrap gap-3 mt-6">
+            <span class="bg-blue-50 text-[#1e3a6b] px-4 py-2 rounded-full text-sm font-medium">📊 法律尽调</span>
+            <span class="bg-blue-50 text-[#1e3a6b] px-4 py-2 rounded-full text-sm font-medium">🤝 谈判支持</span>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <img class="rounded-lg shadow-xl w-full h-auto" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="商务会议">
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (专业优势) -->
+    <section class="py-16 bg-white" id="expertise">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-[#0b1f3a]">为什么选择我们</h2>
+        <p class="text-center text-gray-600 mt-2">深耕企业法务，全方位护航</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm">
+            <div class="text-4xl">⚖️</div>
+            <h3 class="text-xl font-semibold mt-4 text-[#0b1f3a]">行业专精</h3>
+            <p class="text-gray-600 mt-2">律师团队专注科技、制造、金融等垂直行业，深度理解商业逻辑。</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm">
+            <div class="text-4xl">🛡️</div>
+            <h3 class="text-xl font-semibold mt-4 text-[#0b1f3a]">风控前置</h3>
+            <p class="text-gray-600 mt-2">从业务前端介入，设计合规流程，而非事后补救。</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm">
+            <div class="text-4xl">⚡</div>
+            <h3 class="text-xl font-semibold mt-4 text-[#0b1f3a]">极速响应</h3>
+            <p class="text-gray-600 mt-2">2小时内响应，紧急事项当日出具初步意见。</p>
+          </div>
+          <div class="bg-gray-50 p-6 rounded-lg border border-gray-100 shadow-sm">
+            <div class="text-4xl">🌐</div>
+            <h3 class="text-xl font-semibold mt-4 text-[#0b1f3a]">全球网络</h3>
+            <p class="text-gray-600 mt-2">合作境外律所覆盖主要法域，支持跨境业务。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 客户案例区块 -->
+    <section class="py-16 bg-gray-50" id="cases">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-[#0b1f3a]">他们信赖明正</h2>
+        <p class="text-center text-gray-600 mt-2">来自不同行业领先企业的真实反馈</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <!-- 案例1 -->
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center space-x-2">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" alt="logo">
+              <span class="font-bold text-[#0b1f3a]">云创科技</span>
+              <span class="text-sm text-gray-400">互联网</span>
+            </div>
+            <p class="text-gray-700 mt-4 italic">“从A轮到IPO合规辅导，明正团队展现出极高的专业度，帮助我们发现多处潜在风险。” </p>
+            <div class="flex items-center mt-6">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" alt="avatar">
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">陈天豪</p>
+                <p class="text-sm text-gray-500">创始人 & CEO</p>
+              </div>
+            </div>
+          </div>
+          <!-- 案例2 -->
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center space-x-2">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" alt="logo">
+              <span class="font-bold text-[#0b1f3a]">未来教育</span>
+              <span class="text-sm text-gray-400">教育</span>
+            </div>
+            <p class="text-gray-700 mt-4 italic">“劳动合同体系、知识产权保护，明正帮助我们搭建了完善的法务框架，让我们专注教学。” </p>
+            <div class="flex items-center mt-6">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" alt="avatar">
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">李雅文</p>
+                <p class="text-sm text-gray-500">人力总监</p>
+              </div>
+            </div>
+          </div>
+          <!-- 案例3 -->
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-center space-x-2">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" alt="logo">
+              <span class="font-bold text-[#0b1f3a]">智造科技</span>
+              <span class="text-sm text-gray-400">制造业</span>
+            </div>
+            <p class="text-gray-700 mt-4 italic">“涉外合同、国际仲裁支持，明正的专业能力让我们在海外项目中更有底气。” </p>
+            <div class="flex items-center mt-6">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop" alt="avatar">
+              <div class="ml-3">
+                <p class="font-medium text-gray-900">王建国</p>
+                <p class="text-sm text-gray-500">法务经理</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 认证与资质区块 (证书荣誉) -->
+    <section class="py-16 bg-white" id="cert">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-[#0b1f3a]">权威认证与资质</h2>
+        <p class="text-center text-gray-600 mt-2">多项行业认证，保障服务质量</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+          <div class="text-center">
+            <img class="h-16 mx-auto grayscale" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&h=150&fit=crop" alt="ISO 27001">
+            <p class="font-medium mt-3 text-[#0b1f3a]">ISO 27001</p>
+            <p class="text-xs text-gray-500">信息安全管理</p>
+          </div>
+          <div class="text-center">
+            <img class="h-16 mx-auto grayscale" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&h=150&fit=crop" alt="钱伯斯">
+            <p class="font-medium mt-3 text-[#0b1f3a]">钱伯斯大奖</p>
+            <p class="text-xs text-gray-500">2023 年度律所</p>
+          </div>
+          <div class="text-center">
+            <img class="h-16 mx-auto grayscale" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&h=150&fit=crop" alt="LEGALBAND">
+            <p class="font-medium mt-3 text-[#0b1f3a]">LEGALBAND</p>
+            <p class="text-xs text-gray-500">公司合规第一梯队</p>
+          </div>
+          <div class="text-center">
+            <img class="h-16 mx-auto grayscale" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&h=150&fit=crop" alt="等保三级">
+            <p class="font-medium mt-3 text-[#0b1f3a]">等保三级</p>
+            <p class="text-xs text-gray-500">网络安全认证</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (法务服务套餐) -->
+    <section class="py-16 bg-gray-50" id="pricing">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-[#0b1f3a]">灵活服务方案</h2>
+        <p class="text-center text-gray-600 mt-2">按需选择，透明计价</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <!-- 基础版 -->
+          <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+            <h3 class="text-xl font-bold text-[#0b1f3a]">基础护航</h3>
+            <p class="text-3xl font-bold mt-4">¥49,000 <span class="text-base font-normal text-gray-500">/年起</span></p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>日常法律咨询</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>合同审查30份/年</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>律师函2份</li>
+            </ul>
+            <a href="#" class="block text-center mt-8 border border-[#1e3a6b] text-[#1e3a6b] hover:bg-[#1e3a6b] hover:text-white py-2 rounded-md transition">选择方案</a>
+          </div>
+          <!-- 商业版 (流行) -->
+          <div class="bg-white p-8 rounded-xl shadow-xl border-2 border-[#2a4b7a] relative">
+            <span class="absolute top-0 right-0 bg-[#2a4b7a] text-white px-3 py-1 text-xs font-bold rounded-bl-lg rounded-tr-lg">推荐</span>
+            <h3 class="text-xl font-bold text-[#0b1f3a]">商业护航</h3>
+            <p class="text-3xl font-bold mt-4">¥99,000 <span class="text-base font-normal text-gray-500">/年起</span></p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>不限次咨询</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>合同审查100份/年</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>知识产权基础保护</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>劳动人事专项</li>
+            </ul>
+            <a href="#" class="block text-center mt-8 bg-[#1e3a6b] hover:bg-[#0f2a4a] text-white py-2 rounded-md transition">选择方案</a>
+          </div>
+          <!-- 企业版 -->
+          <div class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+            <h3 class="text-xl font-bold text-[#0b1f3a]">全面合规</h3>
+            <p class="text-3xl font-bold mt-4">定制</p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>派驻/驻场服务</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>投融资并购支持</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>争议解决代理</li>
+              <li class="flex items-center"><span class="text-green-600 mr-2">✓</span>合规体系搭建</li>
+            </ul>
+            <a href="#" class="block text-center mt-8 border border-[#1e3a6b] text-[#1e3a6b] hover:bg-[#1e3a6b] hover:text-white py-2 rounded-md transition">联系销售</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (faq) -->
+    <section class="py-16 bg-white" id="faq">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-[#0b1f3a]">常见问题</h2>
+        <div class="mt-10 space-y-4">
+          <details class="bg-gray-50 p-5 rounded-lg border border-gray-200 open:bg-gray-100">
+            <summary class="font-semibold text-[#0b1f3a] cursor-pointer">如何选择适合的法律服务方案？</summary>
+            <p class="mt-3 text-gray-600">我们会安排专业顾问与您沟通企业规模、行业及需求，推荐最适配的套餐，并提供1个月弹性调整。</p>
+          </details>
+          <details class="bg-gray-50 p-5 rounded-lg border border-gray-200 open:bg-gray-100">
+            <summary class="font-semibold text-[#0b1f3a] cursor-pointer">是否提供涉外法律服务？</summary>
+            <p class="mt-3 text-gray-600">是的，我们与美、英、德、新加坡等地律所合作，可处理跨境交易、国际仲裁等事务。</p>
+          </details>
+          <details class="bg-gray-50 p-5 rounded-lg border border-gray-200 open:bg-gray-100">
+            <summary class="font-semibold text-[#0b1f3a] cursor-pointer">数据安全如何保障？</summary>
+            <p class="mt-3 text-gray-600">所有案件材料通过加密系统传输存储，内部严格权限控制，签署保密协议，符合ISO 27001标准。</p>
+          </details>
+          <details class="bg-gray-50 p-5 rounded-lg border border-gray-200 open:bg-gray-100">
+            <summary class="font-semibold text-[#0b1f3a] cursor-pointer">能否与现有法务团队协作？</summary>
+            <p class="mt-3 text-gray-600">当然，我们可以作为外部支持，与企业内部法务形成互补，提供专项深度服务。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 区块 -->
+    <section class="bg-[#0b1f3a] py-16">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-bold text-white">为您的企业构建法律护城河</h2>
+        <p class="text-gray-200 mt-2 text-lg">预约免费初诊，获取专属风控建议</p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <a href="#" class="bg-[#2d6a9f] hover:bg-[#1e4f7a] text-white font-semibold py-3 px-8 rounded-md shadow-lg">免费咨询</a>
+          <a href="#" class="bg-transparent border-2 border-white hover:bg-white/10 text-white font-semibold py-3 px-8 rounded-md">预约演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (深蓝背景, 包含logo、版权、地址、联系方式、二维码) -->
+  <footer class="bg-[#0a1a30] text-gray-300 border-t border-[#1e3a6b]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- 品牌与版权 -->
+        <div>
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 bg-[#1e3a6b] rounded flex items-center justify-center text-white font-bold text-lg">法</div>
+            <span class="text-white font-semibold">明正律师事务所</span>
+          </div>
+          <p class="text-sm text-gray-400 mt-4">© 2025 明正律所. <br>All rights reserved.</p>
+        </div>
+        <!-- 公司地址 -->
+        <div>
+          <h4 class="text-white font-semibold mb-3">总部地址</h4>
+          <address class="not-italic text-sm text-gray-400">
+            中国·北京市朝阳区<br>建国门外大街1号 国贸大厦A座50层<br>邮编：100004
+          </address>
+        </div>
+        <!-- 联系方式 -->
+        <div>
+          <h4 class="text-white font-semibold mb-3">联系方式</h4>
+          <ul class="text-sm space-y-2 text-gray-400">
+            <li>📞 400-882-7788</li>
+            <li>📧 contact@mingzhenglegal.com</li>
+            <li>🕒 周一至周五 9:00-18:00</li>
+          </ul>
+        </div>
+        <!-- 微信公众号二维码 -->
+        <div>
+          <h4 class="text-white font-semibold mb-3">官方微信</h4>
+          <img class="w-28 h-28 border-2 border-gray-500 rounded-md" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=200&fit=crop" alt="微信公众号二维码">
+          <p class="text-xs text-gray-400 mt-2">扫一扫，关注最新动态</p>
+        </div>
+      </div>
+      <div class="border-t border-[#1e3a6b] mt-8 pt-6 text-xs text-gray-500 text-center">
+        专业 · 严谨 · 值得信赖
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

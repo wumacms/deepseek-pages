@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>银盐片场 · 影视工业协作平台</title>
+    <!-- Tailwind via CDN + 基础层叠样式 (纯 Tailwind, 无自定义) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 强制设定无任何自定义样式，仅用 Tailwind 工具类 -->
+</head>
+
+<body class="bg-[#0a0c0f] text-[#e6e6e6] font-sans antialiased">
+
+    <!-- 导航栏 (新粗野主义粗边框 + 深红点缀) -->
+    <header class="border-b-4 border-[#8b1e1e] bg-[#111417] sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-[#8b1e1e] flex items-center justify-center text-2xl font-black border-2 border-white/20 shadow-[4px_4px_0_#000]">
+                    🎬</div>
+                <span class="text-2xl font-bold tracking-tight uppercase text-white">银盐<span
+                        class="text-[#b52b2b]">STUDIO</span></span>
+            </div>
+            <!-- 导航菜单 (桌面) -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wider">
+                <a href="#"
+                    class="hover:text-[#b52b2b] transition border-b-2 border-transparent hover:border-[#b52b2b]">作品</a>
+                <a href="#"
+                    class="hover:text-[#b52b2b] transition border-b-2 border-transparent hover:border-[#b52b2b]">服务</a>
+                <a href="#"
+                    class="hover:text-[#b52b2b] transition border-b-2 border-transparent hover:border-[#b52b2b]">片场</a>
+                <a href="#"
+                    class="hover:text-[#b52b2b] transition border-b-2 border-transparent hover:border-[#b52b2b]">关于</a>
+            </nav>
+            <!-- CTA 按钮 粗野主义风格 -->
+            <div class="flex items-center gap-3">
+                <a href="#"
+                    class="hidden sm:inline-block px-5 py-2 border-2 border-[#b52b2b] text-[#b52b2b] font-bold uppercase text-sm tracking-wider hover:bg-[#b52b2b] hover:text-black transition shadow-[3px_3px_0_#3f0000]">联系导演</a>
+                <a href="#"
+                    class="px-5 py-2 bg-[#8b1e1e] border-2 border-[#b35656] text-white font-bold uppercase text-sm tracking-wider hover:bg-[#b52b2b] transition shadow-[3px_3px_0_black]">开始制作</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 md:px-6 py-8 space-y-20 divide-y divide-[#8b1e1e]/30">
+
+        <!-- ========= 首屏区块 (粗野电影主视觉) ========= -->
+        <section
+            class="relative border-4 border-[#2a2e35] bg-cover bg-center shadow-[10px_10px_0_#000000] min-h-[70vh] flex items-center"
+            style="background-image: linear-gradient(90deg, #0f0f0f 0%, rgba(15,15,15,0.7) 70%, transparent), url('https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?q=80&w=2070');">
+            <div class="relative z-10 max-w-2xl p-8 border-l-8 border-[#8b1e1e] bg-black/70 backdrop-blur-sm">
+                <h1 class="text-5xl md:text-7xl font-black uppercase leading-[1.1] tracking-[-0.02em] text-white"><span
+                        class="text-[#b52b2b]">RAW</span> 级影视协作</h1>
+                <p class="text-xl md:text-2xl text-gray-300 mt-4 font-light">从剧本分镜到后期调色，片场全域实时同步</p>
+                <p class="text-gray-400 mt-2 text-sm max-w-xl">专为电影工业打造的智能制片平台，集成DIT、剪辑、VFX工作流。</p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="#"
+                        class="px-8 py-3 bg-[#8b1e1e] border-2 border-[#b52b2b] text-white font-bold uppercase text-sm tracking-widest shadow-[4px_4px_0_black] hover:bg-black hover:text-[#b52b2b] transition">开启拍摄</a>
+                    <a href="#"
+                        class="px-8 py-3 border-2 border-[#6e6e6e] text-[#e0e0e0] font-bold uppercase text-sm tracking-widest shadow-[4px_4px_0_black] hover:border-[#b52b2b] transition">预约片场</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 合作伙伴区块 (设备/后期伙伴) ========= -->
+        <section class="pt-10">
+            <h2
+                class="text-3xl md:text-4xl font-black uppercase tracking-tight border-b-4 border-[#8b1e1e] inline-block pb-2">
+                制作盟友</h2>
+            <p class="text-gray-400 mt-2 mb-8">顶尖设备、胶片、后期实验室深度绑定</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 gap-y-8">
+                <!-- 6个伙伴 (使用占位图 但保留文字) -->
+                <div class="border-2 border-[#3d3d3d] p-4 bg-[#15181c] text-center shadow-[5px_5px_0_#000]">
+                    <img src="https://placehold.co/120x80/2a2e35/b52b2b?text=ARRI" alt="ARRI"
+                        class="mx-auto grayscale hover:grayscale-0 transition mb-2">
+                    <p class="text-xs font-bold text-[#b0b0b0]">ARRI</p>
+                    <span class="text-[10px] text-[#8b1e1e]">摄影机系统</span>
+                </div>
+                <div class="border-2 border-[#3d3d3d] p-4 bg-[#15181c] text-center shadow-[5px_5px_0_#000]">
+                    <img src="https://placehold.co/120x80/2a2e35/b52b2b?text=RED" alt="RED"
+                        class="mx-auto grayscale hover:grayscale-0 transition mb-2">
+                    <p class="text-xs font-bold text-[#b0b0b0]">RED</p>
+                    <span class="text-[10px] text-[#8b1e1e]">数字电影</span>
+                </div>
+                <div class="border-2 border-[#3d3d3d] p-4 bg-[#15181c] text-center shadow-[5px_5px_0_#000]">
+                    <img src="https://placehold.co/120x80/2a2e35/b52b2b?text=ZEISS" alt="ZEISS"
+                        class="mx-auto grayscale hover:grayscale-0 transition mb-2">
+                    <p class="text-xs font-bold text-[#b0b0b0]">ZEISS</p>
+                    <span class="text-[10px] text-[#8b1e1e]">镜头</span>
+                </div>
+                <div class="border-2 border-[#3d3d3d] p-4 bg-[#15181c] text-center shadow-[5px_5px_0_#000]">
+                    <img src="https://placehold.co/120x80/2a2e35/b52b2b?text=Technicolor" alt="Technicolor"
+                        class="mx-auto grayscale hover:grayscale-0 transition mb-2">
+                    <p class="text-xs font-bold text-[#b0b0b0]">Technicolor</p>
+                    <span class="text-[10px] text-[#8b1e1e]">后期</span>
+                </div>
+                <div class="border-2 border-[#3d3d3d] p-4 bg-[#15181c] text-center shadow-[5px_5px_0_#000]">
+                    <img src="https://placehold.co/120x80/2a2e35/b52b2b?text=Filmlight" alt="Filmlight"
+                        class="mx-auto grayscale hover:grayscale-0 transition mb-2">
+                    <p class="text-xs font-bold text-[#b0b0b0]">FilmLight</p>
+                    <span class="text-[10px] text-[#8b1e1e]">调色</span>
+                </div>
+                <div class="border-2 border-[#3d3d3d] p-4 bg-[#15181c] text-center shadow-[5px_5px_0_#000]">
+                    <img src="https://placehold.co/120x80/2a2e35/b52b2b?text=Panavision" alt="Panavision"
+                        class="mx-auto grayscale hover:grayscale-0 transition mb-2">
+                    <p class="text-xs font-bold text-[#b0b0b0]">Panavision</p>
+                    <span class="text-[10px] text-[#8b1e1e]">光学</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左图右文 (片场实时沟通) ========= -->
+        <section class="grid md:grid-cols-2 gap-8 items-center pt-10">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070" alt="片场沟通"
+                class="w-full h-auto border-4 border-[#2a2e35] shadow-[12px_12px_0_#000]">
+            <div class="border-l-8 border-[#8b1e1e] pl-6 space-y-4">
+                <h2 class="text-4xl font-black uppercase">导演取景器<span class="text-[#8b1e1e]">·实时</span></h2>
+                <p class="text-gray-300">打破片场信息孤岛，DIT 与导演、摄影组实时共享取景器画面。支持场记板同步、镜头元数据嵌入，每个人都能第一时间看到冲洗后的样片。</p>
+                <div class="flex gap-6 text-[#b52b2b] font-bold">
+                    <span class="border-2 border-[#8b1e1e] px-3 py-1 text-sm shadow-[3px_3px_0_black]">⛰️ 实时RAW回放</span>
+                    <span class="border-2 border-[#8b1e1e] px-3 py-1 text-sm shadow-[3px_3px_0_black]">📽️ 场记同步</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左文右图 (后期工作流集成) ========= -->
+        <section class="grid md:grid-cols-2 gap-8 items-center pt-10">
+            <div class="border-r-8 border-[#8b1e1e] pr-6 space-y-4 order-2 md:order-1">
+                <h2 class="text-4xl font-black uppercase">后期枢纽 <span class="text-[#8b1e1e]">DAVINCI · AVID</span></h2>
+                <p class="text-gray-300">与剪辑、调色软件无缝双向同步：从样片套底、时间线回批到最终母版。在聊天中即可发送时间线版本、触发渲染队列。</p>
+                <div class="flex gap-6 text-[#b52b2b] font-bold">
+                    <span class="border-2 border-[#8b1e1e] px-3 py-1 text-sm shadow-[3px_3px_0_black]">🎬 时间线回批</span>
+                    <span class="border-2 border-[#8b1e1e] px-3 py-1 text-sm shadow-[3px_3px_0_black]">⚙️ 自动化转码</span>
+                </div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070" alt="后期工作流"
+                class="w-full h-auto border-4 border-[#2a2e35] shadow-[12px_12px_0_#000] order-1 md:order-2">
+        </section>
+
+        <!-- ========= 上文下图 (全平台覆盖) ========= -->
+        <section class="pt-10 text-center">
+            <h2 class="text-4xl font-black uppercase">监视器 · 平板 · 手机</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mt-2">所有拍摄素材、场记信息在片场任何设备实时同步，支持离线缓存。</p>
+            <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2071" alt="多设备预览"
+                class="mt-8 border-4 border-[#2a2e35] shadow-[15px_15px_0_#000] w-full">
+        </section>
+
+        <!-- ========= 特性区块 (影视工业四特性) ========= -->
+        <section class="pt-10">
+            <h2 class="text-4xl font-black uppercase text-center">片场核心四板</h2>
+            <p class="text-center text-gray-400 mb-10">从开拍到杀青，工业级保障</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="border-2 border-[#5c3c3c] bg-[#121518] p-6 shadow-[7px_7px_0_#000]">
+                    <span class="text-5xl">🎞️</span>
+                    <h3 class="text-xl font-bold mt-2 text-white">片场加密</h3>
+                    <p class="text-sm text-gray-400">端到端加密，素材物理隔离，防泄露。</p>
+                </div>
+                <div class="border-2 border-[#5c3c3c] bg-[#121518] p-6 shadow-[7px_7px_0_#000]">
+                    <span class="text-5xl">⏱️</span>
+                    <h3 class="text-xl font-bold mt-2 text-white">实时色键</h3>
+                    <p class="text-sm text-gray-400">毫秒级同步LUT，摄影机与监视器色彩一致。</p>
+                </div>
+                <div class="border-2 border-[#5c3c3c] bg-[#121518] p-6 shadow-[7px_7px_0_#000]">
+                    <span class="text-5xl">🧩</span>
+                    <h3 class="text-xl font-bold mt-2 text-white">全流程插件</h3>
+                    <p class="text-sm text-gray-400">兼容达芬奇、Avid、Premiere 时间线交互。</p>
+                </div>
+                <div class="border-2 border-[#5c3c3c] bg-[#121518] p-6 shadow-[7px_7px_0_#000]">
+                    <span class="text-5xl">📊</span>
+                    <h3 class="text-xl font-bold mt-2 text-white">拍摄看板</h3>
+                    <p class="text-sm text-gray-400">进度、胶片余量、电池状态可视化仪表盘。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 客户案例 (影视公司) ========= -->
+        <section class="pt-10">
+            <h2 class="text-4xl font-black uppercase">片场·口碑</h2>
+            <p class="text-gray-400 mb-8">来自一线制作公司的评价</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- case 1 -->
+                <div class="border-2 border-[#4a2e2e] bg-[#151a1f] p-6 shadow-[8px_8px_0_#000]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://placehold.co/40x40/2a2e35/b52b2b?text=DP"
+                            class="w-10 h-10 border border-[#8b1e1e]">
+                        <div>
+                            <p class="font-bold">追光映画</p>
+                            <p class="text-xs text-[#b0b0b0]">广告制作</p>
+                        </div>
+                    </div>
+                    <p class="text-sm italic">“跨部门沟通效率提升了50%，导演在监视器直接标记时间码，后期不用重新找素材。”</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150"
+                            class="w-8 h-8 rounded-full border border-[#b52b2b]">
+                        <span class="text-xs">刘奕君 · 制片总监</span>
+                    </div>
+                </div>
+                <!-- case 2 -->
+                <div class="border-2 border-[#4a2e2e] bg-[#151a1f] p-6 shadow-[8px_8px_0_#000]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://placehold.co/40x40/2a2e35/b52b2b?text=CM"
+                            class="w-10 h-10 border border-[#8b1e1e]">
+                        <div>
+                            <p class="font-bold">野马影视</p>
+                            <p class="text-xs text-[#b0b0b0]">电影制作</p>
+                        </div>
+                    </div>
+                    <p class="text-sm italic">“杀青当天所有素材完成代理转码，场记单自动对合，太适合工业化流程了。”</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150"
+                            class="w-8 h-8 rounded-full border border-[#b52b2b]">
+                        <span class="text-xs">陈远 · 出品人</span>
+                    </div>
+                </div>
+                <!-- case 3 -->
+                <div class="border-2 border-[#4a2e2e] bg-[#151a1f] p-6 shadow-[8px_8px_0_#000]">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="https://placehold.co/40x40/2a2e35/b52b2b?text=SFX"
+                            class="w-10 h-10 border border-[#8b1e1e]">
+                        <div>
+                            <p class="font-bold">时间轴特效</p>
+                            <p class="text-xs text-[#b0b0b0]">后期视效</p>
+                        </div>
+                    </div>
+                    <p class="text-sm italic">“VFX 镜头批注实时推送，总监在剪辑线就能看到我们的更新，太强了。”</p>
+                    <div class="mt-4 flex items-center gap-2">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150"
+                            class="w-8 h-8 rounded-full border border-[#b52b2b]">
+                        <span class="text-xs">林音 · 视效协调</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 价格区块 (影视团队定价) ========= -->
+        <section class="pt-10">
+            <h2 class="text-4xl font-black uppercase">灵活制片预算</h2>
+            <p class="text-gray-400 mb-8">按项目周期、团队规模计价，无隐藏机位费</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- 基础 -->
+                <div class="border-2 border-[#4d4d4d] bg-[#14181c] p-6 shadow-[8px_8px_0_#000]">
+                    <h3 class="text-2xl font-black">短片工坊</h3>
+                    <p class="text-4xl font-bold mt-2">¥2,499<span class="text-sm text-gray-400">/月/项目</span></p>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li>✔ 10TB 高速媒资</li>
+                        <li>✔ 5个协作席位</li>
+                        <li>✔ 基础场记工具</li>
+                    </ul>
+                    <a href="#"
+                        class="block text-center mt-6 border-2 border-[#b52b2b] py-2 font-bold hover:bg-[#8b1e1e] transition">选择工坊</a>
+                </div>
+                <!-- 热门 商业制作 -->
+                <div class="border-2 border-[#b52b2b] bg-[#1c1517] p-6 shadow-[12px_12px_0_#000] scale-105 relative">
+                    <span class="absolute -top-3 right-4 bg-[#b52b2b] text-black px-4 py-1 text-xs font-bold">🔥
+                        最多选择</span>
+                    <h3 class="text-2xl font-black">剧情长片</h3>
+                    <p class="text-4xl font-bold mt-2">¥6,999<span class="text-sm text-gray-400">/月/项目</span></p>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li>✔ 无限素材归档</li>
+                        <li>✔ 20个协作席位</li>
+                        <li>✔ 实时调色监看 + 插件</li>
+                        <li>✔ 场记板同步 App</li>
+                    </ul>
+                    <a href="#"
+                        class="block text-center mt-6 bg-[#8b1e1e] border-2 border-[#b52b2b] py-2 font-bold hover:bg-black transition">选择长片</a>
+                </div>
+                <!-- 企业定制 -->
+                <div class="border-2 border-[#4d4d4d] bg-[#14181c] p-6 shadow-[8px_8px_0_#000]">
+                    <h3 class="text-2xl font-black">电影工厂</h3>
+                    <p class="text-4xl font-bold mt-2">定制</p>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li>✔ 本地私有化部署</li>
+                        <li>✔ 无限席位 / 多组并行</li>
+                        <li>✔ 专属SRE 技术支持</li>
+                        <li>✔ 源码级集成</li>
+                    </ul>
+                    <a href="#"
+                        class="block text-center mt-6 border-2 border-[#b52b2b] py-2 font-bold hover:bg-[#8b1e1e] transition">联络片场</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= CTA 区块 ========= -->
+        <section class="border-4 border-[#5a2e2e] bg-[#0d1013] p-12 text-center shadow-[15px_15px_0_#000] my-10">
+            <h2 class="text-5xl font-black uppercase">今日开机</h2>
+            <p class="text-xl text-gray-400 mt-2">预约演示，免费试用全功能30天</p>
+            <div class="flex gap-4 justify-center mt-6">
+                <a href="#"
+                    class="bg-[#8b1e1e] border-2 border-[#b52b2b] px-8 py-3 font-bold text-lg shadow-[5px_5px_0_black] hover:bg-black transition">免费试用</a>
+                <a href="#"
+                    class="border-2 border-[#b0b0b0] px-8 py-3 font-bold text-lg shadow-[5px_5px_0_black] hover:border-[#b52b2b] transition">预约演示</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========= 页脚 (粗野主义+深红+二维码) ========= -->
+    <footer class="border-t-8 border-[#8b1e1e] bg-[#0b0e10] mt-20">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- 品牌Logo + 版权 -->
+            <div>
+                <div class="flex items-center gap-2 text-3xl font-black uppercase">
+                    <span class="text-4xl">🎬</span> <span class="text-[#b52b2b]">银盐</span>
+                </div>
+                <p class="text-xs text-gray-500 mt-4">© 2025 银盐片场. 保留所有权利。<br>中国·横店影视产业实验区</p>
+                <p class="text-xs text-gray-600 mt-2">浙ICP备 12345678号</p>
+            </div>
+            <!-- 公司地址 -->
+            <div>
+                <h4 class="text-lg font-bold border-b-2 border-[#8b1e1e] inline-block">片场总部</h4>
+                <address class="not-italic text-sm text-gray-400 mt-4 leading-6">
+                    浙江省金华市东阳市<br>横店影视城 华夏摄影棚5号<br>
+                    <i class="fa-regular fa-envelope mr-1"></i> contact@silverfilm.cn<br>
+                    <i class="fa-solid fa-phone mr-1"></i> +86 579 8659 2310
+                </address>
+            </div>
+            <!-- 联系方式/社交媒体 -->
+            <div>
+                <h4 class="text-lg font-bold border-b-2 border-[#8b1e1e] inline-block">联系</h4>
+                <div class="mt-4 space-y-2 text-sm text-gray-400">
+                    <p><i class="fa-brands fa-weixin mr-2 text-[#b52b2b]"></i> 官方微信: silverfilm</p>
+                    <p><i class="fa-brands fa-x-twitter mr-2"></i> @silver_studio</p>
+                    <p><i class="fa-regular fa-clock mr-2"></i> 技术支持 24/7</p>
+                </div>
+            </div>
+            <!-- 微信公众号二维码 (占位图) -->
+            <div class="text-center md:text-left">
+                <h4 class="text-lg font-bold border-b-2 border-[#8b1e1e] inline-block">公众号</h4>
+                <div class="mt-4">
+                    <img src="https://placehold.co/100x100/1e1e1e/b52b2b?text=WeChat" alt="微信公众号二维码"
+                        class="border-2 border-[#b52b2b] shadow-[6px_6px_0_#000] w-24 h-24 mx-auto md:mx-0">
+                    <p class="text-xs text-gray-500 mt-2">扫码关注片场动态</p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部装饰性粗野线条 -->
+        <div class="border-t-2 border-[#3d2626] py-4 text-center text-xs text-gray-600">
+            <span>FILM INDUSTRY TOOLS · 新粗野主义 · 深红暗黑</span>
+        </div>
+    </footer>
+</body>
+
+</html>

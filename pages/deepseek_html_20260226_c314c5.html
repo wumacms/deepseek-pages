@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>展艺空间 · 会展企业落地页</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 额外引入柔和灰橙风格，无自定义样式，仅使用Tailwind工具类 -->
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+  <!-- 导航栏 (包含logo, 标题, 导航菜单, CTA按钮) 灰橙调 -->
+  <nav class="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- logo + 标题 -->
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 bg-orange-400 rounded-md flex items-center justify-center text-white font-bold text-xl">E</div>
+          <span class="font-semibold text-xl text-gray-800 tracking-tight">展艺<span class="text-orange-500">空间</span></span>
+        </div>
+        <!-- 导航菜单 (桌面) -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+          <a href="#" class="text-gray-700 hover:text-orange-500 transition">首页</a>
+          <a href="#" class="text-gray-700 hover:text-orange-500 transition">展会</a>
+          <a href="#" class="text-gray-700 hover:text-orange-500 transition">解决方案</a>
+          <a href="#" class="text-gray-700 hover:text-orange-500 transition">案例</a>
+          <a href="#" class="text-gray-700 hover:text-orange-500 transition">资源</a>
+        </div>
+        <!-- CTA 按钮 -->
+        <div class="flex items-center space-x-3">
+          <a href="#" class="hidden sm:inline-block text-gray-600 hover:text-gray-900 text-sm font-medium">登录</a>
+          <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition">申请参展</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="overflow-hidden">
+
+    <!-- 首屏区块 (展览展示主题) -->
+    <section class="relative bg-gradient-to-br from-gray-50 to-gray-100 py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">全球会展<span class="text-orange-500">·</span>智连未来</h1>
+            <p class="text-xl text-gray-600">从展位设计到数字孪生，一站式智慧会展解决方案。让每一场展览都成为艺术与科技的共振。</p>
+            <p class="text-gray-500 text-lg">专为组展机构、展馆运营方量身打造，集成观众数据分析与沉浸式交互。</p>
+            <div class="flex flex-wrap gap-4 pt-4">
+              <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold shadow-md">开启智展</a>
+              <a href="#" class="border-2 border-orange-300 text-orange-600 hover:bg-orange-50 px-8 py-3 rounded-full font-semibold">联系策展</a>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition border-4 border-white/60">
+            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2000&auto=format&fit=crop" alt="现代展览空间">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 合作伙伴区块 (灰底橙标) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-900">我们的生态伙伴</h2>
+        <p class="mt-3 text-gray-500 max-w-2xl mx-auto">与全球领先的会展技术公司深度合作</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+          <!-- 伙伴卡片 (模拟数据) -->
+          <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex flex-col items-center"><div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl font-bold">M</div><span class="mt-2 font-medium">微软</span><span class="text-xs text-gray-400">金牌伙伴</span></div>
+          <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex flex-col items-center"><div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl font-bold">A</div><span class="mt-2 font-medium">亚马逊云</span><span class="text-xs text-gray-400">技术伙伴</span></div>
+          <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex flex-col items-center"><div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl font-bold">S</div><span class="mt-2 font-medium">Salesforce</span><span class="text-xs text-gray-400">生态伙伴</span></div>
+          <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex flex-col items-center"><div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl font-bold">G</div><span class="mt-2 font-medium">Google</span><span class="text-xs text-gray-400">云服务</span></div>
+          <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex flex-col items-center"><div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl font-bold">A</div><span class="mt-2 font-medium">Atlassian</span><span class="text-xs text-gray-400">集成伙伴</span></div>
+          <div class="bg-gray-50 p-4 rounded-xl border border-gray-200 flex flex-col items-center"><div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 text-2xl font-bold">T</div><span class="mt-2 font-medium">腾讯云</span><span class="text-xs text-gray-400">战略伙伴</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (展览设计) -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 rounded-2xl overflow-hidden shadow-xl border-4 border-white">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop" alt="展台设计沟通" class="w-full h-auto">
+        </div>
+        <div class="order-1 md:order-2 space-y-6">
+          <h2 class="text-3xl font-bold text-gray-900">无缝策展，跨越部门</h2>
+          <p class="text-gray-600 text-lg">打破展商、搭建、运营之间的信息孤岛，通过数字化看板和即时沟通，让展位设计图、搭建进度、物料清单实时同步。</p>
+          <div class="flex flex-wrap gap-3 pt-4">
+            <span class="bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">端到端加密</span>
+            <span class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium">无限历史记录</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (数字孪生) 灰橙调 -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+          <h2 class="text-3xl font-bold text-gray-900">深度集成数字孪生</h2>
+          <p class="text-gray-600 text-lg">与常用的建模工具、VR/AR平台无缝连接：SketchUp、AutoCAD、Unreal Engine。在三维空间中预览展位、规划动线、触发交互体验。</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium">实时渲染</span>
+            <span class="bg-gray-200 text-gray-700 px-4 py-2 rounded-full text-sm font-medium">API开放</span>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white/80">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2000&auto=format&fit=crop" alt="数字孪生展览" class="w-full h-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台体验) -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-900">全平台一致体验</h2>
+        <p class="mt-3 text-gray-500 text-lg">无论是在展馆大屏、平板还是手机端，展览数据实时同步，操控流畅如一。</p>
+        <div class="mt-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?q=80&w=2000&auto=format&fit=crop" alt="多设备支持" class="w-full h-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (会展特色) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900">专为会展打造的智慧能力</h2>
+          <p class="text-gray-500 mt-3">从展商管理到观众洞察，面面俱到</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm"><div class="text-4xl mb-3">🎫</div><h3 class="font-bold text-lg">智慧票务</h3><p class="text-gray-500">人脸识别入场，实时客流热力，展商预约提醒。</p></div>
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm"><div class="text-4xl mb-3">📡</div><h3 class="font-bold text-lg">展位物联网</h3><p class="text-gray-500">互动屏幕、传感器数据云端汇总，展位活力一目了然。</p></div>
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm"><div class="text-4xl mb-3">🧩</div><h3 class="font-bold text-lg">无限集成</h3><p class="text-gray-500">连接200+营销、CRM工具，自定义观众行为触发。</p></div>
+          <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200 shadow-sm"><div class="text-4xl mb-3">📊</div><h3 class="font-bold text-lg">分析洞察</h3><p class="text-gray-500">展位停留、洽谈热度、展商转化率数据可视化。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 客户案例区块 (灰橙卡片) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold text-gray-900">他们正在使用我们的智慧会展平台</h2>
+          <p class="text-gray-500 mt-3">来自全球领先组展机构的信赖</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-md"><div class="flex items-center gap-2"><div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 font-bold">科</div><span class="font-semibold">科技创新展</span></div><p class="text-sm text-gray-400 mt-1">互联网 · 深圳</p><p class="mt-4 text-gray-600 italic">“展商匹配效率提升了50%，现场洽谈预约量翻倍”</p><div class="flex items-center mt-6"><div class="w-10 h-10 bg-gray-300 rounded-full overflow-hidden"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover"></div><div class="ml-3"><p class="font-medium">李志强</p><p class="text-xs text-gray-400">项目总监</p></div></div></div>
+          <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-md"><div class="flex items-center gap-2"><div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 font-bold">未</div><span class="font-semibold">未来教育展</span></div><p class="text-sm text-gray-400 mt-1">教育 · 上海</p><p class="mt-4 text-gray-600 italic">“观众数据与教务系统打通，论坛报名效率提升70%”</p><div class="flex items-center mt-6"><div class="w-10 h-10 bg-gray-300 rounded-full overflow-hidden"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover"></div><div class="ml-3"><p class="font-medium">王美玲</p><p class="text-xs text-gray-400">运营主任</p></div></div></div>
+          <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-md"><div class="flex items-center gap-2"><div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-500 font-bold">智</div><span class="font-semibold">智造科技展</span></div><p class="text-sm text-gray-400 mt-1">工业 · 佛山</p><p class="mt-4 text-gray-600 italic">“本地部署+工业级物联，实时监测设备展区互动数据”</p><div class="flex items-center mt-6"><div class="w-10 h-10 bg-gray-300 rounded-full overflow-hidden"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop" class="w-full h-full object-cover"></div><div class="ml-3"><p class="font-medium">张建国</p><p class="text-xs text-gray-400">IT总监</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 (灰橙大号数字) -->
+    <section class="py-16 bg-orange-500 text-white">
+      <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div><div class="text-4xl font-bold">500+</div><div class="text-orange-100">展会项目</div></div>
+        <div><div class="text-4xl font-bold">98%</div><div class="text-orange-100">展商续约率</div></div>
+        <div><div class="text-4xl font-bold">20M+</div><div class="text-orange-100">年度观众</div></div>
+        <div><div class="text-4xl font-bold">24/7</div><div class="text-orange-100">全球支持</div></div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (对比卡片 灰橙系) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center"><h2 class="text-3xl font-bold text-gray-900">灵活定价 · 智展未来</h2><p class="text-gray-500 mt-3">按需选择，无隐藏费用</p></div>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm"><h3 class="text-xl font-bold">基础展包</h3><p class="text-4xl font-bold mt-4">¥49<span class="text-base font-normal text-gray-400">/月</span></p><ul class="mt-6 space-y-3 text-gray-600"><li>✓ 展商管理基础</li><li>✓ 10GB 媒体库</li><li>✓ 标准数据分析</li></ul><a href="#" class="mt-8 block text-center border border-orange-500 text-orange-600 py-3 rounded-full font-semibold hover:bg-orange-50">选择基础版</a></div>
+          <div class="bg-white p-8 rounded-3xl border-2 border-orange-400 shadow-xl relative"><span class="absolute top-0 right-8 bg-orange-500 text-white px-3 py-1 text-sm rounded-b-lg">热门</span><h3 class="text-xl font-bold">商业展包</h3><p class="text-4xl font-bold mt-4">¥99<span class="text-base font-normal text-gray-400">/月</span></p><ul class="mt-6 space-y-3 text-gray-600"><li>✓ 无限展商/展位</li><li>✓ 100GB+VR媒体</li><li>✓ 所有API集成</li><li>✓ 专属客户经理</li></ul><a href="#" class="mt-8 block bg-orange-500 text-white py-3 rounded-full font-semibold hover:bg-orange-600">选择商业版</a></div>
+          <div class="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm"><h3 class="text-xl font-bold">企业智展</h3><p class="text-4xl font-bold mt-4">定制</p><ul class="mt-6 space-y-3 text-gray-600"><li>✓ 本地/私有化部署</li><li>✓ 无限存储</li><li>✓ 专属成功团队</li><li>✓ SSO/等保合规</li></ul><a href="#" class="mt-8 block text-center border border-orange-500 text-orange-600 py-3 rounded-full font-semibold hover:bg-orange-50">联系销售</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (灰橙简约) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-900">常见问题</h2>
+        <div class="mt-10 space-y-5">
+          <div class="border border-gray-200 rounded-xl p-5"><details><summary class="font-semibold text-lg cursor-pointer">支持私有化部署吗？</summary><p class="mt-3 text-gray-500">是的，企业版支持私有云或本地服务器部署，满足大型展馆数据安全要求。</p></details></div>
+          <div class="border border-gray-200 rounded-xl p-5"><details><summary class="font-semibold text-lg cursor-pointer">可以试用多久？</summary><p class="mt-3 text-gray-500">所有新用户均可享受30天全功能免费试用，无需信用卡。</p></details></div>
+          <div class="border border-gray-200 rounded-xl p-5"><details><summary class="font-semibold text-lg cursor-pointer">数据存储在哪里？</summary><p class="mt-3 text-gray-500">数据存储在云端独立数据库，可选中国大陆或海外区域，符合当地法规。</p></details></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 区块 (醒目灰橙) -->
+    <section class="py-20 bg-orange-500 text-white">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold">立即提升展会智慧能级</h2>
+        <p class="mt-4 text-orange-100 text-xl">加入数百家信任我们的组展机构，开启高效策展之旅。</p>
+        <div class="flex flex-wrap gap-4 justify-center mt-8">
+          <a href="#" class="bg-white text-orange-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold shadow-lg">免费试用30天</a>
+          <a href="#" class="border-2 border-white text-white hover:bg-orange-400 px-8 py-3 rounded-full font-semibold">预约演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码) 灰底橙点缀 -->
+  <footer class="bg-gray-900 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <!-- 品牌logo+版权 -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center space-x-2"><div class="w-8 h-8 bg-orange-400 rounded-md flex items-center justify-center text-white font-bold text-xl">E</div><span class="text-white font-bold text-xl">展艺空间</span></div>
+          <p class="text-sm text-gray-400 mt-4">© 2025 展艺科技<br>保留一切权利。</p>
+        </div>
+        <!-- 地址 -->
+        <div><h4 class="text-white font-semibold mb-3">公司地址</h4><p class="text-sm text-gray-400">上海市浦东新区<br>国展路1099号<br>会展大厦15F</p></div>
+        <!-- 联系方式 -->
+        <div><h4 class="text-white font-semibold mb-3">联系方式</h4><p class="text-sm text-gray-400">021-6066 8899<br>contact@expoart.com<br>服务号：expoart</p></div>
+        <!-- 微信公众号二维码 (模拟) -->
+        <div><h4 class="text-white font-semibold mb-3">官方微信</h4><div class="w-24 h-24 bg-gray-700 rounded-lg flex items-center justify-center border border-gray-600"><span class="text-orange-300 text-xs text-center">公众号<br>二维码</span></div><p class="text-xs text-gray-400 mt-2">扫一扫关注我们</p></div>
+        <!-- 社交图标占位 -->
+        <div class="flex space-x-4 items-start"><a href="#" class="text-gray-400 hover:text-orange-400 text-xl">𝕏</a><a href="#" class="text-gray-400 hover:text-orange-400 text-xl">in</a><a href="#" class="text-gray-400 hover:text-orange-400 text-xl">📱</a></div>
+      </div>
+      <div class="border-t border-gray-800 mt-10 pt-6 text-sm text-gray-500 text-center">本页面仅作设计展示，所有数据均为展览行业模拟内容。</div>
+    </div>
+  </footer>
+</body>
+</html>

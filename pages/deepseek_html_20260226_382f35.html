@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筑享空间 · 建筑装饰设计</title>
+    <!-- Tailwind via CDN + warm natural base -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tiny extra for natural warmth (only body bg, no custom classes) -->
+    <style>
+        body {
+            background-color: #faf7f2;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-stone-700 antialiased">
+
+    <!-- ===== 导航栏 (logo + 标题 + CTA按钮, 无菜单) ===== -->
+    <header class="bg-white/90 backdrop-blur-sm border-b border-stone-200 sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- 左侧: logo + 标题 (温暖木质调) -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-amber-800/10 rounded-lg flex items-center justify-center text-2xl">🪑</div>
+                <span class="text-xl font-medium text-stone-800 tracking-tight">筑享空间 · interiors</span>
+            </div>
+            <!-- 右侧: 唯一CTA按钮 (不含菜单) -->
+            <div>
+                <a href="#contact"
+                    class="inline-flex items-center justify-center rounded-full bg-amber-800 px-6 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-amber-900 transition-colors">免费咨询方案</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (hero) —— 室内设计温暖氛围 -->
+        <section class="relative bg-gradient-to-b from-stone-100 to-[#faf7f2] pt-20 pb-24">
+            <div class="max-w-7xl mx-auto px-6 lg:flex lg:items-center lg:gap-16">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl font-light tracking-tight text-stone-800 leading-tight">
+                        <span class="font-medium">自然奢感</span> 居住哲学
+                    </h1>
+                    <p class="mt-6 text-lg text-stone-600 max-w-xl mx-auto lg:mx-0">
+                        为别墅、大平层及商业空间提供整体装饰设计。从木材、石材到光影，让每一寸都呼吸温暖。
+                    </p>
+                    <p class="mt-3 text-stone-500 text-base">二十年专注高端室内美学，用触感与质感定义空间。</p>
+                    <div class="mt-10 flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <a href="#"
+                            class="rounded-full bg-amber-800 px-8 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-amber-900">查看案例</a>
+                        <a href="#"
+                            class="rounded-full border border-stone-300 bg-white/70 px-8 py-3.5 text-sm font-semibold text-stone-700 hover:bg-stone-100">预约设计师</a>
+                    </div>
+                </div>
+                <div class="mt-16 lg:mt-0 lg:w-1/2">
+                    <div
+                        class="rounded-3xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition border-8 border-white/60">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=80" alt="温暖木质客厅"
+                            class="w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通→ 设计理念) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 grid items-center gap-12 lg:grid-cols-2">
+                <div class="order-2 lg:order-1 rounded-2xl shadow-xl border-8 border-stone-100">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="天然材质细节" class="rounded-lg w-full h-auto object-cover aspect-[5/4]">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">天然材质，跨越时间</h2>
+                    <p class="mt-4 text-lg text-stone-600">精选北美黑胡桃、意大利洞石，让材料本身的纹理成为空间语言。我们打破“装饰”与“建筑”的界限，还原触感温暖。</p>
+                    <div class="mt-6 flex flex-wrap gap-6">
+                        <span class="flex items-center gap-2 text-stone-700"><span
+                                class="text-amber-700 text-xl">🌰</span> 原木拼花工艺</span>
+                        <span class="flex items-center gap-2 text-stone-700"><span
+                                class="text-amber-700 text-xl">🪨</span> 天然石材无缝拼接</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成 → 全案服务) -->
+        <section class="py-20 bg-stone-50/80">
+            <div class="max-w-7xl mx-auto px-6 grid items-center gap-12 lg:grid-cols-2">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">深度整合 软装/硬装</h2>
+                    <p class="mt-4 text-lg text-stone-600">从墙顶地到家具、灯具、织物，我们一体化设计搭配。不再割裂施工与陈设，所见即所得，还原度超过95%。</p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <span
+                            class="bg-amber-100 text-amber-900 px-4 py-2 rounded-full text-sm font-medium">进口面料合作</span>
+                        <span
+                            class="bg-amber-100 text-amber-900 px-4 py-2 rounded-full text-sm font-medium">原创家具定制</span>
+                    </div>
+                </div>
+                <div class="rounded-2xl shadow-xl border-8 border-white/80">
+                    <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                        alt="软装搭配细节" class="rounded-lg w-full h-auto object-cover aspect-[5/4]">
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台体验→ 实景案例) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-light text-stone-800">全案落地 · 实景一致</h2>
+                <p class="mt-3 text-lg text-stone-600 max-w-2xl mx-auto">无论是效果图还是最终交付，我们确保每一处细节、每一块材料的质感都与设计初衷一致。</p>
+                <div class="mt-12 rounded-2xl shadow-2xl overflow-hidden max-w-4xl mx-auto border-8 border-stone-100">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80"
+                        alt="完工后的餐厅" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为商务→ 设计专长) 温暖icon -->
+        <section class="py-20 bg-amber-50/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">为生活场景而设计</h2>
+                    <p class="mt-3 text-stone-600">从收纳到光影，从动线到材质，每一个特性都关乎居住体验</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white/80 rounded-2xl p-8 text-center shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">🌿</div>
+                        <h3 class="text-xl font-medium text-stone-800">健康环保</h3>
+                        <p class="mt-2 text-stone-600">全系F4星板材、水性漆，即装即住。</p>
+                    </div>
+                    <div class="bg-white/80 rounded-2xl p-8 text-center shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">☀️</div>
+                        <h3 class="text-xl font-medium text-stone-800">光影设计</h3>
+                        <p class="mt-2 text-stone-600">智能调光、层次照明，营造氛围。</p>
+                    </div>
+                    <div class="bg-white/80 rounded-2xl p-8 text-center shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">🪚</div>
+                        <h3 class="text-xl font-medium text-stone-800">私人工匠</h3>
+                        <p class="mt-2 text-stone-600">20年以上老师傅现场勘测、安装。</p>
+                    </div>
+                    <div class="bg-white/80 rounded-2xl p-8 text-center shadow-sm border border-stone-200">
+                        <div class="text-5xl mb-4">📐</div>
+                        <h3 class="text-xl font-medium text-stone-800">BIM 精确</h3>
+                        <p class="mt-2 text-stone-600">全案三维建模，零误差预留。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (室内行业数据) 温暖数字 -->
+        <section class="py-16 bg-stone-800 text-stone-100">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-light text-amber-300">600+</div>
+                        <div class="mt-2 text-stone-300 text-sm tracking-wide">别墅大宅项目</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-light text-amber-300">100%</div>
+                        <div class="mt-2 text-stone-300 text-sm tracking-wide">实景还原承诺</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-light text-amber-300">25</div>
+                        <div class="mt-2 text-stone-300 text-sm tracking-wide">资深设计师</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-light text-amber-300">15年</div>
+                        <div class="mt-2 text-stone-300 text-sm tracking-wide">平均行业经验</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (核心团队) 温暖人像 -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">设计核心</h2>
+                    <p class="mt-3 text-stone-600">来自建筑、美术、室内领域的资深主创</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <!-- 成员1 -->
+                    <div class="text-center">
+                        <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-amber-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                alt="陈松" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-4 text-xl font-medium text-stone-800">陈松</h3>
+                        <p class="text-amber-800 text-sm">创始人 & 设计总监</p>
+                        <p class="mt-2 text-stone-600 text-sm">前HBA主案，东方美学倡导者</p>
+                    </div>
+                    <!-- 成员2 -->
+                    <div class="text-center">
+                        <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-amber-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                alt="陆瑶" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-4 text-xl font-medium text-stone-800">陆瑶</h3>
+                        <p class="text-amber-800 text-sm">软装艺术总监</p>
+                        <p class="mt-2 text-stone-600 text-sm">旅法面料设计师，国际买手</p>
+                    </div>
+                    <!-- 成员3 -->
+                    <div class="text-center">
+                        <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-amber-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                alt="周明" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-4 text-xl font-medium text-stone-800">周明</h3>
+                        <p class="text-amber-800 text-sm">技术总工</p>
+                        <p class="mt-2 text-stone-600 text-sm">20年施工深化经验，细节控</p>
+                    </div>
+                    <!-- 成员4 -->
+                    <div class="text-center">
+                        <div class="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-amber-100 shadow-md">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80"
+                                alt="何穗" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="mt-4 text-xl font-medium text-stone-800">何穗</h3>
+                        <p class="text-amber-800 text-sm">灯光与智能设计</p>
+                        <p class="mt-2 text-stone-600 text-sm">照明设计奖得主，氛围大师</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (灵活定价 → 服务方案) 无隐藏费用 -->
+        <section class="py-20 bg-stone-100/70">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-light text-stone-800">服务方案</h2>
+                    <p class="mt-3 text-stone-600">按项目类型灵活收费，设计费透明，无增项</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-stone-200 relative">
+                        <h3 class="text-xl font-medium text-stone-800">纯设计</h3>
+                        <div class="mt-4 flex items-end gap-1">
+                            <span class="text-3xl font-light text-stone-900">¥480</span>
+                            <span class="text-stone-500 mb-1">/㎡</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2">✓ 概念方案+效果图</li>
+                            <li class="flex items-center gap-2">✓ 全套施工图</li>
+                            <li class="flex items-center gap-2">✓ 主材清单</li>
+                        </ul>
+                        <a href="#"
+                            class="mt-8 block text-center rounded-full border border-stone-300 px-6 py-3 text-stone-700 hover:bg-stone-100">选择此方案</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div
+                        class="bg-white rounded-3xl p-8 shadow-xl border-2 border-amber-700 relative scale-105 md:scale-110 z-10">
+                        <span
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-800 text-white text-xs font-bold px-4 py-1 rounded-full">最受欢迎</span>
+                        <h3 class="text-xl font-medium text-stone-800">全案托管</h3>
+                        <div class="mt-4 flex items-end gap-1">
+                            <span class="text-3xl font-light text-stone-900">¥1280</span>
+                            <span class="text-stone-500 mb-1">/㎡</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2">✓ 纯设计全部内容</li>
+                            <li class="flex items-center gap-2">✓ 软装采购+摆场</li>
+                            <li class="flex items-center gap-2">✓ 施工监理+节点验收</li>
+                            <li class="flex items-center gap-2">✓ 智能家居设计</li>
+                        </ul>
+                        <a href="#"
+                            class="mt-8 block text-center rounded-full bg-amber-800 px-6 py-3 text-white hover:bg-amber-900">立即咨询</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-white rounded-3xl p-8 shadow-sm border border-stone-200">
+                        <h3 class="text-xl font-medium text-stone-800">商业空间</h3>
+                        <div class="mt-4 flex items-end gap-1">
+                            <span class="text-3xl font-light text-stone-900">定制</span>
+                        </div>
+                        <ul class="mt-6 space-y-3 text-stone-600">
+                            <li class="flex items-center gap-2">✓ 店铺/展厅/办公楼</li>
+                            <li class="flex items-center gap-2">✓ 消防/空调对接</li>
+                            <li class="flex items-center gap-2">✓ 品牌SI融入</li>
+                            <li class="flex items-center gap-2">✓ 全国项目落地</li>
+                        </ul>
+                        <a href="#"
+                            class="mt-8 block text-center rounded-full border border-stone-300 px-6 py-3 text-stone-700 hover:bg-stone-100">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (室内设计faq) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-3xl font-light text-center text-stone-800">常见问题</h2>
+                <div class="mt-12 space-y-5">
+                    <div class="border border-stone-200 rounded-2xl p-6 bg-stone-50/30">
+                        <h3 class="text-lg font-medium text-stone-800">设计费怎么支付？包含后期跟踪吗？</h3>
+                        <p class="mt-2 text-stone-600">签约后支付60%，效果图完成后支付40%。我们提供施工期间8次关键节点现场交底/验收。</p>
+                    </div>
+                    <div class="border border-stone-200 rounded-2xl p-6 bg-stone-50/30">
+                        <h3 class="text-lg font-medium text-stone-800">外地项目可以设计吗？</h3>
+                        <p class="mt-2 text-stone-600">可以。我们支持远程线上会议汇报，同时安排当地项目经理配合测量及落地。差旅费按实结算。</p>
+                    </div>
+                    <div class="border border-stone-200 rounded-2xl p-6 bg-stone-50/30">
+                        <h3 class="text-lg font-medium text-stone-800">主材是必须从你们这里采购吗？</h3>
+                        <p class="mt-2 text-stone-600">非必须。但我们可以提供供应商底价，同款保证低于市场价，且负责售后。</p>
+                    </div>
+                    <div class="border border-stone-200 rounded-2xl p-6 bg-stone-50/30">
+                        <h3 class="text-lg font-medium text-stone-800">设计周期多长？</h3>
+                        <p class="mt-2 text-stone-600">150㎡以内平层约15个工作日，别墅/大宅25-35个工作日（依复杂度而定）。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 (最后行动) -->
+        <section class="bg-amber-800 py-20">
+            <div class="max-w-3xl mx-auto text-center px-6">
+                <h2 class="text-3xl md:text-4xl font-light text-white">开始打造您的梦想空间</h2>
+                <p class="mt-3 text-amber-100 text-lg">预约设计师一对一沟通，免费获得初步构思及造价概算。</p>
+                <div class="mt-10 flex flex-wrap gap-5 justify-center">
+                    <a href="#"
+                        class="rounded-full bg-white px-8 py-4 text-sm font-semibold text-amber-900 shadow-md hover:bg-stone-100">免费初步咨询</a>
+                    <a href="#"
+                        class="rounded-full border border-white/40 px-8 py-4 text-sm font-semibold text-white hover:bg-amber-700/40">查看过往作品</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== 页脚 (简单版权声明) ===== -->
+    <footer class="bg-stone-900 text-stone-400 py-8 text-sm">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p>© 2025 筑享空间设计 · 温暖自然的建筑装饰. All rights reserved.</p>
+            <p class="mt-2 text-stone-500">室内设计 · 软装陈设 · 施工管理</p>
+        </div>
+    </footer>
+
+    <!-- 所有内容均使用tailwind，无自定义css；图片来自unsplash室内装饰相关 -->
+</body>
+
+</html>

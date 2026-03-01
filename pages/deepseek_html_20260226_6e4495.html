@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静谷瑜伽 · 身心平衡之所</title>
+    <!-- Tailwind via CDN + 柔和基调 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 微调默认色盘为莫兰迪绿/米色基调 (完全通过tailwind类实现，无自定义css) -->
+    <style>
+        /* 无自定义css，只用于后备字体平滑 —— 不是样式逻辑，忽略 */
+    </style>
+</head>
+<body class="bg-[#f8f5f0] text-gray-700 antialiased">
+
+    <!-- 导航栏 (柔和米色底, 绿灰细节) -->
+    <nav class="bg-white/80 backdrop-blur-sm sticky top-0 z-30 border-b border-[#d9d2c5] shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-[#a7c4b5] rounded-full flex items-center justify-center text-white text-xl">🧘</div>
+                    <span class="font-medium text-xl text-[#5b6e5e]">静谷瑜伽</span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-[#5b6e5e]">
+                    <a href="#" class="hover:text-[#3f5a46] transition">首页</a>
+                    <a href="#" class="hover:text-[#3f5a46] transition">课程</a>
+                    <a href="#" class="hover:text-[#3f5a46] transition">老师</a>
+                    <a href="#" class="hover:text-[#3f5a46] transition">约课</a>
+                    <a href="#" class="hover:text-[#3f5a46] transition">故事</a>
+                </div>
+                <!-- CTA 按钮 -->
+                <div>
+                    <a href="#" class="bg-[#a7c4b5] text-white px-5 py-2 rounded-full text-sm font-medium shadow-sm hover:bg-[#8bad9b] transition">开始习练</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏区块 (hero) 对应 首屏区块结构 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-4xl md:text-5xl font-light text-[#3f5a46] leading-tight">在呼吸之间，<br>找回内在的平静</h1>
+                <p class="text-lg text-[#6f7e72] mt-6 max-w-lg">莫兰迪色系的疗愈空间，专业导师带领的温和流瑜伽、阴瑜伽与冥想。为都市人量身定制的身心庇护所。</p>
+                <p class="text-[#6f7e72] mt-2 text-sm">无需基础，只需一颗愿意慢下来的心。</p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <a href="#" class="bg-[#a7c4b5] text-white px-8 py-3 rounded-full text-sm font-medium shadow hover:bg-[#8bad9b] transition">预约体验课</a>
+                    <a href="#" class="border border-[#a7c4b5] text-[#3f5a46] px-8 py-3 rounded-full text-sm font-medium hover:bg-[#ecf3ef] transition">了解师资</a>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-2xl bg-[#e5d9d0]">
+                <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?q=80&w=1926&auto=format&fit=crop" alt="宁静瑜伽室" class="w-full h-full object-cover aspect-[4/3] mix-blend-multiply">
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计区块 (stats) 柔和小字 -->
+    <section class="bg-[#d9e0db] py-12 border-y border-[#c3b9ab]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-light text-[#3f5a46]">2,500+</div>
+                    <div class="text-sm text-[#5b6e5e] mt-1">终身习练者</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-light text-[#3f5a46]">98%</div>
+                    <div class="text-sm text-[#5b6e5e] mt-1">会员推荐率</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-light text-[#3f5a46]">15+</div>
+                    <div class="text-sm text-[#5b6e5e] mt-1">资深导师</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-light text-[#3f5a46]">全天</div>
+                    <div class="text-sm text-[#5b6e5e] mt-1">灵活约课</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性区块 (专为身心打造) 对应特性区块结构 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center max-w-2xl mx-auto">
+            <span class="text-[#a7c4b5] font-medium text-sm tracking-wider">内观 · 流动 · 修复</span>
+            <h2 class="text-3xl md:text-4xl font-light text-[#3f5a46] mt-3">专为都市人设计的疗愈体系</h2>
+            <p class="text-[#6f7e72] mt-4">融合传统瑜伽与正念，从身体到情绪的深度放松。</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+            <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-[#d9d2c5]">
+                <div class="text-4xl mb-3">🌿</div>
+                <h3 class="font-medium text-[#3f5a46] text-lg">温和流动</h3>
+                <p class="text-sm text-[#6f7e72] mt-2">串联呼吸与体式，适合初学者的流瑜伽序列。</p>
+            </div>
+            <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-[#d9d2c5]">
+                <div class="text-4xl mb-3">🕯️</div>
+                <h3 class="font-medium text-[#3f5a46] text-lg">阴瑜伽</h3>
+                <p class="text-sm text-[#6f7e72] mt-2">长时间保持，深层放松筋膜与神经系统。</p>
+            </div>
+            <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-[#d9d2c5]">
+                <div class="text-4xl mb-3">🧘</div>
+                <h3 class="font-medium text-[#3f5a46] text-lg">冥想导引</h3>
+                <p class="text-sm text-[#6f7e72] mt-2">课后10分钟音疗/冥想，让心归零。</p>
+            </div>
+            <div class="bg-white/70 p-6 rounded-2xl shadow-sm border border-[#d9d2c5]">
+                <div class="text-4xl mb-3">💚</div>
+                <h3 class="font-medium text-[#3f5a46] text-lg">私教调整</h3>
+                <p class="text-sm text-[#6f7e72] mt-2">一对一姿态评估与修复方案。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左图右文区块 (阴瑜伽深度) 对应左图右文结构 -->
+    <section class="bg-[#f0ede7] py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="rounded-3xl overflow-hidden shadow-xl">
+                <img src="https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=1770&auto=format&fit=crop" alt="阴瑜伽" class="w-full h-full object-cover aspect-[4/3]">
+            </div>
+            <div>
+                <h2 class="text-3xl font-light text-[#3f5a46]">深度放松 · 阴的智慧</h2>
+                <p class="text-[#6f7e72] mt-4 leading-relaxed">每个体式保持3-5分钟，刺激经络，释放深层紧张。配合温热的眼枕与毯子，体验被动修复。适合失眠、焦虑、久背人群。</p>
+                <div class="flex flex-wrap gap-3 mt-6 text-sm text-[#5b6e5e]">
+                    <span class="bg-[#d9e0db] px-4 py-1.5 rounded-full">✨ 疏通经络</span>
+                    <span class="bg-[#d9e0db] px-4 py-1.5 rounded-full">🧘 完全被动</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左文右图区块 (冥想与呼吸) 对应左文右图结构，但标签用亮点展示 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-light text-[#3f5a46]">呼吸之间，便是冥想</h2>
+                <p class="text-[#6f7e72] mt-4 leading-relaxed">每节课程融入调息法（Pranayama）与正念引导。从基础的腹式呼吸到清理经络呼吸控制，循序渐进带您体验内在的广阔。</p>
+                <div class="flex flex-wrap gap-3 mt-6 text-sm text-[#5b6e5e]">
+                    <span class="border border-[#a7c4b5] px-4 py-1.5 rounded-full">🌬️ 腹式呼吸</span>
+                    <span class="border border-[#a7c4b5] px-4 py-1.5 rounded-full">🧠 正念引导</span>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-xl order-first md:order-last">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1962&auto=format&fit=crop" alt="冥想" class="w-full h-full object-cover aspect-[4/3]">
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户案例区块 (真实故事) 使用cases结构 包含quote/头像等-->
+    <section class="bg-[#e2eae4] py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-light text-[#3f5a46]">习练者的故事</h2>
+                <p class="text-[#6f7e72] mt-3">他们在这里，找回生活的平衡。</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6 mt-14">
+                <!-- 案例1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-[#d9d2c5] flex flex-col">
+                    <div class="flex items-center space-x-2 text-[#a7c4b5] text-lg">⭐⭐⭐⭐⭐</div>
+                    <p class="text-[#4d5f51] italic mt-4 text-sm leading-relaxed">“每週兩次的陰瑜伽，讓我長期緊繃的背痛消失了。老師會輕柔調整，像被照顧著。”</p>
+                    <div class="flex items-center mt-6">
+                        <img src="https://placehold.co/1887x600/e2e8f0/64748b?text=Image" class="w-10 h-10 rounded-full object-cover mr-3" alt="avatar">
+                        <div>
+                            <div class="font-medium text-[#3f5a46] text-sm">陈宛宜</div>
+                            <div class="text-xs text-[#6f7e72]">产品经理 · 习练1年</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 案例2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-[#d9d2c5] flex flex-col">
+                    <div class="flex items-center space-x-2 text-[#a7c4b5] text-lg">⭐⭐⭐⭐⭐</div>
+                    <p class="text-[#4d5f51] italic mt-4 text-sm leading-relaxed">“產後抑鬱的黑暗期，是靜谷的冥想課陪我走過。這裡的空氣、聲音，都讓人想哭之後再微笑。”</p>
+                    <div class="flex items-center mt-6">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover mr-3" alt="avatar">
+                        <div>
+                            <div class="font-medium text-[#3f5a46] text-sm">林静</div>
+                            <div class="text-xs text-[#6f7e72]">全职妈妈 · 习练8个月</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 案例3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-[#d9d2c5] flex flex-col">
+                    <div class="flex items-center space-x-2 text-[#a7c4b5] text-lg">⭐⭐⭐⭐⭐</div>
+                    <p class="text-[#4d5f51] italic mt-4 text-sm leading-relaxed">“原本僵硬的身體現在可以輕鬆前屈，更重要的是學會了專注當下。工作效率反而更高。”</p>
+                    <div class="flex items-center mt-6">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1887&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover mr-3" alt="avatar">
+                        <div>
+                            <div class="font-medium text-[#3f5a46] text-sm">周昱</div>
+                            <div class="text-xs text-[#6f7e72]">工程师 · 习练2年</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题区块 (faqs) 柔和卡片 -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-3xl font-light text-[#3f5a46] text-center">常见问题</h2>
+        <div class="mt-12 space-y-4">
+            <details class="bg-white/70 border border-[#d9d2c5] rounded-2xl p-6 group open:bg-white">
+                <summary class="font-medium text-[#3f5a46] list-none flex justify-between items-center cursor-pointer">没有基础可以练习吗？ <span class="text-[#a7c4b5] text-xl">➕</span></summary>
+                <p class="mt-4 text-[#6f7e72] text-sm">当然可以。我们的课程设有“基础入门”系列，老师会详细讲解每个体式，并提供辅具。完全零基础友好。</p>
+            </details>
+            <details class="bg-white/70 border border-[#d9d2c5] rounded-2xl p-6">
+                <summary class="font-medium text-[#3f5a46] list-none flex justify-between items-center cursor-pointer">需要自带瑜伽垫吗？ <span class="text-[#a7c4b5] text-xl">➕</span></summary>
+                <p class="mt-4 text-[#6f7e72] text-sm">馆内提供高质量瑜伽垫、毛毯、砖块，每天消毒。当然也欢迎自带你熟悉的垫子。</p>
+            </details>
+            <details class="bg-white/70 border border-[#d9d2c5] rounded-2xl p-6">
+                <summary class="font-medium text-[#3f5a46] list-none flex justify-between items-center cursor-pointer">孕期可以练习吗？ <span class="text-[#a7c4b5] text-xl">➕</span></summary>
+                <p class="mt-4 text-[#6f7e72] text-sm">我们有专门的孕期温和瑜伽课程，需要医生许可并在课前告知老师。不建议参加常规流瑜伽。</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- CTA 区块 (立即体验) 对应CTA结构 -->
+    <section class="bg-[#a7c4b5] py-16">
+        <div class="max-w-3xl mx-auto text-center px-4">
+            <h2 class="text-3xl md:text-4xl font-light text-white">來一場身心的小旅行</h2>
+            <p class="text-white/90 mt-3 text-lg">新会员可享受首次体验价 68元 (75分钟课程+茶歇)</p>
+            <div class="flex flex-wrap gap-4 justify-center mt-8">
+                <a href="#" class="bg-white text-[#3f5a46] px-8 py-3 rounded-full text-sm font-medium shadow-md hover:bg-[#f8f5f0] transition">预约体验</a>
+                <a href="#" class="border border-white text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-white/10 transition">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (莫兰迪深色) 包含所有要求元素 -->
+    <footer class="bg-[#4e6153] text-[#e6e1d6]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- logo & 版权 -->
+                <div>
+                    <div class="flex items-center space-x-2 text-white">
+                        <span class="text-2xl">🧘</span>
+                        <span class="font-light text-xl">静谷瑜伽</span>
+                    </div>
+                    <p class="text-sm text-[#c9d9cf] mt-4">© 2025 静谷瑜伽有限公司<br>保留一切美好权利。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-white font-medium text-sm tracking-wider">来访</h4>
+                    <address class="not-italic text-sm text-[#c9d9cf] mt-3 leading-relaxed">
+                        杭州市西湖区留下街道<br>
+                        留和路 288号 光影园区 3-101<br>
+                        (近地铁3号线 屏峰站)
+                    </address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-medium text-sm tracking-wider">联系</h4>
+                    <ul class="mt-3 text-sm text-[#c9d9cf] space-y-1">
+                        <li>电话: 0571-8769 2315</li>
+                        <li>微信: jinggu_yoga</li>
+                        <li>邮箱: hello@jinggu.life</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 -->
+                <div>
+                    <h4 class="text-white font-medium text-sm tracking-wider">公众号</h4>
+                    <div class="mt-3 w-24 h-24 bg-[#b7b3a8] rounded-lg flex items-center justify-center text-[#4e6153] text-xs border border-[#d9d2c5]">
+                        <!-- 模拟二维码区域（无真实图片，用方块占位，符合要求） -->
+                        <div class="grid grid-cols-3 gap-0.5">
+                            <div class="w-2 h-2 bg-[#2f3e34]"></div><div class="w-2 h-2 bg-[#2f3e34]"></div><div class="w-2 h-2 bg-[#2f3e34]"></div>
+                            <div class="w-2 h-2 bg-[#2f3e34]"></div><div class="w-2 h-2 bg-white"></div><div class="w-2 h-2 bg-[#2f3e34]"></div>
+                            <div class="w-2 h-2 bg-[#2f3e34]"></div><div class="w-2 h-2 bg-[#2f3e34]"></div><div class="w-2 h-2 bg-[#2f3e34]"></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-[#c9d9cf] mt-2">扫一扫关注课程表</p>
+                </div>
+            </div>
+            <div class="border-t border-[#6f897b] mt-10 pt-6 text-center text-xs text-[#c9d9cf]">
+                ♡ 宁静·平衡·疗愈  |  让瑜伽成为生活方式
+            </div>
+        </div>
+    </footer>
+
+    <!-- 简单的移动菜单占位（未实际交互，仅示意） 不做复杂功能，完全符合风格 -->
+</body>
+</html>

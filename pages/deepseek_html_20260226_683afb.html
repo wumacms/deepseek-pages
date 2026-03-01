@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基石建筑 · 商务落地页</title>
+    <!-- Tailwind via CDN + baseline (no custom styles) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tiny google font suggestion for better readability (still tailwind managed) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 保证所有样式仅使用tailwind工具类，此块只设置字体回退，无自定义样式 */
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- 导航栏 (logo+标题+CTA按钮，不含菜单) -->
+    <header class="border-b border-gray-100 bg-white/95 backdrop-blur-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <!-- 建筑行业抽象logo (纯tailwind绘制) -->
+                <div
+                    class="w-8 h-8 bg-blue-700 rounded flex items-center justify-center text-white text-lg font-bold shadow-sm">
+                    🏗️</div>
+                <span class="text-xl font-semibold tracking-tight text-gray-900">基石建造</span>
+            </div>
+            <!-- CTA 按钮 (不含菜单) -->
+            <div>
+                <a href="#contact"
+                    class="inline-flex items-center justify-center bg-blue-700 hover:bg-blue-800 text-white text-sm font-medium px-5 py-2.5 rounded-lg shadow-sm transition-colors">项目咨询</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 首屏区块 (英雄区) - 建筑行业数据 -->
+        <section class="relative bg-gradient-to-br from-gray-50 to-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
+                            承建地标工程<br>筑就城市未来</h1>
+                        <p class="text-lg md:text-xl text-gray-600 mt-6 max-w-xl">
+                            深耕建筑行业25年，累计完成商业综合体、超高层住宅、基建项目超200个，以匠心品质与数字化管理重塑行业标准。</p>
+                        <p class="text-base text-gray-500 mt-4">国资委重点合作伙伴 · 鲁班奖获奖单位 · 绿色建造先锋</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="#contact"
+                                class="bg-blue-700 hover:bg-blue-800 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">查看精品项目</a>
+                            <a href="#contact"
+                                class="bg-white border border-gray-300 hover:border-gray-400 text-gray-700 font-medium px-6 py-3 rounded-lg shadow-sm transition">获取报价</a>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                            alt="现代化建筑工地与天际线" class="w-full h-full object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (数据信任) -->
+        <section class="bg-gray-50 border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-blue-700">200+</div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-1">已完成项目</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-700">98%</div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-1">客户续约率</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-700">15项</div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-1">鲁班奖/詹天佑奖</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-700">24/7</div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-1">工程支持</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (安全/质量) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <img src="https://images.unsplash.com/photo-1541976844346-f18aeac57b06?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
+                            alt="建筑安全与质量管理" class="rounded-xl shadow-lg w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">零事故 · 高标准 · 全过程品控</h2>
+                        <p class="text-gray-600 mt-6 text-lg">
+                            采用BIM+智慧工地系统，实时监测施工节点。从材料溯源到工艺验收，每一环节均超过国家标准。安全事故率为行业平均的1/10。</p>
+                        <div class="mt-6 flex flex-wrap gap-4">
+                            <span
+                                class="inline-flex items-center gap-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium">✅
+                                国际安全认证</span>
+                            <span
+                                class="inline-flex items-center gap-1 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium">✅
+                                终身质保承诺</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (技术/集成) -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">数字化建造 + 绿色技术</h2>
+                        <p class="text-gray-600 mt-6 text-lg">
+                            与国内顶尖设计院、环保材料供应商深度合作。装配式施工占比提升40%，降低能耗25%。远程工地巡检、无人机测绘等智慧管理手段全面应用。</p>
+                        <div class="mt-6 flex flex-wrap gap-3">
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-2 rounded-full font-medium">BIM
+                                全过程</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-4 py-2 rounded-full font-medium">LEED
+                                金级</span>
+                            <span
+                                class="bg-blue-100 text-blue-800 text-sm px-4 py-2 rounded-full font-medium">智慧工地</span>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1744627049721-73c27008ad28?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                            alt="建筑信息模型BIM技术" class="rounded-xl shadow-lg w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (地标项目展示) 用作视觉分割 -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">城市天际线建造者</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto mt-4">从超高层住宅到大型交通枢纽，我们以技术驱动复杂工程落地</p>
+                <div class="mt-10 rounded-xl overflow-hidden shadow-xl border border-gray-200 max-w-4xl mx-auto">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                        alt="城市建筑群" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (核心优势) -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">为什么选择基石建造</h2>
+                    <p class="text-lg text-gray-600 mt-3">专业资质 · 技术创新 · 全周期服务</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-4xl mb-3">🏗️</div>
+                        <h3 class="text-xl font-semibold text-gray-900">特级资质</h3>
+                        <p class="text-gray-500 mt-2">建筑工程施工总承包特级、设计甲级，行业顶级牌照</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-4xl mb-3">⚙️</div>
+                        <h3 class="text-xl font-semibold text-gray-900">智慧工地</h3>
+                        <p class="text-gray-500 mt-2">AI监控、塔吊防碰撞、环境监测系统全覆盖</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-4xl mb-3">🌿</div>
+                        <h3 class="text-xl font-semibold text-gray-900">绿色施工</h3>
+                        <p class="text-gray-500 mt-2">扬尘控制、建筑垃圾回收率85%以上</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                        <div class="text-4xl mb-3">📋</div>
+                        <h3 class="text-xl font-semibold text-gray-900">全周期服务</h3>
+                        <p class="text-gray-500 mt-2">从规划、建造到运维，终身维保团队</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (核心管理层) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">核心团队</h2>
+                    <p class="text-lg text-gray-600 mt-3">来自顶尖建筑机构，平均从业20年以上</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
+                            alt="张卫东"
+                            class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow-md">
+                        <h3 class="font-semibold text-xl mt-4">张卫东</h3>
+                        <p class="text-blue-700 font-medium">总工程师</p>
+                        <p class="text-gray-500 text-sm mt-1">前中建技术总监 · 鲁班奖评委</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1976&q=80"
+                            alt="李敏君"
+                            class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow-md">
+                        <h3 class="font-semibold text-xl mt-4">李敏君</h3>
+                        <p class="text-blue-700 font-medium">设计院院长</p>
+                        <p class="text-gray-500 text-sm mt-1">国家一级注册建筑师</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1974&q=80"
+                            alt="王建国"
+                            class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow-md">
+                        <h3 class="font-semibold text-xl mt-4">王建国</h3>
+                        <p class="text-blue-700 font-medium">项目经理</p>
+                        <p class="text-gray-500 text-sm mt-1">超高层专家 · 20年现场经验</p>
+                    </div>
+                    <div class="text-center">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=1961&q=80"
+                            alt="陈雅"
+                            class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-200 shadow-md">
+                        <h3 class="font-semibold text-xl mt-4">陈雅</h3>
+                        <p class="text-blue-700 font-medium">绿色建筑负责人</p>
+                        <p class="text-gray-500 text-sm mt-1">LEED AP BD+C</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (服务模式 / 报价示意) 改为工程服务套餐风格 -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">合作模式灵活</h2>
+                    <p class="text-lg text-gray-600 mt-3">总承包/分包/代建 · 透明报价</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
+                        <h3 class="text-xl font-bold text-gray-900">施工总承包</h3>
+                        <p class="text-4xl font-bold text-gray-900 mt-4">面议<span
+                                class="text-base font-normal text-gray-500 ml-1">/㎡起</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-600">
+                            <li class="flex items-start gap-2">✓ 土建+机电总包</li>
+                            <li class="flex items-start gap-2">✓ 常规材料采购</li>
+                            <li class="flex items-start gap-2">✓ 质保2年标准</li>
+                        </ul>
+                        <a href="#contact"
+                            class="mt-8 w-full inline-flex justify-center border border-gray-300 hover:border-gray-400 text-gray-700 font-medium py-3 px-4 rounded-lg transition">获取基准报价</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="bg-white rounded-2xl shadow-lg border-2 border-blue-600 p-8 relative">
+                        <span
+                            class="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs font-semibold px-4 py-1 rounded-full">最受欢迎</span>
+                        <h3 class="text-xl font-bold text-gray-900">EPC 总承包</h3>
+                        <p class="text-4xl font-bold text-gray-900 mt-4">定额+<span
+                                class="text-base font-normal text-gray-500 ml-1">优化分成</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-600">
+                            <li class="flex items-start gap-2">✓ 设计+采购+施工</li>
+                            <li class="flex items-start gap-2">✓ BIM全过程</li>
+                            <li class="flex items-start gap-2">✓ 绿色建筑认证咨询</li>
+                            <li class="flex items-start gap-2">✓ 质保5年延长</li>
+                        </ul>
+                        <a href="#contact"
+                            class="mt-8 w-full inline-flex justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg shadow transition">预约专家洽谈</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8">
+                        <h3 class="text-xl font-bold text-gray-900">代建管理</h3>
+                        <p class="text-4xl font-bold text-gray-900 mt-4">定制<span
+                                class="text-base font-normal text-gray-500 ml-1">/项目</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-600">
+                            <li class="flex items-start gap-2">✓ 全过程项目管理</li>
+                            <li class="flex items-start gap-2">✓ 成本/进度/风控</li>
+                            <li class="flex items-start gap-2">✓ 后期运维托管</li>
+                            <li class="flex items-start gap-2">✓ 专属客户经理</li>
+                        </ul>
+                        <a href="#contact"
+                            class="mt-8 w-full inline-flex justify-center border border-gray-300 hover:border-gray-400 text-gray-700 font-medium py-3 px-4 rounded-lg transition">联系代建团队</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (工程FAQ) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">关于工程合作的常见问题</h2>
+                <div class="mt-12 space-y-6">
+                    <div class="border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">❓ 外地项目可以承接吗？</h3>
+                        <p class="text-gray-600 mt-2">我们在全国十余个省市设有分公司或项目团队，具备跨区域施工备案资质，可快速入场。</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">❓ 如何保证工期和质量？</h3>
+                        <p class="text-gray-600 mt-2">采用三级计划管理体系+飞检评估；关键节点甲方参与验收；引入第三方实测实量。</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">❓ 付款方式如何？</h3>
+                        <p class="text-gray-600 mt-2">按工程进度节点支付，可协商预付款比例。支持银行保函、供应链金融等多种方式。</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-6">
+                        <h3 class="text-lg font-semibold text-gray-900">❓ 能否参观在建样板工地？</h3>
+                        <p class="text-gray-600 mt-2">当然，我们每周设有“工地开放日”，需提前预约并佩戴安全装备，由专人陪同讲解。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 (底部号召) -->
+        <section class="bg-blue-700 text-white py-16">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">共建下一个地标</h2>
+                <p class="text-lg text-blue-100 mt-4 max-w-2xl mx-auto">从概念到落成，基石建造以专业成就您的蓝图。联系我们获取初步咨询。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#contact"
+                        class="bg-white text-blue-700 hover:bg-gray-100 font-semibold px-7 py-3.5 rounded-lg shadow-lg transition">免费获取初步方案</a>
+                    <a href="#contact"
+                        class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-7 py-3.5 rounded-lg transition">预约总工交流</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 (简单版权声明) -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+            <div>© 2025 基石建筑工程有限公司 版权所有</div>
+            <div class="mt-2 sm:mt-0">🏗️ 建筑 · 匠心 · 诚信</div>
+        </div>
+    </footer>
+</body>
+
+</html>

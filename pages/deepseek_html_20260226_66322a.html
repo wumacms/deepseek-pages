@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>康普医疗 · 企业健康体检</title>
+    <!-- Tailwind via CDN + 基础层 (完全清爽蓝白调，无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外微调：仅保证蓝白氛围，无任何自定义css类，全用tailwind内置 -->
+</head>
+<body class="bg-white text-slate-700 font-sans antialiased">
+
+    <!-- 导航栏 (logo+标题+CTA按钮，无菜单) 清爽蓝白 -->
+    <header class="border-b border-blue-100 bg-white/95 backdrop-blur-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-2.5">
+                <!-- 模拟医疗logo (纯文本表情+蓝色调) -->
+                <span class="text-3xl drop-shadow-sm">🫀</span>
+                <span class="text-xl font-semibold text-blue-800 tracking-tight">康普健康<span class="text-blue-400 font-light"> · 企业体检</span></span>
+            </div>
+            <!-- CTA按钮 (冷色调) -->
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-5 py-2.5 rounded-xl shadow-sm transition duration-200">📞 预约体检</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- 首屏区块 (基于首屏json结构调整为健康体检内容) 蓝白清爽 -->
+        <section class="bg-gradient-to-br from-blue-50 via-white to-white">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-900 leading-tight">企业级健康体检<br class="hidden sm:block">让员工状态快一步</h1>
+                    <p class="text-lg text-slate-600 mt-6 max-w-2xl">全面、精准、可定制——专为现代企业打造的一站式体检解决方案，集成健康档案与风险分析。</p>
+                    <p class="text-base text-slate-500 mt-2">从源头守护职场活力，降低病假率，提升团队续航力。</p>
+                    <div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3.5 rounded-xl font-medium shadow-md shadow-blue-200 transition">开始体检</a>
+                        <a href="#" class="bg-white border border-blue-200 text-blue-700 hover:bg-blue-50 px-7 py-3.5 rounded-xl font-medium transition">联系顾问</a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?q=80&w=2000&auto=format&fit=crop" alt="医疗体检团队协作" class="rounded-2xl shadow-xl border-4 border-white/60 object-cover w-full h-auto max-h-[420px] md:max-h-[500px]">
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (健康体检数据，highlight调整为健康类) -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col-reverse md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?q=80&w=800&auto=format&fit=crop" alt="员工体检现场" class="rounded-2xl shadow-xl border-4 border-blue-50 object-cover w-full h-auto max-h-[420px]">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-blue-900">无缝体检，跨越部门</h2>
+                    <p class="text-lg text-slate-600 mt-5 leading-relaxed">打破健康信息孤岛，通过团队预约、部门专场和电子报告实时同步，让HR与管理者快速掌握团队健康趋势。集成企业健康档案，一键追踪全员指标。</p>
+                    <div class="flex flex-wrap gap-5 mt-7">
+                        <span class="bg-blue-100 text-blue-800 px-5 py-2 rounded-full text-sm font-medium flex items-center gap-1.5"><span class="text-blue-600 text-base">🛡️</span> 医疗级数据加密</span>
+                        <span class="bg-blue-100 text-blue-800 px-5 py-2 rounded-full text-sm font-medium flex items-center gap-1.5"><span class="text-blue-600 text-base">📜</span> 三年历史对比</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (集成工作流 → 集成健康管理平台) -->
+        <section class="bg-blue-50/40 py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-blue-900">深度集成健康工作流</h2>
+                    <p class="text-lg text-slate-600 mt-5 leading-relaxed">与企业微信、钉钉、飞书、HRIS无缝连接。在OA中发起体检、查看报告、获取健康建议。将健康数据融入日常考勤与福利平台。</p>
+                    <div class="flex flex-wrap gap-4 mt-7">
+                        <span class="bg-white border border-blue-200 text-blue-800 px-5 py-2.5 rounded-xl text-sm font-medium shadow-sm">🏥 对接体检机构</span>
+                        <span class="bg-white border border-blue-200 text-blue-800 px-5 py-2.5 rounded-xl text-sm font-medium shadow-sm">🔌 开放API</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=800&auto=format&fit=crop" alt="健康数据分析仪表" class="rounded-2xl shadow-xl border-4 border-white object-cover w-full h-auto max-h-[420px]">
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台体验 → 移动端/电子报告) -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-semibold text-blue-900">全平台一致体验</h2>
+                <p class="text-lg text-slate-600 mt-4 max-w-2xl mx-auto">无论是在电脑、手机还是平板，体检预约、电子报告、历年数据实时同步，操作流畅如一。</p>
+                <div class="mt-12">
+                    <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=800&auto=format&fit=crop" alt="多设备查看体检报告" class="rounded-2xl shadow-xl border-4 border-blue-50/80 object-cover w-full h-auto max-h-[500px]">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (医疗特色特性) -->
+        <section class="bg-blue-50/30 py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">专为企业健康打造的特性</h2>
+                <p class="text-lg text-slate-600 mt-2">从数据安全到干预建议，面面俱到</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- 特性卡片 全部蓝白冷色 -->
+                    <div class="bg-white p-7 rounded-2xl shadow-sm border border-blue-100 text-center hover:shadow-md transition">
+                        <div class="text-5xl mb-4">🔒</div>
+                        <h3 class="font-semibold text-xl text-blue-800">医疗级安全</h3>
+                        <p class="text-slate-600 mt-2 text-sm">符合HIPAA/等保三级，数据加密与隐私隔离</p>
+                    </div>
+                    <div class="bg-white p-7 rounded-2xl shadow-sm border border-blue-100 text-center hover:shadow-md transition">
+                        <div class="text-5xl mb-4">⚡</div>
+                        <h3 class="font-semibold text-xl text-blue-800">实时报告</h3>
+                        <p class="text-slate-600 mt-2 text-sm">体检完成24小时内出报告，异常指标预警</p>
+                    </div>
+                    <div class="bg-white p-7 rounded-2xl shadow-sm border border-blue-100 text-center hover:shadow-md transition">
+                        <div class="text-5xl mb-4">🧩</div>
+                        <h3 class="font-semibold text-xl text-blue-800">无限集成</h3>
+                        <p class="text-slate-600 mt-2 text-sm">对接20+主流HR与健康管理平台</p>
+                    </div>
+                    <div class="bg-white p-7 rounded-2xl shadow-sm border border-blue-100 text-center hover:shadow-md transition">
+                        <div class="text-5xl mb-4">📊</div>
+                        <h3 class="font-semibold text-xl text-blue-800">分析洞察</h3>
+                        <p class="text-slate-600 mt-2 text-sm">亚健康趋势、部门健康排名可视化</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (医疗健康专家团队) -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">核心医疗团队</h2>
+                    <p class="text-lg text-slate-600 mt-2">来自三甲医院及健康管理专家</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- 成员卡片 蓝白清爽 无自定义样式 -->
+                    <div class="bg-blue-50/30 rounded-2xl p-6 text-center border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=600&auto=format&fit=crop" alt="张明" class="w-28 h-28 rounded-full mx-auto object-cover border-4 border-white shadow-sm">
+                        <h3 class="font-semibold text-xl text-blue-800 mt-5">张明</h3>
+                        <p class="text-blue-500 text-sm font-medium">CEO & 首席医学官</p>
+                        <p class="text-slate-500 text-xs mt-2">原协和医院内科副主任</p>
+                    </div>
+                    <div class="bg-blue-50/30 rounded-2xl p-6 text-center border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=300&auto=format&fit=crop" alt="陈丽" class="w-28 h-28 rounded-full mx-auto object-cover border-4 border-white shadow-sm">
+                        <h3 class="font-semibold text-xl text-blue-800 mt-5">陈丽</h3>
+                        <p class="text-blue-500 text-sm font-medium">健康管理总监</p>
+                        <p class="text-slate-500 text-xs mt-2">10年企业健康管理经验</p>
+                    </div>
+                    <div class="bg-blue-50/30 rounded-2xl p-6 text-center border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=300&auto=format&fit=crop" alt="王磊" class="w-28 h-28 rounded-full mx-auto object-cover border-4 border-white shadow-sm">
+                        <h3 class="font-semibold text-xl text-blue-800 mt-5">王磊</h3>
+                        <p class="text-blue-500 text-sm font-medium">技术总监</p>
+                        <p class="text-slate-500 text-xs mt-2">前飞利浦健康互联架构师</p>
+                    </div>
+                    <div class="bg-blue-50/30 rounded-2xl p-6 text-center border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300&auto=format&fit=crop" alt="李莉" class="w-28 h-28 rounded-full mx-auto object-cover border-4 border-white shadow-sm">
+                        <h3 class="font-semibold text-xl text-blue-800 mt-5">李莉</h3>
+                        <p class="text-blue-500 text-sm font-medium">护理服务总监</p>
+                        <p class="text-slate-500 text-xs mt-2">前和睦家护理主管</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (健康体检数据) 冷色简约 -->
+        <section class="bg-blue-600 py-16 text-white">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold">500+</div>
+                        <div class="text-blue-100 text-sm mt-2">企业客户</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">98%</div>
+                        <div class="text-blue-100 text-sm mt-2">员工满意度</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">20K+</div>
+                        <div class="text-blue-100 text-sm mt-2">年体检人次</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">24/7</div>
+                        <div class="text-blue-100 text-sm mt-2">健康咨询</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (体检套餐) 沿用蓝白风格 -->
+        <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">灵活体检方案</h2>
+                    <p class="text-lg text-slate-600 mt-2">按需选择，企业专属折扣</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                    <!-- 基础版 -->
+                    <div class="bg-blue-50/20 border border-blue-100 rounded-2xl p-8 flex flex-col">
+                        <h3 class="text-xl font-semibold text-blue-800">基础体检</h3>
+                        <p class="text-4xl font-bold text-blue-900 mt-4">299<span class="text-lg font-normal text-slate-500 ml-1">元/人</span></p>
+                        <ul class="mt-6 space-y-3 text-slate-600 text-sm flex-1">
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> 常规血检/尿检</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> 内科/外科基础</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> 电子报告存储1年</li>
+                        </ul>
+                        <a href="#" class="mt-8 bg-white border border-blue-300 text-blue-700 hover:bg-blue-50 text-center py-3 rounded-xl font-medium transition">选择基础</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="bg-blue-600 text-white rounded-2xl p-8 shadow-xl shadow-blue-200 scale-105 border-4 border-white relative">
+                        <span class="absolute -top-3 right-6 bg-yellow-300 text-blue-800 text-xs font-bold px-3 py-1 rounded-full">🏷️ 企业首选</span>
+                        <h3 class="text-xl font-semibold">深度筛查</h3>
+                        <p class="text-4xl font-bold mt-4">699<span class="text-lg font-normal text-blue-100 ml-1">元/人</span></p>
+                        <ul class="mt-6 space-y-3 text-blue-50 text-sm flex-1">
+                            <li class="flex items-center gap-2"><span class="text-white">✓</span> 基础项目+肿瘤筛查</li>
+                            <li class="flex items-center gap-2"><span class="text-white">✓</span> 心肺功能/彩超</li>
+                            <li class="flex items-center gap-2"><span class="text-white">✓</span> 无限历史报告对比</li>
+                            <li class="flex items-center gap-2"><span class="text-white">✓</span> 企业健康讲座</li>
+                        </ul>
+                        <a href="#" class="mt-8 bg-white text-blue-700 hover:bg-blue-50 text-center py-3 rounded-xl font-medium transition block">选择深度</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-blue-50/20 border border-blue-100 rounded-2xl p-8 flex flex-col">
+                        <h3 class="text-xl font-semibold text-blue-800">尊享企业版</h3>
+                        <p class="text-4xl font-bold text-blue-900 mt-4">定制</p>
+                        <ul class="mt-6 space-y-3 text-slate-600 text-sm flex-1">
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> 全部项目+基因检测</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> 上门体检车服务</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> 专属客服/三甲绿通</li>
+                            <li class="flex items-center gap-2"><span class="text-blue-500">✓</span> 高管私人医生</li>
+                        </ul>
+                        <a href="#" class="mt-8 bg-white border border-blue-300 text-blue-700 hover:bg-blue-50 text-center py-3 rounded-xl font-medium transition">联系定制</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (FAQ 体检相关) 白色干净 -->
+        <section class="bg-blue-50/20 py-20">
+            <div class="max-w-4xl mx-auto px-6 md:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center">常见问题</h2>
+                <div class="mt-16 space-y-6">
+                    <div class="bg-white rounded-2xl p-6 border border-blue-100 shadow-sm">
+                        <h3 class="font-semibold text-blue-800 text-lg">可以安排上门体检吗？</h3>
+                        <p class="text-slate-600 mt-2">是的，企业版支持体检车上门服务，覆盖全国主要城市，最大限度减少员工路途奔波。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 border border-blue-100 shadow-sm">
+                        <h3 class="font-semibold text-blue-800 text-lg">可以试用体检管理后台吗？</h3>
+                        <p class="text-slate-600 mt-2">所有企业客户均可享受30天全功能试用，包含报告解读、团队分析等高级模块。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 border border-blue-100 shadow-sm">
+                        <h3 class="font-semibold text-blue-800 text-lg">体检数据如何存储？</h3>
+                        <p class="text-slate-600 mt-2">数据存储在云端独立数据库，通过等保三级认证，可选中国大陆或海外区域，严格遵循隐私法规。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 border border-blue-100 shadow-sm">
+                        <h3 class="font-semibold text-blue-800 text-lg">可以迁移历年体检记录吗？</h3>
+                        <p class="text-slate-600 mt-2">提供专业数据迁移工具，支持从其他体检机构或Excel导入历史数据，形成连续健康档案。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 (最后行动号召) 蓝调 -->
+        <section class="bg-white py-20 border-t border-blue-100">
+            <div class="max-w-3xl mx-auto text-center px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">立即提升团队健康力</h2>
+                <p class="text-lg text-slate-600 mt-3">加入数百家信任我们的企业，开启零风险职场。</p>
+                <div class="flex flex-wrap gap-5 justify-center mt-10">
+                    <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-medium shadow-md shadow-blue-200 text-lg transition">免费试用30天</a>
+                    <a href="#" class="bg-white border border-blue-300 text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-xl font-medium text-lg transition">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 简单的版权声明 蓝白冷色 -->
+    <footer class="bg-blue-900/5 border-t border-blue-100 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-slate-500 text-sm">
+            © 2025 康普健康科技有限公司 · 为企业构筑健康防线 · 版权所有
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翠绿田园 · 有机农产品</title>
+    <!-- Tailwind via CDN + 自然风格基调(翠绿/土黄) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 微调默认色盘：翠绿 primary-600/700, 土黄 accent-500/600, 自然柔和 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f7e9',
+                            100: '#e0efd3',
+                            200: '#c2dfa8',
+                            300: '#a3cf7c',
+                            400: '#85bf50',
+                            500: '#6fa53b',   // 翠绿主色
+                            600: '#58842f',
+                            700: '#416323',
+                            800: '#2a4217',
+                            900: '#13210b',
+                        },
+                        accent: {
+                            50: '#fdf6e9',
+                            100: '#fbeed3',
+                            200: '#f7dca8',
+                            300: '#f3cb7c',
+                            400: '#efb950',
+                            500: '#e5a63b',   // 土黄主色
+                            600: '#b8822f',
+                            700: '#8a5f23',
+                            800: '#5c3f17',
+                            900: '#2e200b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <!-- 导航栏 (包含logo、标题、导航菜单、CTA按钮) 田园风格 -->
+    <nav class="bg-white/90 backdrop-blur-sm border-b border-primary-100 sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo + 标题 -->
+                <div class="flex items-center space-x-3">
+                    <!-- 叶子logo (Emoji模拟, 符合田园) -->
+                    <span class="text-4xl text-primary-600 drop-shadow-sm">🌱</span>
+                    <span class="text-2xl font-semibold text-primary-800 tracking-tight">翠然有机</span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <div class="hidden md:flex space-x-8 text-gray-700 font-medium">
+                    <a href="#" class="hover:text-primary-600 transition">首页</a>
+                    <a href="#" class="hover:text-primary-600 transition">产品</a>
+                    <a href="#" class="hover:text-primary-600 transition">生态</a>
+                    <a href="#" class="hover:text-primary-600 transition">故事</a>
+                    <a href="#" class="hover:text-primary-600 transition">联系</a>
+                </div>
+                <!-- CTA按钮 -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-accent-700 hover:text-accent-800 font-medium px-4 py-2 rounded-full border border-accent-300 hover:border-accent-400 transition">登录</a>
+                    <a href="#" class="bg-primary-600 hover:bg-primary-700 text-white px-5 py-2.5 rounded-full shadow-md shadow-primary-200 font-medium transition flex items-center gap-1">
+                        <span>🌾</span> 合作咨询
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========== 首屏区块 (翠绿田园hero) ========== -->
+        <section class="bg-gradient-to-br from-primary-50 to-accent-50 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                            从<span class="text-primary-600">田间</span>到餐桌，<br>自然<span class="text-accent-600">安心</span>每一口
+                        </h1>
+                        <p class="text-xl text-gray-600 max-w-lg">全程有机种植，不使用化肥农药，68项农残未检出。为企业与家庭提供可溯源的健康食材。</p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="#" class="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3.5 rounded-full shadow-lg shadow-primary-200 font-semibold text-lg flex items-center gap-2"><span>🥬</span> 企业采购</a>
+                            <a href="#" class="bg-white border-2 border-primary-300 hover:border-primary-500 text-primary-700 hover:text-primary-800 px-8 py-3.5 rounded-full font-semibold text-lg flex items-center gap-2"><span>📞</span> 联系选品</a>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl overflow-hidden shadow-2xl shadow-primary-200/50 border-8 border-white">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format&fit=crop" alt="有机农场团队" class="w-full h-auto object-cover aspect-[4/3]">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 合作伙伴区块 (生态伙伴) ========== -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">信赖我们的伙伴</h2>
+                    <p class="text-lg text-gray-500 mt-3">与全国领先的有机农场、生鲜平台深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <!-- 合作伙伴卡片 x6 (使用相同unsplash占位) -->
+                    <div class="bg-primary-50/50 p-5 rounded-2xl border border-primary-100 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3 grayscale hover:grayscale-0 transition object-contain" alt="生态伙伴"><span class="text-sm text-primary-800 font-medium">新农人联盟</span></div>
+                    <div class="bg-primary-50/50 p-5 rounded-2xl border border-primary-100 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3 grayscale hover:grayscale-0 transition object-contain" alt="生态伙伴"><span class="text-sm text-primary-800 font-medium">沃土农耕</span></div>
+                    <div class="bg-primary-50/50 p-5 rounded-2xl border border-primary-100 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3 grayscale hover:grayscale-0 transition object-contain" alt="生态伙伴"><span class="text-sm text-primary-800 font-medium">盒马有机</span></div>
+                    <div class="bg-primary-50/50 p-5 rounded-2xl border border-primary-100 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3 grayscale hover:grayscale-0 transition object-contain" alt="生态伙伴"><span class="text-sm text-primary-800 font-medium">春播科技</span></div>
+                    <div class="bg-primary-50/50 p-5 rounded-2xl border border-primary-100 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3 grayscale hover:grayscale-0 transition object-contain" alt="生态伙伴"><span class="text-sm text-primary-800 font-medium">叮咚有机</span></div>
+                    <div class="bg-primary-50/50 p-5 rounded-2xl border border-primary-100 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3 grayscale hover:grayscale-0 transition object-contain" alt="生态伙伴"><span class="text-sm text-primary-800 font-medium">山姆田园</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 左图右文区块 (跨部门协作 → 跨农场协作) ========== -->
+        <section class="py-16 bg-primary-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="农场团队沟通" class="rounded-3xl shadow-xl border-4 border-white"></div>
+                    <div class="space-y-5">
+                        <h2 class="text-3xl font-bold text-gray-900">从种植到发货，透明协作</h2>
+                        <p class="text-gray-600 text-lg">打破农户、质检、物流之间的信息孤岛，通过数字化农场协作，每一批蔬菜都可追溯，每一份土壤数据实时同步。</p>
+                        <div class="flex gap-4 pt-2">
+                            <span class="bg-primary-100 text-primary-800 px-5 py-2 rounded-full text-sm font-medium flex items-center gap-1"><span>✅</span> 有机认证追溯</span>
+                            <span class="bg-primary-100 text-primary-800 px-5 py-2 rounded-full text-sm font-medium flex items-center gap-1"><span>✅</span> 实时土壤监测</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 左文右图区块 (工作流集成 → 农事工作流) ========== -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-5 order-2 md:order-1">
+                        <h2 class="text-3xl font-bold text-gray-900">农事工作流深度集成</h2>
+                        <p class="text-gray-600 text-lg">与物联设备、ERP无缝连接：气象站数据自动触发灌溉，订单系统直连农场采收计划。在聊天中创建采收任务、分享实拍记录。</p>
+                        <div class="flex gap-4 pt-2">
+                            <span class="bg-accent-100 text-accent-800 px-5 py-2 rounded-full text-sm font-medium">📦 对接ERP</span>
+                            <span class="bg-accent-100 text-accent-800 px-5 py-2 rounded-full text-sm font-medium">🌦️ 气象API</span>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop" alt="农事工作流" class="rounded-3xl shadow-xl border-4 border-white"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 上文下图区块 (全平台一致体验 → 全渠道一致体验) ========== -->
+        <section class="py-16 bg-primary-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">产地直连，全渠道实时同步</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">无论是小程序、企业采购后台还是农场大屏，订单与溯源信息实时更新，决策者随时随地掌握库存。</p>
+                <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=1200&auto=format&fit=crop" alt="多设备农业数据" class="rounded-3xl shadow-2xl border-8 border-white">
+            </div>
+        </section>
+
+        <!-- ========== 特性区块 (专为农业打造的特性) ========== -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">专为有机农业打造的数字化工具</h2>
+                    <p class="text-lg text-gray-500 mt-3">从田间安全到供应链效率，全面覆盖</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-primary-50 p-6 rounded-3xl border border-primary-100 text-center"><span class="text-5xl block mb-3">🌿</span><h3 class="font-bold text-xl mb-2 text-gray-800">有机认证溯源</h3><p class="text-gray-500">每一批次均附有机码，扫码查看种植记录。</p></div>
+                    <div class="bg-primary-50 p-6 rounded-3xl border border-primary-100 text-center"><span class="text-5xl block mb-3">⚡</span><h3 class="font-bold text-xl mb-2 text-gray-800">实时土壤监测</h3><p class="text-gray-500">IoT传感器每15分钟上传墒情、光照数据。</p></div>
+                    <div class="bg-primary-50 p-6 rounded-3xl border border-primary-100 text-center"><span class="text-5xl block mb-3">🧩</span><h3 class="font-bold text-xl mb-2 text-gray-800">产销无缝对接</h3><p class="text-gray-500">连接200+商超系统，自动生成采购单。</p></div>
+                    <div class="bg-primary-50 p-6 rounded-3xl border border-primary-100 text-center"><span class="text-5xl block mb-3">📊</span><h3 class="font-bold text-xl mb-2 text-gray-800">碳足迹可视化</h3><p class="text-gray-500">从种植到运输，全链路碳排放分析。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 客户案例区块 ========== -->
+        <section class="py-16 bg-primary-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">他们正在使用翠然有机</h2>
+                    <p class="text-lg text-gray-500">来自知名餐饮与生鲜平台的真实反馈</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- 案例1 -->
+                    <div class="bg-white p-6 rounded-3xl shadow-lg border border-primary-100"><div class="flex items-center gap-3 mb-3"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover"><div><div class="font-bold">丰收餐饮</div><div class="text-sm text-gray-400">餐饮连锁</div></div></div><p class="text-gray-600 italic">“采购效率提升50%，有机蔬菜损耗率从8%降到2%。” </p><div class="flex items-center mt-4 gap-3"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" class="w-10 h-10 rounded-full"><div><p class="font-medium">张建国</p><p class="text-xs text-gray-400">采购总监</p></div></div></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-lg border border-primary-100"><div class="flex items-center gap-3 mb-3"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover"><div><div class="font-bold">盒马有机</div><div class="text-sm text-gray-400">生鲜零售</div></div></div><p class="text-gray-600 italic">“溯源数据让消费者更信任，复购率提升了22%。” </p><div class="flex items-center mt-4 gap-3"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop" class="w-10 h-10 rounded-full"><div><p class="font-medium">王美玲</p><p class="text-xs text-gray-400">生鲜商品部</p></div></div></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-lg border border-primary-100"><div class="flex items-center gap-3 mb-3"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-12 h-12 rounded-full object-cover"><div><div class="font-bold">素心素食</div><div class="text-sm text-gray-400">餐饮</div></div></div><p class="text-gray-600 italic">“本地部署农场数据，满足我们的食品安全内控。” </p><div class="flex items-center mt-4 gap-3"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop" class="w-10 h-10 rounded-full"><div><p class="font-medium">李志强</p><p class="text-xs text-gray-400">品控负责人</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 统计区块 ========== -->
+        <section class="py-14 bg-white border-y border-primary-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div><div class="text-4xl font-bold text-primary-600">300+</div><div class="text-gray-500">合作农场</div></div>
+                <div><div class="text-4xl font-bold text-primary-600">98%</div><div class="text-gray-500">客户留存率</div></div>
+                <div><div class="text-4xl font-bold text-primary-600">500t</div><div class="text-gray-500">月均有机产量</div></div>
+                <div><div class="text-4xl font-bold text-primary-600">24/7</div><div class="text-gray-500">农场支持</div></div>
+            </div>
+        </section>
+
+        <!-- ========== 认证与资质区块 ========== -->
+        <section class="py-16 bg-primary-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">有机认证 · 权威资质</h2>
+                    <p class="text-gray-500 mt-2">每一份有机证书都可查，严守标准</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-5 rounded-2xl border border-primary-200 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3"><p class="font-medium">中国有机认证</p><p class="text-xs text-gray-400">2024-2026</p></div>
+                    <div class="bg-white p-5 rounded-2xl border border-primary-200 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3"><p class="font-medium">欧盟有机认证</p><p class="text-xs text-gray-400">2023-2025</p></div>
+                    <div class="bg-white p-5 rounded-2xl border border-primary-200 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3"><p class="font-medium">GAP 全球优农</p><p class="text-xs text-gray-400">2024</p></div>
+                    <div class="bg-white p-5 rounded-2xl border border-primary-200 text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" class="h-12 mx-auto mb-3"><p class="font-medium">碳中和认证</p><p class="text-xs text-gray-400">2024</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 价格区块 (灵活定价) ========== -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900">企业合作方案</h2>
+                    <p class="text-gray-500 mt-2">按需定制，透明定价</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="border border-primary-200 rounded-3xl p-8 bg-white"><h3 class="text-xl font-bold">尝鲜版</h3><div class="mt-4 text-3xl font-bold text-primary-700">¥9,900<span class="text-base font-normal text-gray-400">/年起</span></div><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 5个农场账户</li><li class="flex gap-2">✅ 基础溯源</li><li class="flex gap-2">✅ 订单同步</li></ul><a href="#" class="mt-8 block text-center border border-primary-600 text-primary-700 py-3 rounded-full font-medium hover:bg-primary-50">选择方案</a></div>
+                    <div class="border-2 border-primary-400 rounded-3xl p-8 bg-primary-50 shadow-xl relative"><span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent-500 text-white px-4 py-1 rounded-full text-sm">最受欢迎</span><h3 class="text-xl font-bold">商业版</h3><div class="mt-4 text-3xl font-bold text-primary-700">¥29,900<span class="text-base font-normal text-gray-400">/年起</span></div><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 20个农场账户</li><li class="flex gap-2">✅ 高级溯源+IoT</li><li class="flex gap-2">✅ API对接ERP</li><li class="flex gap-2">✅ 专属客户成功</li></ul><a href="#" class="mt-8 block bg-primary-600 hover:bg-primary-700 text-white text-center py-3 rounded-full font-medium shadow-md">立即合作</a></div>
+                    <div class="border border-primary-200 rounded-3xl p-8 bg-white"><h3 class="text-xl font-bold">集团版</h3><div class="mt-4 text-3xl font-bold text-primary-700">定制</div><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 不限账户</li><li class="flex gap-2">✅ 私有化部署</li><li class="flex gap-2">✅ 全链路碳管理</li><li class="flex gap-2">✅ 专人培训</li></ul><a href="#" class="mt-8 block text-center border border-primary-600 text-primary-700 py-3 rounded-full font-medium hover:bg-primary-50">联系顾问</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 常见问题区块 ========== -->
+        <section class="py-16 bg-primary-50/30">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">常见问题</h2>
+                <div class="space-y-4">
+                    <div class="bg-white rounded-2xl p-5 border border-primary-100"><button class="w-full text-left font-semibold text-lg flex justify-between">有机认证是真的吗？<span>🌱</span></button><p class="mt-2 text-gray-500">所有合作农场均持有国家认监委可查的有机证书，支持扫码验真。</p></div>
+                    <div class="bg-white rounded-2xl p-5 border border-primary-100"><button class="w-full text-left font-semibold text-lg flex justify-between">可以小批量试采吗？<span>🌱</span></button><p class="mt-2 text-gray-500">支持，我们为餐饮企业提供样品试单服务，详情咨询客户经理。</p></div>
+                    <div class="bg-white rounded-2xl p-5 border border-primary-100"><button class="w-full text-left font-semibold text-lg flex justify-between">如何保证物流新鲜度？<span>🌱</span></button><p class="mt-2 text-gray-500">全程冷链监控+优先配送，主要城市24小时内直达。</p></div>
+                    <div class="bg-white rounded-2xl p-5 border border-primary-100"><button class="w-full text-left font-semibold text-lg flex justify-between">能否定制包装或贴牌？<span>🌱</span></button><p class="mt-2 text-gray-500">集团版客户支持专属包装、有机标签定制。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 应用下载区块 (下载农场助手) ========== -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-3xl font-bold text-gray-900">随时随地管理农场</h2>
+                    <p class="text-gray-500 mt-2">下载翠然农户端/采购端，数据在手</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                    <div class="bg-primary-50 p-5 rounded-2xl text-center"><span class="text-4xl">📱</span><p class="font-medium mt-2">iOS</p><p class="text-xs text-gray-400">App Store</p><div class="mt-2 inline-block bg-primary-100 p-1 rounded"><span class="text-xs px-2 py-1">下载</span></div></div>
+                    <div class="bg-primary-50 p-5 rounded-2xl text-center"><span class="text-4xl">🤖</span><p class="font-medium mt-2">Android</p><p class="text-xs text-gray-400">应用市场</p><div class="mt-2 inline-block bg-primary-100 p-1 rounded"><span class="text-xs px-2 py-1">下载</span></div></div>
+                    <div class="bg-primary-50 p-5 rounded-2xl text-center"><span class="text-4xl">💻</span><p class="font-medium mt-2">Windows</p><div class="mt-2 inline-block bg-primary-100 p-1 rounded"><span class="text-xs px-2 py-1">桌面端</span></div></div>
+                    <div class="bg-primary-50 p-5 rounded-2xl text-center"><span class="text-4xl">🍎</span><p class="font-medium mt-2">macOS</p><div class="mt-2 inline-block bg-primary-100 p-1 rounded"><span class="text-xs px-2 py-1">桌面端</span></div></div>
+                    <div class="bg-primary-50 p-5 rounded-2xl text-center"><span class="text-4xl">🐧</span><p class="font-medium mt-2">Linux</p><div class="mt-2 inline-block bg-primary-100 p-1 rounded"><span class="text-xs px-2 py-1">桌面端</span></div></div>
+                    <div class="bg-primary-50 p-5 rounded-2xl text-center"><span class="text-4xl">🌐</span><p class="font-medium mt-2">Web</p><div class="mt-2 inline-block bg-primary-100 p-1 rounded"><span class="text-xs px-2 py-1">网页版</span></div></div>
+                </div>
+                <div class="flex justify-center mt-10 gap-6"><span class="w-24 h-24 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 border">公众号二维码</span><span class="w-24 h-24 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 border">小程序码</span></div>
+            </div>
+        </section>
+
+        <!-- ========== 博客/新闻区块 (最新动态) ========== -->
+        <section class="py-16 bg-primary-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-3xl font-bold text-gray-900">有机·新鲜事</h2>
+                    <p class="text-gray-500">行业报告、农场故事、节气食谱</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-3xl overflow-hidden shadow"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=300&fit=crop" class="h-48 w-full object-cover"><div class="p-5"><span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded-full">行业洞察</span><h3 class="font-bold text-lg mt-2">2025有机消费趋势报告</h3><p class="text-gray-500 text-sm mt-2">企业采购有机食材意愿上升34%……</p><div class="flex items-center mt-4 gap-2"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" class="w-8 h-8 rounded-full"><span class="text-sm">张明</span><span class="text-xs text-gray-400 ml-auto">2025-02-10</span></div></div></div>
+                    <div class="bg-white rounded-3xl overflow-hidden shadow"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=300&fit=crop" class="h-48 w-full object-cover"><div class="p-5"><span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded-full">产品更新</span><h3 class="font-bold text-lg mt-2">AI测土配方上线</h3><p class="text-gray-500 text-sm mt-2">根据土壤数据自动生成施肥建议。</p><div class="flex items-center mt-4 gap-2"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop" class="w-8 h-8 rounded-full"><span class="text-sm">李华</span><span class="text-xs text-gray-400 ml-auto">2025-02-05</span></div></div></div>
+                    <div class="bg-white rounded-3xl overflow-hidden shadow"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=300&fit=crop" class="h-48 w-full object-cover"><div class="p-5"><span class="text-xs bg-primary-100 text-primary-800 px-2 py-1 rounded-full">客户案例</span><h3 class="font-bold text-lg mt-2">鼎丰农场：从传统到数字化</h3><p class="text-gray-500 text-sm mt-2">如何用一年时间将产量翻倍。</p><div class="flex items-center mt-4 gap-2"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop" class="w-8 h-8 rounded-full"><span class="text-sm">王芳</span><span class="text-xs text-gray-400 ml-auto">2025-01-28</span></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA 区块 ========== -->
+        <section class="py-20 bg-gradient-to-r from-primary-600 to-accent-600 text-white">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-4xl font-bold mb-4">让每一餐更安心</h2>
+                <p class="text-xl text-primary-100 mb-8">为您的企业定制有机食材供应方案。</p>
+                <div class="flex flex-wrap gap-4 justify-center"><a href="#" class="bg-white text-primary-700 px-8 py-4 rounded-full font-bold shadow-lg hover:bg-primary-50 transition">免费获取样品</a><a href="#" class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">预约农场参观</a></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== 页脚 (品牌Logo、版权、地址、联系方式、公众号二维码) ========== -->
+    <footer class="bg-primary-900 text-primary-100 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-2 text-white text-2xl font-semibold mb-4"><span>🌱</span> 翠然有机</div>
+                    <p class="text-sm text-primary-200">从田间到餐桌，全程有机可溯源。</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-3">公司地址</h4>
+                    <p class="text-sm text-primary-200">北京市朝阳区有机农业产业园88号<br>上海市浦东新区生鲜中心B座6F</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-3">联系方式</h4>
+                    <p class="text-sm text-primary-200">企业合作：400-668-1234<br>客户支持：hello@cuiran.com</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-3">微信公众号</h4>
+                    <div class="w-24 h-24 bg-primary-700 rounded-lg flex items-center justify-center text-primary-300 border border-primary-500">二维码</div>
+                </div>
+            </div>
+            <div class="border-t border-primary-700 mt-10 pt-6 text-sm text-center text-primary-300">
+                © 2025 翠然有机农业科技有限公司 · 保留一切权利 · 自然永续
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

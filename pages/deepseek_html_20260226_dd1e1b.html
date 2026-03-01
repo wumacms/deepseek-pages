@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>恒隆地产 · 缔造优享商业空间</title>
+    <!-- Tailwind CSS via CDN (pure Tailwind, no custom style) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Additional subtle base (only Tailwind utilities, no custom CSS) -->
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- 导航栏 (含logo, 标题, CTA按钮, 无菜单) 使用大图风格半透明背景 -->
+    <header class="absolute w-full z-10 bg-transparent backdrop-blur-sm bg-white/30 border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo + 标题 -->
+            <div class="flex items-center space-x-3">
+                <!-- 简单logo图形 (模拟商业地产抽象标志) 用Tailwind生成 -->
+                <div class="w-8 h-8 bg-indigo-800 rounded-md flex items-center justify-center text-white font-bold text-lg">🏢</div>
+                <span class="font-semibold text-xl text-gray-900 tracking-tight">恒隆地产</span>
+            </div>
+            <!-- CTA 按钮 -->
+            <div>
+                <a href="/contact" class="inline-block bg-indigo-700 hover:bg-indigo-800 text-white px-5 py-2 rounded-full text-sm font-medium transition shadow-md">预约看场</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <!-- 首屏区块 (沉浸式大图) 使用商业地产背景 -->
+        <section class="relative h-screen flex items-center justify-center">
+            <!-- 大图背景 -->
+            <div class="absolute inset-0 -z-10">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="现代商业综合体" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/30"></div> <!-- 暗色遮罩增加文字可读性 -->
+            </div>
+            <!-- 内容容器 (对应首屏JSON数据结构) -->
+            <div class="text-center text-white px-6 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">恒隆广场·重塑城市商业封面</h1>
+                <p class="text-xl md:text-2xl mb-4 font-light">核心商圈 · 旗舰综合体 · 高端租户云集</p>
+                <p class="text-base md:text-lg mb-10 max-w-2xl mx-auto opacity-90">上海、沈阳、济南等地标商业，汇聚国际名品与前沿办公体验，引领都会生活方式。</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/leasing" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-8 py-3 rounded-full text-lg shadow-lg transition">租赁咨询</a>
+                    <a href="/portfolio" class="bg-white/20 backdrop-blur-sm border border-white/40 hover:bg-white/30 text-white font-medium px-8 py-3 rounded-full text-lg transition">查看项目</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块：商业地标细节 -->
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- 图片左 -->
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://placehold.co/1974x600/e2e8f0/64748b?text=Image" alt="上海恒隆广场中庭" class="w-full h-full object-cover">
+                </div>
+                <!-- 文案右 -->
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">极致商业场景，连接高端客群</h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">每座恒隆广场皆位于城市核心地段，汇聚奢侈品旗舰、精致餐饮与顶级办公。通过会员计划与艺术策展，打造高净值人群社交场。</p>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">▪️ 98% 入驻率</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">▪️ 独家品牌合作</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full font-medium">▪️ LEED金级认证</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块：办公与商业融合 -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- 文案左 -->
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">国际甲级办公，激发企业潜能</h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">无柱空间、智能楼宇系统、专属电梯配置。已有逾百家世界500强及律所、咨询机构入驻，提供高效商务生态。</p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm">▪️ 5G全覆盖</span>
+                        <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm">▪️ 24h VRV空调</span>
+                        <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm">▪️ 总裁行政盥洗</span>
+                    </div>
+                </div>
+                <!-- 图片右 -->
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop" alt="恒隆办公室内景" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块：全国布局 -->
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">布局核心城市，每一座皆地标</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">从上海、沈阳、济南到无锡、大连、昆明，恒隆广场以统一的高品质设计和运营，焕新城市商业生命力。</p>
+                <div class="rounded-2xl overflow-hidden shadow-2xl max-w-5xl mx-auto">
+                    <img src="https://images.unsplash.com/photo-1577415124269-fc1140a69e91?q=80&w=1964&auto=format&fit=crop" alt="恒隆全国项目地图" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块：商业地产专属价值点 (对应特性数据结构) -->
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-3">恒隆DNA · 不止于商业</h2>
+                    <p class="text-lg text-gray-500">从设计到服务，重新定义高端商业地产</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 特性1 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition">
+                        <div class="text-5xl mb-4">📍</div>
+                        <h3 class="text-xl font-semibold mb-2">核心区位</h3>
+                        <p class="text-gray-600">每一座恒隆广场均占据城市心脏，地铁上盖，辐射百万客流。</p>
+                    </div>
+                    <!-- 特性2 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition">
+                        <div class="text-5xl mb-4">🌿</div>
+                        <h3 class="text-xl font-semibold mb-2">绿色运营</h3>
+                        <p class="text-gray-600">全面采用节能技术，多个项目获得LEED及WELL金级认证。</p>
+                    </div>
+                    <!-- 特性3 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition">
+                        <div class="text-5xl mb-4">🛍️</div>
+                        <h3 class="text-xl font-semibold mb-2">顶级租户</h3>
+                        <p class="text-gray-600">汇聚奢侈品牌旗舰店、米其林餐厅、高端生活方式主力店。</p>
+                    </div>
+                    <!-- 特性4 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl text-center hover:shadow-lg transition">
+                        <div class="text-5xl mb-4">📊</div>
+                        <h3 class="text-xl font-semibold mb-2">数据洞察</h3>
+                        <p class="text-gray-600">通过会员系统与客流分析，帮助租户精准触达目标客群。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目案例区块 (灵感来自团队区块，但展示代表项目) 符合商业地产语境 -->
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-3">地标项目巡礼</h2>
+                    <p class="text-lg text-gray-500">恒隆广场 · 每一座皆独特</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- 项目卡片 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?q=80&w=1973&auto=format&fit=crop" alt="上海恒隆" class="h-56 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1">上海恒隆广场</h3>
+                            <p class="text-indigo-600 mb-2">浦西商业之王</p>
+                            <p class="text-gray-500 text-sm">奢侈品零售 · 旗舰店 · 年销售额百亿</p>
+                        </div>
+                    </div>
+                    <!-- 项目卡片 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?q=80&w=1974&auto=format&fit=crop" alt="沈阳恒隆" class="h-56 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1">沈阳恒隆广场</h3>
+                            <p class="text-indigo-600 mb-2">市府广场核心</p>
+                            <p class="text-gray-500 text-sm">甲级办公群 · 奢华酒店 · 高端餐饮</p>
+                        </div>
+                    </div>
+                    <!-- 项目卡片 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/1935x600/e2e8f0/64748b?text=Image" alt="济南恒隆" class="h-56 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1">济南恒隆广场</h3>
+                            <p class="text-indigo-600 mb-2">泉城路商业龙头</p>
+                            <p class="text-gray-500 text-sm">超大综合体 · 年轻潮流 · 生活美学</p>
+                        </div>
+                    </div>
+                    <!-- 项目卡片 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <img src="https://placehold.co/2069x600/e2e8f0/64748b?text=Image" alt="无锡恒隆" class="h-56 w-full object-cover">
+                        <div class="p-5">
+                            <h3 class="font-bold text-xl mb-1">无锡恒隆广场</h3>
+                            <p class="text-indigo-600 mb-2">中山路商圈地标</p>
+                            <p class="text-gray-500 text-sm">奢侈品 · 办公 · 二期即将绽放</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块：商业地产关键数据 (对应stats数据结构) -->
+        <section class="py-20 bg-indigo-900 text-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-5xl font-bold mb-2">11</div>
+                        <div class="text-indigo-200 text-lg">在营项目</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold mb-2">99%</div>
+                        <div class="text-indigo-200 text-lg">平均出租率</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold mb-2">500+</div>
+                        <div class="text-indigo-200 text-lg">国际品牌</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-bold mb-2">30+</div>
+                        <div class="text-indigo-200 text-lg">年服务经验</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 核心团队区块 (沿用团队结构，展示商业地产核心管理层) -->
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-3">核心管理团队</h2>
+                    <p class="text-lg text-gray-500">数十载商业地产经验，引领恒隆持续卓越</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 成员 1 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden text-center">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="陈启宗" class="w-full h-64 object-cover object-top">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl">陈启宗</h3>
+                            <p class="text-indigo-600 mb-2">董事长</p>
+                            <p class="text-gray-500 text-sm">恒隆集团主席，地产战略家</p>
+                        </div>
+                    </div>
+                    <!-- 成员 2 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden text-center">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="卢韦柏" class="w-full h-64 object-cover object-top">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl">卢韦柏</h3>
+                            <p class="text-indigo-600 mb-2">行政总裁</p>
+                            <p class="text-gray-500 text-sm">统领整体运营与战略发展</p>
+                        </div>
+                    </div>
+                    <!-- 成员 3 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden text-center">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="赵家驹" class="w-full h-64 object-cover object-top">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl">赵家驹</h3>
+                            <p class="text-indigo-600 mb-2">首席财务官</p>
+                            <p class="text-gray-500 text-sm">资本运作与投资者关系</p>
+                        </div>
+                    </div>
+                    <!-- 成员 4 -->
+                    <div class="bg-white rounded-2xl shadow-md overflow-hidden text-center">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" alt="陈文博" class="w-full h-64 object-cover object-top">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl">陈文博</h3>
+                            <p class="text-indigo-600 mb-2">执行董事</p>
+                            <p class="text-gray-500 text-sm">负责项目拓展与创新</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (faq 风格调整成商业地产常见咨询) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">租赁常见问题</h2>
+                <div class="space-y-5">
+                    <!-- faq 1 -->
+                    <div class="border border-gray-200 rounded-xl p-6 hover:shadow-sm">
+                        <h3 class="font-semibold text-lg mb-2">📍 如何预约参观恒隆广场写字楼？</h3>
+                        <p class="text-gray-600">您可点击页面右上角“预约看场”或联系租赁热线，我们的租务顾问会一对一安排带看及讲解。</p>
+                    </div>
+                    <!-- faq 2 -->
+                    <div class="border border-gray-200 rounded-xl p-6 hover:shadow-sm">
+                        <h3 class="font-semibold text-lg mb-2">💰 租金包含哪些费用？物业费如何计算？</h3>
+                        <p class="text-gray-600">租金根据楼层、面积及装修标准定制；物业费包含空调、公区维护、24小时安保，具体可提供详细报价单。</p>
+                    </div>
+                    <!-- faq 3 -->
+                    <div class="border border-gray-200 rounded-xl p-6 hover:shadow-sm">
+                        <h3 class="font-semibold text-lg mb-2">🌐 是否提供精装修或定制装修服务？</h3>
+                        <p class="text-gray-600">部分单元提供架空地板、天花、照明的“交付状态”，也可根据租户需求提供菜单式装修方案。</p>
+                    </div>
+                    <!-- faq 4 -->
+                    <div class="border border-gray-200 rounded-xl p-6 hover:shadow-sm">
+                        <h3 class="font-semibold text-lg mb-2">📄 租赁合同最短几年？是否有扩租灵活性？</h3>
+                        <p class="text-gray-600">通常三年起租，对于快速发展的企业，我们支持同层或同楼扩租优先权，具体可协商。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 (立即咨询，对应cta结构) -->
+        <section class="relative py-24 bg-indigo-800 text-white overflow-hidden">
+            <!-- 微妙的纹理背景 (纯色干净) -->
+            <div class="absolute inset-0 bg-black/10"></div>
+            <div class="relative max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">开启您的商业新篇章</h2>
+                <p class="text-xl mb-10 text-indigo-100">与恒隆一起，打造品牌旗舰或总部办公新标杆。</p>
+                <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                    <a href="/signup" class="bg-white text-indigo-800 hover:bg-indigo-50 font-semibold px-8 py-4 rounded-full text-lg shadow-xl transition">预约专属洽谈</a>
+                    <a href="/demo" class="border-2 border-white/70 text-white hover:bg-white/20 px-8 py-4 rounded-full text-lg transition">下载项目手册</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚：简单的版权声明 -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-sm">© 2025 恒隆地产有限公司 版权所有 · 本页面为商业地产展示，数据仅供参考。</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 微调默认色系：橙/绿氛围，完全通过tailwind类实现，无额外css -->
 </head>
+
 <body class="bg-white text-gray-800 font-sans antialiased">
 
     <!-- 导航栏 (logo, 标题, 菜单, CTA) 橙绿点缀 -->
@@ -17,10 +19,12 @@
                 <!-- logo + 标题 -->
                 <div class="flex items-center gap-2">
                     <!-- 环卫绿叶风格logo (纯tailwind模拟) -->
-                    <div class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-sm">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-sm">
                         <span class="text-white text-lg font-bold">♻️</span>
                     </div>
-                    <span class="font-bold text-xl tracking-tight text-gray-800">洁城<span class="text-orange-500">环境</span></span>
+                    <span class="font-bold text-xl tracking-tight text-gray-800">洁城<span
+                            class="text-orange-500">环境</span></span>
                 </div>
                 <!-- 桌面导航菜单 (隐藏移动简化) -->
                 <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
@@ -31,8 +35,10 @@
                 </div>
                 <!-- CTA 按钮 -->
                 <div class="flex items-center gap-3">
-                    <a href="#" class="hidden sm:inline-block text-sm font-medium text-gray-700 hover:text-green-600">登录</a>
-                    <a href="#" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition flex items-center gap-1">
+                    <a href="#"
+                        class="hidden sm:inline-block text-sm font-medium text-gray-700 hover:text-green-600">登录</a>
+                    <a href="#"
+                        class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-sm transition flex items-center gap-1">
                         <span>📞</span> 获取方案
                     </a>
                 </div>
@@ -54,12 +60,15 @@
                         </p>
                         <p class="mt-2 text-gray-500">AI 路线规划 · 垃圾分类数据洞察 · 低碳清运</p>
                         <div class="mt-8 flex flex-wrap gap-4">
-                            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold shadow-md transition">开始使用</a>
-                            <a href="#" class="border-2 border-green-600 text-green-700 hover:bg-green-50 px-8 py-3 rounded-full font-semibold transition">联系销售</a>
+                            <a href="#"
+                                class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold shadow-md transition">开始使用</a>
+                            <a href="#"
+                                class="border-2 border-green-600 text-green-700 hover:bg-green-50 px-8 py-3 rounded-full font-semibold transition">联系销售</a>
                         </div>
                     </div>
                     <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white">
-                        <img src="https://images.unsplash.com/photo-1731099453836-364d17308e60?q=80&w=1740&auto=format&fit=crop" alt="智慧环卫清扫车队" class="w-full h-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1731099453836-364d17308e60?q=60&w=900&auto=format&fit=crop"
+                            alt="智慧环卫清扫车队" class="w-full h-full object-cover">
                     </div>
                 </div>
             </div>
@@ -72,12 +81,30 @@
                 <p class="text-center text-gray-500 mt-2">与行业领先的环保/科技公司深度合作</p>
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-6 mt-10 items-center">
                     <!-- 伙伴logo卡片 (环卫风格名称) -->
-                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-green-700">♻️ 联运</span><p class="text-xs text-gray-500">装备合作</p></div>
-                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-orange-600">🚛 宇通</span><p class="text-xs text-gray-500">新能源环卫车</p></div>
-                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-green-600">🌱 盈峰</span><p class="text-xs text-gray-500">智慧环境</p></div>
-                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-orange-500">🧪 光大</span><p class="text-xs text-gray-500">焚烧技术</p></div>
-                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-green-600">📊 阿里云</span><p class="text-xs text-gray-500">数据中台</p></div>
-                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-orange-600">🗺️ 四维</span><p class="text-xs text-gray-500">GIS地图</p></div>
+                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-green-700">♻️
+                            联运</span>
+                        <p class="text-xs text-gray-500">装备合作</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span
+                            class="text-xl font-bold text-orange-600">🚛 宇通</span>
+                        <p class="text-xs text-gray-500">新能源环卫车</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-green-600">🌱
+                            盈峰</span>
+                        <p class="text-xs text-gray-500">智慧环境</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span
+                            class="text-xl font-bold text-orange-500">🧪 光大</span>
+                        <p class="text-xs text-gray-500">焚烧技术</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span class="text-xl font-bold text-green-600">📊
+                            阿里云</span>
+                        <p class="text-xs text-gray-500">数据中台</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-xl text-center"><span
+                            class="text-xl font-bold text-orange-600">🗺️ 四维</span>
+                        <p class="text-xs text-gray-500">GIS地图</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -85,7 +112,8 @@
         <!-- ========= 左图右文区块 (垃圾收运可视化) ========= -->
         <section class="py-16 bg-green-50/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
-                <img src="https://plus.unsplash.com/premium_photo-1757979536736-fb67b1b7860c?q=80&w=1450&auto=format&fit=crop" alt="智能垃圾收运车" class="rounded-2xl shadow-lg h-80 object-cover w-full">
+                <img src="https://plus.unsplash.com/premium_photo-1757979536736-fb67b1b7860c?q=80&w=1450&auto=format&fit=crop"
+                    alt="智能垃圾收运车" class="rounded-2xl shadow-lg h-80 object-cover w-full">
                 <div>
                     <h2 class="text-3xl font-bold text-gray-800">无缝收运 · 智能调度</h2>
                     <p class="mt-4 text-gray-600">打破传统环卫信息孤岛，通过实时车载终端和物联网平台，让每辆清运车路线最优、油耗最低。集成垃圾满溢传感器，一键触发收运任务。</p>
@@ -108,7 +136,8 @@
                         <span class="bg-orange-50 px-4 py-2 rounded-full">📊 减量报告</span>
                     </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?q=80&w=2070&auto=format&fit=crop" alt="垃圾分类智能箱" class="rounded-2xl shadow-lg h-80 object-cover w-full">
+                <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?q=60&w=900&auto=format&fit=crop"
+                    alt="垃圾分类智能箱" class="rounded-2xl shadow-lg h-80 object-cover w-full">
             </div>
         </section>
 
@@ -117,7 +146,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl font-bold text-gray-800">全平台一体化指挥舱</h2>
                 <p class="mt-3 text-gray-600 max-w-2xl mx-auto">无论是PC调度大屏、平板现场核查还是手机移动端，数据实时同步，操作流畅自如。</p>
-                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" alt="智慧环卫指挥大屏" class="mt-10 rounded-2xl shadow-xl border-4 border-white">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=60&w=900&auto=format&fit=crop"
+                    alt="智慧环卫指挥大屏" class="mt-10 rounded-2xl shadow-xl border-4 border-white">
             </div>
         </section>
 
@@ -160,40 +190,53 @@
                     <!-- 案例1 -->
                     <div class="bg-white p-6 rounded-2xl shadow-md">
                         <div class="flex items-center gap-3">
-                            <span class="text-2xl bg-green-100 w-10 h-10 flex items-center justify-center rounded-full">🏛️</span>
+                            <span
+                                class="text-2xl bg-green-100 w-10 h-10 flex items-center justify-center rounded-full">🏛️</span>
                             <span class="font-bold">西湖区环卫</span>
                         </div>
                         <p class="text-sm text-orange-500 mt-1">政府单位</p>
                         <p class="mt-3 text-gray-700 italic">“清运效率提升35%，垃圾分类准确率提高了22%。”</p>
                         <div class="mt-4 flex items-center gap-3">
-                            <span class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-white text-sm">赵</span>
-                            <div><p class="font-medium">赵海明</p><p class="text-xs text-gray-500">环卫所主任</p></div>
+                            <span
+                                class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-white text-sm">赵</span>
+                            <div>
+                                <p class="font-medium">赵海明</p>
+                                <p class="text-xs text-gray-500">环卫所主任</p>
+                            </div>
                         </div>
                     </div>
                     <!-- 案例2 -->
                     <div class="bg-white p-6 rounded-2xl shadow-md">
                         <div class="flex items-center gap-3">
-                            <span class="text-2xl bg-orange-100 w-10 h-10 flex items-center justify-center rounded-full">🏭</span>
+                            <span
+                                class="text-2xl bg-orange-100 w-10 h-10 flex items-center justify-center rounded-full">🏭</span>
                             <span class="font-bold">新苏环保产业</span>
                         </div>
                         <p class="text-sm text-orange-500 mt-1">环保企业</p>
                         <p class="mt-3 text-gray-700 italic">“智慧环卫平台让我们对30个中转站实现无人值守监管。”</p>
                         <div class="mt-4 flex items-center gap-3">
                             <span class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">刘</span>
-                            <div><p class="font-medium">刘敏</p><p class="text-xs text-gray-500">运营总监</p></div>
+                            <div>
+                                <p class="font-medium">刘敏</p>
+                                <p class="text-xs text-gray-500">运营总监</p>
+                            </div>
                         </div>
                     </div>
                     <!-- 案例3 -->
                     <div class="bg-white p-6 rounded-2xl shadow-md">
                         <div class="flex items-center gap-3">
-                            <span class="text-2xl bg-green-100 w-10 h-10 flex items-center justify-center rounded-full">🌿</span>
+                            <span
+                                class="text-2xl bg-green-100 w-10 h-10 flex items-center justify-center rounded-full">🌿</span>
                             <span class="font-bold">经开区管委会</span>
                         </div>
                         <p class="text-sm text-orange-500 mt-1">工业园区</p>
                         <p class="mt-3 text-gray-700 italic">“垃圾混投实时告警，园区环境评分全市第一。”</p>
                         <div class="mt-4 flex items-center gap-3">
                             <span class="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center">陈</span>
-                            <div><p class="font-medium">陈国栋</p><p class="text-xs text-gray-500">综合执法局</p></div>
+                            <div>
+                                <p class="font-medium">陈国栋</p>
+                                <p class="text-xs text-gray-500">综合执法局</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -203,10 +246,22 @@
         <!-- ========= 统计区块 ========= -->
         <section class="py-12 bg-white border-y border-gray-100">
             <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                <div><div class="text-4xl font-bold text-green-700">200+</div><div class="text-gray-500">城市覆盖</div></div>
-                <div><div class="text-4xl font-bold text-orange-500">98%</div><div class="text-gray-500">垃圾无害化</div></div>
-                <div><div class="text-4xl font-bold text-green-700">15K</div><div class="text-gray-500">智能车辆</div></div>
-                <div><div class="text-4xl font-bold text-orange-500">24/7</div><div class="text-gray-500">应急响应</div></div>
+                <div>
+                    <div class="text-4xl font-bold text-green-700">200+</div>
+                    <div class="text-gray-500">城市覆盖</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-orange-500">98%</div>
+                    <div class="text-gray-500">垃圾无害化</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-green-700">15K</div>
+                    <div class="text-gray-500">智能车辆</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-orange-500">24/7</div>
+                    <div class="text-gray-500">应急响应</div>
+                </div>
             </div>
         </section>
 
@@ -216,10 +271,22 @@
                 <h2 class="text-3xl font-bold text-center text-gray-800">安全认证 · 企业资质</h2>
                 <p class="text-center text-gray-500 mt-2">通过最严格的环境/信息管理体系认证</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-10">
-                    <div class="bg-white p-4 rounded-xl shadow text-center"><span class="text-3xl block mb-1">🌍</span><span class="font-semibold">ISO 14001</span><p class="text-xs text-gray-500">环境管理体系</p></div>
-                    <div class="bg-white p-4 rounded-xl shadow text-center"><span class="text-3xl block mb-1">🔒</span><span class="font-semibold">ISO 27001</span><p class="text-xs text-gray-500">信息安全</p></div>
-                    <div class="bg-white p-4 rounded-xl shadow text-center"><span class="text-3xl block mb-1">⚙️</span><span class="font-semibold">高新企业</span><p class="text-xs text-gray-500">国家级认证</p></div>
-                    <div class="bg-white p-4 rounded-xl shadow text-center"><span class="text-3xl block mb-1">🏆</span><span class="font-semibold">环卫一级</span><p class="text-xs text-gray-500">市政资质</p></div>
+                    <div class="bg-white p-4 rounded-xl shadow text-center"><span
+                            class="text-3xl block mb-1">🌍</span><span class="font-semibold">ISO 14001</span>
+                        <p class="text-xs text-gray-500">环境管理体系</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow text-center"><span
+                            class="text-3xl block mb-1">🔒</span><span class="font-semibold">ISO 27001</span>
+                        <p class="text-xs text-gray-500">信息安全</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow text-center"><span
+                            class="text-3xl block mb-1">⚙️</span><span class="font-semibold">高新企业</span>
+                        <p class="text-xs text-gray-500">国家级认证</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl shadow text-center"><span
+                            class="text-3xl block mb-1">🏆</span><span class="font-semibold">环卫一级</span>
+                        <p class="text-xs text-gray-500">市政资质</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -229,10 +296,22 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center text-gray-800">常见问题</h2>
                 <div class="mt-10 space-y-5">
-                    <div class="border border-gray-200 rounded-xl p-5"><p class="font-semibold text-lg">❓ 支持本地化部署环卫数据吗？</p><p class="text-gray-600 mt-1">是的，针对政务云，我们提供私有化部署方案，满足等保及数据主权要求。</p></div>
-                    <div class="border border-gray-200 rounded-xl p-5"><p class="font-semibold text-lg">❓ 可以试用智慧环卫系统吗？</p><p class="text-gray-600 mt-1">所有新客户均可享受30天全功能免费试用，配备专属部署顾问。</p></div>
-                    <div class="border border-gray-200 rounded-xl p-5"><p class="font-semibold text-lg">❓ 如何对接现有的垃圾中转站地磅？</p><p class="text-gray-600 mt-1">我们提供标准API和硬件网关，支持Modbus、MQTT等多种协议快速接入。</p></div>
-                    <div class="border border-gray-200 rounded-xl p-5"><p class="font-semibold text-lg">❓ 是否提供车辆/人员绩效报表？</p><p class="text-gray-600 mt-1">平台内置30余种环卫专用报表，支持自定义导出，辅助绩效考核。</p></div>
+                    <div class="border border-gray-200 rounded-xl p-5">
+                        <p class="font-semibold text-lg">❓ 支持本地化部署环卫数据吗？</p>
+                        <p class="text-gray-600 mt-1">是的，针对政务云，我们提供私有化部署方案，满足等保及数据主权要求。</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-5">
+                        <p class="font-semibold text-lg">❓ 可以试用智慧环卫系统吗？</p>
+                        <p class="text-gray-600 mt-1">所有新客户均可享受30天全功能免费试用，配备专属部署顾问。</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-5">
+                        <p class="font-semibold text-lg">❓ 如何对接现有的垃圾中转站地磅？</p>
+                        <p class="text-gray-600 mt-1">我们提供标准API和硬件网关，支持Modbus、MQTT等多种协议快速接入。</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-5">
+                        <p class="font-semibold text-lg">❓ 是否提供车辆/人员绩效报表？</p>
+                        <p class="text-gray-600 mt-1">平台内置30余种环卫专用报表，支持自定义导出，辅助绩效考核。</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -243,12 +322,30 @@
                 <h2 class="text-3xl font-bold text-gray-800">随时随地 · 调度监管</h2>
                 <p class="text-gray-500 mt-2">下载移动/桌面应用，消息与任务实时同步</p>
                 <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mt-10">
-                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">📱</span><p class="font-semibold">iOS</p><p class="text-xs text-gray-400">App Store</p></div>
-                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🤖</span><p class="font-semibold">Android</p><p class="text-xs text-gray-400">应用宝</p></div>
-                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">💻</span><p class="font-semibold">Windows</p><p class="text-xs text-gray-400">桌面端</p></div>
-                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🍎</span><p class="font-semibold">macOS</p><p class="text-xs text-gray-400">桌面端</p></div>
-                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🐧</span><p class="font-semibold">Linux</p><p class="text-xs text-gray-400">客户端</p></div>
-                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🌐</span><p class="font-semibold">Web</p><p class="text-xs text-gray-400">网页调度</p></div>
+                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">📱</span>
+                        <p class="font-semibold">iOS</p>
+                        <p class="text-xs text-gray-400">App Store</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🤖</span>
+                        <p class="font-semibold">Android</p>
+                        <p class="text-xs text-gray-400">应用宝</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">💻</span>
+                        <p class="font-semibold">Windows</p>
+                        <p class="text-xs text-gray-400">桌面端</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🍎</span>
+                        <p class="font-semibold">macOS</p>
+                        <p class="text-xs text-gray-400">桌面端</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🐧</span>
+                        <p class="font-semibold">Linux</p>
+                        <p class="text-xs text-gray-400">客户端</p>
+                    </div>
+                    <div class="bg-white p-3 rounded-2xl shadow"><span class="text-2xl">🌐</span>
+                        <p class="font-semibold">Web</p>
+                        <p class="text-xs text-gray-400">网页调度</p>
+                    </div>
                 </div>
                 <!-- 模拟公众号二维码占位 -->
                 <div class="mt-10 flex justify-center">
@@ -266,8 +363,10 @@
                 <h2 class="text-3xl md:text-4xl font-bold">立即提升城市洁净效率</h2>
                 <p class="mt-3 text-green-100">加入200+市政单位与环卫企业，开启智慧环卫之旅</p>
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
-                    <a href="#" class="bg-orange-500 hover:bg-orange-400 text-white px-8 py-3 rounded-full font-semibold shadow-lg">免费试用30天</a>
-                    <a href="#" class="bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold">预约演示</a>
+                    <a href="#"
+                        class="bg-orange-500 hover:bg-orange-400 text-white px-8 py-3 rounded-full font-semibold shadow-lg">免费试用30天</a>
+                    <a href="#"
+                        class="bg-white text-green-800 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold">预约演示</a>
                 </div>
             </div>
         </section>
@@ -298,7 +397,8 @@
                 <!-- 微信公众号二维码 (模拟) -->
                 <div>
                     <h4 class="text-white font-semibold">官方公众号</h4>
-                    <div class="mt-2 bg-gray-800 w-24 h-24 rounded flex items-center justify-center border border-gray-600">
+                    <div
+                        class="mt-2 bg-gray-800 w-24 h-24 rounded flex items-center justify-center border border-gray-600">
                         <span class="text-4xl opacity-50">◼️◼️</span>
                     </div>
                     <p class="text-xs text-gray-400 mt-1">扫一扫 最新动态</p>
@@ -310,4 +410,5 @@
         </div>
     </footer>
 </body>
+
 </html>

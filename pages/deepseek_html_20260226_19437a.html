@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 额外配置：设定默认颜色基调为混凝土灰/橙色，完全通过tailwind类实现，无自定义css -->
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
 
     <!-- 导航栏 (工业极简：深灰背景，橙色点缀) -->
@@ -16,7 +18,9 @@
             <div class="flex justify-between items-center h-20">
                 <!-- logo + 标题 -->
                 <div class="flex items-center space-x-2">
-                    <div class="w-8 h-8 bg-orange-500 rounded-sm flex items-center justify-center text-white font-bold text-xl">基</div>
+                    <div
+                        class="w-8 h-8 bg-orange-500 rounded-sm flex items-center justify-center text-white font-bold text-xl">
+                        基</div>
                     <span class="font-medium text-xl tracking-tight text-gray-800">基石建筑</span>
                 </div>
                 <!-- 导航菜单 (桌面) -->
@@ -29,8 +33,10 @@
                 </nav>
                 <!-- CTA 按钮 -->
                 <div class="flex items-center space-x-3">
-                    <a href="#" class="hidden sm:inline-block text-sm font-medium text-gray-700 hover:text-orange-600">登录</a>
-                    <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 text-sm font-medium rounded-md shadow-sm transition">开始项目</a>
+                    <a href="#"
+                        class="hidden sm:inline-block text-sm font-medium text-gray-700 hover:text-orange-600">登录</a>
+                    <a href="#"
+                        class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 text-sm font-medium rounded-md shadow-sm transition">开始项目</a>
                 </div>
             </div>
         </div>
@@ -45,25 +51,32 @@
                         <!-- 使用橙色强调线 -->
                         <div class="w-16 h-1 bg-orange-500 mb-6"></div>
                         <h1 class="text-4xl md:text-5xl font-light tracking-tight text-gray-900 leading-tight">
-                            构筑商业地标，<br/><span class="font-semibold text-orange-600">定义城市界面</span>
+                            构筑商业地标，<br /><span class="font-semibold text-orange-600">定义城市界面</span>
                         </h1>
                         <p class="text-lg text-gray-600 mt-6 max-w-xl">
                             从超高层综合体到创意商业街区，我们提供全周期建筑设计服务。混凝土的诗意，理性的极简。
                         </p>
                         <div class="flex flex-wrap gap-4 mt-8">
-                            <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 text-sm font-medium rounded-md shadow">近期项目</a>
-                            <a href="#" class="bg-white border border-gray-300 hover:border-orange-400 text-gray-800 px-6 py-3 text-sm font-medium rounded-md shadow-sm transition">联系合伙人</a>
+                            <a href="#"
+                                class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 text-sm font-medium rounded-md shadow">近期项目</a>
+                            <a href="#"
+                                class="bg-white border border-gray-300 hover:border-orange-400 text-gray-800 px-6 py-3 text-sm font-medium rounded-md shadow-sm transition">联系合伙人</a>
                         </div>
                         <!-- 微小统计装饰 (契合商业地产) -->
                         <div class="grid grid-cols-3 gap-4 mt-10 text-sm border-t border-gray-200 pt-8">
-                            <div><span class="block text-2xl font-light text-orange-600">200+</span><span class="text-gray-500">商业项目</span></div>
-                            <div><span class="block text-2xl font-light text-orange-600">15</span><span class="text-gray-500">城市地标</span></div>
-                            <div><span class="block text-2xl font-light text-orange-600">98%</span><span class="text-gray-500">客户续约</span></div>
+                            <div><span class="block text-2xl font-light text-orange-600">200+</span><span
+                                    class="text-gray-500">商业项目</span></div>
+                            <div><span class="block text-2xl font-light text-orange-600">15</span><span
+                                    class="text-gray-500">城市地标</span></div>
+                            <div><span class="block text-2xl font-light text-orange-600">98%</span><span
+                                    class="text-gray-500">客户续约</span></div>
                         </div>
                     </div>
                     <div class="bg-gray-300 h-80 lg:h-96 rounded-sm overflow-hidden shadow-md">
                         <!--  Unsplash 商业建筑概念图 (混凝土/玻璃) 符合商业地产 -->
-                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="现代商业建筑外观" >
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=60&w=900&auto=format&fit=crop"
+                            alt="现代商业建筑外观">
                     </div>
                 </div>
             </div>
@@ -76,12 +89,42 @@
                 <p class="text-gray-500 text-center mt-2 text-sm uppercase tracking-wider">国内外领先地产集团 · 深度合作</p>
                 <!-- 合作伙伴网格 6项 -->
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
-                    <div class="flex flex-col items-center text-center"><div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">🏢</div><span class="font-medium text-sm mt-3">华润置地</span><span class="text-xs text-gray-400">战略签约</span></div>
-                    <div class="flex flex-col items-center text-center"><div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">🏬</div><span class="font-medium text-sm mt-3">恒隆地产</span><span class="text-xs text-gray-400">长期合作</span></div>
-                    <div class="flex flex-col items-center text-center"><div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">🏭</div><span class="font-medium text-sm mt-3">普洛斯</span><span class="text-xs text-gray-400">物流商业</span></div>
-                    <div class="flex flex-col items-center text-center"><div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">🏛️</div><span class="font-medium text-sm mt-3">新鸿基</span><span class="text-xs text-gray-400">综合体设计</span></div>
-                    <div class="flex flex-col items-center text-center"><div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">🏗️</div><span class="font-medium text-sm mt-3">铁狮门</span><span class="text-xs text-gray-400">地标合作</span></div>
-                    <div class="flex flex-col items-center text-center"><div class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">🏙️</div><span class="font-medium text-sm mt-3">瑞安</span><span class="text-xs text-gray-400">新天地系列</span></div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">
+                            🏢</div><span class="font-medium text-sm mt-3">华润置地</span><span
+                            class="text-xs text-gray-400">战略签约</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">
+                            🏬</div><span class="font-medium text-sm mt-3">恒隆地产</span><span
+                            class="text-xs text-gray-400">长期合作</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">
+                            🏭</div><span class="font-medium text-sm mt-3">普洛斯</span><span
+                            class="text-xs text-gray-400">物流商业</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">
+                            🏛️</div><span class="font-medium text-sm mt-3">新鸿基</span><span
+                            class="text-xs text-gray-400">综合体设计</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">
+                            🏗️</div><span class="font-medium text-sm mt-3">铁狮门</span><span
+                            class="text-xs text-gray-400">地标合作</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center text-2xl text-gray-600">
+                            🏙️</div><span class="font-medium text-sm mt-3">瑞安</span><span
+                            class="text-xs text-gray-400">新天地系列</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -92,7 +135,9 @@
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div class="order-2 lg:order-1">
                         <div class="bg-gray-300 h-80 rounded-sm overflow-hidden shadow-md">
-                            <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=2071&auto=format&fit=crop" alt="开放式商业街区">
+                            <img class="w-full h-full object-cover"
+                                src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=60&w=900&auto=format&fit=crop"
+                                alt="开放式商业街区">
                         </div>
                     </div>
                     <div class="order-1 lg:order-2">
@@ -100,8 +145,10 @@
                         <h2 class="text-3xl font-light text-gray-900 mt-2 leading-tight">让人停留的商业<br>动线设计</h2>
                         <p class="text-gray-600 mt-4">打破传统盒子商业的封闭感，通过灰空间、外摆与景观的融合，创造高粘性消费场景。我们设计的街区商业平均出租率 97% 。</p>
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-3 py-1.5 rounded-full">人流热力分析</span>
-                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-3 py-1.5 rounded-full">多首层概念</span>
+                            <span
+                                class="bg-orange-100 text-orange-800 text-xs font-medium px-3 py-1.5 rounded-full">人流热力分析</span>
+                            <span
+                                class="bg-orange-100 text-orange-800 text-xs font-medium px-3 py-1.5 rounded-full">多首层概念</span>
                         </div>
                     </div>
                 </div>
@@ -117,12 +164,16 @@
                         <h2 class="text-3xl font-light text-gray-900 mt-2">超高层建筑 <br> 结构美学实践</h2>
                         <p class="text-gray-600 mt-4">从核心筒优化到立面参数化设计，我们与结构工程师紧密协作，在200米以上超高层项目中实现用钢量降低12% 。</p>
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1.5 rounded-full">BIM正向设计</span>
-                            <span class="bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1.5 rounded-full">风洞实验模拟</span>
+                            <span
+                                class="bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1.5 rounded-full">BIM正向设计</span>
+                            <span
+                                class="bg-gray-200 text-gray-700 text-xs font-medium px-3 py-1.5 rounded-full">风洞实验模拟</span>
                         </div>
                     </div>
                     <div class="bg-gray-300 h-80 rounded-sm overflow-hidden shadow-md">
-                        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1534430480872-3498386e7856?q=80&w=2070&auto=format&fit=crop" alt="超高层玻璃幕墙">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1534430480872-3498386e7856?q=60&w=900&auto=format&fit=crop"
+                            alt="超高层玻璃幕墙">
                     </div>
                 </div>
             </div>
@@ -136,10 +187,22 @@
                     <p class="text-gray-500 mt-2">从拿地策划到落地运营，一体化解决方案</p>
                 </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏬</span><h3 class="font-medium text-lg mt-4">购物中心</h3><p class="text-sm text-gray-500 mt-1">动线、中庭、铺面精细化设计，已服务20+万达、华润项目。</p></div>
-                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏙️</span><h3 class="font-medium text-lg mt-4">甲级办公</h3><p class="text-sm text-gray-500 mt-1">LEED/WELL金级认证，灵活分割的平面效率。</p></div>
-                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏨</span><h3 class="font-medium text-lg mt-4">酒店文旅</h3><p class="text-sm text-gray-500 mt-1">精品酒店与度假村，在地文化与现代融合。</p></div>
-                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏭</span><h3 class="font-medium text-lg mt-4">产业园区</h3><p class="text-sm text-gray-500 mt-1">产城融合，高标准厂房与研发配套。</p></div>
+                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏬</span>
+                        <h3 class="font-medium text-lg mt-4">购物中心</h3>
+                        <p class="text-sm text-gray-500 mt-1">动线、中庭、铺面精细化设计，已服务20+万达、华润项目。</p>
+                    </div>
+                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏙️</span>
+                        <h3 class="font-medium text-lg mt-4">甲级办公</h3>
+                        <p class="text-sm text-gray-500 mt-1">LEED/WELL金级认证，灵活分割的平面效率。</p>
+                    </div>
+                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏨</span>
+                        <h3 class="font-medium text-lg mt-4">酒店文旅</h3>
+                        <p class="text-sm text-gray-500 mt-1">精品酒店与度假村，在地文化与现代融合。</p>
+                    </div>
+                    <div class="bg-white p-6 shadow-sm border border-gray-100"><span class="text-3xl">🏭</span>
+                        <h3 class="font-medium text-lg mt-4">产业园区</h3>
+                        <p class="text-sm text-gray-500 mt-1">产城融合，高标准厂房与研发配套。</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -152,21 +215,45 @@
                 <div class="grid md:grid-cols-3 gap-8 mt-12">
                     <!-- case 1 -->
                     <div class="bg-gray-50 p-6 border border-gray-100">
-                        <div class="flex items-center space-x-2"><span class="text-xl font-semibold text-gray-800">大悦城控股</span><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5">商业</span></div>
+                        <div class="flex items-center space-x-2"><span
+                                class="text-xl font-semibold text-gray-800">大悦城控股</span><span
+                                class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5">商业</span></div>
                         <p class="text-gray-600 text-sm mt-4 italic">“从概念到施工图，基石团队对商业逻辑的理解非常深刻，帮助我们在西南地区打造了新的潮流地标。”</p>
-                        <div class="flex items-center mt-6"><div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div><div><p class="font-medium text-sm">陈瑞</p><p class="text-xs text-gray-400">设计总监 · 大悦城</p></div></div>
+                        <div class="flex items-center mt-6">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
+                            <div>
+                                <p class="font-medium text-sm">陈瑞</p>
+                                <p class="text-xs text-gray-400">设计总监 · 大悦城</p>
+                            </div>
+                        </div>
                     </div>
                     <!-- case 2 -->
                     <div class="bg-gray-50 p-6 border border-gray-100">
-                        <div class="flex items-center space-x-2"><span class="text-xl font-semibold text-gray-800">凯德集团</span><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5">综合体</span></div>
+                        <div class="flex items-center space-x-2"><span
+                                class="text-xl font-semibold text-gray-800">凯德集团</span><span
+                                class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5">综合体</span></div>
                         <p class="text-gray-600 text-sm mt-4">“在来福士广场的竞标中，基石的方案对公共空间的处理令人惊喜，最终落地效果完全超出预期。”</p>
-                        <div class="flex items-center mt-6"><div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div><div><p class="font-medium text-sm">吴敏</p><p class="text-xs text-gray-400">项目总经理</p></div></div>
+                        <div class="flex items-center mt-6">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
+                            <div>
+                                <p class="font-medium text-sm">吴敏</p>
+                                <p class="text-xs text-gray-400">项目总经理</p>
+                            </div>
+                        </div>
                     </div>
                     <!-- case 3 -->
                     <div class="bg-gray-50 p-6 border border-gray-100">
-                        <div class="flex items-center space-x-2"><span class="text-xl font-semibold text-gray-800">万科集团</span><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5">办公</span></div>
+                        <div class="flex items-center space-x-2"><span
+                                class="text-xl font-semibold text-gray-800">万科集团</span><span
+                                class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5">办公</span></div>
                         <p class="text-gray-600 text-sm mt-4">“标准化办公产品的模块化设计，让我们的项目周期缩短了20%，同时保持了极高的完成度。”</p>
-                        <div class="flex items-center mt-6"><div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div><div><p class="font-medium text-sm">赵宇</p><p class="text-xs text-gray-400">合伙人</p></div></div>
+                        <div class="flex items-center mt-6">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full mr-3"></div>
+                            <div>
+                                <p class="font-medium text-sm">赵宇</p>
+                                <p class="text-xs text-gray-400">合伙人</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,10 +263,14 @@
         <section class="py-12 bg-orange-500 text-white border-b border-orange-600">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                    <div><span class="text-4xl font-light">800万㎡+</span><span class="block text-sm text-orange-100 mt-1">累计设计面积</span></div>
-                    <div><span class="text-4xl font-light">45+</span><span class="block text-sm text-orange-100 mt-1">在建商业项目</span></div>
-                    <div><span class="text-4xl font-light">12</span><span class="block text-sm text-orange-100 mt-1">国家级奖项</span></div>
-                    <div><span class="text-4xl font-light">24/7</span><span class="block text-sm text-orange-100 mt-1">现场配合</span></div>
+                    <div><span class="text-4xl font-light">800万㎡+</span><span
+                            class="block text-sm text-orange-100 mt-1">累计设计面积</span></div>
+                    <div><span class="text-4xl font-light">45+</span><span
+                            class="block text-sm text-orange-100 mt-1">在建商业项目</span></div>
+                    <div><span class="text-4xl font-light">12</span><span
+                            class="block text-sm text-orange-100 mt-1">国家级奖项</span></div>
+                    <div><span class="text-4xl font-light">24/7</span><span
+                            class="block text-sm text-orange-100 mt-1">现场配合</span></div>
                 </div>
             </div>
         </section>
@@ -191,13 +282,38 @@
                 <div class="mt-10 overflow-x-auto">
                     <table class="min-w-full text-sm border border-gray-200">
                         <thead class="bg-gray-50">
-                            <tr><th class="p-3 text-left font-medium">对比项</th><th class="p-3 text-left font-medium text-orange-700">基石建筑</th><th class="p-3 text-left font-medium text-gray-500">传统设计院</th><th class="p-3 text-left font-medium text-gray-500">国际事务所</th></tr>
+                            <tr>
+                                <th class="p-3 text-left font-medium">对比项</th>
+                                <th class="p-3 text-left font-medium text-orange-700">基石建筑</th>
+                                <th class="p-3 text-left font-medium text-gray-500">传统设计院</th>
+                                <th class="p-3 text-left font-medium text-gray-500">国际事务所</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr class="border-t"><td class="p-3">商业逻辑深度</td><td class="p-3 text-orange-600 font-medium">✅ 主力店前置</td><td class="p-3 text-gray-400">❌ 标准图库</td><td class="p-3 text-gray-500">🔸 概念为主</td></tr>
-                            <tr class="border-t"><td class="p-3">成本控制</td><td class="p-3 text-orange-600 font-medium">✅ 结构优化15%</td><td class="p-3">✅ 常规</td><td class="p-3 text-gray-400">❌ 超限常见</td></tr>
-                            <tr class="border-t"><td class="p-3">BIM全过程</td><td class="p-3 text-orange-600 font-medium">✅ LOD350</td><td class="p-3">✅ 施工图</td><td class="p-3">✅ 设计阶段</td></tr>
-                            <tr class="border-t bg-gray-50"><td class="p-3 font-medium">设计周期(10万㎡)</td><td class="p-3 font-medium text-orange-700">5.5个月</td><td class="p-3">7个月</td><td class="p-3">8个月+</td></tr>
+                            <tr class="border-t">
+                                <td class="p-3">商业逻辑深度</td>
+                                <td class="p-3 text-orange-600 font-medium">✅ 主力店前置</td>
+                                <td class="p-3 text-gray-400">❌ 标准图库</td>
+                                <td class="p-3 text-gray-500">🔸 概念为主</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-3">成本控制</td>
+                                <td class="p-3 text-orange-600 font-medium">✅ 结构优化15%</td>
+                                <td class="p-3">✅ 常规</td>
+                                <td class="p-3 text-gray-400">❌ 超限常见</td>
+                            </tr>
+                            <tr class="border-t">
+                                <td class="p-3">BIM全过程</td>
+                                <td class="p-3 text-orange-600 font-medium">✅ LOD350</td>
+                                <td class="p-3">✅ 施工图</td>
+                                <td class="p-3">✅ 设计阶段</td>
+                            </tr>
+                            <tr class="border-t bg-gray-50">
+                                <td class="p-3 font-medium">设计周期(10万㎡)</td>
+                                <td class="p-3 font-medium text-orange-700">5.5个月</td>
+                                <td class="p-3">7个月</td>
+                                <td class="p-3">8个月+</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -210,10 +326,30 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-light text-gray-900 text-center">资质与认证</h2>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
-                    <div class="bg-white p-4 text-center border border-gray-100"><div class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">🔰</div><span class="block font-medium mt-2">建筑甲级</span><span class="text-xs text-gray-400">住建部</span></div>
-                    <div class="bg-white p-4 text-center border border-gray-100"><div class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">🌿</div><span class="block font-medium mt-2">LEED 顾问</span><span class="text-xs text-gray-400">USGBC</span></div>
-                    <div class="bg-white p-4 text-center border border-gray-100"><div class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">🏅</div><span class="block font-medium mt-2">ISO 9001</span><span class="text-xs text-gray-400">质量体系</span></div>
-                    <div class="bg-white p-4 text-center border border-gray-100"><div class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">🌍</div><span class="block font-medium mt-2">WELL AP</span><span class="text-xs text-gray-400">健康建筑</span></div>
+                    <div class="bg-white p-4 text-center border border-gray-100">
+                        <div
+                            class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">
+                            🔰</div><span class="block font-medium mt-2">建筑甲级</span><span
+                            class="text-xs text-gray-400">住建部</span>
+                    </div>
+                    <div class="bg-white p-4 text-center border border-gray-100">
+                        <div
+                            class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">
+                            🌿</div><span class="block font-medium mt-2">LEED 顾问</span><span
+                            class="text-xs text-gray-400">USGBC</span>
+                    </div>
+                    <div class="bg-white p-4 text-center border border-gray-100">
+                        <div
+                            class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">
+                            🏅</div><span class="block font-medium mt-2">ISO 9001</span><span
+                            class="text-xs text-gray-400">质量体系</span>
+                    </div>
+                    <div class="bg-white p-4 text-center border border-gray-100">
+                        <div
+                            class="w-12 h-12 mx-auto bg-gray-200 rounded-full flex items-center justify-center text-xl">
+                            🌍</div><span class="block font-medium mt-2">WELL AP</span><span
+                            class="text-xs text-gray-400">健康建筑</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -224,8 +360,10 @@
                 <h2 class="text-3xl font-light text-gray-900">下一个商业地标，从对话开始</h2>
                 <p class="text-gray-500 mt-3">无论项目大小，我们提供前期咨询与概念方案。</p>
                 <div class="flex flex-wrap justify-center gap-4 mt-8">
-                    <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-base font-medium rounded-md shadow">预约免费前期咨询</a>
-                    <a href="#" class="bg-white border border-gray-300 hover:border-orange-400 text-gray-800 px-8 py-4 text-base font-medium rounded-md shadow-sm">查看作品集</a>
+                    <a href="#"
+                        class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-base font-medium rounded-md shadow">预约免费前期咨询</a>
+                    <a href="#"
+                        class="bg-white border border-gray-300 hover:border-orange-400 text-gray-800 px-8 py-4 text-base font-medium rounded-md shadow-sm">查看作品集</a>
                 </div>
             </div>
         </section>
@@ -238,7 +376,9 @@
                 <!-- 品牌Logo 与版权 -->
                 <div>
                     <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 bg-orange-500 rounded-sm flex items-center justify-center text-white font-bold text-xl">基</div>
+                        <div
+                            class="w-8 h-8 bg-orange-500 rounded-sm flex items-center justify-center text-white font-bold text-xl">
+                            基</div>
                         <span class="font-medium text-xl text-white">基石建筑</span>
                     </div>
                     <p class="text-sm text-gray-400 mt-4 leading-relaxed">工业极简 · 混凝土美学 <br> 商业地产全程设计</p>
@@ -265,7 +405,9 @@
                 <div>
                     <h4 class="text-white text-sm font-semibold uppercase tracking-wider">官方微信</h4>
                     <div class="mt-3 flex flex-col items-start">
-                        <div class="w-28 h-28 bg-gray-700 border border-gray-600 flex items-center justify-center text-5xl text-gray-400">📱</div>
+                        <div
+                            class="w-28 h-28 bg-gray-700 border border-gray-600 flex items-center justify-center text-5xl text-gray-400">
+                            📱</div>
                         <p class="text-xs text-gray-400 mt-2">扫一扫关注公众号</p>
                     </div>
                 </div>
@@ -279,4 +421,5 @@
 
     <!-- 完全基于Tailwind，无自定义样式 -->
 </body>
+
 </html>

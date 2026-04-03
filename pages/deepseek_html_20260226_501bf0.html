@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+
     /* 纯粹为了占位图片视觉一致性 —— 没有任何自定义类，仅用于图片背景占位 (unsplash 智能家居相关) */
   </style>
 </head>
+
 <body class="bg-stone-50 text-stone-800 antialiased">
 
   <!-- 导航栏 (米色/原木色系) 含logo、标题、菜单、CTA -->
@@ -20,8 +25,11 @@
       <div class="flex justify-between items-center h-16 md:h-20">
         <!-- 左侧logo + 标题 -->
         <div class="flex items-center gap-2">
-          <div class="w-8 h-8 bg-amber-200 rounded-xl flex items-center justify-center text-amber-800 text-xl shadow-sm">🏡</div>
-          <span class="font-medium text-xl tracking-tight text-stone-800">智居<span class="text-amber-700">·</span>home</span>
+          <div
+            class="w-8 h-8 bg-amber-200 rounded-xl flex items-center justify-center text-amber-800 text-xl shadow-sm">🏡
+          </div>
+          <span class="font-medium text-xl tracking-tight text-stone-800">智居<span
+              class="text-amber-700">·</span>home</span>
         </div>
 
         <!-- 导航菜单 (中置) 隐藏移动端 -->
@@ -35,11 +43,15 @@
 
         <!-- CTA 按钮 + 移动菜单icon -->
         <div class="flex items-center gap-3">
-          <a href="#" class="hidden sm:inline-block bg-stone-100 hover:bg-stone-200 text-stone-800 text-sm font-medium px-5 py-2 rounded-full border border-stone-200 transition shadow-sm">登录</a>
-          <a href="#" class="bg-amber-800 hover:bg-amber-900 text-stone-50 text-sm font-medium px-5 py-2 rounded-full shadow-sm transition">体验智居</a>
+          <a href="#"
+            class="hidden sm:inline-block bg-stone-100 hover:bg-stone-200 text-stone-800 text-sm font-medium px-5 py-2 rounded-full border border-stone-200 transition shadow-sm">登录</a>
+          <a href="#"
+            class="bg-amber-800 hover:bg-amber-900 text-stone-50 text-sm font-medium px-5 py-2 rounded-full shadow-sm transition">体验智居</a>
           <!-- 移动端简约菜单图标 -->
           <button class="md:hidden ml-1 p-2 rounded-lg text-stone-500 hover:bg-stone-100">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
           </button>
         </div>
       </div>
@@ -53,16 +65,22 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row items-center gap-12">
           <div class="flex-1 text-center lg:text-left">
-            <h1 class="text-4xl md:text-5xl font-light tracking-tight text-stone-800 leading-tight">全屋智能，<br><span class="font-medium text-amber-800">让家学会思考</span></h1>
-            <p class="mt-5 text-lg text-stone-600 max-w-2xl lg:mx-0 mx-auto">从灯光到安防，从能耗到舒适度——通过AI自主学习，打造专属于你的原木风智慧空间。</p>
+            <h1 class="text-4xl md:text-5xl font-light tracking-tight text-stone-800 leading-tight">全屋智能，<br><span
+                class="font-medium text-amber-800">让家学会思考</span></h1>
+            <p class="mt-5 text-lg text-stone-600 max-w-2xl lg:mx-0 mx-auto">从灯光到安防，从能耗到舒适度——通过AI自主学习，打造专属于你的原木风智慧空间。
+            </p>
             <p class="mt-2 text-stone-500">兼容米家/HomeKit，无需重新布线。</p>
             <div class="mt-8 flex flex-wrap gap-4 justify-center lg:justify-start">
-              <a href="#" class="bg-amber-800 hover:bg-amber-900 text-white px-7 py-3 rounded-full text-sm font-medium shadow-md transition">开始智造新家</a>
-              <a href="#" class="bg-white border border-stone-300 hover:border-amber-700 text-stone-700 px-7 py-3 rounded-full text-sm font-medium shadow-sm transition">预约设计师</a>
+              <a href="#"
+                class="bg-amber-800 hover:bg-amber-900 text-white px-7 py-3 rounded-full text-sm font-medium shadow-md transition">开始智造新家</a>
+              <a href="#"
+                class="bg-white border border-stone-300 hover:border-amber-700 text-stone-700 px-7 py-3 rounded-full text-sm font-medium shadow-sm transition">预约设计师</a>
             </div>
           </div>
           <div class="flex-1 w-full">
-            <img class="rounded-2xl shadow-xl object-cover w-full h-72 md:h-96" src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1000&q=80" alt="智能家居客厅原木风格">
+            <img class="rounded-2xl shadow-xl object-cover w-full h-72 md:h-96"
+              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=60"
+              alt="智能家居客厅原木风格">
           </div>
         </div>
       </div>
@@ -75,12 +93,24 @@
         <p class="text-stone-500 text-center mt-2">与全球领先的智能家居技术深度合作</p>
         <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
           <!-- 使用伙伴logo占位，展示家居类品牌名称 -->
-          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span class="text-3xl mb-1">🔵</span><span class="font-medium">Philips Hue</span><span class="text-xs text-stone-400">照明</span></div>
-          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span class="text-3xl mb-1">🎵</span><span class="font-medium">Sonos</span><span class="text-xs text-stone-400">音响</span></div>
-          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span class="text-3xl mb-1">🚪</span><span class="font-medium">Yale</span><span class="text-xs text-stone-400">门锁</span></div>
-          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span class="text-3xl mb-1">🌡️</span><span class="font-medium">Ecobee</span><span class="text-xs text-stone-400">温控</span></div>
-          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span class="text-3xl mb-1">🎛️</span><span class="font-medium">Lutron</span><span class="text-xs text-stone-400">窗帘</span></div>
-          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span class="text-3xl mb-1">🔋</span><span class="font-medium">Tesla</span><span class="text-xs text-stone-400">能源</span></div>
+          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span
+              class="text-3xl mb-1">🔵</span><span class="font-medium">Philips Hue</span><span
+              class="text-xs text-stone-400">照明</span></div>
+          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span
+              class="text-3xl mb-1">🎵</span><span class="font-medium">Sonos</span><span
+              class="text-xs text-stone-400">音响</span></div>
+          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span
+              class="text-3xl mb-1">🚪</span><span class="font-medium">Yale</span><span
+              class="text-xs text-stone-400">门锁</span></div>
+          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span
+              class="text-3xl mb-1">🌡️</span><span class="font-medium">Ecobee</span><span
+              class="text-xs text-stone-400">温控</span></div>
+          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span
+              class="text-3xl mb-1">🎛️</span><span class="font-medium">Lutron</span><span
+              class="text-xs text-stone-400">窗帘</span></div>
+          <div class="bg-stone-100 p-4 rounded-2xl flex flex-col items-center"><span
+              class="text-3xl mb-1">🔋</span><span class="font-medium">Tesla</span><span
+              class="text-xs text-stone-400">能源</span></div>
         </div>
       </div>
     </section>
@@ -88,13 +118,17 @@
     <!-- 左图右文区块：智慧照明场景 -->
     <section class="py-16 bg-stone-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
-        <img class="rounded-2xl shadow-lg object-cover w-full h-80" src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=1000&q=80" alt="智能灯光原木氛围">
+        <img class="rounded-2xl shadow-lg object-cover w-full h-80"
+          src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?auto=format&fit=crop&w=900&q=60"
+          alt="智能灯光原木氛围">
         <div>
           <h2 class="text-3xl font-light text-stone-800">无感调光，日夜节律</h2>
           <p class="mt-4 text-stone-600 leading-relaxed">通过环境光传感器和你的作息习惯，灯光在清晨模拟日出，夜晚转为暖黄。所有开关隐藏在原木墙面中，极简无缝。</p>
           <div class="mt-5 flex flex-wrap gap-3">
-            <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm flex items-center gap-1">🌙 入睡引导模式</span>
-            <span class="bg-stone-200 text-stone-700 px-4 py-2 rounded-full text-sm flex items-center gap-1">📋 无限自定义场景</span>
+            <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm flex items-center gap-1">🌙
+              入睡引导模式</span>
+            <span class="bg-stone-200 text-stone-700 px-4 py-2 rounded-full text-sm flex items-center gap-1">📋
+              无限自定义场景</span>
           </div>
         </div>
       </div>
@@ -111,7 +145,9 @@
             <span class="bg-stone-200 text-stone-700 px-4 py-2 rounded-full text-sm">毫米波存在传感器</span>
           </div>
         </div>
-        <img class="rounded-2xl shadow-lg object-cover w-full h-80 order-1 md:order-2" src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80" alt="智能安防原木家居">
+        <img class="rounded-2xl shadow-lg object-cover w-full h-80 order-1 md:order-2"
+          src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=900&q=60"
+          alt="智能安防原木家居">
       </div>
     </section>
 
@@ -121,10 +157,22 @@
         <h2 class="text-3xl font-light text-center text-stone-800">专为原木生活打造的特性</h2>
         <p class="text-center text-stone-500 mt-2">从静谧到安全，面面俱到</p>
         <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">🪵</span><h3 class="text-lg font-medium mt-4">自然融合设计</h3><p class="text-stone-500 text-sm mt-1">设备完全隐藏，只留原木表面，获得红点设计奖</p></div>
-          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">⚡</span><h3 class="text-lg font-medium mt-4">毫秒级响应</h3><p class="text-stone-500 text-sm mt-1">本地中枢，断网也可用，所有开关无延迟</p></div>
-          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">🧩</span><h3 class="text-lg font-medium mt-4">兼容200+品牌</h3><p class="text-stone-500 text-sm mt-1">支持苹果Home、谷歌、米家，自由扩展</p></div>
-          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">📊</span><h3 class="text-lg font-medium mt-4">能耗分析</h3><p class="text-stone-500 text-sm mt-1">每件电器用电可视化，智能节能建议</p></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">🪵</span>
+            <h3 class="text-lg font-medium mt-4">自然融合设计</h3>
+            <p class="text-stone-500 text-sm mt-1">设备完全隐藏，只留原木表面，获得红点设计奖</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">⚡</span>
+            <h3 class="text-lg font-medium mt-4">毫秒级响应</h3>
+            <p class="text-stone-500 text-sm mt-1">本地中枢，断网也可用，所有开关无延迟</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">🧩</span>
+            <h3 class="text-lg font-medium mt-4">兼容200+品牌</h3>
+            <p class="text-stone-500 text-sm mt-1">支持苹果Home、谷歌、米家，自由扩展</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-stone-100"><span class="text-4xl">📊</span>
+            <h3 class="text-lg font-medium mt-4">能耗分析</h3>
+            <p class="text-stone-500 text-sm mt-1">每件电器用电可视化，智能节能建议</p>
+          </div>
         </div>
       </div>
     </section>
@@ -137,21 +185,45 @@
         <div class="mt-12 grid md:grid-cols-3 gap-8">
           <!-- 案例1 -->
           <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200">
-            <div class="flex items-center gap-2"><span class="text-xl">🏡</span><span class="font-medium">青木原舍</span><span class="text-xs bg-stone-200 px-2 py-0.5 rounded-full">民宿</span></div>
+            <div class="flex items-center gap-2"><span class="text-xl">🏡</span><span
+                class="font-medium">青木原舍</span><span class="text-xs bg-stone-200 px-2 py-0.5 rounded-full">民宿</span>
+            </div>
             <p class="mt-3 text-stone-600 italic">“客人总问灯光为什么这么舒服，其实就是智居的全屋节律照明，电费还省了30%。” </p>
-            <div class="mt-4 flex items-center gap-3"><div class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-xs">赵</div><div><p class="text-sm font-medium">赵瑜</p><p class="text-xs text-stone-400">民宿主理人</p></div></div>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-xs">赵</div>
+              <div>
+                <p class="text-sm font-medium">赵瑜</p>
+                <p class="text-xs text-stone-400">民宿主理人</p>
+              </div>
+            </div>
           </div>
           <!-- 案例2 -->
           <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200">
-            <div class="flex items-center gap-2"><span class="text-xl">🏙️</span><span class="font-medium">天禧公寓</span><span class="text-xs bg-stone-200 px-2 py-0.5 rounded-full">极客夫妇</span></div>
+            <div class="flex items-center gap-2"><span class="text-xl">🏙️</span><span
+                class="font-medium">天禧公寓</span><span class="text-xs bg-stone-200 px-2 py-0.5 rounded-full">极客夫妇</span>
+            </div>
             <p class="mt-3 text-stone-600">“把所有设备接入Home Assistant再通过智居面板控制，折腾的终点就是极简原木风。” </p>
-            <div class="mt-4 flex items-center gap-3"><div class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-xs">陈</div><div><p class="text-sm font-medium">陈辰 & 小满</p><p class="text-xs text-stone-400">软件工程师</p></div></div>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-xs">陈</div>
+              <div>
+                <p class="text-sm font-medium">陈辰 & 小满</p>
+                <p class="text-xs text-stone-400">软件工程师</p>
+              </div>
+            </div>
           </div>
           <!-- 案例3 -->
           <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200">
-            <div class="flex items-center gap-2"><span class="text-xl">🌳</span><span class="font-medium">退休养老家</span><span class="text-xs bg-stone-200 px-2 py-0.5 rounded-full">银发族</span></div>
+            <div class="flex items-center gap-2"><span class="text-xl">🌳</span><span
+                class="font-medium">退休养老家</span><span class="text-xs bg-stone-200 px-2 py-0.5 rounded-full">银发族</span>
+            </div>
             <p class="mt-3 text-stone-600">“跌倒雷达救了我老伴一次，现在子女手机也能看到我们活动，安心多了。”</p>
-            <div class="mt-4 flex items-center gap-3"><div class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-xs">周</div><div><p class="text-sm font-medium">周叔叔</p><p class="text-xs text-stone-400">退休教师</p></div></div>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-xs">周</div>
+              <div>
+                <p class="text-sm font-medium">周叔叔</p>
+                <p class="text-xs text-stone-400">退休教师</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -165,15 +237,50 @@
         <div class="mt-10 overflow-x-auto">
           <table class="w-full text-sm bg-white rounded-2xl shadow-sm border border-stone-200">
             <thead class="bg-stone-100 text-stone-700 border-b">
-              <tr><th class="px-5 py-4 text-left font-medium">功能</th><th class="px-5 py-4 text-center">智居 · 原木</th><th class="px-5 py-4 text-center">传统智能家居</th><th class="px-5 py-4 text-center">某国外品牌</th></tr>
+              <tr>
+                <th class="px-5 py-4 text-left font-medium">功能</th>
+                <th class="px-5 py-4 text-center">智居 · 原木</th>
+                <th class="px-5 py-4 text-center">传统智能家居</th>
+                <th class="px-5 py-4 text-center">某国外品牌</th>
+              </tr>
             </thead>
             <tbody class="divide-y">
-              <tr><td class="px-5 py-3">传感器隐藏式设计</td><td class="px-5 py-3 text-center text-green-600">✅</td><td class="px-5 py-3 text-center text-rose-500">❌</td><td class="px-5 py-3 text-center text-rose-500">❌</td></tr>
-              <tr><td class="px-5 py-3">原木材质面板</td><td class="px-5 py-3 text-center text-green-600">✅</td><td class="px-5 py-3 text-center text-rose-500">❌</td><td class="px-5 py-3 text-center text-amber-600">部分</td></tr>
-              <tr><td class="px-5 py-3">本地离线语音</td><td class="px-5 py-3 text-center text-green-600">✅</td><td class="px-5 py-3 text-center text-rose-500">❌</td><td class="px-5 py-3 text-center text-green-600">✅</td></tr>
-              <tr><td class="px-5 py-3">毫米波雷达看护</td><td class="px-5 py-3 text-center text-green-600">✅</td><td class="px-5 py-3 text-center text-rose-500">❌</td><td class="px-5 py-3 text-center text-rose-500">❌</td></tr>
-              <tr><td class="px-5 py-3">开放API / 全接入</td><td class="px-5 py-3 text-center text-green-600">✅</td><td class="px-5 py-3 text-center text-rose-500">❌</td><td class="px-5 py-3 text-center text-green-600">✅</td></tr>
-              <tr><td class="px-5 py-3">基础套件价格(三室)</td><td class="px-5 py-3 text-center font-medium">¥6,990</td><td class="px-5 py-3 text-center">¥12,800</td><td class="px-5 py-3 text-center">¥15,500</td></tr>
+              <tr>
+                <td class="px-5 py-3">传感器隐藏式设计</td>
+                <td class="px-5 py-3 text-center text-green-600">✅</td>
+                <td class="px-5 py-3 text-center text-rose-500">❌</td>
+                <td class="px-5 py-3 text-center text-rose-500">❌</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3">原木材质面板</td>
+                <td class="px-5 py-3 text-center text-green-600">✅</td>
+                <td class="px-5 py-3 text-center text-rose-500">❌</td>
+                <td class="px-5 py-3 text-center text-amber-600">部分</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3">本地离线语音</td>
+                <td class="px-5 py-3 text-center text-green-600">✅</td>
+                <td class="px-5 py-3 text-center text-rose-500">❌</td>
+                <td class="px-5 py-3 text-center text-green-600">✅</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3">毫米波雷达看护</td>
+                <td class="px-5 py-3 text-center text-green-600">✅</td>
+                <td class="px-5 py-3 text-center text-rose-500">❌</td>
+                <td class="px-5 py-3 text-center text-rose-500">❌</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3">开放API / 全接入</td>
+                <td class="px-5 py-3 text-center text-green-600">✅</td>
+                <td class="px-5 py-3 text-center text-rose-500">❌</td>
+                <td class="px-5 py-3 text-center text-green-600">✅</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3">基础套件价格(三室)</td>
+                <td class="px-5 py-3 text-center font-medium">¥6,990</td>
+                <td class="px-5 py-3 text-center">¥12,800</td>
+                <td class="px-5 py-3 text-center">¥15,500</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -184,10 +291,22 @@
     <!-- 统计区块 (数字展示) 简约米色卡片 -->
     <section class="py-12 bg-amber-50/70">
       <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div><div class="text-4xl font-light text-amber-800">2,000+</div><div class="text-stone-500 text-sm">全宅智能家庭</div></div>
-        <div><div class="text-4xl font-light text-amber-800">98%</div><div class="text-stone-500 text-sm">用户推荐率</div></div>
-        <div><div class="text-4xl font-light text-amber-800">500+</div><div class="text-stone-500 text-sm">设计师合作</div></div>
-        <div><div class="text-4xl font-light text-amber-800">24/7</div><div class="text-stone-500 text-sm">专属管家</div></div>
+        <div>
+          <div class="text-4xl font-light text-amber-800">2,000+</div>
+          <div class="text-stone-500 text-sm">全宅智能家庭</div>
+        </div>
+        <div>
+          <div class="text-4xl font-light text-amber-800">98%</div>
+          <div class="text-stone-500 text-sm">用户推荐率</div>
+        </div>
+        <div>
+          <div class="text-4xl font-light text-amber-800">500+</div>
+          <div class="text-stone-500 text-sm">设计师合作</div>
+        </div>
+        <div>
+          <div class="text-4xl font-light text-amber-800">24/7</div>
+          <div class="text-stone-500 text-sm">专属管家</div>
+        </div>
       </div>
     </section>
 
@@ -196,10 +315,22 @@
       <div class="max-w-4xl mx-auto px-4">
         <h2 class="text-3xl font-light text-stone-800 text-center">常见问题</h2>
         <div class="mt-10 space-y-5">
-          <div class="border-b border-stone-200 pb-4"><p class="font-medium text-stone-700">❓ 已经装修完的房子能装吗？</p><p class="text-stone-500 mt-1">可以。我们提供无线智能改造方案，灯光用智能面板替换，传感器采用贴片式，无需开槽。</p></div>
-          <div class="border-b border-stone-200 pb-4"><p class="font-medium text-stone-700">❓ 支持哪些语音助手？</p><p class="text-stone-500 mt-1">小爱、天猫、Siri、Google Assistant 均可；也可以使用我们原木旋钮控制。</p></div>
-          <div class="border-b border-stone-200 pb-4"><p class="font-medium text-stone-700">❓ 数据隐私安全如何？</p><p class="text-stone-500 mt-1">所有视频、雷达数据本地加密，可选不上传云端，彻底杜绝泄露。</p></div>
-          <div class="border-b border-stone-200 pb-4"><p class="font-medium text-stone-700">❓ 可以试用体验吗？</p><p class="text-stone-500 mt-1">全国12城有体验馆，预约即可上门演示，或邮寄样机套件。</p></div>
+          <div class="border-b border-stone-200 pb-4">
+            <p class="font-medium text-stone-700">❓ 已经装修完的房子能装吗？</p>
+            <p class="text-stone-500 mt-1">可以。我们提供无线智能改造方案，灯光用智能面板替换，传感器采用贴片式，无需开槽。</p>
+          </div>
+          <div class="border-b border-stone-200 pb-4">
+            <p class="font-medium text-stone-700">❓ 支持哪些语音助手？</p>
+            <p class="text-stone-500 mt-1">小爱、天猫、Siri、Google Assistant 均可；也可以使用我们原木旋钮控制。</p>
+          </div>
+          <div class="border-b border-stone-200 pb-4">
+            <p class="font-medium text-stone-700">❓ 数据隐私安全如何？</p>
+            <p class="text-stone-500 mt-1">所有视频、雷达数据本地加密，可选不上传云端，彻底杜绝泄露。</p>
+          </div>
+          <div class="border-b border-stone-200 pb-4">
+            <p class="font-medium text-stone-700">❓ 可以试用体验吗？</p>
+            <p class="text-stone-500 mt-1">全国12城有体验馆，预约即可上门演示，或邮寄样机套件。</p>
+          </div>
         </div>
       </div>
     </section>
@@ -207,10 +338,15 @@
     <!-- 应用下载区块 (模仿下载样式，强调微信/二维码但已经包含在footer, 这里放一个简约下载条) -->
     <section class="py-12 bg-stone-100">
       <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-        <div><h3 class="text-xl font-light text-stone-800">下载智居APP，把家装进口袋</h3><p class="text-stone-500">iOS、Android、鸿蒙、手表多端同步</p></div>
+        <div>
+          <h3 class="text-xl font-light text-stone-800">下载智居APP，把家装进口袋</h3>
+          <p class="text-stone-500">iOS、Android、鸿蒙、手表多端同步</p>
+        </div>
         <div class="flex gap-3">
-          <a href="#" class="bg-stone-800 text-stone-100 px-5 py-3 rounded-full text-sm flex items-center gap-1">📱 App Store</a>
-          <a href="#" class="bg-stone-700 text-stone-100 px-5 py-3 rounded-full text-sm flex items-center gap-1">📲 安卓下载</a>
+          <a href="#" class="bg-stone-800 text-stone-100 px-5 py-3 rounded-full text-sm flex items-center gap-1">📱 App
+            Store</a>
+          <a href="#" class="bg-stone-700 text-stone-100 px-5 py-3 rounded-full text-sm flex items-center gap-1">📲
+            安卓下载</a>
         </div>
       </div>
     </section>
@@ -247,18 +383,21 @@
         <!-- 微信公众号二维码区域 -->
         <div>
           <h4 class="text-stone-100 text-sm font-medium">公众号 · 视频号</h4>
-          <div class="mt-3 w-24 h-24 bg-stone-600/30 rounded-lg flex items-center justify-center border border-stone-600">
+          <div
+            class="mt-3 w-24 h-24 bg-stone-600/30 rounded-lg flex items-center justify-center border border-stone-600">
             <span class="text-5xl opacity-70">◼️</span>
             <!-- 模拟二维码区块，实际可放二维码图片 -->
           </div>
           <p class="text-xs text-stone-500 mt-2">扫码获取案例集</p>
         </div>
       </div>
-      <div class="border-t border-stone-700 mt-10 pt-6 text-xs text-stone-500 text-center flex flex-wrap justify-between">
+      <div
+        class="border-t border-stone-700 mt-10 pt-6 text-xs text-stone-500 text-center flex flex-wrap justify-between">
         <span>🌐 隐私条款 · 服务协议</span>
         <span>🎋 低碳 · 原木永续</span>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

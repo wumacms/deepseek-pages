@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,6 +35,7 @@
         }
     </script>
 </head>
+
 <body class="bg-white text-slate-700 antialiased">
 
     <!-- 导航栏 (logo + 标题 + 菜单 + CTA) 银蓝风格 -->
@@ -43,8 +45,11 @@
                 <!-- logo + 标题 -->
                 <div class="flex items-center space-x-3">
                     <!-- logo 采用银灰金属感, 用圆标示意 -->
-                    <div class="w-8 h-8 bg-gradient-to-br from-slate-400 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-sm">🚄</div>
-                    <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-slate-700 to-blue-600 bg-clip-text text-transparent">高铁速配</span>
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-slate-400 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-sm">
+                        🚄</div>
+                    <span
+                        class="font-bold text-xl tracking-tight bg-gradient-to-r from-slate-700 to-blue-600 bg-clip-text text-transparent">高铁速配</span>
                 </div>
                 <!-- 桌面菜单 (隐藏移动端) -->
                 <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
@@ -55,11 +60,14 @@
                 </div>
                 <!-- CTA 按钮 + 移动菜单图标 (纯tailwind) -->
                 <div class="flex items-center space-x-3">
-                    <a href="#" class="hidden sm:inline-block bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-blue-700 transition shadow-blue-200">获取报价</a>
+                    <a href="#"
+                        class="hidden sm:inline-block bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-blue-700 transition shadow-blue-200">获取报价</a>
                     <!-- 移动端菜单图标 (仅用于演示) -->
                     <button class="md:hidden p-2 rounded-lg text-slate-500 hover:bg-slate-100">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         </svg>
                     </button>
                 </div>
@@ -74,21 +82,24 @@
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
                         <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-800 leading-tight">
-                            <span class="bg-gradient-to-r from-blue-600 to-slate-500 bg-clip-text text-transparent">高铁级配件</span>，让运行更快一步
+                            <span
+                                class="bg-gradient-to-r from-blue-600 to-slate-500 bg-clip-text text-transparent">高铁级配件</span>，让运行更快一步
                         </h1>
-                        <p class="mt-4 text-lg text-slate-600 max-w-xl">安全、精密、耐候——专为轨道交通打造的转向架、车钩、制动盘。集成智能监测数据，保障每一公里。</p>
+                        <p class="mt-4 text-lg text-slate-600 max-w-xl">安全、精密、耐候——专为轨道交通打造的转向架、车钩、制动盘。集成智能监测数据，保障每一公里。
+                        </p>
                         <p class="mt-2 text-slate-500">通过ISO22163认证，服务全球20+高铁线路。</p>
                         <div class="mt-8 flex flex-wrap gap-4">
-                            <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-700 transition shadow-blue-200">选型目录</a>
-                            <a href="#" class="bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-full font-semibold hover:border-blue-400 hover:text-blue-600 transition shadow-sm">联系工程师</a>
+                            <a href="#"
+                                class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-blue-700 transition shadow-blue-200">选型目录</a>
+                            <a href="#"
+                                class="bg-white border border-slate-300 text-slate-700 px-6 py-3 rounded-full font-semibold hover:border-blue-400 hover:text-blue-600 transition shadow-sm">联系工程师</a>
                         </div>
                     </div>
                     <div class="rounded-2xl overflow-hidden shadow-xl border border-slate-200">
                         <!-- 高铁配件相关图片 (unsplash 动车组) 不可用则用纯色占位, 但保留图片示意 -->
-                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
-                             alt="高铁转向架与车轴" 
-                             class="w-full h-auto object-cover aspect-[4/3]"
-                             onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22600%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%233b82f6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-size%3D%2224%22%3E高铁制动盘%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+                            alt="高铁转向架与车轴" class="w-full h-auto object-cover aspect-[4/3]"
+                            onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22600%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%233b82f6%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-size%3D%2224%22%3E高铁制动盘%3C%2Ftext%3E%3C%2Fsvg%3E'">
                     </div>
                 </div>
             </div>
@@ -103,33 +114,51 @@
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                     <!-- 使用占位logo 实际中替换, 保持命名 -->
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm hover:shadow">
-                        <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">🚆</div>
+                    <div
+                        class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm hover:shadow">
+                        <div
+                            class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">
+                            🚆</div>
                         <span class="font-semibold text-slate-800">中车四方</span>
                         <span class="text-xs text-slate-500">战略伙伴</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
-                        <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">🏭</div>
+                    <div
+                        class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
+                        <div
+                            class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">
+                            🏭</div>
                         <span class="font-semibold text-slate-800">克诺尔</span>
                         <span class="text-xs text-slate-500">制动技术</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
-                        <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">🔩</div>
+                    <div
+                        class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
+                        <div
+                            class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">
+                            🔩</div>
                         <span class="font-semibold text-slate-800">西屋交通</span>
                         <span class="text-xs text-slate-500">电气伙伴</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
-                        <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">⚙️</div>
+                    <div
+                        class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
+                        <div
+                            class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">
+                            ⚙️</div>
                         <span class="font-semibold text-slate-800">福伊特</span>
                         <span class="text-xs text-slate-500">驱动技术</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
-                        <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">🚅</div>
+                    <div
+                        class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
+                        <div
+                            class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">
+                            🚅</div>
                         <span class="font-semibold text-slate-800">阿尔斯通</span>
                         <span class="text-xs text-slate-500">全球伙伴</span>
                     </div>
-                    <div class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
-                        <div class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">🛞</div>
+                    <div
+                        class="bg-white p-4 rounded-xl border border-slate-200 flex flex-col items-center text-center shadow-sm">
+                        <div
+                            class="w-16 h-16 bg-slate-200 rounded-full flex items-center justify-center text-3xl mb-2 text-slate-600">
+                            🛞</div>
                         <span class="font-semibold text-slate-800">太原重工</span>
                         <span class="text-xs text-slate-500">车轮联合</span>
                     </div>
@@ -142,10 +171,9 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 order-1 md:order-1">
-                        <img src="https://placehold.co/2070x600/e2e8f0/64748b?text=Image" 
-                             alt="高铁转向架精密加工"
-                             class="w-full h-auto object-cover aspect-[4/3]"
-                             onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22600%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%234b5563%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-size%3D%2224%22%3E转向架装配%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                        <img src="https://placehold.co/2070x600/e2e8f0/64748b?text=Image" alt="高铁转向架精密加工"
+                            class="w-full h-auto object-cover aspect-[4/3]"
+                            onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22600%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%234b5563%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-size%3D%2224%22%3E转向架装配%3C%2Ftext%3E%3C%2Fsvg%3E'">
                     </div>
                     <div class="order-2 md:order-2">
                         <h2 class="text-3xl font-bold text-slate-800">精密铸造，跨越里程</h2>
@@ -165,7 +193,8 @@
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="order-2 md:order-1">
                         <h2 class="text-3xl font-bold text-slate-800">智能制动，精准可靠</h2>
-                        <p class="mt-4 text-lg text-slate-600">与克诺尔联合开发的新型制动盘，采用碳陶复合材料，300km/h紧急制动距离缩短12%。内置磨损传感器，预测维护。</p>
+                        <p class="mt-4 text-lg text-slate-600">与克诺尔联合开发的新型制动盘，采用碳陶复合材料，300km/h紧急制动距离缩短12%。内置磨损传感器，预测维护。
+                        </p>
                         <div class="mt-4 flex flex-wrap gap-3">
                             <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm">UIC 标准</span>
                             <span class="bg-slate-100 text-slate-600 px-4 py-1.5 rounded-full text-sm">智能诊断</span>
@@ -173,10 +202,9 @@
                         </div>
                     </div>
                     <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200 order-1 md:order-2">
-                        <img src="https://placehold.co/2070x600/e2e8f0/64748b?text=Image" 
-                             alt="高铁制动盘测试"
-                             class="w-full h-auto object-cover aspect-[4/3]"
-                             onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22600%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%232d5c8c%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-size%3D%2224%22%3E制动盘测试%3C%2Ftext%3E%3C%2Fsvg%3E'">
+                        <img src="https://placehold.co/2070x600/e2e8f0/64748b?text=Image" alt="高铁制动盘测试"
+                            class="w-full h-auto object-cover aspect-[4/3]"
+                            onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22600%22%20viewBox%3D%220%200%20800%20600%22%3E%3Crect%20width%3D%22800%22%20height%3D%22600%22%20fill%3D%22%232d5c8c%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ffffff%22%20font-size%3D%2224%22%3E制动盘测试%3C%2Ftext%3E%3C%2Fsvg%3E'">
                     </div>
                 </div>
             </div>
@@ -248,38 +276,56 @@
                 <div class="grid md:grid-cols-3 gap-6">
                     <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                         <div class="flex items-center space-x-2 mb-3">
-                            <div class="w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center text-sm">🚄</div>
+                            <div class="w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center text-sm">🚄
+                            </div>
                             <span class="font-semibold text-slate-800">京沪高铁</span>
                             <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">互联网</span>
                         </div>
                         <p class="text-slate-600 italic">“制动盘更换周期延长30%，大幅降低维护成本。” </p>
                         <div class="mt-4 flex items-center space-x-3">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" class="w-10 h-10 rounded-full object-cover" onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2220%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E'">
-                            <div><div class="font-medium">张工</div><div class="text-xs text-slate-500">车辆段总工</div></div>
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150"
+                                class="w-10 h-10 rounded-full object-cover"
+                                onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2220%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E'">
+                            <div>
+                                <div class="font-medium">张工</div>
+                                <div class="text-xs text-slate-500">车辆段总工</div>
+                            </div>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                         <div class="flex items-center space-x-2 mb-3">
-                            <div class="w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center text-sm">🇩🇪</div>
+                            <div class="w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center text-sm">🇩🇪
+                            </div>
                             <span class="font-semibold text-slate-800">德铁ICE</span>
                             <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">国际</span>
                         </div>
                         <p class="text-slate-600 italic">“转向架探伤数据直接集成到我们的维护系统，效率翻倍。”</p>
                         <div class="mt-4 flex items-center space-x-3">
-                            <img src="https://placehold.co/150x600/e2e8f0/64748b?text=Image" class="w-10 h-10 rounded-full object-cover" onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2220%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E'">
-                            <div><div class="font-medium">Klaus</div><div class="text-xs text-slate-500">采购总监</div></div>
+                            <img src="https://placehold.co/150x600/e2e8f0/64748b?text=Image"
+                                class="w-10 h-10 rounded-full object-cover"
+                                onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2220%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E'">
+                            <div>
+                                <div class="font-medium">Klaus</div>
+                                <div class="text-xs text-slate-500">采购总监</div>
+                            </div>
                         </div>
                     </div>
                     <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
                         <div class="flex items-center space-x-2 mb-3">
-                            <div class="w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center text-sm">🔰</div>
+                            <div class="w-8 h-8 bg-slate-300 rounded-full flex items-center justify-center text-sm">🔰
+                            </div>
                             <span class="font-semibold text-slate-800">中车长客</span>
                             <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">制造</span>
                         </div>
                         <p class="text-slate-600 italic">“车钩缓冲器性能超过标准，保障极寒线路运行。”</p>
                         <div class="mt-4 flex items-center space-x-3">
-                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150" class="w-10 h-10 rounded-full object-cover" onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2220%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E'">
-                            <div><div class="font-medium">李总</div><div class="text-xs text-slate-500">技术部长</div></div>
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=150"
+                                class="w-10 h-10 rounded-full object-cover"
+                                onerror="this.src='data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2220%22%20r%3D%2220%22%20fill%3D%22%23999%22%2F%3E%3C%2Fsvg%3E'">
+                            <div>
+                                <div class="font-medium">李总</div>
+                                <div class="text-xs text-slate-500">技术部长</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -292,8 +338,10 @@
                 <h2 class="text-4xl font-bold text-slate-800">即刻提升运维效率</h2>
                 <p class="mt-3 text-lg text-slate-600">获取高铁配件选型手册或预约技术交流</p>
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
-                    <a href="#" class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-700 transition">下载产品目录</a>
-                    <a href="#" class="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-full font-semibold hover:border-blue-400 hover:text-blue-600 transition shadow-sm">预约专家</a>
+                    <a href="#"
+                        class="bg-blue-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-blue-700 transition">下载产品目录</a>
+                    <a href="#"
+                        class="bg-white border border-slate-300 text-slate-700 px-8 py-4 rounded-full font-semibold hover:border-blue-400 hover:text-blue-600 transition shadow-sm">预约专家</a>
                 </div>
             </div>
         </section>
@@ -306,7 +354,9 @@
                 <!-- logo + 版权 -->
                 <div>
                     <div class="flex items-center space-x-2 text-white mb-4">
-                        <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">🚄</div>
+                        <div
+                            class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                            🚄</div>
                         <span class="font-bold text-xl">高铁速配</span>
                     </div>
                     <p class="text-sm text-slate-400">© 2025 高铁轨道交通配件有限公司。保留一切权利。</p>
@@ -334,7 +384,8 @@
                 <div>
                     <h4 class="font-semibold text-white text-sm uppercase tracking-wider mb-4">官方微信</h4>
                     <div class="bg-slate-800 p-2 rounded-lg inline-block">
-                        <div class="w-24 h-24 bg-slate-600 flex items-center justify-center text-slate-300 border border-slate-500">
+                        <div
+                            class="w-24 h-24 bg-slate-600 flex items-center justify-center text-slate-300 border border-slate-500">
                             <span class="text-xs">QR Code</span>
                         </div>
                     </div>
@@ -347,4 +398,5 @@
         </div>
     </footer>
 </body>
+
 </html>

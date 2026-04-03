@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <!-- 简单追加一个森林绿/天蓝的配色方案，完全使用Tailwind类，无自定义样式 -->
     <!-- 配色调: 森林绿 (主色: green-700/600, 辅助: green-100/50) 天蓝 (sky-500/400) -->
 </head>
+
 <body class="bg-white text-gray-800 font-sans antialiased">
 
     <!-- 导航栏 (含logo、标题、导航菜单、CTA按钮) 使用森林绿与天蓝色点缀 -->
@@ -18,10 +20,12 @@
                 <!-- logo + 标题 -->
                 <div class="flex items-center space-x-2">
                     <!-- logo (简写) -->
-                    <div class="w-8 h-8 bg-gradient-to-br from-green-600 to-sky-400 rounded-lg flex items-center justify-center text-white font-bold text-lg">🌱</div>
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-green-600 to-sky-400 rounded-lg flex items-center justify-center text-white font-bold text-lg">
+                        🌱</div>
                     <span class="text-xl font-semibold text-green-800">绿源未来</span>
                 </div>
-                
+
                 <!-- 导航菜单 (桌面) 文字森林绿/天蓝 -->
                 <div class="hidden md:flex space-x-8 text-sm font-medium">
                     <a href="#" class="text-green-700 hover:text-sky-600 transition">首页</a>
@@ -29,13 +33,18 @@
                     <a href="#" class="text-green-700 hover:text-sky-600 transition">项目案例</a>
                     <a href="#" class="text-green-700 hover:text-sky-600 transition">关于我们</a>
                 </div>
-                
+
                 <!-- CTA 按钮 + 移动端菜单图标(简易) -->
                 <div class="flex items-center space-x-3">
-                    <a href="#" class="hidden sm:inline-block bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-sm hover:bg-green-700 transition">加入行动</a>
+                    <a href="#"
+                        class="hidden sm:inline-block bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-sm hover:bg-green-700 transition">加入行动</a>
                     <!-- 移动端菜单图标 (极简) -->
                     <button class="md:hidden text-green-600">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linecap="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -46,16 +55,21 @@
     <section class="bg-gradient-to-br from-green-50 to-sky-50 py-16 md:py-24">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
             <div class="lg:w-1/2 lg:pr-12">
-                <h1 class="text-4xl md:text-5xl font-bold text-green-800 leading-tight">让每一缕阳光与风，<br class="hidden sm:block"><span class="text-sky-600">赋能零碳未来</span></h1>
+                <h1 class="text-4xl md:text-5xl font-bold text-green-800 leading-tight">让每一缕阳光与风，<br
+                        class="hidden sm:block"><span class="text-sky-600">赋能零碳未来</span></h1>
                 <p class="text-xl text-gray-600 mt-6">可再生能源解决方案领导者 — 从太阳能农场到智慧电网，为地球提供清洁、永续的能源。</p>
                 <p class="text-gray-500 mt-3 text-lg">我们与全球200+社区合作，加速能源转型，守护生态多样性。</p>
                 <div class="mt-8 flex flex-wrap gap-4">
-                    <a href="#" class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-green-700 transition">探索项目</a>
-                    <a href="#" class="border-2 border-green-600 text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition">联系专家</a>
+                    <a href="#"
+                        class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:bg-green-700 transition">探索项目</a>
+                    <a href="#"
+                        class="border-2 border-green-600 text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-green-50 transition">联系专家</a>
                 </div>
             </div>
             <div class="lg:w-1/2 mt-12 lg:mt-0">
-                <img class="rounded-2xl shadow-xl object-cover w-full h-80 md:h-96" src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="可再生能源太阳能面板与风车">
+                <img class="rounded-2xl shadow-xl object-cover w-full h-80 md:h-96"
+                    src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+                    alt="可再生能源太阳能面板与风车">
             </div>
         </div>
     </section>
@@ -99,13 +113,17 @@
     <section class="py-16 bg-green-50/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <img class="rounded-2xl shadow-lg object-cover w-full h-80" src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="太阳能储能电池">
+                <img class="rounded-2xl shadow-lg object-cover w-full h-80"
+                    src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+                    alt="太阳能储能电池">
             </div>
             <div>
                 <h2 class="text-3xl font-bold text-green-800">稳定储能，跨越昼夜</h2>
-                <p class="text-gray-600 mt-4 text-lg">通过先进的锂电与氢能存储系统，将日间多余太阳能储存起来，在夜晚或无风时释放，实现7x24小时清洁电力供应。社区级储能站已覆盖300+偏远地区。</p>
+                <p class="text-gray-600 mt-4 text-lg">
+                    通过先进的锂电与氢能存储系统，将日间多余太阳能储存起来，在夜晚或无风时释放，实现7x24小时清洁电力供应。社区级储能站已覆盖300+偏远地区。</p>
                 <div class="mt-6 flex flex-wrap gap-3">
-                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">🔋 容量5GWh+</span>
+                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">🔋
+                        容量5GWh+</span>
                     <span class="bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-medium">⚡ 效率94%</span>
                 </div>
             </div>
@@ -119,12 +137,15 @@
                 <h2 class="text-3xl font-bold text-green-800">AI 智慧电网调度</h2>
                 <p class="text-gray-600 mt-4 text-lg">利用机器学习预测风光发电量，动态调配工业与居民用电，减少弃风弃光。集成物联网传感器实时监控每一度电的来源与碳足迹。</p>
                 <div class="mt-6 flex flex-wrap gap-2">
-                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">📊 预测准确率96%</span>
+                    <span class="bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">📊
+                        预测准确率96%</span>
                     <span class="bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm font-medium">🌐 接入10万+节点</span>
                 </div>
             </div>
             <div>
-                <img class="rounded-2xl shadow-lg object-cover w-full h-80" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="智慧电网控制中心">
+                <img class="rounded-2xl shadow-lg object-cover w-full h-80"
+                    src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+                    alt="智慧电网控制中心">
             </div>
         </div>
     </section>
@@ -198,7 +219,9 @@
                     <p class="text-sm text-sky-600 mt-1">制造业 · 光伏自用</p>
                     <p class="text-gray-600 mt-3 italic">“厂房屋顶光伏覆盖80%用电，每年省下300万电费，绿电比例大幅提升。”</p>
                     <div class="flex items-center mt-4">
-                        <div class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold">李</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold">
+                            李</div>
                         <div class="ml-3">
                             <div class="font-medium">李国栋</div>
                             <div class="text-sm text-gray-400">设施总监</div>
@@ -214,7 +237,9 @@
                     <p class="text-sm text-sky-600 mt-1">教育 · 太阳能+储能</p>
                     <p class="text-gray-600 mt-3 italic">“离网储能系统让偏远校区也能24小时供电，孩子们晚上可以用电脑学习了。”</p>
                     <div class="flex items-center mt-4">
-                        <div class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold">王</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold">
+                            王</div>
                         <div class="ml-3">
                             <div class="font-medium">王梅</div>
                             <div class="text-sm text-gray-400">校长</div>
@@ -230,7 +255,9 @@
                     <p class="text-sm text-sky-600 mt-1">农业 · 农光互补</p>
                     <p class="text-gray-600 mt-3 italic">“板上发电，板下种菌菇，土地利用率提升60%，农产品碳足迹为负。”</p>
                     <div class="flex items-center mt-4">
-                        <div class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold">赵</div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-green-200 flex items-center justify-center text-green-700 font-bold">
+                            赵</div>
                         <div class="ml-3">
                             <div class="font-medium">赵春雨</div>
                             <div class="text-sm text-gray-400">农场主</div>
@@ -247,8 +274,10 @@
             <h2 class="text-4xl font-bold">让可再生能源成为主流</h2>
             <p class="text-xl mt-4 text-green-50">加入数百个致力于零碳未来的城市与企业，共同行动。</p>
             <div class="mt-8 flex flex-wrap justify-center gap-4">
-                <a href="#" class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-green-50 transition">免费碳排查工具</a>
-                <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/20 transition">预约专家咨询</a>
+                <a href="#"
+                    class="bg-white text-green-700 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-green-50 transition">免费碳排查工具</a>
+                <a href="#"
+                    class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/20 transition">预约专家咨询</a>
             </div>
         </div>
     </section>
@@ -272,7 +301,8 @@
             <!-- 联系方式 -->
             <div>
                 <h3 class="text-white font-semibold text-lg mb-3">联系我们</h3>
-                <p class="text-green-200">电话：010-5678 1234<br>邮箱：hello@greenfuture.org<br>合作：partners@greenfuture.org</p>
+                <p class="text-green-200">电话：010-5678 1234<br>邮箱：hello@greenfuture.org<br>合作：partners@greenfuture.org
+                </p>
             </div>
             <!-- 微信公众号二维码 (模拟) -->
             <div>
@@ -280,9 +310,15 @@
                 <div class="w-28 h-28 bg-green-700 rounded-lg flex items-center justify-center border border-green-500">
                     <!-- 模拟二维码图案，纯tailwind无图片占位符 -->
                     <div class="grid grid-cols-3 gap-0.5">
-                        <div class="w-2 h-2 bg-white"></div><div class="w-2 h-2 bg-white"></div><div class="w-2 h-2 bg-white"></div>
-                        <div class="w-2 h-2 bg-white"></div><div class="w-2 h-2 bg-green-300"></div><div class="w-2 h-2 bg-white"></div>
-                        <div class="w-2 h-2 bg-white"></div><div class="w-2 h-2 bg-white"></div><div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-green-300"></div>
+                        <div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-white"></div>
+                        <div class="w-2 h-2 bg-white"></div>
                     </div>
                 </div>
                 <p class="text-sm text-green-300 mt-2">扫一扫，获取每日绿电指数</p>
@@ -295,4 +331,5 @@
 
     <!-- 注意：所有样式均为Tailwind内置类，无自定义css。内容基于可再生能源数据，图片均来自Unsplash相关主题。 -->
 </body>
+
 </html>

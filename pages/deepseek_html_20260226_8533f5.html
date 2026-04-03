@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,12 @@
   <style>
     /* 保证没有任何自定义样式类，仅用来重置body字体 (属于tailwind之外但无害，完全符合“不要有自定义样式”，
        或者可省略，这里加一条非常克制的全局字体指向，但不算自定义css类。若严格要求零style块可删除，保留则极简且无类) */
-    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
   </style>
 </head>
+
 <body class="bg-white text-gray-800 antialiased">
 
   <!-- 导航栏 (logo + 标题 + CTA按钮，不含菜单) 符合商务感 -->
@@ -23,11 +27,13 @@
       <div class="flex items-center gap-3">
         <!-- 简单图标 emoji 当作logo，符合商务简约 -->
         <span class="text-3xl">👔</span>
-        <span class="font-semibold text-xl tracking-tight text-gray-800">SHANGYI<span class="text-indigo-600 ml-1">|尚衣</span></span>
+        <span class="font-semibold text-xl tracking-tight text-gray-800">SHANGYI<span
+            class="text-indigo-600 ml-1">|尚衣</span></span>
       </div>
       <!-- 右侧 CTA 按钮 (无菜单) -->
       <div>
-        <a href="/contact" class="inline-flex items-center justify-center bg-indigo-700 hover:bg-indigo-800 text-white px-5 py-2.5 text-sm font-medium rounded-lg shadow-sm transition-colors">企业咨询</a>
+        <a href="/contact"
+          class="inline-flex items-center justify-center bg-indigo-700 hover:bg-indigo-800 text-white px-5 py-2.5 text-sm font-medium rounded-lg shadow-sm transition-colors">企业咨询</a>
       </div>
     </div>
   </header>
@@ -41,12 +47,15 @@
           <p class="text-lg md:text-xl text-gray-600 mt-6 max-w-2xl">为现代企业打造统一、专业的着装形象。从定制衬衫到全套商务西服，让每位员工自信表达。</p>
           <p class="text-gray-500 mt-3 text-base">通过智能量体与面料库，快速实现企业工服焕新。</p>
           <div class="flex flex-wrap gap-4 mt-8">
-            <a href="/signup" class="bg-indigo-700 hover:bg-indigo-800 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">定制方案</a>
-            <a href="/contact" class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-medium px-6 py-3 rounded-lg shadow-sm transition">预约顾问</a>
+            <a href="/signup"
+              class="bg-indigo-700 hover:bg-indigo-800 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">定制方案</a>
+            <a href="/contact"
+              class="bg-white border border-gray-300 hover:bg-gray-50 text-gray-800 font-medium px-6 py-3 rounded-lg shadow-sm transition">预约顾问</a>
           </div>
         </div>
         <div class="rounded-xl overflow-hidden shadow-xl border border-gray-200">
-          <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=2070&auto=format&fit=crop" alt="商务时装展示" class="w-full h-auto object-cover aspect-[4/3]">
+          <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=60&w=900&auto=format&fit=crop"
+            alt="商务时装展示" class="w-full h-auto object-cover aspect-[4/3]">
         </div>
       </div>
     </section>
@@ -91,14 +100,17 @@
     <section class="py-16 bg-gray-50">
       <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         <div class="order-2 md:order-1">
-          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" alt="团队试装沟通" class="rounded-xl shadow-lg border border-gray-200 w-full h-auto object-cover aspect-[4/3]">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=60&w=900&auto=format&fit=crop"
+            alt="团队试装沟通" class="rounded-xl shadow-lg border border-gray-200 w-full h-auto object-cover aspect-[4/3]">
         </div>
         <div class="order-1 md:order-2">
           <h2 class="text-3xl font-bold text-gray-900">跨越部门的形象统一</h2>
           <p class="text-gray-600 mt-4 text-lg">打破部门着装差异，通过线上选款、集体量体与反馈，让每个人找到合体舒适的商务装。建立企业专属衣橱，一键增补。</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <span class="inline-flex items-center bg-indigo-50 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full">抗皱免烫</span>
-            <span class="inline-flex items-center bg-indigo-50 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full">终身免费熨烫</span>
+            <span
+              class="inline-flex items-center bg-indigo-50 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full">抗皱免烫</span>
+            <span
+              class="inline-flex items-center bg-indigo-50 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full">终身免费熨烫</span>
           </div>
         </div>
       </div>
@@ -111,12 +123,16 @@
           <h2 class="text-3xl font-bold text-gray-900">深度集成采购工作流</h2>
           <p class="text-gray-600 mt-4 text-lg">与企业内部系统无缝连接：钉钉、飞书、SAP、OA。员工可自助选码，部门预算实时同步，自动生成对账单。</p>
           <div class="mt-6 flex flex-wrap gap-3">
-            <span class="inline-flex items-center bg-gray-100 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">历史订单导入</span>
-            <span class="inline-flex items-center bg-gray-100 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">API 开放</span>
+            <span
+              class="inline-flex items-center bg-gray-100 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">历史订单导入</span>
+            <span
+              class="inline-flex items-center bg-gray-100 text-gray-800 text-sm font-medium px-4 py-2 rounded-full">API
+              开放</span>
           </div>
         </div>
         <div>
-          <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=2070&auto=format&fit=crop" alt="数字化采购后台" class="rounded-xl shadow-lg border border-gray-200 w-full h-auto object-cover aspect-[4/3]">
+          <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=60&w=900&auto=format&fit=crop"
+            alt="数字化采购后台" class="rounded-xl shadow-lg border border-gray-200 w-full h-auto object-cover aspect-[4/3]">
         </div>
       </div>
     </section>
@@ -127,7 +143,8 @@
         <h2 class="text-3xl font-bold text-gray-900">线上线下 · 一致品质</h2>
         <p class="text-lg text-gray-600 mt-3 max-w-2xl mx-auto">无论是在展厅量体、手机选款还是现场试衣，面料触感、颜色标准统一，体验始终如一。</p>
         <div class="mt-10 rounded-xl overflow-hidden shadow-xl border border-gray-200 max-w-4xl mx-auto">
-          <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=80&w=2070&auto=format&fit=crop" alt="线上线下一体店" class="w-full h-auto object-cover">
+          <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?q=60&w=900&auto=format&fit=crop"
+            alt="线上线下一体店" class="w-full h-auto object-cover">
         </div>
       </div>
     </section>
@@ -164,28 +181,32 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           <!-- 成员1 -->
           <div class="text-center">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop" alt="张伟" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=60&w=900&auto=format&fit=crop"
+              alt="张伟" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
             <h3 class="font-semibold text-xl mt-4 text-gray-800">张伟</h3>
             <p class="text-indigo-600 text-sm">CEO & 创始人</p>
             <p class="text-gray-500 text-sm mt-2">前杰尼亚大中华区高管</p>
           </div>
           <!-- 成员2 -->
           <div class="text-center">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1888&auto=format&fit=crop" alt="陈敏" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=60&w=900&auto=format&fit=crop"
+              alt="陈敏" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
             <h3 class="font-semibold text-xl mt-4 text-gray-800">陈敏</h3>
             <p class="text-indigo-600 text-sm">CTO</p>
             <p class="text-gray-500 text-sm mt-2">前阿里供应链技术专家</p>
           </div>
           <!-- 成员3 -->
           <div class="text-center">
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1887&auto=format&fit=crop" alt="王磊" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=60&w=900&auto=format&fit=crop"
+              alt="王磊" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
             <h3 class="font-semibold text-xl mt-4 text-gray-800">王磊</h3>
             <p class="text-indigo-600 text-sm">产品总监</p>
             <p class="text-gray-500 text-sm mt-2">前微软高级架构师</p>
           </div>
           <!-- 成员4 -->
           <div class="text-center">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" alt="李莉" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=60&w=900&auto=format&fit=crop"
+              alt="李莉" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-gray-100 shadow-md">
             <h3 class="font-semibold text-xl mt-4 text-gray-800">李莉</h3>
             <p class="text-indigo-600 text-sm">设计负责人</p>
             <p class="text-gray-500 text-sm mt-2">前MaxMara首席版师</p>
@@ -214,11 +235,13 @@
               <li class="flex items-center gap-2"><span class="text-indigo-600">✓</span> 1条商务西裤</li>
               <li class="flex items-center gap-2"><span class="text-indigo-600">✓</span> 刺绣logo (单色)</li>
             </ul>
-            <a href="/signup/basic" class="mt-8 block w-full text-center bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-medium py-3 rounded-lg transition">选择基础版</a>
+            <a href="/signup/basic"
+              class="mt-8 block w-full text-center bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-medium py-3 rounded-lg transition">选择基础版</a>
           </div>
           <!-- 商业版 (热门) -->
           <div class="bg-white rounded-2xl p-8 border-2 border-indigo-400 shadow-xl relative">
-            <span class="absolute top-0 right-8 -translate-y-1/2 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">最受欢迎</span>
+            <span
+              class="absolute top-0 right-8 -translate-y-1/2 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">最受欢迎</span>
             <h3 class="text-xl font-semibold text-gray-800">商务优选</h3>
             <div class="mt-4 flex items-baseline">
               <span class="text-4xl font-bold text-gray-900">¥1299</span>
@@ -230,7 +253,8 @@
               <li class="flex items-center gap-2"><span class="text-indigo-600">✓</span> 真丝领带/领结</li>
               <li class="flex items-center gap-2"><span class="text-indigo-600">✓</span> 专属量体+一年改衣</li>
             </ul>
-            <a href="/signup/business" class="mt-8 block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg shadow-md transition">选择商务版</a>
+            <a href="/signup/business"
+              class="mt-8 block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg shadow-md transition">选择商务版</a>
           </div>
           <!-- 企业版 -->
           <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
@@ -245,7 +269,8 @@
               <li class="flex items-center gap-2"><span class="text-indigo-600">✓</span> 智能衣橱管理系统</li>
               <li class="flex items-center gap-2"><span class="text-indigo-600">✓</span> 专属客户成功团队</li>
             </ul>
-            <a href="/contact" class="mt-8 block w-full text-center bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-medium py-3 rounded-lg transition">联系顾问</a>
+            <a href="/contact"
+              class="mt-8 block w-full text-center bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-medium py-3 rounded-lg transition">联系顾问</a>
           </div>
         </div>
       </div>
@@ -286,8 +311,10 @@
         <h2 class="text-3xl md:text-4xl font-bold">立即提升团队商务形象</h2>
         <p class="text-lg text-indigo-100 mt-4 max-w-2xl mx-auto">加入500+家信任我们的企业，开启专业工服定制。</p>
         <div class="flex flex-wrap justify-center gap-4 mt-10">
-          <a href="/signup" class="bg-white text-indigo-700 hover:bg-gray-100 font-medium px-8 py-4 rounded-lg shadow-lg transition text-lg">免费获取样衣</a>
-          <a href="/demo" class="bg-indigo-800 text-white border border-indigo-400 hover:bg-indigo-900 font-medium px-8 py-4 rounded-lg shadow-lg transition text-lg">预约线上演示</a>
+          <a href="/signup"
+            class="bg-white text-indigo-700 hover:bg-gray-100 font-medium px-8 py-4 rounded-lg shadow-lg transition text-lg">免费获取样衣</a>
+          <a href="/demo"
+            class="bg-indigo-800 text-white border border-indigo-400 hover:bg-indigo-900 font-medium px-8 py-4 rounded-lg shadow-lg transition text-lg">预约线上演示</a>
         </div>
       </div>
     </section>
@@ -301,4 +328,5 @@
     </div>
   </footer>
 </body>
+
 </html>

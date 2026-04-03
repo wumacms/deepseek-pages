@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,13 @@
     <!-- Tailwind via CDN + 基础层 (仅用于重置, 无自定义样式) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 额外添加一点点平滑滚动 & 默认字体 (完全tailwind风格) -->
-    <style> html { scroll-behavior: smooth; } </style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
+
 <body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
     <!-- 导航栏 (logo + 标题 + CTA, 不含菜单) 工业科技风: 深色背景+亮色点缀 -->
@@ -17,14 +23,18 @@
             <div class="flex justify-between items-center h-16 md:h-20">
                 <!-- logo + 标题 -->
                 <div class="flex items-center gap-3">
-                    <div class="flex items-center justify-center w-9 h-9 bg-cyan-500/20 rounded-md border border-cyan-400/40 shadow-sm shadow-cyan-500/20">
+                    <div
+                        class="flex items-center justify-center w-9 h-9 bg-cyan-500/20 rounded-md border border-cyan-400/40 shadow-sm shadow-cyan-500/20">
                         <span class="text-cyan-400 text-xl leading-none">⚓</span> <!-- 航运锚点图标 -->
                     </div>
-                    <span class="text-white font-semibold text-lg md:text-xl tracking-tight">速越<span class="text-cyan-400">跨境</span></span>
+                    <span class="text-white font-semibold text-lg md:text-xl tracking-tight">速越<span
+                            class="text-cyan-400">跨境</span></span>
                 </div>
                 <!-- CTA 按钮 (不含菜单) -->
                 <div>
-                    <a href="#contact" class="inline-flex items-center px-5 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-medium text-sm md:text-base rounded-md shadow-md shadow-cyan-500/30 transition-all duration-200 border border-cyan-300/50">🚢 发货咨询</a>
+                    <a href="#contact"
+                        class="inline-flex items-center px-5 py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-medium text-sm md:text-base rounded-md shadow-md shadow-cyan-500/30 transition-all duration-200 border border-cyan-300/50">🚢
+                        发货咨询</a>
                 </div>
             </div>
         </div>
@@ -35,22 +45,32 @@
         <!-- ========== 首屏区块 (跨境运输英雄) ========== -->
         <section class="relative bg-slate-900 overflow-hidden">
             <!-- 科技网格背景 (纯tailwind, 不用自定义) -->
-            <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 1px 1px, #4dd0e1 1px, transparent 0); background-size: 40px 40px;"></div>
+            <div class="absolute inset-0 opacity-20"
+                style="background-image: radial-gradient(circle at 1px 1px, #4dd0e1 1px, transparent 0); background-size: 40px 40px;">
+            </div>
             <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <!-- 文本区 -->
                     <div>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">全球门到门<br><span class="text-cyan-400">跨境运输</span> 极速达</h1>
-                        <p class="mt-6 text-lg text-slate-300 max-w-xl">空运 · 海运 · 陆运 · 保税仓配。智能路由实时追踪，清关时效缩短40%，为制造业与电商打造确定性物流。</p>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">全球门到门<br><span
+                                class="text-cyan-400">跨境运输</span> 极速达</h1>
+                        <p class="mt-6 text-lg text-slate-300 max-w-xl">空运 · 海运 · 陆运 ·
+                            保税仓配。智能路由实时追踪，清关时效缩短40%，为制造业与电商打造确定性物流。</p>
                         <p class="mt-2 text-sm text-slate-400">专为高价值货物设计，全程可视化与保险服务</p>
                         <div class="mt-8 flex flex-wrap gap-4">
-                            <a href="#" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-md shadow-lg shadow-cyan-500/40 transition flex items-center gap-2">📦 开始发货</a>
-                            <a href="#" class="px-6 py-3 border border-cyan-700 hover:border-cyan-500 text-cyan-300 hover:text-white rounded-md transition flex items-center gap-2">📞 联系专家</a>
+                            <a href="#"
+                                class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-md shadow-lg shadow-cyan-500/40 transition flex items-center gap-2">📦
+                                开始发货</a>
+                            <a href="#"
+                                class="px-6 py-3 border border-cyan-700 hover:border-cyan-500 text-cyan-300 hover:text-white rounded-md transition flex items-center gap-2">📞
+                                联系专家</a>
                         </div>
                     </div>
                     <!-- 右图: 集装箱港口 (来自unsplash 跨境相关) -->
                     <div class="order-first lg:order-last">
-                        <img class="rounded-lg shadow-2xl shadow-cyan-900/30 border border-cyan-800/60 object-cover w-full h-auto" src="https://plus.unsplash.com/premium_photo-1661879449050-069f67e200bd?w=900&auto=format&fit=crop&q=60" alt="集装箱码头鸟瞰" loading="lazy">
+                        <img class="rounded-lg shadow-2xl shadow-cyan-900/30 border border-cyan-800/60 object-cover w-full h-auto"
+                            src="https://plus.unsplash.com/premium_photo-1661879449050-069f67e200bd?w=900&auto=format&fit=crop&q=60"
+                            alt="集装箱码头鸟瞰" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -61,15 +81,21 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img class="rounded-xl shadow-xl border border-slate-200 object-cover w-full h-auto" src="https://images.unsplash.com/photo-1761307234387-d9291985eaf9?w=900&auto=format&fit=crop&q=60" alt="自动化仓储与分拣" loading="lazy">
+                        <img class="rounded-xl shadow-xl border border-slate-200 object-cover w-full h-auto"
+                            src="https://images.unsplash.com/photo-1761307234387-d9291985eaf9?w=900&auto=format&fit=crop&q=60"
+                            alt="自动化仓储与分拣" loading="lazy">
                     </div>
                     <div>
                         <h2 class="text-3xl md:text-4xl font-bold text-slate-800">海外仓 · 智能调拨</h2>
                         <div class="w-16 h-1 bg-cyan-500 my-4"></div>
                         <p class="text-lg text-slate-600">美东、欧洲、东南亚五大自营仓，系统根据时效与成本自动分仓。支持一件代发、退货换标、库存共享。</p>
                         <div class="mt-6 flex flex-wrap gap-4">
-                            <span class="inline-flex items-center px-4 py-2 bg-cyan-50 text-cyan-800 rounded-full text-sm font-medium border border-cyan-200">📦 多仓库存可视</span>
-                            <span class="inline-flex items-center px-4 py-2 bg-cyan-50 text-cyan-800 rounded-full text-sm font-medium border border-cyan-200">⚡ 智能调拨</span>
+                            <span
+                                class="inline-flex items-center px-4 py-2 bg-cyan-50 text-cyan-800 rounded-full text-sm font-medium border border-cyan-200">📦
+                                多仓库存可视</span>
+                            <span
+                                class="inline-flex items-center px-4 py-2 bg-cyan-50 text-cyan-800 rounded-full text-sm font-medium border border-cyan-200">⚡
+                                智能调拨</span>
                         </div>
                         <p class="mt-4 text-sm text-slate-500">对接主流ERP，库存每日同步</p>
                     </div>
@@ -86,12 +112,18 @@
                         <div class="w-16 h-1 bg-cyan-500 my-4"></div>
                         <p class="text-lg text-slate-600">自主研发的报关系统提前预审单证，与多国海关数据互通，普货平均清关6小时，降低查验率至1.5%以下。</p>
                         <div class="mt-6 flex flex-wrap gap-3">
-                            <span class="text-xs font-mono border border-cyan-300 bg-cyan-50 text-cyan-800 px-3 py-1 rounded-full">📋 美国ACE认证</span>
-                            <span class="text-xs font-mono border border-cyan-300 bg-cyan-50 text-cyan-800 px-3 py-1 rounded-full">🇪🇺 欧盟ICS2合规</span>
+                            <span
+                                class="text-xs font-mono border border-cyan-300 bg-cyan-50 text-cyan-800 px-3 py-1 rounded-full">📋
+                                美国ACE认证</span>
+                            <span
+                                class="text-xs font-mono border border-cyan-300 bg-cyan-50 text-cyan-800 px-3 py-1 rounded-full">🇪🇺
+                                欧盟ICS2合规</span>
                         </div>
                     </div>
                     <div class="order-1 lg:order-2">
-                        <img class="rounded-xl shadow-xl border border-slate-200 object-cover w-full h-auto" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" alt="海关货运集装箱" loading="lazy">
+                        <img class="rounded-xl shadow-xl border border-slate-200 object-cover w-full h-auto"
+                            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=60&w=900&auto=format&fit=crop"
+                            alt="海关货运集装箱" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -106,7 +138,9 @@
                     <p class="text-lg text-slate-600">司机端APP、网页仪表盘、API推送，从提货到签收每个节点自动拍照上传，异常提前预警。</p>
                 </div>
                 <div class="mt-12">
-                    <img class="rounded-xl shadow-2xl border border-slate-200 w-full h-auto object-cover" src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=900&auto=format&fit=crop&q=60" alt="物流追踪多屏" loading="lazy">
+                    <img class="rounded-xl shadow-2xl border border-slate-200 w-full h-auto object-cover"
+                        src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?w=900&auto=format&fit=crop&q=60"
+                        alt="物流追踪多屏" loading="lazy">
                 </div>
             </div>
         </section>
@@ -119,22 +153,26 @@
                     <p class="mt-3 text-slate-500">从运力调度到合规安全，构建透明供应链</p>
                 </div>
                 <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
                         <div class="text-4xl mb-3">🛰️</div>
                         <h3 class="text-xl font-semibold text-slate-800">实时可视</h3>
                         <p class="mt-2 text-slate-500">北斗+GPS双模，温湿度、冲击记录，贵重货物全程监护。</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
                         <div class="text-4xl mb-3">⚙️</div>
                         <h3 class="text-xl font-semibold text-slate-800">智能拼车</h3>
                         <p class="mt-2 text-slate-500">算法动态拼柜，减少尾程成本，旺季运力保障不涨价。</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
                         <div class="text-4xl mb-3">🔒</div>
                         <h3 class="text-xl font-semibold text-slate-800">极速理赔</h3>
                         <p class="mt-2 text-slate-500">区块链保单，丢损件48小时先行赔付，无需漫长等待。</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
+                    <div
+                        class="bg-white p-6 rounded-xl shadow-md border-t-4 border-cyan-400 hover:shadow-xl transition">
                         <div class="text-4xl mb-3">📊</div>
                         <h3 class="text-xl font-semibold text-slate-800">碳排管理</h3>
                         <p class="mt-2 text-slate-500">测算每票货物碳足迹，提供绿色航运报告，助力碳中和。</p>
@@ -176,25 +214,33 @@
                 </div>
                 <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="text-center">
-                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1974&auto=format&fit=crop" alt="张伟">
+                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover"
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=60&w=900&auto=format&fit=crop"
+                            alt="张伟">
                         <h3 class="mt-4 text-xl font-semibold">张伟</h3>
                         <p class="text-cyan-600">创始人 · 前马士基远东区总监</p>
                         <p class="mt-2 text-sm text-slate-500">20年国际航运网络</p>
                     </div>
                     <div class="text-center">
-                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1976&auto=format&fit=crop" alt="陈敏">
+                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover"
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=60&w=900&auto=format&fit=crop"
+                            alt="陈敏">
                         <h3 class="mt-4 text-xl font-semibold">陈敏</h3>
                         <p class="text-cyan-600">CTO · 前Flexport技术leader</p>
                         <p class="mt-2 text-sm text-slate-500">物流大数据平台搭建</p>
                     </div>
                     <div class="text-center">
-                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=1974&auto=format&fit=crop" alt="王磊">
+                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover"
+                            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=60&w=900&auto=format&fit=crop"
+                            alt="王磊">
                         <h3 class="mt-4 text-xl font-semibold">王磊</h3>
                         <p class="text-cyan-600">运营VP · 前中外运关务专家</p>
                         <p class="mt-2 text-sm text-slate-500">精通欧美海关政策</p>
                     </div>
                     <div class="text-center">
-                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" alt="李莉">
+                        <img class="w-32 h-32 rounded-full mx-auto border-4 border-cyan-200 object-cover"
+                            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=60&w=900&auto=format&fit=crop"
+                            alt="李莉">
                         <h3 class="mt-4 text-xl font-semibold">李莉</h3>
                         <p class="text-cyan-600">产品负责人 · 极兔早期成员</p>
                         <p class="mt-2 text-sm text-slate-500">末端派送优化产品</p>
@@ -224,11 +270,14 @@
                             <li class="flex items-center gap-2"><span class="text-cyan-500">✓</span> 基础追踪 + 到港通知</li>
                             <li class="flex items-center gap-2"><span class="text-cyan-500">✓</span> 5万美金保险</li>
                         </ul>
-                        <a href="#" class="mt-8 text-center py-2 border border-cyan-500 text-cyan-700 hover:bg-cyan-50 rounded-md transition">选择标准</a>
+                        <a href="#"
+                            class="mt-8 text-center py-2 border border-cyan-500 text-cyan-700 hover:bg-cyan-50 rounded-md transition">选择标准</a>
                     </div>
                     <!-- 商业版 (热门) -->
                     <div class="bg-white rounded-xl shadow-xl border-2 border-cyan-400 p-8 flex flex-col relative">
-                        <span class="absolute top-0 right-8 bg-cyan-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-b-lg">推荐 🚀</span>
+                        <span
+                            class="absolute top-0 right-8 bg-cyan-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-b-lg">推荐
+                            🚀</span>
                         <h3 class="text-xl font-bold">空海运优选</h3>
                         <p class="text-sm text-slate-400">门到门 · 时效优先</p>
                         <div class="mt-4 flex items-baseline">
@@ -241,7 +290,8 @@
                             <li class="flex items-center gap-2"><span class="text-cyan-500">✓</span> 派送预约 + 上楼</li>
                             <li class="flex items-center gap-2"><span class="text-cyan-500">✓</span> 20万保险</li>
                         </ul>
-                        <a href="#" class="mt-8 text-center py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-medium rounded-md shadow">立即选用</a>
+                        <a href="#"
+                            class="mt-8 text-center py-2 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-medium rounded-md shadow">立即选用</a>
                     </div>
                     <!-- 企业版 (定制) -->
                     <div class="bg-white rounded-xl shadow-md border border-slate-200 p-8 flex flex-col">
@@ -256,7 +306,8 @@
                             <li class="flex items-center gap-2"><span class="text-cyan-500">✓</span> 数据对接/BI报表</li>
                             <li class="flex items-center gap-2"><span class="text-cyan-500">✓</span> 多币种结算</li>
                         </ul>
-                        <a href="#" class="mt-8 text-center py-2 border border-cyan-500 text-cyan-700 hover:bg-cyan-50 rounded-md transition">联系专家</a>
+                        <a href="#"
+                            class="mt-8 text-center py-2 border border-cyan-500 text-cyan-700 hover:bg-cyan-50 rounded-md transition">联系专家</a>
                     </div>
                 </div>
             </div>
@@ -268,19 +319,23 @@
                 <h2 class="text-3xl font-bold text-center text-slate-800">跨境物流 · 高频疑问</h2>
                 <div class="mt-12 space-y-6">
                     <div class="border border-slate-200 rounded-lg p-5">
-                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span class="text-cyan-500">❓</span> 带电货物能走吗？</h3>
+                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span
+                                class="text-cyan-500">❓</span> 带电货物能走吗？</h3>
                         <p class="mt-2 text-slate-600">当然，我们有UN38.3认证运输渠道，锂电、配套电池均可，需提前申报。</p>
                     </div>
                     <div class="border border-slate-200 rounded-lg p-5">
-                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span class="text-cyan-500">❓</span> 如何计算 VAT / IOSS？</h3>
+                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span
+                                class="text-cyan-500">❓</span> 如何计算 VAT / IOSS？</h3>
                         <p class="mt-2 text-slate-600">系统根据收货地址自动估算税费，并提供递延申报服务，支持欧盟IOSS。</p>
                     </div>
                     <div class="border border-slate-200 rounded-lg p-5">
-                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span class="text-cyan-500">❓</span> 最小起运量？</h3>
+                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span
+                                class="text-cyan-500">❓</span> 最小起运量？</h3>
                         <p class="mt-2 text-slate-600">海运拼箱最低1立方米，空运最低21kg。样品可走我们的经济小包专线。</p>
                     </div>
                     <div class="border border-slate-200 rounded-lg p-5">
-                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span class="text-cyan-500">❓</span> 疫情/暴雪等影响时效？</h3>
+                        <h3 class="text-lg font-semibold text-slate-800 flex items-center gap-2"><span
+                                class="text-cyan-500">❓</span> 疫情/暴雪等影响时效？</h3>
                         <p class="mt-2 text-slate-600">智能路由实时规避拥堵，同时主动通知客户，并提供备选方案。</p>
                     </div>
                 </div>
@@ -293,8 +348,12 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-white">简化您的全球供应链</h2>
                 <p class="mt-4 text-lg text-slate-300">新客户首单立减200美金，30天运费周结服务</p>
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
-                    <a href="#" class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-md shadow-lg shadow-cyan-500/30">📆 预约免费诊断</a>
-                    <a href="#" class="px-6 py-3 border border-cyan-600 text-cyan-300 hover:text-white hover:border-cyan-400 rounded-md transition">📦 立即发货</a>
+                    <a href="#"
+                        class="px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold rounded-md shadow-lg shadow-cyan-500/30">📆
+                        预约免费诊断</a>
+                    <a href="#"
+                        class="px-6 py-3 border border-cyan-600 text-cyan-300 hover:text-white hover:border-cyan-400 rounded-md transition">📦
+                        立即发货</a>
                 </div>
             </div>
         </section>
@@ -307,4 +366,5 @@
         </div>
     </footer>
 </body>
+
 </html>

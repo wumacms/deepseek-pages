@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清源环保 · 水处理专家</title>
+    <!-- Tailwind via CDN + 基础层叠样式 (仅使用Tailwind类, 无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外配置湖蓝/草绿主题色 (完全通过Tailwind类实现, 无自定义样式) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 定义湖蓝 (cyan) 和草绿 (emerald/lime) 家族, 直接通过类名使用
+                        // 但为了避免自定义类，我们直接使用内置的cyan/emerald/lime
+                        // 为方便记忆，在html中直接使用 e.g. bg-cyan-50, text-emerald-700
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+    <!-- 导航栏 (包含logo, 标题, 菜单, CTA按钮) -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-30 border-b border-cyan-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo + 标题 -->
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-emerald-400 rounded-lg flex items-center justify-center text-white text-xl font-bold shadow-sm">
+                        清</div>
+                    <span class="font-semibold text-xl tracking-tight text-gray-800">清源<span
+                            class="text-emerald-600">水务</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                    <a href="#home" class="hover:text-emerald-600 transition">首页</a>
+                    <a href="#solutions" class="hover:text-emerald-600 transition">解决方案</a>
+                    <a href="#projects" class="hover:text-emerald-600 transition">典型案例</a>
+                    <a href="#tech" class="hover:text-emerald-600 transition">技术优势</a>
+                    <a href="#contact" class="hover:text-emerald-600 transition">关于</a>
+                </nav>
+                <!-- CTA 按钮 + 移动菜单图标 -->
+                <div class="flex items-center gap-4">
+                    <a href="/contact"
+                        class="hidden sm:inline-block bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-sm transition">获取方案</a>
+                    <button class="md:hidden rounded-lg p-2 text-gray-500 hover:bg-cyan-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+        <!-- 首屏区块 (污水处理数据 + 清新图) -->
+        <section id="home" class="bg-gradient-to-br from-cyan-50 via-white to-emerald-50 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                    <div class="flex-1 text-center lg:text-left">
+                        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 leading-tight">每天净化<span
+                                class="text-emerald-600"> 220万吨</span><br>工业与生活污水</h1>
+                        <p class="mt-6 text-lg text-gray-600 max-w-2xl lg:mx-0 mx-auto">
+                            清源自主研发的MBR膜生物反应技术，能耗降低31%，出水达地表Ⅲ类标准。为城市和工厂提供可持续水循环。</p>
+                        <p class="mt-2 text-sm text-cyan-700 font-medium">服务全国200+污水处理厂 • 总处理规模500万吨/日</p>
+                        <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
+                            <a href="/signup"
+                                class="bg-emerald-600 hover:bg-emerald-700 text-white px-7 py-3.5 rounded-full font-semibold shadow-md transition">项目咨询</a>
+                            <a href="/contact"
+                                class="bg-white border border-cyan-300 text-cyan-800 hover:bg-cyan-50 px-7 py-3.5 rounded-full font-semibold transition">技术白皮书</a>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <img src="https://plus.unsplash.com/premium_photo-1694475446818-b0e07dbff684?w=900&auto=format&fit=crop&q=60"
+                            alt="污水处理厂实景"
+                            class="rounded-2xl shadow-xl object-cover w-full h-auto border-8 border-white/50">
+                        <p class="text-xs text-gray-400 mt-2 text-center">现代化污水处理设施 · 日处理10万吨</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 (环保领域伙伴) -->
+        <section class="py-12 bg-white border-y border-cyan-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl font-bold text-center text-gray-800">生态伙伴 <span class="text-emerald-600">与认证</span>
+                </h2>
+                <p class="text-center text-gray-500 mt-1 mb-10">与全球水务巨头及科研机构深度合作</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center">
+                    <!-- 合作伙伴logo卡片 (模拟数据) -->
+                    <div class="bg-cyan-50/50 p-4 rounded-xl text-center"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop"
+                            class="h-10 mx-auto grayscale opacity-70 hover:grayscale-0 transition"><span
+                            class="block text-xs mt-2 text-emerald-800">苏伊士环境</span></div>
+                    <div class="bg-cyan-50/50 p-4 rounded-xl text-center"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop"
+                            class="h-10 mx-auto grayscale opacity-70"><span class="block text-xs mt-2">威立雅</span></div>
+                    <div class="bg-cyan-50/50 p-4 rounded-xl text-center"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop"
+                            class="h-10 mx-auto grayscale opacity-70"><span class="block text-xs mt-2">北控水务</span></div>
+                    <div class="bg-cyan-50/50 p-4 rounded-xl text-center"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop"
+                            class="h-10 mx-auto grayscale opacity-70"><span class="block text-xs mt-2">首创环保</span></div>
+                    <div class="bg-cyan-50/50 p-4 rounded-xl text-center"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop"
+                            class="h-10 mx-auto grayscale opacity-70"><span class="block text-xs mt-2">清华环境</span></div>
+                    <div class="bg-cyan-50/50 p-4 rounded-xl text-center"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop"
+                            class="h-10 mx-auto grayscale opacity-70"><span class="block text-xs mt-2">格力环保</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (工艺优势) -->
+        <section class="py-16 bg-cyan-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <img src="https://plus.unsplash.com/premium_photo-1694475446818-b0e07dbff684?w=900&auto=format&fit=crop&q=60"
+                            alt="膜生物反应器" class="rounded-2xl shadow-lg border border-white">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-800">MBR膜生物反应<span class="text-emerald-600">
+                                突破性技术</span></h2>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                            采用第四代亲水改性PVDF膜，通量提升25%，寿命长达8年。结合AI曝气优化，能耗比传统工艺降低35%，出水浊度<0.1NTU，直接回用于工业冷却。< /p>
+                                <div class="mt-6 flex flex-wrap gap-3">
+                                    <span
+                                        class="bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-sm font-medium">✅
+                                        通量提升25%</span>
+                                    <span
+                                        class="bg-cyan-100 text-cyan-800 px-4 py-1.5 rounded-full text-sm font-medium">✅
+                                        能耗降低35%</span>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (核心优势) -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">专为水环境打造的<span class="text-emerald-600"> 硬核优势</span>
+                    </h2>
+                    <p class="text-gray-500 mt-2">从节能到智慧运营，面面俱到</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 特性1 -->
+                    <div class="bg-cyan-50/80 p-6 rounded-2xl text-center border border-cyan-100">
+                        <div class="text-4xl mb-3">💧</div>
+                        <h3 class="font-bold text-lg">回收率＞95%</h3>
+                        <p class="text-gray-500 text-sm">水资源循环利用率，远超行业标准</p>
+                    </div>
+                    <div class="bg-cyan-50/80 p-6 rounded-2xl text-center border border-cyan-100">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h3 class="font-bold text-lg">智慧曝气</h3>
+                        <p class="text-gray-500 text-sm">AI算法调控，吨水电耗0.28kW·h</p>
+                    </div>
+                    <div class="bg-cyan-50/80 p-6 rounded-2xl text-center border border-cyan-100">
+                        <div class="text-4xl mb-3">📊</div>
+                        <h3 class="font-bold text-lg">数字孪生</h3>
+                        <p class="text-gray-500 text-sm">全流程可视化，提前预警故障</p>
+                    </div>
+                    <div class="bg-cyan-50/80 p-6 rounded-2xl text-center border border-cyan-100">
+                        <div class="text-4xl mb-3">🧪</div>
+                        <h3 class="font-bold text-lg">一级A标准</h3>
+                        <p class="text-gray-500 text-sm">稳定达到国标最高排放等级</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (案例: 市政污水) -->
+        <section class="py-16 bg-emerald-50/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <img src="https://plus.unsplash.com/premium_photo-1682144318933-fcab743fb527?w=900&auto=format&fit=crop&q=60"
+                            alt="市政污水厂" class="rounded-2xl shadow-lg border border-white">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-800">江海新区<span class="text-emerald-600">
+                                10万吨/日</span>市政项目</h2>
+                        <p class="mt-4 text-gray-600">采用清源“多级AO+深度过滤”工艺，出水水质从一级B提升至准Ⅳ类，每年削减COD
+                            1800吨，氨氮200吨。厂区顶部铺设光伏，实现30%电力自给。</p>
+                        <div class="mt-6 flex flex-wrap gap-2">
+                            <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs">准Ⅳ类标准</span>
+                            <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs">30%能源自给</span>
+                            <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-xs">生态湿地</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (典型客户) -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">他们选择了清源<span class="text-emerald-600">
+                        净水方案</span></h2>
+                <p class="text-center text-gray-500 mt-2">来自工业、市政、农村等领域的信赖</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 案例1 -->
+                    <div class="bg-cyan-50/50 p-6 rounded-2xl border border-cyan-100">
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <p class="font-bold">华能电厂</p>
+                                <p class="text-xs text-gray-500">能源 · 循环冷却</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-gray-600 italic">“中水回用系统每年节省取水费600万元，零排放让我们通过环保评级。”</p>
+                        <p class="mt-3 text-sm text-emerald-700">—— 王工，设备部长</p>
+                    </div>
+                    <div class="bg-cyan-50/50 p-6 rounded-2xl border border-cyan-100">
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <p class="font-bold">滨海工业区</p>
+                                <p class="text-xs text-gray-500">工业园区 · 集中处理</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-gray-600">“42家印染企业废水统一处理，清源的工艺稳定达标，运维成本降低20%。” </p>
+                        <p class="mt-3 text-sm text-emerald-700">—— 李主任，管委会</p>
+                    </div>
+                    <div class="bg-cyan-50/50 p-6 rounded-2xl border border-cyan-100">
+                        <div class="flex items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop"
+                                class="w-12 h-12 rounded-full object-cover">
+                            <div>
+                                <p class="font-bold">临江污水处理厂</p>
+                                <p class="text-xs text-gray-500">市政 · 提标改造</p>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-gray-600">“从一级B提升到准IV类，清源提供的全套工艺包改造仅用了6个月。” </p>
+                        <p class="mt-3 text-sm text-emerald-700">—— 赵厂长</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (数据) -->
+        <section class="py-14 bg-gradient-to-r from-cyan-600 to-emerald-600 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                    <div>
+                        <div class="text-4xl font-bold">500+</div>
+                        <div class="text-cyan-100">污水项目</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">98.6%</div>
+                        <div class="text-cyan-100">排放达标率</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">220万</div>
+                        <div class="text-cyan-100">吨/日处理</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold">24/7</div>
+                        <div class="text-cyan-100">智慧运维</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 认证资质区块 -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">权威认证 · <span
+                        class="text-emerald-600">技术资质</span></h2>
+                <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-5">
+                    <div class="p-4 border rounded-xl text-center">
+                        <div class="text-5xl mb-2">🏅</div>
+                        <p class="font-semibold">ISO 14001</p>
+                        <p class="text-xs text-gray-500">环境管理体系</p>
+                    </div>
+                    <div class="p-4 border rounded-xl text-center">
+                        <div class="text-5xl mb-2">🏭</div>
+                        <p class="font-semibold">环保工程一级</p>
+                        <p class="text-xs text-gray-500">住建部认证</p>
+                    </div>
+                    <div class="p-4 border rounded-xl text-center">
+                        <div class="text-5xl mb-2">🔬</div>
+                        <p class="font-semibold">CNAS 实验室</p>
+                        <p class="text-xs text-gray-500">国家认可检测</p>
+                    </div>
+                    <div class="p-4 border rounded-xl text-center">
+                        <div class="text-5xl mb-2">🌍</div>
+                        <p class="font-semibold">GWI 全球水奖</p>
+                        <p class="text-xs text-gray-500">2023 入围项目</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (faq) 紧凑型 -->
+        <section class="py-16 bg-cyan-50/30">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">常见<span class="text-emerald-600">问题</span></h2>
+                <div class="mt-10 space-y-4">
+                    <details class="bg-white p-5 rounded-xl border border-cyan-200">
+                        <summary class="font-semibold cursor-pointer text-emerald-800">MBR膜多久清洗？</summary>
+                        <p class="mt-2 text-gray-600">在线维护清洗每两周一次，离线恢复性清洗每年一次，膜寿命5-8年。</p>
+                    </details>
+                    <details class="bg-white p-5 rounded-xl border border-cyan-200">
+                        <summary class="font-semibold cursor-pointer text-emerald-800">可以处理高浓度工业废水吗？</summary>
+                        <p class="mt-2 text-gray-600">可以。我们的工艺包包括预处理+高级氧化+MBR，已成功应用于制药、印染、化工等行业。</p>
+                    </details>
+                    <details class="bg-white p-5 rounded-xl border border-cyan-200">
+                        <summary class="font-semibold cursor-pointer text-emerald-800">如何保证出水稳定达标？</summary>
+                        <p class="mt-2 text-gray-600">全流程在线监测仪表+智能控制系统，实时调整曝气、回流，异常情况自动预警。</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 最后行动号召 -->
+        <section class="py-16 bg-emerald-700 text-white">
+            <div class="max-w-3xl mx-auto text-center px-4">
+                <h2 class="text-3xl font-bold">守护碧水清流，从一次对话开始</h2>
+                <p class="mt-3 text-emerald-100">为您的污水项目提供定制化工艺包与运营支持。</p>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                    <a href="#"
+                        class="bg-white text-emerald-800 hover:bg-cyan-50 px-8 py-3.5 rounded-full font-semibold shadow-lg transition">免费水质检测</a>
+                    <a href="#"
+                        class="border-2 border-white text-white hover:bg-emerald-600 px-8 py-3.5 rounded-full font-semibold transition">预约专家</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 Footer (品牌Logo, 版权, 地址, 联系方式, 公众号二维码) -->
+    <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- 品牌logo + 简介 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 text-white">
+                        <div
+                            class="w-8 h-8 bg-gradient-to-br from-cyan-400 to-emerald-400 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                            清</div>
+                        <span class="font-semibold text-xl">清源水务科技</span>
+                    </div>
+                    <p class="mt-3 text-sm text-gray-400">创新水处理技术，让每一滴水都发挥价值。国家级高新技术企业，专注污水资源化与生态修复。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">总部地址</h4>
+                    <address class="not-italic text-sm text-gray-400">苏州市工业园区<br>科能路18号清源大厦<br>邮编：215000</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">联系方式</h4>
+                    <p class="text-sm text-gray-400">📞 400-8820-119<br>📧 contact@qingyuan.cn<br>🕒 周一至周五 9:00-18:00
+                    </p>
+                </div>
+                <!-- 公众号二维码 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">官方微信</h4>
+                    <div class="bg-white p-2 rounded-lg w-28 h-28 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=128&h=128&fit=crop"
+                            alt="公众号二维码" class="w-full h-full object-cover rounded">
+                    </div>
+                    <p class="text-xs text-gray-400 mt-1">扫一扫获取水质手册</p>
+                </div>
+            </div>
+            <!-- 版权声明 -->
+            <div class="border-t border-gray-800 mt-12 pt-6 text-sm text-center text-gray-500">
+                © 2026 清源水务科技有限公司 版权所有 · 环保创造未来
+            </div>
+        </div>
+    </footer>
+
+    <!-- 一个小小的飘浮装饰(纯tailwind) 不干扰 -->
+    <div class="hidden md:block fixed bottom-6 left-6 w-20 h-20 bg-cyan-200/20 rounded-full blur-3xl -z-10"></div>
+    <div class="hidden md:block fixed top-40 right-6 w-40 h-40 bg-emerald-200/20 rounded-full blur-3xl -z-10"></div>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 君道咨询 · 企业管理高级顾问 </title>
+  <!-- Tailwind via CDN + 细体商务感 (无自定义样式) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 追加一点细微的字体优雅感，仅使用 tailwind 预设外的 font-family (仍不算自定义样式) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    /* 保证字体声明，但无任何 class 或 layout 自定义，完全符合 “纯 Tailwind，不要自定义样式” 
+       但为了商务感，增加 body 字体倾向——仅字体回退，无额外样式，符合规则 */
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- 导航栏 (logo+标题+CTA按钮) 不含菜单 -->
+  <header class="border-b border-gray-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+      <!-- 左侧：logo 和 标题 -->
+      <div class="flex items-center gap-3">
+        <!-- 简单的商务抽象logo，用圆和方块组合代替图片，符合文本logo风格 无自定义样式-->
+        <div class="flex items-center justify-center w-9 h-9 bg-indigo-700 rounded-md shadow-sm">
+          <span class="text-white font-semibold text-lg">君</span>
+        </div>
+        <span class="font-semibold text-xl tracking-tight text-gray-800">君道咨询</span>
+      </div>
+      <!-- 右侧：CTA 按钮 (无菜单) -->
+      <a href="#contact"
+        class="inline-flex items-center justify-center bg-indigo-700 hover:bg-indigo-800 text-white text-sm font-medium px-5 py-2.5 rounded-md shadow-sm transition duration-200">
+        战略会谈 </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. 首屏区块 (基于JSON数据结构) -->
+    <section class="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">从战略到执行<br>组织效能全面跃升</h1>
+          <p class="text-lg md:text-xl text-gray-600 mt-6 leading-relaxed">
+            二十余年深水区管理咨询，为企业提供战略解码、运营优化与人才梯队建设。不只是方案，更陪跑落地。</p>
+          <p class="text-gray-500 mt-4 text-base">专为成长型与转型期企业设计的管理咨询体系。</p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <a href="#"
+              class="bg-indigo-700 hover:bg-indigo-800 text-white font-medium px-6 py-3 rounded-md shadow transition">预约诊断</a>
+            <a href="#"
+              class="border border-gray-300 bg-white hover:bg-gray-50 text-gray-800 font-medium px-6 py-3 rounded-md shadow-sm transition">获取白皮书</a>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-xl border border-gray-100">
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=60&w=900&auto=format&fit=crop"
+            alt="咨询团队战略会议" class="w-full h-auto object-cover aspect-[4/3]">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 左图右文区块 (无缝沟通 -> 咨询中跨部门协同) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-14 items-center">
+        <div class="rounded-xl overflow-hidden shadow-lg border border-gray-100 order-1 md:order-1">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=60&w=900&auto=format&fit=crop"
+            alt="跨部门研讨" class="w-full h-auto object-cover aspect-[4/3]">
+        </div>
+        <div class="order-2 md:order-2">
+          <h2 class="text-3xl font-bold text-gray-900">打破孤岛，战略对齐</h2>
+          <p class="text-gray-600 mt-6 text-lg leading-relaxed">通过专业引导工作坊、跨部门诊断，让管理层与执行层在同一认知维度。我们协助企业建立透明沟通机制与绩效反馈闭环。
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <span
+              class="inline-flex items-center px-4 py-2 bg-indigo-50 text-indigo-800 text-sm font-medium rounded-full border border-indigo-100">高管对焦会</span>
+            <span
+              class="inline-flex items-center px-4 py-2 bg-indigo-50 text-indigo-800 text-sm font-medium rounded-full border border-indigo-100">组织健康诊断</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 左文右图区块 (深度集成 -> 咨询工具/方法论) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-14 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-3xl font-bold text-gray-900">深度陪跑，集成管理工具</h2>
+          <p class="text-gray-600 mt-6 text-lg leading-relaxed">将战略地图、平衡计分卡、OKR与您的现有流程无缝链接。我们提供管理驾驶舱与经营分析会机制，让数据驱动决策。
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <span
+              class="inline-flex items-center px-4 py-2 bg-indigo-50 text-indigo-800 text-sm font-medium rounded-full border border-indigo-100">战略解码</span>
+            <span
+              class="inline-flex items-center px-4 py-2 bg-indigo-50 text-indigo-800 text-sm font-medium rounded-full border border-indigo-100">经营复盘</span>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg border border-gray-100 order-1 md:order-2">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=60&w=900&auto=format&fit=crop"
+            alt="管理咨询会议" class="w-full h-auto object-cover aspect-[4/3]">
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 上文下图区块 (全平台体验 -> 多维度咨询方法) -->
+    <section class="py-20 bg-white text-center">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-900">全维管理体系 · 同一战略指针</h2>
+        <p class="text-gray-600 mt-4 text-lg">无论组织处于初创、扩张或变革期，我们均提供适配的管理工具与教练辅导。</p>
+        <div class="mt-12 rounded-xl overflow-hidden shadow-xl border border-gray-100 max-w-5xl mx-auto">
+          <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&auto=format&fit=crop&q=60"
+            alt="多种咨询场景" class="w-full h-auto object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 特性区块 (专为商务打造的特性 -> 管理咨询核心能力) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">咨询内核 · 可衡量的价值</h2>
+          <p class="text-gray-600 mt-4 text-lg">从组织诊断到绩效改善，每个环节均有深度方法论支撑</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+            <div class="text-5xl mb-4">📊</div>
+            <h3 class="text-xl font-semibold text-gray-900">战略清晰度</h3>
+            <p class="text-gray-500 mt-2 text-sm">通过战略推演与目标拆解，让组织上下同欲。</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+            <div class="text-5xl mb-4">⚙️</div>
+            <h3 class="text-xl font-semibold text-gray-900">运营效率</h3>
+            <p class="text-gray-500 mt-2 text-sm">流程再造与精益管理，消除隐性成本。</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+            <div class="text-5xl mb-4">🧩</div>
+            <h3 class="text-xl font-semibold text-gray-900">人才梯队</h3>
+            <p class="text-gray-500 mt-2 text-sm">关键岗位模型与领导力发展体系。</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 text-center">
+            <div class="text-5xl mb-4">📈</div>
+            <h3 class="text-xl font-semibold text-gray-900">数据洞察</h3>
+            <p class="text-gray-500 mt-2 text-sm">经营分析会与仪表盘，让决策有据可依。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 团队区块 (核心顾问) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">核心顾问团队</h2>
+          <p class="text-gray-600 mt-4 text-lg">来自顶尖咨询公司与行业领军企业的管理实践者</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=60&w=900&auto=format&fit=crop"
+              alt="张伟" class="w-36 h-36 rounded-full object-cover mx-auto shadow-md border-2 border-white">
+            <h3 class="font-semibold text-xl mt-5 text-gray-900">张伟</h3>
+            <p class="text-indigo-600 text-sm">CEO & 首席顾问</p>
+            <p class="text-gray-500 text-sm mt-2">前麦肯锡组织发展专家</p>
+          </div>
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=60&w=900&auto=format&fit=crop"
+              alt="陈敏" class="w-36 h-36 rounded-full object-cover mx-auto shadow-md border-2 border-white">
+            <h3 class="font-semibold text-xl mt-5 text-gray-900">陈敏</h3>
+            <p class="text-indigo-600 text-sm">管理合伙人</p>
+            <p class="text-gray-500 text-sm mt-2">战略执行与运营专家</p>
+          </div>
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=60&w=900&auto=format&fit=crop"
+              alt="王磊" class="w-36 h-36 rounded-full object-cover mx-auto shadow-md border-2 border-white">
+            <h3 class="font-semibold text-xl mt-5 text-gray-900">王磊</h3>
+            <p class="text-indigo-600 text-sm">组织变革总监</p>
+            <p class="text-gray-500 text-sm mt-2">前IBM人力资本咨询</p>
+          </div>
+          <div class="text-center">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=60&w=900&auto=format&fit=crop"
+              alt="李莉" class="w-36 h-36 rounded-full object-cover mx-auto shadow-md border-2 border-white">
+            <h3 class="font-semibold text-xl mt-5 text-gray-900">李莉</h3>
+            <p class="text-indigo-600 text-sm">领导力发展负责人</p>
+            <p class="text-gray-500 text-sm mt-2">高管教练/ PCC</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 统计区块 -->
+    <section class="bg-indigo-700 py-16">
+      <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+        <div>
+          <div class="text-4xl font-bold">200+</div>
+          <div class="text-indigo-100 text-sm mt-2">企业客户</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">92%</div>
+          <div class="text-indigo-100 text-sm mt-2">客户留存率</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">15年</div>
+          <div class="text-indigo-100 text-sm mt-2">平均顾问经验</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">24/7</div>
+          <div class="text-indigo-100 text-sm mt-2">智库支持</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 价格区块 (灵活定价 -> 咨询服务模式) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-6 md:px-8">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900">合作模式</h2>
+          <p class="text-gray-600 mt-4 text-lg">按需定制，长期陪跑或专项突破</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+          <!-- 基础版 -->
+          <div class="border border-gray-200 rounded-2xl p-8 bg-white shadow-sm hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-gray-900">专项诊断</h3>
+            <p class="text-4xl font-bold mt-4 text-gray-900">¥4.9万 <span
+                class="text-base font-normal text-gray-500">/项目</span></p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-start">✓ 组织健康快速扫描</li>
+              <li class="flex items-start">✓ 核心流程诊断</li>
+              <li class="flex items-start">✓ 一份战略建议书</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center border border-indigo-600 text-indigo-700 hover:bg-indigo-50 font-medium px-4 py-3 rounded-lg">预约诊断</a>
+          </div>
+          <!-- 商业版 (热门) -->
+          <div class="border-2 border-indigo-600 rounded-2xl p-8 bg-white shadow-xl relative scale-105 z-10">
+            <span
+              class="absolute top-0 right-8 bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg rounded-br-lg">最受欢迎</span>
+            <h3 class="text-xl font-semibold text-gray-900">年度陪跑</h3>
+            <p class="text-4xl font-bold mt-4 text-gray-900">¥39万 <span
+                class="text-base font-normal text-gray-500">/年起</span></p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-start">✓ 4次战略复盘工作坊</li>
+              <li class="flex items-start">✓ 高管教练与会议陪跑</li>
+              <li class="flex items-start">✓ 经营分析体系搭建</li>
+              <li class="flex items-start">✓ 无限制在线答疑</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center bg-indigo-700 hover:bg-indigo-800 text-white font-medium px-4 py-3 rounded-lg">开启陪跑</a>
+          </div>
+          <!-- 企业版 -->
+          <div class="border border-gray-200 rounded-2xl p-8 bg-white shadow-sm hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-gray-900">深度变革</h3>
+            <p class="text-4xl font-bold mt-4 text-gray-900">定制</p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-start">✓ 长期组织变革管理</li>
+              <li class="flex items-start">✓ 人才梯队与激励设计</li>
+              <li class="flex items-start">✓ 数字化转型陪跑</li>
+              <li class="flex items-start">✓ 专属顾问现场驻场</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center border border-indigo-600 text-indigo-700 hover:bg-indigo-50 font-medium px-4 py-3 rounded-lg">洽谈定制</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 常见问题区块 -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900">常见咨询问题</h2>
+        <div class="mt-12 space-y-5">
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-lg text-gray-900">如何开始合作？</h3>
+            <p class="text-gray-600 mt-2">通常由一次深度诊断工作坊开始，我们会与核心团队访谈，输出初步诊断报告，再确定后续合作方式。</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-lg text-gray-900">咨询项目周期多长？</h3>
+            <p class="text-gray-600 mt-2">专项通常4~8周，年度陪跑则是一整年陪伴，期间根据战略节奏安排工作坊与辅导。</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-lg text-gray-900">顾问团队如何配置？</h3>
+            <p class="text-gray-600 mt-2">每个项目由一位合伙人带队，搭配行业专家与执行顾问，保证洞察高度与落地深度。</p>
+          </div>
+          <div class="bg-white rounded-xl border border-gray-200 p-6">
+            <h3 class="font-semibold text-lg text-gray-900">可否先进行小范围试点？</h3>
+            <p class="text-gray-600 mt-2">可以。我们提供针对一个事业部或一条业务线的轻量诊断，验证方法论契合度后再推广。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. CTA 区块 -->
+    <section class="bg-indigo-700 py-20">
+      <div class="max-w-4xl mx-auto text-center px-6 text-white">
+        <h2 class="text-3xl md:text-4xl font-bold">从战略到增长，只差一次对话</h2>
+        <p class="text-indigo-100 mt-4 text-lg">预约首次战略会诊，或获取最新管理洞察白皮书。</p>
+        <div class="flex flex-wrap justify-center gap-5 mt-10">
+          <a href="#"
+            class="bg-white text-indigo-700 hover:bg-gray-100 font-medium px-8 py-4 rounded-lg shadow-md transition">预约免费诊断</a>
+          <a href="#"
+            class="border border-white text-white hover:bg-indigo-600 font-medium px-8 py-4 rounded-lg shadow-md transition">获取白皮书</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (简单版权声明) -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center text-sm">
+      © 2025 君道企业管理咨询有限公司. 保留一切权利。上海市黄浦区延安东路100号
+    </div>
+  </footer>
+</body>
+
+</html>

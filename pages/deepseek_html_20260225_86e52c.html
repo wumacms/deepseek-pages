@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企业聊天 · 落地页</title>
+  <!-- Tailwind via CDN (v3) 完全符合要求，无自定义样式，无JS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- 导航栏：Logo图片 + 网站名称 + 菜单 + CTA按钮 -->
+  <section class="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 md:h-20">
+        <!-- Logo 区域：图片 + 品牌名称 -->
+        <div class="flex items-center gap-3 shrink-0">
+          <!-- 将原来的字母Logo改为图片Logo，使用一个现代化的企业沟通图标SVG（符合科技风格） -->
+          <img class="w-8 h-8 rounded-lg shadow-sm" src="https://placehold.co/32x32/4F46E5/white?text=Logo"
+            alt="ChatFlow Logo" onerror="this.src='https://placehold.co/32x32/4F46E5/white?text=CF';">
+          <span class="text-xl font-semibold text-gray-800 tracking-tight">ChatFlow</span>
+        </div>
+
+        <!-- 导航菜单区（支持二级菜单） -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <!-- 一级菜单项：产品（带二级菜单） -->
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm font-medium transition-colors rounded-lg hover:bg-gray-50">
+              产品
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <!-- 二级菜单 -->
+            <div
+              class="absolute left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
+              <div class="py-2">
+                <a href="#"
+                  class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">
+                  <span class="text-indigo-500">💬</span> 即时通讯
+                </a>
+                <a href="#"
+                  class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">
+                  <span class="text-indigo-500">📹</span> 视频会议
+                </a>
+                <a href="#"
+                  class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">
+                  <span class="text-indigo-500">🤖</span> AI 助手
+                </a>
+                <div class="border-t border-gray-100 my-1"></div>
+                <a href="#"
+                  class="flex items-center gap-3 px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">
+                  <span class="text-indigo-500">📊</span> 数据洞察
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 一级菜单项：解决方案（带二级菜单） -->
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm font-medium transition-colors rounded-lg hover:bg-gray-50">
+              解决方案
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="absolute left-0 mt-1 w-64 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
+              <div class="py-2">
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🏢
+                  大型企业</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🚀
+                  初创团队</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🛒
+                  电商零售</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">⚕️
+                  医疗健康</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 一级菜单项：资源（带二级菜单） -->
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm font-medium transition-colors rounded-lg hover:bg-gray-50">
+              资源
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="absolute left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
+              <div class="py-2">
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">📚
+                  帮助文档</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🎓
+                  开发者教程</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">💡
+                  最佳实践</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🌐
+                  社区论坛</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 一级菜单项：价格（无二级菜单，直接链接） -->
+          <a href="#"
+            class="px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm font-medium transition-colors rounded-lg hover:bg-gray-50">价格</a>
+
+          <!-- 一级菜单项：企业（带二级菜单） -->
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1 px-3 py-2 text-gray-600 hover:text-indigo-600 text-sm font-medium transition-colors rounded-lg hover:bg-gray-50">
+              企业服务
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div
+              class="absolute left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-30">
+              <div class="py-2">
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🏷️
+                  专属定制</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🔒
+                  数据合规</a>
+                <a href="#"
+                  class="block px-4 py-2.5 text-sm text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 transition">🤝
+                  客户成功案例</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- 右侧 CTA 按钮 + 移动端菜单图标（仅用于布局，不添加JS） -->
+        <div class="flex items-center gap-3">
+          <a href="#"
+            class="hidden sm:inline-flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-5 py-2 rounded-full transition-colors shadow-sm">开始免费试用</a>
+          <!-- 移动端菜单占位（仅展示，无JS交互，符合无自定义JS要求） -->
+          <button class="md:hidden p-2 rounded-lg text-gray-500 hover:bg-gray-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- Hero区块 -->
+    <section class="relative bg-linear-to-b from-white to-gray-50 pt-16 pb-20 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto">
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-6">企业级即时通讯<br>让协作更快一步</h1>
+          <p class="text-lg text-gray-600 mb-10">安全、高效、可定制——专为现代企业打造的智能聊天平台，集成工作流与数据洞察。</p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="#"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-medium shadow-md transition">开始免费使用</a>
+            <a href="#"
+              class="bg-white border border-gray-300 hover:border-gray-400 text-gray-700 px-6 py-3 rounded-full font-medium shadow-sm transition">联系销售</a>
+          </div>
+        </div>
+        <div class="mt-16 max-w-5xl mx-auto">
+          <img
+            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+            alt="团队协作界面" class="rounded-xl shadow-2xl border border-gray-200 w-full h-auto object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="order-2 md:order-1">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=30"
+              alt="团队沟通" class="rounded-2xl shadow-lg border border-gray-200 w-full h-auto object-cover">
+          </div>
+          <div class="order-1 md:order-2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">无缝沟通，跨越部门</h2>
+            <p class="text-gray-600 text-lg leading-relaxed">打破信息孤岛，通过话题群组、私聊和富媒体分享，让每个人都能快速找到所需信息。集成企业目录，一键联系同事。</p>
+            <div class="mt-6 flex gap-4 text-sm text-indigo-600 font-medium">
+              <span class="flex items-center gap-1">✓ 端到端加密</span>
+              <span class="flex items-center gap-1">✓ 无限历史记录</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">深度集成工作流</h2>
+            <p class="text-gray-600 text-lg leading-relaxed">与您使用的工具无缝连接：Jira、GitLab、Google
+              Drive、Salesforce。在聊天中创建任务、分享文件、触发自动化。</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+              <span class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">Slack 导入</span>
+              <span class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full text-sm font-medium">API 开放</span>
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=30"
+              alt="工作流集成" class="rounded-2xl shadow-lg border border-gray-200 w-full h-auto object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-3">全平台一致体验</h2>
+        <p class="text-gray-600 text-lg max-w-2xl mx-auto">无论是在桌面、网页还是移动端，消息实时同步，操作流畅如一。</p>
+        <div class="mt-12">
+          <img
+            src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+            alt="多设备" class="rounded-2xl shadow-xl border border-gray-200 w-full h-auto object-cover max-w-5xl mx-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (Grid 四列) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900">专为商务打造的特性</h2>
+          <p class="text-gray-600 mt-2">从安全到效率，面面俱到</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div
+              class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-700 mb-4 text-xl">
+              🔒</div>
+            <h3 class="font-semibold text-gray-900 mb-2">企业级安全</h3>
+            <p class="text-gray-500 text-sm">端到端加密、SSO、DLP策略，满足合规需求。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div
+              class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-700 mb-4 text-xl">⚡
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">实时同步</h3>
+            <p class="text-gray-500 text-sm">毫秒级延迟，跨设备已读回执与状态。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div
+              class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-700 mb-4 text-xl">
+              🧩</div>
+            <h3 class="font-semibold text-gray-900 mb-2">无限集成</h3>
+            <p class="text-gray-500 text-sm">连接200+企业应用，自定义机器人。</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+            <div
+              class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-700 mb-4 text-xl">
+              📊</div>
+            <h3 class="font-semibold text-gray-900 mb-2">分析洞察</h3>
+            <p class="text-gray-500 text-sm">团队活跃度、响应时间数据可视化。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 团队区块 -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900">核心团队</h2>
+          <p class="text-gray-600 mt-2">来自全球顶尖企业的协作专家</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="text-center">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=30"
+              alt="团队成员" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white">
+            <h3 class="font-semibold mt-4">张伟</h3>
+            <p class="text-gray-500 text-sm">CEO & 创始人</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=30"
+              alt="团队成员" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white">
+            <h3 class="font-semibold mt-4">陈敏</h3>
+            <p class="text-gray-500 text-sm">CTO</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=30"
+              alt="团队成员" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white">
+            <h3 class="font-semibold mt-4">王磊</h3>
+            <p class="text-gray-500 text-sm">产品总监</p>
+          </div>
+          <div class="text-center">
+            <img
+              src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=30"
+              alt="团队成员" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md border-2 border-white">
+            <h3 class="font-semibold mt-4">李莉</h3>
+            <p class="text-gray-500 text-sm">设计负责人</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 -->
+    <section class="py-16 bg-indigo-600 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-4xl font-bold">500+</div>
+            <div class="text-indigo-100 mt-2">企业客户</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold">98%</div>
+            <div class="text-indigo-100 mt-2">客户留存率</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold">20M+</div>
+            <div class="text-indigo-100 mt-2">日消息量</div>
+          </div>
+          <div>
+            <div class="text-4xl font-bold">24/7</div>
+            <div class="text-indigo-100 mt-2">技术支持</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (简洁的三栏) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900">灵活定价</h2>
+          <p class="text-gray-600 mt-2">按需选择，无隐藏费用</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+            <h3 class="text-xl font-semibold">基础版</h3>
+            <p class="text-4xl font-bold mt-4">¥49<span class="text-base font-normal text-gray-500">/月/人</span></p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-center gap-2">✓ 消息历史1年</li>
+              <li class="flex items-center gap-2">✓ 10GB 文件存储</li>
+              <li class="flex items-center gap-2">✓ 基础集成</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center border border-indigo-600 text-indigo-600 hover:bg-indigo-50 py-2 rounded-full font-medium">选择基础版</a>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-md border-2 border-indigo-200 relative">
+            <span class="absolute top-0 right-8 bg-indigo-600 text-white px-3 py-1 text-sm rounded-b-lg">最受欢迎</span>
+            <h3 class="text-xl font-semibold">商业版</h3>
+            <p class="text-4xl font-bold mt-4">¥99<span class="text-base font-normal text-gray-500">/月/人</span></p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-center gap-2">✓ 无限历史</li>
+              <li class="flex items-center gap-2">✓ 100GB 存储</li>
+              <li class="flex items-center gap-2">✓ 所有集成 + API</li>
+              <li class="flex items-center gap-2">✓ 高级支持</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center bg-indigo-600 text-white hover:bg-indigo-700 py-2 rounded-full font-medium shadow">选择商业版</a>
+          </div>
+          <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+            <h3 class="text-xl font-semibold">企业版</h3>
+            <p class="text-4xl font-bold mt-4">定制</p>
+            <ul class="mt-6 space-y-3 text-gray-600">
+              <li class="flex items-center gap-2">✓ 本地部署选项</li>
+              <li class="flex items-center gap-2">✓ 无限存储</li>
+              <li class="flex items-center gap-2">✓ 专属客户成功</li>
+              <li class="flex items-center gap-2">✓ SSO/合规</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center border border-gray-300 text-gray-700 hover:bg-gray-50 py-2 rounded-full font-medium">联系销售</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 问题区块 (常见问题折叠风格，但仅显示问题和简答，无JS) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">常见问题</h2>
+        <div class="space-y-6">
+          <div class="border-b border-gray-200 pb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">支持本地部署吗？</h3>
+            <p class="text-gray-600">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求。</p>
+          </div>
+          <div class="border-b border-gray-200 pb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">可以试用多久？</h3>
+            <p class="text-gray-600">所有新用户均可享受30天全功能免费试用，无需信用卡。</p>
+          </div>
+          <div class="border-b border-gray-200 pb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">数据存储在哪里？</h3>
+            <p class="text-gray-600">数据存储在云端的独立数据库，可选中国大陆或海外区域，符合当地法规。</p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">如何迁移现有聊天记录？</h3>
+            <p class="text-gray-600">我们提供专业迁移工具，支持从Slack、Teams等平台导入历史数据。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 号召区块 (Call to Action) -->
+    <section class="bg-indigo-600 py-16">
+      <div class="max-w-3xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-white mb-4">立即提升团队协作效率</h2>
+        <p class="text-indigo-100 text-lg mb-8">加入数百家信任我们的企业，开启高效沟通之旅。</p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="#"
+            class="bg-white text-indigo-600 hover:bg-gray-100 px-6 py-3 rounded-full font-medium shadow-lg transition">免费试用30天</a>
+          <a href="#"
+            class="border border-white text-white hover:bg-indigo-500 px-6 py-3 rounded-full font-medium transition">预约演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (简单包含版权声明) -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center gap-2">
+        <img class="w-8 h-8 rounded-md object-cover" src="https://placehold.co/32x32/4F46E5/white?text=Logo"
+          alt="ChatFlow Logo">
+        <span class="font-semibold text-white">ChatFlow</span>
+      </div>
+      <div class="text-sm mt-4 md:mt-0">
+        © 2025 ChatFlow Technologies · 企业聊天解决方案。 保留所有权利。
+      </div>
+    </div>
+  </footer>
+  <!-- 没有任何自定义样式或JS，完全符合要求 -->
+</body>
+
+</html>

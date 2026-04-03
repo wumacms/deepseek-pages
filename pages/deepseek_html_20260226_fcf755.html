@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爪爪医生 · 宠物医疗</title>
+    <!-- Tailwind via CDN + 基础层 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外柔和粉彩 (无自定义样式, 仅用tailwind类) -->
+</head>
+<body class="bg-pink-50 font-sans text-gray-700 antialiased">
+
+    <!-- 导航栏 (温馨粉黄调) -->
+    <header class="bg-white/90 backdrop-blur-sm sticky top-0 z-30 border-b border-pink-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-amber-200 rounded-2xl flex items-center justify-center text-3xl shadow-sm">🐾</div>
+                    <span class="font-bold text-xl text-rose-400 tracking-tight">爪爪医宠</span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <nav class="hidden md:flex space-x-8 text-base font-medium">
+                    <a href="#" class="text-rose-400 hover:text-amber-500 transition">首页</a>
+                    <a href="#" class="text-rose-400 hover:text-amber-500 transition">医疗团队</a>
+                    <a href="#" class="text-rose-400 hover:text-amber-500 transition">服务项目</a>
+                    <a href="#" class="text-rose-400 hover:text-amber-500 transition">在线咨询</a>
+                    <a href="#" class="text-rose-400 hover:text-amber-500 transition">关于我们</a>
+                </nav>
+                <!-- CTA 按钮 (导航右侧) -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-rose-400 px-4 py-2 text-sm font-medium hover:text-amber-500">登录</a>
+                    <a href="#" class="bg-gradient-to-r from-amber-300 to-rose-300 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-lg hover:scale-105 transition">预约问诊</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========= 首屏区块 (左图右文本宠物医疗定制) ========= -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-rose-400 leading-tight">宠爱一生 <br><span class="text-amber-400">专业医疗陪伴</span></h1>
+                    <p class="text-lg text-gray-600 mt-6 max-w-xl">24小时宠物视频问诊 · 全国三公里急救助 · 疫苗体检套餐</p>
+                    <p class="text-gray-500 mt-2">从日常保健到复杂手术，三甲兽医团队为毛孩子健康护航。</p>
+                    <div class="flex flex-wrap gap-4 mt-8 justify-center md:justify-start">
+                        <a href="#" class="bg-amber-300 text-white px-7 py-3.5 rounded-full font-semibold shadow-md hover:bg-amber-400 transition">立即体验</a>
+                        <a href="#" class="border-2 border-rose-200 text-rose-400 px-7 py-3.5 rounded-full font-semibold hover:bg-rose-50 transition">联系兽医</a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <img class="rounded-3xl shadow-xl object-cover w-full h-80 md:h-96" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="宠物医生和猫狗">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 合作伙伴区块 (动物医院/药企) ========= -->
+        <section class="bg-amber-50/60 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-rose-400">值得信赖的生态伙伴</h2>
+                <p class="text-center text-gray-500 mt-2">与国内外顶尖动物医疗机构深度合作</p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 mt-10">
+                    <!-- 用6个伙伴(伪logo以表情替代，体现温馨) -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm flex flex-col items-center"><span class="text-4xl mb-2">🏥</span><span class="font-medium text-rose-300">瑞鹏集团</span><span class="text-xs text-gray-400">战略合作</span></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm flex flex-col items-center"><span class="text-4xl mb-2">💊</span><span class="font-medium text-rose-300">硕腾动保</span><span class="text-xs text-gray-400">药品直供</span></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm flex flex-col items-center"><span class="text-4xl mb-2">📡</span><span class="font-medium text-rose-300">迈瑞医疗</span><span class="text-xs text-gray-400">影像设备</span></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm flex flex-col items-center"><span class="text-4xl mb-2">🧪</span><span class="font-medium text-rose-300">爱德士</span><span class="text-xs text-gray-400">诊断伙伴</span></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm flex flex-col items-center"><span class="text-4xl mb-2">🇫🇷</span><span class="font-medium text-rose-300">皇家宠物</span><span class="text-xs text-gray-400">处方粮</span></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm flex flex-col items-center"><span class="text-4xl mb-2">🏆</span><span class="font-medium text-rose-300">中农大</span><span class="text-xs text-gray-400">教学医院</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左图右文区块 (宠物医疗特色) ========= -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1 order-2 md:order-1">
+                    <img class="rounded-3xl shadow-xl w-full h-80 object-cover" src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="兽医正在用听诊器检查猫咪">
+                </div>
+                <div class="flex-1 order-1 md:order-2">
+                    <h2 class="text-3xl font-bold text-rose-400">跨院病历 · 一鍵同步</h2>
+                    <p class="text-gray-600 mt-4 text-lg">打破信息孤岛，电子病历云端共享。无论在哪家合作医院就诊，过往检查、疫苗记录随时调阅，危急值秒级提醒。</p>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="bg-amber-100 text-amber-600 px-4 py-2 rounded-full text-sm">🔐 加密存储</span>
+                        <span class="bg-amber-100 text-amber-600 px-4 py-2 rounded-full text-sm">📜 终身档案</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左文右图区块 ========= -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="flex-1">
+                        <h2 class="text-3xl font-bold text-rose-400">远程诊疗 + 设备互联</h2>
+                        <p class="text-gray-600 mt-4 text-lg">与家用智能体重秤、血压计、血糖仪数据打通。兽医实时查看宠物体征，开具电子处方，药品配送到家。</p>
+                        <div class="flex flex-wrap gap-3 mt-6">
+                            <span class="border border-amber-200 text-amber-600 px-4 py-2 rounded-full text-sm">🏠 家用设备接入</span>
+                            <span class="border border-amber-200 text-amber-600 px-4 py-2 rounded-full text-sm">📦 电子处方流转</span>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <img class="rounded-3xl shadow-xl w-full h-80 object-cover" src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="连接智能设备的宠物项圈">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 特性区块 (专为宠物医疗打造) ========= -->
+        <section class="py-16 bg-amber-50/40">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-rose-400">专为宠物医疗打造的特性</h2>
+                <p class="text-center text-gray-500 mt-2">从急诊响应到慢病管理，面面俱到</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                    <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition border border-pink-50"><span class="text-5xl">🆘</span><h3 class="text-xl font-semibold text-rose-400 mt-4">急诊绿通</h3><p class="text-gray-500">三公里内合作医院优先接诊，救护车转运协调。</p></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition border border-pink-50"><span class="text-5xl">📹</span><h3 class="text-xl font-semibold text-rose-400 mt-4">24h视频问诊</h3><p class="text-gray-500">执业兽医秒级接听，夜间也能安抚毛孩子不适。</p></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition border border-pink-50"><span class="text-5xl">🧬</span><h3 class="text-xl font-semibold text-rose-400 mt-4">基因筛查</h3><p class="text-gray-500">品种遗传病风险评估，繁育/养宠必备。</p></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm hover:shadow-md transition border border-pink-50"><span class="text-5xl">📊</span><h3 class="text-xl font-semibold text-rose-400 mt-4">健康周报</h3><p class="text-gray-500">体重、活动量、用药提醒，AI分析趋势。</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 客户案例区块 ========= -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-rose-400">他们都在用爪爪医宠</h2>
+                <p class="text-center text-gray-500 mt-2">来自猫舍、救助站与宠物主的信赖</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <!-- 案例1 -->
+                    <div class="bg-pink-50/50 p-6 rounded-3xl"><div class="flex items-center gap-2"><span class="text-3xl">🏢</span><span class="font-bold text-rose-300">爱心猫舍</span><span class="text-sm text-gray-400 ml-auto">繁育人</span></div><p class="mt-3 text-gray-600 italic">“幼猫体检套餐太方便了，疫苗提醒再也没错过。”<br></p><div class="flex items-center mt-4"><span class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-lg">😺</span><span class="ml-2 font-medium">陈姐</span><span class="text-xs text-gray-400 ml-2">主理人</span></div></div>
+                    <!-- 案例2 -->
+                    <div class="bg-pink-50/50 p-6 rounded-3xl"><div class="flex items-center gap-2"><span class="text-3xl">🏥</span><span class="font-bold text-rose-300">阳光动物医院</span><span class="text-sm text-gray-400 ml-auto">连锁机构</span></div><p class="mt-3 text-gray-600 italic">“接入远程会诊系统，转诊率降低30%，客户满意度飙升。”<br></p><div class="flex items-center mt-4"><span class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-lg">👩‍⚕️</span><span class="ml-2 font-medium">李院长</span><span class="text-xs text-gray-400 ml-2">技术院长</span></div></div>
+                    <!-- 案例3 -->
+                    <div class="bg-pink-50/50 p-6 rounded-3xl"><div class="flex items-center gap-2"><span class="text-3xl">🐕</span><span class="font-bold text-rose-300"> paws救助站</span><span class="text-sm text-gray-400 ml-auto">公益组织</span></div><p class="mt-3 text-gray-600 italic">“批量绝育优惠+术后护理指导，帮我们照顾了200多只流浪狗。”<br></p><div class="flex items-center mt-4"><span class="w-8 h-8 bg-amber-200 rounded-full flex items-center justify-center text-lg">🧔</span><span class="ml-2 font-medium">阿杰</span><span class="text-xs text-gray-400 ml-2">负责人</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 团队区块 (核心兽医团队) ========= -->
+        <section class="py-16 bg-amber-50/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-rose-400">核心医疗团队</h2>
+                <p class="text-center text-gray-500 mt-2">来自顶尖兽医院校的临床专家</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+                    <div class="text-center"><div class="w-28 h-28 mx-auto bg-amber-100 rounded-full flex items-center justify-center text-5xl border-4 border-white shadow-md">🐶</div><h4 class="font-bold text-rose-400 mt-3">张文明</h4><p class="text-sm text-gray-500">外科/骨专科</p></div>
+                    <div class="text-center"><div class="w-28 h-28 mx-auto bg-amber-100 rounded-full flex items-center justify-center text-5xl border-4 border-white shadow-md">🐱</div><h4 class="font-bold text-rose-400 mt-3">赵心怡</h4><p class="text-sm text-gray-500">内科/猫科</p></div>
+                    <div class="text-center"><div class="w-28 h-28 mx-auto bg-amber-100 rounded-full flex items-center justify-center text-5xl border-4 border-white shadow-md">🐹</div><h4 class="font-bold text-rose-400 mt-3">王佳一</h4><p class="text-sm text-gray-500">异宠专家</p></div>
+                    <div class="text-center"><div class="w-28 h-28 mx-auto bg-amber-100 rounded-full flex items-center justify-center text-5xl border-4 border-white shadow-md">🦜</div><h4 class="font-bold text-rose-400 mt-3">刘 洋</h4><p class="text-sm text-gray-500">影像/心脏科</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 统计区块 ========= -->
+        <section class="bg-rose-100/70 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div><div class="text-4xl font-bold text-amber-500">200+</div><div class="text-rose-400">合作医院</div></div>
+                <div><div class="text-4xl font-bold text-amber-500">15k+</div><div class="text-rose-400">诊疗案例</div></div>
+                <div><div class="text-4xl font-bold text-amber-500">98%</div><div class="text-rose-400">主人口碑</div></div>
+                <div><div class="text-4xl font-bold text-amber-500">24/7</div><div class="text-rose-400">急诊在线</div></div>
+            </div>
+        </section>
+
+        <!-- ========= 价格区块 (医疗套餐) ========= -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-rose-400">医疗套餐 · 透明定价</h2>
+                <p class="text-center text-gray-500 mt-2">无捆绑消费，适合各类毛孩子</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                    <!-- 基础版 -->
+                    <div class="border border-pink-100 rounded-3xl p-8 bg-pink-50/20"><h3 class="text-xl font-bold text-rose-400">基础保健</h3><p class="text-amber-400 text-4xl font-semibold mt-4">¥399<span class="text-sm text-gray-400 ml-2">/年</span></p><ul class="mt-6 space-y-2 text-gray-600"><li>✓ 两次全面体检</li><li>✓ 疫苗提醒+折扣</li><li>✓ 线上问诊5次</li></ul><a href="#" class="mt-8 block text-center border border-amber-200 text-amber-600 py-3 rounded-full hover:bg-amber-50">选择基础</a></div>
+                    <!-- 商业版(热门) 加亮 -->
+                    <div class="border-2 border-amber-300 rounded-3xl p-8 bg-amber-50 shadow-lg relative"><span class="absolute -top-3 right-6 bg-amber-300 text-white px-3 py-1 rounded-full text-xs">最受欢迎</span><h3 class="text-xl font-bold text-rose-400">安心医疗</h3><p class="text-amber-400 text-4xl font-semibold mt-4">¥899<span class="text-sm text-gray-400 ml-2">/年</span></p><ul class="mt-6 space-y-2 text-gray-600"><li>✓ 包含基础全部</li><li>✓ 急诊垫付 2000元</li><li>✓ 专科专家号</li><li>✓ 体外驱虫药6折</li></ul><a href="#" class="mt-8 block text-center bg-amber-300 text-white py-3 rounded-full shadow-md hover:bg-amber-400">立即开通</a></div>
+                    <!-- 企业版(医院) -->
+                    <div class="border border-pink-100 rounded-3xl p-8 bg-pink-50/20"><h3 class="text-xl font-bold text-rose-400">医院/机构</h3><p class="text-amber-400 text-4xl font-semibold mt-4">定制</p><ul class="mt-6 space-y-2 text-gray-600"><li>✓ 远程会诊系统</li><li>✓ 双向转诊平台</li><li>✓ 专属客户成功</li></ul><a href="#" class="mt-8 block text-center border border-amber-200 text-amber-600 py-3 rounded-full hover:bg-amber-50">联系合作</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 常见问题区块 ========= -->
+        <section class="bg-amber-50/40 py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-rose-400">常见问题</h2>
+                <div class="mt-10 space-y-5">
+                    <details class="bg-white rounded-2xl p-6 shadow-sm"><summary class="font-semibold text-rose-400 cursor-pointer">问：夜间急诊真的有人接听吗？</summary><p class="mt-3 text-gray-500">是的，我们与全国30+城市夜间急诊医院联动，视频端也有值班兽医。</p></details>
+                    <details class="bg-white rounded-2xl p-6 shadow-sm"><summary class="font-semibold text-rose-400 cursor-pointer">问：体检套餐包含哪些项目？</summary><p class="mt-3 text-gray-500">基础包含体格、血常规、粪检、耳道；安心套餐增加生化、B超。</p></details>
+                    <details class="bg-white rounded-2xl p-6 shadow-sm"><summary class="font-semibold text-rose-400 cursor-pointer">问：电子病历可以分享给其他医院吗？</summary><p class="mt-3 text-gray-500">经过主人授权，合作医院间可一键调阅，减少重复检查。</p></details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 应用下载区块 (公众号+小程序) ========= -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-rose-400">随时宠爱 · 在您身边</h2>
+                <p class="text-center text-gray-500 mt-2">微信小程序 · 公众号 · 兽医端APP</p>
+                <div class="flex flex-wrap justify-center gap-10 mt-12">
+                    <div class="text-center"><span class="text-6xl">📱</span><p class="font-medium text-rose-300 mt-2">iOS 小程序</p><span class="inline-block mt-2 bg-gray-100 p-2 rounded-xl">马上搜“爪爪医宠”</span></div>
+                    <div class="text-center"><span class="text-6xl">🤖</span><p class="font-medium text-rose-300 mt-2">Android 小程序</p><span class="inline-block mt-2 bg-gray-100 p-2 rounded-xl">扫码体验</span></div>
+                    <div class="text-center"><span class="text-6xl">💻</span><p class="font-medium text-rose-300 mt-2">Windows 医生端</p><span class="inline-block mt-2 bg-gray-100 p-2 rounded-xl">合作医院下载</span></div>
+                    <div class="text-center"><span class="text-6xl">🖥️</span><p class="font-medium text-rose-300 mt-2">Mac 医生端</p><span class="inline-block mt-2 bg-gray-100 p-2 rounded-xl">合作医院下载</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= CTA 区块 ========= -->
+        <section class="bg-gradient-to-r from-amber-100 to-pink-100 py-20">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-4xl font-bold text-rose-400">给毛孩子更好的呵护</h2>
+                <p class="text-lg text-gray-600 mt-3">新用户首次视频问诊免费，赠体外驱虫药折扣</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#" class="bg-rose-300 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-rose-400 transition">免费试用30天咨询</a>
+                    <a href="#" class="border-2 border-rose-200 bg-white/80 text-rose-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-white transition">预约专家演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========= 页脚 (品牌Logo、版权、地址、联系方式、微信二维码) ========= -->
+    <footer class="bg-white border-t border-pink-100 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- 品牌logo + 版权 -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-4xl">🐾</span>
+                        <span class="text-xl font-bold text-rose-400">爪爪医宠</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-4">© 2025 爪爪医疗科技<br>让陪伴更健康</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h5 class="font-semibold text-rose-300 mb-3">总部地址</h5>
+                    <p class="text-sm text-gray-500">上海市浦东新区<br>宠物医疗创新园B2栋</p>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h5 class="font-semibold text-rose-300 mb-3">联系方式</h5>
+                    <p class="text-sm text-gray-500">400-882-宠物<br>service@pawcare.cn</p>
+                </div>
+                <!-- 微信公众号二维码 (模拟) -->
+                <div>
+                    <h5 class="font-semibold text-rose-300 mb-3">公众号</h5>
+                    <div class="bg-amber-50 w-24 h-24 rounded-xl flex items-center justify-center border-2 border-amber-200">
+                        <span class="text-5xl">📱</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">扫码关注领福利</p>
+                </div>
+                <!-- 备用二维码/小程序 -->
+                <div>
+                    <h5 class="font-semibold text-rose-300 mb-3">小程序</h5>
+                    <div class="bg-amber-50 w-24 h-24 rounded-xl flex items-center justify-center border-2 border-amber-200">
+                        <span class="text-5xl">🐶</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">扫一扫快速问诊</p>
+                </div>
+            </div>
+            <div class="border-t border-pink-100 mt-10 pt-6 text-center text-xs text-gray-400">
+                温馨 · 可爱 · 专业宠物医疗 · 本站所有图片仅作示意
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

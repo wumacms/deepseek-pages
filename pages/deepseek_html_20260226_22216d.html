@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>折射影像 · 商业摄影工作室</title>
+    <!-- Tailwind via CDN + 基础层样式 (只使用Tailwind工具类，无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 追加黑金主题色配置：保持纯tailwind，仅通过调色板类实现黑金高级感 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 定义黑金氛围：深色背景用锌/石色，金色用琥珀/黄橙色调
+                        // 但在实际类中直接使用 gray/amber/zinc 等标准类，不写自定义css
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white antialiased font-sans">
+
+    <!-- 导航栏 (logo+标题+CTA按钮，不含菜单) 黑金极简 -->
+    <header class="border-b border-amber-500/20 bg-black/90 sticky top-0 z-50 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <!-- 模拟logo金色图标 -->
+                <span class="text-3xl filter drop-shadow-lg">📸</span>
+                <span
+                    class="text-xl font-bold tracking-tight bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent">折射影像</span>
+                <span
+                    class="hidden sm:inline-block text-sm font-light text-amber-200/60 ml-2 tracking-widest uppercase">·
+                    Commercial</span>
+            </div>
+            <!-- CTA 按钮 (黑金风格) -->
+            <div>
+                <a href="#contact"
+                    class="inline-block px-6 py-2.5 text-sm font-semibold uppercase tracking-wider border border-amber-500 text-amber-400 bg-transparent hover:bg-amber-500 hover:text-black transition-all duration-300 shadow-[0_0_15px_rgba(245,158,11,0.3)]">预约拍摄</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主要内容区块 全部基于提供的JSON数据结构 + 商业摄影内容 + 视觉冲击/黑金配色 -->
+
+    <!-- 1. 首屏区块 (Hero) - 视觉冲击 大图背景 -->
+    <section class="relative bg-black">
+        <!-- 使用unsplash商业摄影图 (摄影棚/相机/光线) 作为背景，深色叠加层 -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1749372509806-538996fe834e?q=60&w=900&auto=format&fit=crop"
+                alt="商业摄影首屏背景" class="w-full h-full object-cover opacity-40 mix-blend-luminosity">
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-8 py-28 md:py-36">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-[1.1]">
+                    <span class="block text-white">光影叙事</span>
+                    <span class="block text-amber-400 drop-shadow-[0_0_30px_rgba(245,158,11,0.7)]">商业质感</span>
+                </h1>
+                <p
+                    class="text-lg md:text-2xl text-gray-300 mt-6 max-w-2xl font-light border-l-4 border-amber-500 pl-5 italic">
+                    全球一线品牌信赖的商业摄影团队 · 从产品静物到广告大片</p>
+                <p class="text-gray-400 mt-3 text-base">上海 · 伦敦 · 纽约 | 高端电商/品牌视觉/创意广告</p>
+                <div class="flex flex-wrap gap-5 mt-10">
+                    <a href="#contact"
+                        class="px-8 py-4 bg-amber-500 text-black font-bold uppercase tracking-widest text-sm hover:bg-amber-400 shadow-2xl shadow-amber-500/30 transition">开始合作</a>
+                    <a href="#portfolio"
+                        class="px-8 py-4 border border-amber-500/60 text-amber-300 font-bold uppercase tracking-widest text-sm hover:bg-amber-500/10 transition">作品案例</a>
+                </div>
+            </div>
+        </div>
+        <!-- 金边装饰 -->
+        <div
+            class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent">
+        </div>
+    </section>
+
+    <!-- 2. 左图右文区块 (商业摄影服务: 静物/广告) 对应JSON结构 -->
+    <section class="bg-zinc-950 py-20 md:py-28 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <!-- 左图 -->
+            <div class="relative group overflow-hidden shadow-2xl shadow-amber-900/20">
+                <img src="https://images.unsplash.com/photo-1693166738900-d83028bf9978?q=80&w=1578&auto=format&fit=crop"
+                    alt="商业静物摄影"
+                    class="w-full h-full object-cover aspect-[4/3] grayscale hover:grayscale-0 transition duration-700">
+                <div class="absolute inset-0 border border-amber-500/30 pointer-events-none"></div>
+                <!-- 金角标 -->
+                <span class="absolute top-4 left-4 text-amber-500 text-4xl opacity-60">✦</span>
+            </div>
+            <!-- 右文 -->
+            <div>
+                <h2 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">静物 · 广告</h2>
+                <p class="text-amber-400 text-sm tracking-[0.3em] mt-2 font-semibold">STILL LIFE & ADVERTISING</p>
+                <div class="w-16 h-0.5 bg-amber-500 my-6"></div>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    每处光影、每个纹理都被精心雕琢。我们为奢侈品、美妆、3C数码提供超高清静物摄影，以极致细节呈现产品灵魂。与顶尖美术指导合作，让广告视觉拥有电影质感。</p>
+                <!-- highlights 模拟 -->
+                <div class="flex gap-4 mt-8">
+                    <span
+                        class="px-5 py-2 bg-black/60 border border-amber-500/50 text-amber-400 text-sm font-medium tracking-wider">✨
+                        8K 解析度</span>
+                    <span
+                        class="px-5 py-2 bg-black/60 border border-amber-500/50 text-amber-400 text-sm font-medium tracking-wider">⚡
+                        布光艺术</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 左文右图区块 (时尚/人像摄影) 对应JSON结构 -->
+    <section class="bg-black py-20 md:py-28 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <!-- 左文 -->
+            <div class="order-2 md:order-1">
+                <h2 class="text-4xl md:text-5xl font-black text-white uppercase tracking-tight">时尚 · 人像</h2>
+                <p class="text-amber-400 text-sm tracking-[0.3em] mt-2 font-semibold">FASHION & PORTRAIT</p>
+                <div class="w-16 h-0.5 bg-amber-500 my-6"></div>
+                <p class="text-gray-300 text-lg leading-relaxed">
+                    捕捉情绪与动态，为服装品牌、模特卡、杂志企划打造张力十足的时尚大片。合作国内外一线造型团队，用光影勾勒身体与服装的力量，让每一帧都成为视觉记忆点。</p>
+                <!-- tags 模拟 -->
+                <div class="flex flex-wrap gap-3 mt-8">
+                    <span
+                        class="px-4 py-1.5 bg-amber-500/10 text-amber-300 border border-amber-500/30 text-sm">#高定系列</span>
+                    <span
+                        class="px-4 py-1.5 bg-amber-500/10 text-amber-300 border border-amber-500/30 text-sm">#街拍大片</span>
+                    <span
+                        class="px-4 py-1.5 bg-amber-500/10 text-amber-300 border border-amber-500/30 text-sm">#杂志封面</span>
+                </div>
+            </div>
+            <!-- 右图 -->
+            <div class="order-1 md:order-2 relative overflow-hidden shadow-2xl shadow-amber-900/20">
+                <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=60&w=900&auto=format&fit=crop"
+                    alt="时尚人像摄影"
+                    class="w-full h-full object-cover aspect-[4/5] grayscale hover:grayscale-0 transition duration-700">
+                <div class="absolute inset-0 border border-amber-500/30 pointer-events-none"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 上文下图区块 (空间/建筑摄影) 对应JSON结构  -->
+    <section class="bg-zinc-950 py-20 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-black uppercase text-white">空间 · 建筑</h2>
+            <p class="text-amber-400 text-sm tracking-[0.3em] mt-2">INTERIOR & ARCHITECTURE</p>
+            <div class="w-16 h-0.5 bg-amber-500 mx-auto my-6"></div>
+            <p class="text-gray-400 max-w-2xl mx-auto text-lg">酒店、展厅、建筑空间——我们利用自然光线与移轴镜头，呈现设计的秩序与温度。为顶尖建筑事务所提供专业空间摄影服务。
+            </p>
+            <!-- image 全宽 -->
+            <div class="mt-12 relative group overflow-hidden shadow-2xl shadow-amber-900/30">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=60&w=900&auto=format&fit=crop"
+                    alt="建筑空间摄影"
+                    class="w-full h-[500px] object-cover grayscale hover:grayscale-0 transition duration-1000">
+                <div class="absolute inset-0 border border-amber-500/30 pointer-events-none"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 特性区块 (商业摄影核心优势)  对应JSON 4项特性 -->
+    <section class="bg-black py-20 md:py-28 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black uppercase text-white">影像之力</h2>
+                <p class="text-amber-400/80 mt-3 text-xl">从技术到审美，定义商业摄影新高度</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 特性 1 -->
+                <div
+                    class="border border-amber-500/20 bg-zinc-900/50 p-8 backdrop-blur-sm hover:border-amber-500/70 transition group">
+                    <span class="text-5xl text-amber-400 group-hover:scale-110 inline-block">🔲</span>
+                    <h3 class="text-2xl font-bold text-white mt-4">中画幅极致</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">哈苏/飞思百万级像素，16bit色深，捕捉肉眼不可见的细节层次。</p>
+                </div>
+                <!-- 特性 2 -->
+                <div
+                    class="border border-amber-500/20 bg-zinc-900/50 p-8 backdrop-blur-sm hover:border-amber-500/70 transition group">
+                    <span class="text-5xl text-amber-400 group-hover:scale-110 inline-block">💡</span>
+                    <h3 class="text-2xl font-bold text-white mt-4">电影级布光</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">ARRI镝灯、Profoto闪灯系统，精准塑造光比与质感。</p>
+                </div>
+                <!-- 特性 3 -->
+                <div
+                    class="border border-amber-500/20 bg-zinc-900/50 p-8 backdrop-blur-sm hover:border-amber-500/70 transition group">
+                    <span class="text-5xl text-amber-400 group-hover:scale-110 inline-block">🎨</span>
+                    <h3 class="text-2xl font-bold text-white mt-4">顶级后期</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">10年经验修图师，d&b艺术微喷，色彩管理国际标准。</p>
+                </div>
+                <!-- 特性 4 -->
+                <div
+                    class="border border-amber-500/20 bg-zinc-900/50 p-8 backdrop-blur-sm hover:border-amber-500/70 transition group">
+                    <span class="text-5xl text-amber-400 group-hover:scale-110 inline-block">🌍</span>
+                    <h3 class="text-2xl font-bold text-white mt-4">全球拍摄</h3>
+                    <p class="text-gray-400 mt-2 text-sm leading-relaxed">常驻上海/伦敦，可赴全球任何地点进行专业拍摄。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 团队区块 (核心摄影团队) 对应JSON结构 -->
+    <section class="bg-zinc-950 py-20 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black uppercase text-white">核心团队</h2>
+                <p class="text-amber-400/80 mt-3">视觉背后的灵魂人物</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 成员 1 -->
+                <div class="group">
+                    <div class="overflow-hidden border border-amber-500/30 relative">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=60&w=900&auto=format&fit=crop"
+                            alt="陈砚"
+                            class="w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
+                        </div>
+                    </div>
+                    <div class="mt-4 border-l-2 border-amber-500 pl-4">
+                        <h3 class="text-2xl font-bold text-white">陈砚</h3>
+                        <p class="text-amber-400 text-sm">首席摄影师 / 创始人</p>
+                        <p class="text-gray-400 text-sm mt-1">前VOGUE特邀摄影师，20年时尚广告经验</p>
+                    </div>
+                </div>
+                <!-- 成员 2 -->
+                <div class="group">
+                    <div class="overflow-hidden border border-amber-500/30 relative">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=60&w=900&auto=format&fit=crop"
+                            alt="李蔚然"
+                            class="w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
+                        </div>
+                    </div>
+                    <div class="mt-4 border-l-2 border-amber-500 pl-4">
+                        <h3 class="text-2xl font-bold text-white">李蔚然</h3>
+                        <p class="text-amber-400 text-sm">艺术指导 / 置景师</p>
+                        <p class="text-gray-400 text-sm mt-1">多支国际4A广告美术指导，善于构建视觉奇观</p>
+                    </div>
+                </div>
+                <!-- 成员 3 -->
+                <div class="group">
+                    <div class="overflow-hidden border border-amber-500/30 relative">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=60&w=900&auto=format&fit=crop"
+                            alt="张天翼"
+                            class="w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
+                        </div>
+                    </div>
+                    <div class="mt-4 border-l-2 border-amber-500 pl-4">
+                        <h3 class="text-2xl font-bold text-white">张天翼</h3>
+                        <p class="text-amber-400 text-sm">数码后期总监</p>
+                        <p class="text-gray-400 text-sm mt-1">Capture One认证专家，电影级调色</p>
+                    </div>
+                </div>
+                <!-- 成员 4 -->
+                <div class="group">
+                    <div class="overflow-hidden border border-amber-500/30 relative">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=60&w=900&auto=format&fit=crop"
+                            alt="周梦"
+                            class="w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70">
+                        </div>
+                    </div>
+                    <div class="mt-4 border-l-2 border-amber-500 pl-4">
+                        <h3 class="text-2xl font-bold text-white">周梦</h3>
+                        <p class="text-amber-400 text-sm">制片 / 客户总监</p>
+                        <p class="text-gray-400 text-sm mt-1">协调全球资源，确保项目完美落地</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 统计区块 (商业摄影战绩) -->
+    <section class="bg-black py-16 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-5xl font-black text-amber-400">500+</div>
+                <div class="text-gray-400 uppercase tracking-wider text-sm mt-2">全球品牌</div>
+            </div>
+            <div>
+                <div class="text-5xl font-black text-amber-400">98%</div>
+                <div class="text-gray-400 uppercase tracking-wider text-sm mt-2">客户续约率</div>
+            </div>
+            <div>
+                <div class="text-5xl font-black text-amber-400">20+</div>
+                <div class="text-gray-400 uppercase tracking-wider text-sm mt-2">国际奖项</div>
+            </div>
+            <div>
+                <div class="text-5xl font-black text-amber-400">24h</div>
+                <div class="text-gray-400 uppercase tracking-wider text-sm mt-2">极速出片</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 价格区块 (商业摄影套餐)  基于JSON结构灵活定价 -->
+    <section class="bg-zinc-950 py-20 border-t border-amber-500/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black uppercase text-white">定价方案</h2>
+                <p class="text-amber-400/80 mt-3">透明 · 灵活 · 按需定制</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 基础版 -->
+                <div class="bg-black border border-amber-500/20 p-8 flex flex-col">
+                    <h3 class="text-2xl font-bold text-white">静物/单品</h3>
+                    <div class="mt-4 flex items-end gap-1">
+                        <span class="text-5xl font-black text-amber-400">299</span>
+                        <span class="text-gray-400 mb-1">/ 套</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">起拍价，含精修3张</p>
+                    <ul class="mt-6 space-y-3 text-gray-300">
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 专业棚拍/外景</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 基础布光方案</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 百度网盘交付</li>
+                    </ul>
+                    <a href="#"
+                        class="mt-8 text-center py-3 border border-amber-500/50 text-amber-400 hover:bg-amber-500 hover:text-black transition font-bold">选择方案</a>
+                </div>
+                <!-- 商业版 (热门) -->
+                <div
+                    class="bg-black border-2 border-amber-500 p-8 flex flex-col relative scale-105 shadow-2xl shadow-amber-500/20">
+                    <span
+                        class="absolute top-0 right-0 bg-amber-500 text-black px-4 py-1 text-xs font-bold uppercase tracking-wider">推荐</span>
+                    <h3 class="text-2xl font-bold text-white">时装/广告</h3>
+                    <div class="mt-4 flex items-end gap-1">
+                        <span class="text-5xl font-black text-amber-400">899</span>
+                        <span class="text-gray-400 mb-1">/ 天</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">全团队出动，精修12张</p>
+                    <ul class="mt-6 space-y-3 text-gray-300">
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 摄影师+灯光助理+造型</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> Profoto高端灯光组</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 电影级后期调色</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 商业授权</li>
+                    </ul>
+                    <a href="#"
+                        class="mt-8 text-center py-3 bg-amber-500 text-black font-bold hover:bg-amber-400 transition">立即预约</a>
+                </div>
+                <!-- 企业版 -->
+                <div class="bg-black border border-amber-500/20 p-8 flex flex-col">
+                    <h3 class="text-2xl font-bold text-white">品牌年度</h3>
+                    <div class="mt-4 flex items-end gap-1">
+                        <span class="text-4xl font-black text-amber-400">定制</span>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-1">根据需求报价</p>
+                    <ul class="mt-6 space-y-3 text-gray-300">
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 全球拍摄支持</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 无限张数精修</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 视觉策略顾问</li>
+                        <li class="flex items-center gap-2"><span class="text-amber-500">✦</span> 独家买断可选</li>
+                    </ul>
+                    <a href="#"
+                        class="mt-8 text-center py-3 border border-amber-500/50 text-amber-400 hover:bg-amber-500 hover:text-black transition font-bold">联系销售</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. 常见问题区块 (摄影FAQ) -->
+    <section class="bg-black py-20 border-t border-amber-500/10">
+        <div class="max-w-4xl mx-auto px-6 md:px-8">
+            <h2 class="text-4xl font-black uppercase text-white text-center">常见问题</h2>
+            <p class="text-center text-amber-400/80 mt-2">拍摄前您想知道的</p>
+            <div class="mt-16 space-y-6">
+                <div class="border border-amber-500/20 p-6 bg-zinc-900/30">
+                    <h3 class="text-xl font-bold text-amber-400 flex items-center gap-2"><span class="text-2xl">?</span>
+                        可以上门拍摄吗？</h3>
+                    <p class="text-gray-300 mt-2 ml-7">当然，我们提供全国及全球上门拍摄服务，差旅费用根据项目情况实报或包含在报价内。</p>
+                </div>
+                <div class="border border-amber-500/20 p-6 bg-zinc-900/30">
+                    <h3 class="text-xl font-bold text-amber-400 flex items-center gap-2"><span class="text-2xl">?</span>
+                        修图可以修改几次？</h3>
+                    <p class="text-gray-300 mt-2 ml-7">商业套餐包含两轮精修调整，确保最终效果符合品牌要求，超出部分可协商。</p>
+                </div>
+                <div class="border border-amber-500/20 p-6 bg-zinc-900/30">
+                    <h3 class="text-xl font-bold text-amber-400 flex items-center gap-2"><span class="text-2xl">?</span>
+                        如何保证版权？</h3>
+                    <p class="text-gray-300 mt-2 ml-7">所有交付作品均提供商业授权书，版权归属根据合同执行，保障客户权益。</p>
+                </div>
+                <div class="border border-amber-500/20 p-6 bg-zinc-900/30">
+                    <h3 class="text-xl font-bold text-amber-400 flex items-center gap-2"><span class="text-2xl">?</span>
+                        拍摄需要多久准备？</h3>
+                    <p class="text-gray-300 mt-2 ml-7">建议提前2-3周预约，复杂场景需提前1个月进行美术置景沟通。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CTA 区块 最终行动号召 -->
+    <section class="relative bg-zinc-950 py-24 border-t border-amber-500/10" id="contact">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=60&w=900&auto=format&fit=crop'); background-size: cover; background-position: center;">
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-8 text-center">
+            <h2 class="text-5xl md:text-6xl font-black uppercase text-white">让视觉说话</h2>
+            <p class="text-2xl text-amber-400/90 mt-4 font-light italic">“每一张照片，都是品牌的子弹”</p>
+            <div class="flex flex-wrap gap-6 justify-center mt-12">
+                <a href="#"
+                    class="px-10 py-5 bg-amber-500 text-black text-lg font-bold uppercase tracking-widest hover:bg-amber-400 shadow-2xl shadow-amber-500/40">免费咨询档期</a>
+                <a href="#"
+                    class="px-10 py-5 border border-amber-500 text-amber-400 text-lg font-bold uppercase tracking-widest hover:bg-amber-500/10">查看完整作品</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 简单版权声明 -->
+    <footer class="bg-black border-t border-amber-500/20 py-8">
+        <div
+            class="max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+            <div class="flex items-center gap-2">
+                <span class="text-amber-500 text-xl">©</span>
+                <span>2025 折射影像 · 商业摄影工作室</span>
+            </div>
+            <div class="mt-3 md:mt-0 text-amber-400/60">All rights reserved · 沪ICP备12345678号</div>
+        </div>
+    </footer>
+
+    <!-- 无任何自定义样式，纯tailwind类 -->
+</body>
+
+</html>

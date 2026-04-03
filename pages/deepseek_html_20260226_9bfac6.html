@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翠金能源 · 创新太阳能</title>
+    <!-- Tailwind via CDN + 基础层（无自定义样式） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入流畅的 Inter 字体（不影响 Tailwind 效用，属于安全字体栈） -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+
+        /* 完全无自定义类 —— 纯 Tailwind 工具类驱动，以下仅为占位确保二维码可见 */
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- 导航栏 (Logo + 标题 + 导航菜单 + CTA) 金黄翠绿点缀 -->
+    <nav class="border-b border-amber-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- 左侧 logo + 标题 -->
+                <div class="flex items-center gap-2">
+                    <!-- logo 用翠绿圆形背景+金黄太阳 -->
+                    <div
+                        class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center text-amber-300 text-xl shadow-sm">
+                        ☀️</div>
+                    <span class="text-xl font-semibold text-emerald-800 tracking-tight">翠金<span
+                            class="text-amber-600">太阳能</span></span>
+                </div>
+                <!-- 桌面导航菜单 (中间) 隐藏移动端 -->
+                <div class="hidden md:flex items-center gap-8 text-emerald-700 font-medium">
+                    <a href="#" class="hover:text-amber-600 transition">首页</a>
+                    <a href="#" class="hover:text-amber-600 transition">解决方案</a>
+                    <a href="#" class="hover:text-amber-600 transition">案例</a>
+                    <a href="#" class="hover:text-amber-600 transition">资源</a>
+                </div>
+                <!-- CTA 按钮 (右侧) -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hidden sm:inline-block text-emerald-700 hover:text-amber-700 font-medium">登录</a>
+                    <a href="#"
+                        class="bg-amber-500 hover:bg-amber-400 text-emerald-900 px-5 py-2 rounded-full font-semibold shadow-sm transition flex items-center gap-1">开始使用<span
+                            class="text-lg">→</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏区块 (太阳能主题) 金黄翠绿背景渐变 -->
+    <section class="bg-gradient-to-br from-emerald-50 to-amber-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- 用 JSON 首屏数据结构 (太阳能文案) -->
+                    <h1 class="text-4xl md:text-5xl font-bold text-emerald-800 leading-tight">光照未来，<span
+                            class="text-amber-600">翠金能源</span>让每一缕阳光都充满价值</h1>
+                    <p class="text-lg text-emerald-600 mt-6 max-w-lg">安全、高效、可定制——专为现代企业打造的智能光伏解决方案，集成储能与数据分析，降低碳足迹。</p>
+                    <p class="text-emerald-500 mt-2">分布式光伏电站 · 智慧能源管理</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#"
+                            class="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-3 rounded-full font-semibold shadow-md transition">开始使用</a>
+                        <a href="#"
+                            class="border-2 border-amber-500 text-amber-700 hover:bg-amber-50 px-8 py-3 rounded-full font-semibold transition">联系销售</a>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white/50">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+                        alt="太阳能面板农场" class="w-full h-full object-cover aspect-[4/3]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴区块 (金黄翠绿) -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-800">我们的生态伙伴</h2>
+                <p class="text-amber-600 text-lg mt-3">与全球领先的能源科技公司深度合作</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <!-- 六个伙伴（沿用伙伴区块结构） -->
+                <div class="bg-emerald-50 rounded-xl p-4 text-center border border-emerald-100">
+                    <div class="w-12 h-12 mx-auto bg-amber-200 rounded-full flex items-center justify-center text-2xl">⚡
+                    </div>
+                    <p class="font-medium text-emerald-800 mt-2">国家能源</p>
+                    <p class="text-xs text-amber-600">战略伙伴</p>
+                </div>
+                <div class="bg-emerald-50 rounded-xl p-4 text-center border border-emerald-100">
+                    <div class="w-12 h-12 mx-auto bg-amber-200 rounded-full flex items-center justify-center text-2xl">
+                        🌞</div>
+                    <p class="font-medium text-emerald-800 mt-2">隆基绿能</p>
+                    <p class="text-xs text-amber-600">核心供应商</p>
+                </div>
+                <div class="bg-emerald-50 rounded-xl p-4 text-center border border-emerald-100">
+                    <div class="w-12 h-12 mx-auto bg-amber-200 rounded-full flex items-center justify-center text-2xl">
+                        🔋</div>
+                    <p class="font-medium text-emerald-800 mt-2">宁德时代</p>
+                    <p class="text-xs text-amber-600">储能合作</p>
+                </div>
+                <div class="bg-emerald-50 rounded-xl p-4 text-center border border-emerald-100">
+                    <div class="w-12 h-12 mx-auto bg-amber-200 rounded-full flex items-center justify-center text-2xl">
+                        📊</div>
+                    <p class="font-medium text-emerald-800 mt-2">华为数字</p>
+                    <p class="text-xs text-amber-600">逆变器伙伴</p>
+                </div>
+                <div class="bg-emerald-50 rounded-xl p-4 text-center border border-emerald-100">
+                    <div class="w-12 h-12 mx-auto bg-amber-200 rounded-full flex items-center justify-center text-2xl">
+                        🌍</div>
+                    <p class="font-medium text-emerald-800 mt-2">GE Vernova</p>
+                    <p class="text-xs text-amber-600">电网集成</p>
+                </div>
+                <div class="bg-emerald-50 rounded-xl p-4 text-center border border-emerald-100">
+                    <div class="w-12 h-12 mx-auto bg-amber-200 rounded-full flex items-center justify-center text-2xl">
+                        📈</div>
+                    <p class="font-medium text-emerald-800 mt-2">Siemens</p>
+                    <p class="text-xs text-amber-600">数字化合作</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左图右文区块 (太阳能储能) 对应左图右文 -->
+    <section class="bg-emerald-50/40 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="order-2 md:order-1">
+                    <img src="https://placehold.co/1374x600/e2e8f0/64748b?text=Image" alt="太阳能储能系统"
+                        class="rounded-2xl shadow-xl border-4 border-white">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-800">智慧储能，跨越昼夜</h2>
+                    <p class="text-emerald-600 text-lg mt-4">打破阳光的时间限制，通过高效储能与智能调度，让每一座工厂、社区全天候享用绿色电力。集成AI预测负载，自动优化充放策略。
+                    </p>
+                    <div class="flex gap-6 mt-6">
+                        <span class="bg-amber-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold">🔋
+                            磷酸铁锂安全</span>
+                        <span class="bg-amber-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-semibold">📊
+                            无限循环寿命</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左文右图区块 (智能运维) 复用json结构 -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-800">AI驱动智能运维</h2>
+                    <p class="text-emerald-600 text-lg mt-4">与您的监控工具无缝连接：无人机巡检、IV曲线诊断、天气预测。在告警发生前发现隐患，自动派单，提升发电效率。</p>
+                    <div class="flex gap-6 mt-6">
+                        <span class="border border-amber-500 text-amber-700 px-4 py-2 rounded-full">🔍 组件级监控</span>
+                        <span class="border border-amber-500 text-amber-700 px-4 py-2 rounded-full">📡 开放API</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://placehold.co/1470x600/e2e8f0/64748b?text=Image" alt="无人机巡检光伏"
+                        class="rounded-2xl shadow-xl border-4 border-emerald-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性区块 (专为清洁能源打造) -->
+    <section class="bg-gradient-to-b from-emerald-50 to-amber-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-800">专为清洁能源打造的特性</h2>
+                <p class="text-amber-600 text-lg mt-3">从发电到交易，面面俱到</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-amber-400">
+                    <div class="text-4xl mb-3">🌱</div>
+                    <h3 class="font-bold text-emerald-800">碳足迹追踪</h3>
+                    <p class="text-emerald-600">实时监测减排量，自动生成ESG报告，满足全球合规。</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-amber-400">
+                    <div class="text-4xl mb-3">⚡</div>
+                    <h3 class="font-bold text-emerald-800">毫秒级响应</h3>
+                    <p class="text-emerald-600">功率调节<20ms，适应电网调频需求，提高收益。< /p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-amber-400">
+                    <div class="text-4xl mb-3">🧩</div>
+                    <h3 class="font-bold text-emerald-800">多能源耦合</h3>
+                    <p class="text-emerald-600">光、储、充、氢无缝集成，统一调度。</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-t-4 border-amber-400">
+                    <div class="text-4xl mb-3">📊</div>
+                    <h3 class="font-bold text-emerald-800">发电洞察</h3>
+                    <p class="text-emerald-600">PR分析、组串失配、辐照预测，数据可视化。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计区块 (客户信赖) -->
+    <section class="bg-emerald-800 py-14">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-white">
+                <div>
+                    <div class="text-4xl font-bold text-amber-300">500+</div>
+                    <div class="text-emerald-100">工商业电站</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-300">2.1GW</div>
+                    <div class="text-emerald-100">累计装机</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-300">99.7%</div>
+                    <div class="text-emerald-100">系统可用率</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-amber-300">24/7</div>
+                    <div class="text-emerald-100">智能运维</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户案例区块 (太阳能电站案例) -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-800">他们正在使用翠金能源</h2>
+                <p class="text-amber-600 text-lg">来自全球领先企业的信赖与认可</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-emerald-50 rounded-2xl p-6">
+                    <div class="flex items-center gap-2"><span class="text-amber-500 text-2xl">🏭</span><span
+                            class="font-bold text-emerald-800">正泰新能源</span></div>
+                    <p class="text-sm text-amber-600 mt-1">制造业 · 光伏</p>
+                    <p class="text-emerald-700 mt-3">“系统让工厂自发自用比例提升28%，电费降低显著。”</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <div
+                            class="w-10 h-10 bg-emerald-200 rounded-full flex items-center justify-center text-emerald-700 font-bold">
+                            李</div>
+                        <div>
+                            <p class="font-medium">李刚</p>
+                            <p class="text-xs text-emerald-500">能源总监</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-emerald-50 rounded-2xl p-6">
+                    <div class="flex items-center gap-2"><span class="text-amber-500 text-2xl">🏫</span><span
+                            class="font-bold text-emerald-800">清华大学</span></div>
+                    <p class="text-sm text-amber-600 mt-1">教育 · 低碳校园</p>
+                    <p class="text-emerald-700 mt-3">“翠金平台帮我们实时监测30栋楼宇光伏，碳数据直接上报。”</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <div
+                            class="w-10 h-10 bg-emerald-200 rounded-full flex items-center justify-center text-emerald-700 font-bold">
+                            王</div>
+                        <div>
+                            <p class="font-medium">王敏</p>
+                            <p class="text-xs text-emerald-500">后勤处长</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-emerald-50 rounded-2xl p-6">
+                    <div class="flex items-center gap-2"><span class="text-amber-500 text-2xl">🚜</span><span
+                            class="font-bold text-emerald-800">中粮集团</span></div>
+                    <p class="text-sm text-amber-600 mt-1">农业 · 分布式</p>
+                    <p class="text-emerald-700 mt-3">“农业大棚光伏+储能，翠金算法使收益提升15%。”</p>
+                    <div class="flex items-center gap-3 mt-4">
+                        <div
+                            class="w-10 h-10 bg-emerald-200 rounded-full flex items-center justify-center text-emerald-700 font-bold">
+                            赵</div>
+                        <div>
+                            <p class="font-medium">赵国强</p>
+                            <p class="text-xs text-emerald-500">可持续发展经理</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价格区块 (灵活定价 光伏套餐) 使用价格区块结构 -->
+    <section class="bg-amber-50/60 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-emerald-800">灵活能源套餐</h2>
+                <p class="text-amber-600 text-lg">按需选择，无隐藏费用</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 基础版 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100">
+                    <h3 class="text-xl font-bold text-emerald-800">光储基础</h3>
+                    <div class="mt-4"><span class="text-4xl font-bold text-emerald-700">¥0.45</span><span
+                            class="text-emerald-500">/度</span></div>
+                    <p class="text-sm text-amber-600 mt-1">*服务费模式</p>
+                    <ul class="mt-6 space-y-3 text-emerald-600">
+                        <li>✓ 发电量提升5%</li>
+                        <li>✓ 基础监控</li>
+                        <li>✓ 月度报告</li>
+                    </ul><a href="#"
+                        class="block text-center border border-amber-500 text-amber-700 rounded-full py-3 mt-8 font-semibold hover:bg-amber-50">选择基础</a>
+                </div>
+                <!-- 商业版 (流行) 翠绿+金黄 -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl border-2 border-amber-400 relative transform scale-105">
+                    <span
+                        class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-emerald-900 px-4 py-1 rounded-full text-sm font-bold">最受欢迎</span>
+                    <h3 class="text-xl font-bold text-emerald-800 mt-4">智慧商业</h3>
+                    <div><span class="text-4xl font-bold text-emerald-700">¥0.62</span><span
+                            class="text-emerald-500">/度</span></div>
+                    <ul class="mt-6 space-y-3 text-emerald-600">
+                        <li>✓ 发电量提升12%+</li>
+                        <li>✓ 储能调度优化</li>
+                        <li>✓ 智能运维+告警</li>
+                        <li>✓ 碳账户</li>
+                    </ul><a href="#"
+                        class="block bg-emerald-700 hover:bg-emerald-800 text-white rounded-full py-3 mt-8 font-semibold text-center">选择商业</a>
+                </div>
+                <!-- 企业版 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm border border-emerald-100">
+                    <h3 class="text-xl font-bold text-emerald-800">零碳园区</h3>
+                    <div class="mt-4"><span class="text-4xl font-bold text-emerald-700">定制</span></div>
+                    <p class="text-sm text-amber-600 mt-1">本地部署/聚合交易</p>
+                    <ul class="mt-6 space-y-3 text-emerald-600">
+                        <li>✓ 微网控制</li>
+                        <li>✓ 绿电交易</li>
+                        <li>✓ 虚拟电厂</li>
+                        <li>✓ 专属客户成功</li>
+                    </ul><a href="#"
+                        class="block border border-amber-500 text-amber-700 rounded-full py-3 mt-8 font-semibold hover:bg-amber-50">联系销售</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题区块 (faq) 使用faq结构太阳能版本 -->
+    <section class="bg-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-emerald-800 text-center">常见问题</h2>
+            <div class="mt-10 space-y-5">
+                <div class="border border-emerald-100 rounded-2xl p-5"><button
+                        class="w-full text-left font-semibold text-emerald-800 flex justify-between">☀️ 可以完全离网运行吗？<span
+                            class="text-amber-600">+</span></button>
+                    <p class="text-emerald-600 mt-2">是的，搭配我们的储能系统，可设计离网方案，保障关键负荷100%绿电。</p>
+                </div>
+                <div class="border border-emerald-100 rounded-2xl p-5"><button
+                        class="w-full text-left font-semibold text-emerald-800 flex justify-between">🔋 储能质保多久？<span
+                            class="text-amber-600">+</span></button>
+                    <p class="text-emerald-600 mt-2">磷酸铁锂循环寿命6000次，标准质保10年，可延保至15年。</p>
+                </div>
+                <div class="border border-emerald-100 rounded-2xl p-5"><button
+                        class="w-full text-left font-semibold text-emerald-800 flex justify-between">📁 如何监控已有电站？<span
+                            class="text-amber-600">+</span></button>
+                    <p class="text-emerald-600 mt-2">支持主流逆变器协议，通过网关快速接入翠金云，24小时完成部署。</p>
+                </div>
+                <div class="border border-emerald-100 rounded-2xl p-5"><button
+                        class="w-full text-left font-semibold text-emerald-800 flex justify-between">🌐 数据存储在哪里？<span
+                            class="text-amber-600">+</span></button>
+                    <p class="text-emerald-600 mt-2">可选中国华北、华东或海外节点，满足各地数据合规要求。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA区块 (最终召唤) 使用CTA区块结构 -->
+    <section class="bg-gradient-to-r from-emerald-700 to-amber-600 py-16">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-white">即刻开启零碳能源管理</h2>
+            <p class="text-emerald-50 text-lg mt-3">加入数百家信任我们的企业，让每一度电更清洁、更高效。</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="#"
+                    class="bg-white text-emerald-800 px-8 py-4 rounded-full font-bold shadow-lg hover:bg-amber-50 transition">免费试用30天</a>
+                <a href="#"
+                    class="border-2 border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 transition">预约演示</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (品牌logo、版权、地址、联系方式、微信公众号二维码) 金黄翠绿 -->
+    <footer class="bg-emerald-900 text-emerald-100 border-t border-amber-600/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- 品牌logo + 版权 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2 text-amber-300 text-2xl"><span>☀️</span><span
+                            class="font-bold text-white">翠金太阳能</span></div>
+                    <p class="text-sm text-emerald-300 mt-3 leading-relaxed">创新翠绿能源，金黄未来。让阳光价值最大化。</p>
+                    <p class="text-xs text-emerald-400 mt-6">© 2025 翠金能源科技有限公司<br>版权所有</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg border-b border-amber-500 pb-2">公司地址</h4>
+                    <address class="not-italic text-emerald-200 mt-4">江苏省苏州市工业园区<br>新能源大道188号<br>翠金大厦A座</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg border-b border-amber-500 pb-2">联系方式</h4>
+                    <ul class="mt-4 space-y-2 text-emerald-200">
+                        <li>📞 400-8820-366</li>
+                        <li>📧 solar@cui-jin.cn</li>
+                        <li>🕒 周一至周五 9:00-18:00</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 (模拟) 使用翠绿卡片 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg border-b border-amber-500 pb-2">官方微信</h4>
+                    <div class="mt-4 bg-emerald-800 p-3 rounded-xl inline-block">
+                        <!-- 模拟二维码图案 (纯 Tailwind 方格) -->
+                        <div class="grid grid-cols-5 gap-0.5 w-24 h-24">
+                            <div class="bg-emerald-300 aspect-square"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-950"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-950"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-950"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-950"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-950"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-950"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-950"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                            <div class="bg-emerald-300"></div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-emerald-300 mt-2">扫一扫关注公众号</p>
+                </div>
+            </div>
+            <div class="border-t border-emerald-700 mt-10 pt-6 text-center text-emerald-400 text-sm">翠金能源 · 用阳光点亮可持续未来
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

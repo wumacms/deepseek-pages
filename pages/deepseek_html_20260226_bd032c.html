@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>像素冲击 · 手游先锋</title>
+  <!-- Tailwind via CDN + 基础层 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 额外动感风味：鲜艳对比色已经在类中体现，无自定义CSS -->
+</head>
+<body class="bg-[#f2eaff] text-[#1a0b2e] font-sans antialiased">
+
+  <!-- 导航栏：包含logo、标题和CTA按钮，不含菜单 -->
+  <header class="border-b-4 border-[#ff90e8] bg-white/90 backdrop-blur-sm sticky top-0 z-30 shadow-[0_8px_0_#7b2eda]">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+      <!-- 左侧 logo + 标题  -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-[#ffde59] rounded-2xl rotate-12 shadow-[4px_4px_0_#ff0099] flex items-center justify-center text-3xl font-black text-[#1a0b2e] transform hover:rotate-45 transition-all duration-300">🎮</div>
+        <span class="text-2xl font-black tracking-tight text-[#2d0c5e] drop-shadow-[2px_2px_0_#ff90e8]">PIXEL<span class="text-[#ff0099]">RUSH</span></span>
+      </div>
+      <!-- 右侧CTA按钮 动感鲜明 -->
+      <div class="flex gap-3">
+        <a href="#" class="bg-[#ffde59] border-4 border-[#2d0c5e] text-[#2d0c5e] font-black px-6 py-3 rounded-full text-sm uppercase tracking-widest shadow-[4px_4px_0_#ff0099] hover:shadow-[2px_2px_0_#ff0099] hover:translate-x-[2px] hover:translate-y-[2px] transition-all">Play now</a>
+        <a href="#" class="bg-[#00f2ea] border-4 border-[#2d0c5e] text-[#2d0c5e] font-black px-6 py-3 rounded-full text-sm uppercase tracking-widest shadow-[4px_4px_0_#ff0099] hover:shadow-[2px_2px_0_#ff0099] hover:translate-x-[2px] hover:translate-y-[2px] transition-all">下载游戏</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-x-hidden">
+
+    <!-- 首屏区块 (HERO) — 手机游戏氛围 -->
+    <section class="relative max-w-7xl mx-auto px-6 md:px-10 py-20 md:py-28 border-b-4 border-[#ff90e8]">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="relative z-10">
+          <h1 class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight text-[#1a0b2e] drop-shadow-[6px_6px_0_#ffde59]">🎯 爆裂<br>射手·<span class="text-[#ff0099]">英雄集结</span></h1>
+          <p class="text-xl md:text-2xl font-bold mt-6 text-[#3d1e6b] bg-[#ffde59] inline-block px-4 py-2 rotate-[-1deg] shadow-[6px_6px_0_#2d0c5e]">5v5 快节奏 · 单手也能五杀</p>
+          <p class="text-lg md:text-xl mt-8 text-[#2d0c5e] max-w-xl font-medium leading-relaxed">颠覆性触控优化，毫秒级技能响应。与全球玩家实时竞技，新赛季史诗皮肤免费送！</p>
+          <div class="flex flex-wrap gap-4 mt-10">
+            <a href="#" class="bg-[#ff0099] border-4 border-[#2d0c5e] text-white font-black px-10 py-4 rounded-full text-xl uppercase shadow-[8px_8px_0_#ffde59] hover:shadow-[4px_4px_0_#ffde59] hover:translate-x-1 hover:translate-y-1 transition-all">立即开黑</a>
+            <a href="#" class="bg-white border-4 border-[#ff0099] text-[#ff0099] font-black px-10 py-4 rounded-full text-xl uppercase shadow-[8px_8px_0_#2d0c5e] hover:shadow-[4px_4px_0_#2d0c5e] hover:translate-x-1 hover:translate-y-1 transition-all">宣传片</a>
+          </div>
+        </div>
+        <div class="relative flex justify-end">
+          <div class="relative w-full max-w-md">
+            <div class="absolute -top-8 -left-8 w-32 h-32 bg-[#ffde59] rounded-full blur-2xl opacity-50 animate-pulse"></div>
+            <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&auto=format" alt="手机游戏战斗场景" class="rounded-3xl border-8 border-[#ff0099] shadow-[20px_20px_0_#2d0c5e] rotate-2 hover:rotate-0 transition-all duration-500 w-full object-cover">
+            <div class="absolute -bottom-6 -right-6 bg-[#00f2ea] px-6 py-3 rounded-full text-2xl font-black border-4 border-[#2d0c5e] shadow-[6px_6px_0_#ff0099]">🔥 在线300万</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (游戏社交/组队) -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-b-4 border-[#ff90e8]">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img src="https://images.unsplash.com/photo-1605436247078-f0ef43ee8d5c?w=600&auto=format" alt="玩家组队开黑" class="rounded-3xl border-8 border-[#2d0c5e] shadow-[-15px_15px_0_#ff0099] rotate-[-2deg] hover:rotate-0 transition-all w-full">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-black text-[#1a0b2e] drop-shadow-[4px_4px_0_#ffde59]">👥 战队集结<br>实时语音</h2>
+          <p class="text-lg mt-6 text-[#2d0c5e] font-medium leading-relaxed">内置超低延迟语音，战术沟通零障碍。战队专属空间、亲密关系系统，和好友一起冲分。</p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <span class="bg-[#ff0099] text-white font-black px-6 py-3 rounded-full border-4 border-[#2d0c5e] shadow-[4px_4px_0_#ffde59] text-lg">🎧 队伍语音</span>
+            <span class="bg-[#ffde59] text-[#2d0c5e] font-black px-6 py-3 rounded-full border-4 border-[#ff0099] shadow-[4px_4px_0_#2d0c5e] text-lg">🏆 战队联赛</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (深度集成 / 手柄/操作优化) -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-b-4 border-[#ff90e8]">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-4xl md:text-5xl font-black text-[#1a0b2e] drop-shadow-[4px_4px_0_#00f2ea]">🎮 外设模式·自由连招</h2>
+          <p class="text-lg mt-6 text-[#2d0c5e] font-medium leading-relaxed">支持手柄、键盘映射，深度定制按键。一键保存云端配置，与模拟器玩家公平竞技。</p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <span class="bg-[#2d0c5e] text-white font-black px-6 py-3 rounded-full border-4 border-[#ffde59] shadow-[4px_4px_0_#ff0099] text-lg">⚡ 响应 0.1ms</span>
+            <span class="bg-[#ff0099] text-white font-black px-6 py-3 rounded-full border-4 border-[#00f2ea] shadow-[4px_4px_0_#2d0c5e] text-lg">🕹️ 云适配</span>
+          </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=600&auto=format" alt="手机连接手柄" class="order-1 md:order-2 rounded-3xl border-8 border-[#00f2ea] shadow-[15px_15px_0_#ff0099] rotate-2 hover:rotate-0 transition-all w-full">
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台一致体验 — 多设备互通) -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-b-4 border-[#ff90e8] text-center">
+      <h2 class="text-4xl md:text-5xl font-black text-[#1a0b2e] drop-shadow-[4px_4px_0_#ffde59]">📱 手机·平板·PC 存档互通</h2>
+      <p class="text-xl mt-4 text-[#2d0c5e] font-bold max-w-3xl mx-auto">无论何时何地，登录即玩，排位进度实时继承。</p>
+      <img src="https://placehold.co/800x600/e2e8f0/64748b?text=Image" alt="多设备游玩" class="mt-12 rounded-3xl border-8 border-[#ff0099] shadow-[20px_20px_0_#2d0c5e] max-w-4xl mx-auto w-full hover:scale-[1.01] transition-transform">
+    </section>
+
+    <!-- 特性区块 (专为手游打造的特性) -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-b-4 border-[#ff90e8]">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-black text-[#1a0b2e] drop-shadow-[4px_4px_0_#ffde59]">🔥 次世代手游引擎</h2>
+        <p class="text-xl text-[#3d1e6b] font-bold mt-2">丝滑流畅 · 战术竞技</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 特性卡片 动感粗边 -->
+        <div class="bg-white border-4 border-[#ff0099] rounded-3xl p-8 shadow-[12px_12px_0_#2d0c5e] hover:shadow-[6px_6px_0_#2d0c5e] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <div class="text-7xl mb-4">⚡</div>
+          <h3 class="text-2xl font-black text-[#2d0c5e]">90FPS 极限</h3>
+          <p class="text-[#1a0b2e] font-medium mt-2">适配165Hz屏幕，滑动跟手性提升300%</p>
+        </div>
+        <div class="bg-white border-4 border-[#00f2ea] rounded-3xl p-8 shadow-[12px_12px_0_#ff0099] hover:shadow-[6px_6px_0_#ff0099] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <div class="text-7xl mb-4">🌍</div>
+          <h3 class="text-2xl font-black text-[#2d0c5e]">全球同服</h3>
+          <p class="text-[#1a0b2e] font-medium mt-2">30ms智能路由，与欧美/日韩玩家同场</p>
+        </div>
+        <div class="bg-white border-4 border-[#ffde59] rounded-3xl p-8 shadow-[12px_12px_0_#ff0099] hover:shadow-[6px_6px_0_#ff0099] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <div class="text-7xl mb-4">🧩</div>
+          <h3 class="text-2xl font-black text-[#2d0c5e]">皮肤自由交易</h3>
+          <p class="text-[#1a0b2e] font-medium mt-2">内置集市，玩家自由换售限定外观</p>
+        </div>
+        <div class="bg-white border-4 border-[#ff0099] rounded-3xl p-8 shadow-[12px_12px_0_#00f2ea] hover:shadow-[6px_6px_0_#00f2ea] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <div class="text-7xl mb-4">📊</div>
+          <h3 class="text-2xl font-black text-[#2d0c5e]">战术胜率分析</h3>
+          <p class="text-[#1a0b2e] font-medium mt-2">AI复盘，提升你的大局观</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 团队区块 (核心制作人) 动感头像 -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-b-4 border-[#ff90e8]">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-black text-[#1a0b2e] drop-shadow-[4px_4px_0_#ffde59]">👾 制作团队</h2>
+        <p class="text-xl text-[#ff0099] font-black">前暴雪、育碧、腾讯精英</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <!-- 成员1 -->
+        <div class="bg-[#ffde59] border-4 border-[#2d0c5e] rounded-3xl p-6 shadow-[12px_12px_0_#ff0099] hover:shadow-[6px_6px_0_#ff0099] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&auto=format" alt="张伟" class="w-32 h-32 rounded-full border-4 border-[#ff0099] mx-auto object-cover">
+          <h3 class="text-2xl font-black text-center mt-4 text-[#2d0c5e]">张伟</h3>
+          <p class="text-center font-bold text-[#ff0099]">制作人</p>
+          <p class="text-center text-sm mt-2 font-medium">前暴雪主策 · 暗黑手游核心</p>
+        </div>
+        <!-- 成员2 -->
+        <div class="bg-[#00f2ea] border-4 border-[#2d0c5e] rounded-3xl p-6 shadow-[12px_12px_0_#ff0099] hover:shadow-[6px_6px_0_#ff0099] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&auto=format" alt="陈敏" class="w-32 h-32 rounded-full border-4 border-[#ffde59] mx-auto object-cover">
+          <h3 class="text-2xl font-black text-center mt-4 text-[#2d0c5e]">陈敏</h3>
+          <p class="text-center font-bold text-[#ff0099]">技术总监</p>
+          <p class="text-center text-sm mt-2 font-medium">虚幻引擎专家 · 优化圣手</p>
+        </div>
+        <!-- 成员3 -->
+        <div class="bg-[#ff0099] border-4 border-[#2d0c5e] rounded-3xl p-6 shadow-[12px_12px_0_#ffde59] hover:shadow-[6px_6px_0_#ffde59] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&auto=format" alt="王磊" class="w-32 h-32 rounded-full border-4 border-[#00f2ea] mx-auto object-cover">
+          <h3 class="text-2xl font-black text-center mt-4 text-white">王磊</h3>
+          <p class="text-center font-bold text-[#ffde59]">艺术总监</p>
+          <p class="text-center text-sm mt-2 text-white">赛博朋克×水墨风缔造者</p>
+        </div>
+        <!-- 成员4 -->
+        <div class="bg-white border-4 border-[#ff0099] rounded-3xl p-6 shadow-[12px_12px_0_#2d0c5e] hover:shadow-[6px_6px_0_#2d0c5e] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&auto=format" alt="李莉" class="w-32 h-32 rounded-full border-4 border-[#ffde59] mx-auto object-cover">
+          <h3 class="text-2xl font-black text-center mt-4 text-[#2d0c5e]">李莉</h3>
+          <p class="text-center font-bold text-[#ff0099]">社区总监</p>
+          <p class="text-center text-sm mt-2 font-medium">千万玩家社群运营</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 (数据动感) -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-16 border-b-4 border-[#ff90e8]">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="bg-[#2d0c5e] border-4 border-[#ffde59] rounded-3xl p-8 shadow-[12px_12px_0_#ff0099]">
+          <div class="text-5xl font-black text-[#ffde59]">500+</div>
+          <div class="text-white font-bold text-xl mt-2">职业战队</div>
+        </div>
+        <div class="bg-[#ff0099] border-4 border-[#00f2ea] rounded-3xl p-8 shadow-[12px_12px_0_#2d0c5e]">
+          <div class="text-5xl font-black text-white">98%</div>
+          <div class="text-white font-bold text-xl mt-2">玩家推荐</div>
+        </div>
+        <div class="bg-[#ffde59] border-4 border-[#ff0099] rounded-3xl p-8 shadow-[12px_12px_0_#2d0c5e]">
+          <div class="text-5xl font-black text-[#2d0c5e]">20M+</div>
+          <div class="text-[#2d0c5e] font-bold text-xl mt-2">日活</div>
+        </div>
+        <div class="bg-[#00f2ea] border-4 border-[#2d0c5e] rounded-3xl p-8 shadow-[12px_12px_0_#ff0099]">
+          <div class="text-5xl font-black text-[#2d0c5e]">24/7</div>
+          <div class="text-[#2d0c5e] font-bold text-xl mt-2">公平盾</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (灵活定价/游戏内购/通行证) -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-b-4 border-[#ff90e8]">
+      <div class="text-center mb-16">
+        <h2 class="text-5xl font-black text-[#1a0b2e] drop-shadow-[4px_4px_0_#ffde59]">💎 战斗通行证</h2>
+        <p class="text-xl text-[#ff0099] font-black">海量皮肤 · 史诗级奖励</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- 基础版 勇者册 -->
+        <div class="bg-white border-4 border-[#2d0c5e] rounded-3xl p-8 shadow-[15px_15px_0_#ffde59] hover:shadow-[8px_8px_0_#ffde59] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <h3 class="text-3xl font-black text-[#2d0c5e]">勇者册</h3>
+          <div class="mt-4 text-5xl font-black text-[#ff0099]">$4.99</div>
+          <p class="text-[#1a0b2e] font-bold mt-1">月/人</p>
+          <ul class="mt-8 space-y-3 text-[#2d0c5e] font-medium">
+            <li class="flex items-center gap-2">🎁 史诗皮肤×1</li>
+            <li class="flex items-center gap-2">🎟️ 抽奖券×10</li>
+            <li class="flex items-center gap-2">💬 专属表情</li>
+          </ul>
+          <a href="#" class="block mt-10 bg-[#ffde59] border-4 border-[#ff0099] text-[#2d0c5e] font-black text-center py-4 rounded-full shadow-[6px_6px_0_#2d0c5e] hover:shadow-[2px_2px_0_#2d0c5e] hover:translate-x-1 hover:translate-y-1 transition-all">立即解锁</a>
+        </div>
+        <!-- 商业版 典藏册 (热门) -->
+        <div class="bg-[#ffde59] border-4 border-[#ff0099] rounded-3xl p-8 shadow-[20px_20px_0_#2d0c5e] scale-105 relative z-10 hover:shadow-[10px_10px_0_#2d0c5e] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <span class="absolute -top-5 left-1/2 -translate-x-1/2 bg-[#ff0099] text-white px-6 py-2 rounded-full font-black border-4 border-white shadow-[4px_4px_0_#2d0c5e] whitespace-nowrap">🔥 最热销</span>
+          <h3 class="text-3xl font-black text-[#2d0c5e] mt-4">典藏册</h3>
+          <div class="mt-4 text-5xl font-black text-[#ff0099]">$9.99</div>
+          <p class="text-[#2d0c5e] font-bold mt-1">月/人</p>
+          <ul class="mt-8 space-y-3 text-[#2d0c5e] font-bold">
+            <li class="flex items-center gap-2">👑 传说皮肤×2</li>
+            <li class="flex items-center gap-2">🎟️ 抽奖券×25</li>
+            <li class="flex items-center gap-2">💎 钻石×1200</li>
+            <li class="flex items-center gap-2">🏅 赛季头像框</li>
+          </ul>
+          <a href="#" class="block mt-10 bg-[#ff0099] border-4 border-white text-white font-black text-center py-4 rounded-full shadow-[6px_6px_0_#2d0c5e] hover:shadow-[2px_2px_0_#2d0c5e] hover:translate-x-1 hover:translate-y-1 transition-all">立即升级</a>
+        </div>
+        <!-- 企业版 冠军定制 -->
+        <div class="bg-white border-4 border-[#00f2ea] rounded-3xl p-8 shadow-[15px_15px_0_#ff0099] hover:shadow-[8px_8px_0_#ff0099] hover:translate-x-1 hover:translate-y-1 transition-all">
+          <h3 class="text-3xl font-black text-[#2d0c5e]">冠军定制</h3>
+          <div class="mt-4 text-5xl font-black text-[#00f2ea]">定制</div>
+          <p class="text-[#1a0b2e] font-bold mt-1">战队/主播</p>
+          <ul class="mt-8 space-y-3 text-[#2d0c5e] font-medium">
+            <li class="flex items-center gap-2">🏆 专属皮肤设计</li>
+            <li class="flex items-center gap-2">📈 粉丝数据看板</li>
+            <li class="flex items-center gap-2">🎙️ 游戏内开屏</li>
+            <li class="flex items-center gap-2">🤝 优先接入API</li>
+          </ul>
+          <a href="#" class="block mt-10 bg-[#00f2ea] border-4 border-[#ff0099] text-[#2d0c5e] font-black text-center py-4 rounded-full shadow-[6px_6px_0_#2d0c5e] hover:shadow-[2px_2px_0_#2d0c5e] hover:translate-x-1 hover:translate-y-1 transition-all">联系合作</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (FAQs) -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-20 border-b-4 border-[#ff90e8]">
+      <h2 class="text-5xl font-black text-center text-[#1a0b2e] drop-shadow-[4px_4px_0_#ffde59]">❓ 常见问题</h2>
+      <div class="mt-16 grid md:grid-cols-2 gap-6">
+        <!-- FAQ 1 -->
+        <div class="bg-white border-4 border-[#ff0099] rounded-2xl p-6 shadow-[8px_8px_0_#2d0c5e]">
+          <h3 class="text-xl font-black text-[#ff0099]">🎮 支持本地部署服务器吗？</h3>
+          <p class="mt-2 text-[#2d0c5e] font-medium">是的，冠军定制版可提供私有化对战服务器，满足赛事/工作室需求。</p>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="bg-white border-4 border-[#00f2ea] rounded-2xl p-6 shadow-[8px_8px_0_#2d0c5e]">
+          <h3 class="text-xl font-black text-[#2d0c5e]">⏳ 新英雄多久更新？</h3>
+          <p class="mt-2 text-[#2d0c5e] font-medium">每月2位新英雄，均免费获得（通行证可提前解锁）。</p>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="bg-white border-4 border-[#ffde59] rounded-2xl p-6 shadow-[8px_8px_0_#ff0099]">
+          <h3 class="text-xl font-black text-[#2d0c5e]">📱 数据互通哪些平台？</h3>
+          <p class="mt-2 text-[#2d0c5e] font-medium">iOS/Android/PC模拟器全平台实时互通，进度跟随账号。</p>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="bg-white border-4 border-[#ff0099] rounded-2xl p-6 shadow-[8px_8px_0_#00f2ea]">
+          <h3 class="text-xl font-black text-[#ff0099]">🔄 如何迁移旧版账号？</h3>
+          <p class="mt-2 text-[#2d0c5e] font-medium">游戏内一键绑定游客账号，所有皮肤/段位无缝转移。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA区块 立即下载/预约演示 -->
+    <section class="max-w-7xl mx-auto px-6 md:px-10 py-24">
+      <div class="bg-[#2d0c5e] border-8 border-[#ffde59] rounded-3xl p-16 text-center shadow-[24px_24px_0_#ff0099]">
+        <h2 class="text-5xl md:text-6xl font-black text-white drop-shadow-[4px_4px_0_#ff0099]">🚀 集结！现在登录</h2>
+        <p class="text-2xl text-[#ffde59] font-black mt-4">免费领传说皮肤 + 限定称号</p>
+        <div class="flex flex-wrap gap-6 justify-center mt-10">
+          <a href="#" class="bg-[#ff0099] border-4 border-white text-white font-black px-12 py-5 rounded-full text-2xl shadow-[10px_10px_0_#ffde59] hover:shadow-[5px_5px_0_#ffde59] hover:translate-x-1 hover:translate-y-1 transition-all">免费下载</a>
+          <a href="#" class="bg-[#ffde59] border-4 border-[#ff0099] text-[#2d0c5e] font-black px-12 py-5 rounded-full text-2xl shadow-[10px_10px_0_white] hover:shadow-[5px_5px_0_white] hover:translate-x-1 hover:translate-y-1 transition-all">预约演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 简单的版权声明 -->
+  <footer class="bg-[#1a0b2e] border-t-8 border-[#ff90e8] py-8 text-center text-white font-medium">
+    <p class="text-lg">© 2025 像素冲击 PIXELRUSH · 让游戏回归热血  |  保留一切权利</p>
+    <p class="text-sm mt-2 opacity-80">本页面所用图片仅作概念展示，均为手机游戏相关</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔚海游艇 · 深海奢华</title>
+    <!-- Tailwind via CDN + 底层层叠控制 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 微调默认字体、平滑滚动 (无自定义css) 但符合纯tailwind要求：仅使用类，无额外style标签 -->
+    <style>
+        /* 无自定义样式，仅保证block元素自然 */
+    </style>
+</head>
+
+<body class="bg-white text-slate-800 font-sans antialiased">
+
+    <!-- 导航栏 (海洋奢华: 深海蓝白) -->
+    <nav class="bg-white/95 backdrop-blur-sm border-b border-blue-100 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-4 flex items-center justify-between flex-wrap">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-2">
+                <div
+                    class="w-9 h-9 bg-blue-800 rounded-lg flex items-center justify-center text-white text-2xl shadow-md">
+                    ⛵</div>
+                <span class="font-bold text-2xl tracking-tight text-blue-900">蔚海游艇</span>
+            </div>
+            <!-- 导航菜单 (桌面) 用隐藏/显示 -->
+            <div class="hidden md:flex items-center gap-8 text-blue-800 font-medium">
+                <a href="#" class="hover:text-blue-600 transition">船型</a>
+                <a href="#" class="hover:text-blue-600 transition">定制</a>
+                <a href="#" class="hover:text-blue-600 transition">航海体验</a>
+                <a href="#" class="hover:text-blue-600 transition">船东服务</a>
+                <a href="#" class="hover:text-blue-600 transition">关于</a>
+            </div>
+            <!-- CTA 按钮 -->
+            <div class="flex items-center gap-3">
+                <a href="#" class="hidden sm:inline-block text-blue-800 font-semibold hover:text-blue-600">登录</a>
+                <a href="#"
+                    class="bg-blue-900 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md hover:bg-blue-800 transition">预约品鉴</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏区块 (游艇数据) 对应json首屏 -->
+    <section class="bg-gradient-to-br from-blue-50 via-white to-blue-100">
+        <div
+            class="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-24 flex flex-col-reverse lg:flex-row items-center gap-12">
+            <div class="flex-1 text-center lg:text-left">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-900 leading-tight">
+                    定义深蓝奢华 <br class="hidden sm:block">探索无界海洋
+                </h1>
+                <p class="text-xl text-blue-700 mt-6 max-w-2xl lg:mx-0 mx-auto">
+                    意大利设计，深海工程。每一艘蔚海游艇都是漂浮的杰作，将极致性能与意式美学融为一体。
+                </p>
+                <p class="text-blue-600 mt-2 text-lg">从 50 到 140 英尺，全系私人定制，即刻启航。</p>
+                <div class="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
+                    <a href="#"
+                        class="bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:bg-blue-800 transition">探索船型</a>
+                    <a href="#"
+                        class="border-2 border-blue-800 text-blue-800 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition">联系经纪人</a>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+                    alt="奢华游艇航行" class="rounded-3xl shadow-2xl object-cover w-full h-auto border-8 border-white/50">
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴区块 游艇生态伙伴-->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center">全球顶尖合作伙伴</h2>
+            <p class="text-center text-blue-600 mt-3 text-lg">与航海科技、设计及引擎巨擘深度协同</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-16 items-center">
+                <!-- 合作伙伴logo 使用相同结构-->
+                <div class="flex flex-col items-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        class="h-16 w-16 object-contain rounded-full bg-blue-50 p-2 shadow" alt="MAN"><span
+                        class="mt-2 text-sm font-medium text-blue-800">MAN 引擎</span></div>
+                <div class="flex flex-col items-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        class="h-16 w-16 object-contain rounded-full bg-blue-50 p-2 shadow" alt="Raymarine"><span
+                        class="mt-2 text-sm font-medium text-blue-800">Raymarine</span></div>
+                <div class="flex flex-col items-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        class="h-16 w-16 object-contain rounded-full bg-blue-50 p-2 shadow" alt="Ferretti"><span
+                        class="mt-2 text-sm font-medium text-blue-800">Ferretti</span></div>
+                <div class="flex flex-col items-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        class="h-16 w-16 object-contain rounded-full bg-blue-50 p-2 shadow" alt="MTU"><span
+                        class="mt-2 text-sm font-medium text-blue-800">MTU 罗尔斯罗伊斯</span></div>
+                <div class="flex flex-col items-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        class="h-16 w-16 object-contain rounded-full bg-blue-50 p-2 shadow" alt="Volvo"><span
+                        class="mt-2 text-sm font-medium text-blue-800">Volvo Penta</span></div>
+                <div class="flex flex-col items-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        class="h-16 w-16 object-contain rounded-full bg-blue-50 p-2 shadow" alt="B&G"><span
+                        class="mt-2 text-sm font-medium text-blue-800">B&G 航海仪表</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左图右文区块 (无缝沟通 -> 游艇工艺) -->
+    <section class="bg-blue-50 py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 order-2 md:order-1">
+                <img src="https://placehold.co/1470x600/e2e8f0/64748b?text=Image" alt="游艇内饰工艺"
+                    class="rounded-3xl shadow-2xl object-cover w-full h-auto border-4 border-white">
+            </div>
+            <div class="flex-1 order-1 md:order-2">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">跨越甲板的奢适</h2>
+                <p class="text-lg text-blue-700 mt-6">打破传统布局，通过开放式的沙龙、全景观主人套房和户外餐饮区，让每位宾客都能沉浸在海天一色中。集成了最先进的船舶稳定系统，如履平地。
+                </p>
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <span
+                        class="bg-blue-200 text-blue-900 px-4 py-2 rounded-full font-medium flex items-center gap-1"><span
+                            class="text-xl">⚓</span> 全船稳定鳍</span>
+                    <span
+                        class="bg-blue-200 text-blue-900 px-4 py-2 rounded-full font-medium flex items-center gap-1"><span
+                            class="text-xl">📡</span> 卫星网络</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左文右图区块 (深度集成工作流 -> 定制引擎) -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900">澎湃之心 · 深度定制</h2>
+                <p class="text-lg text-blue-700 mt-6">
+                    从MTU双速齿轮箱到沃尔沃遍达IPS推进系统，我们与顶级动力品牌无缝对接。根据您的航行区域定制引擎配置，在聊天中即可获得实时油耗与维护提醒。</p>
+                <div class="flex gap-3 mt-8">
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">MTU 10V
+                        2000</span>
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">IPS 1350</span>
+                </div>
+            </div>
+            <div class="flex-1">
+                <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?ixlib=rb-4.0.3&auto=format&fit=crop&w=900&q=60"
+                    alt="游艇引擎室" class="rounded-3xl shadow-2xl object-cover w-full h-auto border-4 border-white">
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性区块 (游艇特性) 对应专为商务打造的特性 -->
+    <section class="bg-blue-50 py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900">为海洋奢华而生</h2>
+            <p class="text-lg text-blue-700 mt-2">从安全适航到私密尊享，面面俱到</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-blue-100">
+                    <div class="text-5xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold text-blue-900">深海安全</h3>
+                    <p class="text-blue-600 mt-2">双重水密隔舱，雷击防护，满足LY3豪华游艇标准。</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-blue-100">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-blue-900">零噪音巡航</h3>
+                    <p class="text-blue-600 mt-2">电动静音模式，夜间航行不打扰海洋生物与休憩。</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-blue-100">
+                    <div class="text-5xl mb-4">🧩</div>
+                    <h3 class="text-xl font-bold text-blue-900">无限定制</h3>
+                    <p class="text-blue-600 mt-2">从土耳其浴到直升机甲板，连接200+奢华配件商。</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-xl border border-blue-100">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold text-blue-900">船东智囊</h3>
+                    <p class="text-blue-600 mt-2">实时监测船况、能耗与保养周期，数据可视化。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户案例区块  -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center">船东故事</h2>
+            <p class="text-center text-blue-600 mt-3 text-lg">来自全球航海家的信赖</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+                <!-- case 1 -->
+                <div class="bg-blue-50 p-8 rounded-3xl shadow-lg border border-blue-200">
+                    <div class="flex items-center gap-2"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64&q=80"
+                            class="h-8 w-8 rounded-full bg-blue-200"><span class="font-bold text-blue-900">迈阿密 ·
+                            海洋集团</span><span class="text-sm text-blue-600">租赁船队</span></div>
+                    <p class="text-blue-800 mt-4 italic">“蔚海游艇的船队可靠性让我们客户满意度提升40%，跨大西洋航行从未如此顺畅。”</p>
+                    <div class="flex items-center gap-3 mt-6"><img
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&q=80"
+                            class="h-12 w-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-blue-900">Michael Chen</p>
+                            <p class="text-sm text-blue-600">船队总监</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- case 2 -->
+                <div class="bg-blue-50 p-8 rounded-3xl shadow-lg border border-blue-200">
+                    <div class="flex items-center gap-2"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64&q=80"
+                            class="h-8 w-8 rounded-full bg-blue-200"><span class="font-bold text-blue-900">摩纳哥 ·
+                            私人船东</span><span class="text-sm text-blue-600">超级游艇</span></div>
+                    <p class="text-blue-800 mt-4 italic">“定制化内饰完全超越预期，每一个细节都体现了海洋工艺的巅峰。”</p>
+                    <div class="flex items-center gap-3 mt-6"><img
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&q=80"
+                            class="h-12 w-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-blue-900"> Isabella Ricci</p>
+                            <p class="text-sm text-blue-600">船东</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- case 3 -->
+                <div class="bg-blue-50 p-8 rounded-3xl shadow-lg border border-blue-200">
+                    <div class="flex items-center gap-2"><img
+                            src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64&q=80"
+                            class="h-8 w-8 rounded-full bg-blue-200"><span class="font-bold text-blue-900">迪拜 ·
+                            皇家猎鹰</span><span class="text-sm text-blue-600">公务用艇</span></div>
+                    <p class="text-blue-800 mt-4 italic">“本地化部署的船载系统完美满足高安全性要求，波斯湾巡航首选。”</p>
+                    <div class="flex items-center gap-3 mt-6"><img
+                            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&q=80"
+                            class="h-12 w-12 rounded-full object-cover">
+                        <div>
+                            <p class="font-bold text-blue-900">Ahmed Al Suwaidi</p>
+                            <p class="text-sm text-blue-600">船长</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 比较表格区块 (竞品对比 用游艇品牌)  -->
+    <section class="bg-blue-50 py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center">为什么选择蔚海</h2>
+            <p class="text-center text-blue-600 text-lg mt-2">与主流超级游艇品牌的全面对比</p>
+            <div class="overflow-x-auto mt-12 bg-white rounded-3xl shadow-2xl p-6">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b-2 border-blue-200 text-blue-900">
+                            <th class="pb-4 font-bold">对比项</th>
+                            <th class="pb-4 font-bold">蔚海游艇</th>
+                            <th class="pb-4 font-bold">意大利A品牌</th>
+                            <th class="pb-4 font-bold">荷兰B品牌</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-blue-800">
+                        <tr class="border-b border-blue-100">
+                            <td class="py-4">全碳纤维上层</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">❌</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <td class="py-4">本地化售后中心</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">❌</td>
+                            <td class="py-4">✅</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <td class="py-4">无限次改装设计</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">❌</td>
+                            <td class="py-4">✅</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <td class="py-4">开放海事API</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">✅</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <td class="py-4">船东俱乐部</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">✅</td>
+                        </tr>
+                        <tr class="border-b border-blue-100">
+                            <td class="py-4">数据主权选择</td>
+                            <td class="py-4">✅</td>
+                            <td class="py-4">❌</td>
+                            <td class="py-4">✅</td>
+                        </tr>
+                        <tr class="bg-blue-100 font-semibold">
+                            <td class="py-4">每英尺均价(百万€)</td>
+                            <td class="py-4">1.25</td>
+                            <td class="py-4">1.45</td>
+                            <td class="py-4">1.60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计区块 采用深海蓝白-->
+    <section class="bg-blue-900 py-16 text-white">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-5xl font-bold">200+</div>
+                <div class="text-blue-200 mt-2 text-lg">交付游艇</div>
+            </div>
+            <div>
+                <div class="text-5xl font-bold">98%</div>
+                <div class="text-blue-200 mt-2 text-lg">船东推荐率</div>
+            </div>
+            <div>
+                <div class="text-5xl font-bold">32</div>
+                <div class="text-blue-200 mt-2 text-lg">全球服务点</div>
+            </div>
+            <div>
+                <div class="text-5xl font-bold">24/7</div>
+                <div class="text-blue-200 mt-2 text-lg">航海支持</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 认证与资质区块 游艇认证 -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-900 text-center">安全认证与企业资质</h2>
+            <p class="text-center text-blue-600 text-lg">通过最严苛的船级社认证</p>
+            <div class="flex flex-wrap justify-center gap-8 mt-12">
+                <div class="bg-blue-50 p-6 rounded-2xl w-48 text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+                        class="h-16 mx-auto mb-3 rounded-full"><span class="font-bold text-blue-900">RINA</span>
+                    <p class="text-sm text-blue-700">白金游艇符号</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl w-48 text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+                        class="h-16 mx-auto mb-3 rounded-full"><span class="font-bold text-blue-900">LY3</span>
+                    <p class="text-sm text-blue-700">大型游艇标准</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl w-48 text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+                        class="h-16 mx-auto mb-3 rounded-full"><span class="font-bold text-blue-900">MCA</span>
+                    <p class="text-sm text-blue-700">商船队合规</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl w-48 text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+                        class="h-16 mx-auto mb-3 rounded-full"><span class="font-bold text-blue-900">ISO 14001</span>
+                    <p class="text-sm text-blue-700">环境管理体系</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 区块 -->
+    <section class="bg-gradient-to-r from-blue-800 to-blue-900 py-20 text-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">定制您的深海梦想</h2>
+            <p class="text-xl text-blue-200 mb-10">全球船厂直联，30天内提供初步布局方案</p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#"
+                    class="bg-white text-blue-900 px-8 py-4 rounded-full text-lg font-semibold shadow-xl hover:bg-blue-100 transition">预约线上看船</a>
+                <a href="#"
+                    class="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition">下载船型手册</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 品牌Logo 版权 地址 联系方式 微信二维码 -->
+    <footer class="bg-blue-950 text-blue-200 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                <!-- Logo + 版权 -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 text-white">
+                        <div class="w-10 h-10 bg-blue-300/20 rounded-lg flex items-center justify-center text-3xl">⛵
+                        </div><span class="font-bold text-2xl">蔚海游艇</span>
+                    </div>
+                    <p class="text-sm text-blue-300 mt-4">© 2025 蔚海游艇制造有限公司<br>All rights reserved.</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">船厂与总部</h4>
+                    <address class="not-italic text-blue-300">意大利·拉斯佩齐亚<br>Via dei Cantieri 88<br>中国代表处：上海·外滩</address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">24小时海事热线</h4>
+                    <p class="text-blue-300">+39 0187 123456<br>info@oceanyacht.com<br>华东：+86 21 6789 1234</p>
+                </div>
+                <!-- 公众号二维码 (模拟) -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">官方公众号</h4>
+                    <div class="bg-white p-2 rounded-xl w-28 h-28 flex items-center justify-center"><span
+                            class="text-blue-900 text-xs text-center">（二维码示意）<br>扫一扫 登船</span></div>
+                </div>
+                <!-- 社交媒体简写 -->
+                <div>
+                    <h4 class="text-white font-semibold text-lg mb-4">航海社区</h4>
+                    <div class="flex gap-3 text-2xl"><span>📷</span><span>🐦</span><span>📘</span><span>▶️</span></div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-10 pt-6 text-sm text-center text-blue-400">蔚海游艇 · 深海奢华的代名词</div>
+        </div>
+    </footer>
+</body>
+
+</html>

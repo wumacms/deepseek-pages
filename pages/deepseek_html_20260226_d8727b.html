@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>恒温科技 · 中央空调智慧解决方案</title>
+  <!-- Tailwind via CDN (舒适科技风格, 蓝白配色) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 仅基础平滑，无自定义样式 -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-slate-700 font-sans antialiased">
+
+  <!-- 导航栏 (包含logo、标题、导航菜单、CTA按钮) 蓝白风格 -->
+  <header class="border-b border-sky-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
+        <!-- logo + 标题 -->
+        <div class="flex items-center gap-2">
+          <div
+            class="w-8 h-8 bg-gradient-to-br from-sky-400 to-blue-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+            ❄️</div>
+          <span class="font-semibold text-xl text-slate-800">恒温科技</span>
+        </div>
+        <!-- 导航菜单 (桌面) 使用蓝白灰调 -->
+        <nav class="hidden md:flex space-x-8 text-slate-600 font-medium">
+          <a href="#" class="hover:text-sky-600 transition">首页</a>
+          <a href="#solutions" class="hover:text-sky-600 transition">解决方案</a>
+          <a href="#cases" class="hover:text-sky-600 transition">案例</a>
+          <a href="#pricing" class="hover:text-sky-600 transition">价格</a>
+          <a href="#resources" class="hover:text-sky-600 transition">资源</a>
+        </nav>
+        <!-- CTA 按钮 -->
+        <div class="flex items-center gap-3">
+          <a href="#" class="hidden sm:inline-block text-sky-600 font-medium hover:text-sky-700">登录</a>
+          <a href="#"
+            class="bg-sky-500 hover:bg-sky-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold shadow-sm shadow-sky-200 transition">获取报价</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. 首屏区块 (英雄区) 用中央空调数据 -->
+    <section class="bg-gradient-to-br from-white to-sky-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800 leading-tight">中央空调AI智控，<br
+                class="hidden sm:block">节能省心一步到位</h1>
+            <p class="text-xl text-slate-600 mt-6">商用/住宅智慧温控系统 · 搭载物联网自适应算法，比传统空调节能37%</p>
+            <p class="text-slate-500 mt-4 text-lg">专为楼宇打造的恒温恒湿方案，无缝接入楼宇自控，手机端实时调节。</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a href="#"
+                class="bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-xl font-semibold shadow-md shadow-sky-200">免费设计图纸</a>
+              <a href="#"
+                class="border border-sky-200 text-sky-600 hover:bg-sky-50 px-8 py-4 rounded-xl font-semibold transition">联系工程师</a>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-2xl shadow-sky-100">
+            <img class="w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=60&w=900&auto=format&fit=crop"
+              alt="中央空调智能控制面板" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 合作伙伴区块 (暖通生态伙伴) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800">全球顶尖供应链伙伴</h2>
+        <p class="text-center text-slate-500 mt-3 max-w-2xl mx-auto">与暖通空调行业领导者深度合作，确保品质与创新</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+          <!-- 6个伙伴卡片 使用unsplash占位logo (灰底) -->
+          <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+              class="w-16 h-16 mx-auto object-cover rounded-lg mb-3" alt=""><span
+              class="font-medium text-slate-700">大金工业</span>
+            <p class="text-xs text-slate-400">VRV 技术伙伴</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+              class="w-16 h-16 mx-auto object-cover rounded-lg mb-3" alt=""><span
+              class="font-medium text-slate-700">特灵科技</span>
+            <p class="text-xs text-slate-400">水冷机组合作</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+              class="w-16 h-16 mx-auto object-cover rounded-lg mb-3" alt=""><span
+              class="font-medium text-slate-700">美的楼宇</span>
+            <p class="text-xs text-slate-400">数字化控制</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+              class="w-16 h-16 mx-auto object-cover rounded-lg mb-3" alt=""><span
+              class="font-medium text-slate-700">海尔智慧楼宇</span>
+            <p class="text-xs text-slate-400">磁悬浮离心机</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+              class="w-16 h-16 mx-auto object-cover rounded-lg mb-3" alt=""><span
+              class="font-medium text-slate-700">西门子</span>
+            <p class="text-xs text-slate-400">楼宇自控集成</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-xl text-center border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80"
+              class="w-16 h-16 mx-auto object-cover rounded-lg mb-3" alt=""><span
+              class="font-medium text-slate-700">霍尼韦尔</span>
+            <p class="text-xs text-slate-400">传感器联合研发</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 左图右文区块 (产品特点) 标题对应 -->
+    <section class="py-16 bg-sky-50/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=60&w=900&auto=format&fit=crop"
+          class="rounded-2xl shadow-lg shadow-sky-100 object-cover w-full h-96" alt="智慧楼宇空调">
+        <div>
+          <h2 class="text-3xl font-bold text-slate-800">分区独立控温，跨越空间</h2>
+          <p class="text-slate-600 mt-4 text-lg">每个房间独立传感器，自动调节风阀与水温。会议室、办公室、机房不同需求一键满足。集成BA系统，兼容Modbus/ Bacnet。</p>
+          <div class="flex gap-4 mt-6 text-sky-700 font-medium"><span
+              class="bg-sky-100 px-4 py-2 rounded-full text-sm">✔ 0.5℃精度</span><span
+              class="bg-sky-100 px-4 py-2 rounded-full text-sm">✔ 分区日程</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 左文右图区块 (反向布局) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <h2 class="text-3xl font-bold text-slate-800">AI负荷预测，深度节能</h2>
+          <p class="text-slate-600 mt-4 text-lg">基于天气、电价和建筑热惯量，自动优化主机出水温度与水泵频率。全年综合能效比提升32%，已应用于多个绿色建筑。</p>
+          <div class="flex gap-2 mt-6 flex-wrap"><span
+              class="bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm">#动态冰蓄冷</span><span
+              class="bg-sky-100 text-sky-700 px-4 py-2 rounded-full text-sm">#碳足迹追踪</span></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=60&w=900&auto=format&fit=crop"
+          class="rounded-2xl shadow-lg order-1 md:order-2 w-full h-96 object-cover" alt="AI节能分析图">
+      </div>
+    </section>
+
+    <!-- 5. 上文下图区块 (全平台/多设备) -->
+    <section class="py-16 bg-sky-50/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-slate-800">多端协同，指尖上的空调</h2>
+        <p class="text-slate-500 mt-3 max-w-2xl mx-auto">手机、电脑、中控屏三端一致体验，远程调节、故障预警、能耗报表</p>
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=60&w=900&auto=format&fit=crop"
+          class="mt-10 rounded-xl shadow-xl mx-auto border border-slate-200" alt="多设备展示">
+      </div>
+    </section>
+
+    <!-- 6. 特性区块 (4个卡片) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-800">为现代建筑打造的核心特性</h2>
+        <p class="text-center text-slate-500 mt-2">从可靠性到智能化，全面超越传统中央空调</p>
+        <div class="grid md:grid-cols-4 gap-6 mt-12">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100"><span class="text-4xl">🔒</span>
+            <h3 class="font-semibold text-xl mt-4">工业级加密</h3>
+            <p class="text-slate-500">控制指令与数据AES-256加密，防止非法入侵。</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100"><span class="text-4xl">⚡</span>
+            <h3 class="font-semibold text-xl mt-4">毫秒级响应</h3>
+            <p class="text-slate-500">传感器与控制联动，温度波动实时调整。</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100"><span class="text-4xl">🧩</span>
+            <h3 class="font-semibold text-xl mt-4">无限接口</h3>
+            <p class="text-slate-500">对接楼宇自控、光伏、充电桩等第三方系统。</p>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100"><span class="text-4xl">📊</span>
+            <h3 class="font-semibold text-xl mt-4">能效数字孪生</h3>
+            <p class="text-slate-500">实时能效看板，预测性维护建议。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 新增：产品功能矩阵区块 (全面功能) ========== -->
+    <section class="py-16 bg-sky-50/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-800">全面的功能矩阵</h2>
+        <p class="text-center text-slate-500 mt-2">满足楼宇从节能到管理的全方位需求</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <!-- 类别1: 智能控制 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-semibold border-b border-sky-100 pb-3 mb-4">❄️ 智能控制</h3>
+            <ul class="space-y-4">
+              <li>
+                <div class="font-medium">AI负荷预测</div>
+                <p class="text-sm text-slate-500">室外气温/电价联动预冷预热</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+              <li>
+                <div class="font-medium">分区独立调节</div>
+                <p class="text-sm text-slate-500">每个房间/区域独立温控</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+              <li>
+                <div class="font-medium">自适应学习</div>
+                <p class="text-sm text-slate-500">基于使用习惯自动调优</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+            </ul>
+          </div>
+          <!-- 类别2: 能源与运维 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-semibold border-b border-sky-100 pb-3 mb-4">📊 能源与运维</h3>
+            <ul class="space-y-4">
+              <li>
+                <div class="font-medium">能效看板</div>
+                <p class="text-sm text-slate-500">实时EER/COP 数据</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+              <li>
+                <div class="font-medium">故障预诊断</div>
+                <p class="text-sm text-slate-500">提前7天预警异常</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+              <li>
+                <div class="font-medium">分户计费</div>
+                <p class="text-sm text-slate-500">按冷量/时间精确计费</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+            </ul>
+          </div>
+          <!-- 类别3: 集成与开放 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-100">
+            <h3 class="text-xl font-semibold border-b border-sky-100 pb-3 mb-4">🔌 集成与开放</h3>
+            <ul class="space-y-4">
+              <li>
+                <div class="font-medium">楼宇自控对接</div>
+                <p class="text-sm text-slate-500">BACnet / Modbus / KNX</p><span
+                  class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+              <li>
+                <div class="font-medium">HTTP API</div>
+                <p class="text-sm text-slate-500">丰富的数据接口</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+              <li>
+                <div class="font-medium">第三方设备接入</div>
+                <p class="text-sm text-slate-500">光伏/储能/充电桩</p><span class="inline-block mt-1 text-sky-500">✅</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 客户案例区块 (3个卡片) 保持不变 -->
+    <section id="cases" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-800">他们正在使用我们的方案</h2>
+        <p class="text-center text-slate-500 mt-2">来自写字楼、工厂、综合体的信赖</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64"
+              class="w-12 h-12 object-cover rounded mb-3" alt=""><span class="font-semibold text-lg">浦东金融广场</span>
+            <p class="text-slate-400 text-sm">商业综合体</p>
+            <p class="mt-3 text-slate-600">“每年制冷季电费下降28%，BA联动完美。” </p>
+            <div class="flex items-center gap-3 mt-4"><img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64"
+                class="w-10 h-10 rounded-full object-cover">
+              <div>
+                <p class="font-medium">赵立</p>
+                <p class="text-xs text-slate-400">物业总经理</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64"
+              class="w-12 h-12 object-cover rounded mb-3" alt=""><span class="font-semibold text-lg">华辉精密工厂</span>
+            <p class="text-slate-400 text-sm">制造业</p>
+            <p class="mt-3 text-slate-600">“车间恒温±1℃，产品良率提升，售后响应极快。” </p>
+            <div class="flex items-center gap-3 mt-4"><img
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64"
+                class="w-10 h-10 rounded-full object-cover">
+              <div>
+                <p class="font-medium">陈国栋</p>
+                <p class="text-xs text-slate-400">厂长</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100"><img
+              src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64"
+              class="w-12 h-12 object-cover rounded mb-3" alt=""><span class="font-semibold text-lg">云栖科技园</span>
+            <p class="text-slate-400 text-sm">科技园区</p>
+            <p class="mt-3 text-slate-600">“分户计费清晰，手机远程控制入驻企业很满意。” </p>
+            <div class="flex items-center gap-3 mt-4"><img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64"
+                class="w-10 h-10 rounded-full object-cover">
+              <div>
+                <p class="font-medium">李雅</p>
+                <p class="text-xs text-slate-400">运营总监</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 比较表格区块 (竞品对比) 简化为2个竞品 -->
+    <section class="py-16 bg-sky-50/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-800">与主流方案对比</h2>
+        <p class="text-center text-slate-500 mt-2">恒温科技 · 更懂建筑节能</p>
+        <div class="overflow-x-auto mt-10">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="border-b-2 border-slate-200">
+                <th class="p-4 font-semibold">功能</th>
+                <th class="p-4 font-semibold text-sky-600">恒温科技</th>
+                <th class="p-4 font-semibold">传统集控</th>
+                <th class="p-4 font-semibold">国际品牌A</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-slate-100">
+                <td class="p-4">AI负荷预测</td>
+                <td class="p-4 text-sky-600">✅</td>
+                <td class="p-4 text-slate-400">❌</td>
+                <td class="p-4">✅</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="p-4">分户计费</td>
+                <td class="p-4 text-sky-600">✅</td>
+                <td class="p-4 text-slate-400">❌</td>
+                <td class="p-4">✅</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="p-4">开放API</td>
+                <td class="p-4 text-sky-600">✅</td>
+                <td class="p-4">✅</td>
+                <td class="p-4 text-slate-400">❌</td>
+              </tr>
+              <tr class="border-b border-slate-100">
+                <td class="p-4">本地部署可选</td>
+                <td class="p-4 text-sky-600">✅</td>
+                <td class="p-4 text-slate-400">❌</td>
+                <td class="p-4">✅</td>
+              </tr>
+              <tr class="border-b border-slate-100 bg-sky-50">
+                <td class="p-4 font-medium">每冷吨年费(估算)</td>
+                <td class="p-4 font-bold text-sky-600">¥7800</td>
+                <td class="p-4">¥10200</td>
+                <td class="p-4">¥11500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 统计区块 (数字) -->
+    <section class="py-12 bg-sky-500 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-4xl font-bold">500+</div>
+          <div class="text-sky-100">商业项目</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">98%</div>
+          <div class="text-sky-100">客户续约率</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">3.2M</div>
+          <div class="text-sky-100">㎡覆盖</div>
+        </div>
+        <div>
+          <div class="text-4xl font-bold">24/7</div>
+          <div class="text-sky-100">云端运维</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. 价格区块 (三个套餐) 省略复杂的json内容但符合结构 -->
+    <section id="pricing" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-800">灵活合作 · 按需付费</h2>
+        <p class="text-center text-slate-500">无隐藏费用，包含硬件补贴选项</p>
+        <div class="grid md:grid-cols-3 gap-6 mt-12">
+          <div class="border border-slate-200 rounded-2xl p-8">
+            <h3 class="text-xl font-bold">基础版</h3>
+            <p class="text-3xl font-bold mt-2">¥49<span class="text-sm text-slate-400 font-normal">/月/台</span></p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex gap-2">✅ 历史数据30天</li>
+              <li class="flex gap-2">✅ 5台以内设备</li>
+              <li class="flex gap-2">✅ 基础微信控制</li>
+            </ul><a href="#"
+              class="mt-8 block text-center border border-sky-500 text-sky-500 py-3 rounded-xl hover:bg-sky-50">选择基础版</a>
+          </div>
+          <div class="border-2 border-sky-400 rounded-2xl p-8 shadow-xl shadow-sky-100 relative"><span
+              class="absolute top-0 right-8 bg-sky-500 text-white px-3 py-1 text-sm rounded-b-lg">热门</span>
+            <h3 class="text-xl font-bold">商业版</h3>
+            <p class="text-3xl font-bold mt-2">¥99<span class="text-sm text-slate-400 font-normal">/月/台</span></p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex gap-2">✅ 无限历史</li>
+              <li class="flex gap-2">✅ 20台设备</li>
+              <li class="flex gap-2">✅ 全功能API</li>
+              <li class="flex gap-2">✅ 能耗诊断</li>
+            </ul><a href="#"
+              class="mt-8 block text-center bg-sky-500 text-white py-3 rounded-xl hover:bg-sky-600">选择商业版</a>
+          </div>
+          <div class="border border-slate-200 rounded-2xl p-8">
+            <h3 class="text-xl font-bold">企业版</h3>
+            <p class="text-3xl font-bold mt-2">定制</p>
+            <ul class="mt-6 space-y-3">
+              <li class="flex gap-2">✅ 本地服务器</li>
+              <li class="flex gap-2">✅ 不限设备</li>
+              <li class="flex gap-2">✅ 专属运维</li>
+              <li class="flex gap-2">✅ 二次开发支持</li>
+            </ul><a href="#"
+              class="mt-8 block text-center border border-sky-500 text-sky-500 py-3 rounded-xl hover:bg-sky-50">联系销售</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 新增：博客/新闻区块 ========== -->
+    <section class="py-16 bg-sky-50/30">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-800">最新动态</h2>
+        <p class="text-center text-slate-500 mt-2">产品更新、行业洞察与最佳实践</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <!-- 文章1 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=60&w=900&auto=format&fit=crop"
+              class="w-full h-48 object-cover" alt="AI节能">
+            <div class="p-6">
+              <p class="text-sky-500 text-sm font-medium">2025-02-18</p>
+              <h3 class="font-bold text-xl mt-1">2025中央空调节能趋势报告</h3>
+              <p class="text-slate-500 mt-2 line-clamp-2">AI与物联深度融合，助力建筑碳达峰。恒温科技参编行业白皮书。</p>
+              <div class="flex items-center gap-3 mt-4"><img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64"
+                  class="w-8 h-8 rounded-full object-cover"><span class="text-sm font-medium">张明</span><span
+                  class="text-xs text-slate-400">行业洞察</span></div>
+            </div>
+          </div>
+          <!-- 文章2 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=60&w=900&auto=format&fit=crop"
+              class="w-full h-48 object-cover" alt="新品发布">
+            <div class="p-6">
+              <p class="text-sky-500 text-sm font-medium">2025-02-01</p>
+              <h3 class="font-bold text-xl mt-1">新一代变频云盒发布</h3>
+              <p class="text-slate-500 mt-2">兼容99%多联机，毫秒级响应，支持5G双链路。</p>
+              <div class="flex items-center gap-3 mt-4"><img
+                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64"
+                  class="w-8 h-8 rounded-full object-cover"><span class="text-sm font-medium">李华</span><span
+                  class="text-xs text-slate-400">产品更新</span></div>
+            </div>
+          </div>
+          <!-- 文章3 -->
+          <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=60&w=900&auto=format&fit=crop"
+              class="w-full h-48 object-cover" alt="客户案例">
+            <div class="p-6">
+              <p class="text-sky-500 text-sm font-medium">2025-01-22</p>
+              <h3 class="font-bold text-xl mt-1">杭州西站智慧空调揭秘</h3>
+              <p class="text-slate-500 mt-2">30万㎡候车厅如何实现分区控温，年省电费200万。</p>
+              <div class="flex items-center gap-3 mt-4"><img
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=64"
+                  class="w-8 h-8 rounded-full object-cover"><span class="text-sm font-medium">王芳</span><span
+                  class="text-xs text-slate-400">客户案例</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. 常见问题区块 4个 -->
+    <section class="py-16 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-slate-800">常见问题</h2>
+        <div class="mt-10 space-y-5">
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+            <details>
+              <summary class="font-semibold cursor-pointer">支持多联机改造吗？</summary>
+              <p class="mt-2 text-slate-500">是的，兼容大金、日立、三菱等主流多联机，加装智能网关即可。</p>
+            </details>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+            <details>
+              <summary class="font-semibold cursor-pointer">数据存储在哪里？</summary>
+              <p class="mt-2 text-slate-500">默认阿里云华东节点，也支持私有化部署至客户机房。</p>
+            </details>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+            <details>
+              <summary class="font-semibold cursor-pointer">可以免费试用吗？</summary>
+              <p class="mt-2 text-slate-500">新用户可申请30天远程体验，我们寄送调试模块，仅需押金。</p>
+            </details>
+          </div>
+          <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+            <details>
+              <summary class="font-semibold cursor-pointer">如何迁移原有楼宇系统？</summary>
+              <p class="mt-2 text-slate-500">提供标准OPC/Modbus采集方案，保留历史数据并平滑接入。</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. CTA区块 -->
+    <section class="bg-gradient-to-r from-sky-600 to-blue-600 text-white py-20">
+      <div class="max-w-3xl mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold">即刻升级您的中央空调</h2>
+        <p class="text-xl text-sky-100 mt-4">免费获取初步节能评估报告 + 设备清单</p>
+        <div class="flex flex-wrap gap-4 justify-center mt-8"><a href="#"
+            class="bg-white text-sky-600 px-8 py-4 rounded-xl font-semibold shadow-lg">免费试用30天</a><a href="#"
+            class="border border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white/10">预约工程师演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) 舒适科技 -->
+  <footer class="bg-slate-900 text-slate-300 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center gap-2 text-white"><span class="text-2xl">❄️</span><span
+              class="font-semibold text-xl">恒温科技</span></div>
+          <p class="mt-4 text-sm">舒适 · 低碳 · 智慧楼宇空调专家</p>
+          <p class="mt-6 text-xs text-slate-500">© 2025 恒温科技 版权所有</p>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold">公司地址</h3>
+          <address class="not-italic mt-3 text-sm">苏州市工业园区<br>新光路188号智慧谷A座</address>
+          <p class="mt-4 text-sm">📞 400-8820-668<br>✉️ hello@hengwen.cn</p>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold">快速链接</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a href="#" class="hover:text-sky-300">解决方案</a></li>
+            <li><a href="#" class="hover:text-sky-300">案例中心</a></li>
+            <li><a href="#" class="hover:text-sky-300">服务支持</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-semibold">关注我们</h3>
+          <div
+            class="mt-3 w-24 h-24 bg-slate-700 rounded-lg flex items-center justify-center text-slate-400 border border-slate-600">
+            <!-- 二维码占位 模拟公众号二维码图片 -->
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=128&q=80"
+              class="w-20 h-20 object-cover rounded" alt="微信公众号">
+          </div>
+          <p class="text-xs mt-2">扫一扫关注公众号</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

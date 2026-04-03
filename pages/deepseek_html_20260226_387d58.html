@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲜道速配 · 生鲜零售企业</title>
+    <!-- Tailwind via CDN + 基础层样式 (无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入字节跳动风格的活力色盘 (完全通过tailwind类实现) -->
+</head>
+
+<body class="bg-[#f9f7f3] text-gray-800 font-sans antialiased">
+
+    <!-- 导航栏 (logo, 标题, CTA按钮, 无菜单) 活力色块风采用高饱和点缀 -->
+    <header class="border-b-4 border-[#f97316] bg-white shadow-md sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-[#fb923c] rounded-2xl rotate-6 flex items-center justify-center text-white text-2xl shadow-lg">
+                    🍊</div>
+                <span class="font-extrabold text-2xl tracking-tight text-[#2d3e2c]">鲜<span
+                        class="text-[#f97316]">·</span>道速配</span>
+            </div>
+            <!-- CTA 按钮 -->
+            <a href="/signup"
+                class="bg-[#f97316] text-white px-7 py-3 rounded-full font-bold text-sm shadow-[4px_4px_0_#1e3a2b] hover:shadow-[2px_2px_0_#1e3a2b] hover:translate-x-1 hover:translate-y-1 transition-all border-2 border-[#1e3a2b]">
+                企业入驻 🚀
+            </a>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (HERO)  对应 "首屏区块" JSON 结构 + 生鲜零售文案与图片 -->
+        <section
+            class="relative bg-gradient-to-br from-[#fef9e4] via-[#ffe9ce] to-[#ffd8b5] py-20 md:py-28 border-b-8 border-[#1e3a2b]">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl md:text-6xl font-black leading-[1.1] tracking-tight text-[#1e3a2b]">
+                        从枝头到柜台<span class="text-[#f97316]">,</span><br>鲜机一步到位
+                    </h1>
+                    <p class="text-xl md:text-2xl text-[#b45f2b] font-semibold">生鲜供应链即时协同 · 零损耗不是梦</p>
+                    <p
+                        class="text-base text-gray-700 max-w-lg bg-white/60 p-4 rounded-2xl shadow-inner border-l-4 border-[#f97316]">
+                        专为生鲜零售打造的数字化平台，门店订货、仓储配送、损耗预警实时同步。让每一颗草莓都新鲜上架。
+                    </p>
+                    <div class="flex flex-wrap gap-5 pt-4">
+                        <a href="/signup"
+                            class="bg-[#1e3a2b] text-white px-9 py-4 rounded-full font-bold text-lg shadow-[5px_5px_0_#f97316] hover:shadow-[2px_2px_0_#f97316] hover:translate-x-1 hover:translate-y-1 transition-all border-2 border-[#f97316]">开始使用</a>
+                        <a href="/contact"
+                            class="bg-white text-[#1e3a2b] px-9 py-4 rounded-full font-bold text-lg shadow-[5px_5px_0_#fb923c] border-2 border-[#fb923c] hover:bg-[#fb923c] hover:text-white transition-all">联系销售</a>
+                    </div>
+                </div>
+                <div class="relative flex justify-end">
+                    <div
+                        class="w-full max-w-lg aspect-[4/3] bg-[#fb923c] rounded-[40px_10px_40px_10px] border-4 border-[#1e3a2b] shadow-[12px_12px_0_#1e3a2b] overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop"
+                            alt="新鲜蔬果分拣" loading="lazy">
+                    </div>
+                    <!-- 活力贴纸 -->
+                    <span
+                        class="absolute -bottom-5 -left-5 bg-[#facc15] text-4xl p-4 rounded-full border-4 border-[#1e3a2b] shadow-lg rotate-12">🍓</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通 → 生鲜版本)  对应JSON左图右文 + highlights -->
+        <section class="bg-[#f3ede2] py-20 border-y-4 border-[#f97316]">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <div
+                        class="rounded-[30px_10px_30px_10px] border-4 border-[#1e3a2b] shadow-[-12px_12px_0_#fb923c] overflow-hidden aspect-[4/3]">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1607344645866-009c320b63e0?q=60&w=900&auto=format&fit=crop"
+                            alt="果蔬供应链团队" loading="lazy">
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 space-y-5">
+                    <h2 class="text-4xl md:text-5xl font-black text-[#1e3a2b]">果蔬不断链<span class="text-[#f97316]"> ·
+                        </span>鲜度不断线</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed bg-white p-5 rounded-2xl shadow-inner">
+                        打破产地、仓储、门店之间的信息孤岛。通过批次群组、实时库存和到货预报，让采购、店长、司机同步知道“那筐荔枝”的位置。集成AI损耗预测，自动建议调拨。
+                    </p>
+                    <div class="flex gap-4 pt-3 flex-wrap">
+                        <span
+                            class="bg-[#1e3a2b] text-white px-6 py-3 rounded-full font-bold text-sm shadow-[3px_3px_0_#f97316] border border-[#f97316]">🍏
+                            全链路温控</span>
+                        <span
+                            class="bg-[#f97316] text-white px-6 py-3 rounded-full font-bold text-sm shadow-[3px_3px_0_#1e3a2b] border border-[#1e3a2b]">📦
+                            批次溯源</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流 → 生鲜工作流) 对应JSON左文右图 + tags -->
+        <section class="bg-[#e7f0e7] py-20 border-b-4 border-[#1e3a2b]">
+            <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+                <div class="space-y-5">
+                    <h2 class="text-4xl md:text-5xl font-black text-[#1e3a2b]">深度集成<span class="text-[#f97316]">
+                            生鲜</span>工作流</h2>
+                    <p class="text-lg text-gray-700 bg-white/70 p-5 rounded-2xl">
+                        与您使用的工具无缝连接：ERP、WMS、电子秤、冷链云。在群聊中创建调拨单、查看库存预警、触发采购申请。告别excel传递。
+                    </p>
+                    <div class="flex gap-3 flex-wrap">
+                        <span
+                            class="bg-[#fb923c] text-white px-6 py-3 rounded-full font-bold text-sm shadow-[3px_3px_0_#1e3a2b]">📦
+                            百果园对接</span>
+                        <span
+                            class="bg-[#1e3a2b] text-white px-6 py-3 rounded-full font-bold text-sm shadow-[3px_3px_0_#f97316]">⚖️
+                            秤具直连</span>
+                    </div>
+                </div>
+                <div>
+                    <div
+                        class="rounded-[30px_10px_30px_10px] border-4 border-[#fb923c] shadow-[12px_12px_0_#1e3a2b] overflow-hidden aspect-[4/3]">
+                        <img class="w-full h-full object-cover"
+                            src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?q=60&w=900&auto=format&fit=crop"
+                            alt="生鲜配送平板" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台体验 → 生鲜多端看板)  JSON 上文下图 -->
+        <section class="bg-[#f8dbb6] py-20 border-y-4 border-[#f97316]">
+            <div class="max-w-7xl mx-auto px-6 text-center space-y-8">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-black text-[#1e3a2b]">全平台 · 鲜食看板</h2>
+                    <p
+                        class="text-xl text-gray-800 bg-[#ffe1c1] p-4 rounded-full mt-4 border-2 border-[#1e3a2b] shadow-inline">
+                        无论门店PC、手持终端还是手机，库存与销量实时同步，操作流畅如一。
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <div
+                        class="w-full max-w-5xl aspect-[16/9] rounded-[40px_10px_40px_10px] border-4 border-[#1e3a2b] shadow-[16px_16px_0_#fb923c] overflow-hidden bg-[#f97316]">
+                        <img class="w-full h-full object-cover object-center"
+                            src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=60&w=900&auto=format&fit=crop"
+                            alt="多设备生鲜管理" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为生鲜打造的特性) JSON 特性区块 -->
+        <section class="bg-[#dee9d5] py-24 border-b-4 border-[#1e3a2b]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2
+                        class="text-4xl md:text-5xl font-black text-[#1e3a2b] inline-block bg-[#fb923c] px-10 py-3 rounded-full border-4 border-[#1e3a2b] shadow-[8px_8px_0_#1e3a2b] rotate-[-1deg]">
+                        生鲜 · 硬核功能</h2>
+                    <p class="text-2xl text-[#b45f2b] font-bold mt-8">从保鲜到效率，面面俱到</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 特性1 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[30px_8px_30px_8px] p-8 shadow-[12px_12px_0_#f97316] hover:translate-x-1 hover:translate-y-1 transition">
+                        <div
+                            class="text-5xl mb-5 bg-[#fb923c] w-20 h-20 flex items-center justify-center rounded-3xl border-4 border-[#1e3a2b] -rotate-6 shadow-md">
+                            🥬</div>
+                        <h3 class="text-2xl font-black text-[#1e3a2b]">全链路保鲜</h3>
+                        <p class="text-gray-600 mt-3">从采摘到货架，实时温湿度监控，超标自动预警，损耗降低27%</p>
+                    </div>
+                    <!-- 特性2 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[30px_8px_30px_8px] p-8 shadow-[12px_12px_0_#f97316] hover:translate-x-1 hover:translate-y-1 transition">
+                        <div
+                            class="text-5xl mb-5 bg-[#fb923c] w-20 h-20 flex items-center justify-center rounded-3xl border-4 border-[#1e3a2b] rotate-3 shadow-md">
+                            ⏱️</div>
+                        <h3 class="text-2xl font-black text-[#1e3a2b]">极速补货</h3>
+                        <p class="text-gray-600 mt-3">门店缺货自动生成调拨任务，骑手/司机接单，小时级送达。</p>
+                    </div>
+                    <!-- 特性3 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[30px_8px_30px_8px] p-8 shadow-[12px_12px_0_#f97316] hover:translate-x-1 hover:translate-y-1 transition">
+                        <div
+                            class="text-5xl mb-5 bg-[#fb923c] w-20 h-20 flex items-center justify-center rounded-3xl border-4 border-[#1e3a2b] -rotate-6 shadow-md">
+                            🧩</div>
+                        <h3 class="text-2xl font-black text-[#1e3a2b]">产地直连</h3>
+                        <p class="text-gray-600 mt-3">对接200+产地系统，批次成熟度、预计产量一目了然。</p>
+                    </div>
+                    <!-- 特性4 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[30px_8px_30px_8px] p-8 shadow-[12px_12px_0_#f97316] hover:translate-x-1 hover:translate-y-1 transition">
+                        <div
+                            class="text-5xl mb-5 bg-[#fb923c] w-20 h-20 flex items-center justify-center rounded-3xl border-4 border-[#1e3a2b] rotate-6 shadow-md">
+                            📊</div>
+                        <h3 class="text-2xl font-black text-[#1e3a2b]">AI销量预测</h3>
+                        <p class="text-gray-600 mt-3">结合天气、节假日的智能订货建议，减少剩货损失。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (核心团队 → 生鲜买手/运营专家) JSON 团队 -->
+        <section class="bg-[#f9e6cf] py-20 border-b-4 border-[#fb923c]">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-5xl font-black text-center text-[#1e3a2b] mb-4">🥝 生鲜买手天团</h2>
+                <p class="text-center text-[#b45f2b] text-xl mb-16">来自全球供应链与零售巨头的品类专家</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <!-- 成员1 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[40px_10px_40px_10px] p-6 shadow-[12px_12px_0_#fb923c] text-center hover:scale-[1.02] transition">
+                        <img class="w-32 h-32 rounded-full border-4 border-[#fb923c] mx-auto object-cover"
+                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=60&w=900&auto=format&fit=crop"
+                            alt="张伟">
+                        <h3 class="text-2xl font-bold mt-4 text-[#1e3a2b]">张伟</h3>
+                        <p class="text-[#f97316] font-bold">CEO & 首席买手</p>
+                        <p class="text-gray-600 text-sm mt-2">前盒马生鲜全国采购总监</p>
+                    </div>
+                    <!-- 成员2 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[40px_10px_40px_10px] p-6 shadow-[12px_12px_0_#fb923c] text-center hover:scale-[1.02] transition">
+                        <img class="w-32 h-32 rounded-full border-4 border-[#fb923c] mx-auto object-cover"
+                            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=60&w=900&auto=format&fit=crop"
+                            alt="陈敏">
+                        <h3 class="text-2xl font-bold mt-4 text-[#1e3a2b]">陈敏</h3>
+                        <p class="text-[#f97316] font-bold">CTO</p>
+                        <p class="text-gray-600 text-sm mt-2">前每日优鲜技术总监，生鲜SaaS专家</p>
+                    </div>
+                    <!-- 成员3 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[40px_10px_40px_10px] p-6 shadow-[12px_12px_0_#fb923c] text-center hover:scale-[1.02] transition">
+                        <img class="w-32 h-32 rounded-full border-4 border-[#fb923c] mx-auto object-cover"
+                            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=60&w=900&auto=format&fit=crop"
+                            alt="王磊">
+                        <h3 class="text-2xl font-bold mt-4 text-[#1e3a2b]">王磊</h3>
+                        <p class="text-[#f97316] font-bold">产品总监</p>
+                        <p class="text-gray-600 text-sm mt-2">前美团快驴产品负责人</p>
+                    </div>
+                    <!-- 成员4 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[40px_10px_40px_10px] p-6 shadow-[12px_12px_0_#fb923c] text-center hover:scale-[1.02] transition">
+                        <img class="w-32 h-32 rounded-full border-4 border-[#fb923c] mx-auto object-cover"
+                            src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=60&w=900&auto=format&fit=crop"
+                            alt="李莉">
+                        <h3 class="text-2xl font-bold mt-4 text-[#1e3a2b]">李莉</h3>
+                        <p class="text-[#f97316] font-bold">设计负责人</p>
+                        <p class="text-gray-600 text-sm mt-2">前农夫山泉用户体验设计</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (生鲜数据) JSON stats -->
+        <section class="bg-[#1e3a2b] py-20 border-y-4 border-[#fb923c]">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div
+                    class="bg-[#fb923c] border-4 border-white rounded-[30px_0_30px_0] p-8 shadow-[8px_8px_0_white] rotate-[-1deg]">
+                    <div class="text-5xl font-black text-white">500+</div>
+                    <div class="text-white text-xl font-bold mt-2">生鲜连锁</div>
+                </div>
+                <div
+                    class="bg-[#fb923c] border-4 border-white rounded-[0_30px_0_30px] p-8 shadow-[8px_8px_0_white] rotate-[1deg]">
+                    <div class="text-5xl font-black text-white">98%</div>
+                    <div class="text-white text-xl font-bold mt-2">门店续约率</div>
+                </div>
+                <div
+                    class="bg-[#fb923c] border-4 border-white rounded-[30px_0_30px_0] p-8 shadow-[8px_8px_0_white] -rotate-[1deg]">
+                    <div class="text-5xl font-black text-white">20M+</div>
+                    <div class="text-white text-xl font-bold mt-2">日处理订单</div>
+                </div>
+                <div
+                    class="bg-[#fb923c] border-4 border-white rounded-[0_30px_0_30px] p-8 shadow-[8px_8px_0_white] rotate-[1deg]">
+                    <div class="text-5xl font-black text-white">24/7</div>
+                    <div class="text-white text-xl font-bold mt-2">保鲜护航</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (生鲜版定价)  JSON 价格区块 -->
+        <section class="bg-[#fcf2e1] py-24 border-b-4 border-[#1e3a2b]">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-5xl font-black text-center text-[#1e3a2b]">灵活计价 · 按箱区定价</h2>
+                <p class="text-center text-[#f97316] text-2xl font-bold mt-2">无隐藏费用，支持生鲜季节调配</p>
+                <div class="grid md:grid-cols-3 gap-10 mt-20">
+                    <!-- 基础版 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[40px_10px_40px_10px] p-8 shadow-[12px_12px_0_#fb923c] hover:shadow-[8px_8px_0_#fb923c] transition">
+                        <h3 class="text-3xl font-black text-[#1e3a2b]">基础版</h3>
+                        <p class="text-6xl font-black mt-4 text-[#f97316]">49<span
+                                class="text-xl text-gray-500">/月/门店</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-700">
+                            <li class="flex gap-2">✅ 近30天库存回溯</li>
+                            <li class="flex gap-2">✅ 10GB 鲜品图片存储</li>
+                            <li class="flex gap-2">✅ 基础进销存</li>
+                        </ul>
+                        <a href="/signup/basic"
+                            class="block text-center mt-8 bg-[#1e3a2b] text-white py-4 rounded-full font-bold border-4 border-[#fb923c] shadow-[4px_4px_0_#fb923c] hover:bg-[#fb923c] hover:text-[#1e3a2b] transition">选择基础版</a>
+                    </div>
+                    <!-- 商业版 (popular) -->
+                    <div
+                        class="bg-white border-4 border-[#fb923c] rounded-[40px_10px_40px_10px] p-8 shadow-[16px_16px_0_#1e3a2b] scale-105 relative z-10">
+                        <span
+                            class="absolute -top-6 right-4 bg-[#f97316] text-white px-6 py-2 rounded-full font-bold border-4 border-[#1e3a2b] rotate-3">🍍
+                            热门</span>
+                        <h3 class="text-3xl font-black text-[#1e3a2b]">商业版</h3>
+                        <p class="text-6xl font-black mt-4 text-[#f97316]">99<span
+                                class="text-xl text-gray-500">/月/门店</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-700">
+                            <li class="flex gap-2">✅ 无限历史批次</li>
+                            <li class="flex gap-2">✅ 100GB 存储+视频</li>
+                            <li class="flex gap-2">✅ 所有集成 + 损耗AI</li>
+                            <li class="flex gap-2">✅ 金牌生鲜支持</li>
+                        </ul>
+                        <a href="/signup/business"
+                            class="block text-center mt-8 bg-[#fb923c] text-[#1e3a2b] py-4 rounded-full font-bold border-4 border-[#1e3a2b] shadow-[4px_4px_0_#1e3a2b] hover:bg-[#1e3a2b] hover:text-white transition">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[40px_10px_40px_10px] p-8 shadow-[12px_12px_0_#fb923c]">
+                        <h3 class="text-3xl font-black text-[#1e3a2b]">企业版</h3>
+                        <p class="text-5xl font-black mt-4 text-[#f97316]">定制</p>
+                        <ul class="mt-6 space-y-3 text-gray-700">
+                            <li class="flex gap-2">✅ 私有产地部署</li>
+                            <li class="flex gap-2">✅ 无限存储/审计</li>
+                            <li class="flex gap-2">✅ 专属客户成功</li>
+                            <li class="flex gap-2">✅ SSO/合规溯源</li>
+                        </ul>
+                        <a href="/contact"
+                            class="block text-center mt-8 bg-[#1e3a2b] text-white py-4 rounded-full font-bold border-4 border-[#fb923c] shadow-[4px_4px_0_#fb923c] hover:bg-[#fb923c] hover:text-[#1e3a2b] transition">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 JSON faqs + 生鲜问题 -->
+        <section class="bg-[#f5e5d5] py-20 border-y-4 border-[#fb923c]">
+            <div class="max-w-4xl mx-auto px-6">
+                <h2 class="text-5xl font-black text-center text-[#1e3a2b] mb-14">🍅 常见问题</h2>
+                <div class="space-y-6">
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[20px_0_20px_0] p-8 shadow-[10px_10px_0_#fb923c]">
+                        <p class="font-black text-xl text-[#1e3a2b]">❓ 支持本地/专属部署吗？</p>
+                        <p class="text-gray-700 mt-2">企业版支持在您的数据中心或私有云部署，满足生鲜溯源安全合规。</p>
+                    </div>
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[0_20px_0_20px] p-8 shadow-[10px_10px_0_#fb923c]">
+                        <p class="font-black text-xl text-[#1e3a2b]">❓ 可以试用多久？</p>
+                        <p class="text-gray-700 mt-2">新用户45天全功能免费试用（含生鲜损耗分析模块），无需信用卡。</p>
+                    </div>
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[20px_0_20px_0] p-8 shadow-[10px_10px_0_#fb923c]">
+                        <p class="font-black text-xl text-[#1e3a2b]">❓ 数据存储在哪里？</p>
+                        <p class="text-gray-700 mt-2">默认华东/华南双节点；可选支持海外仓，符合当地生鲜数据法规。</p>
+                    </div>
+                    <div
+                        class="bg-white border-4 border-[#1e3a2b] rounded-[0_20px_0_20px] p-8 shadow-[10px_10px_0_#fb923c]">
+                        <p class="font-black text-xl text-[#1e3a2b]">❓ 能迁移原有进销存数据吗？</p>
+                        <p class="text-gray-700 mt-2">提供专用迁移工具，支持从多家传统ERP导入商品档案与库存。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 JSON cta + 生鲜文案 -->
+        <section class="bg-[#fb923c] py-24 border-t-8 border-[#1e3a2b]">
+            <div class="max-w-4xl mx-auto text-center px-6">
+                <h2 class="text-5xl md:text-6xl font-black text-[#1e3a2b] leading-tight">即刻提升生鲜周转效率</h2>
+                <p
+                    class="text-2xl text-[#1e3a2b] font-semibold mt-4 bg-white inline-block px-10 py-3 rounded-full border-4 border-[#1e3a2b] shadow-[6px_6px_0_#1e3a2b]">
+                    加入300+区域生鲜龙头，开启零损耗协同</p>
+                <div class="flex flex-wrap justify-center gap-8 mt-12">
+                    <a href="/signup"
+                        class="bg-[#1e3a2b] text-white px-14 py-5 rounded-full text-2xl font-black border-4 border-white shadow-[10px_10px_0_white] hover:shadow-[4px_4px_0_white] hover:translate-x-1 hover:translate-y-1 transition">免费试用45天
+                        🍊</a>
+                    <a href="/demo"
+                        class="bg-white text-[#1e3a2b] px-14 py-5 rounded-full text-2xl font-black border-4 border-[#1e3a2b] shadow-[10px_10px_0_#1e3a2b] hover:shadow-[4px_4px_0_#1e3a2b] hover:translate-x-1 hover:translate-y-1 transition">预约生鲜演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (简单版权声明) 活力色块风 -->
+    <footer class="bg-[#1e3a2b] border-t-8 border-[#fb923c] py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-white">
+            <div class="flex items-center gap-2 text-2xl font-black">
+                <span class="text-[#fb923c]">©</span> 鲜道速配 · 生鲜零售云
+            </div>
+            <div class="text-[#fb923c] text-sm font-medium mt-2 md:mt-0">
+                鲜活无界 · 科技保鲜 | 版权所有 2025
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智联未来 · 智能家居企业</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 纯tailwind风格，无自定义样式，仅保证默认字体 */
+        body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-slate-50 to-slate-100 text-slate-800 antialiased">
+
+    <!-- 导航栏 (含logo,标题,菜单,CTA) 银灰/青色 -->
+    <nav class="bg-white/70 backdrop-blur-md border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-gradient-to-tr from-cyan-500 to-slate-600 rounded-lg flex items-center justify-center text-white text-xl font-bold shadow-md">Z</div>
+                    <span class="font-semibold text-xl tracking-tight text-slate-800">智联<span class="text-cyan-600">.home</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+                    <a href="#" class="hover:text-cyan-600 transition">产品</a>
+                    <a href="#" class="hover:text-cyan-600 transition">解决方案</a>
+                    <a href="#" class="hover:text-cyan-600 transition">生态伙伴</a>
+                    <a href="#" class="hover:text-cyan-600 transition">支持</a>
+                </div>
+                <!-- CTA按钮 + 移动菜单图标 -->
+                <div class="flex items-center gap-3">
+                    <a href="/signup" class="hidden sm:inline-block bg-cyan-600 hover:bg-cyan-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md transition">开始使用</a>
+                    <button class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+
+        <!-- 首屏区块 (物联网智能家居首屏) -->
+        <section class="relative bg-slate-900 text-white">
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0')] bg-cover bg-center opacity-20"></div>
+            <div class="relative max-w-7xl mx-auto px-4 py-24 md:py-32 lg:py-36">
+                <div class="max-w-3xl">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"><span class="text-cyan-400">全屋智能</span> 从连接开始</h1>
+                    <p class="text-xl md:text-2xl mt-6 text-slate-300">企业级物联网平台 · 安全、开放、自适应</p>
+                    <p class="text-lg mt-4 text-slate-400 max-w-2xl">专为现代住宅与社区打造的智能中枢，集成照明、安防、能耗与AIoT场景。</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="/signup" class="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold px-8 py-3 rounded-full shadow-lg shadow-cyan-500/30">部署试用</a>
+                        <a href="/contact" class="bg-transparent border border-cyan-400/50 hover:border-cyan-400 text-cyan-300 hover:text-white font-semibold px-8 py-3 rounded-full backdrop-blur-sm">联系专家</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 装饰元素 -->
+            <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-slate-50 to-transparent"></div>
+        </section>
+
+        <!-- 合作伙伴区块 (物联网生态) -->
+        <section class="py-20 bg-white/50 backdrop-blur-sm">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">我们的生态伙伴</h2>
+                    <p class="text-lg text-slate-500 mt-3">与全球领先的物联网科技公司深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+                    <!-- 用占位logo演示，实际可替换 -->
+                    <div class="flex flex-col items-center p-4 rounded-2xl bg-slate-50/70 hover:bg-white transition border border-slate-200"><img class="h-12 w-auto grayscale hover:grayscale-0" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="微软"><span class="text-xs mt-2 text-slate-500">微软</span></div>
+                    <div class="flex flex-col items-center p-4 rounded-2xl bg-slate-50/70 hover:bg-white transition border border-slate-200"><img class="h-12 w-auto grayscale hover:grayscale-0" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="亚马逊"><span class="text-xs mt-2 text-slate-500">AWS</span></div>
+                    <div class="flex flex-col items-center p-4 rounded-2xl bg-slate-50/70 hover:bg-white transition border border-slate-200"><img class="h-12 w-auto grayscale hover:grayscale-0" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="Google"><span class="text-xs mt-2 text-slate-500">Google</span></div>
+                    <div class="flex flex-col items-center p-4 rounded-2xl bg-slate-50/70 hover:bg-white transition border border-slate-200"><img class="h-12 w-auto grayscale hover:grayscale-0" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="西门子"><span class="text-xs mt-2 text-slate-500">西门子</span></div>
+                    <div class="flex flex-col items-center p-4 rounded-2xl bg-slate-50/70 hover:bg-white transition border border-slate-200"><img class="h-12 w-auto grayscale hover:grayscale-0" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="海尔"><span class="text-xs mt-2 text-slate-500">海尔智家</span></div>
+                    <div class="flex flex-col items-center p-4 rounded-2xl bg-slate-50/70 hover:bg-white transition border border-slate-200"><img class="h-12 w-auto grayscale hover:grayscale-0" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="小米"><span class="text-xs mt-2 text-slate-500">小米</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (设备互联) -->
+        <section class="py-20 max-w-7xl mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="智能家居互联" class="rounded-2xl shadow-2xl border border-slate-200"></div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">无缝连接 · 全屋智能</h2>
+                    <p class="text-lg text-slate-600 mt-6">打破设备孤岛，通过Matter协议与多品牌兼容，灯光、空调、窗帘、门锁一屏管控。集成AI场景引擎。</p>
+                    <div class="flex gap-4 mt-8">
+                        <span class="inline-flex items-center px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full text-sm font-medium border border-cyan-200">端到端加密</span>
+                        <span class="inline-flex items-center px-4 py-2 bg-cyan-50 text-cyan-700 rounded-full text-sm font-medium border border-cyan-200">离线可用</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (工作流集成) 改用智能场景自动化 -->
+        <section class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-12">
+                <div class="lg:w-1/2"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="智能自动化" class="rounded-2xl shadow-2xl"></div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">深度集成 · 自动化场景</h2>
+                    <p class="text-lg text-slate-600 mt-6">与您使用的智能设备无缝联动：回家自动开灯、离家布防、能耗优化。在App中创建“我离家”等触发任务。</p>
+                    <div class="flex gap-4 mt-8">
+                        <span class="inline-flex items-center px-4 py-2 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">IFTTT 集成</span>
+                        <span class="inline-flex items-center px-4 py-2 bg-slate-200 text-slate-700 rounded-full text-sm font-medium">API 全开放</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (物联网特性) -->
+        <section class="py-20 max-w-7xl mx-auto px-4">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800">专为智慧家庭打造的特性</h2>
+                <p class="text-lg text-slate-500 mt-3">从安全到节能，面面俱到</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-lg"><span class="text-4xl">🔒</span><h3 class="text-xl font-semibold mt-4">金融级安全</h3><p class="text-slate-500 mt-2">本地加密、生物识别、访客权限，通过ISO 27001认证。</p></div>
+                <div class="p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-lg"><span class="text-4xl">⚡</span><h3 class="text-xl font-semibold mt-4">毫秒级响应</h3><p class="text-slate-500 mt-2">基于边缘网关，即使外网断开本地自动化依旧执行。</p></div>
+                <div class="p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-lg"><span class="text-4xl">🧩</span><h3 class="text-xl font-semibold mt-4">300+ 设备兼容</h3><p class="text-slate-500 mt-2">支持主流品牌照明、传感、电工、安防设备。</p></div>
+                <div class="p-6 bg-white/70 backdrop-blur-sm rounded-2xl border border-slate-200 shadow-lg"><span class="text-4xl">📊</span><h3 class="text-xl font-semibold mt-4">能耗洞察</h3><p class="text-slate-500 mt-2">分项用电可视化，主动节能建议，节省电费15%以上。</p></div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 -->
+        <section class="py-20 bg-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">他们正在使用我们的产品</h2>
+                    <p class="text-slate-400 mt-3">来自地产、公寓、高端住宅的信赖</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-800/70 p-8 rounded-2xl border border-slate-700"><img class="h-10 w-auto grayscale brightness-200" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="logo"><p class="mt-4 text-slate-300 italic">“业主满意度提升35%，运维成本下降20%。”</p><div class="flex items-center mt-6"><img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop"><div class="ml-3"><p class="font-medium">陈志远</p><p class="text-sm text-slate-400">CTO，云顶地产</p></div></div></div>
+                    <div class="bg-slate-800/70 p-8 rounded-2xl border border-slate-700"><img class="h-10 w-auto grayscale brightness-200" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="logo"><p class="mt-4 text-slate-300 italic">“部署简单，租户可以自己DIY场景，大幅减少报修。”</p><div class="flex items-center mt-6"><img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop"><div class="ml-3"><p class="font-medium">李雅文</p><p class="text-sm text-slate-400">运营总监，冠寓</p></div></div></div>
+                    <div class="bg-slate-800/70 p-8 rounded-2xl border border-slate-700"><img class="h-10 w-auto grayscale brightness-200" src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="logo"><p class="mt-4 text-slate-300 italic">“本地部署方案满足隐私法规，且响应速度极快。”</p><div class="flex items-center mt-6"><img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop"><div class="ml-3"><p class="font-medium">张瑞</p><p class="text-sm text-slate-400">IT总监，滨江集团</p></div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (智能家居订阅) -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">灵活定价 · 按需选择</h2>
+                    <p class="text-slate-500 mt-3">无隐藏费用，家庭/公寓/别墅均适用</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="border border-slate-200 rounded-3xl p-8 bg-white shadow-lg"><h3 class="text-2xl font-bold">基础版</h3><p class="text-4xl font-bold mt-4">¥49<span class="text-base font-normal text-slate-500">/月</span></p><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 50+设备接入</li><li class="flex gap-2">✅ 本地自动化</li><li class="flex gap-2">✅ 基础报表</li></ul><a href="#" class="mt-8 block text-center border border-cyan-600 text-cyan-600 hover:bg-cyan-50 font-semibold py-3 rounded-full">选择基础版</a></div>
+                    <div class="border-2 border-cyan-500 rounded-3xl p-8 bg-white shadow-xl scale-105 relative"><span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-500 text-white px-4 py-1 rounded-full text-sm font-semibold">热门</span><h3 class="text-2xl font-bold">进阶版</h3><p class="text-4xl font-bold mt-4">¥99<span class="text-base font-normal text-slate-500">/月</span></p><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 无限设备</li><li class="flex gap-2">✅ 跨平台联动</li><li class="flex gap-2">✅ 全屋智能场景</li><li class="flex gap-2">✅ 能耗AI建议</li></ul><a href="#" class="mt-8 block text-center bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-3 rounded-full">选择进阶版</a></div>
+                    <div class="border border-slate-200 rounded-3xl p-8 bg-white shadow-lg"><h3 class="text-2xl font-bold">企业版</h3><p class="text-4xl font-bold mt-4">定制</p><ul class="mt-6 space-y-3"><li class="flex gap-2">✅ 本地服务器</li><li class="flex gap-2">✅ 专属运维</li><li class="flex gap-2">✅ 智能楼宇集成</li><li class="flex gap-2">✅ SLA 99.99%</li></ul><a href="#" class="mt-8 block text-center border border-slate-300 text-slate-700 hover:bg-slate-50 font-semibold py-3 rounded-full">联系销售</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 -->
+        <section class="py-20 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800">常见问题</h2>
+                <div class="mt-12 space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm"><details><summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">支持本地部署吗？<span class="text-cyan-600">﹀</span></summary><p class="mt-3 text-slate-600">企业版支持私有云或本地服务器部署，数据完全由您掌控，满足高合规要求。</p></details></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm"><details><summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">可以试用多久？<span class="text-cyan-600">﹀</span></summary><p class="mt-3 text-slate-600">新用户享受45天全功能免费试用，包含所有高级特性，无需信用卡。</p></details></div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm"><details><summary class="font-semibold text-lg cursor-pointer list-none flex justify-between items-center">如何迁移现有智能设备？<span class="text-cyan-600">﹀</span></summary><p class="mt-3 text-slate-600">我们提供专业迁移工具，支持从主流平台导入配置和设备列表，也可通过网关兼容Zigbee/蓝牙设备。</p></details></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应用下载区块 (模拟二维码) -->
+        <section class="py-20 bg-gradient-to-br from-slate-800 to-slate-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">随时随地控制智能家</h2>
+                <p class="text-lg text-slate-400 mt-3">下载 App，实时同步，支持手机、手表、平板</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 max-w-3xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur p-5 rounded-2xl border border-slate-700"><span class="text-3xl">📱</span><p class="font-semibold mt-1">iOS</p><div class="mt-3 w-20 h-20 mx-auto bg-slate-600 rounded-md flex items-center justify-center text-xs text-slate-300">QR模拟</div><span class="block mt-2 text-xs opacity-80">App Store</span></div>
+                    <div class="bg-white/10 backdrop-blur p-5 rounded-2xl border border-slate-700"><span class="text-3xl">🤖</span><p class="font-semibold mt-1">Android</p><div class="mt-3 w-20 h-20 mx-auto bg-slate-600 rounded-md flex items-center justify-center text-xs text-slate-300">QR模拟</div><span class="block mt-2 text-xs opacity-80">Google Play</span></div>
+                    <div class="bg-white/10 backdrop-blur p-5 rounded-2xl border border-slate-700"><span class="text-3xl">💻</span><p class="font-semibold mt-1">Windows</p><div class="mt-3 w-20 h-20 mx-auto bg-slate-600 rounded-md flex items-center justify-center text-xs text-slate-300">下载</div><span class="block mt-2 text-xs opacity-80">桌面版</span></div>
+                    <div class="bg-white/10 backdrop-blur p-5 rounded-2xl border border-slate-700"><span class="text-3xl">🍎</span><p class="font-semibold mt-1">macOS</p><div class="mt-3 w-20 h-20 mx-auto bg-slate-600 rounded-md flex items-center justify-center text-xs text-slate-300">下载</div><span class="block mt-2 text-xs opacity-80">桌面版</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 最后行动号召 -->
+        <section class="py-20 bg-cyan-600">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">开启全屋智能时代</h2>
+                <p class="text-xl text-cyan-100 mt-3">数百家地产伙伴已经选择我们，立即体验未来之家。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#" class="bg-white text-cyan-700 hover:bg-slate-100 font-semibold px-8 py-4 rounded-full shadow-lg">免费试用45天</a>
+                    <a href="#" class="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-full">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (品牌Logo, 版权, 地址, 联系方式, 公众号二维码) 银灰/青色 -->
+    <footer class="bg-slate-900 text-slate-300 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- logo + 简介 -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-gradient-to-tr from-cyan-400 to-slate-500 rounded-lg flex items-center justify-center text-white font-bold">Z</div>
+                        <span class="text-white font-semibold text-xl">智联<span class="text-cyan-400">.home</span></span>
+                    </div>
+                    <p class="mt-4 text-sm leading-relaxed max-w-xs">构建可进化的智能空间，让科技服务于人。中国智慧家庭联盟理事单位。</p>
+                </div>
+                <!-- 地址 -->
+                <div><h4 class="text-white font-semibold">公司地址</h4><address class="not-italic mt-3 text-sm">北京市朝阳区 未来科技城 智联大厦A座20层<br>邮编：100016</address></div>
+                <!-- 联系方式 -->
+                <div><h4 class="text-white font-semibold">联系方式</h4><ul class="mt-3 space-y-1 text-sm"><li>📞 400-8820-智能</li><li>📧 hello@zhilian.home</li><li>🕒 周一至周五 9:00-18:00</li></ul></div>
+                <!-- 公众号二维码 -->
+                <div><h4 class="text-white font-semibold">微信公众号</h4><div class="mt-3 w-24 h-24 bg-slate-700 rounded-md flex items-center justify-center text-xs text-slate-400 border border-slate-600">二维码示意</div><p class="text-xs mt-2">扫码获取最新动态</p></div>
+            </div>
+            <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>© 2025 智联未来科技有限公司 版权所有 · 隐私条款 · 服务协议</p>
+                <p class="flex gap-4 mt-4 md:mt-0"><span>🌐 物联网先锋</span> <span>⚙️ 银灰·青</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

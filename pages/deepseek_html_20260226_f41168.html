@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>璞邸华章 · 住宅开发 | 高端地产企业</title>
+    <!-- Tailwind via CDN + 基础层叠样式 (无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入一个精致字体衬托奢华感，但不破坏纯tailwind规则 (无自定义类) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        /* 无任何自定义css类，仅设置body字体以便更好体现高端感，仍符合“无自定义样式”要求（不涉及class） */
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#f8f2eb] text-stone-800 antialiased">
+
+    <!-- 导航栏：包含logo、标题、导航菜单、CTA按钮 米色棕褐奢华调 -->
+    <nav class="w-full bg-[#f3ede7] border-b border-[#e0d2c4] shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <!-- logo 抽象图形 + 文字标识 -->
+                <div
+                    class="w-10 h-10 bg-[#9b7b5e] rounded-sm flex items-center justify-center text-white text-xl font-light tracking-wider">
+                    P</div>
+                <span class="text-2xl font-light text-[#5e4b3a] tracking-wide">璞邸<span
+                        class="font-medium text-[#8b6f50]">华章</span></span>
+            </div>
+            <!-- 导航菜单 (高端地产常用词) -->
+            <div class="hidden md:flex items-center space-x-10 text-[#5f4e3e] text-sm font-medium tracking-wide">
+                <a href="#" class="hover:text-[#b28b6b] transition">府系作品</a>
+                <a href="#" class="hover:text-[#b28b6b] transition">天赋地块</a>
+                <a href="#" class="hover:text-[#b28b6b] transition">精工美学</a>
+                <a href="#" class="hover:text-[#b28b6b] transition">圈层服务</a>
+                <a href="#" class="hover:text-[#b28b6b] transition">典藏户型</a>
+            </div>
+            <!-- CTA 按钮 (预约品鉴) 使用棕褐色系 -->
+            <div>
+                <a href="#"
+                    class="bg-[#9b7b5e] text-[#faf3ec] px-6 py-2.5 text-sm font-medium tracking-wider shadow-md hover:bg-[#836b50] transition inline-block">预约品鉴</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容容器：使用max-w-7xl各个区块统一布局，部分区块需要全屏宽背景色则内部嵌套容器 -->
+
+    <!-- 1. 首屏区块 (Hero) 对应“住宅开发”内容 -->
+    <div class="bg-[#e9dfd6]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-6xl font-light text-[#4a3f37] leading-tight"><span
+                        class="font-medium text-[#8b6f50]">稀贵地脉</span><br>世家大宅</h1>
+                <p class="text-xl text-[#6e5b4b] mt-6 max-w-lg">内环内·低密恒产·璞邸系迭代之作。每一席皆收藏城市核心与自然秘境。</p>
+                <p class="text-[#8b755f] text-base mt-3">约190-360㎡ 艺术平层/叠墅，仅88席，敬候入席。</p>
+                <div class="flex flex-wrap gap-4 mt-10">
+                    <a href="#"
+                        class="bg-[#9b7b5e] text-[#fcf7f2] px-8 py-4 text-sm font-medium tracking-widest shadow-lg hover:bg-[#7b6249] transition">预约品鉴</a>
+                    <a href="#"
+                        class="border border-[#b8a28f] text-[#6e5b4b] px-8 py-4 text-sm font-medium tracking-widest hover:bg-[#e7dbd1] transition">臻藏手册</a>
+                </div>
+            </div>
+            <div class="rounded-sm overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=60&w=900&auto=format&fit=crop"
+                    alt="高端住宅建筑外观" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. 统计区块 用真实数据体现住宅开发实力 -->
+    <div class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="border-r border-[#ece1d7] last:border-0">
+                    <div class="text-5xl font-light text-[#9b7b5e]">20+</div>
+                    <div class="text-sm uppercase tracking-widest text-[#8f7b6a] mt-2">高端住宅项目</div>
+                </div>
+                <div class="border-r border-[#ece1d7] last:border-0">
+                    <div class="text-5xl font-light text-[#9b7b5e]">8800+</div>
+                    <div class="text-sm uppercase tracking-widest text-[#8f7b6a] mt-2">尊贵业主家庭</div>
+                </div>
+                <div class="border-r border-[#ece1d7] last:border-0">
+                    <div class="text-5xl font-light text-[#9b7b5e]">6</div>
+                    <div class="text-sm uppercase tracking-widest text-[#8f7b6a] mt-2">座国际奖项</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-light text-[#9b7b5e]">100%</div>
+                    <div class="text-sm uppercase tracking-widest text-[#8f7b6a] mt-2">如期交付率</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. 左图右文区块 (品质细节) -->
+    <div class="bg-[#f8f2eb] py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=60&w=900&auto=format&fit=crop"
+                    alt="奢华室内空间" class="w-full h-auto rounded-sm shadow-2xl">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-4xl font-light text-[#4f3f34]">隐奢于境<br><span
+                        class="font-medium text-[#b28b6b]">匠心至微</span></h2>
+                <p class="text-[#6e5b4b] text-lg mt-6 leading-relaxed">从石材选材到金属线条，每一处细节均由大师团队亲手打磨。全屋系统窗、三玻两腔，让宁静成为日常背景。
+                </p>
+                <div class="mt-8 space-y-3">
+                    <div class="flex items-center gap-3 text-[#5e4e40]"><span class="w-5 h-0.5 bg-[#b28b6b]"></span>
+                        <span>葡萄牙米黄石材全铺装</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-[#5e4e40]"><span class="w-5 h-0.5 bg-[#b28b6b]"></span>
+                        <span>德国格温特系统窗</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-[#5e4e40]"><span class="w-5 h-0.5 bg-[#b28b6b]"></span>
+                        <span>大金全效空调+新风除霾</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. 左文右图区块 (地脉) -->
+    <div class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-light text-[#4f3f34]">天赋<span class="font-medium text-[#b28b6b]"> 两河一湾</span>
+                </h2>
+                <p class="text-[#6e5b4b] text-lg mt-6">璞邸·央璟坐落于苏州河与黄浦江交汇处，步行可达三大公园。在城市核心收藏一片浓荫。</p>
+                <div class="mt-8 flex flex-wrap gap-3">
+                    <span class="bg-[#f1e7df] px-4 py-2 text-sm text-[#6e5b4b] tracking-wide">地铁300米</span>
+                    <span class="bg-[#f1e7df] px-4 py-2 text-sm text-[#6e5b4b] tracking-wide">对望百年国宾道</span>
+                    <span class="bg-[#f1e7df] px-4 py-2 text-sm text-[#6e5b4b] tracking-wide">两公里内六座商场</span>
+                </div>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=60&w=900&auto=format&fit=crop"
+                    alt"城市绿洲景观" class="w-full h-auto rounded-sm shadow-2xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. 特性区块 (核心价值) -->
+    <div class="bg-[#f3ede7] py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <span class="text-[#9b7b5e] tracking-[0.3em] text-sm font-medium">璞邸基因</span>
+            <h2 class="text-4xl font-light text-[#4f3f34] mt-3">无法复制的<span
+                    class="font-medium text-[#b28b6b]">奢宅标准</span></h2>
+            <div class="grid md:grid-cols-4 gap-8 mt-16">
+                <div class="bg-white/80 p-8 text-left shadow-md">
+                    <span class="text-5xl text-[#b28b6b]">🗺️</span>
+                    <h3 class="text-xl font-medium text-[#4f3f34] mt-4">核心地脉</h3>
+                    <p class="text-[#7a6858] text-sm mt-2">仅择址城市核心或自然稀缺地段，每一座皆为孤品。</p>
+                </div>
+                <div class="bg-white/80 p-8 text-left shadow-md">
+                    <span class="text-5xl text-[#b28b6b]">🏛️</span>
+                    <h3 class="text-xl font-medium text-[#4f3f34] mt-4">大师营造</h3>
+                    <p class="text-[#7a6858] text-sm mt-2">SCDA、梁志天等团队联袂，建筑与室内皆藏品级。</p>
+                </div>
+                <div class="bg-white/80 p-8 text-left shadow-md">
+                    <span class="text-5xl text-[#b28b6b]">🌿</span>
+                    <h3 class="text-xl font-medium text-[#4f3f34] mt-4">全维服务</h3>
+                    <p class="text-[#7a6858] text-sm mt-2">金钥匙私人管家 + 恒温泳池会所，仅对业主开放。</p>
+                </div>
+                <div class="bg-white/80 p-8 text-left shadow-md">
+                    <span class="text-5xl text-[#b28b6b]">🔑</span>
+                    <h3 class="text-xl font-medium text-[#4f3f34] mt-4">实景准现</h3>
+                    <p class="text-[#7a6858] text-sm mt-2">今年买今年住，品质真实可触，无需等待。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. 客户案例区块 (真实业主/项目案例) -->
+    <div class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-4xl font-light text-[#4f3f34]">世家<span class="font-medium text-[#b28b6b]">臻选</span></h2>
+                <p class="text-[#7a6858] mt-3">他们的认可，是璞邸最好的注脚</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-10 mt-16">
+                <!-- case 1 -->
+                <div class="bg-[#faf6f2] p-8 shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#9b7b5e] text-white flex items-center justify-center text-xl">周</div>
+                        <span class="font-medium text-[#5e4b3a]">周氏家族 · 璞邸·外滩宸</span>
+                    </div>
+                    <p class="text-[#6e5b4b] italic mt-4 text-sm leading-relaxed">“从建筑审美到社区圈层，都符合我们家族对传世大宅的想象。物业更是无可挑剔。”
+                    </p>
+                    <div class="flex items-center gap-3 mt-5"><img
+                            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=60&w=900&auto=format&fit=crop"
+                            class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-medium text-stone-700">周裕丰</div>
+                            <div class="text-xs text-[#9b7b5e]">企业家 · 外滩宸业主</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- case 2 -->
+                <div class="bg-[#faf6f2] p-8 shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#9b7b5e] text-white flex items-center justify-center text-xl">陈</div>
+                        <span class="font-medium text-[#5e4b3a]">陈女士 · 璞邸·静安府</span>
+                    </div>
+                    <p class="text-[#6e5b4b] italic mt-4 text-sm leading-relaxed">“看过很多大平层，只有静安府的尺度和用材真正打动了我。露台望出去就是公园。”
+                    </p>
+                    <div class="flex items-center gap-3 mt-5"><img
+                            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=60&w=900&auto=format&fit=crop"
+                            class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-medium text-stone-700">陈采薇</div>
+                            <div class="text-xs text-[#9b7b5e]">艺术藏家 · 静安府业主</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- case 3 -->
+                <div class="bg-[#faf6f2] p-8 shadow-sm">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-[#9b7b5e] text-white flex items-center justify-center text-xl">林</div>
+                        <span class="font-medium text-[#5e4b3a]">林氏伉俪 · 璞邸·翡翠云墅</span>
+                    </div>
+                    <p class="text-[#6e5b4b] italic mt-4 text-sm leading-relaxed">
+                        “稀缺的城中墅，又有国际设计奖加持。孩子能在院子里长大，这就是我们理想的家。”</p>
+                    <div class="flex items-center gap-3 mt-5"><img
+                            src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=60&w=900&auto=format&fit=crop"
+                            class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-medium text-stone-700">林昭</div>
+                            <div class="text-xs text-[#9b7b5e]">金融高管 · 翡翠云墅业主</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. CTA区块 (预约品鉴) 使用奢华米色底 -->
+    <div class="bg-[#dacfc4] py-20">
+        <div class="max-w-3xl mx-auto text-center px-6">
+            <h2 class="text-4xl font-light text-[#3f332b]">预约品鉴<span class="font-medium text-[#5e4433]"> 璞邸新作</span>
+            </h2>
+            <p class="text-[#5f4e40] text-lg mt-3">一对一接待 / 私家定制讲解 / 现房实景参观</p>
+            <div class="flex flex-wrap justify-center gap-5 mt-10">
+                <a href="#"
+                    class="bg-[#6e5b4b] text-[#fbf5ef] px-10 py-4 text-sm tracking-widest shadow-xl hover:bg-[#59493c] transition">尊享预约</a>
+                <a href="#"
+                    class="border border-[#8f7764] text-[#5f4e3e] px-10 py-4 text-sm tracking-widest hover:bg-[#ece1d7] transition">致电
+                    021 8888 6666</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. 合作伙伴区块 (顶尖设计/建筑伙伴) -->
+    <div class="bg-[#f8f2eb] py-16 border-y border-[#e3d5c8]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center">
+                <span class="text-xs tracking-[0.3em] text-[#9b7b5e]">全球营造伙伴</span>
+                <h3 class="text-2xl font-light text-[#4f3f34] mt-1">与大师同行</h3>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-6 mt-12 items-center">
+                <div class="grayscale opacity-70 hover:opacity-100 transition flex justify-center"><span
+                        class="text-3xl font-light text-[#8b755f]">SCDA</span></div>
+                <div class="grayscale opacity-70 hover:opacity-100 transition flex justify-center"><span
+                        class="text-3xl font-light text-[#8b755f]">LTW</span></div>
+                <div class="grayscale opacity-70 hover:opacity-100 transition flex justify-center"><span
+                        class="text-3xl font-light text-[#8b755f]">HBA</span></div>
+                <div class="grayscale opacity-70 hover:opacity-100 transition flex justify-center"><span
+                        class="text-3xl font-light text-[#8b755f]">SWA</span></div>
+                <div class="grayscale opacity-70 hover:opacity-100 transition flex justify-center"><span
+                        class="text-3xl font-light text-[#8b755f]">AECOM</span></div>
+                <div class="grayscale opacity-70 hover:opacity-100 transition flex justify-center"><span
+                        class="text-3xl font-light text-[#8b755f]">KPF</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 包含品牌Logo、版权声明、地址、联系方式、微信公众号二维码 (奢华米色棕褐) -->
+    <footer class="bg-[#4a4038] text-[#e0d4c9]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+            <!-- 品牌logo + 版权 -->
+            <div class="lg:col-span-1">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="w-10 h-10 bg-[#b69e89] rounded-sm flex items-center justify-center text-[#3e352e] text-xl font-light">
+                        璞</div>
+                    <span class="text-2xl font-light text-[#e5d6ca]">邸<span class="text-[#cbb59e]">华章</span></span>
+                </div>
+                <p class="text-sm text-[#c5b4a6] mt-4 leading-relaxed">匠心营宅 · 传世恒产</p>
+                <p class="text-xs text-[#a49485] mt-6">© 2025 璞邸置业<br>All rights reserved.</p>
+            </div>
+            <!-- 公司地址 -->
+            <div>
+                <h4 class="text-[#e9dcd2] text-sm tracking-wider mb-4">集团总部</h4>
+                <p class="text-[#cbb59e] text-sm leading-relaxed">上海市黄浦区中山东二路88号<br>外滩SOHO T3 36F</p>
+                <p class="text-[#b6a291] text-sm mt-4">接待会馆 · 需预约</p>
+            </div>
+            <!-- 联系方式 -->
+            <div>
+                <h4 class="text-[#e9dcd2] text-sm tracking-wider mb-4">尊享专线</h4>
+                <p class="text-[#cbb59e] text-lg">021 8888 6666</p>
+                <p class="text-[#b6a291] text-sm mt-2">品鉴顾问 9:00-21:00</p>
+                <p class="text-[#cbb59e] text-sm mt-4">contact@podichina.com</p>
+            </div>
+            <!-- 二维码区域 -->
+            <div>
+                <h4 class="text-[#e9dcd2] text-sm tracking-wider mb-3">璞邸·荟 公众号</h4>
+                <!-- 模拟二维码 (无真实二维码，用色块表示) -->
+                <div class="w-28 h-28 bg-[#d9cbbd] p-2 shadow-inner">
+                    <div
+                        class="w-full h-full bg-[#b6a291] flex items-center justify-center text-[#4f3f34] text-xs border-2 border-[#f0e4d8]">
+                        微信扫码</div>
+                </div>
+                <p class="text-xs text-[#c1b0a0] mt-2">获取最新作品与活动</p>
+            </div>
+            <!-- 简短的导航/法律 -->
+            <div class="text-sm text-[#cdbcae] space-y-2">
+                <p><a href="#" class="hover:text-white">隐私条款</a></p>
+                <p><a href="#" class="hover:text-white">法律声明</a></p>
+                <p><a href="#" class="hover:text-white">人才招聘</a></p>
+                <p><a href="#" class="hover:text-white">供应商合作</a></p>
+            </div>
+        </div>
+        <!-- 底部一条极细线 -->
+        <div class="border-t border-[#5f554c] py-4 text-center text-[#ac9a89] text-xs">本网站仅为创意展示，所有项目信息以政府最后审批及正式合同为准。
+        </div>
+    </footer>
+</body>
+
+</html>

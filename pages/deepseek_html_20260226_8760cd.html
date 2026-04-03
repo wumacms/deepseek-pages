@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香槟玫瑰 · 婚礼企划 | 浪漫唯美婚庆</title>
+    <!-- Tailwind via CDN + 基础层叠样式 (仅使用tailwind类, 无自定义css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入粉紫香槟氛围的字体颜色配置 (tailwind主题扩展, 仍属于tailwind范畴) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 粉紫香槟色系: 主色 #f9e6f0 (香槟粉), 辅助 #f3d9e5 (浅紫粉), 点缀 #b990b0 (香槟紫)
+                        champagne: '#fdf6f9',   // 背景香槟白
+                        petal: '#f9e6f0',       // 花瓣粉
+                        lavender: '#f3d9e5',     // 薰衣草浅紫
+                        dusk: '#d9b5c5',         // 暮光紫粉
+                        grape: '#b990b0',         // 香槟紫 (主标题/CTA)
+                        rosegold: '#d4a5b5',      // 玫瑰金 (强调)
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-champagne font-sans antialiased text-gray-700">
+
+    <!-- 导航栏 (包含logo、标题、菜单、CTA) 浪漫唯美风格 -->
+    <nav class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 border-b border-lavender/30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-3">
+                    <!-- 简约logo使用花瓣emoji替代图片 (纯浪漫意向) -->
+                    <span class="text-3xl">🌸</span>
+                    <span class="font-serif text-xl tracking-wide text-grape font-semibold">香槟玫瑰·婚礼</span>
+                </div>
+                <!-- 导航菜单 (浪漫词汇) -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#" class="text-gray-600 hover:text-grape transition">首页</a>
+                    <a href="#" class="text-gray-600 hover:text-grape transition">案例</a>
+                    <a href="#" class="text-gray-600 hover:text-grape transition">服务</a>
+                    <a href="#" class="text-gray-600 hover:text-grape transition">关于</a>
+                    <a href="#" class="text-gray-600 hover:text-grape transition">动态</a>
+                </div>
+                <!-- CTA按钮 (香槟紫渐变) -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-sm text-grape border border-grape/40 px-4 py-2 rounded-full hover:bg-grape/5 transition">📞 咨询</a>
+                    <a href="#" class="bg-grape text-white text-sm px-5 py-2 rounded-full shadow-sm hover:bg-rosegold transition flex items-center gap-1">💌 预约试妆</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="overflow-hidden">
+        <!-- 首屏区块 (浪漫婚礼主视觉) 根据JSON结构，配婚礼图片 -->
+        <section class="relative bg-gradient-to-br from-petal via-white to-lavender/30">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h1 class="text-4xl md:text-5xl font-serif font-bold text-grape leading-tight">
+                            每一刻心动，<br>都值得被唯美铭记
+                        </h1>
+                        <p class="text-lg text-gray-600 max-w-lg">
+                            香槟玫瑰婚礼策划——从仪式到宴会，定制独属于你们的浪漫语言。全程顾问、设计、执行，让爱意完美呈现。
+                        </p>
+                        <p class="text-gray-500 text-sm">专业婚礼顾问团队 · 全网好评如潮 · 一站式无忧</p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="#" class="bg-grape text-white px-8 py-3 rounded-full shadow-md hover:bg-rosegold transition">✨ 开始规划</a>
+                            <a href="#" class="border border-grape/50 text-grape px-8 py-3 rounded-full hover:bg-grape/5 transition">📖 案例欣赏</a>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl rotate-1 border-4 border-white/50">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&auto=format" alt="婚礼现场" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+            <!-- 装饰飘落花瓣 (纯tailwind占位) -->
+            <div class="absolute top-20 left-10 text-6xl opacity-10 rotate-12 select-none">🌸</div>
+            <div class="absolute bottom-10 right-10 text-7xl opacity-10 select-none">🍾</div>
+        </section>
+
+        <!-- 合作伙伴区块 (婚庆生态伙伴: 摄影、酒店、礼服等) -->
+        <section class="py-16 bg-white/40">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-serif font-semibold text-grape">我们的挚爱伙伴</h2>
+                <p class="text-gray-500 mt-2">与顶尖婚礼品牌携手，共筑完美回忆</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+                    <!-- 6个合作伙伴 (使用相同占位logo，配文字) -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-lavender"><img src="https://images.unsplash.com/photo-1576581429395-0f7f96b77151?w=300&auto=format&fit=crop&q=60" class="h-12 mx-auto grayscale hover:grayscale-0 transition"><p class="text-xs mt-2 text-grape">Vera Wang 婚纱</p></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-lavender"><img src="https://images.unsplash.com/photo-1576581429395-0f7f96b77151?w=300&auto=format&fit=crop&q=60" class="h-12 mx-auto grayscale hover:grayscale-0 transition"><p class="text-xs mt-2 text-grape">铂爵旅拍</p></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-lavender"><img src="https://images.unsplash.com/photo-1576581429395-0f7f96b77151?w=300&auto=format&fit=crop&q=60" class="h-12 mx-auto grayscale hover:grayscale-0 transition"><p class="text-xs mt-2 text-grape">丽思卡尔顿</p></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-lavender"><img src="https://images.unsplash.com/photo-1576581429395-0f7f96b77151?w=300&auto=format&fit=crop&q=60" class="h-12 mx-auto grayscale hover:grayscale-0 transition"><p class="text-xs mt-2 text-grape">周大福珠宝</p></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-lavender"><img src="https://images.unsplash.com/photo-1576581429395-0f7f96b77151?w=300&auto=format&fit=crop&q=60" class="h-12 mx-auto grayscale hover:grayscale-0 transition"><p class="text-xs mt-2 text-grape">M.A.C 彩妆</p></div>
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-lavender"><img src="https://images.unsplash.com/photo-1576581429395-0f7f96b77151?w=300&auto=format&fit=crop&q=60" class="h-12 mx-auto grayscale hover:grayscale-0 transition"><p class="text-xs mt-2 text-grape">三亚保利瑰丽</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (沟通·策划) -->
+        <section class="py-16 max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 rounded-3xl shadow-xl border-4 border-white overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&auto=format" alt="婚礼讨论" class="w-full h-auto object-cover">
+            </div>
+            <div class="md:w-1/2 space-y-4">
+                <h2 class="text-3xl font-serif font-semibold text-grape">从心出发，无缝沟通</h2>
+                <p class="text-gray-600">专属婚礼管家与您一同梳理细节，从场地到流程，每个愿望都被倾听。打破传统婚庆的模板，让故事融入仪式。</p>
+                <div class="flex space-x-4 pt-2">
+                    <span class="bg-petal text-grape rounded-full px-4 py-1 text-sm border border-lavender">✨ 一对一管家</span>
+                    <span class="bg-petal text-grape rounded-full px-4 py-1 text-sm border border-lavender">💬 无限次面谈</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度定制) -->
+        <section class="py-16 bg-gradient-to-l from-petal to-transparent">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row-reverse items-center gap-12">
+                <div class="md:w-1/2 rounded-3xl shadow-xl border-4 border-white overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&auto=format" alt="婚礼定制" class="w-full h-auto">
+                </div>
+                <div class="md:w-1/2 space-y-4">
+                    <h2 class="text-3xl font-serif font-semibold text-grape">深度定制，铭刻专属</h2>
+                    <p class="text-gray-600">从请柬字体到餐桌花艺，每一个细节都根据你们的爱情故事量身打造。融入相识片段、共同爱好，让婚礼独一无二。</p>
+                    <div class="flex gap-3 flex-wrap">
+                        <span class="bg-white/70 text-grape border border-dusk px-3 py-1 rounded-full text-sm">🎨 手绘设计</span>
+                        <span class="bg-white/70 text-grape border border-dusk px-3 py-1 rounded-full text-sm">✍️ 爱情脚本</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台体验 更改为 全场景氛围) -->
+        <section class="py-16 text-center max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-serif font-semibold text-grape">全场景婚礼氛围</h2>
+            <p class="text-gray-500 mt-2">无论是室内宴会还是户外草坪，我们打造一致的唯美浪漫</p>
+            <div class="mt-8 rounded-3xl shadow-2xl border-4 border-white overflow-hidden max-w-4xl mx-auto">
+                <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1200&auto=format" alt="多场景婚礼" class="w-full">
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为婚礼打造) -->
+        <section class="py-16 bg-white/30">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-serif font-semibold text-grape">专为婚礼打造的奢享服务</h2>
+                <p class="text-gray-500">从策划到执行，面面俱到的宠爱</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                    <!-- 4个特性 -->
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-lavender"><span class="text-5xl">📋</span><h3 class="font-semibold text-xl mt-2 text-grape">全程统筹</h3><p class="text-sm text-gray-500">30+项细节管控，婚礼当日执行团队</p></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-lavender"><span class="text-5xl">💐</span><h3 class="font-semibold text-xl mt-2 text-grape">花艺设计</h3><p class="text-sm text-gray-500">厄瓜多尔玫瑰、当季花材，自由搭配</p></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-lavender"><span class="text-5xl">🎥</span><h3 class="font-semibold text-xl mt-2 text-grape">影像团队</h3><p class="text-sm text-gray-500">电影级跟拍+航拍，保留每滴眼泪与笑容</p></div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-lavender"><span class="text-5xl">🥂</span><h3 class="font-semibold text-xl mt-2 text-grape">宴会定制</h3><p class="text-sm text-gray-500">星级酒店/特色场地，专属菜单酒单</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (三组婚礼新人故事) -->
+        <section class="py-16 max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-serif font-semibold text-grape text-center">他们选择在香槟玫瑰说“我愿意”</h2>
+            <p class="text-center text-gray-500 mb-12">每一场婚礼，都是独一无二的爱情电影</p>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- case 1 -->
+                <div class="bg-white p-6 rounded-3xl shadow-md border border-lavender/50">
+                    <div class="flex items-center gap-3"><span class="text-grape font-semibold">💍 科技新贵</span><span class="text-xs bg-petal px-3 py-1 rounded-full">互联网</span></div>
+                    <p class="text-gray-600 mt-3 italic">“统筹完美，现场比效果图还梦幻。远程帮我们协调了20+亲友住宿，太贴心了。”</p>
+                    <div class="flex items-center mt-5"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover"><div class="ml-3"><p class="font-medium">李先生 & 王小姐</p><p class="text-xs text-gray-400">2024.10.01 婚礼</p></div></div>
+                </div>
+                <!-- case 2 -->
+                <div class="bg-white p-6 rounded-3xl shadow-md border border-lavender/50">
+                    <div class="flex items-center gap-3"><span class="text-grape font-semibold">🏛️ 海归夫妇</span><span class="text-xs bg-petal px-3 py-1 rounded-full">教育</span></div>
+                    <p class="text-gray-600 mt-3">“美式复古风完全超出预期，朋友都问策划团队是不是出自艺术馆。”</p>
+                    <div class="flex items-center mt-5"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover"><div class="ml-3"><p class="font-medium">陈女士 & 张先生</p><p class="text-xs text-gray-400">2024.05.20</p></div></div>
+                </div>
+                <!-- case 3 -->
+                <div class="bg-white p-6 rounded-3xl shadow-md border border-lavender/50">
+                    <div class="flex items-center gap-3"><span class="text-grape font-semibold">🏭 制造业佳偶</span><span class="text-xs bg-petal px-3 py-1 rounded-full">本地</span></div>
+                    <p class="text-gray-600 mt-3">“流程很顺畅，父母特别满意中式环节。管家凌晨还在帮我们整理裙摆，感动。”</p>
+                    <div class="flex items-center mt-5"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover"><div class="ml-3"><p class="font-medium">赵先生 & 周女士</p><p class="text-xs text-gray-400">2024.09.15</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (浪漫数字) -->
+        <section class="py-12 bg-grape/10 border-y border-lavender">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div><div class="text-4xl font-serif font-bold text-grape">500+</div><div class="text-sm">婚礼场次</div></div>
+                <div><div class="text-4xl font-serif font-bold text-grape">98%</div><div class="text-sm">新人好评</div></div>
+                <div><div class="text-4xl font-serif font-bold text-grape">20+</div><div class="text-sm">合作庄园</div></div>
+                <div><div class="text-4xl font-serif font-bold text-grape">24h</div><div class="text-sm">在线响应</div></div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (三个策划方案) -->
+        <section class="py-16 max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-serif font-semibold text-grape text-center">灵活方案，真爱无价</h2>
+            <p class="text-center text-gray-500">按需选择，每一档都包含基础策划服务</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- 基础版 -->
+                <div class="bg-white/60 rounded-3xl p-8 border border-lavender shadow-sm"><h3 class="text-2xl font-serif">初心誓言</h3><p class="text-4xl font-bold text-grape mt-2">¥1.9w<span class="text-sm text-gray-400 font-normal"> 起</span></p><ul class="mt-4 space-y-2 text-sm"><li>✓ 全程统筹顾问</li><li>✓ 基础花艺(20桌)</li><li>✓ 仪式区布置</li></ul><a href="#" class="mt-6 block text-center border border-grape text-grape rounded-full py-2 hover:bg-grape/5">咨询档期</a></div>
+                <!-- 商业版 (热门) -->
+                <div class="bg-white rounded-3xl p-8 border-2 border-grape shadow-xl relative"><span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-grape text-white px-4 py-1 rounded-full text-xs">✨ 挚爱之选</span><h3 class="text-2xl font-serif mt-3">挚爱誓言</h3><p class="text-4xl font-bold text-grape mt-2">¥3.9w<span class="text-sm text-gray-400 font-normal"> 起</span></p><ul class="mt-4 space-y-2 text-sm"><li>✓ 包含初心版所有</li><li>✓ 全鲜花升级+手捧</li><li>✓ 双影像团队(精修)</li><li>✓ 定制婚礼logo</li></ul><a href="#" class="mt-6 text-center block bg-grape text-white rounded-full py-2 shadow-md">预约品鉴</a></div>
+                <!-- 企业版(定制) -->
+                <div class="bg-white/60 rounded-3xl p-8 border border-lavender"><h3 class="text-2xl font-serif">顶奢定制</h3><p class="text-4xl font-bold text-grape mt-2">定制</p><ul class="mt-4 space-y-2 text-sm"><li>✓ 私人游艇/古堡婚礼</li><li>✓ 明星级策划团队</li><li>✓ 全球目的地旅拍</li><li>✓ 专属婚礼管家24h</li></ul><a href="#" class="mt-6 block text-center border border-grape text-grape rounded-full py-2 hover:bg-grape/5">联系大使</a></div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (婚礼FAQ) 浪漫氛围 -->
+        <section class="py-16 bg-white/40">
+            <div class="max-w-4xl mx-auto px-4">
+                <h2 class="text-3xl font-serif font-semibold text-grape text-center">您可能想问的</h2>
+                <div class="mt-8 space-y-4">
+                    <div class="bg-white p-5 rounded-2xl shadow-sm"><details><summary class="font-medium cursor-pointer text-grape">✨ 提前多久预定合适？</summary><p class="mt-2 text-gray-500">建议提前6-12个月，热门档期更需要尽早锁定心仪的团队和场地。</p></details></div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm"><details><summary class="font-medium cursor-pointer text-grape">🍾 可以先看看方案再决定吗？</summary><p class="mt-2 text-gray-500">当然。我们提供免费初步沟通和案例参考，满意后签订合同，无强制消费。</p></details></div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm"><details><summary class="font-medium cursor-pointer text-grape">💒 包含四大金刚(摄影摄像化妆主持)吗？</summary><p class="mt-2 text-gray-500">所有套餐均包含基础司仪/化妆/摄影团队，亦可按喜好升级或自带。</p></details></div>
+                    <div class="bg-white p-5 rounded-2xl shadow-sm"><details><summary class="font-medium cursor-pointer text-grape">🌊 异地婚礼可以策划吗？</summary><p class="mt-2 text-gray-500">我们提供全球目的地婚礼服务，差旅按实结算，案例覆盖三亚/大理/巴厘岛。</p></details></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA区块 立即提升浪漫氛围 -->
+        <section class="py-20 bg-gradient-to-r from-lavender/40 to-petal/60">
+            <div class="max-w-3xl mx-auto text-center px-4">
+                <h2 class="text-4xl font-serif font-semibold text-grape">让这一天，浪漫至永恒</h2>
+                <p class="text-gray-600 mt-3">免费获取策划方案及报价，我们24小时内联系您。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#" class="bg-grape text-white px-8 py-3 rounded-full shadow-md hover:bg-rosegold transition">🎀 免费咨询</a>
+                    <a href="#" class="border-2 border-grape/60 text-grape px-8 py-3 rounded-full hover:bg-white/50 transition">📸 查看作品</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) -->
+    <footer class="bg-white border-t border-lavender pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- 品牌logo + 版权 -->
+            <div>
+                <div class="flex items-center space-x-2"><span class="text-3xl">🌸</span><span class="font-serif text-xl text-grape">香槟玫瑰婚礼</span></div>
+                <p class="text-xs text-gray-400 mt-3">© 2026 香槟玫瑰文化创意有限公司<br>保留一切浪漫权利</p>
+            </div>
+            <!-- 公司地址 -->
+            <div>
+                <h4 class="font-medium text-grape">邂逅地址</h4>
+                <p class="text-sm text-gray-500 mt-2">上海市黄浦区外滩 · 玫瑰艺术中心3F<br>北京市朝阳区 · 798 婚尚艺术区B7<br>深圳市南山区 · 婚礼湾6号馆</p>
+            </div>
+            <!-- 联系方式 -->
+            <div>
+                <h4 class="font-medium text-grape">甜蜜专线</h4>
+                <p class="text-sm text-gray-500 mt-2">400-8820-520<br>021-5388 2766<br>hello@champagnerose.com</p>
+                <p class="text-xs text-grape mt-2">客服每日 10:00 - 22:00</p>
+            </div>
+            <!-- 微信公众号二维码 (占位图) -->
+            <div>
+                <h4 class="font-medium text-grape">扫码预约 · 获取礼包</h4>
+                <div class="mt-2 w-28 h-28 bg-petal rounded-lg flex items-center justify-center border border-dusk"><span class="text-5xl opacity-50">📱</span></div>
+                <p class="text-xs text-gray-400 mt-1">微信扫一扫 关注公众号</p>
+            </div>
+        </div>
+        <div class="text-center text-xs text-gray-400 mt-10 border-t border-lavender/30 pt-6">本站所有图片素材仅用于演示，源自Unsplash。浪漫唯美·粉紫香槟调</div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>静影人像 · 摄影工作室</title>
+    <!-- Tailwind via CDN + 极简黑白灰基调，无自定义样式 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外字体可选，但仅用tailwind默认体系，不加自定义 -->
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- 导航栏 (logo+标题+菜单+CTA) 极简黑白灰 -->
+    <header class="border-b border-gray-200 bg-white/95 sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between h-20">
+            <!-- 左侧logo+标题 -->
+            <div class="flex items-center gap-3">
+                <!-- 抽象logo灰色圆形 -->
+                <div class="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center">
+                    <span class="text-white text-lg tracking-tight">SP</span>
+                </div>
+                <span class="text-xl font-light tracking-wide text-gray-800">静影 · 人像</span>
+            </div>
+
+            <!-- 桌面导航菜单 (黑白灰) -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#home" class="hover:text-gray-900 transition">首映</a>
+                <a href="#works" class="hover:text-gray-900 transition">作品</a>
+                <a href="#about" class="hover:text-gray-900 transition">影迹</a>
+                <a href="#contact" class="hover:text-gray-900 transition">连线</a>
+            </nav>
+
+            <!-- CTA 按钮 (黑白调) -->
+            <div class="flex items-center gap-4">
+                <a href="#" class="hidden sm:inline-block text-sm text-gray-700 border border-gray-300 px-5 py-2 rounded hover:bg-gray-100 transition">预约拍摄</a>
+                <a href="#" class="text-sm bg-gray-800 text-white px-5 py-2 rounded hover:bg-gray-900 transition">作品咨询</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 md:px-8">
+
+        <!-- 1. 首屏区块 (人像摄影数据) 左图右文风格但这里用上文下图布局显得开阔 -->
+        <section id="home" class="py-20 md:py-28 border-b border-gray-100">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-light tracking-tight text-gray-900 leading-tight">捕捉灵魂的灰度</h1>
+                <p class="text-xl text-gray-500 mt-5 font-light">人像不止是记录，更是情绪与质感的对话。黑白之间，看见真实。</p>
+                <p class="text-gray-400 max-w-xl mx-auto mt-3">为每个独特的你定制光影叙事 · 上海/杭州/远程旅拍</p>
+                <div class="flex items-center justify-center gap-4 mt-10">
+                    <a href="#" class="bg-gray-800 text-white px-8 py-3 text-sm tracking-wide hover:bg-gray-900 transition">探索作品集</a>
+                    <a href="#" class="border border-gray-300 text-gray-700 px-8 py-3 text-sm tracking-wide hover:bg-gray-50 transition">预约档期</a>
+                </div>
+            </div>
+            <!-- 首图 unsplash 人像摄影 (高品质黑白人像风格) -->
+            <div class="mt-16 overflow-hidden rounded-sm bg-gray-100">
+                <img class="w-full h-[70vh] object-cover grayscale" 
+                     src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=1200&auto=format" 
+                     alt="人像摄影 情绪肖像">
+            </div>
+        </section>
+
+        <!-- 2. 左图右文区块 (人像理念) 与 左文右图形成节奏 -->
+        <section class="py-20 grid md:grid-cols-2 gap-12 items-center border-b border-gray-100">
+            <div class="order-2 md:order-1">
+                <img class="w-full h-auto object-cover grayscale shadow-sm" 
+                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format" 
+                     alt="自然光人像">
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-light text-gray-900 tracking-tight">光影诗人 · 自然叙事</h2>
+                <p class="text-gray-500 mt-4 leading-relaxed">我们偏爱利用窗光与阴影，在黑白灰的过度里勾勒人物的线条与情绪。每一次快门都是对灵魂片场的即兴创作。</p>
+                <div class="flex gap-6 mt-6 text-sm text-gray-600">
+                    <span class="border-l-2 border-gray-400 pl-3">胶片质感</span>
+                    <span class="border-l-2 border-gray-400 pl-3">情感引导</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 左文右图区块 (风格标签) -->
+        <section class="py-20 grid md:grid-cols-2 gap-12 items-center border-b border-gray-100">
+            <div>
+                <h2 class="text-3xl font-light text-gray-900 tracking-tight">极简构成 · 永恒留白</h2>
+                <p class="text-gray-500 mt-4 leading-relaxed">去除色彩的干扰，我们更专注于形态、纹理和眼神。用极简的构图呈现人物最本真的状态，每一张都是艺术品。</p>
+                <div class="flex flex-wrap gap-2 mt-6">
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm">#光影对比</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm">#皮肤质感</span>
+                    <span class="px-3 py-1 bg-gray-100 text-gray-700 text-sm">#情绪捕捉</span>
+                </div>
+            </div>
+            <div>
+                <img class="w-full h-auto object-cover grayscale shadow-sm" 
+                     src="https://images.unsplash.com/photo-1516724562728-afc824a36e84?w=600&auto=format" 
+                     alt="黑白极简人像">
+            </div>
+        </section>
+
+        <!-- 4. 特性区块 (人像服务特性) 使用原有特性区块数据结构风格 -->
+        <section class="py-20 border-b border-gray-100">
+            <div class="text-center max-w-xl mx-auto">
+                <h2 class="text-3xl font-light text-gray-900">以黑白，见万象</h2>
+                <p class="text-gray-400 mt-2">我们擅长在灰度中寻找温度</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                <div class="text-center p-5">
+                    <span class="text-5xl block mb-3">🎞️</span>
+                    <h3 class="text-lg font-medium text-gray-800">胶片模拟</h3>
+                    <p class="text-gray-500 text-sm mt-2">手工暗房影调，每张照片独立调色。</p>
+                </div>
+                <div class="text-center p-5">
+                    <span class="text-5xl block mb-3">✨</span>
+                    <h3 class="text-lg font-medium text-gray-800">眼神引导</h3>
+                    <p class="text-gray-500 text-sm mt-2">非摆拍，捕捉不经意间的故事感。</p>
+                </div>
+                <div class="text-center p-5">
+                    <span class="text-5xl block mb-3">🖤</span>
+                    <h3 class="text-lg font-medium text-gray-800">纯黑背景</h3>
+                    <p class="text-gray-500 text-sm mt-2">经典好莱坞打光，突出人物轮廓。</p>
+                </div>
+                <div class="text-center p-5">
+                    <span class="text-5xl block mb-3">📦</span>
+                    <h3 class="text-lg font-medium text-gray-800">艺术微喷</h3>
+                    <p class="text-gray-500 text-sm mt-2">收藏级纸张输出，让肖像成为藏品。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 上文下图区块 (全平台体验 → 其实用于展示一组人像作品) 改用伙伴区块风格展示一系列人像作品 (黑白矩阵) 符合极简风格 使用图片占位 -->
+        <section class="py-20 border-b border-gray-100">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-light text-gray-900">近期人像作品</h2>
+                <p class="text-gray-400 mt-1">一些灵魂的切片</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-14">
+                <!-- 仿照合作伙伴区块的图片排列，但我们展示人像图片 使用 unsplash 人像特写 -->
+                <div><img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&auto=format" alt="portrait"></div>
+                <div><img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=300&auto=format" alt="portrait"></div>
+                <div><img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition" src="https://placehold.co/300x600/e2e8f0/64748b?text=Image" alt="portrait"></div>
+                <div><img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition" src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=300&auto=format" alt="portrait"></div>
+                <div><img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&auto=format" alt="portrait"></div>
+                <div><img class="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&auto=format" alt="portrait"></div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border border-gray-300 text-gray-700 px-8 py-3 text-sm tracking-wide hover:bg-gray-50">浏览完整作品集 →</a>
+            </div>
+        </section>
+
+        <!-- 6. 统计区块 (少量数据点缀) 黑白极简 -->
+        <section class="py-16 border-b border-gray-100">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div>
+                    <div class="text-4xl font-light text-gray-900">500+</div>
+                    <div class="text-sm text-gray-400 mt-1">拍摄人物</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-light text-gray-900">8年</div>
+                    <div class="text-sm text-gray-400 mt-1">黑白经验</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-light text-gray-900">15城</div>
+                    <div class="text-sm text-gray-400 mt-1">旅拍足迹</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-light text-gray-900">100%</div>
+                    <div class="text-sm text-gray-400 mt-1">客片交付</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. 客户案例区块 (口述 / 改为人像客户感言) 保留数据形象 -->
+        <section class="py-20 border-b border-gray-100">
+            <h2 class="text-3xl font-light text-gray-900 text-center">被拍摄者的独白</h2>
+            <p class="text-center text-gray-400 mt-1">一些真实反馈</p>
+            <div class="grid md:grid-cols-3 gap-10 mt-16">
+                <!-- 案例1 -->
+                <div class="bg-gray-50 p-8 rounded-sm">
+                    <p class="text-gray-600 text-sm leading-relaxed">“静影的镜头好像能看穿内心，黑白照片里有我从未见过的自己。那组照片是我三十岁最好的礼物。”</p>
+                    <div class="flex items-center mt-6">
+                        <img class="w-10 h-10 rounded-full grayscale object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format" alt="avatar">
+                        <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-800">林晚</div>
+                            <div class="text-xs text-gray-400">舞者 · 杭州</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-sm">
+                    <p class="text-gray-600 text-sm leading-relaxed">“原本担心黑白会显得沉闷，但成片充满了戏剧张力。工作室的引导非常专业，整个过程像是一次自我对话。”</p>
+                    <div class="flex items-center mt-6">
+                        <img class="w-10 h-10 rounded-full grayscale object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format" alt="avatar">
+                        <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-800">陈一凡</div>
+                            <div class="text-xs text-gray-400">建筑师 · 上海</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-sm">
+                    <p class="text-gray-600 text-sm leading-relaxed">“很荣幸请到静影拍摄家庭合影，用黑白记录了三代人的情感流动。比彩色照片更耐看，会珍藏一辈子。”</p>
+                    <div class="flex items-center mt-6">
+                        <img class="w-10 h-10 rounded-full grayscale object-cover" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format" alt="avatar">
+                        <div class="ml-3">
+                            <div class="text-sm font-medium text-gray-800">方琳</div>
+                            <div class="text-xs text-gray-400">教师 · 苏州</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CTA区块 (最后呼吁) -->
+        <section class="py-24 text-center border-b border-gray-100">
+            <h2 class="text-4xl font-light text-gray-900">让光影为你停留</h2>
+            <p class="text-gray-500 mt-3 max-w-md mx-auto">即刻预约一对一概念沟通，定制你的黑白肖像。</p>
+            <div class="flex justify-center gap-4 mt-10">
+                <a href="#" class="bg-gray-800 text-white px-10 py-4 text-sm tracking-wider hover:bg-gray-900 transition">预约拍摄</a>
+                <a href="#" class="border border-gray-300 text-gray-700 px-10 py-4 text-sm tracking-wider hover:bg-gray-50 transition">作品咨询</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权声明、公司地址、联系方式、微信公众号二维码) 极简黑白 -->
+    <footer class="bg-white border-t border-gray-200 py-12 text-gray-600 text-sm">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- logo与版权 -->
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="w-7 h-7 rounded-full bg-gray-800 flex items-center justify-center">
+                        <span class="text-white text-xs">SP</span>
+                    </div>
+                    <span class="font-light text-gray-700">静影人像</span>
+                </div>
+                <p class="text-gray-400 text-xs leading-relaxed">© 2025 静影摄影工作室<br>All rights reserved.</p>
+            </div>
+            <!-- 地址 -->
+            <div>
+                <h4 class="text-gray-800 font-medium text-sm mb-3">工作室地址</h4>
+                <p class="text-gray-400 text-xs leading-relaxed">上海市徐汇区岳阳路170弄<br>（预约制，来访请提前联系）</p>
+            </div>
+            <!-- 联系方式 -->
+            <div>
+                <h4 class="text-gray-800 font-medium text-sm mb-3">联系方式</h4>
+                <p class="text-gray-400 text-xs leading-relaxed">电话：021-3368 1277<br>邮箱：silent@portrait.cn<br>微信：silent_studio</p>
+            </div>
+            <!-- 微信公众号二维码 (用黑白占位图) -->
+            <div>
+                <h4 class="text-gray-800 font-medium text-sm mb-3">微信公众号</h4>
+                <div class="w-28 h-28 bg-gray-200 flex items-center justify-center text-gray-400 border border-gray-300">
+                    <span class="text-xs tracking-widest">QR 黑白码</span>
+                </div>
+                <p class="text-xs text-gray-400 mt-2">扫一扫 关注作品</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 md:px-8 mt-10 pt-6 text-center text-gray-300 text-xs border-t border-gray-100">
+            <p>黑白叙事 · 极简人像</p>
+        </div>
+    </footer>
+
+    <!-- 极简风格，无多余脚本 -->
+</body>
+</html>

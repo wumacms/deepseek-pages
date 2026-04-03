@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香格里拉酒店 | 奢华度假体验</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 添加微调色调，但保证不使用自定义样式，只使用Tailwind内置色系 + 扩展香槟金/深紫 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 香槟金 #f7e7ce / 深紫色 #2c1a4d 及其变体
+                        champagne: {
+                            50: '#fdfaf5',
+                            100: '#fbf5e8',
+                            200: '#f7e7ce', // 基础香槟金
+                            300: '#f2d9b4',
+                            400: '#eac48c',
+                            500: '#e2af64',
+                        },
+                        royal: {
+                            800: '#1e1235', // 深紫底色
+                            900: '#2c1a4d', // 基础深紫
+                            950: '#1a0f2e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-royal-900 font-sans antialiased">
+
+    <!-- 导航栏 (奢华金+深紫，包含logo、标题、菜单、CTA) -->
+    <nav class="bg-royal-900 text-champagne-100 shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo + 标题 -->
+                <div class="flex items-center space-x-3">
+                    <!-- 模拟logo 用金圈+字母 -->
+                    <div
+                        class="w-10 h-10 bg-champagne-400 rounded-full flex items-center justify-center text-royal-900 font-bold text-xl">
+                        H</div>
+                    <span class="font-serif text-2xl tracking-wide text-champagne-200">香格里拉</span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <div class="hidden md:flex space-x-8 text-champagne-100 font-medium">
+                    <a href="#" class="hover:text-champagne-400 transition">首页</a>
+                    <a href="#" class="hover:text-champagne-400 transition">客房</a>
+                    <a href="#" class="hover:text-champagne-400 transition">餐饮</a>
+                    <a href="#" class="hover:text-champagne-400 transition">水疗</a>
+                    <a href="#" class="hover:text-champagne-400 transition">会议</a>
+                </div>
+                <!-- CTA 按钮 (香槟金深色字) -->
+                <div>
+                    <a href="#"
+                        class="bg-champagne-400 text-royal-900 px-5 py-2.5 rounded-md font-semibold hover:bg-champagne-500 transition shadow-md">尊享预订</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主内容区块，根据文档JSON区块组合成旅游度假页面 -->
+
+    <!-- 1. 首屏区块 (hero) - 度假酒店形象 -->
+    <section class="relative bg-royal-950 text-white">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=60&w=900&auto=format" alt="度假村泳池"
+                class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 lg:px-8 py-28 lg:py-36">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl lg:text-6xl font-serif font-light leading-tight text-champagne-200">私享天堂，<br>极致宁静
+                </h1>
+                <p class="text-xl mt-6 text-champagne-100/90 max-w-2xl">在香格里拉，每一次度假都是灵魂的洗礼。私密泳池、米其林星厨、安缦式服务，为您重塑奢华的定义。
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="#"
+                        class="bg-champagne-400 text-royal-900 px-8 py-4 rounded-md font-semibold text-lg hover:bg-champagne-500 transition shadow-xl">探索套餐</a>
+                    <a href="#"
+                        class="border border-champagne-400 text-champagne-300 px-8 py-4 rounded-md font-semibold text-lg hover:bg-champagne-400/10 transition">联系礼宾</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 合作伙伴区块 (高端品牌联盟) -->
+    <section class="py-20 bg-champagne-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-serif text-royal-900 text-center">我们的联盟伙伴</h2>
+            <p class="text-center text-royal-800/70 mt-3 max-w-2xl mx-auto">与全球顶级奢华品牌携手，为您呈献非凡体验</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-16">
+                <!-- 合作伙伴logo块 (数据模拟) -->
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm border border-champagne-200">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        alt="LVMH" class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition">
+                    <span class="text-xs text-royal-700 mt-2">LVMH</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm border border-champagne-200">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        alt="劳力士" class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition">
+                    <span class="text-xs text-royal-700 mt-2">劳力士</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm border border-champagne-200">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        alt="法拉利" class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition">
+                    <span class="text-xs text-royal-700 mt-2">法拉利</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm border border-champagne-200">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        alt="轩尼诗" class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition">
+                    <span class="text-xs text-royal-700 mt-2">轩尼诗</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm border border-champagne-200">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        alt="宝格丽" class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition">
+                    <span class="text-xs text-royal-700 mt-2">宝格丽</span>
+                </div>
+                <div class="flex flex-col items-center bg-white p-6 rounded-xl shadow-sm border border-champagne-200">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&q=80&auto=format"
+                        alt="四季" class="h-12 w-auto object-contain grayscale hover:grayscale-0 transition">
+                    <span class="text-xs text-royal-700 mt-2">四季</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 左图右文区块 (无边泳池) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="无边泳池"
+                    class="rounded-2xl shadow-2xl">
+            </div>
+            <div>
+                <h2 class="text-4xl font-serif text-royal-900">海天一线，心无界</h2>
+                <p class="text-lg text-royal-800/80 mt-6 leading-relaxed">
+                    我们的悬崖无边泳池直面印度洋，在日出瑜伽或日落香槟中，感受身与自然的完全融合。专属管家随时为您递上冰镇毛巾与沁饮。</p>
+                <div class="mt-6 flex space-x-4 text-champagne-600 font-medium">
+                    <span class="flex items-center"><span
+                            class="w-2 h-2 bg-champagne-400 rounded-full mr-2"></span>私人凉亭</span>
+                    <span class="flex items-center"><span
+                            class="w-2 h-2 bg-champagne-400 rounded-full mr-2"></span>水下音乐</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 左文右图区块 (米其林餐饮) -->
+    <section class="py-20 bg-champagne-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="order-2 lg:order-1">
+                <h2 class="text-4xl font-serif text-royal-900">星厨巡演，味蕾盛宴</h2>
+                <p class="text-lg text-royal-800/80 mt-6 leading-relaxed">
+                    三家米其林星级餐厅轮驻，从怀石料理到北欧新派，每月更换主题菜单。侍酒师团队拥有超过2000款世界名酒甄选。</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <span class="bg-royal-900 text-champagne-100 px-4 py-2 rounded-full text-sm">9道式品鉴菜单</span>
+                    <span class="bg-royal-900 text-champagne-100 px-4 py-2 rounded-full text-sm">私人主厨餐桌</span>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="精致餐饮"
+                    class="rounded-2xl shadow-2xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 上文下图区块 (全海景套房) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-serif text-royal-900">全海景天际套房</h2>
+            <p class="text-lg text-royal-800/70 mt-3 max-w-2xl mx-auto">每一间客房都面向大海，私人露台、意大利手工浴缸，以及AI智能管家系统。</p>
+            <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=1200&auto=format" alt="豪华套房"
+                class="mt-12 rounded-2xl shadow-2xl w-full h-96 object-cover">
+        </div>
+    </section>
+
+    <!-- 6. 特性区块 (配套设施) -->
+    <section class="py-20 bg-royal-900 text-champagne-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-serif text-center text-champagne-200">至臻服务，触手可及</h2>
+            <p class="text-center text-champagne-100/80 mt-3">从水疗到探险，每个细节皆非凡</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                <div class="bg-royal-800/50 p-8 rounded-2xl backdrop-blur-sm border border-champagne-300/20">
+                    <div class="text-5xl mb-4">🧘</div>
+                    <h3 class="text-2xl font-serif text-champagne-300">云端水疗</h3>
+                    <p class="mt-2 text-champagne-100/80">六间理疗室，使用La Mer护肤产品，喜马拉雅颂钵音疗。</p>
+                </div>
+                <div class="bg-royal-800/50 p-8 rounded-2xl backdrop-blur-sm border border-champagne-300/20">
+                    <div class="text-5xl mb-4">⛵</div>
+                    <h3 class="text-2xl font-serif text-champagne-300">私人游艇</h3>
+                    <p class="mt-2 text-champagne-100/80">日落巡游、深海海钓，定制你的航海日记。</p>
+                </div>
+                <div class="bg-royal-800/50 p-8 rounded-2xl backdrop-blur-sm border border-champagne-300/20">
+                    <div class="text-5xl mb-4">🍷</div>
+                    <h3 class="text-2xl font-serif text-champagne-300">酒窖品鉴</h3>
+                    <p class="mt-2 text-champagne-100/80">每周顶级酒庄私享品鉴会，首席酿酒师亲临。</p>
+                </div>
+                <div class="bg-royal-800/50 p-8 rounded-2xl backdrop-blur-sm border border-champagne-300/20">
+                    <div class="text-5xl mb-4">👶</div>
+                    <h3 class="text-2xl font-serif text-champagne-300">儿童奇遇</h3>
+                    <p class="mt-2 text-champagne-100/80">专业外籍看护，探险营地，让家庭旅行无忧。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 客户案例区块 (名人入住体验) -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-serif text-royal-900 text-center">名人挚选，青睐有加</h2>
+            <p class="text-center text-royal-800/70 mt-3">全球名流与意见领袖的度假目的地</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+                <div class="bg-champagne-50 p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-3xl">🎬</span>
+                        <span class="font-semibold text-royal-800">国际影星</span>
+                    </div>
+                    <p class="text-royal-900 mt-4 italic">“在这里，我才真正理解了什么叫隐世奢华。服务员记得我所有的偏好。” </p>
+                    <div class="flex items-center mt-6">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&auto=format"
+                            class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <p class="font-bold text-royal-900">杨紫琼</p>
+                            <p class="text-sm text-royal-700">奥斯卡影后</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-champagne-50 p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-3xl">🎹</span>
+                        <span class="font-semibold text-royal-800">钢琴大师</span>
+                    </div>
+                    <p class="text-royal-900 mt-4">“酒店内的施坦威钢琴房太棒了，我在海边即兴演奏了一曲，终生难忘。”</p>
+                    <div class="flex items-center mt-6">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&auto=format"
+                            class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <p class="font-bold text-royal-900">郎朗</p>
+                            <p class="text-sm text-royal-700">国际钢琴家</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-champagne-50 p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center space-x-2">
+                        <span class="text-3xl">👔</span>
+                        <span class="font-semibold text-royal-800">企业家</span>
+                    </div>
+                    <p class="text-royal-900 mt-4">“董事会与度假完美结合，我们的团队在这里达成了十亿合作。”</p>
+                    <div class="flex items-center mt-6">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&auto=format"
+                            class="w-12 h-12 rounded-full object-cover">
+                        <div class="ml-3">
+                            <p class="font-bold text-royal-900">埃隆·马斯克</p>
+                            <p class="text-sm text-royal-700">科技先锋</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 统计区块 (酒店数据) -->
+    <section class="py-16 bg-champagne-200/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-5xl font-serif text-royal-900">150+</div>
+                <div class="text-royal-700">私人泳池别墅</div>
+            </div>
+            <div>
+                <div class="text-5xl font-serif text-royal-900">8家</div>
+                <div class="text-royal-700">米其林餐厅</div>
+            </div>
+            <div>
+                <div class="text-5xl font-serif text-royal-900">1000+</div>
+                <div class="text-royal-700">名酒珍藏</div>
+            </div>
+            <div>
+                <div class="text-5xl font-serif text-royal-900">24/7</div>
+                <div class="text-royal-700">但管家的关怀</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. 认证与资质区块 (国际奖项) 简化只取部分 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <h2 class="text-4xl font-serif text-royal-900 text-center">殊荣与认证</h2>
+            <p class="text-center text-royal-800/70 mt-3">国际权威机构认可，安全与奢华的保证</p>
+            <div class="flex flex-wrap justify-center gap-10 mt-12">
+                <div class="text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format"
+                        class="h-20 w-20 object-contain mx-auto"><span class="block mt-2 text-royal-800">福布斯五星</span>
+                </div>
+                <div class="text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format"
+                        class="h-20 w-20 object-contain mx-auto"><span class="block mt-2 text-royal-800">AAA五钻</span>
+                </div>
+                <div class="text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format"
+                        class="h-20 w-20 object-contain mx-auto"><span class="block mt-2 text-royal-800">绿色全球</span>
+                </div>
+                <div class="text-center"><img
+                        src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format"
+                        class="h-20 w-20 object-contain mx-auto"><span class="block mt-2 text-royal-800">康泰纳仕金榜</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. CTA区块 立即预订 -->
+    <section class="py-20 bg-royal-900 text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-5xl font-serif text-champagne-200">开启您的隐世之旅</h2>
+            <p class="text-xl text-champagne-100/90 mt-4">会员尊享优先升级与私人礼遇</p>
+            <div class="mt-10 flex flex-wrap justify-center gap-4">
+                <a href="#"
+                    class="bg-champagne-400 text-royal-900 px-10 py-5 rounded-md font-semibold text-xl hover:bg-champagne-500 transition shadow-2xl">预订住宿</a>
+                <a href="#"
+                    class="border border-champagne-400 text-champagne-300 px-10 py-5 rounded-md font-semibold text-xl hover:bg-champagne-400/10 transition">获取礼宾服务</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (奢华风格、包含品牌Logo、版权、地址、联系方式、微信公众号二维码) -->
+    <footer class="bg-royal-950 text-champagne-200 border-t border-champagne-300/20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- 品牌Logo区块 -->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <div
+                            class="w-10 h-10 bg-champagne-400 rounded-full flex items-center justify-center text-royal-900 font-bold text-xl">
+                            H</div>
+                        <span class="font-serif text-2xl text-champagne-200">香格里拉</span>
+                    </div>
+                    <p class="mt-4 text-sm text-champagne-300/70">始于1987，隐世奢华代名词</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-champagne-300 font-semibold uppercase tracking-wider">地址</h4>
+                    <p class="mt-3 text-sm leading-relaxed">马尔代夫·南北环礁<br>私人岛屿，马累机场50分钟专属快艇</p>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-champagne-300 font-semibold uppercase tracking-wider">礼宾专线</h4>
+                    <p class="mt-3 text-sm">+960 1234 5678<br>reservations@shangri-la.mv</p>
+                </div>
+                <!-- 微信公众号二维码 (模拟) -->
+                <div>
+                    <h4 class="text-champagne-300 font-semibold uppercase tracking-wider">微信公众号</h4>
+                    <div class="mt-3 bg-white p-2 rounded-lg w-28 h-28 flex items-center justify-center">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&auto=format"
+                            alt="QR Code" class="w-full h-full object-cover">
+                    </div>
+                    <p class="text-xs mt-2">扫描关注，获取专属礼遇</p>
+                </div>
+            </div>
+            <div
+                class="border-t border-champagne-300/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-champagne-300/60">
+                <span>© 2025 香格里拉酒店集团。保留一切奢华权利。</span>
+                <span class="mt-2 md:mt-0">隐私条款 | 使用条款</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

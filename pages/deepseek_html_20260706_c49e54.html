@@ -79,7 +79,7 @@
             <i id="theme-icon" data-lucide="sun" class="w-4 h-4"></i>
           </button>
           <a href="#"
-            class="hidden sm:inline-flex items-center justify-center h-10 px-4 text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl shadow-lg shadow-indigo-600/10 hover:shadow-indigo-600/20 transition-all">免费试学</a>
+            class="hidden sm:inline-flex items-center justify-center h-10 px-4 text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl shadow-lg shadow-indigo-600/10 hover:shadow-indigo-600/20 hover:-translate-y-0.5 transition-all duration-300">免费试学</a>
           <button id="mobile-menu-btn"
             class="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
             aria-expanded="false" aria-controls="mobile-menu" aria-label="切换导航菜单">
@@ -90,22 +90,27 @@
     </div>
 
     <div id="mobile-menu"
-      class="hidden md:hidden border-b border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-950/95 px-4 pt-2 pb-6 space-y-3">
-      <a href="#hero"
-        class="block py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600">首页</a>
-      <a href="#features"
-        class="block py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600">课程特色</a>
-      <a href="#media-blocks"
-        class="block py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600">学习方式</a>
-      <a href="#stats"
-        class="block py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600">数据</a>
-      <a href="#team"
-        class="block py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600">名师</a>
-      <a href="#pricing"
-        class="block py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600">认证计划</a>
-      <a href="#faq"
-        class="block py-2 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600">常见问题</a>
-      <a href="#" class="block py-2.5 text-center text-sm font-semibold bg-indigo-600 text-white rounded-xl">免费试学</a>
+      class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out md:hidden bg-white/95 dark:bg-slate-950/95">
+      <div class="overflow-hidden">
+        <div class="px-4 pt-2 pb-6 space-y-1.5 border-b border-slate-200 dark:border-slate-800">
+          <a href="#hero"
+            class="block py-2 px-3 -mx-3 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-900/60 rounded-xl transition-all duration-200">首页</a>
+          <a href="#features"
+            class="block py-2 px-3 -mx-3 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-900/60 rounded-xl transition-all duration-200">课程特色</a>
+          <a href="#media-blocks"
+            class="block py-2 px-3 -mx-3 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-900/60 rounded-xl transition-all duration-200">学习方式</a>
+          <a href="#stats"
+            class="block py-2 px-3 -mx-3 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-900/60 rounded-xl transition-all duration-200">数据</a>
+          <a href="#team"
+            class="block py-2 px-3 -mx-3 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-900/60 rounded-xl transition-all duration-200">名师</a>
+          <a href="#pricing"
+            class="block py-2 px-3 -mx-3 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-900/60 rounded-xl transition-all duration-200">认证计划</a>
+          <a href="#faq"
+            class="block py-2 px-3 -mx-3 text-base font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-50 dark:hover:bg-slate-900/60 rounded-xl transition-all duration-200">常见问题</a>
+          <a href="#"
+            class="block py-2.5 mt-2 text-center text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl hover:-translate-y-0.5 hover:shadow-md hover:shadow-indigo-600/10 transition-all duration-300">免费试学</a>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -151,7 +156,7 @@
           <i data-lucide="arrow-right" class="w-4 h-4 ml-1.5"></i>
         </a>
         <a href="#features"
-          class="w-full sm:w-auto inline-flex items-center justify-center h-12 px-8 rounded-xl border border-slate-300 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-medium transition-all">
+          class="w-full sm:w-auto inline-flex items-center justify-center h-12 px-8 rounded-xl border border-slate-300 dark:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-300 font-medium hover:-translate-y-0.5 hover:shadow-md dark:hover:shadow-slate-950/30 hover:border-slate-400 dark:hover:border-slate-700 transition-all duration-300">
           了解课程体系
         </a>
       </div>
@@ -210,6 +215,13 @@
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div
           class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 shadow-xl overflow-hidden group hover:border-indigo-500/30 dark:hover:border-indigo-500/50 hover:shadow-2xl dark:hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300">
+          <div class="flex items-center mb-3">
+            <div class="flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-500 block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500 block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 block"></span>
+            </div>
+          </div>
           <div class="aspect-[4/3] rounded-xl overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800&h=600"
@@ -268,6 +280,13 @@
         </div>
         <div
           class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-3 shadow-xl overflow-hidden group hover:border-indigo-500/30 dark:hover:border-indigo-500/50 hover:shadow-2xl dark:hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 order-1 lg:order-2">
+          <div class="flex items-center mb-3">
+            <div class="flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-500 block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500 block"></span>
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 block"></span>
+            </div>
+          </div>
           <div class="aspect-[4/3] rounded-xl overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800&h=600"
@@ -293,18 +312,12 @@
         </div>
         <div
           class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 md:p-6 shadow-2xl relative overflow-hidden group hover:border-indigo-500/30 dark:hover:border-indigo-500/50 hover:shadow-2xl dark:hover:shadow-indigo-500/10 hover:-translate-y-1 transition-all duration-300 max-w-5xl mx-auto">
-          <div
-            class="flex items-center justify-between border-b border-slate-200/50 dark:border-slate-800/50 pb-3 mb-4">
+          <div class="flex items-center mb-4">
             <div class="flex items-center gap-1.5">
               <span class="w-3 h-3 rounded-full bg-rose-500 block"></span>
               <span class="w-3 h-3 rounded-full bg-amber-500 block"></span>
               <span class="w-3 h-3 rounded-full bg-emerald-500 block"></span>
             </div>
-            <div
-              class="w-72 h-6 rounded bg-slate-100 dark:bg-slate-950 border border-slate-200/40 dark:border-slate-800/40 text-[10px] text-slate-400 flex items-center justify-center gap-1">
-              <i data-lucide="lock" class="w-3 h-3"></i> educore.com/learning-path
-            </div>
-            <div class="w-12"></div>
           </div>
           <div class="rounded-xl overflow-hidden aspect-[16/9]">
             <img
@@ -579,7 +592,7 @@
             </ul>
           </div>
           <button
-            class="w-full mt-8 h-10 text-xs font-semibold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-all cursor-pointer">免费注册</button>
+            class="w-full mt-8 h-10 text-xs font-semibold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:-translate-y-0.5 hover:shadow-md dark:hover:shadow-slate-950/30 transition-all duration-300 cursor-pointer">免费注册</button>
         </div>
 
         <div
@@ -604,7 +617,7 @@
             </ul>
           </div>
           <button
-            class="w-full mt-8 h-10 text-xs font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white shadow shadow-indigo-600/10 hover:shadow-indigo-600/20 transition-all cursor-pointer">立即认证</button>
+            class="w-full mt-8 h-10 text-xs font-semibold rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white shadow shadow-indigo-600/10 hover:shadow-indigo-600/20 hover:-translate-y-0.5 hover:shadow-indigo-600/30 transition-all duration-300 cursor-pointer">立即认证</button>
         </div>
 
         <div
@@ -624,7 +637,7 @@
             </ul>
           </div>
           <button
-            class="w-full mt-8 h-10 text-xs font-semibold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 transition-all cursor-pointer">联系销售</button>
+            class="w-full mt-8 h-10 text-xs font-semibold rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 hover:-translate-y-0.5 hover:shadow-md dark:hover:shadow-slate-950/30 transition-all duration-300 cursor-pointer">联系销售</button>
         </div>
       </div>
     </div>
@@ -712,8 +725,12 @@
               class="w-5 h-5 text-slate-400 transition-transform duration-300 faq-chevron"></i>
           </div>
           <div
-            class="faq-answer hidden px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-            考试结束后系统会即时生成成绩报告，通过后证书即刻生成，你可直接在个人中心下载 PDF 格式证书，并一键分享至 LinkedIn。
+            class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                考试结束后系统会即时生成成绩报告，通过后证书即刻生成，你可直接在个人中心下载 PDF 格式证书，并一键分享至 LinkedIn。
+              </div>
+            </div>
           </div>
         </div>
 
@@ -725,8 +742,12 @@
               class="w-5 h-5 text-slate-400 transition-transform duration-300 faq-chevron"></i>
           </div>
           <div
-            class="faq-answer hidden px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-            专业认证计划支持移动端 App 离线缓存，你可以在有网络时下载课程视频，在通勤或无网络环境下继续学习。
+            class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                专业认证计划支持移动端 App 离线缓存，你可以在有网络时下载课程视频，在通勤或无网络环境下继续学习。
+              </div>
+            </div>
           </div>
         </div>
 
@@ -738,8 +759,12 @@
               class="w-5 h-5 text-slate-400 transition-transform duration-300 faq-chevron"></i>
           </div>
           <div
-            class="faq-answer hidden px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
-            我们的证书由 EduCore 与多家行业协会联合颁发，支持在线验证，目前已获得国内 500+ 家企业的认可，是职业发展的有力证明。
+            class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+                我们的证书由 EduCore 与多家行业协会联合颁发，支持在线验证，目前已获得国内 500+ 家企业的认可，是职业发展的有力证明。
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -760,11 +785,11 @@
         </p>
         <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
           <a href="#"
-            class="w-full sm:w-auto inline-flex items-center justify-center h-11 px-6 text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl shadow-lg transition-all duration-300">
+            class="w-full sm:w-auto inline-flex items-center justify-center h-11 px-6 text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl shadow-lg hover:shadow-indigo-600/20 hover:-translate-y-0.5 transition-all duration-300">
             免费注册试学
           </a>
           <a href="#"
-            class="w-full sm:w-auto inline-flex items-center justify-center h-11 px-6 text-sm font-semibold bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 rounded-xl transition-all">
+            class="w-full sm:w-auto inline-flex items-center justify-center h-11 px-6 text-sm font-semibold bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 rounded-xl hover:-translate-y-0.5 hover:shadow-md hover:border-slate-600 transition-all duration-300">
             查看课程目录
           </a>
         </div>
@@ -862,22 +887,33 @@
       const mobileBtn = document.getElementById('mobile-menu-btn');
       const mobileMenu = document.getElementById('mobile-menu');
       mobileBtn.addEventListener('click', () => {
-        const isHidden = mobileMenu.classList.toggle('hidden');
-        mobileBtn.setAttribute('aria-expanded', !isHidden);
+        const isClosed = mobileMenu.classList.contains('grid-rows-[0fr]');
+        if (isClosed) {
+          mobileMenu.classList.remove('grid-rows-[0fr]');
+          mobileMenu.classList.add('grid-rows-[1fr]');
+          mobileBtn.setAttribute('aria-expanded', 'true');
+        } else {
+          mobileMenu.classList.remove('grid-rows-[1fr]');
+          mobileMenu.classList.add('grid-rows-[0fr]');
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        }
       });
       mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('grid-rows-[1fr]');
+          mobileMenu.classList.add('grid-rows-[0fr]');
           mobileBtn.setAttribute('aria-expanded', 'false');
         });
       });
 
       // 点击菜单和按钮以外的空白区域时自动关闭菜单
       document.addEventListener('click', (e) => {
-        if (!mobileMenu.classList.contains('hidden') &&
-            !mobileMenu.contains(e.target) &&
-            !mobileBtn.contains(e.target)) {
-          mobileMenu.classList.add('hidden');
+        const isOpen = mobileMenu.classList.contains('grid-rows-[1fr]');
+        if (isOpen &&
+          !mobileMenu.contains(e.target) &&
+          !mobileBtn.contains(e.target)) {
+          mobileMenu.classList.remove('grid-rows-[1fr]');
+          mobileMenu.classList.add('grid-rows-[0fr]');
           mobileBtn.setAttribute('aria-expanded', 'false');
         }
       });
@@ -887,18 +923,24 @@
         item.addEventListener('click', () => {
           const answer = item.querySelector('.faq-answer');
           const chevron = item.querySelector('.faq-chevron');
-          const isHidden = answer.classList.contains('hidden');
+          const isClosed = answer.classList.contains('grid-rows-[0fr]');
+          
           faqItems.forEach(otherItem => {
             if (otherItem !== item) {
-              otherItem.querySelector('.faq-answer').classList.add('hidden');
+              const otherAnswer = otherItem.querySelector('.faq-answer');
+              otherAnswer.classList.remove('grid-rows-[1fr]');
+              otherAnswer.classList.add('grid-rows-[0fr]');
               otherItem.querySelector('.faq-chevron').classList.remove('rotate-180');
             }
           });
-          if (isHidden) {
-            answer.classList.remove('hidden');
+
+          if (isClosed) {
+            answer.classList.remove('grid-rows-[0fr]');
+            answer.classList.add('grid-rows-[1fr]');
             chevron.classList.add('rotate-180');
           } else {
-            answer.classList.add('hidden');
+            answer.classList.remove('grid-rows-[1fr]');
+            answer.classList.add('grid-rows-[0fr]');
             chevron.classList.remove('rotate-180');
           }
         });

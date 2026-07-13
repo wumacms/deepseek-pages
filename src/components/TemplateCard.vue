@@ -18,7 +18,7 @@ function pageUrl(file) {
 }
 
 function coverUrl(template) {
-  return `${base}covers/${template.id}.png`
+  return `${base}covers/${template.id}.avif`
 }
 
 const imgSrc = ref(coverUrl(props.template))

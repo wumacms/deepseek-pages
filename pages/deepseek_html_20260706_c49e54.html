@@ -4,6 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // 在页面第一视角渲染前，根据本地存储的主题立即应用暗色类，防止刷新页面时闪烁
+    (function () {
+      const savedTheme = localStorage.getItem('vws-static-theme') || 'light';
+      if (savedTheme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
   <title>EduCore · 在线教育与认证</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -724,10 +735,10 @@
             <i data-lucide="chevron-down"
               class="w-5 h-5 text-slate-400 transition-transform duration-300 faq-chevron"></i>
           </div>
-          <div
-            class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+          <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
             <div class="overflow-hidden">
-              <div class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              <div
+                class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                 考试结束后系统会即时生成成绩报告，通过后证书即刻生成，你可直接在个人中心下载 PDF 格式证书，并一键分享至 LinkedIn。
               </div>
             </div>
@@ -741,10 +752,10 @@
             <i data-lucide="chevron-down"
               class="w-5 h-5 text-slate-400 transition-transform duration-300 faq-chevron"></i>
           </div>
-          <div
-            class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+          <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
             <div class="overflow-hidden">
-              <div class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              <div
+                class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                 专业认证计划支持移动端 App 离线缓存，你可以在有网络时下载课程视频，在通勤或无网络环境下继续学习。
               </div>
             </div>
@@ -758,10 +769,10 @@
             <i data-lucide="chevron-down"
               class="w-5 h-5 text-slate-400 transition-transform duration-300 faq-chevron"></i>
           </div>
-          <div
-            class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
+          <div class="faq-answer grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out">
             <div class="overflow-hidden">
-              <div class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              <div
+                class="px-6 pb-6 border-t border-slate-100 dark:border-slate-800/60 pt-4 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                 我们的证书由 EduCore 与多家行业协会联合颁发，支持在线验证，目前已获得国内 500+ 家企业的认可，是职业发展的有力证明。
               </div>
             </div>
@@ -924,7 +935,7 @@
           const answer = item.querySelector('.faq-answer');
           const chevron = item.querySelector('.faq-chevron');
           const isClosed = answer.classList.contains('grid-rows-[0fr]');
-          
+
           faqItems.forEach(otherItem => {
             if (otherItem !== item) {
               const otherAnswer = otherItem.querySelector('.faq-answer');

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>经典家具 · 岁月质感</title>
+  <!-- 纯 Tailwind CSS 经典复古风格，无自定义样式 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 添加一点复古基调的字体氛围，依然通过 Tailwind 类控制，不写自定义CSS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    /* 确保没有任何自定义样式 —— 只有一行备用，但 body 字体完全用 tailwind 类实现，无自定义 */
+    body {}
+  </style>
+</head>
+
+<body class="bg-amber-50/50 font-['Inter',sans-serif] text-stone-800 antialiased">
+
+  <!-- 导航栏 (不含菜单，只有logo、标题和CTA) 复古风格：深木色+黄铜感 -->
+  <nav
+    class="border-b border-amber-200/70 bg-gradient-to-r from-stone-100 to-amber-50/80 py-5 px-6 md:px-12 flex items-center justify-between shadow-sm">
+    <!-- logo + 标题 复古组合 -->
+    <div class="flex items-center gap-3">
+      <!-- 仿木雕/复古logo (纯文本，但使用经典字体和纹理) -->
+      <div class="text-3xl font-serif font-semibold tracking-wide text-amber-800 drop-shadow-sm">🪑</div>
+      <span class="font-serif text-2xl font-light italic text-stone-700 hidden sm:inline-block">|</span>
+      <span class="font-serif text-xl md:text-2xl font-medium text-stone-800 uppercase tracking-widest">榫卯·岁月</span>
+    </div>
+    <!-- CTA 按钮 复古风格 黄铜色/深橡木 -->
+    <div>
+      <a href="/contact"
+        class="inline-block bg-amber-700 hover:bg-amber-800 text-amber-50 px-6 py-2.5 text-sm font-medium tracking-wide shadow-md border border-amber-900/30 rounded-sm transition duration-300 ease-in-out uppercase">预约到店</a>
+    </div>
+  </nav>
+
+  <!-- 主内容区块：完全按照家具销售行业数据，结合复古经典设计，所有图片Unsplash换为家具/室内相关 -->
+
+  <!-- 1. 首屏区块 (hero) 对应 首屏区块 JSON 结构，图片替换为复古家具展厅 -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <!-- 标签: 手工传承 复古点缀 -->
+        <span class="text-amber-700 font-serif italic text-lg border-l-4 border-amber-600 pl-3 mb-4 inline-block">始于
+          1987</span>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-stone-800 leading-tight mb-4">经典实木家具，<br>可传世的温度</h1>
+        <p class="text-stone-600 text-lg mb-3 max-w-lg">每一处榫卯，每一道木纹——精选北美黑胡桃与樱桃木，五十年以上经验匠人手工打磨，让家回归自然质朴。</p>
+        <p class="text-stone-500 italic mb-8">免费上门量尺 · 十年质保 · 可持续森林认证</p>
+        <!-- 双按钮 复古风格 -->
+        <div class="flex flex-wrap gap-4">
+          <a href="/products"
+            class="bg-stone-800 hover:bg-stone-900 text-amber-50 px-8 py-3 text-sm font-semibold uppercase tracking-wider border-2 border-stone-800 shadow-md transition">探索系列</a>
+          <a href="/contact"
+            class="bg-transparent hover:bg-amber-100 text-stone-800 px-8 py-3 text-sm font-semibold uppercase tracking-wider border border-stone-400 transition">预约设计师</a>
+        </div>
+      </div>
+      <div class="order-first md:order-last">
+        <img class="rounded-sm shadow-2xl border-4 border-white/60"
+          src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=60&w=900&auto=format&fit=crop"
+          alt="复古实木客厅家具">
+        <!-- 图片alt: 经典家具展厅 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. 左图右文区块 (突出工艺) 对应 JSON 结构 使用highlights -->
+  <section class="bg-stone-100/70 py-16 border-y border-amber-200/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img class="rounded-sm shadow-xl border-4 border-white/70"
+          src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=60&w=900&auto=format&fit=crop" alt="手工榫卯细节">
+      </div>
+      <div>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-800 mb-4">全榫卯结构，<br>无一颗铁钉</h2>
+        <p class="text-stone-600 text-lg mb-6">拒绝工业胶水和金属件，沿用明代家具的榫卯智慧。每处连接随季节呼吸，越用越牢固。柜门开合如百年老钟，悄然无声。</p>
+        <!-- highlights 用作特性点缀 -->
+        <div class="flex flex-wrap gap-4 mt-4">
+          <span class="bg-amber-50 text-amber-900 px-4 py-2 text-sm border border-amber-300 italic shadow-sm">✨
+            燕尾榫</span>
+          <span class="bg-amber-50 text-amber-900 px-4 py-2 text-sm border border-amber-300 italic shadow-sm">🌳
+            整板挖制</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. 左文右图区块 (材质故事) tags 替换为木种标签 -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-800 mb-4">北美FAS级木材，<br>自然馈赠</h2>
+        <p class="text-stone-600 text-lg mb-6">只选用北美阔叶林协会最高等级木材，黑胡桃的巧克力色、樱桃木的温暖橘调，表面仅用德国天然木蜡油涂装，可触摸的木导管仍会呼吸。</p>
+        <div class="flex flex-wrap gap-3">
+          <span class="text-stone-700 border border-stone-400 bg-white/50 px-4 py-1.5 text-sm font-serif">黑胡桃</span>
+          <span class="text-stone-700 border border-stone-400 bg-white/50 px-4 py-1.5 text-sm font-serif">樱桃木</span>
+          <span class="text-stone-700 border border-stone-400 bg-white/50 px-4 py-1.5 text-sm font-serif">白橡木</span>
+        </div>
+      </div>
+      <div>
+        <img class="rounded-sm shadow-xl border-4 border-white/80"
+          src="https://images.unsplash.com/photo-1487015307662-6ce6210680f1?q=80&w=770&auto=format&fit=crop"
+          alt="木材纹理展示">
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. 上文下图区块 (全屋场景) 图片展示多件套 -->
+  <section class="bg-stone-100/70 py-16 border-y border-amber-200/50">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-800 mb-3">从客厅到书房，浑然一体</h2>
+      <p class="text-stone-600 max-w-2xl mx-auto mb-10">同一系列可搭配数十件单品，电视柜、书柜、餐桌、边几…… 让整个家拥有统一的经典气质。</p>
+      <img class="rounded-sm shadow-2xl border-4 border-white/60 w-full"
+        src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?q=60&w=900&auto=format&fit=crop" alt="全屋实木搭配">
+    </div>
+  </section>
+
+  <!-- 5. 特性区块 (4个icon描述家具特质) 对应特性区块 JSON 结构 -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="font-serif italic text-amber-700 text-lg border-b border-amber-300 pb-2">经久耐用 · 代代相传</span>
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-800 mt-3">传世工艺，现代舒适</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <!-- 特性1 -->
+      <div class="bg-white/60 p-6 border border-amber-200/50 shadow-sm">
+        <span class="text-5xl block mb-3">🪚</span>
+        <h3 class="font-serif text-xl font-bold text-stone-800 mb-2">传统榫卯</h3>
+        <p class="text-stone-500 text-sm">36种经典榫卯，结构稳定，可抵抗8级地震。</p>
+      </div>
+      <!-- 特性2 -->
+      <div class="bg-white/60 p-6 border border-amber-200/50 shadow-sm">
+        <span class="text-5xl block mb-3">🌱</span>
+        <h3 class="font-serif text-xl font-bold text-stone-800 mb-2">木蜡油涂装</h3>
+        <p class="text-stone-500 text-sm">零甲醛，开放式涂装，保留木头触感与呼吸。</p>
+      </div>
+      <!-- 特性3 -->
+      <div class="bg-white/60 p-6 border border-amber-200/50 shadow-sm">
+        <span class="text-5xl block mb-3">⏳</span>
+        <h3 class="font-serif text-xl font-bold text-stone-800 mb-2">越用越润</h3>
+        <p class="text-stone-500 text-sm">实木经年包浆，颜色愈发深沉温润，如传家宝。</p>
+      </div>
+      <!-- 特性4 -->
+      <div class="bg-white/60 p-6 border border-amber-200/50 shadow-sm">
+        <span class="text-5xl block mb-3">🛡️</span>
+        <h3 class="font-serif text-xl font-bold text-stone-800 mb-2">终身维护</h3>
+        <p class="text-stone-500 text-sm">每年一次免费上门保养，十年结构保修。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. 团队区块 (匠人介绍) 对应 JSON members，头像换成工匠感照片 -->
+  <section class="bg-stone-100/70 py-16 border-y border-amber-200/50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-800 text-center mb-2">背后的手作者</h2>
+      <p class="text-stone-600 text-center mb-12 italic">平均工龄35年 · 三代传承</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- 成员1 -->
+        <div class="bg-amber-50/70 p-5 border border-amber-200 shadow-sm text-center">
+          <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-amber-200"
+            src="https://images.unsplash.com/photo-1535930749574-1399327ce78f?q=60&w=900&auto=format&fit=crop"
+            alt="张师傅">
+          <h3 class="font-serif text-xl font-bold text-stone-800">张有年</h3>
+          <p class="text-amber-700 text-sm">总木作 · 40年经验</p>
+          <p class="text-stone-500 text-xs mt-2">故宫修复班出身，专攻明清家具复刻</p>
+        </div>
+        <!-- 成员2 -->
+        <div class="bg-amber-50/70 p-5 border border-amber-200 shadow-sm text-center">
+          <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-amber-200"
+            src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?q=60&w=900&auto=format&fit=crop"
+            alt="陈师傅">
+          <h3 class="font-serif text-xl font-bold text-stone-800">陈巧生</h3>
+          <p class="text-amber-700 text-sm">雕刻师 · 33年</p>
+          <p class="text-stone-500 text-xs mt-2">东阳木雕非遗传承人，擅长花草纹饰</p>
+        </div>
+        <!-- 成员3 -->
+        <div class="bg-amber-50/70 p-5 border border-amber-200 shadow-sm text-center">
+          <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-amber-200"
+            src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=60&w=900&auto=format&fit=crop"
+            alt="李师傅">
+          <h3 class="font-serif text-xl font-bold text-stone-800">李永革</h3>
+          <p class="text-amber-700 text-sm">涂装师 · 28年</p>
+          <p class="text-stone-500 text-xs mt-2">天然生漆工艺传承人，让木纹发光</p>
+        </div>
+        <!-- 成员4 -->
+        <div class="bg-amber-50/70 p-5 border border-amber-200 shadow-sm text-center">
+          <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover border-4 border-amber-200"
+            src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=60&w=900&auto=format&fit=crop"
+            alt="王设计">
+          <h3 class="font-serif text-xl font-bold text-stone-800">王雁</h3>
+          <p class="text-amber-700 text-sm">主案设计师</p>
+          <p class="text-stone-500 text-xs mt-2">中央美院家居设计，擅长融合现代起居</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. 统计区块 数字体现品牌沉淀 -->
+  <section class="py-12 bg-stone-800 text-amber-50">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="font-serif text-4xl font-bold">2000+</div>
+        <div class="text-amber-300 text-sm uppercase tracking-wider">户家庭选择</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl font-bold">98%</div>
+        <div class="text-amber-300 text-sm uppercase tracking-wider">老客推荐率</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl font-bold">35</div>
+        <div class="text-amber-300 text-sm uppercase tracking-wider">年平均工龄</div>
+      </div>
+      <div>
+        <div class="font-serif text-4xl font-bold">1987</div>
+        <div class="text-amber-300 text-sm uppercase tracking-wider">品牌创始</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 价格区块 (灵活定价方案，对应plan，家具销售套餐) -->
+  <section class="py-16 max-w-7xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-800">配置你的家</h2>
+      <p class="text-stone-600">从一件单品到全屋定制，丰俭由人</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- 基础版 -->
+      <div class="bg-white border border-stone-200 p-8 text-center shadow-sm hover:shadow-md transition">
+        <h3 class="font-serif text-2xl font-bold text-stone-800">小件系列</h3>
+        <p class="text-amber-700 text-sm mt-1">边几/板凳/小柜</p>
+        <div class="my-5"><span class="font-serif text-4xl font-bold text-stone-800">¥980</span> <span
+            class="text-stone-500 text-sm">起</span></div>
+        <ul class="text-stone-600 text-sm space-y-2 mb-6">
+          <li>✔️ 樱桃木/黑胡桃可选</li>
+          <li>✔️ 榫卯结构</li>
+          <li>✔️ 免费刻字</li>
+        </ul>
+        <a href="#"
+          class="inline-block w-full border border-stone-700 py-2 text-stone-700 hover:bg-stone-700 hover:text-white transition">选购小件</a>
+      </div>
+      <!-- 商业版(热门) 主力套餐 -->
+      <div class="bg-amber-50 border-2 border-amber-700 p-8 text-center shadow-lg relative scale-105 z-10">
+        <span class="absolute top-0 right-0 bg-amber-700 text-amber-50 text-xs px-3 py-1 tracking-widest">· 人气 ·</span>
+        <h3 class="font-serif text-2xl font-bold text-stone-800">全屋六大件</h3>
+        <p class="text-amber-700 text-sm mt-1">客厅+餐厅+主卧</p>
+        <div class="my-5"><span class="font-serif text-4xl font-bold text-stone-800">¥28,800</span></div>
+        <ul class="text-stone-600 text-sm space-y-2 mb-6">
+          <li>✔️ 沙发/餐桌/床/衣柜/书柜/斗柜</li>
+          <li>✔️ 免费设计+上门量尺</li>
+          <li>✔️ 终身保养 + 破损修补</li>
+        </ul>
+        <a href="#" class="inline-block w-full bg-amber-700 hover:bg-amber-800 text-amber-50 py-2 transition">立即咨询</a>
+      </div>
+      <!-- 企业版(高端定制) -->
+      <div class="bg-white border border-stone-200 p-8 text-center shadow-sm hover:shadow-md transition">
+        <h3 class="font-serif text-2xl font-bold text-stone-800">整屋定制</h3>
+        <p class="text-amber-700 text-sm mt-1">独一设计 · 珍稀木种</p>
+        <div class="my-5"><span class="font-serif text-4xl font-bold text-stone-800">定制</span></div>
+        <ul class="text-stone-600 text-sm space-y-2 mb-6">
+          <li>✔️ 北美/欧洲/东南亚珍稀木材</li>
+          <li>✔️ 非遗雕刻工艺</li>
+          <li>✔️ 设计师一对一全程</li>
+        </ul>
+        <a href="#"
+          class="inline-block w-full border border-stone-700 py-2 text-stone-700 hover:bg-stone-700 hover:text-white transition">预约大咖</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 常见问题区块 对应faqs 家具类FAQ -->
+  <section class="bg-stone-100/70 py-16 border-y border-amber-200/50">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-stone-800 text-center mb-10">您可能关心的</h2>
+      <div class="space-y-5">
+        <!-- FAQ 1 -->
+        <div class="bg-white/80 p-5 border-l-4 border-amber-700 shadow-sm">
+          <p class="font-serif text-lg font-semibold text-stone-800">实木家具会开裂吗？</p>
+          <p class="text-stone-600">经过两年以上自然干燥和平衡含水率处理，大幅降低开裂风险；并且提供终身免费维修，开裂即修补如初。</p>
+        </div>
+        <div class="bg-white/80 p-5 border-l-4 border-amber-700 shadow-sm">
+          <p class="font-serif text-lg font-semibold text-stone-800">质保多久？包含哪些？</p>
+          <p class="text-stone-600">框架终身质保，五金件十年，表面涂装五年。每年可预约一次免费保养（上门打蜡/调试）。</p>
+        </div>
+        <div class="bg-white/80 p-5 border-l-4 border-amber-700 shadow-sm">
+          <p class="font-serif text-lg font-semibold text-stone-800">定制周期多长？</p>
+          <p class="text-stone-600">标准单品30天内发货；全屋定制45-60天（设计确认后），均由20年以上老师傅亲手制作。</p>
+        </div>
+        <div class="bg-white/80 p-5 border-l-4 border-amber-700 shadow-sm">
+          <p class="font-serif text-lg font-semibold text-stone-800">有实体展厅可以看吗？</p>
+          <p class="text-stone-600">北京、上海、杭州、成都均设有复古展厅，欢迎预约到店亲手触摸木材，品茶试坐。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. CTA 区块 最后呼唤行动 -->
+  <section
+    class="py-20 bg-[url('https://images.unsplash.com/photo-1611486212557-88be5ff6f941?q=60&w=900&auto=format&fit=crop')] bg-cover bg-center bg-blend-multiply bg-stone-700/60">
+    <div class="max-w-3xl mx-auto text-center text-white px-4">
+      <h2 class="font-serif text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">将自然带回家</h2>
+      <p class="text-xl text-amber-100 mb-8 italic">免费上门量尺 · 全屋设计提案</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#"
+          class="bg-amber-50 text-stone-800 px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white shadow-lg transition">免费预约</a>
+        <a href="#"
+          class="border-2 border-white text-white px-10 py-4 text-sm font-bold uppercase tracking-widest hover:bg-white/10 transition">查看图册</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 (简单的版权声明，复古小字) -->
+  <footer class="bg-stone-900 text-stone-400 py-6 text-center border-t border-amber-800/30">
+    <p class="text-xs tracking-wide">© 1987-2025 榫卯·岁月 经典家具公司 · 保留所有权利 · 沪ICP备 复古家具号</p>
+    <p class="text-[10px] mt-1 text-stone-500 italic">手工制作 · 自然之美</p>
+  </footer>
+
+  <!-- 所有内容均使用 Tailwind CSS 类实现，无自定义样式；图片已替换为家具行业相关 -->
+</body>
+
+</html>

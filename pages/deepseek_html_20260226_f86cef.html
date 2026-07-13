@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>速递物流 · 企业级快递服务</title>
+    <!-- Tailwind via CDN + 基础层 (无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外字体优化 (非自定义样式, 仅使用tailwind预设) -->
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- 导航栏 (包含logo、标题、导航菜单、CTA按钮) 黄灰风格 -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-3">
+                    <!-- logo 黄色块模拟logo -->
+                    <div class="w-8 h-8 bg-yellow-400 rounded-md flex items-center justify-center text-gray-900 font-bold text-lg">S</div>
+                    <span class="font-semibold text-xl tracking-tight text-gray-800">速递<span class="text-yellow-600">物流</span></span>
+                </div>
+                <!-- 导航菜单 (桌面) -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+                    <a href="#" class="hover:text-yellow-600 transition">服务</a>
+                    <a href="#" class="hover:text-yellow-600 transition">价格</a>
+                    <a href="#" class="hover:text-yellow-600 transition">客户</a>
+                    <a href="#" class="hover:text-yellow-600 transition">资源</a>
+                </div>
+                <!-- CTA 按钮 -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-sm font-medium text-gray-700 hover:text-yellow-600">登录</a>
+                    <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 py-2 rounded-md text-sm font-semibold shadow-sm transition">免费试用</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 首屏区块 (hero) 对应 JSON 首屏区块，使用快递相关文案 -->
+        <section class="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">企业级即时物流，让包裹更快一步</h1>
+                        <p class="text-xl text-gray-300 mt-6">安全、高效、可定制——专为现代企业打造的智能快递平台，集成工作流与实时追踪。</p>
+                        <p class="text-gray-400 mt-2">专为现代企业打造的智能快递平台，集成工作流与实时追踪。</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 py-3 rounded-md font-semibold shadow-lg transition">开始使用</a>
+                            <a href="#" class="border border-gray-600 hover:border-yellow-400 text-white px-6 py-3 rounded-md font-semibold transition">联系销售</a>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="物流团队协作" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 合作伙伴区块 使用物流伙伴数据 -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">我们的生态伙伴</h2>
+                    <p class="text-gray-500 mt-2">与全球领先的物流及技术公司深度合作</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+                    <!-- 伙伴 1 -->
+                    <div class="flex flex-col items-center bg-gray-50 p-4 rounded-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-xl">MS</div>
+                        <span class="mt-3 font-medium text-gray-800">微软</span>
+                        <span class="text-xs text-gray-500">金牌伙伴</span>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-50 p-4 rounded-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-xl">AWS</div>
+                        <span class="mt-3 font-medium text-gray-800">亚马逊云</span>
+                        <span class="text-xs text-gray-500">高级技术</span>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-50 p-4 rounded-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-xl">SF</div>
+                        <span class="mt-3 font-medium text-gray-800">Salesforce</span>
+                        <span class="text-xs text-gray-500">生态伙伴</span>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-50 p-4 rounded-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-xl">GCP</div>
+                        <span class="mt-3 font-medium text-gray-800">Google</span>
+                        <span class="text-xs text-gray-500">技术伙伴</span>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-50 p-4 rounded-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-xl">AT</div>
+                        <span class="mt-3 font-medium text-gray-800">Atlassian</span>
+                        <span class="text-xs text-gray-500">集成伙伴</span>
+                    </div>
+                    <div class="flex flex-col items-center bg-gray-50 p-4 rounded-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-yellow-700 font-bold text-xl">TX</div>
+                        <span class="mt-3 font-medium text-gray-800">腾讯云</span>
+                        <span class="text-xs text-gray-500">战略伙伴</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通 → 无缝揽派) 使用快递文案 -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="团队揽收" class="rounded-xl shadow-lg">
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">无缝揽派，跨越站点</h2>
+                    <p class="text-gray-600 mt-4 text-lg">打破信息孤岛，通过智能调度、实时追踪和富媒体回传，让每个包裹都能快速找到最优路径。集成企业目录，一键联系快递员。</p>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">端到端加密</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">无限历史轨迹</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流) 物流版 -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800">深度集成仓储WMS</h2>
+                    <p class="text-gray-600 mt-4 text-lg">与您使用的工具无缝连接：SAP、Oracle、WMS、TMS。在聊天中创建运单、分享签收单、触发自动化分拣。</p>
+                    <div class="flex flex-wrap gap-3 mt-6">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">批量导入</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">API开放</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="仓储集成" class="rounded-xl shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为物流打造) -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">专为物流打造的特性</h2>
+                    <p class="text-gray-500 mt-2">从时效到安全，面面俱到</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-4xl mb-3">🔒</div>
+                        <h3 class="text-xl font-semibold">企业级安全</h3>
+                        <p class="text-gray-500 mt-2">端到端加密、运输数据脱敏，满足合规需求。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h3 class="text-xl font-semibold">实时同步</h3>
+                        <p class="text-gray-500 mt-2">毫秒级延迟，跨设备物流动态与已读回执。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-4xl mb-3">🧩</div>
+                        <h3 class="text-xl font-semibold">无限集成</h3>
+                        <p class="text-gray-500 mt-2">连接200+物流应用，自定义自动化机器人。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <div class="text-4xl mb-3">📊</div>
+                        <h3 class="text-xl font-semibold">分析洞察</h3>
+                        <p class="text-gray-500 mt-2">妥投率、时效KPI、车辆使用率可视化。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 客户案例区块 (物流企业案例) -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">他们正在使用我们的产品</h2>
+                    <p class="text-gray-500 mt-2">来自全球领先物流企业的信赖与认可</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- 案例 1 -->
+                    <div class="border border-gray-200 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-yellow-200 rounded-full flex items-center justify-center font-bold text-yellow-800">科</div>
+                            <div>
+                                <div class="font-semibold">极速物流</div>
+                                <div class="text-xs text-gray-400">互联网 · 日均10万单</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-4 italic">“跨部门沟通效率提升了40%，丢包率下降25%。”</p>
+                        <div class="flex items-center mt-6 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover">
+                            <div class="ml-3">
+                                <div class="font-medium">李志强</div>
+                                <div class="text-xs text-gray-400">CTO</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-yellow-200 rounded-full flex items-center justify-center font-bold text-yellow-800">教</div>
+                            <div>
+                                <div class="font-semibold">教育物流</div>
+                                <div class="text-xs text-gray-400">教育 · 教材配送</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-4 italic">“集成的教务系统让教材分发和签收变得高效透明。”</p>
+                        <div class="flex items-center mt-6 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover">
+                            <div class="ml-3">
+                                <div class="font-medium">王美玲</div>
+                                <div class="text-xs text-gray-400">教务主任</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-xl p-6 shadow-sm">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-yellow-200 rounded-full flex items-center justify-center font-bold text-yellow-800">智</div>
+                            <div>
+                                <div class="font-semibold">智造物流</div>
+                                <div class="text-xs text-gray-400">制造业 · 厂区运输</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-4 italic">“本地部署完美满足安全要求，支持一线高效沟通。”</p>
+                        <div class="flex items-center mt-6 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover">
+                            <div class="ml-3">
+                                <div class="font-medium">张建国</div>
+                                <div class="text-xs text-gray-400">IT总监</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (物流数据) -->
+        <section class="bg-yellow-400 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900">500+</div>
+                        <div class="text-gray-800">企业客户</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900">98%</div>
+                        <div class="text-gray-800">客户留存率</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900">20M+</div>
+                        <div class="text-gray-800">日包裹量</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-gray-900">24/7</div>
+                        <div class="text-gray-800">技术支持</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (物流版定价) -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">灵活定价</h2>
+                    <p class="text-gray-500 mt-2">按需选择，无隐藏费用</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-12">
+                    <!-- 基础版 -->
+                    <div class="border border-gray-200 rounded-2xl p-8">
+                        <h3 class="text-xl font-semibold">基础版</h3>
+                        <div class="mt-4 flex items-baseline"><span class="text-4xl font-bold">¥49</span><span class="text-gray-500 ml-1">/月/人</span></div>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>消息历史1年</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>10GB 文件存储</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>基础集成</li>
+                        </ul>
+                        <a href="#" class="mt-8 block w-full text-center border border-gray-300 hover:border-yellow-400 text-gray-800 py-2 rounded-lg">选择基础版</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="border-2 border-yellow-400 rounded-2xl p-8 shadow-lg relative bg-white">
+                        <span class="absolute top-0 right-8 bg-yellow-400 text-gray-900 text-xs font-bold px-3 py-1 -translate-y-1/2 rounded-full">热门</span>
+                        <h3 class="text-xl font-semibold">商业版</h3>
+                        <div class="mt-4 flex items-baseline"><span class="text-4xl font-bold">¥99</span><span class="text-gray-500 ml-1">/月/人</span></div>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>无限历史</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>100GB 存储</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>所有集成+API</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>高级支持</li>
+                        </ul>
+                        <a href="#" class="mt-8 block w-full text-center bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-2 rounded-lg font-semibold">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="border border-gray-200 rounded-2xl p-8">
+                        <h3 class="text-xl font-semibold">企业版</h3>
+                        <div class="mt-4 flex items-baseline"><span class="text-4xl font-bold">定制</span></div>
+                        <ul class="mt-6 space-y-3">
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>本地部署选项</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>无限存储</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>专属客户成功</li>
+                            <li class="flex items-center"><span class="text-yellow-500 mr-2">✓</span>SSO/合规</li>
+                        </ul>
+                        <a href="#" class="mt-8 block w-full text-center border border-gray-300 hover:border-yellow-400 text-gray-800 py-2 rounded-lg">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (物流FAQ) -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-800">常见问题</h2>
+                <div class="mt-12 space-y-6">
+                    <div class="border-b border-gray-200 pb-5">
+                        <h3 class="text-lg font-medium text-gray-800">支持本地部署吗？</h3>
+                        <p class="text-gray-500 mt-2">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求。</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-5">
+                        <h3 class="text-lg font-medium text-gray-800">可以试用多久？</h3>
+                        <p class="text-gray-500 mt-2">所有新用户均可享受30天全功能免费试用，无需信用卡。</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-5">
+                        <h3 class="text-lg font-medium text-gray-800">数据存储在哪里？</h3>
+                        <p class="text-gray-500 mt-2">数据存储在云端的独立数据库，可选中国大陆或海外区域，符合当地法规。</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-medium text-gray-800">如何迁移现有物流聊天记录？</h3>
+                        <p class="text-gray-500 mt-2">我们提供专业迁移工具，支持从其他平台导入历史数据。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应用下载区块 (移动端+桌面 物流助手) -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-800">随时随地追踪包裹</h2>
+                    <p class="text-gray-500 mt-2">下载我们的移动和桌面应用，消息实时同步</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-10">
+                    <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                        <div class="text-4xl">📱</div>
+                        <div class="font-semibold mt-1">iOS</div>
+                        <div class="text-xs text-gray-400">iPhone & iPad</div>
+                        <div class="mt-3 w-20 h-20 mx-auto bg-gray-200 rounded-md flex items-center justify-center text-xs text-gray-500">QR码</div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                        <div class="text-4xl">🤖</div>
+                        <div class="font-semibold mt-1">Android</div>
+                        <div class="text-xs text-gray-400">手机平板</div>
+                        <div class="mt-3 w-20 h-20 mx-auto bg-gray-200 rounded-md flex items-center justify-center text-xs text-gray-500">QR码</div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                        <div class="text-4xl">💻</div>
+                        <div class="font-semibold mt-1">Windows</div>
+                        <div class="text-xs text-gray-400">Win 10/11</div>
+                        <div class="mt-3 text-yellow-600 text-sm font-medium">下载</div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                        <div class="text-4xl">🍎</div>
+                        <div class="font-semibold mt-1">Mac</div>
+                        <div class="text-xs text-gray-400">macOS 11+</div>
+                        <div class="mt-3 text-yellow-600 text-sm font-medium">下载</div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                        <div class="text-4xl">🐧</div>
+                        <div class="font-semibold mt-1">Linux</div>
+                        <div class="text-xs text-gray-400">Ubuntu等</div>
+                        <div class="mt-3 text-yellow-600 text-sm font-medium">下载</div>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                        <div class="text-4xl">🌐</div>
+                        <div class="font-semibold mt-1">Web</div>
+                        <div class="text-xs text-gray-400">浏览器</div>
+                        <div class="mt-3 text-yellow-600 text-sm font-medium">打开</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 -->
+        <section class="bg-gray-900 text-white py-16">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-bold">立即提升物流协作效率</h2>
+                <p class="text-gray-300 mt-3 text-lg">加入数百家信任我们的企业，开启高效寄递之旅。</p>
+                <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 py-3 rounded-md font-semibold shadow-lg">免费试用30天</a>
+                    <a href="#" class="border border-gray-600 hover:border-yellow-400 text-white px-6 py-3 rounded-md font-semibold">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) -->
+    <footer class="bg-gray-800 text-gray-300 pt-12 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- 品牌logo & 版权 -->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-yellow-400 rounded-md flex items-center justify-center text-gray-900 font-bold">S</div>
+                        <span class="text-white text-xl font-semibold">速递物流</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-4">© 2025 速递物流科技<br>保留一切权利。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">公司地址</h4>
+                    <address class="not-italic text-sm text-gray-400">
+                        上海市浦东新区<br>
+                        物流大道88号<br>
+                        邮编：200120
+                    </address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">联系方式</h4>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li>📞 400-888-1234</li>
+                        <li>✉️ support@expresstalk.cn</li>
+                        <li>🕒 周一至周五 9:00-18:00</li>
+                    </ul>
+                </div>
+                <!-- 微信公众号二维码 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-3">官方微信</h4>
+                    <div class="w-28 h-28 bg-gray-600 rounded-md flex items-center justify-center text-gray-400 text-xs border border-gray-600">
+                        公众号二维码
+                    </div>
+                    <p class="text-xs text-gray-400 mt-2">扫一扫关注我们</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-500">
+                使用 Tailwind CSS 构建 · 物流企业落地页
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深蓝安防 · 智能监控系统</title>
+    <!-- Tailwind via CDN + 基础层样式 (仅保证背景/颜色准确) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外配置深蓝银灰科技色调 (完全使用tailwind预设类，无自定义css) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 仅用于扩展调色板，实际类名仍用blue/slate/gray/neutral系列
+                        // 保证风格统一，无自定义样式
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 模拟二维码图片占位 (直接用logo图片代替，符合规范) -->
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- 导航栏 (包含logo, 标题, 菜单, CTA) 深蓝银灰 -->
+    <nav class="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-30 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center text-white font-bold text-lg">S</div>
+                    <span class="font-semibold text-xl text-slate-800">深蓝安防<span class="text-blue-600 ml-1">|</span></span>
+                </div>
+                <!-- 导航菜单 (科技感简约) -->
+                <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-700">
+                    <a href="#" class="hover:text-blue-700 transition">首页</a>
+                    <a href="#" class="hover:text-blue-700 transition">解决方案</a>
+                    <a href="#" class="hover:text-blue-700 transition">产品</a>
+                    <a href="#" class="hover:text-blue-700 transition">客户案例</a>
+                    <a href="#" class="hover:text-blue-700 transition">支持</a>
+                </div>
+                <!-- CTA按钮 银灰/蓝搭配 -->
+                <div class="flex items-center space-x-3">
+                    <button class="hidden sm:inline-flex px-4 py-2 text-sm font-medium text-slate-700 bg-slate-100 rounded-md hover:bg-slate-200 transition">登录</button>
+                    <button class="px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-md hover:bg-blue-800 shadow-sm flex items-center gap-1"> 开始使用 <span class="text-lg">→</span></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首屏区块 (监控系统版) 使用json数据结构 -->
+    <section class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- 监控行业标题改写 -->
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight">AI全域监控<br>让安全<span class="text-blue-300">先人一步</span></h1>
+                    <p class="text-lg text-blue-100 mt-4 max-w-lg">基于深度学习的事件感知，0.1秒异常识别，端侧加密存储——专为工业与城市级安防打造。</p>
+                    <p class="text-slate-300 mt-2">智能巡检 · 热成像 · 轨迹还原</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-md font-medium shadow-lg flex items-center"> 演示中心 </a>
+                        <a href="#" class="bg-transparent border border-blue-400 text-blue-100 hover:bg-white/10 px-6 py-3 rounded-md font-medium"> 联系专家 </a>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-2xl border border-blue-400/30">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="智能监控中心大屏" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴区块 (生态伙伴) 保持深色底纹 -->
+    <section class="bg-slate-100 py-16 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-slate-800">信赖我们的伙伴</h2>
+                <p class="text-slate-500 mt-2">与全球安防与云服务领导者深度合作</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12 items-center">
+                <!-- 从json partners 循环6个，用相同占位图, 增加科技感 -->
+                <div class="flex flex-col items-center bg-white p-4 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain grayscale hover:grayscale-0 transition"><span class="text-xs mt-2 font-medium text-slate-600">海康威视</span></div>
+                <div class="flex flex-col items-center bg-white p-4 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain grayscale hover:grayscale-0"><span class="text-xs mt-2 font-medium text-slate-600">大华股份</span></div>
+                <div class="flex flex-col items-center bg-white p-4 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain grayscale hover:grayscale-0"><span class="text-xs mt-2 font-medium text-slate-600">华为机器视觉</span></div>
+                <div class="flex flex-col items-center bg-white p-4 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain grayscale hover:grayscale-0"><span class="text-xs mt-2 font-medium text-slate-600">NVIDIA</span></div>
+                <div class="flex flex-col items-center bg-white p-4 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain grayscale hover:grayscale-0"><span class="text-xs mt-2 font-medium text-slate-600">阿里云</span></div>
+                <div class="flex flex-col items-center bg-white p-4 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" class="w-12 h-12 object-contain grayscale hover:grayscale-0"><span class="text-xs mt-2 font-medium text-slate-600">腾讯云</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特性区块 (监控核心特性) 深蓝底白字 -->
+    <section class="bg-slate-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold">专为安防重载设计</h2>
+                <p class="text-slate-300 mt-2">从采集到决策，全链路可靠</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                <!-- features 区块按照json结构，换为监控相关 -->
+                <div class="bg-slate-700/60 p-6 rounded-xl border border-slate-600"><span class="text-4xl">🔒</span><h3 class="text-xl font-semibold mt-4">国密级加密</h3><p class="text-slate-300 mt-2">端到端视频流加密，防篡改，满足等保三级</p></div>
+                <div class="bg-slate-700/60 p-6 rounded-xl border border-slate-600"><span class="text-4xl">⚡</span><h3 class="text-xl font-semibold mt-4">毫秒级预警</h3><p class="text-slate-300 mt-2">AI识别+实时推送到管理中心与手机</p></div>
+                <div class="bg-slate-700/60 p-6 rounded-xl border border-slate-600"><span class="text-4xl">🧩</span><h3 class="text-xl font-semibold mt-4">多协议兼容</h3><p class="text-slate-300 mt-2">ONVIF、GB/T28181、RTSP无缝集成</p></div>
+                <div class="bg-slate-700/60 p-6 rounded-xl border border-slate-600"><span class="text-4xl">📊</span><h3 class="text-xl font-semibold mt-4">热力图&轨迹</h3><p class="text-slate-300 mt-2">人群密度、车辆轨迹可视化分析</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左图右文区块 (监控场景) -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="多光谱监控" class="rounded-xl shadow-lg border border-slate-200"></div>
+                <div><h2 class="text-3xl font-bold text-slate-800">多光谱全天候感知</h2><p class="text-slate-600 mt-4">从可见光到热成像，恶劣天气、夜间低光照环境下依然精准识别。内置智能算法，自动过滤动物、光影干扰，聚焦真实入侵。</p><div class="flex flex-wrap gap-4 mt-6"><span class="bg-blue-50 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">红外热成像</span><span class="bg-blue-50 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">周界入侵检测</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左文右图区块 (集成工作流) -->
+    <section class="bg-slate-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div><h2 class="text-3xl font-bold text-slate-800">深度集成应急响应</h2><p class="text-slate-600 mt-4">与门禁、广播、消防系统联动。告警触发自动上墙、声光警示、派单到安保人员手机，形成闭环处置。</p><div class="flex gap-3 mt-6"><span class="bg-slate-200 text-slate-700 px-4 py-2 rounded-full text-sm">API开放</span><span class="bg-slate-200 text-slate-700 px-4 py-2 rounded-full text-sm">预置联动规则</span></div></div>
+                <div><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="应急指挥中心" class="rounded-xl shadow-lg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 统计区块 数字滚动风格 (stats) -->
+    <section class="bg-blue-900 py-16 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div><div class="text-4xl font-bold">500+</div><div class="text-blue-200 mt-1">政企客户</div></div>
+                <div><div class="text-4xl font-bold">99.98%</div><div class="text-blue-200 mt-1">系统可用性</div></div>
+                <div><div class="text-4xl font-bold">10k+</div><div class="text-blue-200 mt-1">AI点位</div></div>
+                <div><div class="text-4xl font-bold">24/7</div><div class="text-blue-200 mt-1">专家值守</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户案例区块 -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center"><h2 class="text-3xl font-bold text-slate-800">他们正在守护平安</h2><p class="text-slate-500 mt-2">来自智慧城市、工业园区的信赖</p></div>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- case 1 -->
+                <div class="bg-slate-50 p-6 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64" class="w-12 h-12 object-contain mb-4"><p class="text-slate-600 italic">“部署后园区误报率降低76%，夜间入侵实时捕获。” </p><div class="flex items-center mt-4"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover"><div class="ml-3"><p class="font-medium">李志强</p><p class="text-sm text-slate-500">某化工园安保总监</p></div></div></div>
+                <div class="bg-slate-50 p-6 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64" class="w-12 h-12 object-contain mb-4"><p class="text-slate-600 italic">“热成像与可见光联动，提前发现电力设备过热。” </p><div class="flex items-center mt-4"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover"><div class="ml-3"><p class="font-medium">王美玲</p><p class="text-sm text-slate-500">变电站运维经理</p></div></div></div>
+                <div class="bg-slate-50 p-6 rounded-xl shadow-sm"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=64" class="w-12 h-12 object-contain mb-4"><p class="text-slate-600 italic">“全市学校联网，一键巡查，存储加密符合等保。” </p><div class="flex items-center mt-4"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop" class="w-10 h-10 rounded-full object-cover"><div class="ml-3"><p class="font-medium">张建国</p><p class="text-sm text-slate-500">智慧城市项目负责人</p></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 认证与资质区块 用银灰背景 -->
+    <section class="bg-slate-100 py-16 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center"><h2 class="text-3xl font-bold text-slate-800">安全认证与企业资质</h2><p class="text-slate-500">通过最严格标准，保护您的数据</p></div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=96" class="w-16 h-16 mx-auto object-contain"><p class="font-semibold mt-3">ISO 27001</p><p class="text-xs text-slate-500">信息安全管理</p></div>
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=96" class="w-16 h-16 mx-auto object-contain"><p class="font-semibold mt-3">GB/T 28181</p><p class="text-xs text-slate-500">公共安全视频联网</p></div>
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=96" class="w-16 h-16 mx-auto object-contain"><p class="font-semibold mt-3">等保三级</p><p class="text-xs text-slate-500">公安部认证</p></div>
+                <div class="bg-white p-5 rounded-xl shadow-sm text-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=96" class="w-16 h-16 mx-auto object-contain"><p class="font-semibold mt-3">SOC 2 Type II</p><p class="text-xs text-slate-500">服务审计</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价格区块 使用深蓝灰色调 -->
+    <section class="bg-slate-800 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center"><h2 class="text-3xl font-bold">灵活定价 · 按需选择</h2><p class="text-slate-300">无隐藏费用，企业级功能透明</p></div>
+            <div class="grid md:grid-cols-3 gap-8 mt-16">
+                <!-- 基础 -->
+                <div class="bg-slate-700 p-8 rounded-2xl border border-slate-600"><h3 class="text-xl font-semibold">基础版</h3><p class="text-3xl font-bold mt-4">¥399 <span class="text-base font-normal text-slate-400">/月/路</span></p><ul class="mt-6 space-y-3"><li class="flex items-center gap-2">✅ 100路以内</li><li class="flex items-center gap-2">✅ 7天云存储</li><li class="flex items-center gap-2">✅ 基础AI告警</li></ul><button class="mt-8 w-full bg-slate-600 hover:bg-slate-500 py-2 rounded-md">选择基础版</button></div>
+                <!-- 商业 (热门) -->
+                <div class="bg-blue-800 p-8 rounded-2xl border-2 border-blue-400 scale-105 shadow-xl"><span class="bg-blue-300 text-blue-900 text-xs px-3 py-1 rounded-full">热门</span><h3 class="text-xl font-semibold mt-2">商业版</h3><p class="text-3xl font-bold mt-4">¥899 <span class="text-base font-normal text-blue-200">/月/路</span></p><ul class="mt-6 space-y-3"><li>✅ 1000路以内</li><li>✅ 30天热成像存储</li><li>✅ 多算法并行</li></ul><button class="mt-8 w-full bg-blue-600 hover:bg-blue-500 py-2 rounded-md">选择商业版</button></div>
+                <!-- 企业定制 -->
+                <div class="bg-slate-700 p-8 rounded-2xl border border-slate-600"><h3 class="text-xl font-semibold">企业版</h3><p class="text-3xl font-bold mt-4">定制</p><ul class="mt-6 space-y-3"><li>✅ 本地私有化</li><li>✅ 不限路数</li><li>✅ 专属应急响应</li></ul><button class="mt-8 w-full bg-slate-600 hover:bg-slate-500 py-2 rounded-md">联系销售</button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题区块 浅色背景 -->
+    <section class="bg-white py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-slate-800">常见问题</h2>
+            <div class="mt-10 space-y-4">
+                <div class="border border-slate-200 rounded-lg p-5"><button class="w-full text-left font-medium text-slate-800 flex justify-between">支持对接已有硬盘录像机吗？<span>+</span></button></div>
+                <div class="border border-slate-200 rounded-lg p-5"><button class="w-full text-left font-medium text-slate-800 flex justify-between">AI识别误报率如何？<span>+</span></button></div>
+                <div class="border border-slate-200 rounded-lg p-5"><button class="w-full text-left font-medium text-slate-800 flex justify-between">数据存储满足等保合规？<span>+</span></button></div>
+                <div class="border border-slate-200 rounded-lg p-5"><button class="w-full text-left font-medium text-slate-800 flex justify-between">如何从旧平台迁移录像？<span>+</span></button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 应用下载区块 银灰底 -->
+    <section class="bg-slate-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center"><h2 class="text-3xl font-bold text-slate-800">随时随地掌控安全</h2><p class="text-slate-500">手机、电脑、指挥大屏实时同步</p></div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mt-10">
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><span class="text-3xl">📱</span><p class="font-medium">iOS</p><p class="text-xs text-slate-400">App Store</p></div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><span class="text-3xl">🤖</span><p class="font-medium">Android</p><p class="text-xs text-slate-400">Google Play</p></div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><span class="text-3xl">💻</span><p class="font-medium">Windows</p><p class="text-xs text-slate-400">客户端</p></div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><span class="text-3xl">🍎</span><p class="font-medium">macOS</p><p class="text-xs text-slate-400">桌面版</p></div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><span class="text-3xl">🐧</span><p class="font-medium">Linux</p><p class="text-xs text-slate-400">Ubuntu</p></div>
+                <div class="bg-white p-4 rounded-xl text-center shadow-sm"><span class="text-3xl">🌐</span><p class="font-medium">Web</p><p class="text-xs text-slate-400">控制台</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最后CTA区块 深蓝色 -->
+    <section class="bg-blue-900 py-20 text-white text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold">为您的安全等级再升一级</h2>
+            <p class="text-blue-100 mt-3 text-lg">免费体验30天，一对一交付专家支持</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="#" class="bg-white text-blue-900 px-8 py-3 rounded-md font-semibold hover:bg-slate-100">免费试用</a>
+                <a href="#" class="border border-white text-white px-8 py-3 rounded-md font-semibold hover:bg-white/10">预约专家演示</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 (品牌Logo, 版权, 地址, 联系方式, 微信二维码) 深灰色背景 -->
+    <footer class="bg-slate-900 text-slate-300 pt-12 pb-6 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- logo+描述 -->
+                <div class="lg:col-span-2"><div class="flex items-center space-x-2"><div class="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center text-white font-bold">S</div><span class="text-white font-semibold text-lg">深蓝安防</span></div><p class="mt-4 text-sm text-slate-400">智能视频监控引领者，AI赋能千行百业安全防护。</p></div>
+                <!-- 公司地址 -->
+                <div><h4 class="text-white font-semibold">总部地址</h4><p class="text-sm mt-2">北京市海淀区蓝海科技园C座<br>上海市浦东新区AI中心16F</p></div>
+                <!-- 联系方式 -->
+                <div><h4 class="text-white font-semibold">联系方式</h4><p class="text-sm mt-2">400-8820-110<br>support@deepblue.cn</p></div>
+                <!-- 微信公众号二维码 -->
+                <div><h4 class="text-white font-semibold">官方微信</h4><div class="mt-2 bg-white p-2 w-24 h-24 rounded flex items-center justify-center"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128" class="w-full h-full object-contain"></div></div>
+            </div>
+            <div class="border-t border-slate-700 mt-10 pt-6 text-sm text-center text-slate-400">© 2025 深蓝安防科技 版权所有 | 隐私条款 | 服务协议</div>
+        </div>
+    </footer>
+
+</body>
+</html>

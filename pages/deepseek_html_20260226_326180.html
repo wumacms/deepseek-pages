@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海锋物流 · 国际运输工业科技</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 手动微调冷灰蓝主题，完全通过tailwind类实现，无自定义样式 -->
+</head>
+
+<body class="bg-slate-50 text-slate-700 font-sans antialiased">
+
+  <!-- 导航栏 (logo+标题+CTA按钮，不含菜单) 工业风冷灰蓝 -->
+  <header class="border-b border-slate-200 bg-white/80 backdrop-blur-sm sticky top-0 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <!-- 左侧logo + 标题 -->
+      <div class="flex items-center gap-3">
+        <!-- 集装箱风格logo 纯文本+图标模拟 -->
+        <div class="w-8 h-8 bg-slate-800 rounded-md flex items-center justify-center text-slate-100 text-lg shadow-sm">
+          <span class="block -mt-1">⚓</span>
+        </div>
+        <span class="font-semibold text-xl tracking-tight text-slate-800">OCEANBRIDGE<span
+            class="text-slate-500 text-sm ml-1">logistics</span></span>
+      </div>
+      <!-- 右侧CTA按钮 -->
+      <div class="flex items-center gap-2">
+        <a href="#"
+          class="hidden sm:inline-block text-sm font-medium text-slate-600 hover:text-slate-900 px-3 py-2 transition">追踪货物</a>
+        <a href="#"
+          class="bg-slate-800 hover:bg-slate-700 text-white text-sm font-medium px-5 py-2.5 rounded-md shadow-sm transition flex items-center gap-1">
+          <span>📦</span> 发货咨询
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 首屏区块 (Hero) - 国际运输 -->
+    <section class="relative bg-gradient-to-br from-slate-100 to-blue-50/60 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 relative z-10">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-800 leading-tight">全球门到门<span
+                class="block text-slate-600">智能货运</span></h1>
+            <p class="text-lg text-slate-600 max-w-xl">实时可视、极速清关、多式联运——专为工业供应链打造的数字化国际运输平台，每一件货物都在掌控之中。</p>
+            <p class="text-base text-slate-500 border-l-4 border-slate-400 pl-4 italic">海运 · 空运 · 陆运 · 报关 · 仓储一站式</p>
+            <div class="flex flex-wrap gap-4 pt-3">
+              <a href="#"
+                class="bg-slate-800 hover:bg-slate-700 text-white font-medium px-6 py-3 rounded-md shadow flex items-center gap-2 transition"><span>📋</span>
+                获取报价</a>
+              <a href="#"
+                class="bg-white hover:bg-slate-100 text-slate-700 font-medium px-6 py-3 rounded-md shadow-sm border border-slate-200 transition">追踪货物</a>
+            </div>
+          </div>
+          <div class="relative rounded-xl overflow-hidden shadow-2xl border border-slate-200">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1677535536187-a8ce95118c30?q=60&w=900&auto=format&fit=crop"
+              alt="国际货运港口集装箱" class="w-full h-full object-cover aspect-[4/3]">
+            <div class="absolute inset-0 bg-slate-900/5 pointer-events-none"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 冷灰调装饰 -->
+      <div
+        class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-slate-200/30 to-transparent pointer-events-none">
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (海运/空运优势) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1 rounded-xl overflow-hidden shadow-xl border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1000&auto=format&fit=crop"
+            alt="集装箱货运轮船" class="w-full h-full object-cover aspect-[4/3]">
+        </div>
+        <div class="order-1 md:order-2 space-y-5">
+          <h2 class="text-3xl font-bold text-slate-800 tracking-tight">跨洋货运，极简掌控</h2>
+          <p class="text-slate-600 leading-relaxed">打破传统货运的信息黑箱，通过智能调度平台实时追踪从上海到洛杉矶的每一个集装箱。自动预判延误、优化航线，让国际物流像快递一样透明。</p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <span
+              class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium"><span
+                class="text-blue-600">✔</span> 门到门追踪</span>
+            <span
+              class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium"><span
+                class="text-blue-600">✔</span> 智能报关</span>
+            <span
+              class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 px-4 py-2 rounded-full text-sm font-medium"><span
+                class="text-blue-600">✔</span> 多式联运</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (空运优势) -->
+    <section class="bg-slate-100/60 py-20 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-5">
+            <h2 class="text-3xl font-bold text-slate-800 tracking-tight">时效为王 · 全球空运枢纽</h2>
+            <p class="text-slate-600 leading-relaxed">与全球60+主流航司建立数字化对接，实时舱位、优先装机。从法兰克福到上海浦东，清关预申报让货物落地4小时内即可提货。</p>
+            <div class="flex flex-wrap gap-3 pt-2">
+              <span
+                class="bg-white border border-slate-300 text-slate-700 px-4 py-1.5 rounded-full text-sm font-medium">✈️
+                优先板位</span>
+              <span
+                class="bg-white border border-slate-300 text-slate-700 px-4 py-1.5 rounded-full text-sm font-medium">📡
+                实时跟踪</span>
+              <span
+                class="bg-white border border-slate-300 text-slate-700 px-4 py-1.5 rounded-full text-sm font-medium">⚡
+                极速清关</span>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-xl border border-slate-200">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1000&auto=format&fit=crop"
+              alt="货运飞机装卸" class="w-full h-full object-cover aspect-[4/3]">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (工业科技冷灰蓝) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center space-y-3 mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-800">数字引擎 驱动全球物流</h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">从安全到效率，为跨国供应链打造的技术底盘</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 特性1 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition group">
+          <div class="text-4xl mb-4 text-slate-600 group-hover:scale-110 transition">🔒</div>
+          <h3 class="font-semibold text-lg text-slate-800">银行级加密</h3>
+          <p class="text-sm text-slate-500 mt-1">提单、报关单数据端到端加密，满足全球合规。</p>
+        </div>
+        <!-- 特性2 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition group">
+          <div class="text-4xl mb-4 text-slate-600 group-hover:scale-110 transition">⚡</div>
+          <h3 class="font-semibold text-lg text-slate-800">实时可视</h3>
+          <p class="text-sm text-slate-500 mt-1">GPS/北斗双模定位，节点状态毫秒级更新。</p>
+        </div>
+        <!-- 特性3 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition group">
+          <div class="text-4xl mb-4 text-slate-600 group-hover:scale-110 transition">🧩</div>
+          <h3 class="font-semibold text-lg text-slate-800">开放API</h3>
+          <p class="text-sm text-slate-500 mt-1">无缝对接WMS、ERP，打通供应链数据孤岛。</p>
+        </div>
+        <!-- 特性4 -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow transition group">
+          <div class="text-4xl mb-4 text-slate-600 group-hover:scale-110 transition">📊</div>
+          <h3 class="font-semibold text-lg text-slate-800">碳排分析</h3>
+          <p class="text-sm text-slate-500 mt-1">智能计算航程碳足迹，提供绿色物流报告。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台) 用多设备展示 -->
+    <section class="bg-slate-800 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight">PC · 平板 · 手机 实时同步</h2>
+        <p class="text-slate-300 mt-3 max-w-2xl mx-auto">无论是在码头调度室还是办公室，货物动态、单证状态随时可查，操作流畅如一。</p>
+        <div class="mt-12 rounded-xl overflow-hidden border border-slate-600 shadow-2xl">
+          <img src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=1000&auto=format&fit=crop"
+            alt="多屏办公物流控制" class="w-full object-cover aspect-[16/7]">
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 冷灰调 -->
+    <section class="bg-slate-100 py-16 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <div class="bg-white/70 backdrop-blur-sm p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="text-3xl font-bold text-slate-800">500+</div>
+            <div class="text-sm text-slate-500 uppercase tracking-wider mt-1">企业客户</div>
+          </div>
+          <div class="bg-white/70 backdrop-blur-sm p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="text-3xl font-bold text-slate-800">98%</div>
+            <div class="text-sm text-slate-500 uppercase tracking-wider mt-1">准点到达率</div>
+          </div>
+          <div class="bg-white/70 backdrop-blur-sm p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="text-3xl font-bold text-slate-800">20M+</div>
+            <div class="text-sm text-slate-500 uppercase tracking-wider mt-1">年货运吨量</div>
+          </div>
+          <div class="bg-white/70 backdrop-blur-sm p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="text-3xl font-bold text-slate-800">24/7</div>
+            <div class="text-sm text-slate-500 uppercase tracking-wider mt-1">全球支持</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 团队区块 (国际物流专家) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center space-y-2 mb-16">
+        <h2 class="text-3xl font-bold text-slate-800">核心团队</h2>
+        <p class="text-slate-500">来自全球顶尖航运、科技企业的专家</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- member 1 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="张伟"
+            class="w-full aspect-square object-cover">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg text-slate-800">张伟</h3>
+            <p class="text-sm text-slate-500">CEO & 创始人</p>
+            <p class="text-xs text-slate-400 mt-2">前马士基航运亚太区总监</p>
+          </div>
+        </div>
+        <!-- member 2 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+            alt="陈敏" class="w-full aspect-square object-cover">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg text-slate-800">陈敏</h3>
+            <p class="text-sm text-slate-500">CTO</p>
+            <p class="text-xs text-slate-400 mt-2">前Flexport物流技术负责人</p>
+          </div>
+        </div>
+        <!-- member 3 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop"
+            alt="王磊" class="w-full aspect-square object-cover">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg text-slate-800">王磊</h3>
+            <p class="text-sm text-slate-500">产品总监</p>
+            <p class="text-xs text-slate-400 mt-2">前C.H. Robinson全球产品经理</p>
+          </div>
+        </div>
+        <!-- member 4 -->
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop"
+            alt="李莉" class="w-full aspect-square object-cover">
+          <div class="p-5">
+            <h3 class="font-semibold text-lg text-slate-800">李莉</h3>
+            <p class="text-sm text-slate-500">设计负责人</p>
+            <p class="text-xs text-slate-400 mt-2">前DHL用户体验设计师</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价格区块 国际运输定价卡片 -->
+    <section class="bg-slate-50 py-20 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-slate-800">灵活的国际运价</h2>
+          <p class="text-slate-500">按需选择，无隐藏费用，所有报价实时更新</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- 基础版 海运拼箱 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition">
+            <h3 class="text-xl font-semibold text-slate-800">海运拼箱</h3>
+            <p class="text-slate-400 text-sm mt-1">LCL 灵活起步</p>
+            <div class="mt-5 flex items-end gap-1">
+              <span class="text-4xl font-bold text-slate-800">$49</span>
+              <span class="text-slate-500 mb-1">/m³</span>
+            </div>
+            <ul class="mt-6 space-y-3 text-sm">
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 门到港服务</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 基础报关协助</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 货物追踪</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center border border-slate-300 text-slate-700 hover:bg-slate-100 font-medium py-3 rounded-lg transition">选择基础</a>
+          </div>
+          <!-- 商业版 整箱/空运热门 -->
+          <div class="bg-white rounded-2xl border-2 border-slate-500 shadow-lg p-8 scale-105 relative">
+            <span
+              class="absolute top-0 right-8 bg-slate-700 text-white text-xs font-semibold px-3 py-1 rounded-b-lg">热门推荐</span>
+            <h3 class="text-xl font-semibold text-slate-800">整箱/空运</h3>
+            <p class="text-slate-400 text-sm mt-1">FCL & 优先空运</p>
+            <div class="mt-5 flex items-end gap-1">
+              <span class="text-4xl font-bold text-slate-800">$99</span>
+              <span class="text-slate-500 mb-1">/kg起</span>
+            </div>
+            <ul class="mt-6 space-y-3 text-sm">
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 优先订舱</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 实时GPS追踪</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 门到门+保险</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 极速清关</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center bg-slate-800 hover:bg-slate-700 text-white font-medium py-3 rounded-lg transition">选择商业版</a>
+          </div>
+          <!-- 企业版 定制供应链 -->
+          <div class="bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-md transition">
+            <h3 class="text-xl font-semibold text-slate-800">供应链定制</h3>
+            <p class="text-slate-400 text-sm mt-1">专属方案</p>
+            <div class="mt-5 text-4xl font-bold text-slate-800">定制</div>
+            <ul class="mt-6 space-y-3 text-sm">
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 多式联运优化</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 私有API集成</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 专属客户经理</li>
+              <li class="flex items-center gap-2 text-slate-700"><span class="text-blue-500">✓</span> 合规/本地部署</li>
+            </ul>
+            <a href="#"
+              class="mt-8 block w-full text-center border border-slate-300 text-slate-700 hover:bg-slate-100 font-medium py-3 rounded-lg transition">联系销售</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 国际货运FAQ -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">常见问题</h2>
+      <div class="max-w-4xl mx-auto divide-y divide-slate-200">
+        <div class="py-6">
+          <h3 class="text-lg font-semibold text-slate-800">支持危险品国际运输吗？</h3>
+          <p class="text-slate-600 mt-2">是的，我们有专门的危险品操作团队，符合IMDG/IATA法规，并提供专属申报和包装服务。</p>
+        </div>
+        <div class="py-6">
+          <h3 class="text-lg font-semibold text-slate-800">如何实时追踪我的集装箱？</h3>
+          <p class="text-slate-600 mt-2">登录系统后，每个提单号对应可视化看板，支持邮件/微信提醒，节点状态自动推送。</p>
+        </div>
+        <div class="py-6">
+          <h3 class="text-lg font-semibold text-slate-800">数据存储是否符合GDPR/中国网络安全法？</h3>
+          <p class="text-slate-600 mt-2">数据分布在法兰克福、新加坡、上海节点，均获得当地合规认证，企业版可指定区域。</p>
+        </div>
+        <div class="py-6">
+          <h3 class="text-lg font-semibold text-slate-800">是否可以对接我公司的ERP？</h3>
+          <p class="text-slate-600 mt-2">当然，我们提供标准REST API及专业实施团队，已有SAP、Oracle等成功案例。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA区块 立即提升效率 -->
+    <section class="bg-slate-800 py-20">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold text-white">优化全球供应链，即刻开始</h2>
+        <p class="text-slate-300 mt-3 text-lg">数百家制造、贸易企业正在使用海锋物流提升效率</p>
+        <div class="flex flex-wrap gap-4 justify-center mt-8">
+          <a href="#"
+            class="bg-white hover:bg-slate-100 text-slate-800 font-medium px-8 py-4 rounded-md shadow-lg transition flex items-center gap-2">📆
+            免费试用30天</a>
+          <a href="#"
+            class="border border-slate-500 text-white hover:bg-slate-700 font-medium px-8 py-4 rounded-md transition">📞
+            预约专家演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 简单版权声明 冷灰蓝 -->
+  <footer class="bg-slate-100 border-t border-slate-200 py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm text-slate-500">
+      © 2025 海锋物流科技有限公司 · 保留一切权利 · 工业科技 冷灰蓝调
+    </div>
+  </footer>
+
+</body>
+
+</html>

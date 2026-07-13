@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极智未来 · 企业智能协作平台</title>
+    <!-- Tailwind via CDN (纯工具类, 无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 微调：极简黑白基调，所有颜色均通过tailwind类实现，无额外style -->
+</head>
+
+<body class="bg-white text-black antialiased">
+
+    <!-- 导航栏 (logo + 标题 + CTA按钮, 不含菜单) -->
+    <header class="border-b border-black/10">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <!-- 左侧logo + 标题 (模拟人工智能科技感) -->
+            <div class="flex items-center gap-2">
+                <!-- 纯文本logo，采用极简黑白 -->
+                <span class="text-2xl font-light tracking-tighter border border-black px-2 py-1">AI</span>
+                <span class="text-xl font-medium tracking-tight">深度协作</span>
+            </div>
+            <!-- 右侧CTA按钮 (仅一个主要按钮, 不含菜单) 符合极简要求 -->
+            <div>
+                <a href="/signup"
+                    class="inline-block border border-black bg-black text-white px-6 py-2 text-sm font-medium hover:bg-white hover:text-black transition-colors duration-200">申请试用</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 首屏区块 (hero) 源自JSON数据结构, 搭配人工智能相关图片/文字 -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- 替换为AI相关标题 -->
+                    <h1 class="text-4xl md:text-5xl font-light tracking-tight leading-tight">企业级人工智能，<br>让决策更快一步</h1>
+                    <p class="text-lg mt-6 text-black/70 max-w-xl">安全、高效、可定制——专为现代企业打造的智能数据平台，集成实时推理与业务洞察。</p>
+                    <p class="text-sm mt-3 text-black/50">专为现代企业打造的智能数据平台，集成实时推理与业务洞察。</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="/signup"
+                            class="border border-black bg-black text-white px-8 py-3 text-sm font-medium hover:bg-white hover:text-black transition">开始使用</a>
+                        <a href="/contact"
+                            class="border border-black px-8 py-3 text-sm font-medium hover:bg-black hover:text-white transition">联系销售</a>
+                    </div>
+                </div>
+                <div class="bg-neutral-100 border border-black/10 overflow-hidden">
+                    <!-- Unsplash 人工智能相关图片：机器人、数据、科技感 -->
+                    <img class="w-full h-full object-cover grayscale"
+                        src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=60&w=900&auto=format&fit=crop"
+                        alt="AI 机器人分析数据" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (取自"专为商务打造的特性", 黑白极简图标保留emoji) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-light tracking-tight">专为人工智能打造的特性</h2>
+                    <p class="text-black/60 mt-3">从安全到效率，面面俱到</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- 特性1 企业级安全 (AI安全) -->
+                    <div class="border border-black/10 p-6 bg-white">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-lg font-medium">企业级安全</h3>
+                        <p class="text-black/60 text-sm mt-2">端到端加密、联邦学习、隐私计算满足合规。</p>
+                    </div>
+                    <!-- 特性2 实时推理 -->
+                    <div class="border border-black/10 p-6 bg-white">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-lg font-medium">实时推理</h3>
+                        <p class="text-black/60 text-sm mt-2">毫秒级延迟，跨设备模型预测与状态同步。</p>
+                    </div>
+                    <!-- 特性3 无限模型集成 -->
+                    <div class="border border-black/10 p-6 bg-white">
+                        <div class="text-4xl mb-4">🧩</div>
+                        <h3 class="text-lg font-medium">无限模型集成</h3>
+                        <p class="text-black/60 text-sm mt-2">连接主流AI引擎，自定义训练管道。</p>
+                    </div>
+                    <!-- 特性4 分析洞察 -->
+                    <div class="border border-black/10 p-6 bg-white">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h3 class="text-lg font-medium">分析洞察</h3>
+                        <p class="text-black/60 text-sm mt-2">模型准确率、数据漂移可视化监控。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (源自"无缝沟通，跨越部门" —— 但改为AI协作语境) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-1 md:order-1">
+                    <img class="w-full border border-black/10 grayscale"
+                        src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=2106&auto=format&fit=crop"
+                        alt="AI团队讨论" loading="lazy">
+                </div>
+                <div class="order-2 md:order-2">
+                    <h2 class="text-3xl font-light tracking-tight">跨部门智能协作</h2>
+                    <p class="text-black/70 mt-4 leading-relaxed">打破数据孤岛，通过主题模型、共享画布与实时预测，让每个人快速获得AI辅助。集成企业知识库，一键唤醒洞察。
+                    </p>
+                    <!-- 使用highlights字段风格展示两亮点 -->
+                    <div class="flex gap-4 mt-6">
+                        <span class="border border-black/30 px-3 py-1 text-xs uppercase tracking-wider">差分隐私</span>
+                        <span class="border border-black/30 px-3 py-1 text-xs uppercase tracking-wider">无限训练轮次</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流 → 深度集成AI工作流) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-light tracking-tight">深度集成AI工作流</h2>
+                    <p class="text-black/70 mt-4">与您使用的工具无缝连接：Jupyter、Git、Airflow、Snowflake。在对话中调取模型、触发训练、监控数据管道。</p>
+                    <!-- 使用tags风格 -->
+                    <div class="flex gap-4 mt-6">
+                        <span class="border border-black/30 px-3 py-1 text-xs uppercase tracking-wider">HuggingFace
+                            导入</span>
+                        <span class="border border-black/30 px-3 py-1 text-xs uppercase tracking-wider">API 开放</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-full border border-black/10 grayscale"
+                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=60&w=900&auto=format&fit=crop"
+                        alt="AI工作流集成" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台一致体验 → 全平台AI体验) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl font-light tracking-tight">全平台AI一致体验</h2>
+                <p class="text-black/60 mt-3 max-w-xl mx-auto">无论是在桌面、网页还是移动端，模型推理与数据看板实时同步，操作流畅如一。</p>
+                <div class="mt-12 max-w-3xl mx-auto border border-black/10 bg-neutral-50">
+                    <img class="w-full grayscale"
+                        src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=60&w=900&auto=format&fit=crop"
+                        alt="多设备AI同步" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (用人工智能数据替换) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-light">300+</div>
+                        <div class="text-sm uppercase tracking-wider text-black/50 mt-2">企业客户</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-light">97%</div>
+                        <div class="text-sm uppercase tracking-wider text-black/50 mt-2">模型准确率</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-light">2B+</div>
+                        <div class="text-sm uppercase tracking-wider text-black/50 mt-2">日推理请求</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-light">24/7</div>
+                        <div class="text-sm uppercase tracking-wider text-black/50 mt-2">专家支持</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (核心团队，保持原样但头像用科技公司人物照) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="text-center">
+                    <h2 class="text-3xl font-light tracking-tight">核心团队</h2>
+                    <p class="text-black/50 mt-2">来自全球顶尖AI企业与研究机构</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+                    <!-- 张伟 -->
+                    <div class="border border-black/10 p-6 text-center bg-white">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=60&w=900&auto=format&fit=crop"
+                            alt="张伟"
+                            class="w-32 h-32 mx-auto object-cover rounded-full border border-black/20 grayscale">
+                        <h3 class="font-medium mt-4">张伟</h3>
+                        <p class="text-sm text-black/60">CEO & 创始人</p>
+                        <p class="text-xs text-black/40 mt-1">前Google AI架构师</p>
+                    </div>
+                    <!-- 陈敏 -->
+                    <div class="border border-black/10 p-6 text-center bg-white">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=60&w=900&auto=format&fit=crop"
+                            alt="陈敏"
+                            class="w-32 h-32 mx-auto object-cover rounded-full border border-black/20 grayscale">
+                        <h3 class="font-medium mt-4">陈敏</h3>
+                        <p class="text-sm text-black/60">CTO</p>
+                        <p class="text-xs text-black/40 mt-1">深度学习框架核心贡献者</p>
+                    </div>
+                    <!-- 王磊 -->
+                    <div class="border border-black/10 p-6 text-center bg-white">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=60&w=900&auto=format&fit=crop"
+                            alt="王磊"
+                            class="w-32 h-32 mx-auto object-cover rounded-full border border-black/20 grayscale">
+                        <h3 class="font-medium mt-4">王磊</h3>
+                        <p class="text-sm text-black/60">产品总监</p>
+                        <p class="text-xs text-black/40 mt-1">前微软认知服务产品经理</p>
+                    </div>
+                    <!-- 李莉 -->
+                    <div class="border border-black/10 p-6 text-center bg-white">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=60&w=900&auto=format&fit=crop"
+                            alt="李莉"
+                            class="w-32 h-32 mx-auto object-cover rounded-full border border-black/20 grayscale">
+                        <h3 class="font-medium mt-4">李莉</h3>
+                        <p class="text-sm text-black/60">设计负责人</p>
+                        <p class="text-xs text-black/40 mt-1">前Figma AI设计主管</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (定价改为人工智能相关套餐) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-7xl mx-auto px-6 py-20">
+                <div class="text-center">
+                    <h2 class="text-3xl font-light tracking-tight">灵活定价</h2>
+                    <p class="text-black/50 mt-2">按需选择算力与模型服务，无隐藏费用</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6 mt-16">
+                    <!-- 基础版 -->
+                    <div class="border border-black/10 p-8 bg-white flex flex-col">
+                        <h3 class="text-xl font-medium">基础版</h3>
+                        <p class="text-3xl font-light mt-4">49<span class="text-sm font-normal text-black/40">
+                                月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-sm">
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-black rounded-full"></span>推理请求
+                                10万次/月</li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-black rounded-full"></span>100GB
+                                特征存储</li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-black rounded-full"></span>基础模型库
+                            </li>
+                        </ul>
+                        <a href="/signup/basic"
+                            class="mt-8 border border-black py-3 text-sm text-center hover:bg-black hover:text-white transition">选择基础版</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="border border-black bg-black text-white p-8 flex flex-col relative">
+                        <span
+                            class="absolute top-0 right-0 bg-white text-black text-xs px-3 py-1 tracking-wider -translate-y-1/2">热门</span>
+                        <h3 class="text-xl font-medium text-white">商业版</h3>
+                        <p class="text-3xl font-light mt-4 text-white">99<span
+                                class="text-sm font-normal text-white/60"> 月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-sm text-white/80">
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span>无限推理
+                            </li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span>1TB
+                                特征存储</li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-white rounded-full"></span>微调权限
+                                + API</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1 h-1 bg-white rounded-full"></span>高级技术支持</li>
+                        </ul>
+                        <a href="/signup/business"
+                            class="mt-8 border border-white text-white py-3 text-sm text-center hover:bg-white hover:text-black transition">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="border border-black/10 p-8 bg-white flex flex-col">
+                        <h3 class="text-xl font-medium">企业版</h3>
+                        <p class="text-3xl font-light mt-4">定制</p>
+                        <ul class="mt-6 space-y-3 text-sm">
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-black rounded-full"></span>私有化部署
+                            </li>
+                            <li class="flex items-center gap-2"><span class="w-1 h-1 bg-black rounded-full"></span>无限存储
+                                & 专属集群</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1 h-1 bg-black rounded-full"></span>专属客户成功</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="w-1 h-1 bg-black rounded-full"></span>SSO/合规/审计</li>
+                        </ul>
+                        <a href="/contact"
+                            class="mt-8 border border-black py-3 text-sm text-center hover:bg-black hover:text-white transition">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 (faqs 黑白极简风格) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-4xl mx-auto px-6 py-20">
+                <h2 class="text-3xl font-light tracking-tight text-center">常见问题</h2>
+                <div class="mt-12 space-y-6">
+                    <!-- FAQ 1 -->
+                    <div class="border border-black/10 p-6">
+                        <h3 class="font-medium text-lg">支持本地部署吗？</h3>
+                        <p class="text-black/60 mt-2 text-sm">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求，支持模型私有化。</p>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="border border-black/10 p-6">
+                        <h3 class="font-medium text-lg">可以试用多久？</h3>
+                        <p class="text-black/60 mt-2 text-sm">所有新用户均可享受45天全功能免费试用，无需信用卡，包含全部AI能力。</p>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="border border-black/10 p-6">
+                        <h3 class="font-medium text-lg">数据存储在哪里？</h3>
+                        <p class="text-black/60 mt-2 text-sm">数据存储在云端加密数据库，可选中国大陆或海外区域，并支持私有化数据主权。</p>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="border border-black/10 p-6">
+                        <h3 class="font-medium text-lg">如何迁移现有模型？</h3>
+                        <p class="text-black/60 mt-2 text-sm">我们提供专业迁移工具，支持从SageMaker、Vertex AI等平台导入现有模型及数据。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 (立即提升团队协作效率 → 立即提升AI决策效率) -->
+        <section class="border-b border-black/10">
+            <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl md:text-4xl font-light tracking-tight">立即提升AI决策效率</h2>
+                <p class="text-black/60 mt-3">加入数百家信任我们的企业，开启智能数据驱动之旅。</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="/signup"
+                        class="border border-black bg-black text-white px-8 py-3 text-sm font-medium hover:bg-white hover:text-black transition">免费试用45天</a>
+                    <a href="/demo"
+                        class="border border-black px-8 py-3 text-sm font-medium hover:bg-black hover:text-white transition">预约专家演示</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 页脚 (简单的版权声明) 极简黑白 -->
+    <footer class="border-t border-black/10">
+        <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center text-xs text-black/50">
+            <p>© 2025 极智未来 · 人工智能协作平台。 所有权利保留。</p>
+            <p>黑白极简 · 科技公司</p>
+        </div>
+    </footer>
+
+    <!-- 没有任何自定义样式, 纯tailwind类, 符合要求 -->
+</body>
+
+</html>

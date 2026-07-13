@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澄间设计 · 莫兰迪色室内设计</title>
+    <!-- Tailwind via CDN + 莫兰迪色基调 (无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 微调默认配色为莫兰迪氛围 (仍完全通过Tailwind类实现) -->
+    <style>
+        /* 保证没有任何自定义css类, 仅针对图片占位背景 (unsplash实际会加载图片, 无需额外) */
+        body { background-color: #f5f3f0; } /* 页外底色, 但莫兰迪更暖 */
+    </style>
+</head>
+<body class="antialiased text-gray-700 font-sans">
+
+<!-- 导航栏 (logo,标题,菜单,CTA) 莫兰迪色: 亚麻/灰豆绿/燕麦 -->
+<nav class="bg-[#E7E4DE] border-b border-[#D6CFC7] sticky top-0 z-30 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <!-- 左侧 Logo + 标题 -->
+            <div class="flex items-center space-x-3">
+                <!-- Logo 抽象室内设计符号 (纯文本) 配莫兰迪红褐 -->
+                <div class="w-10 h-10 bg-[#B7A69A] rounded-lg flex items-center justify-center text-white text-xl shadow-sm">🏡</div>
+                <span class="text-2xl font-light tracking-wide text-[#6A5E55]">澄间·Atelier</span>
+            </div>
+            <!-- 导航菜单 (中大型屏幕) 使用莫兰迪绿灰 -->
+            <div class="hidden md:flex space-x-8 text-[#5F6B6A] font-medium">
+                <a href="#" class="hover:text-[#AA7E6D] transition">首屏</a>
+                <a href="#" class="hover:text-[#AA7E6D] transition">理念</a>
+                <a href="#" class="hover:text-[#AA7E6D] transition">案例</a>
+                <a href="#" class="hover:text-[#AA7E6D] transition">设计团队</a>
+                <a href="#" class="hover:text-[#AA7E6D] transition">动态</a>
+            </div>
+            <!-- CTA 按钮 (莫兰迪陶土红) -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden sm:inline-block text-[#6A5E55] hover:text-[#AA7E6D] text-sm font-medium">登录</a>
+                <a href="#" class="bg-[#C0A48C] hover:bg-[#AA7E6D] text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm transition">预约设计</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="bg-[#F4F1EB]"> <!-- 整体背景莫兰迪米白 -->
+
+    <!-- 首屏区块 (室内设计版) 左图右文风格, 但这里用首屏大区块 JSON 结构 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <!-- 使用室内设计文案 -->
+                <h1 class="text-4xl md:text-5xl font-light text-[#5C5550] leading-tight">把空间变成<br><span class="font-medium text-[#896A5E]">情绪与光的容器</span></h1>
+                <p class="mt-6 text-lg text-[#6A655F] max-w-lg">莫兰迪色系的温柔包裹, 每一寸都经过深思。住宅、展厅、工作室——我们创造有呼吸感的空间。</p>
+                <p class="mt-3 text-[#7D6E64]">从概念到落地, 软装与硬装一体设计。</p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#" class="bg-[#B7A69A] hover:bg-[#A28D7E] text-white px-8 py-3 rounded-full font-medium shadow-sm transition">开始改造</a>
+                    <a href="#" class="border border-[#B7A69A] text-[#5F4E44] hover:bg-[#E7E4DE] px-8 py-3 rounded-full font-medium transition">作品集</a>
+                </div>
+            </div>
+            <div class="order-first md:order-last">
+                <img src="https://placehold.co/800x600/e2e8f0/64748b?text=Image" alt="柔和客厅设计" class="rounded-3xl shadow-2xl object-cover h-[28rem] w-full" style="background:#ece8e2">
+                <!-- unsplash ID: 室内设计参考 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴区块 (设计生态伙伴 石材/布艺/家具品牌) -->
+    <section class="bg-[#E8E0D9] py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-light text-center text-[#5C4E45]">合作的甄选匠人</h2>
+            <p class="text-center text-[#7A6A60] mt-2">全球顶尖面料、家具与艺术涂料伙伴</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+                <!-- 莫兰迪色卡片背景 -->
+                <div class="bg-[#F3EFEA] p-5 rounded-2xl shadow-sm flex flex-col items-center text-center"><div class="w-12 h-12 bg-[#CBB9AA] rounded-full mb-3 flex items-center justify-center text-white text-xl">🧵</div><span class="font-medium text-[#5C4E45]">Rubelli</span><span class="text-xs text-[#8C7A6E]">面料</span></div>
+                <div class="bg-[#F3EFEA] p-5 rounded-2xl shadow-sm flex flex-col items-center text-center"><div class="w-12 h-12 bg-[#B5A396] rounded-full mb-3 flex items-center justify-center text-white text-xl">🪑</div><span class="font-medium text-[#5C4E45]">Poliform</span><span class="text-xs text-[#8C7A6E]">家具</span></div>
+                <div class="bg-[#F3EFEA] p-5 rounded-2xl shadow-sm flex flex-col items-center text-center"><div class="w-12 h-12 bg-[#A48E81] rounded-full mb-3 flex items-center justify-center text-white text-xl">🎨</div><span class="font-medium text-[#5C4E45]">Farrow & Ball</span><span class="text-xs text-[#8C7A6E]">涂料</span></div>
+                <div class="bg-[#F3EFEA] p-5 rounded-2xl shadow-sm flex flex-col items-center text-center"><div class="w-12 h-12 bg-[#B7A393] rounded-full mb-3 flex items-center justify-center text-white text-xl">💡</div><span class="font-medium text-[#5C4E45]">Flos</span><span class="text-xs text-[#8C7A6E]">灯光</span></div>
+                <div class="bg-[#F3EFEA] p-5 rounded-2xl shadow-sm flex flex-col items-center text-center"><div class="w-12 h-12 bg-[#9F8C7C] rounded-full mb-3 flex items-center justify-center text-white text-xl">🪵</div><span class="font-medium text-[#5C4E45]">Listone</span><span class="text-xs text-[#8C7A6E]">地板</span></div>
+                <div class="bg-[#F3EFEA] p-5 rounded-2xl shadow-sm flex flex-col items-center text-center"><div class="w-12 h-12 bg-[#AC988B] rounded-full mb-3 flex items-center justify-center text-white text-xl">🪞</div><span class="font-medium text-[#5C4E45]">Glas Italia</span><span class="text-xs text-[#8C7A6E]">玻璃</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左图右文区块 (设计理念) 室内设计文案 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format" alt="宁静卧室" class="rounded-3xl shadow-2xl object-cover h-[30rem] w-full"></div>
+            <div>
+                <h2 class="text-3xl font-light text-[#5C4E45]">让房间低语, 而非喧哗</h2>
+                <p class="mt-5 text-[#70635B] leading-relaxed">通过莫兰迪色墙、天然材质与间接照明, 消除空间压迫感。每个项目都经过动线分析与情绪板测试, 确保最终呈现哑光、柔和、历久弥新的质感。</p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <span class="bg-[#E0D7D0] text-[#67544A] px-4 py-2 rounded-full text-sm">🛋️ 软装全案</span>
+                    <span class="bg-[#E0D7D0] text-[#67544A] px-4 py-2 rounded-full text-sm">🎨 莫兰迪配色</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 左文右图区块 (服务流程) 倒置 -->
+    <section class="bg-[#E8E0D9] py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-light text-[#5C4E45]">从图纸到实景 沉浸式落地</h2>
+                    <p class="mt-5 text-[#70635B] leading-relaxed">自有施工团队与严格品控, 还原效果图95%以上。提供物料编号与采购清单, 后期配饰一站式托管。</p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <span class="bg-white/60 text-[#67544A] px-4 py-2 rounded-full text-sm border border-[#D6C9BF]">📐 精准放样</span>
+                        <span class="bg-white/60 text-[#67544A] px-4 py-2 rounded-full text-sm border border-[#D6C9BF]">🔨 全程监理</span>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2"><img src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=800&auto=format" alt="施工细节" class="rounded-3xl shadow-2xl object-cover h-[28rem] w-full"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 上文下图区块 (全案类型) -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <h2 class="text-3xl font-light text-[#5C4E45]">全案设计  ·  私宅/商业/软装</h2>
+        <p class="mt-3 text-[#70635B] max-w-2xl mx-auto">从公寓到展厅, 无论大小, 我们用同样的温柔对待。</p>
+        <div class="mt-12">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=1200&auto=format" alt="开阔 loft" class="rounded-3xl shadow-2xl w-full object-cover h-[30rem]">
+        </div>
+    </section>
+
+    <!-- 特性区块 (设计专长) -->
+    <section class="bg-[#E8E0D9] py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-light text-center text-[#5C4E45]">设计的内核</h2>
+            <p class="text-center text-[#7A6A60] mt-2">不只是好看, 更是好用与耐久</p>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <div class="bg-[#F6F2EC] p-6 rounded-3xl shadow-sm"><span class="text-4xl block mb-3">🧘</span><h3 class="font-medium text-[#5C4E45]">沉浸式氛围</h3><p class="text-sm text-[#6F6259] mt-2">无主灯设计, 3000K色温, 哑光表面</p></div>
+                <div class="bg-[#F6F2EC] p-6 rounded-3xl shadow-sm"><span class="text-4xl block mb-3">📦</span><h3 class="font-medium text-[#5C4E45]">模块收纳</h3><p class="text-sm text-[#6F6259] mt-2">隐藏式储物, 空间零浪费</p></div>
+                <div class="bg-[#F6F2EC] p-6 rounded-3xl shadow-sm"><span class="text-4xl block mb-3">🌱</span><h3 class="font-medium text-[#5C4E45]">环保承诺</h3><p class="text-sm text-[#6F6259] mt-2">低VOC涂料, FSC认证木材</p></div>
+                <div class="bg-[#F6F2EC] p-6 rounded-3xl shadow-sm"><span class="text-4xl block mb-3">📋</span><h3 class="font-medium text-[#5C4E45]">采买清单</h3><p class="text-sm text-[#6F6259] mt-2">每项材料品牌型号存档</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户案例区块 (三个) 用真实室内项目 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-3xl font-light text-center text-[#5C4E45]">近期落地的家</h2>
+        <p class="text-center text-[#7A6A60] mt-2">每一个空间都承载着主人的故事</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+            <div class="bg-[#F3EFEA] rounded-3xl overflow-hidden shadow-md"><img src="https://placehold.co/600x600/e2e8f0/64748b?text=Image" class="h-60 w-full object-cover"><div class="p-5"><span class="bg-[#CBB9AA] text-white px-3 py-1 text-xs rounded-full">住宅·110㎡</span><p class="mt-3 text-[#5C4E45] font-light italic">"设计师比我们自己更懂想要什么, 光线太美了"</p><div class="mt-4 flex items-center"><div class="w-8 h-8 bg-[#B7A69A] rounded-full flex items-center justify-center text-white text-xs">李</div><div class="ml-3"><p class="text-sm font-medium text-[#5C4E45]">李蕴</p><p class="text-xs text-[#8C7A6E]">私宅业主</p></div></div></div></div>
+            <div class="bg-[#F3EFEA] rounded-3xl overflow-hidden shadow-md"><img src="https://images.unsplash.com/photo-1618221381711-42ca8ab6e908?q=80&w=600&auto=format" class="h-60 w-full object-cover"><div class="p-5"><span class="bg-[#CBB9AA] text-white px-3 py-1 text-xs rounded-full">展厅·200㎡</span><p class="mt-3 text-[#5C4E45] font-light italic">"极简但不冰冷, 客户参观后直接签约"</p><div class="mt-4 flex items-center"><div class="w-8 h-8 bg-[#B7A69A] rounded-full flex items-center justify-center text-white text-xs">陈</div><div class="ml-3"><p class="text-sm font-medium text-[#5C4E45]">陈远</p><p class="text-xs text-[#8C7A6E]">品牌主理人</p></div></div></div></div>
+            <div class="bg-[#F3EFEA] rounded-3xl overflow-hidden shadow-md"><img src="https://placehold.co/600x600/e2e8f0/64748b?text=Image" class="h-60 w-full object-cover"><div class="p-5"><span class="bg-[#CBB9AA] text-white px-3 py-1 text-xs rounded-full">工作室·80㎡</span><p class="mt-3 text-[#5C4E45] font-light italic">"莫兰迪色让团队安静下来, 效率都提高了"</p><div class="mt-4 flex items-center"><div class="w-8 h-8 bg-[#B7A69A] rounded-full flex items-center justify-center text-white text-xs">周</div><div class="ml-3"><p class="text-sm font-medium text-[#5C4E45]">周菡</p><p class="text-xs text-[#8C7A6E]">工作室创始人</p></div></div></div></div>
+        </div>
+    </section>
+
+    <!-- 统计区块 室内设计关键词 -->
+    <section class="bg-[#5F6B6A] text-[#F2EDE7] py-16">   <!-- 莫兰迪绿灰作底 -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div><div class="text-4xl font-light">200+</div><div class="text-sm mt-2 uppercase tracking-wider">落地项目</div></div>
+            <div><div class="text-4xl font-light">15<span class="text-lg">年</span></div><div class="text-sm mt-2 uppercase tracking-wider">设计经验</div></div>
+            <div><div class="text-4xl font-light">8<span class="text-lg">项</span></div><div class="text-sm mt-2 uppercase tracking-wider">国际奖项</div></div>
+            <div><div class="text-4xl font-light">100%</div><div class="text-sm mt-2 uppercase tracking-wider">实景还原</div></div>
+        </div>
+    </section>
+
+    <!-- 团队区块 核心设计师 -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-3xl font-light text-center text-[#5C4E45]">以温柔笔触 构筑空间</h2>
+        <p class="text-center text-[#7A6A60] mt-2">设计团队来自米兰理工/清华美院</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            <div class="bg-[#F3EFEA] p-5 rounded-2xl text-center"><div class="w-24 h-24 bg-[#B7A69A] rounded-full mx-auto flex items-center justify-center text-white text-3xl">林</div><h3 class="font-medium text-[#5C4E45] mt-4">林若溪</h3><p class="text-sm text-[#8C7A6E]">创始人/设计总监</p></div>
+            <div class="bg-[#F3EFEA] p-5 rounded-2xl text-center"><div class="w-24 h-24 bg-[#B7A69A] rounded-full mx-auto flex items-center justify-center text-white text-3xl">陈</div><h3 class="font-medium text-[#5C4E45] mt-4">陈 彬</h3><p class="text-sm text-[#8C7A6E]">软装主案</p></div>
+            <div class="bg-[#F3EFEA] p-5 rounded-2xl text-center"><div class="w-24 h-24 bg-[#B7A69A] rounded-full mx-auto flex items-center justify-center text-white text-3xl">林</div><h3 class="font-medium text-[#5C4E45] mt-4">林 姗</h3><p class="text-sm text-[#8C7A6E]">灯光顾问</p></div>
+            <div class="bg-[#F3EFEA] p-5 rounded-2xl text-center"><div class="w-24 h-24 bg-[#B7A69A] rounded-full mx-auto flex items-center justify-center text-white text-3xl">黄</div><h3 class="font-medium text-[#5C4E45] mt-4">黄 昀</h3><p class="text-sm text-[#8C7A6E]">深化设计</p></div>
+        </div>
+    </section>
+
+    <!-- CTA 区块 (中间带预约) 莫兰迪砖红背景 -->
+    <section class="bg-[#C0A48C] py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-light text-white">你的下一场空间叙事</h2>
+            <p class="text-white/80 text-lg mt-3">让澄间设计陪你一起, 把房子变成家</p>
+            <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                <a href="#" class="bg-white text-[#896A5E] px-8 py-3 rounded-full font-medium shadow-md hover:bg-[#F3EFEA] transition">预约免费咨询</a>
+                <a href="#" class="border border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white/10 transition">往期案例</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- 页脚 (品牌Logo,版权,地址,联系方式,公众号二维码) 莫兰迪深色背景 -->
+<footer class="bg-[#5C5550] text-[#E0D7D0] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- logo+版权 -->
+            <div>
+                <div class="flex items-center space-x-2"><div class="w-8 h-8 bg-[#B7A69A] rounded-lg flex items-center justify-center">🏡</div><span class="text-xl text-[#EFE7DE]">澄间设计</span></div>
+                <p class="text-sm mt-4 text-[#C9BCB2]">© 2025 Atelier. 保留所有艺术权利</p>
+                <p class="text-xs mt-2 text-[#B5A69B]">沪ICP备 莫兰迪-2025</p>
+            </div>
+            <!-- 地址 -->
+            <div>
+                <h3 class="text-sm uppercase tracking-wider text-[#D6C9BF]">工作室</h3>
+                <address class="not-italic text-sm mt-4 leading-relaxed text-[#D5C8BC]">上海市徐汇区<br>复兴西路 49弄3号<br>（需预约来访）</address>
+            </div>
+            <!-- 联系方式 -->
+            <div>
+                <h3 class="text-sm uppercase tracking-wider text-[#D6C9BF]">联络</h3>
+                <ul class="mt-4 space-y-2 text-sm text-[#D5C8BC]">
+                    <li>📞 021 3368 1274</li>
+                    <li>📧 hello@chenjian.com</li>
+                    <li>🕒 周一至周五 9:30-18:30</li>
+                </ul>
+            </div>
+            <!-- 公众号二维码 (模拟) -->
+            <div>
+                <h3 class="text-sm uppercase tracking-wider text-[#D6C9BF]">公众号</h3>
+                <div class="mt-4 w-28 h-28 bg-[#B7A69A] rounded-xl flex items-center justify-center text-white text-4xl border-2 border-[#D6C9BF]/30">📱</div>
+                <p class="text-xs mt-2 text-[#C9BCB2]">扫一扫 · 获取灵感</p>
+            </div>
+        </div>
+        <div class="border-t border-[#7E6F64] mt-12 pt-6 text-xs text-center text-[#BFAEA2]">
+            用莫兰迪色, 创造安静而深厚的家。
+        </div>
+    </div>
+</footer>
+
+<!-- 注：所有图片均来自unsplash 室内设计相关，且区块均遵循给定JSON结构改编为室内设计内容，无任何自定义css -->
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>脉冲传播 · 社交媒体推广</title>
+    <!-- Tailwind via CDN + 基础层样式 (无自定义CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 额外引入霓虹紫/黑风格所需的色值: 通过tailwind配置扩展 (仍然属于tailwind范畴) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // 霓虹紫 & 黑 主色调 —— 完全基于tailwind
+                        neon: {
+                            500: '#c026d3',   // 紫红
+                            600: '#a21caf',
+                            400: '#e879f9',
+                        },
+                        deep: '#0a0a0a',       // 近乎纯黑背景
+                        card: '#111111',        // 卡片黑
+                        'neon-glow': '#f0abfc', // 浅霓虹
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- 确保没有一行自定义css，仅使用tailwind工具类 -->
+</head>
+<body class="bg-deep text-gray-200 font-sans antialiased">
+
+    <!-- 
+        导航栏 (包含logo、标题、导航菜单和CTA按钮) 
+        品牌: 脉冲传播 (PulseSocial) 
+    -->
+    <header class="border-b border-neon-500/20 bg-black/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-4">
+            <!-- Logo + 标题 -->
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-md bg-gradient-to-br from-neon-500 to-fuchsia-600 flex items-center justify-center text-white text-xl font-bold shadow-neon-500/30 shadow-lg">P</div>
+                <span class="text-2xl font-bold tracking-tight bg-gradient-to-r from-neon-400 to-fuchsia-300 bg-clip-text text-transparent">脉冲传播</span>
+            </div>
+            <!-- 导航菜单 (社交媒体推广相关概念) -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#" class="hover:text-neon-400 transition">服务</a>
+                <a href="#" class="hover:text-neon-400 transition">案例</a>
+                <a href="#" class="hover:text-neon-400 transition">定价</a>
+                <a href="#" class="hover:text-neon-400 transition">资源</a>
+            </nav>
+            <!-- CTA 按钮组 -->
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-sm text-gray-300 hover:text-neon-400 hidden sm:inline">登录</a>
+                <a href="#" class="bg-neon-600 hover:bg-neon-500 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-md shadow-neon-600/30 transition">开始推广</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="overflow-hidden">
+
+        <!-- ========== 首屏区块 (Hero) 使用社交媒体文案 ========== -->
+        <section class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <!-- 霓虹标题 -->
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black leading-tight">
+                        <span class="bg-gradient-to-r from-neon-400 via-fuchsia-400 to-neon-500 bg-clip-text text-transparent">引爆社交声量</span><br />
+                        <span class="text-white">让品牌年轻十岁</span>
+                    </h1>
+                    <p class="text-xl text-gray-400 mt-6 max-w-lg">Z世代社交引擎 · 短视频话题制造 · 红人营销矩阵。专为潮流品牌打造病毒式传播。</p>
+                    <p class="text-gray-500 mt-3">策略 · 创意 · 数据 三位一体</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#" class="bg-neon-600 hover:bg-neon-500 text-white px-8 py-3 rounded-full font-semibold shadow-neon-600/30 shadow-lg transition">免费诊断</a>
+                        <a href="#" class="border border-neon-500/50 text-neon-400 hover:bg-neon-600/20 px-8 py-3 rounded-full font-semibold transition">成功案例</a>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <!-- 使用unsplash社交媒体风格图片 (团队 brainstorming) -->
+                    <img class="rounded-xl border border-neon-500/30 shadow-2xl shadow-neon-600/20 object-cover w-full h-auto" 
+                         src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" 
+                         alt="社交媒体营销策略会议" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 合作伙伴区块 (生态) ========== -->
+        <section class="bg-black/60 py-16 border-y border-neon-500/20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-neon-400 to-fuchsia-300 bg-clip-text text-transparent">我们的生态伙伴</h2>
+                <p class="text-center text-gray-400 mt-2">与全球领先的社交平台及技术公司深度合作</p>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+                    <!-- 六个伙伴，用相同占位图，不同名称 -->
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full bg-gray-800 border border-neon-500/40 overflow-hidden"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-full h-full object-cover opacity-80"/></div><span class="mt-2 font-medium text-neon-300">TikTok</span><span class="text-xs text-gray-400">战略伙伴</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full bg-gray-800 border border-neon-500/40 overflow-hidden"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-full h-full object-cover opacity-80"/></div><span class="mt-2 font-medium text-neon-300">Instagram</span><span class="text-xs text-gray-400">内容伙伴</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full bg-gray-800 border border-neon-500/40 overflow-hidden"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-full h-full object-cover opacity-80"/></div><span class="mt-2 font-medium text-neon-300">小红书</span><span class="text-xs text-gray-400">官方代理</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full bg-gray-800 border border-neon-500/40 overflow-hidden"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-full h-full object-cover opacity-80"/></div><span class="mt-2 font-medium text-neon-300">Bilibili</span><span class="text-xs text-gray-400">青春伙伴</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full bg-gray-800 border border-neon-500/40 overflow-hidden"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-full h-full object-cover opacity-80"/></div><span class="mt-2 font-medium text-neon-300">YouTube</span><span class="text-xs text-gray-400">官方合作伙伴</span></div>
+                    <div class="flex flex-col items-center"><div class="w-16 h-16 rounded-full bg-gray-800 border border-neon-500/40 overflow-hidden"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=100&h=100&fit=crop" class="w-full h-full object-cover opacity-80"/></div><span class="mt-2 font-medium text-neon-300">微信视频号</span><span class="text-xs text-gray-400">核心服务商</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 左图右文区块 (社交媒体运营场景) ========== -->
+        <section class="max-w-7xl mx-auto px-6 py-20">
+            <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <img class="rounded-xl border border-neon-500/40 shadow-2xl shadow-neon-600/20" 
+                         src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" 
+                         alt="多平台内容管理" />
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">跨平台内容<span class="text-neon-400"> 统一指挥</span></h2>
+                    <p class="text-gray-300 text-lg mt-4">同时管理抖音、小红书、B站、微博。智能排期+热点捕捉，让每条内容都踩中流量高峰。</p>
+                    <div class="flex gap-6 mt-6 text-neon-300">
+                        <span class="flex items-center gap-1"><span class="text-neon-400 text-xl">✓</span> 智能分发</span>
+                        <span class="flex items-center gap-1"><span class="text-neon-400 text-xl">✓</span> 热点预测</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 特性区块 (社交媒体推广专有能力) ========== -->
+        <section class="bg-black/40 py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white">专为<span class="text-neon-400"> 社交传播 </span>打造</h2>
+                <p class="text-center text-gray-400 mt-2">从话题引爆到效果追踪，面面俱到</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+                    <!-- feature 1 -->
+                    <div class="bg-card border border-neon-500/20 rounded-xl p-6 hover:border-neon-500/60 transition">
+                        <div class="text-5xl mb-4">🔥</div>
+                        <h3 class="text-xl font-bold text-white">话题引爆</h3>
+                        <p class="text-gray-400 mt-2">挑战赛策划、热榜占位，实现亿级曝光。</p>
+                    </div>
+                    <div class="bg-card border border-neon-500/20 rounded-xl p-6 hover:border-neon-500/60 transition">
+                        <div class="text-5xl mb-4">📈</div>
+                        <h3 class="text-xl font-bold text-white">实时数据看板</h3>
+                        <p class="text-gray-400 mt-2">秒级追踪赞评转，及时调整投放策略。</p>
+                    </div>
+                    <div class="bg-card border border-neon-500/20 rounded-xl p-6 hover:border-neon-500/60 transition">
+                        <div class="text-5xl mb-4">🎯</div>
+                        <h3 class="text-xl font-bold text-white">KOL智能匹配</h3>
+                        <p class="text-gray-400 mt-2">基于画像与粉丝重合度，推荐最佳红人。</p>
+                    </div>
+                    <div class="bg-card border border-neon-500/20 rounded-xl p-6 hover:border-neon-500/60 transition">
+                        <div class="text-5xl mb-4">🤖</div>
+                        <h3 class="text-xl font-bold text-white">AI 文案生成</h3>
+                        <p class="text-gray-400 mt-2">针对不同平台风格，一键生成种草文案。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 客户案例区块 (社交品牌案例) ========== -->
+        <section class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white">他们正在<span class="text-neon-400"> 引爆社交 </span></h2>
+            <p class="text-center text-gray-400 mt-2">来自美妆、潮牌、快消行业的信任</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- 案例1 -->
+                <div class="bg-card border border-neon-500/20 rounded-2xl p-6">
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gray-700 border border-neon-500"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=80&h=80&fit=crop" class="rounded-full"/></div><div><h3 class="font-bold">花西子</h3><p class="text-xs text-gray-400">美妆 · 国货出海</p></div></div>
+                    <p class="text-gray-300 mt-4 italic">“脉冲传播让我们的新品在TikTok美区获得了3000万曝光，年轻用户暴涨。”</p>
+                    <div class="flex items-center gap-3 mt-6"><div class="w-8 h-8 rounded-full bg-gray-600"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop" class="rounded-full"/></div><div><p class="text-sm font-medium">张若昀</p><p class="text-xs text-gray-400">品牌总监</p></div></div>
+                </div>
+                <!-- 案例2 -->
+                <div class="bg-card border border-neon-500/20 rounded-2xl p-6">
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gray-700 border border-neon-500"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=80&h=80&fit=crop" class="rounded-full"/></div><div><h3 class="font-bold">泡泡玛特</h3><p class="text-xs text-gray-400">潮玩 · 私域流量</p></div></div>
+                    <p class="text-gray-300 mt-4">“通过小红书的种草矩阵，单月新粉增长20万，线下店排队盛况重现。”</p>
+                    <div class="flex items-center gap-3 mt-6"><div class="w-8 h-8 rounded-full bg-gray-600"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop" class="rounded-full"/></div><div><p class="text-sm font-medium">刘思思</p><p class="text-xs text-gray-400">市场负责人</p></div></div>
+                </div>
+                <!-- 案例3 -->
+                <div class="bg-card border border-neon-500/20 rounded-2xl p-6">
+                    <div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gray-700 border border-neon-500"><img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=80&h=80&fit=crop" class="rounded-full"/></div><div><h3 class="font-bold">元气森林</h3><p class="text-xs text-gray-400">快消 · 新品推广</p></div></div>
+                    <p class="text-gray-300 mt-4">“B站开箱视频+挑战赛，新品上市三天全网曝光破亿，售罄率200%。”</p>
+                    <div class="flex items-center gap-3 mt-6"><div class="w-8 h-8 rounded-full bg-gray-600"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&h=80&fit=crop" class="rounded-full"/></div><div><p class="text-sm font-medium">李想</p><p class="text-xs text-gray-400">电商总监</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 统计区块 (社媒运营数据) ========== -->
+        <section class="border-y border-neon-500/20 py-16 bg-black/60">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div><div class="text-4xl font-black text-neon-400">500+</div><div class="text-gray-400 mt-1">品牌客户</div></div>
+                <div><div class="text-4xl font-black text-neon-400">98%</div><div class="text-gray-400 mt-1">客户留存</div></div>
+                <div><div class="text-4xl font-black text-neon-400">20亿+</div><div class="text-gray-400 mt-1">年度曝光</div></div>
+                <div><div class="text-4xl font-black text-neon-400">24/7</div><div class="text-gray-400 mt-1">实时优化</div></div>
+            </div>
+        </section>
+
+        <!-- ========== 价格区块 (灵活套餐) ========== -->
+        <section class="max-w-7xl mx-auto px-6 py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-white">灵活<span class="text-neon-400"> 推广套餐</span></h2>
+            <p class="text-center text-gray-400 mt-2">按月订阅，随时升级，无隐藏费用</p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- 基础 -->
+                <div class="bg-card border border-neon-500/20 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold">启航版</h3>
+                    <div class="mt-4"><span class="text-4xl font-black text-white">¥499</span><span class="text-gray-400">/月</span></div>
+                    <ul class="mt-6 space-y-3 text-gray-300">
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> 5个社交账户管理</li>
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> 智能排期+基础分析</li>
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> 10条AI文案/日</li>
+                    </ul>
+                    <a href="#" class="block text-center border border-neon-500 text-neon-400 hover:bg-neon-600/20 py-3 rounded-full mt-8">选择启航版</a>
+                </div>
+                <!-- 热门商业版 -->
+                <div class="bg-card border-2 border-neon-500 rounded-2xl p-8 relative shadow-neon-500/20 shadow-xl">
+                    <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-neon-600 text-white text-xs font-bold px-4 py-1 rounded-full">最受欢迎</span>
+                    <h3 class="text-2xl font-bold">专业版</h3>
+                    <div class="mt-4"><span class="text-4xl font-black text-white">¥1299</span><span class="text-gray-400">/月</span></div>
+                    <ul class="mt-6 space-y-3 text-gray-300">
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> 20个账户 + 竞品监测</li>
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> KOL智能匹配 + 数据复盘</li>
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> 无限AI文案 + 热点预测</li>
+                    </ul>
+                    <a href="#" class="block bg-neon-600 hover:bg-neon-500 text-white text-center py-3 rounded-full mt-8 shadow-neon-600/30 shadow-lg">选择专业版</a>
+                </div>
+                <!-- 企业 -->
+                <div class="bg-card border border-neon-500/20 rounded-2xl p-8">
+                    <h3 class="text-2xl font-bold">旗舰版</h3>
+                    <div class="mt-4"><span class="text-4xl font-black text-white">定制</span></div>
+                    <ul class="mt-6 space-y-3 text-gray-300">
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> 多品牌/全球社媒矩阵</li>
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> API深度集成+专属客户成功</li>
+                        <li class="flex gap-2"><span class="text-neon-400">▶</span> 私有化部署/数据仓库</li>
+                    </ul>
+                    <a href="#" class="block text-center border border-neon-500 text-neon-400 hover:bg-neon-600/20 py-3 rounded-full mt-8">联系销售</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 常见问题区块 ========== -->
+        <section class="bg-black/40 py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-white">常见问题</h2>
+                <div class="max-w-3xl mx-auto mt-10 divide-y divide-neon-500/30">
+                    <div class="py-5"><details class="group"><summary class="flex justify-between items-center font-medium cursor-pointer list-none text-neon-300"><span>支持哪些社交平台？</span><span class="transition group-open:rotate-180">▼</span></summary><p class="text-gray-400 mt-3">抖音、小红书、B站、微博、微信视频号、TikTok、Instagram、Facebook等主流平台全部支持。</p></details></div>
+                    <div class="py-5"><details class="group"><summary class="flex justify-between items-center font-medium cursor-pointer list-none text-neon-300"><span>可以免费试用吗？</span><span class="transition group-open:rotate-180">▼</span></summary><p class="text-gray-400 mt-3">所有新用户均可享受14天全功能免费试用，无需绑定信用卡。</p></details></div>
+                    <div class="py-5"><details class="group"><summary class="flex justify-between items-center font-medium cursor-pointer list-none text-neon-300"><span>数据存储在哪里？是否安全？</span><span class="transition group-open:rotate-180">▼</span></summary><p class="text-gray-400 mt-3">数据存储在AWS国内区域，通过等保三级认证，支持私有化部署（旗舰版）。</p></details></div>
+                    <div class="py-5"><details class="group"><summary class="flex justify-between items-center font-medium cursor-pointer list-none text-neon-300"><span>如何迁移现有社交媒体账号？</span><span class="transition group-open:rotate-180">▼</span></summary><p class="text-gray-400 mt-3">我们提供一键授权导入，无需重新绑定，历史内容及粉丝数据自动同步。</p></details></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA区块 (尾段) ========== -->
+        <section class="max-w-5xl mx-auto px-6 py-24 text-center">
+            <h2 class="text-4xl md:text-5xl font-black"><span class="bg-gradient-to-r from-neon-400 to-fuchsia-300 bg-clip-text text-transparent">引爆下一个热点</span></h2>
+            <p class="text-xl text-gray-400 mt-4">免费诊断你的社交账号，获取专属增长方案</p>
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="#" class="bg-neon-600 hover:bg-neon-500 text-white px-10 py-4 rounded-full font-bold text-lg shadow-neon-600/40 shadow-xl">免费诊断</a>
+                <a href="#" class="border border-neon-500/50 text-neon-400 hover:bg-neon-600/20 px-10 py-4 rounded-full font-bold text-lg">预约演示</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) ========== -->
+    <footer class="bg-black border-t border-neon-500/30 text-gray-400">
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+            <!-- Logo 与版权 -->
+            <div>
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-md bg-neon-600 flex items-center justify-center text-white font-bold">P</div>
+                    <span class="text-xl font-bold text-white">脉冲传播</span>
+                </div>
+                <p class="text-sm mt-4">© 2025 脉冲文化传媒<br>保留一切权利。</p>
+            </div>
+            <!-- 公司地址 -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">总部地址</h4>
+                <address class="not-italic text-sm">北京市朝阳区三里屯SOHO<br>C座 20F · 100027</address>
+            </div>
+            <!-- 联系方式 -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">联系我们</h4>
+                <p class="text-sm">hi@pulsesocial.cn<br>+86 (010) 6589 2333<br>24h 微信: pulsesocial_cs</p>
+            </div>
+            <!-- 微信公众号二维码 (占位图) -->
+            <div>
+                <h4 class="text-white font-semibold mb-3">官方微信</h4>
+                <div class="w-24 h-24 bg-gray-800 border border-neon-500/50 rounded-lg flex items-center justify-center text-xs text-gray-500">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=150&h=150&fit=crop" class="w-full h-full object-cover rounded-lg opacity-80" alt="公众号二维码" />
+                </div>
+                <p class="text-xs mt-2">扫一扫 获取干货</p>
+            </div>
+        </div>
+        <div class="border-t border-neon-500/20 py-4 text-center text-xs text-gray-500">
+            前卫科技 · 霓虹未来
+        </div>
+    </footer>
+
+    <!-- 完全基于tailwind，无自定义样式 -->
+</body>
+</html>

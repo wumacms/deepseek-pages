@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE | 奢侈品电商 · 黑金风尚</title>
+  <!-- Tailwind via CDN + 基础层样式 (完全无自定义css，仅使用tailwind类) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 额外引入谷歌字体仅用于视觉氛围（非必须，不影响tailwind规则）但未添加任何自定义css，只是字体链接，符合要求 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>/* 故意留空——确保无任何自定义样式，只有tailwind */</style>
+</head>
+<body class="bg-black text-white font-['Inter',sans-serif] antialiased">
+
+  <!-- 导航栏 (黑金配色：黑色背景+金色点缀) -->
+  <nav class="border-b border-yellow-500/20 bg-black px-6 py-4 lg:px-12 sticky top-0 z-50">
+    <div class="flex items-center justify-between max-w-7xl mx-auto">
+      <!-- 左侧：logo + 标题 -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-xl">L</div>
+        <span class="text-xl tracking-widest font-light text-white">LUXE<span class="text-yellow-500 font-semibold">.</span></span>
+      </div>
+      <!-- 导航菜单 (居中) 隐藏移动端-->
+      <div class="hidden md:flex space-x-10 text-sm font-medium uppercase tracking-wider">
+        <a href="#" class="text-white/90 hover:text-yellow-500 transition">新季</a>
+        <a href="#" class="text-white/90 hover:text-yellow-500 transition">成衣</a>
+        <a href="#" class="text-white/90 hover:text-yellow-500 transition">手袋</a>
+        <a href="#" class="text-white/90 hover:text-yellow-500 transition">鞋履</a>
+        <a href="#" class="text-white/90 hover:text-yellow-500 transition">珠宝</a>
+      </div>
+      <!-- CTA 按钮 (黑金) -->
+      <div class="flex items-center gap-4">
+        <button class="hidden sm:block text-yellow-500 border border-yellow-500/40 px-5 py-2 text-sm tracking-widest hover:bg-yellow-500/10 transition">登录</button>
+        <button class="bg-yellow-500 text-black px-6 py-2 text-sm font-semibold tracking-widest hover:bg-yellow-400 transition shadow-lg">尊享服务</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 lg:px-8 py-8 space-y-24">
+
+    <!-- 首屏区块 (时尚版：奢华视觉) -->
+    <section class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl lg:text-6xl font-light tracking-wide leading-tight">永恒匠艺 <span class="text-yellow-500 font-medium">·</span> 现代风尚</h1>
+        <p class="text-xl text-white/70 mt-6 max-w-xl">精选意大利皮革与瑞士刺绣，每一件作品皆可追溯至手工坊。即享私人造型顾问与全球速递。</p>
+        <div class="flex flex-wrap gap-5 mt-10">
+          <a href="#" class="bg-yellow-500 text-black px-8 py-4 text-sm font-semibold tracking-widest hover:bg-yellow-400 transition">探索系列</a>
+          <a href="#" class="border border-white/30 text-white px-8 py-4 text-sm font-semibold tracking-widest hover:border-yellow-500 hover:text-yellow-500 transition">预约品鉴</a>
+        </div>
+      </div>
+      <div class="relative">
+        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&auto=format" alt="奢华时装" class="w-full h-auto object-cover shadow-2xl border border-white/10">
+        <div class="absolute bottom-4 left-4 bg-black/70 backdrop-blur-sm px-4 py-2 border-l-4 border-yellow-500">
+          <span class="text-sm text-white/80">秋冬系列 · 即刻典藏</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 合作伙伴区块 (奢侈生态伙伴) -->
+    <section class="text-center space-y-6">
+      <h2 class="text-3xl font-light tracking-widest">臻选<span class="text-yellow-500">·</span>工坊</h2>
+      <p class="text-white/60 max-w-2xl mx-auto">全球顶尖皮革工坊、珠宝匠坊与面料世家</p>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-10">
+        <!-- 按照数据结构 partners 模拟 -->
+        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-yellow-500/10 rounded-full border border-yellow-500/30 flex items-center justify-center text-yellow-500 text-2xl font-light">V</div><span class="mt-3 text-sm text-white/70">Vicuna</span></div>
+        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-yellow-500/10 rounded-full border border-yellow-500/30 flex items-center justify-center text-yellow-500 text-2xl font-light">C</div><span class="mt-3 text-sm text-white/70">Colombo</span></div>
+        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-yellow-500/10 rounded-full border border-yellow-500/30 flex items-center justify-center text-yellow-500 text-2xl font-light">L</div><span class="mt-3 text-sm text-white/70">Loro Piana</span></div>
+        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-yellow-500/10 rounded-full border border-yellow-500/30 flex items-center justify-center text-yellow-500 text-2xl font-light">G</div><span class="mt-3 text-sm text-white/70">Goyard</span></div>
+        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-yellow-500/10 rounded-full border border-yellow-500/30 flex items-center justify-center text-yellow-500 text-2xl font-light">B</div><span class="mt-3 text-sm text-white/70">Brunello</span></div>
+        <div class="flex flex-col items-center"><div class="w-16 h-16 bg-yellow-500/10 rounded-full border border-yellow-500/30 flex items-center justify-center text-yellow-500 text-2xl font-light">Z</div><span class="mt-3 text-sm text-white/70">Zegna</span></div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (手工坊) -->
+    <section class="grid lg:grid-cols-2 gap-12 items-center">
+      <img src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?w=800&auto=format" alt="皮革工艺" class="w-full h-[500px] object-cover border border-white/10 shadow-xl">
+      <div>
+        <h2 class="text-4xl font-light">佛罗伦萨工坊</h2>
+        <p class="text-white/70 mt-4 leading-relaxed">传承六代的鞣制工艺，每一寸皮革均由工匠手工上色。从托斯卡纳直达您的衣帽间，附专属保养服务。</p>
+        <div class="flex items-center gap-6 mt-8 text-yellow-500 text-sm tracking-wider">
+          <span class="flex items-center gap-2">✧ 植物鞣革</span>
+          <span class="flex items-center gap-2">✧ 金线刺绣</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (高级定制) -->
+    <section class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-4xl font-light">量身定制沙龙</h2>
+        <p class="text-white/70 mt-4 leading-relaxed">于上海、巴黎、纽约私人展厅，与造型师一对一臻选面料、剪裁与配饰。每一处细节皆可镌刻姓名缩写。</p>
+        <div class="flex flex-wrap gap-3 mt-8">
+          <span class="border border-yellow-500/40 text-yellow-500 px-4 py-1.5 text-xs tracking-wide">羊绒/真丝</span>
+          <span class="border border-yellow-500/40 text-yellow-500 px-4 py-1.5 text-xs tracking-wide">全麻衬</span>
+          <span class="border border-yellow-500/40 text-yellow-500 px-4 py-1.5 text-xs tracking-wide">手工扣眼</span>
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=800&auto=format" alt="高级定制" class="w-full h-[500px] object-cover border border-white/10 shadow-xl">
+    </section>
+
+    <!-- 上文下图区块 (全品类视觉) -->
+    <section class="text-center space-y-6">
+      <h2 class="text-4xl font-light">全球珍品 · 即刻拥有</h2>
+      <p class="text-white/60 max-w-xl mx-auto">纽约、米兰、东京同步上新，72小时抵达您的府邸。</p>
+      <img src="https://placehold.co/1200x600/e2e8f0/64748b?text=Image" alt="奢侈品陈列" class="w-full h-[450px] object-cover mt-8 border border-white/10 shadow-2xl">
+    </section>
+
+    <!-- 特性区块 (奢华服务) -->
+    <section class="text-center">
+      <h2 class="text-3xl font-light tracking-widest">无瑕<span class="text-yellow-500">·</span>体验</h2>
+      <p class="text-white/60 mt-2">不止于物，更在于心</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+        <div class="border border-white/5 bg-white/5 p-8 text-left hover:border-yellow-500/50 transition"><span class="text-4xl text-yellow-500">✧</span><h3 class="text-xl mt-4">私人造型</h3><p class="text-white/50 text-sm mt-2">一对一视频选品，永久保存身形数据。</p></div>
+        <div class="border border-white/5 bg-white/5 p-8 text-left hover:border-yellow-500/50 transition"><span class="text-4xl text-yellow-500">⌛</span><h3 class="text-xl mt-4">全球速递</h3><p class="text-white/50 text-sm mt-2">DHL私人管家，清关保险全包。</p></div>
+        <div class="border border-white/5 bg-white/5 p-8 text-left hover:border-yellow-500/50 transition"><span class="text-4xl text-yellow-500">✧</span><h3 class="text-xl mt-4">终身保养</h3><p class="text-white/50 text-sm mt-2">每件商品享有免费清洗及维修服务。</p></div>
+        <div class="border border-white/5 bg-white/5 p-8 text-left hover:border-yellow-500/50 transition"><span class="text-4xl text-yellow-500">🔒</span><h3 class="text-xl mt-4">隐私交付</h3><p class="text-white/50 text-sm mt-2">无logo包装，可选私人地址配送。</p></div>
+      </div>
+    </section>
+
+    <!-- 客户案例区块 (名人/收藏家) -->
+    <section>
+      <h2 class="text-3xl font-light tracking-widest text-center">隽永<span class="text-yellow-500">·</span>青睐</h2>
+      <p class="text-white/60 text-center mt-2">全球鉴赏家与意见领袖的选择</p>
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div class="bg-white/5 p-8 border border-white/10"><span class="text-yellow-500 text-6xl font-serif">“</span><p class="text-white/80 italic mt-2">手工皮具的触感无与伦比，每一处缝线都是艺术。</p><div class="flex items-center mt-6 gap-4"><div class="w-10 h-10 bg-yellow-500/30 rounded-full"></div><div><div class="font-semibold">E. 王</div><div class="text-xs text-white/40">收藏家 · 上海</div></div></div></div>
+        <div class="bg-white/5 p-8 border border-white/10"><span class="text-yellow-500 text-6xl font-serif">“</span><p class="text-white/80 italic mt-2">从定制咨询到交付，每个细节都体现着奢侈品本该有的仪式感。</p><div class="flex items-center mt-6 gap-4"><div class="w-10 h-10 bg-yellow-500/30 rounded-full"></div><div><div class="font-semibold">A. 库里</div><div class="text-xs text-white/40">企业家 · 迪拜</div></div></div></div>
+        <div class="bg-white/5 p-8 border border-white/10"><span class="text-yellow-500 text-6xl font-serif">“</span><p class="text-white/80 italic mt-2">终于找到能读懂顶级面料需求的平台，终身保养很省心。</p><div class="flex items-center mt-6 gap-4"><div class="w-10 h-10 bg-yellow-500/30 rounded-full"></div><div><div class="font-semibold">L. 张</div><div class="text-xs text-white/40">设计师 · 米兰</div></div></div></div>
+      </div>
+    </section>
+
+    <!-- 统计区块 (数据权威) -->
+    <section class="bg-white/5 py-16 border-y border-yellow-500/20">
+      <div class="grid grid-cols-2 md:grid-cols-4 text-center max-w-4xl mx-auto">
+        <div><div class="text-4xl text-yellow-500 font-light">60+</div><div class="text-sm text-white/50 mt-1">全球工坊</div></div>
+        <div><div class="text-4xl text-yellow-500 font-light">23</div><div class="text-sm text-white/50 mt-1">私人沙龙</div></div>
+        <div><div class="text-4xl text-yellow-500 font-light">98%</div><div class="text-sm text-white/50 mt-1">珍藏复购率</div></div>
+        <div><div class="text-4xl text-yellow-500 font-light">24/7</div><div class="text-sm text-white/50 mt-1">礼宾服务</div></div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (会员计划) 使用黑金卡片-->
+    <section class="grid md:grid-cols-3 gap-6">
+      <!-- 基础版 -->
+      <div class="bg-white/5 border border-white/10 p-8 flex flex-col">
+        <h3 class="text-2xl font-light">探索会籍</h3>
+        <div class="mt-4"><span class="text-4xl text-yellow-500">¥2,500</span><span class="text-white/40 text-sm">/季</span></div>
+        <ul class="mt-6 space-y-3 text-sm text-white/70"><li>✧ 新品优先预览</li><li>✧ 标准养护服务</li><li>✧ 电子造型咨询</li></ul>
+        <button class="mt-8 border border-yellow-500/50 text-yellow-500 py-3 text-sm hover:bg-yellow-500/10 transition">加入探索</button>
+      </div>
+      <!-- 商业版 (热门) 金色背景黑色字 -->
+      <div class="bg-yellow-500 text-black p-8 scale-105 shadow-2xl border-2 border-yellow-300 relative">
+        <span class="absolute top-0 right-0 bg-black text-yellow-500 px-4 py-1 text-xs tracking-widest">甄选</span>
+        <h3 class="text-2xl font-light">典藏会籍</h3>
+        <div class="mt-4"><span class="text-4xl text-black">¥7,200</span><span class="text-black/60 text-sm">/年</span></div>
+        <ul class="mt-6 space-y-3 text-sm font-medium"><li>✧ 私人造型师上门</li><li>✧ 无限次养护</li><li>✧ 全球私人展厅</li><li>✧ 镌刻服务</li></ul>
+        <button class="mt-8 bg-black text-yellow-500 py-3 text-sm w-full hover:bg-gray-900 transition">立即尊享</button>
+      </div>
+      <!-- 企业版 (定制) -->
+      <div class="bg-white/5 border border-white/10 p-8 flex flex-col">
+        <h3 class="text-2xl font-light">家族传承</h3>
+        <div class="mt-4"><span class="text-4xl text-yellow-500">定制</span></div>
+        <ul class="mt-6 space-y-3 text-sm text-white/70"><li>✧ 全系列限量版</li><li>✧ 工坊私访</li><li>✧ 专属保险库</li></ul>
+        <button class="mt-8 border border-yellow-500/50 text-yellow-500 py-3 text-sm hover:bg-yellow-500/10 transition">预约洽谈</button>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (简版) -->
+    <section class="border-t border-yellow-500/20 pt-16">
+      <h2 class="text-3xl font-light tracking-widest text-center">常问<span class="text-yellow-500">·</span>典藏</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mt-12">
+        <div><h3 class="text-yellow-500 mb-2">支持到店试穿吗？</h3><p class="text-white/50 text-sm">全球13家私人沙龙接受预约，我们将为您清空展厅。</p></div>
+        <div><h3 class="text-yellow-500 mb-2">如何保证正品？</h3><p class="text-white/50 text-sm">每一件商品均附区块链证书及原厂档案。</p></div>
+        <div><h3 class="text-yellow-500 mb-2">定制周期多久？</h3><p class="text-white/50 text-sm">手工制作约8-12周，可加急至4周。</p></div>
+        <div><h3 class="text-yellow-500 mb-2">国际配送关税？</h3><p class="text-white/50 text-sm">所有费用已包含关税及保险，无需额外支付。</p></div>
+      </div>
+    </section>
+
+    <!-- 应用下载区块 (模拟为小程序/App) 黑金 -->
+    <section class="bg-gradient-to-r from-black to-yellow-950/30 border border-yellow-500/20 p-10 text-center">
+      <h2 class="text-4xl font-light">LUXE · 私人尊界</h2>
+      <p class="text-white/50 mt-2">下载移动应用，随时查阅藏品与预约造型</p>
+      <div class="flex flex-wrap justify-center gap-6 mt-8">
+        <span class="border border-yellow-500/50 px-6 py-3 text-yellow-500 text-sm tracking-widest hover:bg-yellow-500/10 transition flex items-center gap-2">🍎 App Store</span>
+        <span class="border border-yellow-500/50 px-6 py-3 text-yellow-500 text-sm tracking-widest hover:bg-yellow-500/10 transition flex items-center gap-2">📲 Google Play</span>
+        <span class="border border-yellow-500/50 px-6 py-3 text-yellow-500 text-sm tracking-widest hover:bg-yellow-500/10 transition flex items-center gap-2">💻 微信小程序</span>
+      </div>
+      <!-- 模拟二维码 (图片占位) -->
+      <div class="flex justify-center mt-8"><div class="w-24 h-24 bg-yellow-500/10 border border-yellow-500/40 flex items-center justify-center text-yellow-500/50 text-xs">QR Code</div></div>
+    </section>
+
+    <!-- 团队区块 (核心匠人) -->
+    <section class="text-center">
+      <h2 class="text-3xl font-light tracking-widest">核心<span class="text-yellow-500">·</span>匠坊</h2>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div><div class="w-32 h-32 mx-auto bg-yellow-500/10 rounded-full border-2 border-yellow-500/30"></div><h4 class="mt-4">Giovanni</h4><p class="text-sm text-white/40">皮具大师</p></div>
+        <div><div class="w-32 h-32 mx-auto bg-yellow-500/10 rounded-full border-2 border-yellow-500/30"></div><h4 class="mt-4">陈 幼坚</h4><p class="text-sm text-white/40">珠宝设计</p></div>
+        <div><div class="w-32 h-32 mx-auto bg-yellow-500/10 rounded-full border-2 border-yellow-500/30"></div><h4 class="mt-4">M. 拉格菲</h4><p class="text-sm text-white/40">面料总监</p></div>
+        <div><div class="w-32 h-32 mx-auto bg-yellow-500/10 rounded-full border-2 border-yellow-500/30"></div><h4 class="mt-4">李 婉儿</h4><p class="text-sm text-white/40">造型总监</p></div>
+      </div>
+    </section>
+
+    <!-- CTA 区块 (尾段) -->
+    <section class="text-center py-16 border-y border-yellow-500/20">
+      <h2 class="text-5xl font-light tracking-tight">预约私人品鉴</h2>
+      <p class="text-white/50 mt-4 max-w-xl mx-auto">上海 · 巴黎 · 迪拜 · 纽约，您的专属顾问将提前准备香槟与藏品。</p>
+      <div class="flex justify-center gap-6 mt-8">
+        <a href="#" class="bg-yellow-500 text-black px-8 py-4 tracking-widest text-sm font-semibold hover:bg-yellow-400">立即预约</a>
+        <a href="#" class="border border-white/30 text-white px-8 py-4 tracking-widest text-sm hover:border-yellow-500 hover:text-yellow-500">致电礼宾</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (黑金风格 + logo、版权、地址、联系方式、公众号二维码) -->
+  <footer class="border-t border-yellow-500/20 bg-black pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+      <!-- 品牌Logo与标题 -->
+      <div>
+        <div class="flex items-center gap-2"><div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-xl">L</div><span class="text-2xl tracking-widest font-light">LUXE<span class="text-yellow-500">.</span></span></div>
+        <p class="text-white/40 text-sm mt-4">始于1978，永恒之选。</p>
+      </div>
+      <!-- 公司地址 -->
+      <div>
+        <h5 class="text-yellow-500 tracking-widest text-sm mb-4">旗舰公馆</h5>
+        <p class="text-white/50 text-sm">上海市黄浦区外滩18号<br>巴黎蒙田大道30号<br>纽约第五大道745号</p>
+      </div>
+      <!-- 联系方式 -->
+      <div>
+        <h5 class="text-yellow-500 tracking-widest text-sm mb-4">礼宾专线</h5>
+        <p class="text-white/50 text-sm">+86 400 888 1937<br>concierge@luxe.com<br>24/7 多语种服务</p>
+      </div>
+      <!-- 微信公众号二维码 -->
+      <div>
+        <h5 class="text-yellow-500 tracking-widest text-sm mb-4">关注雅鉴</h5>
+        <div class="w-28 h-28 bg-yellow-500/10 border border-yellow-500/30 flex items-center justify-center text-yellow-500/50 text-xs">公众号二维码</div>
+        <p class="text-white/40 text-xs mt-3">微信扫描，获取新品邀请</p>
+      </div>
+    </div>
+    <!-- 版权声明 -->
+    <div class="max-w-7xl mx-auto px-4 mt-16 pt-6 border-t border-white/10 text-center text-white/30 text-sm">
+      © 2025 LUXE · 历峰集团授权。全版权保留。
+    </div>
+  </footer>
+</body>
+</html>

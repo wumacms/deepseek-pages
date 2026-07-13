@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus AI · 企业级智能协作</title>
+    <!-- Tailwind via CDN (pure classes, no custom CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- subtle system font stack, no custom CSS -->
+    <style>
+        /* no custom styles — only CDN Tailwind, as requested */
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- ===== 导航栏 (极简：logo + 标题 + CTA按钮，不含菜单) ===== -->
+    <header class="border-b border-gray-100 bg-white/90 backdrop-blur-sm sticky top-0 z-30">
+        <div class="max-w-7xl mx-auto px-6 md:px-8 py-4 flex items-center justify-between">
+            <!-- logo + 标题 (文字即logo，极简风) -->
+            <div class="flex items-center gap-2.5">
+                <!-- 简洁几何图形作为logo符号 -->
+                <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white text-sm font-semibold shadow-sm">N</div>
+                <span class="text-lg font-medium text-gray-800 tracking-tight">Nexus AI</span>
+            </div>
+            <!-- 右侧CTA按钮 (不含菜单) -->
+            <div class="flex items-center gap-3">
+                <a href="/signup" class="text-sm font-medium text-gray-600 hover:text-gray-900 transition px-3 py-2">登录</a>
+                <a href="/signup" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-5 py-2.5 rounded-lg shadow-sm transition">开始使用</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== 首屏区块 (基于json结构 + 人工智能关键词) ===== -->
+        <section class="max-w-7xl mx-auto px-6 md:px-8 py-16 md:py-24">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-semibold tracking-tight text-gray-900 leading-tight">企业级人工智能，<br>让协作快人一步</h1>
+                    <p class="text-xl text-gray-600 max-w-xl">安全、高效、可定制——专为现代企业打造的AI协同平台，集成大模型洞察与实时工作流。</p>
+                    <p class="text-gray-500 text-base max-w-lg">基于专有AI引擎，自动总结会议、生成任务，让团队专注创造性工作。</p>
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="/signup" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg shadow-sm transition">开始使用</a>
+                        <a href="/contact" class="border border-gray-300 hover:border-gray-400 text-gray-700 font-medium px-6 py-3 rounded-lg transition">联系销售</a>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-xl bg-gray-100">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format&fit=crop" alt="人工智能协作界面" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 左图右文区块 (无缝沟通，融入AI标签) ===== -->
+        <section class="bg-gray-50 py-20 md:py-28">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="rounded-2xl overflow-hidden shadow-md">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="AI团队沟通" class="w-full h-auto object-cover">
+                </div>
+                <div class="space-y-5">
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900">无缝沟通，AI跨越部门</h2>
+                    <p class="text-lg text-gray-600">打破信息孤岛，通过话题群组、私聊和富媒体分享。集成企业级AI助理，自动整理未读消息和待办。</p>
+                    <div class="flex flex-wrap gap-4 pt-3">
+                        <span class="bg-indigo-50 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">端到端加密</span>
+                        <span class="bg-indigo-50 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">无限历史记录</span>
+                        <span class="bg-indigo-50 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">AI摘要</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 左文右图区块 (深度集成工作流 + AI) ===== -->
+        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-5 order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900">深度集成AI工作流</h2>
+                    <p class="text-lg text-gray-600">与您使用的工具无缝连接：Jira、GitLab、Google Drive、Salesforce。在聊天中调用AI创建任务、分析文档、触发自动化。</p>
+                    <div class="flex flex-wrap gap-3 pt-3">
+                        <span class="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full">Slack 导入</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full">API 开放</span>
+                        <span class="bg-gray-100 text-gray-700 text-sm px-4 py-2 rounded-full">AI 插件</span>
+                    </div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-md order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop" alt="AI工作流集成" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 上文下图区块 (全平台AI体验) ===== -->
+        <section class="bg-gray-50 py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 text-center space-y-5">
+                <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-gray-900">全平台一致AI体验</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">无论是在桌面、网页还是移动端，消息实时同步，AI助理随身陪伴，操作流畅如一。</p>
+                <div class="mt-8 rounded-2xl overflow-hidden shadow-lg max-w-4xl mx-auto">
+                    <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=1000&auto=format&fit=crop" alt="多设备AI支持" class="w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 特性区块 (专为AI商务打造) ===== -->
+        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">专为AI商务打造的特性</h2>
+                <p class="text-lg text-gray-500 mt-3">从安全到效率，面面俱到</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 特性1 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm text-center space-y-3">
+                    <span class="text-4xl">🔒</span>
+                    <h3 class="font-medium text-lg text-gray-900">企业级安全</h3>
+                    <p class="text-sm text-gray-500">端到端加密、SSO、DLP策略，满足AI合规需求。</p>
+                </div>
+                <!-- 特性2 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm text-center space-y-3">
+                    <span class="text-4xl">⚡</span>
+                    <h3 class="font-medium text-lg text-gray-900">实时同步</h3>
+                    <p class="text-sm text-gray-500">毫秒级延迟，跨设备已读回执与AI状态。</p>
+                </div>
+                <!-- 特性3 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm text-center space-y-3">
+                    <span class="text-4xl">🧩</span>
+                    <h3 class="font-medium text-lg text-gray-900">无限集成</h3>
+                    <p class="text-sm text-gray-500">连接200+企业应用，自定义AI机器人。</p>
+                </div>
+                <!-- 特性4 -->
+                <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm text-center space-y-3">
+                    <span class="text-4xl">📊</span>
+                    <h3 class="font-medium text-lg text-gray-900">分析洞察</h3>
+                    <p class="text-sm text-gray-500">团队活跃度、AI响应时间数据可视化。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 统计区块 (人工智能相关数据) ===== -->
+        <section class="bg-indigo-50 py-16">
+            <div class="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-indigo-800">500+</div>
+                    <div class="text-sm uppercase tracking-wider text-indigo-600 mt-1">企业客户</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-indigo-800">98%</div>
+                    <div class="text-sm uppercase tracking-wider text-indigo-600 mt-1">客户留存率</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-indigo-800">20M+</div>
+                    <div class="text-sm uppercase tracking-wider text-indigo-600 mt-1">日消息量</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-bold text-indigo-800">24/7</div>
+                    <div class="text-sm uppercase tracking-wider text-indigo-600 mt-1">AI技术支持</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 团队区块 (核心团队) ===== -->
+        <section class="max-w-7xl mx-auto px-6 md:px-8 py-20 md:py-28">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">核心团队</h2>
+                <p class="text-lg text-gray-500 mt-2">来自全球顶尖企业的AI协作专家</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 成员1 -->
+                <div class="text-center space-y-3">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=300&h=300&auto=format&fit=crop" alt="张伟" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md">
+                    <div>
+                        <h4 class="font-medium text-lg text-gray-900">张伟</h4>
+                        <p class="text-indigo-600 text-sm">CEO & 创始人</p>
+                        <p class="text-xs text-gray-500 mt-1">前微软高级架构师，AI专家</p>
+                    </div>
+                </div>
+                <!-- 成员2 -->
+                <div class="text-center space-y-3">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&auto=format&fit=crop" alt="陈敏" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md">
+                    <div>
+                        <h4 class="font-medium text-lg text-gray-900">陈敏</h4>
+                        <p class="text-indigo-600 text-sm">CTO</p>
+                        <p class="text-xs text-gray-500 mt-1">分布式系统专家，前Google AI</p>
+                    </div>
+                </div>
+                <!-- 成员3 -->
+                <div class="text-center space-y-3">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&auto=format&fit=crop" alt="王磊" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md">
+                    <div>
+                        <h4 class="font-medium text-lg text-gray-900">王磊</h4>
+                        <p class="text-indigo-600 text-sm">产品总监</p>
+                        <p class="text-xs text-gray-500 mt-1">前微软Copilot产品经理</p>
+                    </div>
+                </div>
+                <!-- 成员4 -->
+                <div class="text-center space-y-3">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&auto=format&fit=crop" alt="李莉" class="w-32 h-32 rounded-full mx-auto object-cover shadow-md">
+                    <div>
+                        <h4 class="font-medium text-lg text-gray-900">李莉</h4>
+                        <p class="text-indigo-600 text-sm">设计负责人</p>
+                        <p class="text-xs text-gray-500 mt-1">前微软Fluent设计系统核心</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 价格区块 (灵活定价) ===== -->
+        <section class="bg-gray-50 py-20 md:py-28">
+            <div class="max-w-7xl mx-auto px-6 md:px-8">
+                <div class="text-center mb-14">
+                    <h2 class="text-3xl md:text-4xl font-semibold text-gray-900">灵活定价</h2>
+                    <p class="text-lg text-gray-500 mt-2">按需选择，无隐藏费用</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                        <h3 class="text-xl font-medium text-gray-900">基础版</h3>
+                        <p class="text-3xl font-semibold mt-4 flex items-baseline gap-1"><span class="text-gray-900">$49</span> <span class="text-sm font-normal text-gray-500">/月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">✓ 消息历史1年</li>
+                            <li class="flex items-center gap-2">✓ 10GB 文件存储</li>
+                            <li class="flex items-center gap-2">✓ 基础AI集成</li>
+                        </ul>
+                        <a href="/signup/basic" class="mt-8 block w-full text-center border border-gray-300 hover:border-gray-400 text-gray-700 font-medium py-3 rounded-lg transition">选择基础版</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="bg-white rounded-2xl p-8 border-2 border-indigo-200 shadow-lg relative">
+                        <span class="absolute top-0 right-8 bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-b-lg">最受欢迎</span>
+                        <h3 class="text-xl font-medium text-gray-900">商业版</h3>
+                        <p class="text-3xl font-semibold mt-4 flex items-baseline gap-1"><span class="text-gray-900">$99</span> <span class="text-sm font-normal text-gray-500">/月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">✓ 无限历史</li>
+                            <li class="flex items-center gap-2">✓ 100GB 存储</li>
+                            <li class="flex items-center gap-2">✓ 所有集成 + API</li>
+                            <li class="flex items-center gap-2">✓ 高级AI支持</li>
+                        </ul>
+                        <a href="/signup/business" class="mt-8 block w-full text-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 rounded-lg transition">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                        <h3 class="text-xl font-medium text-gray-900">企业版</h3>
+                        <p class="text-3xl font-semibold mt-4 text-gray-900">定制</p>
+                        <ul class="mt-6 space-y-3 text-sm text-gray-600">
+                            <li class="flex items-center gap-2">✓ 本地部署选项</li>
+                            <li class="flex items-center gap-2">✓ 无限存储</li>
+                            <li class="flex items-center gap-2">✓ 专属客户成功</li>
+                            <li class="flex items-center gap-2">✓ SSO/合规</li>
+                        </ul>
+                        <a href="/contact" class="mt-8 block w-full text-center border border-gray-300 hover:border-gray-400 text-gray-700 font-medium py-3 rounded-lg transition">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 常见问题区块 ===== -->
+        <section class="max-w-4xl mx-auto px-6 py-20 md:py-28">
+            <h2 class="text-3xl md:text-4xl font-semibold text-center text-gray-900 mb-12">常见问题</h2>
+            <div class="space-y-6">
+                <!-- FAQ 1 -->
+                <div class="border-b border-gray-200 pb-5">
+                    <h3 class="text-lg font-medium text-gray-900">支持本地部署吗？</h3>
+                    <p class="text-gray-600 mt-1">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求，AI模型亦可私有化。</p>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="border-b border-gray-200 pb-5">
+                    <h3 class="text-lg font-medium text-gray-900">可以试用多久？</h3>
+                    <p class="text-gray-600 mt-1">所有新用户均可享受30天全功能免费试用，包括AI高级特性，无需信用卡。</p>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="border-b border-gray-200 pb-5">
+                    <h3 class="text-lg font-medium text-gray-900">数据存储在哪里？</h3>
+                    <p class="text-gray-600 mt-1">数据存储在云端的独立数据库，可选中国大陆或海外区域，符合当地法规，AI训练数据隔离。</p>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="border-b border-gray-200 pb-5">
+                    <h3 class="text-lg font-medium text-gray-900">如何迁移现有聊天记录？</h3>
+                    <p class="text-gray-600 mt-1">我们提供专业迁移工具，支持从Slack、Teams等平台导入历史数据，并保留AI上下文。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA区块 ===== -->
+        <section class="bg-indigo-700">
+            <div class="max-w-4xl mx-auto px-6 py-20 text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">立即提升团队AI协作效率</h2>
+                <p class="text-lg text-indigo-100 mt-3 mb-8">加入数百家信任我们的企业，开启智能沟通之旅。</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="/signup" class="bg-white text-indigo-700 hover:bg-gray-100 font-medium px-7 py-3.5 rounded-lg shadow-md transition">免费试用30天</a>
+                    <a href="/demo" class="border border-white text-white hover:bg-indigo-600 font-medium px-7 py-3.5 rounded-lg transition">预约演示</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== 页脚 (极简版权声明) ===== -->
+    <footer class="bg-white border-t border-gray-100 py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-400">
+            © 2025 Nexus AI.  All rights reserved.  企业级人工智能协作平台。
+        </div>
+    </footer>
+
+</body>
+</html>

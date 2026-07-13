@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedEquip · 智能医疗设备销售平台</title>
+    <!-- Tailwind via CDN (纯工具类, 无自定义样式) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 简单商务微调 (仅使用tailwind预设, 不加自定义块) -->
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- 导航栏 (logo+标题+CTA按钮, 无菜单) -->
+    <nav class="border-b border-gray-100 bg-white/95 backdrop-blur-sm sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- logo + 标题 -->
+            <div class="flex items-center gap-2">
+                <!-- logo用医疗+商务抽象图标 (纯文本表情) 符合商务简洁感 -->
+                <span class="text-3xl">🏥</span>
+                <span class="font-semibold text-xl tracking-tight text-gray-800">MedEquip<span class="text-blue-600">·Pro</span></span>
+            </div>
+            <!-- 右侧CTA按钮 (不含菜单) -->
+            <div>
+                <a href="/contact" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-5 py-2.5 rounded-lg shadow-sm transition">联系销售</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 首屏区块 (hero) 数据基于首屏JSON结构调整为医学设备行业 -->
+        <section class="bg-gradient-to-b from-gray-50 to-white py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 leading-tight">企业级影像设备<br>智能供应链平台</h1>
+                    <p class="text-xl text-gray-600 mt-6">安全·高效·可追溯 —— 为医疗设备销售打造的端到端协作与数据洞察系统，覆盖采购、仓储到临床装机。</p>
+                    <p class="text-base text-gray-500 mt-3">专为医疗设备经销商、制造商和医院供应链设计。</p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="/signup" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg shadow-md transition">开始使用</a>
+                        <a href="/contact" class="bg-white border border-gray-300 hover:border-gray-400 text-gray-700 font-medium px-6 py-3 rounded-lg shadow-sm transition">联系销售</a>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-xl border border-gray-200">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1526406915894-7bcd65f60845?w=900&auto=format&fit=crop&q=60" alt="医疗设备协作界面" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 左图右文区块 (无缝沟通 -> 设备采购协同) -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1 rounded-xl overflow-hidden shadow-md border border-gray-200">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="医疗团队沟通" />
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl font-bold text-gray-900">采购协同 · 跨越科室与供应商</h2>
+                    <p class="text-gray-600 mt-4 text-lg">打破信息孤岛，通过设备专用群组、实时库存提醒和合规文件共享，让放射科、采购部与厂商无缝对接。集成医院目录，一键联系器械负责人。</p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <span class="inline-flex items-center rounded-full bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700">🔒 端到端加密</span>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 px-4 py-1.5 text-sm font-medium text-blue-700">📜 无限合规记录</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 左文右图区块 (深度集成工作流 -> ERP / PACS 集成) -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">深度集成医疗工作流</h2>
+                    <p class="text-gray-600 mt-4 text-lg">与您使用的工具无缝连接：SAP Ariba、PACS系统、Salesforce Health Cloud。在聊天中创建采购订单、追踪设备装机进度、触发合规审计。</p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <span class="inline-flex items-center rounded-full bg-indigo-50 px-4 py-1.5 text-sm font-medium text-indigo-700">HL7/FHIR 就绪</span>
+                        <span class="inline-flex items-center rounded-full bg-indigo-50 px-4 py-1.5 text-sm font-medium text-indigo-700">开放API 对接</span>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-md border border-gray-200">
+                    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format&fit=crop" alt="医疗工作流集成" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 上文下图区块 (全平台一致体验) 医学设备多端支持 -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">全平台一致体验 · 移动工作台</h2>
+                <p class="text-gray-600 mt-3 max-w-2xl mx-auto text-lg">无论是在科室桌面、移动平板还是手机端，设备库存与订单实时同步，操作流畅如一。</p>
+                <div class="mt-10 rounded-xl overflow-hidden shadow-xl border border-gray-200 max-w-4xl mx-auto">
+                    <img class="w-full object-cover" src="https://images.unsplash.com/photo-1517292987719-0369a794ec0f?w=900&auto=format&fit=crop&q=60" alt="多设备医疗支持" />
+                </div>
+            </div>
+        </section>
+
+        <!-- 特性区块 (专为医疗商务打造) -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto">
+                    <h2 class="text-3xl font-bold text-gray-900">专为医疗设备商务打造</h2>
+                    <p class="text-gray-600 mt-3">从合规安全到供应链效率，面面俱到</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 特性1 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="text-4xl">🔒</span>
+                        <h3 class="text-lg font-semibold mt-4">医疗级安全</h3>
+                        <p class="text-gray-500 text-sm mt-1">HIPAA就绪、端到端加密、SSO及访问审计，满足合规要求。</p>
+                    </div>
+                    <!-- 特性2 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="text-4xl">⚡</span>
+                        <h3 class="text-lg font-semibold mt-4">实时库存同步</h3>
+                        <p class="text-gray-500 text-sm mt-1">毫秒级设备库存更新，跨院区已读回执与状态追踪。</p>
+                    </div>
+                    <!-- 特性3 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="text-4xl">🧩</span>
+                        <h3 class="text-lg font-semibold mt-4">无限集成</h3>
+                        <p class="text-gray-500 text-sm mt-1">连接医院HRP、ERP及200+医疗应用，自定义机器人。</p>
+                    </div>
+                    <!-- 特性4 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                        <span class="text-4xl">📊</span>
+                        <h3 class="text-lg font-semibold mt-4">销售分析洞察</h3>
+                        <p class="text-gray-500 text-sm mt-1">团队活跃度、设备周转周期、商机数据可视化。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 统计区块 (医学销售行业数据) -->
+        <section class="py-16 bg-white border-y border-gray-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600">500+</div>
+                        <div class="text-gray-500 mt-1">医疗机构客户</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600">98%</div>
+                        <div class="text-gray-500 mt-1">客户留存率</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600">20M+</div>
+                        <div class="text-gray-500 mt-1">月度设备询单</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-600">24/7</div>
+                        <div class="text-gray-500 mt-1">专属技术支持</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团队区块 (核心团队 - 医学销售/医疗IT背景) -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900">核心团队</h2>
+                    <p class="text-gray-600 mt-2">来自全球顶尖医疗科技与IT企业的专家</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- 成员1 -->
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-6 text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-gray-200" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop" alt="张伟" />
+                        <h3 class="font-semibold text-lg mt-4">张伟</h3>
+                        <p class="text-blue-600 text-sm">CEO & 创始人</p>
+                        <p class="text-gray-500 text-xs mt-1">前GE医疗高级总监</p>
+                    </div>
+                    <!-- 成员2 -->
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-6 text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-gray-200" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop" alt="陈敏" />
+                        <h3 class="font-semibold text-lg mt-4">陈敏</h3>
+                        <p class="text-blue-600 text-sm">CTO</p>
+                        <p class="text-gray-500 text-xs mt-1">医疗信息系统专家</p>
+                    </div>
+                    <!-- 成员3 -->
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-6 text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-gray-200" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop" alt="王磊" />
+                        <h3 class="font-semibold text-lg mt-4">王磊</h3>
+                        <p class="text-blue-600 text-sm">产品总监</p>
+                        <p class="text-gray-500 text-xs mt-1">前飞利浦医疗产品经理</p>
+                    </div>
+                    <!-- 成员4 -->
+                    <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-6 text-center">
+                        <img class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-gray-200" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop" alt="李莉" />
+                        <h3 class="font-semibold text-lg mt-4">李莉</h3>
+                        <p class="text-blue-600 text-sm">设计负责人</p>
+                        <p class="text-gray-500 text-xs mt-1">前西门子医疗UX设计</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 价格区块 (针对医疗设备销售分级) -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900">灵活定价 · 适用于各类机构</h2>
+                    <p class="text-gray-600 mt-2">按需选择，无隐藏费用，符合医疗预算</p>
+                </div>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="border border-gray-200 rounded-2xl p-8 shadow-sm bg-white">
+                        <h3 class="text-xl font-semibold">基础版</h3>
+                        <p class="mt-4"><span class="text-4xl font-bold">¥49</span> <span class="text-gray-500">/月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-sm">
+                            <li class="flex items-center gap-2">📋 合规历史1年</li>
+                            <li class="flex items-center gap-2">📁 10GB 设备文档存储</li>
+                            <li class="flex items-center gap-2">🔌 基础PACS对接</li>
+                        </ul>
+                        <a href="/signup/basic" class="mt-8 block w-full text-center bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 rounded-lg transition">选择基础版</a>
+                    </div>
+                    <!-- 商业版 (热门) -->
+                    <div class="border-2 border-blue-500 rounded-2xl p-8 shadow-lg bg-white relative">
+                        <span class="absolute top-0 right-8 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg rounded-br-lg">推荐</span>
+                        <h3 class="text-xl font-semibold">商业版</h3>
+                        <p class="mt-4"><span class="text-4xl font-bold">¥99</span> <span class="text-gray-500">/月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-sm">
+                            <li class="flex items-center gap-2">📋 无限合规历史</li>
+                            <li class="flex items-center gap-2">📁 100GB 专用存储</li>
+                            <li class="flex items-center gap-2">🔌 所有集成 + 开放API</li>
+                            <li class="flex items-center gap-2">💬 高级临床支持</li>
+                        </ul>
+                        <a href="/signup/business" class="mt-8 block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 rounded-lg transition">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="border border-gray-200 rounded-2xl p-8 shadow-sm bg-white">
+                        <h3 class="text-xl font-semibold">企业版</h3>
+                        <p class="mt-4"><span class="text-4xl font-bold">定制</span></p>
+                        <ul class="mt-6 space-y-3 text-sm">
+                            <li class="flex items-center gap-2">🏥 本地/私有云部署</li>
+                            <li class="flex items-center gap-2">📁 无限存储</li>
+                            <li class="flex items-center gap-2">👥 专属客户成功</li>
+                            <li class="flex items-center gap-2">🔐 SSO/合规/HIPAA</li>
+                        </ul>
+                        <a href="/contact" class="mt-8 block w-full text-center bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 rounded-lg transition">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题区块 -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 text-center">常见问题</h2>
+                <div class="mt-10 space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-lg">支持本地或私有云部署吗？</h3>
+                        <p class="text-gray-600 mt-1">是的，企业版支持本地服务器或私有云，满足医院最高安全合规要求。</p>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-lg">可以试用多久？</h3>
+                        <p class="text-gray-600 mt-1">所有新医疗机构用户均可享受45天全功能免费试用，无需信用卡。</p>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-lg">数据存储在哪里？合规性如何？</h3>
+                        <p class="text-gray-600 mt-1">数据存储在云端独立数据库，可选中国大陆、欧洲或美国区域，符合GDPR及HIPAA标准。</p>
+                    </div>
+                    <!-- FAQ 4 -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="font-semibold text-lg">如何迁移现有PACS或设备记录？</h3>
+                        <p class="text-gray-600 mt-1">我们提供专业迁移工具，支持从旧系统导入设备档案、历史采购订单和合规文档。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 区块 -->
+        <section class="py-16 bg-blue-600">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-white">立即提升医疗设备销售效率</h2>
+                <p class="text-blue-100 mt-3 text-lg">加入数百家信任我们的医院与经销商，开启智能供应链。</p>
+                <div class="mt-8 flex flex-wrap gap-4 justify-center">
+                    <a href="/signup" class="bg-white text-blue-700 hover:bg-gray-100 font-medium px-8 py-4 rounded-lg shadow-lg transition">免费试用45天</a>
+                    <a href="/demo" class="bg-blue-700 text-white hover:bg-blue-800 font-medium px-8 py-4 rounded-lg shadow-lg transition border border-blue-400">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 (简单版权声明) -->
+    <footer class="bg-white border-t border-gray-200 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            © 2025 MedEquip·Pro 医疗设备智能销售平台。保留一切权利。
+        </div>
+    </footer>
+
+</body>
+</html>

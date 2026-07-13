@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>磐石财策 | 企业级个人理财平台</title>
+    <!-- Tailwind via CDN + base layer (no custom css) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- slight tweak for gold/deep-green palette (only safelist) — no custom classes -->
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- ████████ 导航栏 (深绿背景, 金色点缀) ████████ -->
+    <header class="bg-[#0B3B2A] shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- logo + 标题 -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-[#C9A53B] rounded flex items-center justify-center text-white font-bold text-xl">⛁</div>
+                    <span class="text-white font-semibold text-xl tracking-tight">磐石·财策</span>
+                </div>
+                <!-- 导航菜单 (桌面) 金色文字 -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#" class="text-[#F0E6D2] hover:text-[#C9A53B] transition">理财方案</a>
+                    <a href="#" class="text-[#F0E6D2] hover:text-[#C9A53B] transition">财富管理</a>
+                    <a href="#" class="text-[#F0E6D2] hover:text-[#C9A53B] transition">安全保障</a>
+                    <a href="#" class="text-[#F0E6D2] hover:text-[#C9A53B] transition">关于我们</a>
+                </nav>
+                <!-- CTA 按钮 金色背景+深绿文字 -->
+                <div class="flex items-center space-x-3">
+                    <a href="#" class="hidden sm:inline-block text-[#0B3B2A] bg-[#C9A53B] px-5 py-2 rounded-md text-sm font-semibold hover:bg-[#B8912E] transition shadow">个人专区</a>
+                    <a href="#" class="inline-block bg-transparent border border-[#C9A53B] text-[#C9A53B] px-4 py-2 rounded-md text-sm font-semibold hover:bg-[#C9A53B] hover:text-[#0B3B2A] transition">联系顾问</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ████████ 首屏区块 (深绿+金, 个人理财内容) ████████ -->
+        <section class="bg-gradient-to-br from-[#0B3B2A] to-[#1A5A42] text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">企业级个人理财<span class="text-[#C9A53B]">· 行稳致远</span></h1>
+                        <p class="text-xl text-[#E0E7E0] mt-6">安全、稳健、可定制——专为高净值人士打造的智能财富平台，集成资产负债管理与全球投资视野。</p>
+                        <p class="text-[#B9C9B3] mt-4 max-w-lg">依托银行级风控体系，让每一分资产都得到悉心守护。</p>
+                        <div class="flex flex-wrap gap-4 mt-8">
+                            <a href="#" class="bg-[#C9A53B] text-[#0B3B2A] px-8 py-3 rounded-md font-bold hover:bg-[#B8912E] transition shadow-lg">开启财富之旅</a>
+                            <a href="#" class="border-2 border-[#C9A53B] text-[#C9A53B] px-8 py-3 rounded-md font-bold hover:bg-[#C9A53B] hover:text-[#0B3B2A] transition">预约私人银行家</a>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden shadow-2xl border-4 border-[#C9A53B]/20">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="私人财富管理界面" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ 统计区块 (深绿数字 金色描边) ████████ -->
+        <section class="bg-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="border border-[#C9A53B]/30 rounded-xl p-6 bg-[#F9F7F2]">
+                        <div class="text-4xl font-bold text-[#0B3B2A]">500<sup class="text-[#C9A53B] text-lg">+</sup></div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-2">高净值家族</div>
+                    </div>
+                    <div class="border border-[#C9A53B]/30 rounded-xl p-6 bg-[#F9F7F2]">
+                        <div class="text-4xl font-bold text-[#0B3B2A]">98<sup class="text-[#C9A53B] text-lg">%</sup></div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-2">客户留存率</div>
+                    </div>
+                    <div class="border border-[#C9A53B]/30 rounded-xl p-6 bg-[#F9F7F2]">
+                        <div class="text-4xl font-bold text-[#0B3B2A]">¥120<sup class="text-[#C9A53B] text-lg">亿+</sup></div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-2">托管资产</div>
+                    </div>
+                    <div class="border border-[#C9A53B]/30 rounded-xl p-6 bg-[#F9F7F2]">
+                        <div class="text-4xl font-bold text-[#0B3B2A]">24/7</div>
+                        <div class="text-sm uppercase tracking-wider text-gray-600 mt-2">专属顾问</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ 左图右文区块 (个人理财 跨部门 -> 跨资产配置) ████████ -->
+        <section class="py-16 bg-[#F4F2ED]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="家族办公室沟通" class="rounded-xl shadow-xl border-4 border-white">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-[#0B3B2A]">全盘资产，一目了然</h2>
+                        <p class="text-gray-700 mt-6 text-lg leading-relaxed">打破存款、理财、保险、信托信息孤岛，通过全景视图让您与家族办公室快速掌握资产动态。集成全球市场数据，一键调研发掘机会。</p>
+                        <div class="flex flex-wrap gap-4 mt-6">
+                            <span class="bg-[#C9A53B]/20 text-[#0B3B2A] px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-1"><span class="text-[#C9A53B] text-lg">✓</span> 国密级加密</span>
+                            <span class="bg-[#C9A53B]/20 text-[#0B3B2A] px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-1"><span class="text-[#C9A53B] text-lg">✓</span> 无限历史追溯</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ 特性区块 (金融专属特性) ████████ -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0B3B2A]">银行级安全 · 家族办公室体验</h2>
+                    <p class="text-gray-600 mt-4 text-lg">从底层架构到前端交互，全方位守护您的财富</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="border border-[#C9A53B]/20 rounded-2xl p-8 bg-[#FDFCF9] shadow-sm">
+                        <div class="text-5xl mb-4">🔒</div>
+                        <h3 class="text-xl font-bold text-[#0B3B2A]">国密/国际加密</h3>
+                        <p class="text-gray-600 mt-2">端到端加密、HSM硬件模块、满足金融合规。</p>
+                    </div>
+                    <div class="border border-[#C9A53B]/20 rounded-2xl p-8 bg-[#FDFCF9] shadow-sm">
+                        <div class="text-5xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold text-[#0B3B2A]">全球行情毫秒级</h3>
+                        <p class="text-gray-600 mt-2">沪深、港股、美股、外汇实时同步。</p>
+                    </div>
+                    <div class="border border-[#C9A53B]/20 rounded-2xl p-8 bg-[#FDFCF9] shadow-sm">
+                        <div class="text-5xl mb-4">🧩</div>
+                        <h3 class="text-xl font-bold text-[#0B3B2A]">全机构集成</h3>
+                        <p class="text-gray-600 mt-2">连接银行、券商、信托、私募系统。</p>
+                    </div>
+                    <div class="border border-[#C9A53B]/20 rounded-2xl p-8 bg-[#FDFCF9] shadow-sm">
+                        <div class="text-5xl mb-4">📊</div>
+                        <h3 class="text-xl font-bold text-[#0B3B2A]">智能投顾分析</h3>
+                        <p class="text-gray-600 mt-2">风险测评、再平衡建议、压力测试。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ 客户案例区块 (个人理财案例) ████████ -->
+        <section class="py-20 bg-[#F4F2ED]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0B3B2A]">他们选择磐石财策</h2>
+                    <p class="text-gray-700 max-w-2xl mx-auto mt-4">来自企业家、家族办公室与专业人士的信赖</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 案例1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-[#C9A53B]">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-[#0B3B2A] rounded-full flex items-center justify-center text-[#C9A53B] font-bold text-xl">M</div>
+                            <div>
+                                <p class="font-bold text-[#0B3B2A]">明德投资</p>
+                                <p class="text-sm text-gray-500">家族办公室</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mt-4 italic">“跨代资产配置效率提升50%，真正实现全球税务优化与风险隔离。”</p>
+                        <div class="flex items-center mt-6 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=64&h=64&fit=crop" alt="头像" class="w-10 h-10 rounded-full object-cover">
+                            <div class="ml-3">
+                                <p class="font-semibold text-[#0B3B2A]">陈嘉骏</p>
+                                <p class="text-xs text-gray-500">首席投资官</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 案例2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-[#C9A53B]">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-[#0B3B2A] rounded-full flex items-center justify-center text-[#C9A53B] font-bold text-xl">Y</div>
+                            <div>
+                                <p class="font-bold text-[#0B3B2A]">永达纺织</p>
+                                <p class="text-sm text-gray-500">实业集团</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mt-4 italic">“二代传承规划中，磐石的信托+理财模块让企业治理与私人财务清晰分离。”</p>
+                        <div class="flex items-center mt-6 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=64&h=64&fit=crop" alt="头像" class="w-10 h-10 rounded-full object-cover">
+                            <div class="ml-3">
+                                <p class="font-semibold text-[#0B3B2A]">李婉荧</p>
+                                <p class="text-xs text-gray-500">财务总监</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 案例3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-md border-t-4 border-[#C9A53B]">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 bg-[#0B3B2A] rounded-full flex items-center justify-center text-[#C9A53B] font-bold text-xl">X</div>
+                            <div>
+                                <p class="font-bold text-[#0B3B2A]">新智资本</p>
+                                <p class="text-sm text-gray-500">私募股权</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mt-4 italic">“LP数据报表一键生成，审计效率翻倍，安全合规深受机构认可。”</p>
+                        <div class="flex items-center mt-6 pt-4 border-t border-gray-100">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=64&h=64&fit=crop" alt="头像" class="w-10 h-10 rounded-full object-cover">
+                            <div class="ml-3">
+                                <p class="font-semibold text-[#0B3B2A]">周正浩</p>
+                                <p class="text-xs text-gray-500">管理合伙人</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ 认证与资质区块 (金融安全认证) ████████ -->
+        <section class="py-16 bg-white border-y border-[#C9A53B]/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-[#0B3B2A]">权威认证 · 值得托付</h2>
+                <p class="text-center text-gray-600 mt-2">我们通过最严格金融安全标准</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    <div class="border rounded-lg p-5 text-center bg-[#F9F7F2]">
+                        <div class="text-4xl mb-2 text-[#C9A53B]">🏅</div>
+                        <p class="font-bold text-[#0B3B2A]">ISO 27001</p>
+                        <p class="text-xs text-gray-500">信息安全管理</p>
+                    </div>
+                    <div class="border rounded-lg p-5 text-center bg-[#F9F7F2]">
+                        <div class="text-4xl mb-2 text-[#C9A53B]">🏅</div>
+                        <p class="font-bold text-[#0B3B2A]">SOC 2 Type II</p>
+                        <p class="text-xs text-gray-500">服务组织控制</p>
+                    </div>
+                    <div class="border rounded-lg p-5 text-center bg-[#F9F7F2]">
+                        <div class="text-4xl mb-2 text-[#C9A53B]">🏅</div>
+                        <p class="font-bold text-[#0B3B2A]">等保三级</p>
+                        <p class="text-xs text-gray-500">公安部认证</p>
+                    </div>
+                    <div class="border rounded-lg p-5 text-center bg-[#F9F7F2]">
+                        <div class="text-4xl mb-2 text-[#C9A53B]">🏅</div>
+                        <p class="font-bold text-[#0B3B2A]">GDPR 合规</p>
+                        <p class="text-xs text-gray-500">欧盟标准</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ 价格区块 (理财顾问服务) ████████ -->
+        <section class="py-20 bg-[#F4F2ED]">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-[#0B3B2A]">灵活费率 · 透明尊享</h2>
+                    <p class="text-gray-600">无隐藏费用，按需选择服务层级</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 mt-16">
+                    <!-- 基础版 -->
+                    <div class="bg-white rounded-2xl p-8 shadow border border-[#C9A53B]/30">
+                        <h3 class="text-2xl font-bold text-[#0B3B2A]">智享账户</h3>
+                        <p class="text-4xl font-bold mt-4 text-[#0B3B2A]">¥499<span class="text-base font-normal text-gray-500">/月</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-700">
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 资产全景视图</li>
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 5家银行直连</li>
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 基础理财建议</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center border border-[#0B3B2A] text-[#0B3B2A] py-3 rounded-lg font-semibold hover:bg-[#0B3B2A] hover:text-white transition">开启智享</a>
+                    </div>
+                    <!-- 商业版(热门) 金色边框 -->
+                    <div class="bg-white rounded-2xl p-8 shadow border-2 border-[#C9A53B] relative transform scale-105">
+                        <div class="absolute top-0 right-0 bg-[#C9A53B] text-[#0B3B2A] px-4 py-1 text-sm font-bold rounded-bl-xl rounded-tr-xl">热门优选</div>
+                        <h3 class="text-2xl font-bold text-[#0B3B2A]">私人财富</h3>
+                        <p class="text-4xl font-bold mt-4 text-[#0B3B2A]">¥1,299<span class="text-base font-normal text-gray-500">/月</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-700">
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 全市场产品池</li>
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 税务/法律咨询接入</li>
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 专属客户经理</li>
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 全球资产配置</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center bg-[#C9A53B] text-[#0B3B2A] py-3 rounded-lg font-bold hover:bg-[#B8912E] transition">立即升级</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="bg-white rounded-2xl p-8 shadow border border-[#C9A53B]/30">
+                        <h3 class="text-2xl font-bold text-[#0B3B2A]">家族办公室</h3>
+                        <p class="text-4xl font-bold mt-4 text-[#0B3B2A]">定制</p>
+                        <ul class="mt-6 space-y-3 text-gray-700">
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 多代规划/信托架构</li>
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 私募/直投通道</li>
+                            <li class="flex items-center gap-2"><span class="text-[#C9A53B]">✓</span> 专属合规报告</li>
+                        </ul>
+                        <a href="#" class="mt-8 block text-center border border-[#0B3B2A] text-[#0B3B2A] py-3 rounded-lg font-semibold hover:bg-[#0B3B2A] hover:text-white transition">联系顾问</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ 常见问题区块 (金融FAQ) ████████ -->
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-[#0B3B2A]">您关心的问题</h2>
+                <div class="mt-12 space-y-6">
+                    <div class="border-b border-gray-200 pb-5">
+                        <p class="font-semibold text-[#0B3B2A] text-lg">数据存储在哪里？符合监管吗？</p>
+                        <p class="text-gray-600 mt-2">所有金融数据存储于境内合规数据中心，通过等保三级、央行金融科技认证，支持私有化部署。</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-5">
+                        <p class="font-semibold text-[#0B3B2A] text-lg">如何保证账户安全？</p>
+                        <p class="text-gray-600 mt-2">支持U盾、指纹、人脸识别等多因子认证，资金流转全程银行级加密，无权限无法查看。</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-5">
+                        <p class="font-semibold text-[#0B3B2A] text-lg">可以迁移现有银行交易记录吗？</p>
+                        <p class="text-gray-600 mt-2">支持200+家银行流水导入，智能归类，历史数据完整回溯。</p>
+                    </div>
+                    <div class="border-b border-gray-200 pb-5">
+                        <p class="font-semibold text-[#0B3B2A] text-lg">是否提供家族信托架构设计？</p>
+                        <p class="text-gray-600 mt-2">与头部信托公司合作，可在平台内完成架构模拟、税务测算及设立对接。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ████████ CTA 区块 深绿+金 ████████ -->
+        <section class="bg-[#0B3B2A] py-16">
+            <div class="max-w-3xl mx-auto text-center px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">让专业团队守护您的家族财富</h2>
+                <p class="text-[#C9A53B] text-lg mt-4">立即预约一对一财富诊断，限时尊享资产报告</p>
+                <div class="flex flex-wrap gap-4 justify-center mt-8">
+                    <a href="#" class="bg-[#C9A53B] text-[#0B3B2A] px-8 py-4 rounded-md font-bold text-lg hover:bg-[#B8912E] transition">免费获取规划</a>
+                    <a href="#" class="border-2 border-[#C9A53B] text-[#C9A53B] px-8 py-4 rounded-md font-bold text-lg hover:bg-[#C9A53B] hover:text-[#0B3B2A] transition">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ████████ 页脚 (品牌Logo/版权/地址/联系方式/公众号二维码) ████████ -->
+    <footer class="bg-[#0B3B2A] border-t border-[#C9A53B]/30 text-[#E0E7E0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- 品牌Logo + 版权 -->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-[#C9A53B] rounded flex items-center justify-center text-[#0B3B2A] font-bold text-xl">⛁</div>
+                        <span class="text-white font-semibold text-xl">磐石·财策</span>
+                    </div>
+                    <p class="text-sm text-[#B9C9B3] mt-4">© 2025 磐石财策. 版权所有。<br>稳如磐石，智享未来。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h4 class="text-white font-semibold text-md uppercase tracking-wider">上海总部</h4>
+                    <address class="not-italic text-sm text-[#B9C9B3] mt-2 leading-relaxed">
+                        浦东新区 · 世纪大道100号<br>环球金融中心68层<br>邮编：200120
+                    </address>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h4 class="text-white font-semibold text-md uppercase tracking-wider">客户专线</h4>
+                    <p class="text-sm text-[#B9C9B3] mt-2">400-688-1955<br>服务时间 7x24 小时</p>
+                    <p class="text-sm text-[#B9C9B3] mt-2">wealth@rockfinance.cn</p>
+                </div>
+                <!-- 微信公众号二维码 (使用unsplash占位) -->
+                <div>
+                    <h4 class="text-white font-semibold text-md uppercase tracking-wider">官方微信</h4>
+                    <div class="mt-2 w-28 h-28 bg-[#1A5A42] rounded-lg border-2 border-[#C9A53B] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=128&h=128&fit=crop" alt="公众号二维码" class="w-full h-full object-cover opacity-90">
+                    </div>
+                    <p class="text-xs text-[#C9A53B] mt-2">扫码获取每日洞察</p>
+                </div>
+            </div>
+            <div class="border-t border-[#C9A53B]/20 mt-10 pt-6 text-center text-sm text-[#B9C9B3]">
+                <p>磐石财策——银行级个人理财 · 家族财富管理专家</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

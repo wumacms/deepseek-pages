@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>NexusTech | 领航未来科技</title>
+    <!-- Tailwind CSS + Font Awesome 6 (免费图标库) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    animation: {
+                        'fade-in': 'fadeIn 0.3s ease-out',
+                        'slide-up': 'slideUp 0.2s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: { from: { opacity: '0' }, to: { opacity: '1' } },
+                        slideUp: { from: { opacity: '0', transform: 'translateY(10px)' }, to: { opacity: '1', transform: 'translateY(0)' } }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 保证无额外自定义样式干扰，图标库使用正常 */
+    </style>
+</head>
+
+<body
+    class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 font-sans antialiased">
+
+    <!-- 导航栏：毛玻璃效果，使用 Font Awesome 图标替换表情符号 -->
+    <nav
+        class="fixed w-full z-50 top-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-b border-slate-200/60 dark:border-slate-800/60 shadow-sm">
+        <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center gap-2">
+                <!-- Logo区块 -->
+                <div class="flex items-center gap-2.5 shrink-0">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl flex items-center justify-center text-white font-bold shadow-md">
+                        <i class="fas fa-rocket text-sm"></i>
+                    </div>
+                    <span
+                        class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-slate-800 to-slate-600 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">NexusTech</span>
+                </div>
+
+                <!-- 桌面导航链接 -->
+                <div class="hidden md:flex items-center space-x-7">
+                    <div class="relative group py-2">
+                        <button
+                            class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
+                            <i class="fas fa-cubes text-sm"></i> 产品服务
+                            <i class="fas fa-chevron-down text-xs transition-transform group-hover:rotate-180"></i>
+                        </button>
+                        <div
+                            class="absolute hidden group-hover:block w-52 bg-white dark:bg-slate-800 shadow-xl rounded-2xl border border-slate-100 dark:border-slate-700 top-full mt-1 p-2 z-20 animate-fade-in">
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2.5 hover:bg-blue-50 dark:hover:bg-slate-700 rounded-xl text-sm transition">
+                                <i class="fas fa-microchip w-4"></i> AI智能引擎
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2.5 hover:bg-blue-50 dark:hover:bg-slate-700 rounded-xl text-sm transition">
+                                <i class="fas fa-cloud-upload-alt w-4"></i> 云原生方案
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 px-4 py-2.5 hover:bg-blue-50 dark:hover:bg-slate-700 rounded-xl text-sm transition">
+                                <i class="fas fa-shield-alt w-4"></i> 安全合规中心
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#features" class="font-medium hover:text-blue-600 dark:hover:text-blue-400 transition">
+                        <i class="fas fa-chart-line mr-1"></i> 核心特性
+                    </a>
+                    <a href="#pricing" class="font-medium hover:text-blue-600 dark:hover:text-blue-400 transition">
+                        <i class="fas fa-tag mr-1"></i> 定价方案
+                    </a>
+                    <a href="#team" class="font-medium hover:text-blue-600 dark:hover:text-blue-400 transition">
+                        <i class="fas fa-users mr-1"></i> 团队
+                    </a>
+                </div>
+
+                <!-- 右侧控件区：圆形主题按钮 + 桌面CTA -->
+                <div class="flex items-center gap-3">
+                    <!-- 圆形主题切换按钮 (Font Awesome 太阳/月亮) -->
+                    <button id="theme-toggle"
+                        class="relative w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-600 dark:text-slate-300 hover:ring-2 ring-blue-500 transition-all shadow-sm">
+                        <span id="theme-toggle-light-icon"
+                            class="absolute inset-0 flex items-center justify-center text-xl hidden">
+                            <i class="fas fa-sun"></i>
+                        </span>
+                        <span id="theme-toggle-dark-icon"
+                            class="absolute inset-0 flex items-center justify-center text-xl">
+                            <i class="fas fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button
+                        class="hidden md:inline-flex bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-semibold transition-all active:scale-95 shadow-md shadow-blue-500/20 items-center gap-2">开始使用</button>
+
+                    <!-- 移动端汉堡菜单按钮 (Font Awesome 图标) -->
+                    <button id="mobile-menu-button"
+                        class="w-10 h-10 md:hidden p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center justify-center transition">
+                        <i id="menu-icon" class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 移动端菜单面板 -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 px-5 pt-5 pb-8 shadow-2xl rounded-b-3xl transition-all">
+            <div class="flex flex-col space-y-3">
+                <a href="#features"
+                    class="flex items-center gap-3 py-3 px-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 font-medium text-base">
+                    <i class="fas fa-chart-line w-5"></i> 核心特性
+                </a>
+                <a href="#pricing"
+                    class="flex items-center gap-3 py-3 px-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 font-medium text-base">
+                    <i class="fas fa-tag w-5"></i> 定价方案
+                </a>
+                <a href="#team"
+                    class="flex items-center gap-3 py-3 px-4 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 font-medium text-base">
+                    <i class="fas fa-users w-5"></i> 关于团队
+                </a>
+                <button
+                    class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white py-3.5 rounded-xl font-bold shadow-lg transition-all active:scale-[0.98] flex items-center justify-center gap-2">免费试用</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero 主视觉区块 无表情符号，仅图标 -->
+    <header
+        class="relative pt-32 pb-20 md:pt-40 md:pb-28 px-5 overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/30 dark:to-slate-950">
+        <div class="max-w-7xl mx-auto text-center relative z-10">
+            <span
+                class="inline-flex items-center gap-1 px-4 py-1.5 mb-6 text-sm font-semibold bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-full shadow-sm"><i
+                    class="fas fa-microchip text-xs"></i> v2.0 现已上线 · 新一代AI引擎</span>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-[1.2] tracking-tight">
+                用 AI 重构 <br><span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-500">企业级生产力</span>
+            </h1>
+            <p class="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                NexusTech 为现代开发者提供极速、安全、智能的低代码云平台，让部署和迭代像呼吸一样自然。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                <button
+                    class="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold shadow-xl shadow-blue-500/30 transition-all active:scale-95 flex items-center justify-center gap-2"><i
+                        class="fas fa-cloud-upload-alt"></i> 立即免费创建</button>
+                <button
+                    class="px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl font-semibold hover:bg-slate-50 dark:hover:bg-slate-700 transition flex items-center justify-center gap-2"><i
+                        class="fas fa-play-circle"></i> 观看演示视频</button>
+            </div>
+        </div>
+        <div class="absolute inset-0 -z-0 opacity-30 dark:opacity-40 pointer-events-none">
+            <div class="absolute top-20 left-1/4 w-80 h-80 bg-blue-400 rounded-full blur-[130px]"></div>
+            <div class="absolute bottom-10 right-1/4 w-80 h-80 bg-cyan-400 rounded-full blur-[130px]"></div>
+        </div>
+    </header>
+
+    <!-- Hero 主视觉区块 - 背景图片风格 -->
+    <!-- <header class="relative pt-32 pb-20 md:pt-40 md:pb-28 px-5 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-slate-900/70 to-slate-950/80 dark:from-slate-950/90 dark:to-slate-950/95 z-10">
+            </div>
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&h=1080&fit=crop"
+                class="w-full h-full object-cover" alt="Tech Background">
+            <div
+                class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2230%22%20height%3D%2230%22%20viewBox%3D%220%200%2030%2030%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20stroke%3D%22%2360A5FA%22%20stroke-opacity%3D%220.05%22%20stroke-width%3D%220.6%22%20d%3D%22M0%200h30v30H0z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E')] z-10">
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto text-center relative z-20">
+            <span
+                class="inline-flex items-center gap-1 px-4 py-1.5 mb-6 text-sm font-semibold bg-blue-500/20 backdrop-blur-sm text-blue-100 rounded-full shadow-sm border border-blue-400/30">
+                v2.0 现已上线 · 新一代AI引擎
+            </span>
+            <h1
+                class="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 leading-[1.2] tracking-tight text-white drop-shadow-lg">
+                用 AI 重构 <br><span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-300">企业级生产力</span>
+            </h1>
+            <p class="text-xl text-slate-200 max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-md">
+                NexusTech 为现代开发者提供极速、安全、智能的低代码云平台，让部署和迭代像呼吸一样自然。
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                <button
+                    class="px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white rounded-2xl font-bold shadow-xl shadow-blue-500/40 transition-all active:scale-95 flex items-center justify-center gap-2">
+                    <i class="fas fa-cloud-upload-alt"></i> 立即免费创建
+                </button>
+                <button
+                    class="px-8 py-4 bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-2xl font-semibold hover:bg-white/20 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-play-circle"></i> 观看演示视频
+                </button>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- 核心特性区块 - 响应式：移动1列，平板2列，桌面3列 -->
+    <section id="features" class="py-24 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold">核心竞争优势</h2>
+                <p class="mt-4 text-slate-500 dark:text-slate-400 text-lg">一切为了开发者的极致体验</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 极速部署卡片 -->
+                <div
+                    class="group p-8 rounded-3xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 hover:border-blue-500/60 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-bolt text-blue-600 dark:text-blue-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">极速部署</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">全球120+边缘节点，分钟级完成复杂云端环境初始化与CI/CD流水线配置。
+                    </p>
+                </div>
+
+                <!-- 安全合规卡片 -->
+                <div
+                    class="group p-8 rounded-3xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 hover:border-cyan-500/60 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-cyan-100 dark:bg-cyan-900/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shield text-cyan-600 dark:text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">安全合规</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">金融级端到端加密，支持私有化部署，满足GDPR、等保三级标准。</p>
+                </div>
+
+                <!-- 智能分析卡片 -->
+                <div
+                    class="group p-8 rounded-3xl bg-slate-50 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 hover:border-indigo-500/60 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-brain text-indigo-600 dark:text-indigo-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">智能分析</h3>
+                    <p class="text-slate-600 dark:text-slate-400 leading-relaxed">AI驱动性能监控，实时检测代码瓶颈并提供优化建议，保障业务SLA。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据看板区块 -->
+    <section class="py-20 bg-slate-50 dark:bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative group">
+                <div
+                    class="absolute inset-0 bg-gradient-to-tr from-blue-600 to-cyan-500 blur-3xl opacity-10 group-hover:opacity-20 transition rounded-3xl">
+                </div>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl aspect-video">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop"
+                        alt="Data Dashboard"
+                        class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-5">全方位业务数据透视</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                    通过实时看板清晰洞察交易行为与用户轨迹。基于大数据预测模型，助您提前布局未来增长。</p>
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i><span
+                            class="font-medium">毫秒级数据延迟 · 实时刷新</span></div>
+                    <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i><span
+                            class="font-medium">完全自定义仪表盘组件库</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 集成区块 -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-5 grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <h2 class="text-3xl md:text-4xl font-bold mb-5">无缝集成，即插即用</h2>
+                <p class="text-lg text-slate-600 dark:text-slate-400 mb-7 leading-relaxed">支持 GitHub, GitLab, Jenkins
+                    及50+第三方服务。现有工作流无需重构，一键导入享受自动化效率。</p>
+                <button
+                    class="text-blue-600 font-bold inline-flex items-center gap-2 hover:gap-3 transition-all">查看所有集成项目
+                    <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="order-1 md:order-2 rounded-3xl overflow-hidden shadow-2xl aspect-video">
+                <img src="https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800&h=450&fit=crop"
+                    alt="Integration" class="w-full h-full object-cover hover:scale-105 transition duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- 极致简洁工作台 -->
+    <section class="py-24 bg-slate-50 dark:bg-slate-900/40">
+        <div class="max-w-6xl mx-auto px-5 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-5">极致简洁的开发工作台</h2>
+            <p class="text-slate-600 dark:text-slate-400 mb-12 max-w-2xl mx-auto">摒弃繁琐配置，沉浸式UI设计让开发团队专注于代码逻辑本身。</p>
+            <div class="rounded-3xl border-4 border-white dark:border-slate-700 shadow-2xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=1200&h=600&fit=crop"
+                    alt="IDE Workspace" class="w-full object-cover aspect-[21/9]">
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新动态 -->
+    <section class="py-20 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="flex flex-wrap justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">最新动态</h2>
+                    <p class="text-slate-500 mt-2">技术成长与行业观察</p>
+                </div>
+                <a href="#" class="text-blue-600 font-medium hover:underline inline-flex items-center gap-1">查看全部 <i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div
+                    class="flex gap-5 p-5 rounded-2xl border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group">
+                    <div class="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=150&h=150&fit=crop"
+                            class="w-full h-full object-cover group-hover:scale-110 transition">
+                    </div>
+                    <div><span class="text-sm text-blue-600 font-bold uppercase tracking-wide"><i
+                                class="fas fa-cube mr-1"></i> 产品发布</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">Nexus Engine 2.0 正式发布：多模态 AI 接入</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm">多模态模型支持，图像处理与自然语言理解效率提升200%...</p>
+                    </div>
+                </div>
+                <div
+                    class="flex gap-5 p-5 rounded-2xl border border-slate-100 dark:border-slate-800 hover:shadow-xl transition-all group">
+                    <div class="flex-shrink-0 w-24 h-24 rounded-xl overflow-hidden shadow-md">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=150&h=150&fit=crop"
+                            class="w-full h-full object-cover group-hover:scale-110 transition">
+                    </div>
+                    <div><span class="text-sm text-green-600 font-bold uppercase"><i class="fas fa-chart-line mr-1"></i>
+                            行业观点</span>
+                        <h3 class="text-xl font-bold mt-1 mb-2">云原生 2026：从自动化向自主化迈进</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm">AI改变基础设施管理，系统具备自我修复与动态扩容能力...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计模块 -->
+    <section class="py-16 bg-gradient-to-r from-blue-700 to-indigo-700 text-white">
+        <div class="max-w-7xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl md:text-5xl font-bold mb-2">12M+</div>
+                <div class="text-blue-100 text-sm"><i class="fas fa-charging-station mr-1"></i> 累计 API 调用</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-bold mb-2">99.98%</div>
+                <div class="text-blue-100 text-sm"><i class="fas fa-tachometer-alt mr-1"></i> 系统可用性</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-bold mb-2">5,000+</div>
+                <div class="text-blue-100 text-sm"><i class="fas fa-building mr-1"></i> 企业合作伙伴</div>
+            </div>
+            <div>
+                <div class="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+                <div class="text-blue-100 text-sm"><i class="fas fa-headset mr-1"></i> 全时技术支持</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 定价区块 - 响应式列数：移动端1列，平板2列，桌面3列 -->
+    <section id="pricing" class="py-24 bg-slate-50 dark:bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-16">灵活透明的付费方案</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 个人版卡片 -->
+                <div
+                    class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 text-left">
+                    <h3 class="text-2xl font-bold">个人版</h3>
+                    <p class="text-slate-500 text-sm mt-1">独立开发者 & 兴趣项目</p>
+                    <div class="mt-6 mb-6"><span class="text-5xl font-bold">¥0</span><span class="text-slate-500">
+                            /月</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> 3个活跃项目</li>
+                        <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> 5GB 云存储</li>
+                        <li class="flex gap-2"><i class="fas fa-check-circle text-blue-500 mt-0.5"></i> 社区技术支持</li>
+                    </ul>
+                    <button
+                        class="w-full py-3.5 rounded-xl border-2 border-blue-600 text-blue-600 font-bold hover:bg-blue-50 transition flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane"></i> 立即开始
+                    </button>
+                </div>
+
+                <!-- 专业版卡片（在平板2列布局中会自然排列） -->
+                <div
+                    class="bg-blue-700 dark:bg-blue-700 p-8 rounded-3xl shadow-2xl text-white transition-all duration-300 hover:shadow-blue-500/40 md:relative lg:static">
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-2xl font-bold">专业版</h3>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-xs font-bold">
+                            <i class="fas fa-fire"></i>最受欢迎
+                        </span>
+                    </div>
+                    <p class="opacity-80 text-sm mt-1">初创团队 & 成长型企业</p>
+                    <div class="mt-6 mb-6">
+                        <span class="text-5xl font-bold">¥199</span>
+                        <span class="opacity-80">/月</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex gap-2"><i class="fas fa-check-circle text-white"></i> 无限活跃项目</li>
+                        <li class="flex gap-2"><i class="fas fa-check-circle text-white"></i> 100GB 极速存储</li>
+                        <li class="flex gap-2"><i class="fas fa-check-circle text-white"></i> 优先级邮件支持</li>
+                        <li class="flex gap-2"><i class="fas fa-check-circle text-white"></i> AI 智能优化助手</li>
+                    </ul>
+                    <button
+                        class="w-full py-3.5 rounded-xl bg-white text-blue-700 font-bold shadow-lg hover:bg-blue-50 transition flex items-center justify-center gap-2">
+                        <i class="fas fa-calendar-week"></i> 开启14天试用
+                    </button>
+                </div>
+
+                <!-- 企业版卡片 -->
+                <div
+                    class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700 shadow-md hover:shadow-2xl transition-all duration-300 text-left">
+                    <h3 class="text-2xl font-bold">企业版</h3>
+                    <p class="text-slate-500 text-sm mt-1">大规模业务定制</p>
+                    <div class="mt-6 mb-6">
+                        <span class="text-5xl font-bold">定制</span>
+                    </div>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex gap-2">
+                            <i class="fas fa-check-circle text-blue-500"></i> 专属独立服务器集群
+                        </li>
+                        <li class="flex gap-2">
+                            <i class="fas fa-check-circle text-blue-500"></i> 私有化部署选项
+                        </li>
+                        <li class="flex gap-2">
+                            <i class="fas fa-check-circle text-blue-500"></i> 24/7 技术专家
+                        </li>
+                        <li class="flex gap-2">
+                            <i class="fas fa-check-circle text-blue-500"></i> 自定义安全审计
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full py-3.5 rounded-xl border border-slate-300 dark:border-slate-600 font-bold hover:bg-slate-100 dark:hover:bg-slate-700 transition flex items-center justify-center gap-2">
+                        <i class="fas fa-headset"></i> 联系销售
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队区块 -->
+    <section id="team" class="py-24 bg-white dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16">遇见我们的团队</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+                <div class="group">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-5 overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="李明">
+                    </div>
+                    <h4 class="text-xl font-bold">李明</h4>
+                    <p class="text-blue-600 font-medium"><i class="fas fa-crown mr-1"></i>创始人 & CEO</p>
+                </div>
+                <div class="group">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-5 overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop"
+                            class="w-full h-full object-cover group-hover:scale-110 transition" alt="张华">
+                    </div>
+                    <h4 class="text-xl font-bold">张华</h4>
+                    <p class="text-blue-600 font-medium"><i class="fas fa-code mr-1"></i>技术总监</p>
+                </div>
+                <div class="group">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-5 overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop"
+                            class="w-full h-full object-cover group-hover:scale-110 transition" alt="王磊">
+                    </div>
+                    <h4 class="text-xl font-bold">王磊</h4>
+                    <p class="text-blue-600 font-medium"><i class="fas fa-cubes mr-1"></i>产品经理</p>
+                </div>
+                <div class="group">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-5 overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop"
+                            class="w-full h-full object-cover group-hover:scale-110 transition" alt="陈雪">
+                    </div>
+                    <h4 class="text-xl font-bold">陈雪</h4>
+                    <p class="text-blue-600 font-medium"><i class="fas fa-chart-line mr-1"></i>运营专家</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ 手风琴 -->
+    <section class="py-24 bg-slate-50 dark:bg-slate-900/40">
+        <div class="max-w-3xl mx-auto px-5">
+            <h2 class="text-3xl font-bold text-center mb-12">常见问题解答</h2>
+            <div class="space-y-5">
+                <details
+                    class="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700"
+                    open>
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-bold list-none"><span><i
+                                class="fas fa-code mr-2 text-blue-500"></i>平台支持哪些编程语言？</span><span
+                            class="text-slate-400 group-open:rotate-180 transition-transform duration-300"><i
+                                class="fas fa-chevron-down"></i></span></summary>
+                    <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">NexusTech 完美支持 Node.js, Python, Go, Java,
+                        Rust 及主流前端框架，运行时自动检测项目配置。</div>
+                </details>
+                <details
+                    class="group bg-white dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700">
+                    <summary class="flex justify-between items-center p-6 cursor-pointer font-bold list-none"><span><i
+                                class="fas fa-database mr-2 text-blue-500"></i>数据迁移复杂吗？</span><span
+                            class="text-slate-400 group-open:rotate-180 transition-transform"><i
+                                class="fas fa-chevron-down"></i></span></summary>
+                    <div class="px-6 pb-6 text-slate-600 dark:text-slate-400">提供一键迁移工具，支持从 AWS、Azure、腾讯云等平滑迁移，零停机时间。
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 横幅 -->
+    <section class="py-20 px-5">
+        <div
+            class="max-w-6xl mx-auto bg-gradient-to-r from-blue-700 to-cyan-600 rounded-3xl p-12 md:p-16 text-center text-white shadow-2xl shadow-blue-500/30">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">开启您的数字化转型之旅</h2>
+            <p class="text-blue-100 text-lg mb-10 max-w-xl mx-auto">现在加入 NexusTech，首月专业版功能免费体验。无需信用卡。</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                <button
+                    class="bg-white text-blue-700 px-8 py-4 rounded-2xl font-bold shadow-xl hover:bg-blue-50 transition flex items-center justify-center gap-2"><i
+                        class="fas fa-rocket"></i> 立即免费注册</button>
+                <button
+                    class="bg-blue-800/50 backdrop-blur-sm border border-white/30 px-8 py-4 rounded-2xl font-bold hover:bg-blue-800 transition flex items-center justify-center gap-2"><i
+                        class="fas fa-headset"></i> 联系顾问 →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <!-- 页脚 - 支持深色/浅色模式切换 -->
+    <footer
+        class="bg-white dark:bg-slate-950 text-slate-600 dark:text-slate-400 pt-20 pb-10 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-5 grid grid-cols-2 md:grid-cols-4 gap-12">
+            <div class="col-span-2 md:col-span-1">
+                <div class="flex items-center gap-2 text-slate-800 dark:text-white font-bold text-xl mb-5">
+                    <div class="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center"><i
+                            class="fas fa-rocket text-white text-sm"></i></div>NexusTech
+                </div>
+                <p class="text-sm leading-relaxed text-slate-500 dark:text-slate-400">致力于为全球企业提供最高效的云原生技术底座。</p>
+            </div>
+            <div>
+                <h4 class="text-slate-800 dark:text-white font-bold mb-5"><i class="fas fa-cube mr-2"></i>产品</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#"
+                            class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">核心引擎</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">定价体系</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">安全防护</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-slate-800 dark:text-white font-bold mb-5"><i class="fas fa-book-open mr-2"></i>资源</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#"
+                            class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">开发文档</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">技术博客</a>
+                    </li>
+                    <li><a href="#"
+                            class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">开源社区</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-slate-800 dark:text-white font-bold mb-5"><i class="fas fa-share-alt mr-2"></i>关注我们</h4>
+                <div class="flex gap-4 mb-5">
+                    <div
+                        class="w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-blue-600 dark:hover:bg-blue-600 cursor-pointer transition-colors group">
+                        <i class="fab fa-twitter text-slate-600 dark:text-slate-400 group-hover:text-white"></i>
+                    </div>
+                    <div
+                        class="w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-blue-600 dark:hover:bg-blue-600 cursor-pointer transition-colors group">
+                        <i class="fab fa-facebook-f text-slate-600 dark:text-slate-400 group-hover:text-white"></i>
+                    </div>
+                    <div
+                        class="w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center hover:bg-blue-600 dark:hover:bg-blue-600 cursor-pointer transition-colors group">
+                        <i class="fab fa-linkedin-in text-slate-600 dark:text-slate-400 group-hover:text-white"></i>
+                    </div>
+                </div>
+                <!-- 订阅区域：邮箱自适应宽度，按钮固定宽度 -->
+                <div class="flex gap-2 mt-3 w-full">
+                    <input type="email" placeholder="邮箱地址"
+                        class="bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-2 text-xs flex-1 min-w-0 focus:ring-2 ring-blue-500 outline-none text-slate-800 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 transition-colors">
+                    <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white w-[70px] rounded-xl text-xs font-bold flex items-center justify-center gap-1 whitespace-nowrap transition-colors shrink-0">
+                        <i class="fas fa-paper-plane"></i> 订阅
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-5 mt-16 pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs gap-3">
+            <p class="text-slate-500 dark:text-slate-400">© 2026 NexusTech Inc. 保留所有权利。</p>
+            <div class="flex gap-6">
+                <a href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">隐私政策</a>
+                <a href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">服务条款</a>
+                <a href="#"
+                    class="text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Cookie设置</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 主题切换逻辑 (Font Awesome 图标)
+        const themeBtn = document.getElementById('theme-toggle');
+        const lightIconSpan = document.getElementById('theme-toggle-light-icon');
+        const darkIconSpan = document.getElementById('theme-toggle-dark-icon');
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            lightIconSpan.classList.remove('hidden');
+            darkIconSpan.classList.add('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            lightIconSpan.classList.add('hidden');
+            darkIconSpan.classList.remove('hidden');
+        }
+        themeBtn.addEventListener('click', () => {
+            darkIconSpan.classList.toggle('hidden');
+            lightIconSpan.classList.toggle('hidden');
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+        // 移动端菜单交互
+        const mobileBtn = document.getElementById('mobile-menu-button');
+        const mobileMenuDiv = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        mobileBtn.addEventListener('click', () => {
+            const isHidden = mobileMenuDiv.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenuDiv.classList.remove('hidden');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                mobileMenuDiv.classList.add('hidden');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+        document.querySelectorAll('#mobile-menu a').forEach(link => link.addEventListener('click', () => {
+            mobileMenuDiv.classList.add('hidden');
+            menuIcon.classList.remove('fa-times');
+            menuIcon.classList.add('fa-bars');
+        }));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>芯连 · 精密芯片设计协作平台</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 微调：采用深蓝/银白精密科技感，完全依赖 Tailwind 类，无自定义 CSS -->
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased">
+
+  <!-- 导航栏：包含logo、标题、导航菜单和CTA按钮（精密科技/深蓝银白） -->
+  <nav class="border-b border-slate-200 bg-white/95 backdrop-blur-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
+        <!-- 左侧：Logo + 标题 -->
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 bg-indigo-600 rounded-md flex items-center justify-center text-white text-xl font-bold shadow-sm">⚡</div>
+          <span class="font-semibold text-xl tracking-tight text-slate-800">芯连<span class="text-indigo-600">·Link</span></span>
+        </div>
+        <!-- 中间导航菜单 (桌面) 深蓝灰色文字 -->
+        <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+          <a href="#" class="hover:text-indigo-600 transition">产品</a>
+          <a href="#" class="hover:text-indigo-600 transition">解决方案</a>
+          <a href="#" class="hover:text-indigo-600 transition">定价</a>
+          <a href="#" class="hover:text-indigo-600 transition">生态伙伴</a>
+          <a href="#" class="hover:text-indigo-600 transition">文档</a>
+        </div>
+        <!-- 右侧 CTA 按钮 银白/深蓝 -->
+        <div class="flex items-center gap-3">
+          <a href="#" class="hidden sm:inline-block text-sm font-medium text-slate-700 hover:text-indigo-600 px-3 py-2">登录</a>
+          <a href="#" class="bg-indigo-700 hover:bg-indigo-800 text-white text-sm font-medium px-5 py-2.5 rounded-md shadow-sm transition flex items-center gap-1">开始设计 <span class="text-lg">→</span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 首屏区块 (芯片设计hero) 深蓝背景银白文字 -->
+    <section class="bg-gradient-to-br from-slate-900 via-indigo-950 to-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">芯片设计协作，<br/><span class="text-indigo-300">精密至纳米</span></h1>
+            <p class="text-xl text-indigo-100/80 mt-6 max-w-xl">安全、实时、可定制——为半导体团队打造的智能设计平台，集成PDK流程与版图洞察。</p>
+            <p class="text-slate-300 mt-4 text-lg">专为模拟/数字芯片设计团队打造，无缝集成已有EDA工具链。</p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a href="#" class="bg-indigo-500 hover:bg-indigo-400 text-white px-8 py-3 rounded-md font-medium shadow-lg shadow-indigo-500/30 transition">开始使用</a>
+              <a href="#" class="border border-indigo-400 text-indigo-100 hover:bg-white/10 px-8 py-3 rounded-md font-medium transition">联系销售</a>
+            </div>
+          </div>
+          <div class="rounded-xl overflow-hidden shadow-2xl border border-indigo-800/50">
+            <img class="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=800&auto=format" alt="芯片设计界面" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 合作伙伴区块 银白背景深蓝字 -->
+    <section class="bg-slate-50 py-16 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">我们的生态伙伴</h2>
+        <p class="text-slate-500 text-center mt-3 text-lg">与全球领先的半导体及EDA公司深度合作</p>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mt-12">
+          <!-- 重复伙伴logo卡片 (深蓝边框银白底) -->
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-700 text-2xl">⚙️</div><span class="mt-3 font-medium text-slate-800">台积电</span><span class="text-xs text-slate-400">合作伙伴</span></div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-700 text-2xl">🔬</div><span class="mt-3 font-medium text-slate-800">Synopsys</span><span class="text-xs text-slate-400">EDA伙伴</span></div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-700 text-2xl">📡</div><span class="mt-3 font-medium text-slate-800">Cadence</span><span class="text-xs text-slate-400">集成伙伴</span></div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-700 text-2xl">🧠</div><span class="mt-3 font-medium text-slate-800">ARM</span><span class="text-xs text-slate-400">IP伙伴</span></div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-700 text-2xl">💾</div><span class="mt-3 font-medium text-slate-800">西门子EDA</span><span class="text-xs text-slate-400">技术伙伴</span></div>
+          <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm flex flex-col items-center"><div class="w-12 h-12 bg-indigo-50 rounded-full flex items-center justify-center text-indigo-700 text-2xl">🔌</div><span class="mt-3 font-medium text-slate-800">芯原</span><span class="text-xs text-slate-400">战略伙伴</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (跨部门协作→跨设计团队) -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div><img class="rounded-xl shadow-lg border border-slate-200" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&auto=format" alt="芯片设计团队讨论"></div>
+        <div><h2 class="text-3xl lg:text-4xl font-bold text-slate-800">无缝设计协作，跨越部门</h2><p class="text-lg text-slate-600 mt-4">打破模拟、数字、版图之间的信息孤岛。通过设计群组、实时版图批注和PDK共享，让每个人快速找到所需IP。集成企业目录，一键联系射频或验证工程师。</p><div class="flex gap-6 mt-6 text-indigo-700 font-medium"><span class="flex items-center gap-1"><span class="text-indigo-600 text-xl">✓</span> AES-256加密</span><span class="flex items-center gap-1"><span class="text-indigo-600 text-xl">✓</span> 无限版本历史</span></div></div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (深度集成工作流→EDA工具流) 银白背景 -->
+    <section class="bg-slate-50 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div><h2 class="text-3xl lg:text-4xl font-bold text-slate-800">深度集成EDA工作流</h2><p class="text-lg text-slate-600 mt-4">与您使用的工具无缝连接：Synopsys、Cadence、AMS、Calibre。在聊天中启动DRC/LVS、分享GDS、触发仿真自动化。</p><div class="flex gap-6 mt-6 text-indigo-700 font-medium"><span class="flex items-center gap-1"><span class="text-indigo-600 text-xl">⌨️</span> PDK 导入</span><span class="flex items-center gap-1"><span class="text-indigo-600 text-xl">🔌</span> API 优先</span></div></div>
+        <div><img class="rounded-xl shadow-lg border border-slate-200" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&auto=format" alt="芯片设计工具集成"></div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台一致体验) 深蓝背景银白文字 -->
+    <section class="bg-indigo-950 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl lg:text-4xl font-bold">全平台一致设计体验</h2>
+        <p class="text-indigo-200 text-xl mt-3">无论是在Linux工作站、Windows笔记本还是平板上，设计数据实时同步，操作流畅如一。</p>
+        <div class="mt-10 rounded-xl overflow-hidden border border-indigo-800 shadow-2xl"><img class="w-full" src="https://plus.unsplash.com/premium_photo-1733342554594-102b8e2d0623?w=900&auto=format&fit=crop&q=60" alt="多设备芯片设计界面"></div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (专为半导体打造) 银白背景 -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">专为半导体设计打造的特性</h2>
+        <p class="text-slate-500 text-center mt-2 text-lg">从IP安全到物理验证效率，面面俱到</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div class="border border-slate-200 p-6 rounded-xl shadow-sm bg-white"><div class="text-4xl mb-3">🔒</div><h3 class="font-semibold text-xl text-slate-800">IP级安全</h3><p class="text-slate-600 mt-2">加密设计数据、SSO、权限管控，满足ISO 26262合规。</p></div>
+          <div class="border border-slate-200 p-6 rounded-xl shadow-sm bg-white"><div class="text-4xl mb-3">⚡</div><h3 class="font-semibold text-xl text-slate-800">实时物理同步</h3><p class="text-slate-600 mt-2">毫秒级版图变更同步，跨团队协同标注。</p></div>
+          <div class="border border-slate-200 p-6 rounded-xl shadow-sm bg-white"><div class="text-4xl mb-3">🧩</div><h3 class="font-semibold text-xl text-slate-800">无限EDA集成</h3><p class="text-slate-600 mt-2">连接20+种点工具与自研脚本，自定义流程。</p></div>
+          <div class="border border-slate-200 p-6 rounded-xl shadow-sm bg-white"><div class="text-4xl mb-3">📊</div><h3 class="font-semibold text-xl text-slate-800">设计洞察</h3><p class="text-slate-600 mt-2">DRC热点、时序余量、团队负载可视化。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 客户案例区块 (芯片公司案例) 深蓝背景银白 -->
+    <section class="bg-indigo-950 text-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center">他们正在使用芯连设计芯片</h2>
+        <p class="text-indigo-200 text-center mt-3 text-lg">来自全球领先半导体企业的信赖</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="bg-indigo-900/50 p-6 rounded-xl border border-indigo-800"><div class="flex items-center gap-3"><span class="text-3xl">🏭</span><span class="font-bold text-xl">芯动科技</span><span class="text-indigo-300 text-sm">互联网</span></div><p class="mt-4 italic text-indigo-100">“模拟设计效率提升40%，跨团队版图评审变得前所未有的顺畅。”</p><div class="flex items-center mt-6 gap-3"><span class="w-10 h-10 bg-indigo-700 rounded-full flex items-center justify-center text-white text-lg">李</span><div><p class="font-medium">李志强</p><p class="text-xs text-indigo-300">CTO</p></div></div></div>
+          <div class="bg-indigo-900/50 p-6 rounded-xl border border-indigo-800"><div class="flex items-center gap-3"><span class="text-3xl">📚</span><span class="font-bold text-xl">未来微电子</span><span class="text-indigo-300 text-sm">教育/科研</span></div><p class="mt-4 italic text-indigo-100">“集成的PDK库让学生快速上手流片流程，项目管理效率翻倍。”</p><div class="flex items-center mt-6 gap-3"><span class="w-10 h-10 bg-indigo-700 rounded-full flex items-center justify-center text-white text-lg">王</span><div><p class="font-medium">王美玲</p><p class="text-xs text-indigo-300">实验室主任</p></div></div></div>
+          <div class="bg-indigo-900/50 p-6 rounded-xl border border-indigo-800"><div class="flex items-center gap-3"><span class="text-3xl">⚙️</span><span class="font-bold text-xl">智芯制造</span><span class="text-indigo-300 text-sm">制造业</span></div><p class="mt-4 italic text-indigo-100">“本地部署完美满足我们的安全要求，支持百人设计团队实时协作。”</p><div class="flex items-center mt-6 gap-3"><span class="w-10 h-10 bg-indigo-700 rounded-full flex items-center justify-center text-white text-lg">张</span><div><p class="font-medium">张建国</p><p class="text-xs text-indigo-300">IT总监</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 银白背景深蓝数字 -->
+    <section class="bg-slate-50 py-16 border-y border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div><div class="text-4xl font-bold text-indigo-700">320+</div><div class="text-slate-600 mt-1">芯片公司</div></div>
+        <div><div class="text-4xl font-bold text-indigo-700">99%</div><div class="text-slate-600 mt-1">客户留存</div></div>
+        <div><div class="text-4xl font-bold text-indigo-700">2.5K+</div><div class="text-slate-600 mt-1">日均设计任务</div></div>
+        <div><div class="text-4xl font-bold text-indigo-700">24/7</div><div class="text-slate-600 mt-1">专家支持</div></div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (灵活定价) 精密科技卡片 -->
+    <section class="bg-white py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">灵活定价</h2>
+        <p class="text-slate-500 text-center mt-2">按需选择，无隐藏费用，支持私有化部署</p>
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div class="border border-slate-200 p-6 rounded-2xl shadow-sm bg-white"><h3 class="text-2xl font-semibold text-slate-800">基础版</h3><div class="mt-4"><span class="text-4xl font-bold">$49</span><span class="text-slate-500">/月/人</span></div><ul class="mt-6 space-y-3 text-slate-600"><li>✓ 消息历史1年</li><li>✓ 10GB 设计存储</li><li>✓ 基础PDK集成</li></ul><a href="#" class="mt-8 block text-center border border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-md font-medium">选择基础版</a></div>
+          <div class="border-2 border-indigo-600 p-6 rounded-2xl shadow-lg bg-white relative"><span class="absolute top-0 right-8 bg-indigo-600 text-white px-3 py-1 text-xs rounded-b-md">热门</span><h3 class="text-2xl font-semibold text-slate-800">商业版</h3><div class="mt-4"><span class="text-4xl font-bold">$99</span><span class="text-slate-500">/月/人</span></div><ul class="mt-6 space-y-3 text-slate-600"><li>✓ 无限历史</li><li>✓ 100GB + 版图存储</li><li>✓ 所有集成 + API</li><li>✓ 高级设计支持</li></ul><a href="#" class="mt-8 block bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md text-center font-medium">选择商业版</a></div>
+          <div class="border border-slate-200 p-6 rounded-2xl shadow-sm bg-white"><h3 class="text-2xl font-semibold text-slate-800">企业版</h3><div class="mt-4"><span class="text-4xl font-bold">定制</span></div><ul class="mt-6 space-y-3 text-slate-600"><li>✓ 本地/私有云部署</li><li>✓ 无限存储</li><li>✓ 专属客户成功</li><li>✓ SSO/合规/三方审计</li></ul><a href="#" class="mt-8 block text-center border border-indigo-600 text-indigo-600 hover:bg-indigo-50 px-4 py-2 rounded-md font-medium">联系销售</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (芯片设计FAQ) 银白背景-->
+    <section class="bg-slate-50 py-20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-slate-800 text-center">常见问题</h2>
+        <div class="mt-12 space-y-4">
+          <details class="bg-white border border-slate-200 p-5 rounded-lg"><summary class="font-semibold text-slate-800 cursor-pointer">支持本地化部署吗？</summary><p class="mt-3 text-slate-600">是的，企业版支持私有云或本地服务器部署，满足半导体行业最高安全合规要求。</p></details>
+          <details class="bg-white border border-slate-200 p-5 rounded-lg"><summary class="font-semibold text-slate-800 cursor-pointer">可以试用多久？</summary><p class="mt-3 text-slate-600">所有新用户均可享受30天全功能免费试用，无需信用卡，包含完整EDA集成。</p></details>
+          <details class="bg-white border border-slate-200 p-5 rounded-lg"><summary class="font-semibold text-slate-800 cursor-pointer">设计数据存储在哪里？</summary><p class="mt-3 text-slate-600">数据存储在云端的独立数据库，可选中国大陆或海外区域，支持本地存储。</p></details>
+          <details class="bg-white border border-slate-200 p-5 rounded-lg"><summary class="font-semibold text-slate-800 cursor-pointer">如何迁移现有PDK/设计库？</summary><p class="mt-3 text-slate-600">我们提供专业迁移工具，支持从Perforce、Git、Subversion等导入设计数据和历史版本。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA区块 深蓝背景 -->
+    <section class="bg-indigo-950 text-white py-20">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold">立即提升芯片设计协作效率</h2>
+        <p class="text-indigo-200 text-xl mt-4">加入数百家信赖我们的半导体企业，开启精密设计之旅。</p>
+        <div class="flex flex-wrap gap-4 justify-center mt-8">
+          <a href="#" class="bg-indigo-500 hover:bg-indigo-400 text-white px-8 py-4 rounded-md font-medium text-lg shadow-lg">免费试用30天</a>
+          <a href="#" class="border border-indigo-400 text-indigo-100 hover:bg-white/10 px-8 py-4 rounded-md font-medium text-lg">预约演示</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) 深蓝银白 -->
+  <footer class="bg-slate-900 text-slate-300 border-t border-indigo-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+        <!-- 品牌列 -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-2 text-white"><span class="w-8 h-8 bg-indigo-600 rounded-md flex items-center justify-center text-white text-xl font-bold">⚡</span><span class="font-semibold text-xl">芯连Link</span></div>
+          <p class="mt-4 text-sm text-slate-400">精密芯片设计协作平台，为下一代半导体赋能。</p>
+          <p class="mt-6 text-xs text-slate-500">© 2025 芯连科技 · 保留一切权利</p>
+        </div>
+        <!-- 公司地址 -->
+        <div><h4 class="font-semibold text-white mb-4">总部地址</h4><address class="not-italic text-sm text-slate-400">上海市浦东新区芯科大厦B座21F<br>北京研发中心 · 海淀区集成电路园</address></div>
+        <!-- 联系方式 -->
+        <div><h4 class="font-semibold text-white mb-4">联系方式</h4><ul class="text-sm space-y-2 text-slate-400"><li>📞 400-6688-芯片</li><li>📧 contact@chip-link.com</li><li>🕒 周一至周五 9:00-18:00</li></ul></div>
+        <!-- 微信公众号二维码 -->
+        <div><h4 class="font-semibold text-white mb-4">微信公众号</h4><div class="w-28 h-28 bg-indigo-900/50 rounded-lg flex items-center justify-center border border-indigo-700 text-indigo-300 text-4xl mb-2">◼️</div><p class="text-xs text-slate-400">扫一扫 获取芯片设计洞察</p></div>
+        <!-- 社交占位 简洁 -->
+        <div><h4 class="font-semibold text-white mb-4">生态合作</h4><p class="text-sm text-slate-400">partner@chip-link.com</p></div>
+      </div>
+      <div class="border-t border-indigo-900/50 mt-12 pt-8 text-xs text-center text-slate-500">芯连·Link 采用银行级加密与ISO 26262流程，为您的芯片IP提供全生命周期保护。</div>
+    </div>
+  </footer>
+</body>
+</html>

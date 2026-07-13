@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>彩虹熊 · 儿童早教 | 在玩耍中成长</title>
+  <!-- Tailwind via CDN + 基础层样式 (无自定义css) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 补充一些可爱的emoji及字体兼容 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 保证整体字体可爱风格，但依然使用tailwind工具类，无自定义css */
+    * { font-family: 'Quicksand', sans-serif; }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-amber-50 via-sky-50 to-pink-50 antialiased">
+
+  <!-- 导航栏 (logo, 标题, 菜单, CTA) 彩虹配色 + 卡通风格 -->
+  <nav class="bg-white/80 backdrop-blur-sm border-b-4 border-yellow-300 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <!-- logo + 标题 -->
+        <div class="flex items-center gap-3">
+          <div class="text-5xl animate-bounce">🧸</div>
+          <span class="text-3xl font-extrabold bg-gradient-to-r from-pink-400 via-orange-400 to-yellow-400 text-transparent bg-clip-text drop-shadow-md">
+            彩虹熊乐园
+          </span>
+        </div>
+        <!-- 导航菜单 (彩虹色块) -->
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="#" class="px-5 py-2 rounded-full bg-pink-200 text-pink-800 font-bold hover:scale-110 transition border-2 border-pink-400 shadow-md">首页</a>
+          <a href="#" class="px-5 py-2 rounded-full bg-yellow-200 text-yellow-800 font-bold hover:scale-110 transition border-2 border-yellow-400 shadow-md">课程</a>
+          <a href="#" class="px-5 py-2 rounded-full bg-green-200 text-green-800 font-bold hover:scale-110 transition border-2 border-green-400 shadow-md">活动</a>
+          <a href="#" class="px-5 py-2 rounded-full bg-blue-200 text-blue-800 font-bold hover:scale-110 transition border-2 border-blue-400 shadow-md">教师</a>
+          <a href="#" class="px-5 py-2 rounded-full bg-purple-200 text-purple-800 font-bold hover:scale-110 transition border-2 border-purple-400 shadow-md">联系</a>
+        </div>
+        <!-- CTA 按钮 -->
+        <div>
+          <button class="bg-gradient-to-r from-red-400 to-pink-400 text-white px-7 py-3 rounded-full font-bold text-lg shadow-lg hover:shadow-2xl transform hover:-rotate-2 transition border-4 border-white">
+            免费试听 🎈
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="space-y-16 md:space-y-24 my-12 md:my-16">
+
+    <!-- 1. 首屏区块 (早教版) 左文右图 -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center bg-white/50 rounded-3xl p-6 md:p-10 shadow-xl border-4 border-dashed border-yellow-300">
+        <div class="space-y-6">
+          <h1 class="text-5xl md:text-6xl font-black leading-tight">
+            <span class="bg-gradient-to-r from-red-400 via-purple-400 to-blue-400 text-transparent bg-clip-text">在玩耍中</span><br>
+            <span class="text-orange-400">发芽 🌱</span>
+          </h1>
+          <p class="text-2xl text-gray-700 font-medium bg-pink-100 p-4 rounded-3xl inline-block">0-6岁全感官成长乐园</p>
+          <p class="text-gray-600 text-lg max-w-md">通过音乐、艺术、运动游戏，激发宝宝天生好奇心。中英文双语浸润式启蒙。</p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <a href="#" class="bg-yellow-400 text-yellow-900 px-8 py-4 rounded-full font-bold text-xl shadow-md hover:bg-yellow-300 border-2 border-yellow-600">预约探园 🧸</a>
+            <a href="#" class="bg-sky-100 text-sky-700 px-8 py-4 rounded-full font-bold text-xl shadow-md hover:bg-sky-200 border-2 border-sky-300">观看课表 📅</a>
+          </div>
+          <!-- 装饰小元素 -->
+          <div class="flex gap-2 text-3xl">🌈 🎨 🧩 ⚽️ 🎵</div>
+        </div>
+        <div class="order-first md:order-last flex justify-center">
+          <img class="rounded-[40px] border-8 border-yellow-200 shadow-2xl rotate-2 hover:rotate-0 transition" 
+               src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&auto=format" 
+               alt="快乐儿童" 
+               style="max-height: 400px; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. 特色特性区块 (彩虹配色) 根据 features 区块 -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="text-center space-y-3">
+        <span class="bg-orange-200 text-orange-700 px-6 py-2 rounded-full text-2xl font-bold inline-block">✨ 我们的魔法 ✨</span>
+        <h2 class="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-purple-600">快乐启蒙 五大超能力</h2>
+        <p class="text-gray-600 text-xl">专为中国宝宝设计的多元成长体系</p>
+      </div>
+      <!-- 仿特性区块 feature 卡片 -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+        <div class="bg-pink-100 border-4 border-pink-300 rounded-[50px] p-6 text-center shadow-xl hover:scale-105 transition">
+          <div class="text-7xl mb-3">🎵</div>
+          <h3 class="text-2xl font-bold text-pink-800">音乐律动</h3>
+          <p class="text-pink-700">奥尔夫乐器、童谣演唱，培养节奏感与听力</p>
+        </div>
+        <div class="bg-yellow-100 border-4 border-yellow-300 rounded-[50px] p-6 text-center shadow-xl hover:scale-105 transition">
+          <div class="text-7xl mb-3">🎨</div>
+          <h3 class="text-2xl font-bold text-yellow-800">创意艺术</h3>
+          <p class="text-yellow-700">手指画、黏土、拼贴，尽情释放想象力</p>
+        </div>
+        <div class="bg-green-100 border-4 border-green-300 rounded-[50px] p-6 text-center shadow-xl hover:scale-105 transition">
+          <div class="text-7xl mb-3">🤸</div>
+          <h3 class="text-2xl font-bold text-green-800">感统运动</h3>
+          <p class="text-green-700">彩虹隧道、平衡木，促进身体协调性</p>
+        </div>
+        <div class="bg-blue-100 border-4 border-blue-300 rounded-[50px] p-6 text-center shadow-xl hover:scale-105 transition">
+          <div class="text-7xl mb-3">📖</div>
+          <h3 class="text-2xl font-bold text-blue-800">双语阅读</h3>
+          <p class="text-blue-700">经典绘本+情景剧场，启蒙中英文语感</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 左图右文区块 (课程详细介绍) -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center bg-gradient-to-r from-indigo-50 via-white to-fuchsia-50 rounded-4xl p-8 border-[6px] border-purple-300 shadow-2xl">
+        <div>
+          <img class="rounded-[60px] border-[10px] border-yellow-200 shadow-2xl -rotate-2" 
+               src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&auto=format" 
+               alt="亲子课">
+        </div>
+        <div class="space-y-5">
+          <span class="bg-purple-200 text-purple-800 px-5 py-2 rounded-full text-xl font-bold">亲子探索课 (6-18个月)</span>
+          <h2 class="text-4xl font-black text-purple-700">和爸爸妈妈一起 <span class="text-pink-500">玩中学</span></h2>
+          <p class="text-gray-700 text-lg">通过抚触、亲子瑜伽、感官袋等游戏，建立安全依恋，促进大脑早期发育。每周末开放免费体验。</p>
+          <div class="flex gap-3 text-2xl font-semibold text-pink-600">
+            <span>👶 适龄分阶</span>
+            <span>🧘 亲子瑜伽</span>
+            <span>🎭 角色扮演</span>
+          </div>
+          <button class="bg-gradient-to-r from-teal-400 to-cyan-400 text-white px-8 py-4 rounded-full font-bold text-xl shadow-lg">预约体验 🌟</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 左文右图区块 (另一种课程) -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8 items-center bg-gradient-to-l from-amber-50 via-white to-lime-50 rounded-4xl p-8 border-[6px] border-orange-300 shadow-2xl">
+        <div class="space-y-5 order-2 md:order-1">
+          <span class="bg-orange-200 text-orange-800 px-5 py-2 rounded-full text-xl font-bold">音乐花园 (2-4岁)</span>
+          <h2 class="text-4xl font-black text-orange-600">敲敲打打 <span class="text-lime-500">小小演奏家</span></h2>
+          <p class="text-gray-700 text-lg">手鼓、沙锤、彩虹琴，在游戏中感受节奏与旋律。每月一次迷你音乐会，宝宝自信展示。</p>
+          <div class="flex gap-2 text-3xl">🥁 🎹 🎺 🪇</div>
+          <button class="bg-gradient-to-r from-pink-400 to-rose-400 text-white px-8 py-4 rounded-full font-bold text-xl shadow-lg">领取体验课 🎶</button>
+        </div>
+        <div class="order-1 md:order-2 flex justify-center">
+          <img class="rounded-[60px] border-[10px] border-orange-200 shadow-2xl rotate-2" 
+               src="https://images.unsplash.com/photo-1544717305-2782549b5136?w=600&auto=format" 
+               alt="音乐课">
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 统计区块 (数字&彩虹) 仿 stats -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 bg-white border-4 border-blue-200 rounded-[70px] p-8 shadow-2xl">
+        <div class="text-center bg-gradient-to-b from-sky-100 to-sky-200 p-5 rounded-3xl">
+          <div class="text-5xl mb-2">👧🧒</div>
+          <div class="text-3xl font-black text-sky-800">3000+</div>
+          <div class="text-sky-600 font-bold">在读学员</div>
+        </div>
+        <div class="text-center bg-gradient-to-b from-yellow-100 to-yellow-200 p-5 rounded-3xl">
+          <div class="text-5xl mb-2">🏆</div>
+          <div class="text-3xl font-black text-yellow-800">12年</div>
+          <div class="text-yellow-600 font-bold">早教经验</div>
+        </div>
+        <div class="text-center bg-gradient-to-b from-green-100 to-green-200 p-5 rounded-3xl">
+          <div class="text-5xl mb-2">👩‍🏫</div>
+          <div class="text-3xl font-black text-green-800">50+</div>
+          <div class="text-green-600 font-bold">专业教师</div>
+        </div>
+        <div class="text-center bg-gradient-to-b from-purple-100 to-purple-200 p-5 rounded-3xl">
+          <div class="text-5xl mb-2">🎈</div>
+          <div class="text-3xl font-black text-purple-800">20+</div>
+          <div class="text-purple-600 font-bold">特色课程</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. 团队区块 (老师介绍) -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="text-center space-y-2">
+        <span class="bg-red-200 text-red-700 px-6 py-2 rounded-full text-2xl font-bold">🌈 明星教师天团</span>
+        <h3 class="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500">每个孩子的小太阳</h3>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+        <div class="bg-pink-50 border-[6px] border-pink-200 rounded-[80px] p-5 text-center shadow-xl">
+          <img class="w-32 h-32 rounded-full mx-auto border-4 border-pink-400 object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200" alt="lily">
+          <h4 class="text-2xl font-bold text-pink-600 mt-3">Lily 老师</h4>
+          <p class="text-pink-500 font-semibold">园长 · 15年教龄</p>
+          <p class="text-sm mt-2 bg-white p-2 rounded-full">蒙特梭利认证讲师</p>
+        </div>
+        <div class="bg-yellow-50 border-[6px] border-yellow-200 rounded-[80px] p-5 text-center shadow-xl">
+          <img class="w-32 h-32 rounded-full mx-auto border-4 border-yellow-400 object-cover" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?w=200" alt="mike">
+          <h4 class="text-2xl font-bold text-yellow-600 mt-3">Mike 老师</h4>
+          <p class="text-yellow-500 font-semibold">音乐启蒙 · 10年</p>
+          <p class="text-sm mt-2 bg-white p-2 rounded-full">伯克利音乐学院进修</p>
+        </div>
+        <div class="bg-green-50 border-[6px] border-green-200 rounded-[80px] p-5 text-center shadow-xl">
+          <img class="w-32 h-32 rounded-full mx-auto border-4 border-green-400 object-cover" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200" alt="sarah">
+          <h4 class="text-2xl font-bold text-green-600 mt-3">Sarah 老师</h4>
+          <p class="text-green-500 font-semibold">双语阅读 · 8年</p>
+          <p class="text-sm mt-2 bg-white p-2 rounded-full">剑桥英语教学资格</p>
+        </div>
+        <div class="bg-blue-50 border-[6px] border-blue-200 rounded-[80px] p-5 text-center shadow-xl">
+          <img class="w-32 h-32 rounded-full mx-auto border-4 border-blue-400 object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200" alt="tom">
+          <h4 class="text-2xl font-bold text-blue-600 mt-3">Tom 老师</h4>
+          <p class="text-blue-500 font-semibold">感统教练 · 6年</p>
+          <p class="text-sm mt-2 bg-white p-2 rounded-full">儿童体能专家</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. 价格区块 (仿plan，改成早教套餐) 彩虹色 -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="text-center">
+        <span class="bg-purple-200 text-purple-800 px-6 py-2 rounded-full text-2xl font-bold">💰 探索套餐</span>
+        <h2 class="text-4xl font-black mt-2">好玩不贵 成长加倍</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mt-12">
+        <!-- 基础卡 -->
+        <div class="bg-white border-[6px] border-pink-300 rounded-[70px] p-8 shadow-2xl hover:scale-105 transition">
+          <div class="text-6xl mb-2">🐣</div>
+          <h3 class="text-3xl font-bold text-pink-500">萌芽卡</h3>
+          <p class="text-2xl font-black mt-4">¥199<span class="text-base text-gray-500">/月</span></p>
+          <ul class="mt-6 space-y-3 text-left">
+            <li class="flex items-center gap-2"><span class="text-green-500 text-xl">✅</span> 4节亲子课</li>
+            <li class="flex items-center gap-2"><span class="text-green-500 text-xl">✅</span> 教具借用</li>
+            <li class="flex items-center gap-2"><span class="text-green-500 text-xl">✅</span> 家长沙龙</li>
+          </ul>
+          <button class="mt-8 w-full bg-pink-200 text-pink-800 py-4 rounded-full font-bold text-xl border-2 border-pink-400">立即报名</button>
+        </div>
+        <!-- 热门卡 -->
+        <div class="bg-gradient-to-b from-yellow-100 to-orange-100 border-[8px] border-yellow-400 rounded-[70px] p-8 shadow-2xl scale-105 relative">
+          <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-red-400 text-white px-6 py-2 rounded-full text-xl font-bold border-4 border-white">🔥 最受欢迎</div>
+          <div class="text-7xl mb-2 mt-4">🐼</div>
+          <h3 class="text-4xl font-bold text-orange-600">成长卡</h3>
+          <p class="text-3xl font-black mt-4">¥369<span class="text-base">/月</span></p>
+          <ul class="mt-6 space-y-3 text-left">
+            <li class="flex items-center gap-2"><span class="text-green-600 text-xl">✅</span> 8节全能课</li>
+            <li class="flex items-center gap-2"><span class="text-green-600 text-xl">✅</span> 不限时游乐区</li>
+            <li class="flex items-center gap-2"><span class="text-green-600 text-xl">✅</span> 成长测评</li>
+            <li class="flex items-center gap-2"><span class="text-green-600 text-xl">✅</span> 英文绘本借阅</li>
+          </ul>
+          <button class="mt-8 w-full bg-orange-400 text-white py-4 rounded-full font-bold text-xl border-2 border-orange-600">马上抢位</button>
+        </div>
+        <!-- 尊享卡 -->
+        <div class="bg-white border-[6px] border-blue-300 rounded-[70px] p-8 shadow-2xl hover:scale-105 transition">
+          <div class="text-6xl mb-2">🦒</div>
+          <h3 class="text-3xl font-bold text-blue-500">探索卡</h3>
+          <p class="text-2xl font-black mt-4">¥599<span class="text-base text-gray-500">/月</span></p>
+          <ul class="mt-6 space-y-3 text-left">
+            <li class="flex items-center gap-2"><span class="text-green-500 text-xl">✅</span> 无限次课程</li>
+            <li class="flex items-center gap-2"><span class="text-green-500 text-xl">✅</span> 一对一指导</li>
+            <li class="flex items-center gap-2"><span class="text-green-500 text-xl">✅</span> 生日派对场地</li>
+          </ul>
+          <button class="mt-8 w-full bg-blue-200 text-blue-800 py-4 rounded-full font-bold text-xl border-2 border-blue-400">联系顾问</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA区块 彩蛋 -->
+    <section class="max-w-7xl mx-auto px-4">
+      <div class="bg-gradient-to-r from-indigo-300 via-pink-300 to-yellow-300 rounded-[100px] p-12 text-center border-8 border-white shadow-2xl">
+        <h2 class="text-5xl md:text-6xl font-black text-white drop-shadow-lg">今天起，给孩子最好的陪伴</h2>
+        <p class="text-2xl text-white font-medium mt-4">免费领取价值398元试听课 + 儿童成长手册</p>
+        <div class="flex flex-wrap gap-6 justify-center mt-8">
+          <button class="bg-white text-indigo-600 px-12 py-5 rounded-full text-2xl font-bold shadow-2xl hover:bg-indigo-100 border-4 border-indigo-400">立即预约 🎁</button>
+          <button class="bg-yellow-400 text-yellow-900 px-12 py-5 rounded-full text-2xl font-bold shadow-2xl hover:bg-yellow-300 border-4 border-yellow-600">咨询顾问 💬</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. 常见问题区块 (FAQs 用彩虹手风琴风格) -->
+    <section class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl font-black text-center text-purple-700 mb-8">❓ 爸爸妈妈常问</h2>
+      <div class="space-y-4">
+        <div class="bg-white border-4 border-pink-300 rounded-3xl p-6 shadow-lg">
+          <p class="text-2xl font-bold text-pink-600">🙋 宝宝几岁可以上课？</p>
+          <p class="text-gray-600 mt-2 text-lg">我们接收6个月至6岁的宝宝，按年龄分班，最小有爬爬班～</p>
+        </div>
+        <div class="bg-white border-4 border-yellow-300 rounded-3xl p-6 shadow-lg">
+          <p class="text-2xl font-bold text-yellow-600">🙋 需要家长陪同吗？</p>
+          <p class="text-gray-600 mt-2 text-lg">3岁以下亲子课需家长陪同，3岁以上可独立上课，也有亲子活动。</p>
+        </div>
+        <div class="bg-white border-4 border-green-300 rounded-3xl p-6 shadow-lg">
+          <p class="text-2xl font-bold text-green-600">🙋 有全托服务吗？</p>
+          <p class="text-gray-600 mt-2 text-lg">有的！全日托/半日托，包含三餐两点，午睡有专业保育员。</p>
+        </div>
+        <div class="bg-white border-4 border-blue-300 rounded-3xl p-6 shadow-lg">
+          <p class="text-2xl font-bold text-blue-600">🙋 怎么预约试听？</p>
+          <p class="text-gray-600 mt-2 text-lg">点击上方“免费试听”按钮，或致电400-888-1234，马上安排～</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 (品牌Logo、版权、地址、联系方式、公众号二维码) 彩虹风格 -->
+  <footer class="bg-gradient-to-r from-purple-900 via-pink-800 to-orange-800 text-white mt-20 border-t-[10px] border-yellow-300">
+    <div class="max-w-7xl mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-4 gap-10">
+        <!-- logo + 版权 -->
+        <div>
+          <div class="flex items-center gap-2 text-4xl font-black">
+            <span>🧸</span>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-pink-200">彩虹熊</span>
+          </div>
+          <p class="text-yellow-100 mt-4 text-sm">© 2025 彩虹熊乐园  <br> 保留所有幻想与快乐</p>
+          <p class="text-xs text-white/70 mt-6">沪ICP备 12345678号</p>
+        </div>
+        <!-- 地址 -->
+        <div>
+          <h5 class="text-2xl font-bold text-yellow-300 flex items-center gap-1"><span>📍</span> 校区地址</h5>
+          <p class="mt-3 text-white/90">上海市浦东新区世纪大道<br>彩虹亲子广场2F</p>
+          <p class="mt-2 text-white/90">北京市朝阳区蓝色港湾<br>儿童城3F</p>
+        </div>
+        <!-- 联系方式 -->
+        <div>
+          <h5 class="text-2xl font-bold text-yellow-300 flex items-center gap-2"><span>📞</span> 联系我们</h5>
+          <p class="mt-3">咨询热线 400-881-2334</p>
+          <p>邮箱 hello@rainbowbear.com</p>
+          <p class="mt-4 flex gap-2 text-3xl">📱 🐦 💬</p>
+        </div>
+        <!-- 公众号二维码 -->
+        <div>
+          <h5 class="text-2xl font-bold text-yellow-300 flex items-center gap-1"><span>🌟</span> 微信陪玩</h5>
+          <div class="mt-3 bg-white p-3 rounded-3xl inline-block">
+            <!-- 灰色二维码占位，用emoji装饰 -->
+            <div class="w-32 h-32 bg-purple-200 rounded-2xl flex items-center justify-center text-6xl border-4 border-pink-400">📱</div>
+          </div>
+          <p class="text-sm mt-2">扫一扫 领育儿资源</p>
+        </div>
+      </div>
+      <div class="text-center text-sm text-white/70 mt-12 border-t border-white/30 pt-6">
+        本页面所有内容均为儿童教育设计 🌈 卡通彩虹配色 让每一天都充满颜色
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

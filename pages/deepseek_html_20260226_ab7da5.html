@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>粗野AI · 企业级智能开发平台</title>
+  <!-- Tailwind via CDN + 基础层（无自定义样式） -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- 额外引入 Inter 字体（仅作为视觉增强，不影响粗野主义结构） -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+  <style>
+    /* 保证没有任何自定义样式类，只保留最基本的重置或字体设置（非样式类） */
+    body { font-family: 'Inter', system-ui, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- 导航栏 (logo + 标题 + CTA按钮，无菜单) — 新粗野主义：粗边框、硬边、高对比 -->
+  <header class="border-b-4 border-black bg-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      <!-- logo + 标题 (合在一起) -->
+      <div class="flex items-center gap-3">
+        <div class="text-4xl font-black tracking-tighter bg-black text-white px-3 py-1 rotate-1">AI</div>
+        <span class="text-2xl font-bold uppercase tracking-wide">dev<span class="bg-yellow-300 text-black px-2 ml-1">forge</span></span>
+      </div>
+      <!-- CTA 按钮 (两个，符合粗野主义的大实色块) -->
+      <div class="flex gap-4">
+        <a href="/signup" class="bg-black text-white text-lg font-bold px-6 py-3 border-4 border-black hover:bg-white hover:text-black transition-all duration-150 shadow-[6px_6px_0_0_#000]">开始使用</a>
+        <a href="/contact" class="bg-white text-black text-lg font-bold px-6 py-3 border-4 border-black hover:bg-black hover:text-white transition-all duration-150 shadow-[6px_6px_0_0_#000]">联系销售</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="overflow-hidden">
+
+    <!-- 首屏区块 (英雄区) — 使用给定JSON数据 + AI开发文案微调 -->
+    <section class="border-b-4 border-black bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-[1.1] uppercase mb-6">企业级AI<br>让开发更快一步</h1>
+          <p class="text-2xl font-medium mb-4 border-l-8 border-black pl-5">安全、高效、可定制——专为现代AI团队打造的智能协作平台，集成工作流与模型洞察。</p>
+          <p class="text-lg text-gray-700 mb-8 max-w-xl">专为AI驱动企业设计的智能聊天与开发运维平台，实时追踪训练、自动部署、数据洞察。</p>
+          <div class="flex flex-wrap gap-5">
+            <a href="/signup" class="bg-black text-white text-xl font-bold px-8 py-4 border-4 border-black hover:bg-white hover:text-black shadow-[8px_8px_0_0_#000] transition">开始使用</a>
+            <a href="/contact" class="bg-white text-black text-xl font-bold px-8 py-4 border-4 border-black hover:bg-black hover:text-white shadow-[8px_8px_0_0_#000] transition">联系销售</a>
+          </div>
+        </div>
+        <div class="bg-black p-2 shadow-[16px_16px_0_0_#000] border-4 border-black">
+          <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="AI团队协作界面" class="w-full h-auto object-cover border-2 border-white grayscale contrast-125">
+        </div>
+      </div>
+    </section>
+
+    <!-- 左图右文区块 (无缝沟通，但改用AI模型协作) -->
+    <section class="border-b-4 border-black bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+        <div class="bg-black p-2 shadow-[-12px_12px_0_0_#000] border-4 border-black order-1 md:order-none">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="AI团队成员沟通" class="w-full h-auto object-cover border-2 border-white grayscale">
+        </div>
+        <div>
+          <h2 class="text-4xl md:text-5xl font-black tracking-tight uppercase mb-5">无缝沟通<br>跨越模型与部门</h2>
+          <p class="text-xl mb-6 border-r-8 border-black pr-5">打破信息孤岛，通过话题群组、AI频道和实时推理分享，让每个工程师都能快速找到最佳模型。集成企业LLM目录，一键调用同事调优的模型。</p>
+          <div class="flex flex-wrap gap-5 text-lg font-bold">
+            <span class="bg-black text-white px-5 py-3 border-2 border-black">🔒 端到端加密</span>
+            <span class="bg-black text-white px-5 py-3 border-2 border-black">♾️ 无限历史记录</span>
+            <span class="bg-black text-white px-5 py-3 border-2 border-black">⚡ 实时微调日志</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 左文右图区块 (深度集成工作流, AI DevOps) -->
+    <section class="border-b-4 border-black bg-gray-50">
+      <div class="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-4xl md:text-5xl font-black tracking-tight uppercase mb-5">深度集成<br>AI工作流</h2>
+          <p class="text-xl mb-6 border-l-8 border-black pl-5">与您使用的工具无缝连接：HuggingFace、Weights & Biases、GitHub Actions、Kubeflow。在聊天中触发训练、对比模型、自动化部署。</p>
+          <div class="flex flex-wrap gap-4 text-base font-bold">
+            <span class="bg-white border-4 border-black px-5 py-3 shadow-[4px_4px_0_0_#000]">🤗 HuggingFace 导入</span>
+            <span class="bg-white border-4 border-black px-5 py-3 shadow-[4px_4px_0_0_#000]">⚙️ 微调管道</span>
+            <span class="bg-white border-4 border-black px-5 py-3 shadow-[4px_4px_0_0_#000]">📊 实验追踪</span>
+          </div>
+        </div>
+        <div class="bg-black p-2 shadow-[12px_12px_0_0_#000] border-4 border-black">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="AI工作流集成" class="w-full h-auto object-cover border-2 border-white grayscale">
+        </div>
+      </div>
+    </section>
+
+    <!-- 上文下图区块 (全平台一致体验，加上AI设备) -->
+    <section class="border-b-4 border-black bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-16 text-center">
+        <h2 class="text-5xl font-black uppercase mb-4">全平台 · 模型一致体验</h2>
+        <p class="text-xl max-w-3xl mx-auto mb-12 border-b-4 border-black pb-4">无论是在桌面、网页还是移动端，提示词、模型状态、推理历史实时同步，操作流畅如一。</p>
+        <div class="bg-black p-2 shadow-[16px_16px_0_0_#000] border-4 border-black max-w-4xl mx-auto">
+          <img src="https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=800&auto=format" alt="多设备AI开发" class="w-full h-auto object-cover border-2 border-white grayscale">
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区块 (专为AI打造) -->
+    <section class="border-b-4 border-black bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-5xl font-black uppercase text-center mb-2">专为AI·大模型打造</h2>
+        <p class="text-xl text-center mb-16 border-t-4 border-black pt-4 w-fit mx-auto px-8">从安全到训练效率，面面俱到</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- 特性1 -->
+          <div class="border-4 border-black bg-white p-6 shadow-[8px_8px_0_0_#000]">
+            <div class="text-5xl mb-4">🔒</div>
+            <h3 class="text-2xl font-black uppercase mb-2">企业级安全</h3>
+            <p class="text-base">端到端加密、SSO、模型加密存储，满足金融与医疗合规。</p>
+          </div>
+          <div class="border-4 border-black bg-white p-6 shadow-[8px_8px_0_0_#000]">
+            <div class="text-5xl mb-4">⚡</div>
+            <h3 class="text-2xl font-black uppercase mb-2">实时推理</h3>
+            <p class="text-base">毫秒级延迟，跨设备已读回执与模型状态同步。</p>
+          </div>
+          <div class="border-4 border-black bg-white p-6 shadow-[8px_8px_0_0_#000]">
+            <div class="text-5xl mb-4">🧩</div>
+            <h3 class="text-2xl font-black uppercase mb-2">无限集成</h3>
+            <p class="text-base">连接 LangChain、LlamaIndex、自定义 Agent 框架。</p>
+          </div>
+          <div class="border-4 border-black bg-white p-6 shadow-[8px_8px_0_0_#000]">
+            <div class="text-5xl mb-4">📊</div>
+            <h3 class="text-2xl font-black uppercase mb-2">分析洞察</h3>
+            <p class="text-base">团队活跃度、模型调用成本、响应时间可视化。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 统计区块 (AI开发数据) -->
+    <section class="border-b-4 border-black bg-black text-white">
+      <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="border-4 border-white p-6 shadow-[6px_6px_0_0_#fff]">
+          <div class="text-5xl font-black">500+</div>
+          <div class="text-xl uppercase tracking-wider mt-2">企业AI客户</div>
+        </div>
+        <div class="border-4 border-white p-6 shadow-[6px_6px_0_0_#fff]">
+          <div class="text-5xl font-black">98%</div>
+          <div class="text-xl uppercase tracking-wider mt-2">模型留存率</div>
+        </div>
+        <div class="border-4 border-white p-6 shadow-[6px_6px_0_0_#fff]">
+          <div class="text-5xl font-black">20M+</div>
+          <div class="text-xl uppercase tracking-wider mt-2">日推理请求</div>
+        </div>
+        <div class="border-4 border-white p-6 shadow-[6px_6px_0_0_#fff]">
+          <div class="text-5xl font-black">24/7</div>
+          <div class="text-xl uppercase tracking-wider mt-2">模型技术支持</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 团队区块 (核心AI团队) -->
+    <section class="border-b-4 border-black bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-5xl font-black uppercase text-center mb-2">核心AI团队</h2>
+        <p class="text-xl text-center mb-16 border-b-4 border-black pb-4 w-fit mx-auto px-8">来自全球顶尖AI企业与实验室</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- 成员 -->
+          <div class="border-4 border-black p-4 shadow-[10px_10px_0_0_#000]">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format" alt="张伟" class="w-full aspect-square object-cover border-4 border-black grayscale mb-4">
+            <h3 class="text-2xl font-black">张伟</h3>
+            <p class="text-lg font-bold border-b-2 border-black">CEO & 创始人</p>
+            <p class="text-sm mt-2">前OpenAI产品架构师</p>
+          </div>
+          <div class="border-4 border-black p-4 shadow-[10px_10px_0_0_#000]">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format" alt="陈敏" class="w-full aspect-square object-cover border-4 border-black grayscale mb-4">
+            <h3 class="text-2xl font-black">陈敏</h3>
+            <p class="text-lg font-bold border-b-2 border-black">CTO</p>
+            <p class="text-sm mt-2">分布式训练系统专家</p>
+          </div>
+          <div class="border-4 border-black p-4 shadow-[10px_10px_0_0_#000]">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format" alt="王磊" class="w-full aspect-square object-cover border-4 border-black grayscale mb-4">
+            <h3 class="text-2xl font-black">王磊</h3>
+            <p class="text-lg font-bold border-b-2 border-black">产品总监</p>
+            <p class="text-sm mt-2">前Google AI产品负责人</p>
+          </div>
+          <div class="border-4 border-black p-4 shadow-[10px_10px_0_0_#000]">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format" alt="李莉" class="w-full aspect-square object-cover border-4 border-black grayscale mb-4">
+            <h3 class="text-2xl font-black">李莉</h3>
+            <p class="text-lg font-bold border-b-2 border-black">设计负责人</p>
+            <p class="text-sm mt-2">前Microsoft Fluent AI 设计主管</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 价格区块 (灵活定价，AI特性) -->
+    <section class="border-b-4 border-black bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-5xl font-black uppercase text-center mb-2">灵活定价 · 模型按需</h2>
+        <p class="text-xl text-center mb-16 border-t-4 border-black pt-4 w-fit mx-auto px-8">无隐藏费用，支持私有模型部署</p>
+        <div class="grid md:grid-cols-3 gap-8 items-stretch">
+          <!-- 基础版 -->
+          <div class="border-4 border-black bg-white p-8 shadow-[12px_12px_0_0_#000] flex flex-col">
+            <h3 class="text-3xl font-black uppercase">基础版</h3>
+            <div class="text-5xl font-black my-4">$49<span class="text-lg font-normal">/月/人</span></div>
+            <ul class="space-y-3 text-base flex-1 border-t-4 border-black pt-5 mt-2">
+              <li class="flex gap-2"><span class="font-black">→</span> 提示词历史1年</li>
+              <li class="flex gap-2"><span class="font-black">→</span> 10GB 模型存储</li>
+              <li class="flex gap-2"><span class="font-black">→</span> 基础集成 (HuggingFace)</li>
+            </ul>
+            <a href="/signup/basic" class="bg-black text-white text-center text-lg font-bold py-4 border-4 border-black mt-8 hover:bg-white hover:text-black shadow-[4px_4px_0_0_#000]">选择基础版</a>
+          </div>
+          <!-- 商业版 (热门) -->
+          <div class="border-4 border-black bg-white p-8 shadow-[16px_16px_0_0_#000] scale-105 flex flex-col relative">
+            <span class="absolute -top-5 right-4 bg-yellow-300 text-black text-xl font-black px-4 py-2 border-4 border-black rotate-3">🔥 最受欢迎</span>
+            <h3 class="text-3xl font-black uppercase">商业版</h3>
+            <div class="text-5xl font-black my-4">$99<span class="text-lg font-normal">/月/人</span></div>
+            <ul class="space-y-3 text-base flex-1 border-t-4 border-black pt-5 mt-2">
+              <li class="flex gap-2"><span class="font-black">→</span> 无限历史 + 实验追踪</li>
+              <li class="flex gap-2"><span class="font-black">→</span> 100GB 存储</li>
+              <li class="flex gap-2"><span class="font-black">→</span> 所有集成 + 微调API</li>
+              <li class="flex gap-2"><span class="font-black">→</span> 高级推理支持</li>
+            </ul>
+            <a href="/signup/business" class="bg-black text-white text-center text-lg font-bold py-4 border-4 border-black mt-8 hover:bg-white hover:text-black shadow-[4px_4px_0_0_#000]">选择商业版</a>
+          </div>
+          <!-- 企业版 -->
+          <div class="border-4 border-black bg-white p-8 shadow-[12px_12px_0_0_#000] flex flex-col">
+            <h3 class="text-3xl font-black uppercase">企业版</h3>
+            <div class="text-5xl font-black my-4">定制</div>
+            <ul class="space-y-3 text-base flex-1 border-t-4 border-black pt-5 mt-2">
+              <li class="flex gap-2"><span class="font-black">→</span> 私有/本地模型部署</li>
+              <li class="flex gap-2"><span class="font-black">→</span> 无限存储 & 专有集群</li>
+              <li class="flex gap-2"><span class="font-black">→</span> 专属客户成功</li>
+              <li class="flex gap-2"><span class="font-black">→</span> SSO/合规 + 审计</li>
+            </ul>
+            <a href="/contact" class="bg-white text-black text-center text-lg font-bold py-4 border-4 border-black mt-8 hover:bg-black hover:text-white shadow-[4px_4px_0_0_#000]">联系销售</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题区块 (AI开发相关) -->
+    <section class="border-b-4 border-black bg-white">
+      <div class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-5xl font-black uppercase text-center mb-16">常见问题 · AI</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div class="border-4 border-black p-6 shadow-[6px_6px_0_0_#000]">
+            <p class="text-xl font-black mb-3">🧠 支持本地模型部署吗？</p>
+            <p class="text-base">是的，企业版支持私有云或本地GPU集群部署，满足最高安全合规要求，支持vLLM、TensorRT等。</p>
+          </div>
+          <div class="border-4 border-black p-6 shadow-[6px_6px_0_0_#000]">
+            <p class="text-xl font-black mb-3">⏳ 可以试用多久？</p>
+            <p class="text-base">所有新用户均可享受30天全功能免费试用，包含每月100万tokens推理额度，无需信用卡。</p>
+          </div>
+          <div class="border-4 border-black p-6 shadow-[6px_6px_0_0_#000]">
+            <p class="text-xl font-black mb-3">🗂️ 训练数据存储在哪里？</p>
+            <p class="text-base">数据存储在云端独立向量数据库，可选中国大陆或海外区域，符合当地法规，支持VPC对等连接。</p>
+          </div>
+          <div class="border-4 border-black p-6 shadow-[6px_6px_0_0_#000]">
+            <p class="text-xl font-black mb-3">🔄 如何迁移现有提示词？</p>
+            <p class="text-base">我们提供专业迁移工具，支持从OpenAI、LangChain、LlamaIndex等平台导入历史数据和提示模版。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 区块 (最后行动号召) -->
+    <section class="border-b-4 border-black bg-black text-white">
+      <div class="max-w-5xl mx-auto px-6 py-24 text-center">
+        <h2 class="text-6xl md:text-7xl font-black uppercase mb-6 tracking-tighter">立即提升AI团队效能</h2>
+        <p class="text-2xl mb-12 max-w-2xl mx-auto border-t-4 border-white pt-6">加入数百家信任我们的企业，开启智能开发新纪元。</p>
+        <div class="flex flex-wrap gap-6 justify-center">
+          <a href="/signup" class="bg-white text-black text-2xl font-black px-12 py-5 border-4 border-white hover:bg-black hover:text-white shadow-[12px_12px_0_0_#fff] transition">免费试用30天</a>
+          <a href="/demo" class="bg-black text-white text-2xl font-black px-12 py-5 border-4 border-white hover:bg-white hover:text-black shadow-[12px_12px_0_0_#fff] transition">预约演示</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 页脚 (简单版权声明) 新粗野主义风格延续 -->
+  <footer class="bg-white border-t-4 border-black py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-black bg-black text-white px-2">AI</span>
+        <span class="font-bold">devforge</span>
+      </div>
+      <p class="text-sm font-medium border-2 border-black px-4 py-2">© 2025 AI devforge. 所有权利保留 · 粗野主义与AI的碰撞</p>
+      <div class="text-xs opacity-60">🔨 硬边构建</div>
+    </div>
+  </footer>
+
+</body>
+</html>

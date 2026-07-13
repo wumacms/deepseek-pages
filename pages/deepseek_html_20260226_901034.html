@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusAI · 智能协作平台</title>
+    <!-- Tailwind via CDN + 基础层样式 (无自定义) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 少量降级字体 (完全可选, 不涉及自定义样式) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <style>
+        /* 保证没有任何自定义类, 仅用于重置默认边距 (不影响tailwind设计) */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+    <!-- 导航栏 (Logo, 标题, 导航菜单, CTA按钮) 蓝白极简 -->
+    <nav class="border-b border-gray-100 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- 左侧logo+标题 -->
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white text-xl font-semibold">N</div>
+                <span class="text-xl font-semibold tracking-tight text-gray-900">Nexus<span class="text-blue-600">AI</span></span>
+            </div>
+            <!-- 导航菜单 (桌面) -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-blue-600 transition">产品</a>
+                <a href="#" class="hover:text-blue-600 transition">解决方案</a>
+                <a href="#" class="hover:text-blue-600 transition">定价</a>
+                <a href="#" class="hover:text-blue-600 transition">资源</a>
+            </div>
+            <!-- CTA按钮 + 移动端菜单图标(极简) -->
+            <div class="flex items-center gap-4">
+                <a href="/signup" class="hidden sm:inline-block bg-blue-600 text-white text-sm font-medium px-5 py-2 rounded-xl hover:bg-blue-700 transition shadow-sm">开始使用</a>
+                <button class="md:hidden w-8 h-8 flex items-center justify-center text-gray-500">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ========= 首屏区块 (hero) ========= 使用AI相关图片和数据 -->
+        <section class="bg-gradient-to-b from-white to-blue-50/30">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 py-20 md:py-28">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 leading-tight">企业级<span class="text-blue-600"> AI 协作</span>，让决策更快一步</h1>
+                        <p class="mt-6 text-lg text-gray-600 max-w-xl">安全、高效、可定制——专为现代企业打造的智能聊天平台，集成工作流与实时数据洞察。</p>
+                        <p class="mt-2 text-gray-500">专为现代企业打造的智能聊天平台，集成工作流与数据洞察。</p>
+                        <div class="mt-8 flex flex-wrap gap-4">
+                            <a href="/signup" class="bg-blue-600 text-white font-medium px-6 py-3 rounded-xl hover:bg-blue-700 shadow-sm">开始使用</a>
+                            <a href="/contact" class="bg-white border border-gray-200 text-gray-700 font-medium px-6 py-3 rounded-xl hover:border-gray-300 hover:bg-gray-50">联系销售</a>
+                        </div>
+                    </div>
+                    <div class="bg-white p-2 rounded-2xl shadow-xl border border-gray-100">
+                        <img class="rounded-xl w-full object-cover h-64 md:h-80" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&auto=format" alt="团队协作AI界面">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 合作伙伴区块 ========= 人工智能相关生态 -->
+        <section class="py-16 bg-white border-y border-gray-100">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900">我们的生态伙伴</h2>
+                    <p class="mt-2 text-gray-500">与全球领先的AI及技术公司深度合作</p>
+                </div>
+                <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+                    <!-- 六个合作伙伴占位logo (用纯色卡片示意) 为了视觉统一全部采用灰底 -->
+                    <div class="flex justify-center"><div class="h-12 w-24 bg-gray-100 rounded-lg flex items-center justify-center text-xs text-gray-400">微软</div></div>
+                    <div class="flex justify-center"><div class="h-12 w-24 bg-gray-100 rounded-lg flex items-center justify-center text-xs text-gray-400">AWS</div></div>
+                    <div class="flex justify-center"><div class="h-12 w-24 bg-gray-100 rounded-lg flex items-center justify-center text-xs text-gray-400">Salesforce</div></div>
+                    <div class="flex justify-center"><div class="h-12 w-24 bg-gray-100 rounded-lg flex items-center justify-center text-xs text-gray-400">Google</div></div>
+                    <div class="flex justify-center"><div class="h-12 w-24 bg-gray-100 rounded-lg flex items-center justify-center text-xs text-gray-400">Atlassian</div></div>
+                    <div class="flex justify-center"><div class="h-12 w-24 bg-gray-100 rounded-lg flex items-center justify-center text-xs text-gray-400">腾讯云</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左图右文 (无缝沟通) ========= 用人工智能沟通图片 -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1">
+                    <img class="rounded-2xl shadow-xl border border-gray-100 w-full h-72 object-cover" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format" alt="团队沟通">
+                </div>
+                <div class="order-1 md:order-2">
+                    <h2 class="text-3xl font-bold text-gray-900">无缝沟通，跨越部门</h2>
+                    <p class="mt-4 text-gray-600 text-lg">打破信息孤岛，通过话题群组、私聊和富媒体分享，让每个人都能快速找到所需信息。集成企业目录，一键联系同事。</p>
+                    <div class="mt-6 flex gap-6">
+                        <span class="inline-flex items-center text-sm bg-blue-50 text-blue-700 px-4 py-2 rounded-full">🔒 端到端加密</span>
+                        <span class="inline-flex items-center text-sm bg-blue-50 text-blue-700 px-4 py-2 rounded-full">📜 无限历史记录</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 左文右图 (深度集成工作流) ========= AI工作流集成 -->
+        <section class="py-20 bg-gray-50/60">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">深度集成工作流</h2>
+                    <p class="mt-4 text-gray-600 text-lg">与您使用的工具无缝连接：Jira、GitLab、Google Drive、Salesforce。在聊天中创建任务、分享文件、触发自动化。</p>
+                    <div class="mt-6 flex gap-4 flex-wrap">
+                        <span class="bg-gray-200 text-gray-700 text-sm px-3 py-1.5 rounded-full">Slack 导入</span>
+                        <span class="bg-gray-200 text-gray-700 text-sm px-3 py-1.5 rounded-full">API 开放</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="rounded-2xl shadow-xl border border-gray-100 w-full h-72 object-cover" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&auto=format" alt="工作流集成">
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 特性区块 ========= 专为商务打造的AI特性 -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">专为商务打造的特性</h2>
+                <p class="mt-2 text-gray-500">从安全到效率，面面俱到</p>
+                <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="font-semibold text-lg">企业级安全</h3>
+                        <p class="text-gray-500 text-sm mt-2">端到端加密、SSO、DLP策略，满足合规需求。</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="font-semibold text-lg">实时同步</h3>
+                        <p class="text-gray-500 text-sm mt-2">毫秒级延迟，跨设备已读回执与状态。</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <div class="text-4xl mb-4">🧩</div>
+                        <h3 class="font-semibold text-lg">无限集成</h3>
+                        <p class="text-gray-500 text-sm mt-2">连接200+企业应用，自定义机器人。</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 rounded-2xl border border-gray-100">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h3 class="font-semibold text-lg">分析洞察</h3>
+                        <p class="text-gray-500 text-sm mt-2">团队活跃度、响应时间数据可视化。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 客户案例区块 ========= -->
+        <section class="py-20 bg-gray-50/80">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900">他们正在使用我们的产品</h2>
+                    <p class="mt-2 text-gray-500">来自全球领先企业的信赖与认可</p>
+                    <p class="text-gray-400 text-sm">了解不同规模的企业如何通过我们的平台提升协作效率</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-3 gap-6">
+                    <!-- 案例1 -->
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                        <div class="flex items-center gap-2"><div class="w-8 h-8 bg-gray-200 rounded"></div><span class="font-semibold">科技创新</span><span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">互联网</span></div>
+                        <p class="mt-4 text-gray-600 italic">“团队协作效率提升了40%，跨部门沟通变得前所未有的顺畅。”</p>
+                        <div class="mt-4 flex items-center gap-2"><div class="w-8 h-8 bg-gray-300 rounded-full"></div><div><p class="text-sm font-medium">李志强</p><p class="text-xs text-gray-400">CTO</p></div></div>
+                    </div>
+                    <!-- 案例2 -->
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                        <div class="flex items-center gap-2"><div class="w-8 h-8 bg-gray-200 rounded"></div><span class="font-semibold">未来教育</span><span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">教育</span></div>
+                        <p class="mt-4 text-gray-600 italic">“集成的教务系统让教师沟通和学生管理变得更加高效。”</p>
+                        <div class="mt-4 flex items-center gap-2"><div class="w-8 h-8 bg-gray-300 rounded-full"></div><div><p class="text-sm font-medium">王美玲</p><p class="text-xs text-gray-400">教务主任</p></div></div>
+                    </div>
+                    <!-- 案例3 -->
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100">
+                        <div class="flex items-center gap-2"><div class="w-8 h-8 bg-gray-200 rounded"></div><span class="font-semibold">智造科技</span><span class="text-xs bg-blue-50 text-blue-600 px-2 py-0.5 rounded">制造业</span></div>
+                        <p class="mt-4 text-gray-600 italic">“本地部署方案完美满足我们的安全要求，支持工厂一线的高效沟通。”</p>
+                        <div class="mt-4 flex items-center gap-2"><div class="w-8 h-8 bg-gray-300 rounded-full"></div><div><p class="text-sm font-medium">张建国</p><p class="text-xs text-gray-400">IT总监</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 价格区块 ========= 灵活定价 AI相关 -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900">灵活定价</h2>
+                    <p class="text-gray-500">按需选择，无隐藏费用</p>
+                </div>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <!-- 基础版 -->
+                    <div class="border border-gray-200 rounded-2xl p-8 bg-white">
+                        <h3 class="text-xl font-semibold">基础版</h3>
+                        <p class="mt-4 text-3xl font-bold">$49 <span class="text-base font-normal text-gray-400">/月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-600">
+                            <li>✓ 消息历史1年</li>
+                            <li>✓ 10GB 文件存储</li>
+                            <li>✓ 基础集成</li>
+                        </ul>
+                        <a href="/signup/basic" class="mt-8 block text-center border border-blue-600 text-blue-600 font-medium px-4 py-2 rounded-xl hover:bg-blue-50">选择基础版</a>
+                    </div>
+                    <!-- 商业版 (最流行) 蓝色边框 -->
+                    <div class="border-2 border-blue-600 rounded-2xl p-8 bg-white shadow-lg relative">
+                        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-600 text-white text-xs px-3 py-1 rounded-full">最受欢迎</span>
+                        <h3 class="text-xl font-semibold">商业版</h3>
+                        <p class="mt-4 text-3xl font-bold">$99 <span class="text-base font-normal text-gray-400">/月/人</span></p>
+                        <ul class="mt-6 space-y-3 text-gray-600">
+                            <li>✓ 无限历史</li>
+                            <li>✓ 100GB 存储</li>
+                            <li>✓ 所有集成 + API</li>
+                            <li>✓ 高级支持</li>
+                        </ul>
+                        <a href="/signup/business" class="mt-8 block text-center bg-blue-600 text-white font-medium px-4 py-2 rounded-xl hover:bg-blue-700">选择商业版</a>
+                    </div>
+                    <!-- 企业版 -->
+                    <div class="border border-gray-200 rounded-2xl p-8 bg-white">
+                        <h3 class="text-xl font-semibold">企业版</h3>
+                        <p class="mt-4 text-3xl font-bold">定制</p>
+                        <ul class="mt-6 space-y-3 text-gray-600">
+                            <li>✓ 本地部署选项</li>
+                            <li>✓ 无限存储</li>
+                            <li>✓ 专属客户成功</li>
+                            <li>✓ SSO/合规</li>
+                        </ul>
+                        <a href="/contact" class="mt-8 block text-center border border-gray-300 text-gray-700 font-medium px-4 py-2 rounded-xl hover:bg-gray-50">联系销售</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= 常见问题区块 ========= 简洁 -->
+        <section class="py-20 bg-gray-50/60">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">常见问题</h2>
+                <div class="mt-12 space-y-5">
+                    <div class="bg-white p-6 rounded-xl border border-gray-100">
+                        <h4 class="font-semibold">支持本地部署吗？</h4>
+                        <p class="text-gray-500 mt-1">是的，企业版支持私有云或本地服务器部署，满足最高安全合规要求。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100">
+                        <h4 class="font-semibold">可以试用多久？</h4>
+                        <p class="text-gray-500 mt-1">所有新用户均可享受30天全功能免费试用，无需信用卡。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100">
+                        <h4 class="font-semibold">数据存储在哪里？</h4>
+                        <p class="text-gray-500 mt-1">数据存储在云端的独立数据库，可选中国大陆或海外区域，符合当地法规。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl border border-gray-100">
+                        <h4 class="font-semibold">如何迁移现有聊天记录？</h4>
+                        <p class="text-gray-500 mt-1">我们提供专业迁移工具，支持从Slack、Teams等平台导入历史数据。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========= CTA 区块 ========= 立即提升效率 -->
+        <section class="bg-blue-600 py-16">
+            <div class="max-w-3xl mx-auto text-center px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">立即提升团队协作效率</h2>
+                <p class="mt-3 text-blue-100">加入数百家信任我们的企业，开启高效沟通之旅。</p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <a href="/signup" class="bg-white text-blue-600 font-medium px-8 py-3 rounded-xl shadow-md hover:bg-gray-100">免费试用30天</a>
+                    <a href="/demo" class="border border-white text-white font-medium px-8 py-3 rounded-xl hover:bg-blue-700">预约演示</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========= 页脚 (品牌Logo、版权、地址、联系方式、微信公众号二维码) ========= 蓝白极简 -->
+    <footer class="bg-white border-t border-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- logo + 版权 -->
+                <div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-7 h-7 bg-blue-600 rounded-lg flex items-center justify-center text-white font-semibold">N</div>
+                        <span class="font-semibold text-gray-800">NexusAI</span>
+                    </div>
+                    <p class="text-xs text-gray-400 mt-4">© 2025 NexusAI, Inc.<br>保留一切权利。</p>
+                </div>
+                <!-- 公司地址 -->
+                <div>
+                    <h5 class="font-medium text-gray-900 mb-3">公司地址</h5>
+                    <p class="text-sm text-gray-500">上海市浦东新区<br>人工智能大厦 200120</p>
+                </div>
+                <!-- 联系方式 -->
+                <div>
+                    <h5 class="font-medium text-gray-900 mb-3">联系方式</h5>
+                    <p class="text-sm text-gray-500">support@nexusai.com<br>+86 (021) 1234-5678</p>
+                </div>
+                <!-- 微信公众号二维码 (模拟) -->
+                <div>
+                    <h5 class="font-medium text-gray-900 mb-3">微信公众号</h5>
+                    <div class="w-24 h-24 bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center text-gray-400 text-xs">二维码</div>
+                    <p class="text-xs text-gray-400 mt-2">扫一扫关注我们</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-100 mt-10 pt-6 text-xs text-gray-400 flex justify-between">
+                <span>隐私条款 · 服务协议</span>
+                <span> 极简 · 蓝白 AI 落地页</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
